@@ -1,0 +1,31 @@
+{
+    "id": "e6560c73-1de9-4c31-8a3a-4462352e9edd",
+    "modelName": "GMFolder",
+    "mvc": "1.1",
+    "name": "e6560c73-1de9-4c31-8a3a-4462352e9edd",
+    "children": [
+        "bb8f8d02-aa89-4a47-b977-215432da3da3",
+        "bfd8e720-81db-404c-9f6c-e380f7809164",
+        "a6c7a4af-04f2-4e32-a38f-32ebf68a7652",
+        "fe07a38d-0a22-4275-a6c4-25a44aeffb3a",
+        "05df7ac3-fed8-4cc2-9666-361419970c42",
+        "8aa4459a-e705-4f71-b1dd-407ef2a3ddbf",
+        "58c90c7f-5bf8-4bd1-b82c-e2b56f5212fa",
+        "22036a7b-ddba-4c8a-be23-e7c272313506",
+        "778ae93d-f5e4-4c1f-a147-53422a9e92b7",
+        "712e41c5-cb1f-4619-8e89-16694a79ddf5",
+        "69b1daad-9d5a-4591-accd-de8562086ea2",
+        "1574849d-f866-4a03-a1ca-051d793096aa",
+        "0f4122a1-a2f0-4f1e-b3c2-c487d871cff9",
+        "a8810330-a7db-46f0-aaea-7284071e834c",
+        "37d4bbc3-5863-4e6e-b37f-e72b605e6303",
+        "5681233d-c3d2-4f93-9cc1-3037a3a987be",
+        "e46b7e35-272c-4b5d-8133-4059002801cf",
+        "fdffa23c-2303-426d-b41c-9cee2b77b969",
+        "bc6d0ecc-ccbf-4592-971e-c6bf5352d8e2"
+    ],
+    "filterType": "GMTimeline",
+    "folderName": "boss_vampire",
+    "isDefaultView": false,
+    "localisedFolderName": ""
+}

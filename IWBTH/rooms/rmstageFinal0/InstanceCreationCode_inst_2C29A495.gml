@@ -1,0 +1,1 @@
+if !sys_global.orb[2] instance_destroy();

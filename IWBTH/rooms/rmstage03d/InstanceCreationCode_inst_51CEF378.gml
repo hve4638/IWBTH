@@ -1,0 +1,2 @@
+cs=CS_MUSICSTOP;
+On=1;

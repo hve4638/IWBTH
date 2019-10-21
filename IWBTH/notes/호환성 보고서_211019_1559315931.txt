@@ -1,0 +1,1288 @@
+GML 스크립트 변환 중: ${project_dir}\scripts\scp_publicload\scp_publicload.gml
+변환된 설명 /// @description scp_publicload();
+
+GML 스크립트 변환 중: ${project_dir}\scripts\scp_publicload_old\scp_publicload_old.gml
+변환된 설명 /// @description scp_publicload();
+
+GML 스크립트 변환 중: ${project_dir}\scripts\scp_save\scp_save.gml
+변환된 설명 /// @description scp_save(x,y,room);/// @param x
+/// @param y
+/// @param room
+
+GML 스크립트 변환 중: ${project_dir}\scripts\scp_load\scp_load.gml
+변환된 설명 /// @description scp_laod();
+
+GML 스크립트 변환 중: ${project_dir}\scripts\scp_save_old\scp_save_old.gml
+변환된 설명 /// @description scp_save(x,y,room);/// @param x
+/// @param y
+/// @param room
+
+GML 스크립트 변환 중: ${project_dir}\scripts\scp_load_old\scp_load_old.gml
+변환된 설명 /// @description scp_laod();
+
+GML 스크립트 변환 중: ${project_dir}\scripts\scp_configdef\scp_configdef.gml
+변환된 문자열 - 줄 5: 'X'→"X"
+변환된 문자열 - 줄 6: 'Z'→"Z"
+변환된 문자열 - 줄 7: 'R'→"R"
+
+GML 스크립트 변환 중: ${project_dir}\scripts\scp_echo_create\scp_echo_create.gml
+변환된 설명 /// @description scp_echo_create(num);/// @param num
+
+GML 스크립트 변환 중: ${project_dir}\scripts\scp_echo_destroy\scp_echo_destroy.gml
+변환된 설명 /// @description scp_echo_destroy()
+
+GML 스크립트 변환 중: ${project_dir}\scripts\scp_echo_draw\scp_echo_draw.gml
+변환된 설명 /// @description scp_echo_draw()
+
+GML 스크립트 변환 중: ${project_dir}\scripts\scp_echo_update\scp_echo_update.gml
+변환된 설명 /// @description scp_echo_update(isvis)/// @param isvis
+
+GML 스크립트 변환 중: ${project_dir}\scripts\scp_pattern_create\scp_pattern_create.gml
+변환된 설명 /// @description scp_pattern_create(cnt,pattern1,pattern2...);/// @param cnt
+/// @param pattern1
+/// @param pattern2...
+
+GML 스크립트 변환 중: ${project_dir}\scripts\scp_pattern_rand\scp_pattern_rand.gml
+변환된 설명 /// @description scp_pattern_rand();
+
+GML 스크립트 변환 중: ${project_dir}\scripts\scp_pattern_reset\scp_pattern_reset.gml
+변환된 설명 /// @description scp_pattern_reset(cnt,pattern1,pattern2...);/// @param cnt
+/// @param pattern1
+/// @param pattern2...
+
+GML 스크립트 변환 중: ${project_dir}\scripts\scp_pattern_destroy\scp_pattern_destroy.gml
+변환된 설명 /// @description scp_pattern_destroy();
+
+GML 스크립트 변환 중: ${project_dir}\scripts\scp_debug_showlist\scp_debug_showlist.gml
+변환된 설명 /// @description scp_debug_listdecode(str)/// @param str
+
+GML 스크립트 변환 중: ${project_dir}\scripts\scp_bgm\scp_bgm.gml
+변환된 설명 /// @description scp_bgm();
+
+GML 스크립트 변환 중: ${project_dir}\scripts\scp_warmgener\scp_warmgener.gml
+변환된 설명 /// @description scp_warmgener(count,x,y,target,speed,direction,angle);/// @param count
+/// @param x
+/// @param y
+/// @param target
+/// @param speed
+/// @param direction
+/// @param angle
+
+GML 스크립트 변환 중: ${project_dir}\scripts\scp_warmgener2\scp_warmgener2.gml
+변환된 설명 /// @description scp_warmgener2(count,x,y,target,speed,direction,angle);/// @param count
+/// @param x
+/// @param y
+/// @param target
+/// @param speed
+/// @param direction
+/// @param angle
+
+GML 스크립트 변환 중: ${project_dir}\scripts\scp_shake\scp_shake.gml
+변환된 설명 /// @description scp_shake(power,time,preference);/// @param power
+/// @param time
+/// @param preference
+
+GML 스크립트 변환 중: ${project_dir}\scripts\scp_play\scp_play.gml
+변환된 설명 /// @description scp_play(soundid,loop);/// @param soundid
+/// @param loop
+
+GML 스크립트 변환 중: ${project_dir}\scripts\es\es.gml
+변환된 설명 /// @description es(section,key);/// @param section
+/// @param key
+변환된 문자열 - 줄 5: '.'→"."
+변환된 문자열 - 줄 6: '&?'→"&?"
+
+GML 스크립트 변환 중: ${project_dir}\scripts\scp_light\scp_light.gml
+내장 키워드 변환됨 - 줄 8: view_xview→__view_get( e__VW.XView, 0 )
+내장 키워드 변환됨 - 줄 9: view_xview→__view_get( e__VW.XView, 0 )
+내장 키워드 변환됨 - 줄 15: view_xview→__view_get( e__VW.XView, 0 )
+내장 키워드 변환됨 - 줄 15: view_xview→__view_get( e__VW.XView, 0 )
+내장 키워드 변환됨 - 줄 10: view_yview→__view_get( e__VW.YView, 0 )
+내장 키워드 변환됨 - 줄 11: view_yview→__view_get( e__VW.YView, 0 )
+내장 키워드 변환됨 - 줄 15: view_yview→__view_get( e__VW.YView, 0 )
+내장 키워드 변환됨 - 줄 15: view_yview→__view_get( e__VW.YView, 0 )
+내장 키워드 변환됨 - 줄 9: view_wview→__view_get( e__VW.WView, 0 )
+내장 키워드 변환됨 - 줄 11: view_hview→__view_get( e__VW.HView, 0 )
+변환된 설명 /// @description scp_light(x,y,bright);/// @param x
+/// @param y
+/// @param bright
+
+GML 스크립트 변환 중: ${project_dir}\scripts\scp_timeline\scp_timeline.gml
+변환된 설명 /// @description scp_timeline(index);/// @param index
+
+GML 스크립트 변환 중: ${project_dir}\scripts\scp_follow\scp_follow.gml
+변환된 설명 /// @description scp_follow(sx,sy,div);/// @param sx
+/// @param sy
+/// @param div
+
+GML 스크립트 변환 중: ${project_dir}\scripts\scp_alphaset\scp_alphaset.gml
+변환된 설명 /// @description scp_alphaset(num,idx);/// @param num
+/// @param idx
+
+GML 스크립트 변환 중: ${project_dir}\scripts\scp_roomname\scp_roomname.gml
+변환된 설명 /// @description scp_roomname(room)/// @param room
+변환된 문자열 - 줄 9: 'stage'→"stage"
+변환된 문자열 - 줄 9: '1'→"1"
+변환된 문자열 - 줄 14: 'stage'→"stage"
+변환된 문자열 - 줄 14: '2'→"2"
+변환된 문자열 - 줄 20: 'stage'→"stage"
+변환된 문자열 - 줄 20: '3'→"3"
+변환된 문자열 - 줄 27: 'stage'→"stage"
+변환된 문자열 - 줄 27: '4'→"4"
+변환된 문자열 - 줄 35: 'stage'→"stage"
+변환된 문자열 - 줄 35: '5'→"5"
+변환된 문자열 - 줄 41: 'stage'→"stage"
+변환된 문자열 - 줄 41: '6'→"6"
+변환된 문자열 - 줄 45: 'stage'→"stage"
+변환된 문자열 - 줄 45: 'tp'→"tp"
+변환된 문자열 - 줄 48: 'stage'→"stage"
+변환된 문자열 - 줄 48: 'altar'→"altar"
+변환된 문자열 - 줄 50: 'stage'→"stage"
+변환된 문자열 - 줄 50: 'u'→"u"
+
+GML 스크립트 변환 중: ${project_dir}\scripts\scp_keyname\scp_keyname.gml
+변환된 문자열 - 줄 48: "\"→"\\"
+
+GML 스크립트 변환 중: ${project_dir}\scripts\scp_bosskill\scp_bosskill.gml
+변환된 설명 /// @description scp_bosskill(bossnumber)/// @param bossnumber
+
+GML 스크립트 변환 중: ${project_dir}\scripts\scp_sfx\scp_sfx.gml
+변환된 설명 /// @description scp_sfx(sound,max)/// @param sound
+/// @param max
+
+GML 스크립트 변환 중: ${project_dir}\scripts\scp_act_set\scp_act_set.gml
+변환된 설명 /// @description scp_act_set();
+
+GML 스크립트 변환 중: ${project_dir}\scripts\scp_act_step\scp_act_step.gml
+변환된 설명 /// @description scp_act_step();
+
+GML 스크립트 변환 중: ${project_dir}\scripts\scp_convert_0_86\scp_convert_0_86.gml
+변환된 설명 /// @description scp_convert_0_86();
+
+GML 스크립트 변환 중: ${project_dir}\scripts\scp_convert_0_9\scp_convert_0_9.gml
+변환된 설명 /// @description scp_convert_0_9();
+
+GML 스크립트 변환 중: ${project_dir}\scripts\scp_issave_correct\scp_issave_correct.gml
+변환된 설명 /// @description scp_issave_corret(index);/// @param index
+
+!!! 글꼴 Font0의 글꼴 패밀리 나눔고딕 ExtraBold이(가) 설치되었지만 스타일과 일치하지 않습니다. 글꼴이 재생성 되지 않았습니다.
+GameMaker Studio 1 font texture has been backed up at ${project_dir}\fonts\Font0\Font0.gms1.png
+Font Font0_nobold has been converted to font family 나눔고딕 (Bold)
+GameMaker Studio 1 font texture has been backed up at ${project_dir}\fonts\Font0_nobold\Font0_nobold.gms1.png
+Font font7 has been converted to font family Arial (Regular)
+GameMaker Studio 1 font texture has been backed up at ${project_dir}\fonts\font7\font7.gms1.png
+!!! 글꼴 Font0_12의 글꼴 패밀리 나눔고딕 ExtraBold이(가) 설치되었지만 스타일과 일치하지 않습니다. 글꼴이 재생성 되지 않았습니다.
+GameMaker Studio 1 font texture has been backed up at ${project_dir}\fonts\Font0_12\Font0_12.gms1.png
+!!! 글꼴 Font1이(가) 시스템에 설치되지 않은 글꼴 (Baskerville Old Face)을(를) 사용합니다. 글꼴이 다시 생성되지 않았습니다.
+GameMaker Studio 1 font texture has been backed up at ${project_dir}\fonts\Font1\Font1.gms1.png
+!!! 글꼴 Font2이(가) 시스템에 설치되지 않은 글꼴 (Koverwatch)을(를) 사용합니다. 글꼴이 다시 생성되지 않았습니다.
+GameMaker Studio 1 font texture has been backed up at ${project_dir}\fonts\Font2\Font2.gms1.png
+!!! 글꼴 Font3이(가) 시스템에 설치되지 않은 글꼴 (Kozuka Mincho Pr6N B)을(를) 사용합니다. 글꼴이 다시 생성되지 않았습니다.
+GameMaker Studio 1 font texture has been backed up at ${project_dir}\fonts\Font3\Font3.gms1.png
+!!! 글꼴 Font3_10이(가) 시스템에 설치되지 않은 글꼴 (Kozuka Mincho Pr6N B)을(를) 사용합니다. 글꼴이 다시 생성되지 않았습니다.
+GameMaker Studio 1 font texture has been backed up at ${project_dir}\fonts\Font3_10\Font3_10.gms1.png
+Font Font_Ending has been converted to font family Adobe Kaiti Std R (R)
+GameMaker Studio 1 font texture has been backed up at ${project_dir}\fonts\Font_Ending\Font_Ending.gms1.png
+GML 스크립트 변환 중: ${project_dir}\timelines\tin_boss2a\moment_5.gml
+변환된 설명 /// @description Motion
+
+GML 스크립트 변환 중: ${project_dir}\timelines\tin_boss2_new3\moment_5.gml
+변환된 설명 /// @description Motion
+
+GML 스크립트 변환 중: ${project_dir}\timelines\tin_boss4b\moment_63.gml
+변환된 설명 /// @description  여기부터
+
+GML 스크립트 변환 중: ${project_dir}\timelines\tin_boss5a\moment_80.gml
+변환된 설명 /// @description End
+
+GML 스크립트 변환 중: ${project_dir}\timelines\tin_boss5b\moment_80.gml
+변환된 설명 /// @description END
+
+GML 스크립트 변환 중: ${project_dir}\timelines\tin_boss5c\moment_100.gml
+변환된 설명 /// @description End
+
+GML 스크립트 변환 중: ${project_dir}\timelines\tin_boss5M\moment_10.gml
+변환된 설명 /// @description set
+
+GML 스크립트 변환 중: ${project_dir}\timelines\tin_boss5M\moment_500.gml
+변환된 설명 /// @description END
+
+GML 스크립트 변환 중: ${project_dir}\timelines\tin_boss5a_2\moment_50.gml
+변환된 설명 /// @description End
+
+GML 스크립트 변환 중: ${project_dir}\timelines\tin_boss5b_2\moment_80.gml
+변환된 설명 /// @description END
+
+GML 스크립트 변환 중: ${project_dir}\timelines\tin_boss5c_2\moment_100.gml
+변환된 설명 /// @description End
+
+GML 스크립트 변환 중: ${project_dir}\timelines\tin_boss5_new4\moment_100.gml
+변환된 설명 /// @description End
+
+GML 스크립트 변환 중: ${project_dir}\timelines\tin_boss6e\moment_85.gml
+변환된 설명 /// @description laser
+
+GML 스크립트 변환 중: ${project_dir}\timelines\tin_boss6e\moment_100.gml
+변환된 설명 /// @description laser
+
+GML 스크립트 변환 중: ${project_dir}\timelines\tin_boss7a\moment_0.gml
+변환된 설명 /// @description Key
+
+GML 스크립트 변환 중: ${project_dir}\timelines\tin_boss7b\moment_0.gml
+변환된 설명 /// @description Ball
+
+GML 스크립트 변환 중: ${project_dir}\timelines\tin_boss7c\moment_50.gml
+변환된 설명 /// @description End
+
+GML 스크립트 변환 중: ${project_dir}\timelines\tin_boss7c\moment_150.gml
+변환된 설명 /// @description End
+
+GML 스크립트 변환 중: ${project_dir}\timelines\tin_boss7f\moment_0.gml
+변환된 설명 /// @description Abs
+
+GML 스크립트 변환 중: ${project_dir}\timelines\tin_boss7_last1\moment_0.gml
+변환된 설명 /// @description Aqua Pattern
+
+GML 스크립트 변환 중: ${project_dir}\timelines\tin_boss7_last1\moment_221.gml
+변환된 설명 /// @description var reset
+
+GML 스크립트 변환 중: ${project_dir}\timelines\tin_boss7_last2\moment_0.gml
+변환된 설명 /// @description Karena Pattern
+
+GML 스크립트 변환 중: ${project_dir}\timelines\tin_boss7_last3\moment_0.gml
+변환된 설명 /// @description Ignis Pattern
+
+GML 스크립트 변환 중: ${project_dir}\timelines\tin_boss7_last4\moment_0.gml
+변환된 설명 /// @description Reina Pattern
+
+GML 스크립트 변환 중: ${project_dir}\timelines\tin_bossEx\moment_70.gml
+변환된 설명 /// @description Charge
+
+GML 스크립트 변환 중: ${project_dir}\timelines\tin_bossEx\moment_80.gml
+변환된 설명 /// @description Danaku mode
+
+GML 스크립트 변환 중: ${project_dir}\timelines\tin_bossEx\moment_120.gml
+변환된 설명 /// @description Reset
+
+GML 스크립트 변환 중: ${project_dir}\timelines\tin_ending1\moment_200.gml
+변환된 설명 /// @description fade
+
+GML 스크립트 변환 중: ${project_dir}\timelines\tin_ending1\moment_450.gml
+변환된 설명 /// @description fade
+
+GML 스크립트 변환 중: ${project_dir}\timelines\tin_ending1\moment_710.gml
+변환된 설명 /// @description fade
+
+GML 스크립트 변환 중: ${project_dir}\timelines\tin_ending1\moment_810.gml
+변환된 설명 /// @description music credit
+
+GML 스크립트 변환 중: ${project_dir}\timelines\tin_ending1\moment_1025.gml
+변환된 설명 /// @description fade
+
+GML 스크립트 변환 중: ${project_dir}\timelines\tin_ending1\moment_1125.gml
+변환된 설명 /// @description music credit2
+
+GML 스크립트 변환 중: ${project_dir}\timelines\tin_ending1\moment_1300.gml
+변환된 설명 /// @description fade
+
+GML 스크립트 변환 중: ${project_dir}\timelines\tin_ending1\moment_1470.gml
+변환된 설명 /// @description 1 Stage
+
+GML 스크립트 변환 중: ${project_dir}\timelines\tin_ending1\moment_1950.gml
+변환된 설명 /// @description fade
+
+GML 스크립트 변환 중: ${project_dir}\timelines\tin_ending1\moment_2100.gml
+변환된 설명 /// @description 2 Stage
+
+GML 스크립트 변환 중: ${project_dir}\timelines\tin_ending1\moment_2536.gml
+변환된 설명 /// @description fade
+
+GML 스크립트 변환 중: ${project_dir}\timelines\tin_ending1\moment_2686.gml
+변환된 설명 /// @description 3 Stage
+
+GML 스크립트 변환 중: ${project_dir}\timelines\tin_ending1\moment_3080.gml
+변환된 설명 /// @description fade
+
+GML 스크립트 변환 중: ${project_dir}\timelines\tin_ending1\moment_3170.gml
+변환된 설명 /// @description 4 Stage
+
+GML 스크립트 변환 중: ${project_dir}\timelines\tin_ending1\moment_3700.gml
+변환된 설명 /// @description fade
+
+GML 스크립트 변환 중: ${project_dir}\timelines\tin_ending1\moment_3850.gml
+변환된 설명 /// @description 5 Stage
+
+GML 스크립트 변환 중: ${project_dir}\timelines\tin_ending2\moment_310.gml
+변환된 설명 /// @description credit
+
+GML 스크립트 변환 중: ${project_dir}\timelines\tin_ending4_5\moment_260.gml
+변환된 설명 /// @description credit
+
+GML 스크립트 변환 중: ${project_dir}\timelines\tin_ending4\moment_420.gml
+변환된 설명 /// @description credit
+
+GML 스크립트 변환 중: ${project_dir}\timelines\tin_ending5\moment_40.gml
+변환된 설명 /// @description credit
+
+GML 스크립트 변환 중: ${project_dir}\timelines\tin_ending5\moment_260.gml
+변환된 설명 /// @description credit
+
+GML 스크립트 변환 중: ${project_dir}\timelines\tin_ending_bad\moment_50.gml
+변환된 설명 /// @description room_goto(rmending7);/// @param rmending7
+
+GML 스크립트 변환 중: ${project_dir}\timelines\tin_ending_bad\moment_720.gml
+변환된 문자열 - 줄 1: 'info'→"info"
+변환된 문자열 - 줄 1: 'time'→"time"
+변환된 문자열 - 줄 1: ':'→":"
+변환된 문자열 - 줄 1: 'info'→"info"
+변환된 문자열 - 줄 1: 'death'→"death"
+변환된 문자열 - 줄 1: ':'→":"
+
+GML 스크립트 변환 중: ${project_dir}\timelines\tin_boss8_init\moment_10.gml
+변환된 문자열 - 줄 10: 'boss'→"boss"
+변환된 문자열 - 줄 10: 'karena'→"karena"
+
+GML 스크립트 변환 중: ${project_dir}\timelines\tin_bossL1_old\moment_480.gml
+변환된 설명 /// @description middle
+
+GML 스크립트 변환 중: ${project_dir}\timelines\tin_bossd1\moment_75.gml
+변환된 설명 /// @description End
+
+GML 스크립트 변환 중: ${project_dir}\objects\sys_TITLE\Step_0.gml
+변환된 설명 /// @description set
+변환된 문자열 - 줄 82: 'Are you sure?'→"Are you sure?"
+
+GML 스크립트 변환 중: ${project_dir}\objects\sys_TITLE\Draw_0.gml
+변환된 문자열 - 줄 11: 'title'→"title"
+변환된 문자열 - 줄 11: 'explanation'→"explanation"
+변환된 문자열 - 줄 16: 'main'→"main"
+변환된 문자열 - 줄 16: 'play'→"play"
+변환된 문자열 - 줄 17: 'main'→"main"
+변환된 문자열 - 줄 17: 'option'→"option"
+변환된 문자열 - 줄 18: 'main'→"main"
+변환된 문자열 - 줄 18: 'exit'→"exit"
+변환된 문자열 - 줄 23: 'main'→"main"
+변환된 문자열 - 줄 23: 'save'→"save"
+변환된 문자열 - 줄 24: 'main'→"main"
+변환된 문자열 - 줄 24: 'save'→"save"
+변환된 문자열 - 줄 25: 'main'→"main"
+변환된 문자열 - 줄 25: 'save'→"save"
+변환된 문자열 - 줄 26: 'main'→"main"
+변환된 문자열 - 줄 26: 'back'→"back"
+변환된 문자열 - 줄 37: 'TIME : '→"TIME : "
+변환된 문자열 - 줄 38: 'DEATH : '→"DEATH : "
+변환된 문자열 - 줄 46: 'main'→"main"
+변환된 문자열 - 줄 46: 'bgm'→"bgm"
+변환된 문자열 - 줄 47: 'main'→"main"
+변환된 문자열 - 줄 47: 'debug'→"debug"
+변환된 문자열 - 줄 52: ' '→" "
+변환된 문자열 - 줄 52: 'main'→"main"
+변환된 문자열 - 줄 52: 'on'→"on"
+변환된 문자열 - 줄 53: ' '→" "
+변환된 문자열 - 줄 53: 'main'→"main"
+변환된 문자열 - 줄 53: 'off'→"off"
+변환된 문자열 - 줄 56: '  '→"  "
+변환된 문자열 - 줄 56: 'main'→"main"
+변환된 문자열 - 줄 56: 'debuglock'→"debuglock"
+변환된 문자열 - 줄 57: ' '→" "
+변환된 문자열 - 줄 57: 'main'→"main"
+변환된 문자열 - 줄 57: 'on'→"on"
+변환된 문자열 - 줄 58: ' '→" "
+변환된 문자열 - 줄 58: 'main'→"main"
+변환된 문자열 - 줄 58: 'off'→"off"
+변환된 문자열 - 줄 64: 'main'→"main"
+변환된 문자열 - 줄 64: 'config'→"config"
+변환된 문자열 - 줄 69: 'main'→"main"
+변환된 문자열 - 줄 69: 'back'→"back"
+변환된 문자열 - 줄 77: 'main'→"main"
+변환된 문자열 - 줄 77: 'load'→"load"
+변환된 문자열 - 줄 78: 'main'→"main"
+변환된 문자열 - 줄 78: 'setting'→"setting"
+변환된 문자열 - 줄 79: 'main'→"main"
+변환된 문자열 - 줄 79: 'back'→"back"
+변환된 문자열 - 줄 82: 'main'→"main"
+변환된 문자열 - 줄 82: 'new'→"new"
+변환된 문자열 - 줄 83: 'main'→"main"
+변환된 문자열 - 줄 83: 'back'→"back"
+변환된 문자열 - 줄 91: 'config'→"config"
+변환된 문자열 - 줄 91: 'up'→"up"
+변환된 문자열 - 줄 92: 'config'→"config"
+변환된 문자열 - 줄 92: 'down'→"down"
+변환된 문자열 - 줄 93: 'config'→"config"
+변환된 문자열 - 줄 93: 'left'→"left"
+변환된 문자열 - 줄 94: 'config'→"config"
+변환된 문자열 - 줄 94: 'right'→"right"
+변환된 문자열 - 줄 95: 'config'→"config"
+변환된 문자열 - 줄 95: 'shoot'→"shoot"
+변환된 문자열 - 줄 96: 'config'→"config"
+변환된 문자열 - 줄 96: 'jump'→"jump"
+변환된 문자열 - 줄 97: 'config'→"config"
+변환된 문자열 - 줄 97: 'restart'→"restart"
+변환된 문자열 - 줄 98: 'main'→"main"
+변환된 문자열 - 줄 98: 'back'→"back"
+변환된 문자열 - 줄 123: 'config'→"config"
+변환된 문자열 - 줄 123: 'none'→"none"
+변환된 문자열 - 줄 133: 'difficult'→"difficult"
+변환된 문자열 - 줄 133: 'easy'→"easy"
+변환된 문자열 - 줄 134: 'difficult'→"difficult"
+변환된 문자열 - 줄 134: 'normal'→"normal"
+변환된 문자열 - 줄 136: 'main'→"main"
+변환된 문자열 - 줄 136: 'difficult'→"difficult"
+변환된 문자열 - 줄 137: 'main'→"main"
+변환된 문자열 - 줄 137: 'reset'→"reset"
+변환된 문자열 - 줄 138: 'main'→"main"
+변환된 문자열 - 줄 138: 'back'→"back"
+변환된 문자열 - 줄 142: 'difficult'→"difficult"
+변환된 문자열 - 줄 142: 'easy'→"easy"
+변환된 문자열 - 줄 143: 'difficult'→"difficult"
+변환된 문자열 - 줄 143: 'normal'→"normal"
+변환된 문자열 - 줄 145: 'main'→"main"
+변환된 문자열 - 줄 145: 'start'→"start"
+변환된 문자열 - 줄 146: 'main'→"main"
+변환된 문자열 - 줄 146: 'difficult'→"difficult"
+변환된 문자열 - 줄 147: 'main'→"main"
+변환된 문자열 - 줄 147: 'back'→"back"
+변환된 문자열 - 줄 155: 'title'→"title"
+변환된 문자열 - 줄 155: 'version'→"version"
+변환된 문자열 - 줄 159: 'main'→"main"
+변환된 문자열 - 줄 159: 'press'→"press"
+
+GML 스크립트 변환 중: ${project_dir}\objects\object163\Draw_0.gml
+변환된 문자열 - 줄 9: 'main'→"main"
+변환된 문자열 - 줄 9: 'press'→"press"
+변환된 문자열 - 줄 12: 'main'→"main"
+변환된 문자열 - 줄 12: 'play'→"play"
+변환된 문자열 - 줄 14: 'main'→"main"
+변환된 문자열 - 줄 14: 'option'→"option"
+변환된 문자열 - 줄 16: 'main'→"main"
+변환된 문자열 - 줄 16: 'exit'→"exit"
+변환된 문자열 - 줄 21: 'main'→"main"
+변환된 문자열 - 줄 21: 'save'→"save"
+변환된 문자열 - 줄 23: 'main'→"main"
+변환된 문자열 - 줄 23: 'save'→"save"
+변환된 문자열 - 줄 25: 'main'→"main"
+변환된 문자열 - 줄 25: 'save'→"save"
+변환된 문자열 - 줄 27: 'main'→"main"
+변환된 문자열 - 줄 27: 'back'→"back"
+변환된 문자열 - 줄 30: 'main'→"main"
+변환된 문자열 - 줄 30: 'new'→"new"
+변환된 문자열 - 줄 32: 'main'→"main"
+변환된 문자열 - 줄 32: 'load'→"load"
+변환된 문자열 - 줄 34: 'main'→"main"
+변환된 문자열 - 줄 34: 'back'→"back"
+변환된 문자열 - 줄 39: 'main'→"main"
+변환된 문자열 - 줄 39: 'bgm'→"bgm"
+변환된 문자열 - 줄 39: 'main'→"main"
+변환된 문자열 - 줄 39: 'on'→"on"
+변환된 문자열 - 줄 40: 'main'→"main"
+변환된 문자열 - 줄 40: 'bgm'→"bgm"
+변환된 문자열 - 줄 40: 'main'→"main"
+변환된 문자열 - 줄 40: 'off'→"off"
+변환된 문자열 - 줄 44: 'main'→"main"
+변환된 문자열 - 줄 44: 'config'→"config"
+변환된 문자열 - 줄 45: 'main'→"main"
+변환된 문자열 - 줄 45: 'config'→"config"
+변환된 문자열 - 줄 45: 'config'→"config"
+변환된 문자열 - 줄 45: 'left'→"left"
+변환된 문자열 - 줄 46: 'main'→"main"
+변환된 문자열 - 줄 46: 'config'→"config"
+변환된 문자열 - 줄 46: 'config'→"config"
+변환된 문자열 - 줄 46: 'right'→"right"
+변환된 문자열 - 줄 47: 'main'→"main"
+변환된 문자열 - 줄 47: 'config'→"config"
+변환된 문자열 - 줄 47: 'config'→"config"
+변환된 문자열 - 줄 47: 'down'→"down"
+변환된 문자열 - 줄 48: 'main'→"main"
+변환된 문자열 - 줄 48: 'config'→"config"
+변환된 문자열 - 줄 48: 'config'→"config"
+변환된 문자열 - 줄 48: 'shoot'→"shoot"
+변환된 문자열 - 줄 49: 'main'→"main"
+변환된 문자열 - 줄 49: 'config'→"config"
+변환된 문자열 - 줄 49: 'config'→"config"
+변환된 문자열 - 줄 49: 'jump'→"jump"
+변환된 문자열 - 줄 50: 'main'→"main"
+변환된 문자열 - 줄 50: 'config'→"config"
+변환된 문자열 - 줄 50: 'config'→"config"
+변환된 문자열 - 줄 50: 'restart'→"restart"
+변환된 문자열 - 줄 53: 'main'→"main"
+변환된 문자열 - 줄 53: 'debug'→"debug"
+변환된 문자열 - 줄 53: 'main'→"main"
+변환된 문자열 - 줄 53: 'on'→"on"
+변환된 문자열 - 줄 54: 'main'→"main"
+변환된 문자열 - 줄 54: 'debug'→"debug"
+변환된 문자열 - 줄 54: 'main'→"main"
+변환된 문자열 - 줄 54: 'off'→"off"
+변환된 문자열 - 줄 55: 'main'→"main"
+변환된 문자열 - 줄 55: 'debug'→"debug"
+변환된 문자열 - 줄 58: 'main'→"main"
+변환된 문자열 - 줄 58: 'back'→"back"
+변환된 문자열 - 줄 61: 'main'→"main"
+변환된 문자열 - 줄 61: 'new'→"new"
+변환된 문자열 - 줄 64: 'main'→"main"
+변환된 문자열 - 줄 64: 'load'→"load"
+변환된 문자열 - 줄 67: 'main'→"main"
+변환된 문자열 - 줄 67: 'back'→"back"
+
+GML 스크립트 변환 중: ${project_dir}\objects\sys_global\Create_0.gml
+변환된 문자열 - 줄 22: 'T'→"T"
+변환된 문자열 - 줄 34: ''→""
+변환된 문자열 - 줄 81: 'unknown'→"unknown"
+변환된 문자열 - 줄 91: '<'→"<"
+변환된 문자열 - 줄 92: '<'→"<"
+변환된 문자열 - 줄 92: ''→""
+변환된 문자열 - 줄 93: '>'→">"
+변환된 문자열 - 줄 93: ''→""
+변환된 문자열 - 줄 95: '"'→"\""
+변환된 문자열 - 줄 96: '='→"="
+변환된 문자열 - 줄 100: '"'→"\""
+변환된 문자열 - 줄 102: '"'→"\""
+변환된 문자열 - 줄 105: '"'→"\""
+변환된 문자열 - 줄 107: '"'→"\""
+변환된 문자열 - 줄 111: '.'→"."
+
+GML 스크립트 변환 중: ${project_dir}\objects\sys_global\Step_0.gml
+변환된 문자열 - 줄 32: 'S'→"S"
+변환된 문자열 - 줄 45: 'Q'→"Q"
+변환된 문자열 - 줄 46: 'H'→"H"
+변환된 문자열 - 줄 47: 'J'→"J"
+변환된 문자열 - 줄 61: 'W'→"W"
+변환된 문자열 - 줄 62: 'G'→"G"
+변환된 문자열 - 줄 83: 'P'→"P"
+변환된 문자열 - 줄 84: 'P'→"P"
+
+GML 스크립트 변환 중: ${project_dir}\objects\sys_global\Other_10.gml
+변환된 설명 /// @description Destroy keyblock(Stage4)/// @param Stage4
+
+GML 스크립트 변환 중: ${project_dir}\objects\sys_global\Other_4.gml
+내장 키워드 변환됨 - 줄 4: view_angle=180→__view_set( e__VW.Angle, 0, 180 )
+
+GML 스크립트 변환 중: ${project_dir}\objects\sys_global\Draw_73.gml
+내장 키워드 변환됨 - 줄 7: view_xview→__view_get( e__VW.XView, 0 )
+내장 키워드 변환됨 - 줄 9: view_xview→__view_get( e__VW.XView, 0 )
+내장 키워드 변환됨 - 줄 23: view_xview→__view_get( e__VW.XView, 0 )
+내장 키워드 변환됨 - 줄 7: view_yview→__view_get( e__VW.YView, 0 )
+내장 키워드 변환됨 - 줄 9: view_yview→__view_get( e__VW.YView, 0 )
+내장 키워드 변환됨 - 줄 23: view_yview→__view_get( e__VW.YView, 0 )
+내장 키워드 변환됨 - 줄 23: view_wview→__view_get( e__VW.WView, 0 )
+
+GML 스크립트 변환 중: ${project_dir}\objects\sys_global\Draw_64.gml
+내장 키워드 변환됨 - 줄 50: view_angle→__view_get( e__VW.Angle, 0 )
+변환된 설명 /// @description Time & death
+변환된 문자열 - 줄 13: 'info'→"info"
+변환된 문자열 - 줄 13: 'death'→"death"
+변환된 문자열 - 줄 15: 'info'→"info"
+변환된 문자열 - 줄 15: 'time'→"time"
+변환된 문자열 - 줄 20: ''→""
+변환된 문자열 - 줄 22: 'God Mod#'→"God Mod#"
+변환된 문자열 - 줄 23: 'Enable Teleport#'→"Enable Teleport#"
+변환된 문자열 - 줄 24: 'Enable Damage Control('→"Enable Damage Control("
+변환된 문자열 - 줄 24: ')#'→")#"
+변환된 문자열 - 줄 25: 'Mask Visible#'→"Mask Visible#"
+변환된 문자열 - 줄 27: 'fps: '→"fps: "
+변환된 문자열 - 줄 27: ' ('→" ("
+변환된 문자열 - 줄 27: ')#'→")#"
+변환된 문자열 - 줄 28: 'mouse: '→"mouse: "
+변환된 문자열 - 줄 28: ','→","
+변환된 문자열 - 줄 28: '('→"("
+변환된 문자열 - 줄 28: ','→","
+변환된 문자열 - 줄 28: ')'→")"
+변환된 문자열 - 줄 28: '#'→"#"
+변환된 문자열 - 줄 29: 'gui size: '→"gui size: "
+변환된 문자열 - 줄 29: ','→","
+변환된 문자열 - 줄 29: '#'→"#"
+변환된 문자열 - 줄 30: 'instance: '→"instance: "
+변환된 문자열 - 줄 30: '#'→"#"
+변환된 문자열 - 줄 31: 'lastkey: '→"lastkey: "
+변환된 문자열 - 줄 31: '#'→"#"
+변환된 문자열 - 줄 32: 'P: '→"P: "
+변환된 문자열 - 줄 32: '#'→"#"
+변환된 문자열 - 줄 33: 'currentroom: '→"currentroom: "
+변환된 문자열 - 줄 33: '#'→"#"
+변환된 문자열 - 줄 35: '[obj_player] '→"[obj_player] "
+변환된 문자열 - 줄 35: '('→"("
+변환된 문자열 - 줄 36: ' FLIP: '→" FLIP: "
+변환된 문자열 - 줄 36: '#'→"#"
+변환된 문자열 - 줄 37: ' OnBlock: '→" OnBlock: "
+변환된 문자열 - 줄 37: '#'→"#"
+변환된 문자열 - 줄 38: ' djump: '→" djump: "
+변환된 문자열 - 줄 38: '#'→"#"
+변환된 문자열 - 줄 39: ' gravity: '→" gravity: "
+변환된 문자열 - 줄 39: '#'→"#"
+변환된 문자열 - 줄 40: ' reb: '→" reb: "
+변환된 문자열 - 줄 40: '#'→"#"
+변환된 문자열 - 줄 41: ' hmore: '→" hmore: "
+변환된 문자열 - 줄 41: ' ('→" ("
+변환된 문자열 - 줄 41: ')#'→")#"
+변환된 문자열 - 줄 45: '[sys_cam] '→"[sys_cam] "
+변환된 문자열 - 줄 45: '('→"("
+변환된 문자열 - 줄 46: ' type: '→" type: "
+변환된 문자열 - 줄 47: ' xrange: '→" xrange: "
+변환된 문자열 - 줄 48: ' yrange: '→" yrange: "
+변환된 문자열 - 줄 49: ' fade: '→" fade: "
+변환된 문자열 - 줄 49: ' ('→" ("
+변환된 문자열 - 줄 50: ' view angle: '→" view angle: "
+변환된 문자열 - 줄 63: '[obj_replay]#'→"[obj_replay]#"
+변환된 문자열 - 줄 64: ' visible : '→" visible : "
+변환된 문자열 - 줄 64: '#'→"#"
+변환된 문자열 - 줄 65: ' rec_play : '→" rec_play : "
+변환된 문자열 - 줄 65: '#'→"#"
+변환된 문자열 - 줄 66: ' rec_speed : '→" rec_speed : "
+변환된 문자열 - 줄 66: '#'→"#"
+변환된 문자열 - 줄 67: ' rec_pos : '→" rec_pos : "
+변환된 문자열 - 줄 67: '#'→"#"
+변환된 문자열 - 줄 68: '('→"("
+변환된 문자열 - 줄 68: ','→","
+변환된 문자열 - 줄 68: ')#'→")#"
+변환된 문자열 - 줄 69: 'room : '→"room : "
+변환된 문자열 - 줄 69: '#'→"#"
+변환된 문자열 - 줄 70: 'sprite : '→"sprite : "
+변환된 문자열 - 줄 70: '('→"("
+변환된 문자열 - 줄 70: ')#'→")#"
+변환된 문자열 - 줄 71: 'st : '→"st : "
+변환된 문자열 - 줄 71: '#'→"#"
+변환된 문자열 - 줄 77: '[obj_trigger]#'→"[obj_trigger]#"
+변환된 문자열 - 줄 78: ' trigger: '→" trigger: "
+변환된 문자열 - 줄 78: '#'→"#"
+변환된 문자열 - 줄 79: ' pos: '→" pos: "
+변환된 문자열 - 줄 79: '#'→"#"
+변환된 문자열 - 줄 83: '[sys_lighting]#'→"[sys_lighting]#"
+변환된 문자열 - 줄 84: ' bright: '→" bright: "
+변환된 문자열 - 줄 84: '#'→"#"
+변환된 문자열 - 줄 89: '[obj_ignis]#'→"[obj_ignis]#"
+변환된 문자열 - 줄 98: ','→","
+변환된 문자열 - 줄 98: '#'→"#"
+변환된 문자열 - 줄 103: '[obj_ignis]#'→"[obj_ignis]#"
+변환된 문자열 - 줄 104: ' shield armor: '→" shield armor: "
+변환된 문자열 - 줄 104: '#'→"#"
+변환된 문자열 - 줄 107: '[obj_vampire]#'→"[obj_vampire]#"
+변환된 문자열 - 줄 108: ' timeline: '→" timeline: "
+변환된 문자열 - 줄 108: '#'→"#"
+
+GML 스크립트 변환 중: ${project_dir}\objects\sys_lighting\Create_0.gml
+내장 키워드 변환됨 - 줄 2: view_wview→__view_get( e__VW.WView, 0 )
+내장 키워드 변환됨 - 줄 2: view_hview→__view_get( e__VW.HView, 0 )
+
+GML 스크립트 변환 중: ${project_dir}\objects\sys_lighting\Step_0.gml
+내장 키워드 변환됨 - 줄 1: view_wview→__view_get( e__VW.WView, 0 )
+내장 키워드 변환됨 - 줄 6: view_wview→__view_get( e__VW.WView, 0 )
+내장 키워드 변환됨 - 줄 6: view_wview→__view_get( e__VW.WView, 0 )
+내장 키워드 변환됨 - 줄 1: view_hview→__view_get( e__VW.HView, 0 )
+
+GML 스크립트 변환 중: ${project_dir}\objects\sys_lighting\Draw_0.gml
+내장 키워드 변환됨 - 줄 2: view_xview→__view_get( e__VW.XView, 0 )
+내장 키워드 변환됨 - 줄 2: view_yview→__view_get( e__VW.YView, 0 )
+
+GML 스크립트 변환 중: ${project_dir}\objects\sys_record\Step_0.gml
+변환된 문자열 - 줄 1: 'P'→"P"
+
+GML 스크립트 변환 중: ${project_dir}\objects\sys_record\Draw_73.gml
+내장 키워드 변환됨 - 줄 7: view_xview→__view_get( e__VW.XView, 0 )
+내장 키워드 변환됨 - 줄 7: view_yview→__view_get( e__VW.YView, 0 )
+
+GML 스크립트 변환 중: ${project_dir}\objects\sys_cam\Create_0.gml
+내장 키워드 변환됨 - 줄 45: view_wview[0]=800→__view_set( e__VW.WView, 0, 800 )
+내장 키워드 변환됨 - 줄 46: view_hview[0]=608→__view_set( e__VW.HView, 0, 608 )
+내장 키워드 변환됨 - 줄 49: view_hborder[0]=608→__view_set( e__VW.HBorder, 0, 608 )
+내장 키워드 변환됨 - 줄 48: view_vborder[0]=800→__view_set( e__VW.VBorder, 0, 800 )
+내장 키워드 변환됨 - 줄 51: view_hspeed[0]=-1→__view_set( e__VW.HSpeed, 0, -1 )
+내장 키워드 변환됨 - 줄 50: view_vspeed[0]=-1→__view_set( e__VW.VSpeed, 0, -1 )
+내장 키워드 변환됨 - 줄 41: view_object[0]=sys_cam→__view_set( e__VW.Object, 0, sys_cam )
+내장 키워드 변환됨 - 줄 43: view_wport[0]=800→__view_set( e__VW.WPort, 0, 800 )
+내장 키워드 변환됨 - 줄 44: view_hport[0]=608→__view_set( e__VW.HPort, 0, 608 )
+
+GML 스크립트 변환 중: ${project_dir}\objects\sys_cam\Step_0.gml
+내장 키워드 변환됨 - 줄 139: background_x[0]=x-400→__background_set( e__BG.X, 0, x-400 )
+내장 키워드 변환됨 - 줄 142: background_x[0]=x div SMOOTHBG_X-400→__background_set( e__BG.X, 0, x div SMOOTHBG_X-400 )
+내장 키워드 변환됨 - 줄 140: background_y[0]=y-304→__background_set( e__BG.Y, 0, y-304 )
+내장 키워드 변환됨 - 줄 143: background_y[0]=y div SMOOTHBG_Y-304→__background_set( e__BG.Y, 0, y div SMOOTHBG_Y-304 )
+내장 키워드 변환됨 - 줄 74: view_angle→__view_get( e__VW.Angle, 0 )
+내장 키워드 변환됨 - 줄 76: view_angle→__view_get( e__VW.Angle, 0 )
+내장 키워드 변환됨 - 줄 76: view_angle→__view_get( e__VW.Angle, 0 )
+내장 키워드 변환됨 - 줄 78: view_angle+=20→__view_set( e__VW.Angle, 0, __view_get( e__VW.Angle, 0 ) + (20) )
+내장 키워드 변환됨 - 줄 84: view_angle+=mvang→__view_set( e__VW.Angle, 0, __view_get( e__VW.Angle, 0 ) + (mvang) )
+변환된 설명 /// @description follow-view
+내장 키워드 변환됨 - 줄 74: view_angle=__view_get( e__VW.Angle, 0 ) mod 360→__view_set( e__VW.Angle, 0, __view_get( e__VW.Angle, 0 ) mod 360 )
+
+GML 스크립트 변환 중: ${project_dir}\objects\sys_cam\Draw_73.gml
+내장 키워드 변환됨 - 줄 2: view_xview→__view_get( e__VW.XView, 0 )
+내장 키워드 변환됨 - 줄 3: view_yview→__view_get( e__VW.YView, 0 )
+내장 키워드 변환됨 - 줄 6: view_wview→__view_get( e__VW.WView, 0 )
+내장 키워드 변환됨 - 줄 6: view_hview→__view_get( e__VW.HView, 0 )
+
+GML 스크립트 변환 중: ${project_dir}\objects\obj_create\Create_0.gml
+변환된 문자열 - 줄 9: 'boss'→"boss"
+변환된 문자열 - 줄 9: 'dimension'→"dimension"
+
+GML 스크립트 변환 중: ${project_dir}\objects\obj_create_tpevent\Step_0.gml
+변환된 설명 /// @description Particle
+
+GML 스크립트 변환 중: ${project_dir}\objects\obj_trigger\Step_0.gml
+내장 키워드 변환됨 - 줄 769: background_x[1]++→__background_set_pp( e__BG.X, 1, __background_get( e__BG.X, 1 ) + 1 )
+내장 키워드 변환됨 - 줄 698: background_colour=c_white→__background_set_colour( c_white )
+내장 키워드 변환됨 - 줄 267: view_xview→__view_get( e__VW.XView, 0 )
+내장 키워드 변환됨 - 줄 187: view_yview[0]→__view_get( e__VW.YView, 0 )
+내장 키워드 변환됨 - 줄 267: view_yview→__view_get( e__VW.YView, 0 )
+내장 키워드 변환됨 - 줄 267: view_wview→__view_get( e__VW.WView, 0 )
+내장 키워드 변환됨 - 줄 267: view_wview→__view_get( e__VW.WView, 0 )
+변환된 문자열 - 줄 13: 'boss'→"boss"
+변환된 문자열 - 줄 13: 'golem'→"golem"
+변환된 문자열 - 줄 30: 'boss'→"boss"
+변환된 문자열 - 줄 30: 'ignis'→"ignis"
+변환된 문자열 - 줄 524: 'Go Back'→"Go Back"
+변환된 문자열 - 줄 689: 'boss'→"boss"
+변환된 문자열 - 줄 689: 'dimension'→"dimension"
+
+GML 스크립트 변환 중: ${project_dir}\objects\obj_tp\Step_0.gml
+변환된 설명 /// @description particle
+
+GML 스크립트 변환 중: ${project_dir}\objects\obj_GAMEOVER\Create_0.gml
+내장 키워드 변환됨 - 줄 8: view_angle→__view_get( e__VW.Angle, 0 )
+
+GML 스크립트 변환 중: ${project_dir}\objects\obj_GAMEOVER\Draw_73.gml
+내장 키워드 변환됨 - 줄 2: view_xview→__view_get( e__VW.XView, 0 )
+내장 키워드 변환됨 - 줄 4: view_xview→__view_get( e__VW.XView, 0 )
+내장 키워드 변환됨 - 줄 2: view_yview→__view_get( e__VW.YView, 0 )
+내장 키워드 변환됨 - 줄 5: view_yview→__view_get( e__VW.YView, 0 )
+
+GML 스크립트 변환 중: ${project_dir}\objects\sys_shader\Create_0.gml
+변환된 설명 /// @description sh_godray
+
+GML 스크립트 변환 중: ${project_dir}\objects\obj_player\Create_0.gml
+변환된 설명 /// @description Set
+
+GML 스크립트 변환 중: ${project_dir}\objects\obj_player\Step_2.gml
+내장 키워드 변환됨 - 줄 46: view_angle→__view_get( e__VW.Angle, 0 )
+내장 키워드 변환됨 - 줄 46: view_angle→__view_get( e__VW.Angle, 0 )
+내장 키워드 변환됨 - 줄 47: view_angle→__view_get( e__VW.Angle, 0 )
+
+GML 스크립트 변환 중: ${project_dir}\objects\obj_player\Step_0.gml
+변환된 설명 /// @description Movement and Controls (No Flip)/// @param No Flip
+변환된 문자열 - 줄 329: 'T'→"T"
+
+GML 스크립트 변환 중: ${project_dir}\objects\obj_player\Collision_aeab8a54-c336-46ac-8c6b-8a0c11c13f7e.gml
+변환된 설명 /// @description Collision with platforms
+
+GML 스크립트 변환 중: ${project_dir}\objects\obj_player\Collision_1f098849-e49d-40b7-9114-e0004c458574.gml
+변환된 설명 /// @description Basic collision with blocks
+
+GML 스크립트 변환 중: ${project_dir}\objects\obj_aqua_old\Create_0.gml
+변환된 문자열 - 줄 23: 'boss'→"boss"
+변환된 문자열 - 줄 23: 'aqua'→"aqua"
+
+GML 스크립트 변환 중: ${project_dir}\objects\obj_aqua_old\Step_0.gml
+변환된 문자열 - 줄 82: 'K'→"K"
+
+GML 스크립트 변환 중: ${project_dir}\objects\obj_aqua_old\Draw_73.gml
+변환된 설명 /// @description Health
+
+GML 스크립트 변환 중: ${project_dir}\objects\obj_ignis_old\Step_0.gml
+오류 : C:\Hv\Gamemaker Project\7.git\IWBTH\IWBTH\objects\obj_ignis_old\Step_0.gml - 12: 다중 관계형 동등 표현식 할당 - GML은 표현식에서 다중 할당을 지원하지 않습니다.
+오류 : C:\Hv\Gamemaker Project\7.git\IWBTH\IWBTH\objects\obj_ignis_old\Step_0.gml - 20: 예기치 않은 구문 오류
+오류 : C:\Hv\Gamemaker Project\7.git\IWBTH\IWBTH\objects\obj_ignis_old\Step_0.gml - 28: 예기치 않은 구문 오류
+오류 : C:\Hv\Gamemaker Project\7.git\IWBTH\IWBTH\objects\obj_ignis_old\Step_0.gml - 34: 예기치 않은 구문 오류
+오류 : C:\Hv\Gamemaker Project\7.git\IWBTH\IWBTH\objects\obj_ignis_old\Step_0.gml - 34: 예기치 않은 구문 오류
+오류 : C:\Hv\Gamemaker Project\7.git\IWBTH\IWBTH\objects\obj_ignis_old\Step_0.gml - 35: 예기치 않은 구문 오류
+오류 : C:\Hv\Gamemaker Project\7.git\IWBTH\IWBTH\objects\obj_ignis_old\Step_0.gml - 35: 예기치 않은 구문 오류
+오류 : C:\Hv\Gamemaker Project\7.git\IWBTH\IWBTH\objects\obj_ignis_old\Step_0.gml - 36: 예기치 않은 구문 오류
+오류 : C:\Hv\Gamemaker Project\7.git\IWBTH\IWBTH\objects\obj_ignis_old\Step_0.gml - 36: 예기치 않은 구문 오류
+오류 : C:\Hv\Gamemaker Project\7.git\IWBTH\IWBTH\objects\obj_ignis_old\Step_0.gml - 37: 예기치 않은 구문 오류
+오류 : C:\Hv\Gamemaker Project\7.git\IWBTH\IWBTH\objects\obj_ignis_old\Step_0.gml - 37: 예기치 않은 구문 오류
+오류 : C:\Hv\Gamemaker Project\7.git\IWBTH\IWBTH\objects\obj_ignis_old\Step_0.gml - 55: 예기치 않은 구문 오류
+오류 : C:\Hv\Gamemaker Project\7.git\IWBTH\IWBTH\objects\obj_ignis_old\Step_0.gml - 59: 예기치 않은 구문 오류
+오류 : C:\Hv\Gamemaker Project\7.git\IWBTH\IWBTH\objects\obj_ignis_old\Step_0.gml - 63: 예기치 않은 구문 오류
+오류 : C:\Hv\Gamemaker Project\7.git\IWBTH\IWBTH\objects\obj_ignis_old\Step_0.gml - 72: 예기치 않은 구문 오류
+너무 많은 오류 - GML이 처리되지 않습니다: ${project_dir}\objects\obj_ignis_old\Step_0.gml
+
+GML 스크립트 변환 중: ${project_dir}\objects\obj_ignis_old\Draw_73.gml
+내장 키워드 변환됨 - 줄 4: view_xview→__view_get( e__VW.XView, 0 )
+내장 키워드 변환됨 - 줄 4: view_yview→__view_get( e__VW.YView, 0 )
+
+GML 스크립트 변환 중: ${project_dir}\objects\obj_ignis_old\Draw_0.gml
+내장 키워드 변환됨 - 줄 5: view_xview→__view_get( e__VW.XView, 0 )
+내장 키워드 변환됨 - 줄 6: view_yview→__view_get( e__VW.YView, 0 )
+내장 키워드 변환됨 - 줄 7: view_wview→__view_get( e__VW.WView, 0 )
+내장 키워드 변환됨 - 줄 8: view_hview→__view_get( e__VW.HView, 0 )
+
+GML 스크립트 변환 중: ${project_dir}\objects\obj_ignis_unused\Step_0.gml
+오류 : C:\Hv\Gamemaker Project\7.git\IWBTH\IWBTH\objects\obj_ignis_unused\Step_0.gml - 10: 다중 관계형 동등 표현식 할당 - GML은 표현식에서 다중 할당을 지원하지 않습니다.
+오류 : C:\Hv\Gamemaker Project\7.git\IWBTH\IWBTH\objects\obj_ignis_unused\Step_0.gml - 16: 예기치 않은 구문 오류
+오류 : C:\Hv\Gamemaker Project\7.git\IWBTH\IWBTH\objects\obj_ignis_unused\Step_0.gml - 43: 예기치 않은 구문 오류
+오류 : C:\Hv\Gamemaker Project\7.git\IWBTH\IWBTH\objects\obj_ignis_unused\Step_0.gml - 45: 예기치 않은 구문 오류
+오류 : C:\Hv\Gamemaker Project\7.git\IWBTH\IWBTH\objects\obj_ignis_unused\Step_0.gml - 49: 예기치 않은 구문 오류
+너무 많은 오류 - GML이 처리되지 않습니다: ${project_dir}\objects\obj_ignis_unused\Step_0.gml
+
+GML 스크립트 변환 중: ${project_dir}\objects\obj_ignis_unused\Draw_0.gml
+내장 키워드 변환됨 - 줄 5: view_xview→__view_get( e__VW.XView, 0 )
+내장 키워드 변환됨 - 줄 6: view_yview→__view_get( e__VW.YView, 0 )
+내장 키워드 변환됨 - 줄 7: view_wview→__view_get( e__VW.WView, 0 )
+내장 키워드 변환됨 - 줄 8: view_hview→__view_get( e__VW.HView, 0 )
+
+GML 스크립트 변환 중: ${project_dir}\objects\object189\Create_0.gml
+변환된 문자열 - 줄 50: 'boss'→"boss"
+변환된 문자열 - 줄 50: 'mage'→"mage"
+
+GML 스크립트 변환 중: ${project_dir}\objects\object189\Draw_73.gml
+내장 키워드 변환됨 - 줄 43: view_xview→__view_get( e__VW.XView, 0 )
+내장 키워드 변환됨 - 줄 44: view_yview→__view_get( e__VW.YView, 0 )
+변환된 설명 /// @description Last
+
+GML 스크립트 변환 중: ${project_dir}\objects\obj_ribra\Create_0.gml
+변환된 문자열 - 줄 12: 'boss'→"boss"
+변환된 문자열 - 줄 12: 'ruinguardian'→"ruinguardian"
+
+GML 스크립트 변환 중: ${project_dir}\objects\obj_ribra\Collision_3fb742e4-376a-4594-acb1-e29fd9c55400.gml
+변환된 설명 /// @description Hit
+
+GML 스크립트 변환 중: ${project_dir}\objects\obj_ribra\Draw_73.gml
+내장 키워드 변환됨 - 줄 4: view_xview→__view_get( e__VW.XView, 0 )
+내장 키워드 변환됨 - 줄 5: view_yview→__view_get( e__VW.YView, 0 )
+변환된 설명 /// @description Health
+
+GML 스크립트 변환 중: ${project_dir}\objects\obj_vampair_old\Create_0.gml
+변환된 문자열 - 줄 64: 'boss'→"boss"
+변환된 문자열 - 줄 64: 'vampire'→"vampire"
+
+GML 스크립트 변환 중: ${project_dir}\objects\obj_vampair_old\Alarm_0.gml
+변환된 설명 /// @description Pattern
+
+GML 스크립트 변환 중: ${project_dir}\objects\obj_vampair_old\Step_0.gml
+내장 키워드 변환됨 - 줄 90: background_alpha[2]-=0.02→__background_set( e__BG.Alpha, 2, __background_get( e__BG.Alpha, 2 ) - (0.02) )
+변환된 설명 /// @description Fade
+변환된 문자열 - 줄 144: 'K'→"K"
+
+GML 스크립트 변환 중: ${project_dir}\objects\obj_vampair_old\Collision_bff24979-c7dd-43bc-842a-d30b28513e3b.gml
+변환된 설명 /// @description Hit
+
+GML 스크립트 변환 중: ${project_dir}\objects\obj_vampair_old\Other_11.gml
+변환된 설명 /// @description ds_tmp destroy
+
+GML 스크립트 변환 중: ${project_dir}\objects\obj_vampair_old\Other_10.gml
+변환된 설명 /// @description PhaseSet
+
+GML 스크립트 변환 중: ${project_dir}\objects\obj_vampair_old\Draw_73.gml
+내장 키워드 변환됨 - 줄 7: view_xview→__view_get( e__VW.XView, 0 )
+내장 키워드 변환됨 - 줄 8: view_yview→__view_get( e__VW.YView, 0 )
+변환된 설명 /// @description Effect
+
+GML 스크립트 변환 중: ${project_dir}\objects\obj_vampair_old\Draw_0.gml
+내장 키워드 변환됨 - 줄 5: view_xview→__view_get( e__VW.XView, 0 )
+내장 키워드 변환됨 - 줄 5: view_xview→__view_get( e__VW.XView, 0 )
+내장 키워드 변환됨 - 줄 5: view_yview→__view_get( e__VW.YView, 0 )
+내장 키워드 변환됨 - 줄 5: view_yview→__view_get( e__VW.YView, 0 )
+내장 키워드 변환됨 - 줄 5: view_wview→__view_get( e__VW.WView, 0 )
+내장 키워드 변환됨 - 줄 5: view_hview→__view_get( e__VW.HView, 0 )
+
+GML 스크립트 변환 중: ${project_dir}\objects\tmp_boss\Create_0.gml
+변환된 문자열 - 줄 12: 'boss'→"boss"
+변환된 문자열 - 줄 12: 'boss'→"boss"
+
+GML 스크립트 변환 중: ${project_dir}\objects\tmp_boss\Collision_3bee872c-63a3-43b6-b395-63aa561d1faa.gml
+변환된 설명 /// @description Hit
+
+GML 스크립트 변환 중: ${project_dir}\objects\tmp_boss\Draw_73.gml
+내장 키워드 변환됨 - 줄 4: view_xview→__view_get( e__VW.XView, 0 )
+내장 키워드 변환됨 - 줄 5: view_yview→__view_get( e__VW.YView, 0 )
+변환된 설명 /// @description Health
+
+GML 스크립트 변환 중: ${project_dir}\objects\obj_dimension\Create_0.gml
+변환된 문자열 - 줄 12: 'boss'→"boss"
+변환된 문자열 - 줄 12: 'dimension'→"dimension"
+
+GML 스크립트 변환 중: ${project_dir}\objects\obj_dimension\Collision_4251a1fc-8dc0-4d0d-af34-9eae398bdce9.gml
+변환된 설명 /// @description Hit
+
+GML 스크립트 변환 중: ${project_dir}\objects\obj_dimension\Draw_73.gml
+내장 키워드 변환됨 - 줄 4: view_xview→__view_get( e__VW.XView, 0 )
+내장 키워드 변환됨 - 줄 5: view_yview→__view_get( e__VW.YView, 0 )
+변환된 설명 /// @description Health
+
+GML 스크립트 변환 중: ${project_dir}\objects\obj_golem\Draw_0.gml
+내장 키워드 변환됨 - 줄 3: view_xview→__view_get( e__VW.XView, 0 )
+내장 키워드 변환됨 - 줄 4: view_yview→__view_get( e__VW.YView, 0 )
+내장 키워드 변환됨 - 줄 5: view_wview→__view_get( e__VW.WView, 0 )
+내장 키워드 변환됨 - 줄 6: view_hview→__view_get( e__VW.HView, 0 )
+
+GML 스크립트 변환 중: ${project_dir}\objects\obj_ignis\Alarm_1.gml
+변환된 설명 /// @description Pattern
+
+GML 스크립트 변환 중: ${project_dir}\objects\obj_ignis\Step_0.gml
+변환된 설명 /// @description f_spd
+
+GML 스크립트 변환 중: ${project_dir}\objects\obj_ignis\Draw_73.gml
+내장 키워드 변환됨 - 줄 4: view_xview→__view_get( e__VW.XView, 0 )
+내장 키워드 변환됨 - 줄 9: view_xview→__view_get( e__VW.XView, 0 )
+내장 키워드 변환됨 - 줄 4: view_yview→__view_get( e__VW.YView, 0 )
+내장 키워드 변환됨 - 줄 10: view_yview→__view_get( e__VW.YView, 0 )
+내장 키워드 변환됨 - 줄 11: view_wview→__view_get( e__VW.WView, 0 )
+내장 키워드 변환됨 - 줄 12: view_hview→__view_get( e__VW.HView, 0 )
+
+GML 스크립트 변환 중: ${project_dir}\objects\obj_reaper\Collision_27e2c3e3-4489-4296-bd8e-a902f28953e5.gml
+변환된 문자열 - 줄 19: 'boss'→"boss"
+변환된 문자열 - 줄 19: 'reaper'→"reaper"
+
+GML 스크립트 변환 중: ${project_dir}\objects\obj_sealedstone_boss\Other_10.gml
+변환된 문자열 - 줄 1: 'boss'→"boss"
+변환된 문자열 - 줄 1: 'sealedstone'→"sealedstone"
+
+GML 스크립트 변환 중: ${project_dir}\objects\obj_sealedstone_boss\Draw_73.gml
+내장 키워드 변환됨 - 줄 3: view_xview→__view_get( e__VW.XView, 0 )
+내장 키워드 변환됨 - 줄 4: view_yview→__view_get( e__VW.YView, 0 )
+
+GML 스크립트 변환 중: ${project_dir}\objects\obj_aqua\Create_0.gml
+변환된 문자열 - 줄 33: 'boss'→"boss"
+변환된 문자열 - 줄 33: 'aqua'→"aqua"
+
+GML 스크립트 변환 중: ${project_dir}\objects\obj_aqua\Draw_73.gml
+내장 키워드 변환됨 - 줄 4: view_xview→__view_get( e__VW.XView, 0 )
+내장 키워드 변환됨 - 줄 5: view_yview→__view_get( e__VW.YView, 0 )
+변환된 설명 /// @description Health
+
+GML 스크립트 변환 중: ${project_dir}\objects\obj_witch\Step_0.gml
+변환된 설명 /// @description Dir
+
+GML 스크립트 변환 중: ${project_dir}\objects\obj_sorcerer\Create_0.gml
+변환된 문자열 - 줄 57: 'boss'→"boss"
+변환된 문자열 - 줄 57: 'mage'→"mage"
+
+GML 스크립트 변환 중: ${project_dir}\objects\obj_sorcerer\Draw_73.gml
+내장 키워드 변환됨 - 줄 43: view_xview→__view_get( e__VW.XView, 0 )
+내장 키워드 변환됨 - 줄 44: view_yview→__view_get( e__VW.YView, 0 )
+변환된 설명 /// @description Last
+
+GML 스크립트 변환 중: ${project_dir}\objects\obj_vampair\Create_0.gml
+변환된 문자열 - 줄 94: 'boss'→"boss"
+변환된 문자열 - 줄 94: 'vampire'→"vampire"
+
+GML 스크립트 변환 중: ${project_dir}\objects\obj_vampair\Alarm_0.gml
+변환된 설명 /// @description Pattern
+
+GML 스크립트 변환 중: ${project_dir}\objects\obj_vampair\Step_0.gml
+내장 키워드 변환됨 - 줄 90: background_alpha[2]-=0.02→__background_set( e__BG.Alpha, 2, __background_get( e__BG.Alpha, 2 ) - (0.02) )
+내장 키워드 변환됨 - 줄 195: background_alpha[0]=(1+cos(degtorad(I)/2))/2 * 0.4 + 0.6→__background_set( e__BG.Alpha, 0, (1+cos(degtorad(I)/2))/2 * 0.4 + 0.6 )
+변환된 설명 /// @description Fade
+변환된 문자열 - 줄 188: 'K'→"K"
+
+GML 스크립트 변환 중: ${project_dir}\objects\obj_vampair\Collision_013e9c10-b34b-4407-b735-3073f6f29244.gml
+변환된 설명 /// @description Hit
+
+GML 스크립트 변환 중: ${project_dir}\objects\obj_vampair\Other_11.gml
+변환된 설명 /// @description ds_tmp destroy
+
+GML 스크립트 변환 중: ${project_dir}\objects\obj_vampair\Other_10.gml
+변환된 설명 /// @description Phase Set
+
+GML 스크립트 변환 중: ${project_dir}\objects\obj_vampair\Draw_73.gml
+내장 키워드 변환됨 - 줄 7: view_xview→__view_get( e__VW.XView, 0 )
+내장 키워드 변환됨 - 줄 8: view_yview→__view_get( e__VW.YView, 0 )
+변환된 설명 /// @description Effect
+
+GML 스크립트 변환 중: ${project_dir}\objects\obj_vampair\Draw_0.gml
+내장 키워드 변환됨 - 줄 5: view_xview→__view_get( e__VW.XView, 0 )
+내장 키워드 변환됨 - 줄 5: view_xview→__view_get( e__VW.XView, 0 )
+내장 키워드 변환됨 - 줄 5: view_yview→__view_get( e__VW.YView, 0 )
+내장 키워드 변환됨 - 줄 5: view_yview→__view_get( e__VW.YView, 0 )
+내장 키워드 변환됨 - 줄 5: view_wview→__view_get( e__VW.WView, 0 )
+내장 키워드 변환됨 - 줄 5: view_hview→__view_get( e__VW.HView, 0 )
+
+GML 스크립트 변환 중: ${project_dir}\objects\obj_karena\Step_0.gml
+변환된 설명 /// @description Particle
+
+GML 스크립트 변환 중: ${project_dir}\objects\obj_karena\Collision_2a217484-df32-4479-8b1c-7f14191d2e5b.gml
+변환된 설명 /// @description Hit
+
+GML 스크립트 변환 중: ${project_dir}\objects\obj_karena\Draw_73.gml
+내장 키워드 변환됨 - 줄 4: view_xview→__view_get( e__VW.XView, 0 )
+내장 키워드 변환됨 - 줄 5: view_yview→__view_get( e__VW.YView, 0 )
+변환된 설명 /// @description Health
+
+GML 스크립트 변환 중: ${project_dir}\objects\obj_beam\Other_0.gml
+변환된 설명 /// @description Delete
+
+GML 스크립트 변환 중: ${project_dir}\objects\obj_light\Step_0.gml
+변환된 설명 /// @description Paritcle
+
+GML 스크립트 변환 중: ${project_dir}\objects\obj_light2\Step_0.gml
+내장 키워드 변환됨 - 줄 7: view_xview→__view_get( e__VW.XView, 0 )
+내장 키워드 변환됨 - 줄 7: view_xview→__view_get( e__VW.XView, 0 )
+내장 키워드 변환됨 - 줄 8: view_xview→__view_get( e__VW.XView, 0 )
+내장 키워드 변환됨 - 줄 8: view_xview→__view_get( e__VW.XView, 0 )
+내장 키워드 변환됨 - 줄 9: view_xview→__view_get( e__VW.XView, 0 )
+내장 키워드 변환됨 - 줄 9: view_xview→__view_get( e__VW.XView, 0 )
+내장 키워드 변환됨 - 줄 7: view_yview→__view_get( e__VW.YView, 0 )
+내장 키워드 변환됨 - 줄 7: view_yview→__view_get( e__VW.YView, 0 )
+내장 키워드 변환됨 - 줄 8: view_yview→__view_get( e__VW.YView, 0 )
+내장 키워드 변환됨 - 줄 8: view_yview→__view_get( e__VW.YView, 0 )
+내장 키워드 변환됨 - 줄 9: view_yview→__view_get( e__VW.YView, 0 )
+내장 키워드 변환됨 - 줄 9: view_yview→__view_get( e__VW.YView, 0 )
+
+GML 스크립트 변환 중: ${project_dir}\objects\obj_orb\Step_0.gml
+변환된 설명 /// @description particle
+
+GML 스크립트 변환 중: ${project_dir}\objects\obj_shift\Step_0.gml
+변환된 설명 /// @description particle
+
+GML 스크립트 변환 중: ${project_dir}\objects\obj_ruingolem\Other_10.gml
+변환된 문자열 - 줄 1: 'boss'→"boss"
+변환된 문자열 - 줄 1: 'ruingolem'→"ruingolem"
+
+GML 스크립트 변환 중: ${project_dir}\objects\obj_waterball\Alarm_1.gml
+변환된 설명 /// @description Destroy
+
+GML 스크립트 변환 중: ${project_dir}\objects\obj_waterball\Alarm_0.gml
+변환된 설명 /// @description ind
+
+GML 스크립트 변환 중: ${project_dir}\objects\obj_sealedstone\Step_0.gml
+변환된 설명 /// @description particle
+
+GML 스크립트 변환 중: ${project_dir}\objects\obj_jijin\Step_0.gml
+내장 키워드 변환됨 - 줄 9: view_xview→__view_get( e__VW.XView, 0 )
+내장 키워드 변환됨 - 줄 9: view_yview→__view_get( e__VW.YView, 0 )
+내장 키워드 변환됨 - 줄 9: view_wview→__view_get( e__VW.WView, 0 )
+내장 키워드 변환됨 - 줄 9: view_wview→__view_get( e__VW.WView, 0 )
+
+GML 스크립트 변환 중: ${project_dir}\objects\obj_whitechunk\Step_0.gml
+변환된 설명 /// @description Particle
+
+GML 스크립트 변환 중: ${project_dir}\objects\obj_jellygener\Step_0.gml
+내장 키워드 변환됨 - 줄 7: view_yview[0]→__view_get( e__VW.YView, 0 )
+변환된 설명 /// @description act
+
+GML 스크립트 변환 중: ${project_dir}\objects\obj_spell\Step_0.gml
+변환된 설명 /// @description Particle
+
+GML 스크립트 변환 중: ${project_dir}\objects\obj_autogolem\Draw_0.gml
+변환된 설명 /// @description Hit
+
+GML 스크립트 변환 중: ${project_dir}\objects\obj_guyfield\Step_0.gml
+변환된 설명 /// @description particle
+
+GML 스크립트 변환 중: ${project_dir}\objects\obj_thepower\Draw_0.gml
+내장 키워드 변환됨 - 줄 3: view_xview→__view_get( e__VW.XView, 0 )
+내장 키워드 변환됨 - 줄 4: view_yview→__view_get( e__VW.YView, 0 )
+내장 키워드 변환됨 - 줄 5: view_wview→__view_get( e__VW.WView, 0 )
+내장 키워드 변환됨 - 줄 6: view_hview→__view_get( e__VW.HView, 0 )
+
+GML 스크립트 변환 중: ${project_dir}\objects\obj_dimensionstart\Create_0.gml
+내장 키워드 변환됨 - 줄 1: view_visible[1]=true→__view_set( e__VW.Visible, 1, true )
+내장 키워드 변환됨 - 줄 4: view_xport[1]=400*(nview/100)→__view_set( e__VW.XPort, 1, 400*(nview/100) )
+내장 키워드 변환됨 - 줄 5: view_yport[1]=304*(nview/100)→__view_set( e__VW.YPort, 1, 304*(nview/100) )
+내장 키워드 변환됨 - 줄 6: view_wport[1]=800*(1-nview/100)→__view_set( e__VW.WPort, 1, 800*(1-nview/100) )
+내장 키워드 변환됨 - 줄 7: view_hport[1]=608*(1-nview/100)→__view_set( e__VW.HPort, 1, 608*(1-nview/100) )
+
+GML 스크립트 변환 중: ${project_dir}\objects\obj_dimensionstart\Destroy_0.gml
+내장 키워드 변환됨 - 줄 5: view_xview[0]=0→__view_set( e__VW.XView, 0, 0 )
+내장 키워드 변환됨 - 줄 5: view_yview[0]=0→__view_set( e__VW.YView, 0, 0 )
+내장 키워드 변환됨 - 줄 6: view_wview[0]=800→__view_set( e__VW.WView, 0, 800 )
+내장 키워드 변환됨 - 줄 6: view_hview[0]=608→__view_set( e__VW.HView, 0, 608 )
+내장 키워드 변환됨 - 줄 1: view_visible[1]=false→__view_set( e__VW.Visible, 1, false )
+내장 키워드 변환됨 - 줄 2: view_xport[0]=0→__view_set( e__VW.XPort, 0, 0 )
+내장 키워드 변환됨 - 줄 2: view_yport[0]=0→__view_set( e__VW.YPort, 0, 0 )
+내장 키워드 변환됨 - 줄 3: view_wport[0]=800→__view_set( e__VW.WPort, 0, 800 )
+내장 키워드 변환됨 - 줄 3: view_hport[0]=608→__view_set( e__VW.HPort, 0, 608 )
+
+GML 스크립트 변환 중: ${project_dir}\objects\obj_dimensionstart\Step_0.gml
+내장 키워드 변환됨 - 줄 4: view_xport[1]=400*(nview/100)→__view_set( e__VW.XPort, 1, 400*(nview/100) )
+내장 키워드 변환됨 - 줄 5: view_yport[1]=304*(nview/100)→__view_set( e__VW.YPort, 1, 304*(nview/100) )
+내장 키워드 변환됨 - 줄 6: view_wport[1]=800*(1-nview/100)→__view_set( e__VW.WPort, 1, 800*(1-nview/100) )
+내장 키워드 변환됨 - 줄 7: view_hport[1]=608*(1-nview/100)→__view_set( e__VW.HPort, 1, 608*(1-nview/100) )
+
+GML 스크립트 변환 중: ${project_dir}\objects\sys_part\Create_0.gml
+변환된 설명 /// @description Set
+
+GML 스크립트 변환 중: ${project_dir}\objects\obj_dimension_unused\Step_0.gml
+내장 키워드 변환됨 - 줄 57: background_colour=c_black→__background_set_colour( c_black )
+변환된 설명 /// @description Particle
+
+GML 스크립트 변환 중: ${project_dir}\objects\obj_dimension_unused\Collision_c2df7e47-3b89-4cde-a90b-50ab27017f24.gml
+변환된 설명 /// @description Hit
+
+GML 스크립트 변환 중: ${project_dir}\objects\obj_dimension_unused\Other_12.gml
+변환된 설명 /// @description HP
+
+GML 스크립트 변환 중: ${project_dir}\objects\obj_dimension_unused\Draw_73.gml
+내장 키워드 변환됨 - 줄 4: view_xview→__view_get( e__VW.XView, 0 )
+내장 키워드 변환됨 - 줄 5: view_yview→__view_get( e__VW.YView, 0 )
+변환된 설명 /// @description Health
+
+GML 스크립트 변환 중: ${project_dir}\objects\obj_dimension_unused\KeyPress_32.gml
+변환된 설명 /// @description Debug
+
+GML 스크립트 변환 중: ${project_dir}\objects\obj_event_ending\Step_0.gml
+내장 키워드 변환됨 - 줄 27: background_x=view_xview→__background_set( e__BG.X, 0, view_xview )
+내장 키워드 변환됨 - 줄 28: background_y=view_yview→__background_set( e__BG.Y, 0, view_yview )
+내장 키워드 변환됨 - 줄 22: view_xview→__view_get( e__VW.XView, 0 )
+내장 키워드 변환됨 - 줄 19: view_xview-=sx→__view_set( e__VW.XView, 0, __view_get( e__VW.XView, 0 ) - (sx) )
+내장 키워드 변환됨 - 줄 33: view_xview+=sx→__view_set( e__VW.XView, 0, __view_get( e__VW.XView, 0 ) + (sx) )
+내장 키워드 변환됨 - 줄 23: view_yview→__view_get( e__VW.YView, 0 )
+내장 키워드 변환됨 - 줄 20: view_yview-=sy→__view_set( e__VW.YView, 0, __view_get( e__VW.YView, 0 ) - (sy) )
+내장 키워드 변환됨 - 줄 34: view_yview+=sy→__view_set( e__VW.YView, 0, __view_get( e__VW.YView, 0 ) + (sy) )
+내장 키워드 변환됨 - 줄 22: view_wview→__view_get( e__VW.WView, 0 )
+내장 키워드 변환됨 - 줄 23: view_hview→__view_get( e__VW.HView, 0 )
+변환된 설명 /// @description particle
+내장 키워드 변환됨 - 줄 27: view_xview→__view_get( e__VW.XView, 0 )
+내장 키워드 변환됨 - 줄 22: view_xview=clamp(__view_get( e__VW.XView, 0 )+movxvw,0,room_width-__view_get( e__VW.WView, 0 ))→__view_set( e__VW.XView, 0, clamp(__view_get( e__VW.XView, 0 )+movxvw,0,room_width-__view_get( e__VW.WView, 0 )) )
+내장 키워드 변환됨 - 줄 28: view_yview→__view_get( e__VW.YView, 0 )
+내장 키워드 변환됨 - 줄 23: view_yview=clamp(__view_get( e__VW.YView, 0 )+movyvw,0,room_height-__view_get( e__VW.HView, 0 ))→__view_set( e__VW.YView, 0, clamp(__view_get( e__VW.YView, 0 )+movyvw,0,room_height-__view_get( e__VW.HView, 0 )) )
+
+GML 스크립트 변환 중: ${project_dir}\objects\obj_event_ending\Draw_73.gml
+내장 키워드 변환됨 - 줄 2: view_xview→__view_get( e__VW.XView, 0 )
+내장 키워드 변환됨 - 줄 9: view_xview→__view_get( e__VW.XView, 0 )
+내장 키워드 변환됨 - 줄 24: view_xview→__view_get( e__VW.XView, 0 )
+내장 키워드 변환됨 - 줄 3: view_yview→__view_get( e__VW.YView, 0 )
+내장 키워드 변환됨 - 줄 9: view_yview→__view_get( e__VW.YView, 0 )
+내장 키워드 변환됨 - 줄 24: view_yview→__view_get( e__VW.YView, 0 )
+내장 키워드 변환됨 - 줄 5: view_wview→__view_get( e__VW.WView, 0 )
+내장 키워드 변환됨 - 줄 5: view_hview→__view_get( e__VW.HView, 0 )
+변환된 문자열 - 줄 18: 'info'→"info"
+변환된 문자열 - 줄 18: 'time'→"time"
+변환된 문자열 - 줄 18: ': '→": "
+변환된 문자열 - 줄 19: 'info'→"info"
+변환된 문자열 - 줄 19: 'death'→"death"
+변환된 문자열 - 줄 19: ': '→": "
+
+GML 스크립트 변환 중: ${project_dir}\objects\obj_event_boss\Step_0.gml
+변환된 설명 /// @description onmov
+
+GML 스크립트 변환 중: ${project_dir}\objects\obj_towerbackground\Draw_0.gml
+내장 키워드 변환됨 - 줄 3: view_xview→__view_get( e__VW.XView, 0 )
+내장 키워드 변환됨 - 줄 3: view_xview→__view_get( e__VW.XView, 0 )
+내장 키워드 변환됨 - 줄 4: view_yview→__view_get( e__VW.YView, 0 )
+내장 키워드 변환됨 - 줄 4: view_yview→__view_get( e__VW.YView, 0 )
+내장 키워드 변환됨 - 줄 3: view_wview→__view_get( e__VW.WView, 0 )
+내장 키워드 변환됨 - 줄 4: view_hview→__view_get( e__VW.HView, 0 )
+
+GML 스크립트 변환 중: ${project_dir}\objects\obj_dimensionkidform\Create_0.gml
+변환된 설명 /// @description set
+
+GML 스크립트 변환 중: ${project_dir}\objects\obj_dimensionkidform\Step_0.gml
+변환된 설명 /// @description Movement
+변환된 문자열 - 줄 56: '1'→"1"
+변환된 문자열 - 줄 58: '2'→"2"
+변환된 문자열 - 줄 60: '3'→"3"
+
+GML 스크립트 변환 중: ${project_dir}\objects\obj_dimensionkidform\Collision_271ef8d6-8f41-4a09-a147-db0f582cd39a.gml
+변환된 설명 /// @description Hit
+
+GML 스크립트 변환 중: ${project_dir}\objects\obj_dimensionkidform\Collision_0b8993d7-44f2-42b5-9120-450ac4742616.gml
+변환된 설명 /// @description Collision with platforms
+
+GML 스크립트 변환 중: ${project_dir}\objects\obj_dimensionkidform\Collision_9b16c09a-348f-449f-b4c8-2b2433d08a14.gml
+변환된 설명 /// @description Basic collision with blocks
+
+GML 스크립트 변환 중: ${project_dir}\objects\obj_dimensionkidform\Draw_73.gml
+내장 키워드 변환됨 - 줄 4: view_xview→__view_get( e__VW.XView, 0 )
+내장 키워드 변환됨 - 줄 5: view_yview→__view_get( e__VW.YView, 0 )
+변환된 설명 /// @description Health
+
+GML 스크립트 변환 중: ${project_dir}\objects\obj_dimensionbossform\Create_0.gml
+변환된 설명 /// @description set
+
+GML 스크립트 변환 중: ${project_dir}\objects\obj_dimensionbossform\Step_0.gml
+변환된 설명 /// @description debug
+변환된 문자열 - 줄 4: '1'→"1"
+
+GML 스크립트 변환 중: ${project_dir}\objects\obj_dimensionbossform\Collision_0c6fdb23-3ddb-4cba-a3ea-d8278c38d182.gml
+변환된 설명 /// @description Hit
+
+GML 스크립트 변환 중: ${project_dir}\objects\obj_dimensionbossform\Draw_73.gml
+내장 키워드 변환됨 - 줄 4: view_xview→__view_get( e__VW.XView, 0 )
+내장 키워드 변환됨 - 줄 5: view_yview→__view_get( e__VW.YView, 0 )
+변환된 설명 /// @description Health
+
+GML 스크립트 변환 중: instance inst_729F0969 creation code
+변환된 문자열 - 줄 1: 'Debug room#'→"Debug room#"
+
+GML 스크립트 변환 중: instance inst_EF44B4E6 creation code
+변환된 문자열 - 줄 1: '1 Stage'→"1 Stage"
+
+macOS 아이콘 ${options_dir}\mac\icons\icon512.png이(가) 32비트로 작성되었습니다.
+GameMaker Studio 2에선 기본값으로 Windows NSIS 설치 스크립트를 사용합니다.
+GML 스크립트 변환 중: ${project_dir}\rooms\rmstage05d\RoomCreationCode.gml
+내장 키워드 변환됨 - 줄 4: view_angle=180→__view_set( e__VW.Angle, 0, 180 )
+
+GML 스크립트 변환 중: instance inst_1DBF910C creation code
+변환된 문자열 - 줄 2: 'Go Back'→"Go Back"
+
+소리의 오디오 묶음 누락: 'snd_BlockChange' - 기본 오디오 묶음으로 설정
+소리의 오디오 묶음 누락: 'snd_BossHit' - 기본 오디오 묶음으로 설정
+소리의 오디오 묶음 누락: 'snd_Cherry' - 기본 오디오 묶음으로 설정
+소리의 오디오 묶음 누락: 'snd_Death' - 기본 오디오 묶음으로 설정
+소리의 오디오 묶음 누락: 'snd_DJump' - 기본 오디오 묶음으로 설정
+소리의 오디오 묶음 누락: 'snd_Jump' - 기본 오디오 묶음으로 설정
+소리의 오디오 묶음 누락: 'snd_WallJump' - 기본 오디오 묶음으로 설정
+소리의 오디오 묶음 누락: 'snd_Shoot' - 기본 오디오 묶음으로 설정
+소리의 오디오 묶음 누락: 'snd_magic' - 기본 오디오 묶음으로 설정
+소리의 오디오 묶음 누락: 'snd_magic_2' - 기본 오디오 묶음으로 설정
+소리의 오디오 묶음 누락: 'snd_magic2' - 기본 오디오 묶음으로 설정
+소리의 오디오 묶음 누락: 'snd_magic3' - 기본 오디오 묶음으로 설정
+소리의 오디오 묶음 누락: 'snd_blast' - 기본 오디오 묶음으로 설정
+소리의 오디오 묶음 누락: 'snd_dive' - 기본 오디오 묶음으로 설정
+소리의 오디오 묶음 누락: 'snd_Explode' - 기본 오디오 묶음으로 설정
+소리의 오디오 묶음 누락: 'snd_wind' - 기본 오디오 묶음으로 설정
+소리의 오디오 묶음 누락: 'snd_sword1' - 기본 오디오 묶음으로 설정
+소리의 오디오 묶음 누락: 'snd_Explode2' - 기본 오디오 묶음으로 설정
+소리의 오디오 묶음 누락: 'sound36' - 기본 오디오 묶음으로 설정
+소리의 오디오 묶음 누락: 'snd_Explode3' - 기본 오디오 묶음으로 설정
+소리의 오디오 묶음 누락: 'snd_bubble' - 기본 오디오 묶음으로 설정
+소리의 오디오 묶음 누락: 'snd_ice1' - 기본 오디오 묶음으로 설정
+소리의 오디오 묶음 누락: 'snd_charge' - 기본 오디오 묶음으로 설정
+소리의 오디오 묶음 누락: 'snd_vibra' - 기본 오디오 묶음으로 설정
+소리의 오디오 묶음 누락: 'snd_sword2' - 기본 오디오 묶음으로 설정
+소리의 오디오 묶음 누락: 'snd_explode1' - 기본 오디오 묶음으로 설정
+소리의 오디오 묶음 누락: 'snd_shot' - 기본 오디오 묶음으로 설정
+소리의 오디오 묶음 누락: 'snd_Stage1' - 기본 오디오 묶음으로 설정
+소리의 오디오 묶음 누락: 'snd_Stage2' - 기본 오디오 묶음으로 설정
+소리의 오디오 묶음 누락: 'snd_Stage2ex' - 기본 오디오 묶음으로 설정
+소리의 오디오 묶음 누락: 'snd_Stage3' - 기본 오디오 묶음으로 설정
+소리의 오디오 묶음 누락: 'snd_Stage4' - 기본 오디오 묶음으로 설정
+소리의 오디오 묶음 누락: 'snd_Stage5' - 기본 오디오 묶음으로 설정
+소리의 오디오 묶음 누락: 'snd_LBoss1' - 기본 오디오 묶음으로 설정
+소리의 오디오 묶음 누락: 'snd_Boss1' - 기본 오디오 묶음으로 설정
+소리의 오디오 묶음 누락: 'snd_Boss2' - 기본 오디오 묶음으로 설정
+소리의 오디오 묶음 누락: 'snd_BossEx' - 기본 오디오 묶음으로 설정
+소리의 오디오 묶음 누락: 'snd_Boss3' - 기본 오디오 묶음으로 설정
+소리의 오디오 묶음 누락: 'snd_Boss4' - 기본 오디오 묶음으로 설정
+소리의 오디오 묶음 누락: 'snd_Boss5' - 기본 오디오 묶음으로 설정
+소리의 오디오 묶음 누락: 'snd_Final0' - 기본 오디오 묶음으로 설정
+소리의 오디오 묶음 누락: 'snd_StageF2' - 기본 오디오 묶음으로 설정
+소리의 오디오 묶음 누락: 'snd_StageF3' - 기본 오디오 묶음으로 설정
+소리의 오디오 묶음 누락: 'snd_Title' - 기본 오디오 묶음으로 설정
+소리의 오디오 묶음 누락: 'snd_Ending' - 기본 오디오 묶음으로 설정
+소리의 오디오 묶음 누락: 'snd_TpRoom' - 기본 오디오 묶음으로 설정
+소리의 오디오 묶음 누락: 'snd_hiddenBoss4' - 기본 오디오 묶음으로 설정
+소리의 오디오 묶음 누락: 'snd_Stage6' - 기본 오디오 묶음으로 설정
+소리의 오디오 묶음 누락: 'snd_altarwind' - 기본 오디오 묶음으로 설정
+아래 나열된 룸에 대한 누적된 층 깊이는 적절하지 않습니다. 당신은 깊이를 재분배하길 원하나요? 깊이 값을 사용한 스크립트를 업데이트해야 할 수도 있습니다.
+'아니요 '를 선택하면 사용자 정의된 깊이가 유지되지만, 게임에서는 원하지 않은 결과가 나올 수 있습니다.
+게임 속도를 30으로 정합니다.
+호환성 스크립트 'action/action_inherited.gml' 추가
+호환성 스크립트 'action/action_kill_object.gml' 추가
+호환성 스크립트 'action/action_path.gml' 추가
+호환성 스크립트 'action/action_path_position.gml' 추가
+호환성 스크립트 'background/draw_background.gml' 추가
+호환성 스크립트 'background/draw_background_ext.gml' 추가
+호환성 스크립트 'background/__background_get.gml' 추가
+호환성 스크립트 'background/__background_get_element.gml' 추가
+호환성 스크립트 'background/__background_get_internal.gml' 추가
+호환성 스크립트 'background/__background_set.gml' 추가
+호환성 스크립트 'background/__background_set_colour.gml' 추가
+호환성 스크립트 'background/__background_set_element.gml' 추가
+호환성 스크립트 'background/__background_set_internal.gml' 추가
+호환성 스크립트 'background/__background_set_pp.gml' 추가
+호환성 스크립트 'draw/draw_set_blend_mode.gml' 추가
+호환성 스크립트 'instance/instance_create.gml' 추가
+호환성 스크립트 'object/object_get_depth.gml' 추가
+호환성 스크립트 'texture/texture_set_interpolation.gml' 추가
+호환성 스크립트 'tile/tile_add.gml' 추가
+호환성 스크립트 'tile/tile_delete.gml' 추가
+호환성 스크립트 'tile/tile_exists.gml' 추가
+호환성 스크립트 'tile/tile_layer_find.gml' 추가
+호환성 스크립트 'view/__view_get.gml' 추가
+호환성 스크립트 'view/__view_set.gml' 추가
+호환성 스크립트 'view/__view_set_internal.gml' 추가
+호환성 스크립트 'action/__init_action.gml' 추가
+호환성 스크립트 'background/__init_background.gml' 추가
+호환성 스크립트 'view/__init_view.gml' 추가
+호환성 스크립트 '__init_global.gml' 추가
+호환성 스크립트 'background/__background_get_colour_element.gml' 추가
+호환성 스크립트 '__global_object_depths.gml' 추가

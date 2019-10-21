@@ -1,0 +1,1 @@
+with(Me) image_blend=c_black;

@@ -1,0 +1,1 @@
+with(obj_autogolem) onlight=128;

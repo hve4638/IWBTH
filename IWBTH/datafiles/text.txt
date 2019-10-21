@@ -1,0 +1,75 @@
+<main>
+"press" = "Press Any Key"
+"play" = "Play"
+"setting" = "setting"
+"option" = "Option"
+"exit" = "Exit"
+"save" = "save"
+"newgame" = "New Game"
+"start" = "Start"
+"loadgame" = "Load Game"
+"back" = "back"
+"bgm" = "BGM"
+"ui"= "UI"
+"on" = "ON"
+"off" = "OFF"
+"config" = "Config"
+"debug" = "Debug"
+"new" = "New Game"
+"load" = "Load Game"
+"debuglock"="locked"
+"debugrequire"="(clear required)"
+"difficult" = "difficult"
+"reset" = "reset"
+
+<title>
+"version"="version 0.91"
+"explanation"="Select: Arrow key#Confirm: Enter key"
+
+
+<config>
+"left" = "Left"
+"right" = "Right"
+"up" = "Up"
+"down" = "Down"
+"shoot" = "Shoot"
+"jump" = "Jump"
+"restart" = "Restart"
+"none" = " - "
+
+<info>
+"death" = "Death"
+"time" = "Time"
+"fps"="FPS"
+
+<boss>
+"golem" = "Deserted Golem"
+"ignis" = "Ignis"
+"reaper" = "Karena"
+"karena" = "Karena"
+"aqua" = "Aqua"
+"time2" = "The Time"
+"sealedstone" = "Sealedstone"
+"dimension" = "The Deminsion"
+"mage"="Reina"
+"vampire"="Valencia"
+"witch" = "???"
+"time" = "???"
+"ruinguardian"="Ribra"
+"vampire2"="Velika"
+
+<difficult>
+"easy" = "kid"
+"normal" = "guy"
+
+<stage>
+"u" = "undefined"
+"1" = "1 Stage - Forest"
+"2" = "2 Stage - Cave"
+"3" = "3 Stage - Seabed"
+"4" = "4 Stage - Ruin"
+"5" = "5 Stage - Castle"
+"6" = "? Stage - Lab"
+"last" = "between Dimension"
+"tp" = "Teleport Room"
+"altar" = "???"

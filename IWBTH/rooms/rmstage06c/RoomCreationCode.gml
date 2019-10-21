@@ -1,0 +1,1 @@
+with(obj_water) image_alpha = 0.5;
