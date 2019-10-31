@@ -1,3 +1,1 @@
-instance_create(x,y,obj_fakeplayer);
-scp_publicsave();
-
+instance_create(x,y,obj_player_fake);

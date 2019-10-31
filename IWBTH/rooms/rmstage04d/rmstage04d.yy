@@ -9,7 +9,6 @@
     "instanceCreationOrderIDs": [
         "dacb4016-4dac-46de-8ebc-ae563dcb1006",
         "cd8b7fdd-09e7-48c5-bf3a-1358dbfd7d36",
-        "4a2c4e7b-fdd5-460a-a996-081fa1033b03",
         "1c038029-5b33-484e-94b3-4fbe5b7c1f8c",
         "392b3b2c-cf40-4fcf-898d-8c938a10cc7f",
         "11d3ffe6-bd65-4d76-b72e-e2cd05e29d4d",
@@ -63,7 +62,7 @@
             "inheritSubLayers": false,
             "inheritVisibility": false,
             "instances": [
-{"name": "inst_BABB48A5","id": "4a2c4e7b-fdd5-460a-a996-081fa1033b03","colour": { "Value": 4294967295 },"creationCodeFile": "InstanceCreationCode_inst_BABB48A5.gml","creationCodeType": ".gml","ignore": false,"imageIndex": 0,"imageSpeed": 1,"inheritCode": false,"inheritItemSettings": false,"IsDnD": false,"m_originalParentID": "00000000-0000-0000-0000-000000000000","m_serialiseFrozen": false,"modelName": "GMRInstance","name_with_no_file_rename": "inst_BABB48A5","objId": "6b1336cb-d4c9-44bc-b287-b4655d5945b2","properties": null,"rotation": 0,"scaleX": 1,"scaleY": 1,"mvc": "1.1","x": 32,"y": 0}
+
             ],
             "layers": [
 

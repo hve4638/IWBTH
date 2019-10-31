@@ -2,7 +2,7 @@ MAXHP=180; HP=180;
 ARMOR=1;
 onhealth=false;
 drawhp=0;
-init = true;
+___________init = true;
 image_alpha = 0;
 D = 0;
 image_speed=0;

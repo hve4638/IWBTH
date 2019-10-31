@@ -3,7 +3,7 @@ drawhp=0;
 alarm[0]=50;
 
 scp_timeline(tin_boss8_init);
-init = false;
+____________init = false;
 with(obj_save) {instance_destroy();}
 if wuss {kid_mxhp=3; kid_hp=3;}
 

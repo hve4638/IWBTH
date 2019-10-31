@@ -8,6 +8,3 @@ switch(room) {
     break;
 }
 image_speed=0.5;
-
-scp_towersh_create();
-

@@ -1,4 +1,5 @@
-with(sys_global) {
+with(sys_global)
+{
     var f;
     var n="global";
     if !file_exists(n) {file_delete(n);}

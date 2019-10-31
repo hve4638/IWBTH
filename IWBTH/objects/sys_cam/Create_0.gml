@@ -1,52 +1,40 @@
-FollowBG=false;
-SMOOTHBG_X=false;
-SMOOTHBG_Y=false;
+cam = view_camera[0];
+view_enabled = true;
+view_visible[0] = true;
+view_wport[0] = global.win_w;
+view_hport[0] = global.win_h;
 
-shake=0; stime=0;
-rx=x; ry=y;
-fade_set=0;
-fade_get=0;
-fade_col=c_black;
+//camera_set_view_angle(cam,CAM_ANGLE);
+camera_set_view_size(cam,1088,608);
 
-image_alpha=0;
+follow = ds_list_create();
+follow_type = Camtype.follow_obj;
+follow_div = 15;
 
-xmin=0; xmax=room_width-800;
-ymin=0; ymax=room_height-608;
+ds_list_add(follow, obj_player);
 
-MR=1; MX=8; MY=10;
+originw = 0.5;
+originh = 0.5;
 
-Toangle=0;
-mvang=0;
+xview_min = view_w * originw;
+xview_max = view_w * (1 - originw);
+yview_min = view_h * originh;
+yview_max = view_h * (1 - originh);
 
-if instance_exists(obj_player){
-    rx=floor(obj_player.x/800)*800;
-    ry=floor(obj_player.y/608)*608;
-}
+xTo = x;
+yTo = y;
+addx = 0;
+addy = 0;
 
-if room==rmstage03a
-|| room==rmstage03b
-|| room==rmstage03c
-    {FollowBG=true;}
+//fade
+fade_alpha = 0;
+fade_get = 0;
+fade_col = c_white;
 
+//screen shake
+shake_queue = ds_priority_create();
+shake_map = ds_map_create();
+shake = 0;
 
-with(obj_fakeplayer) {
-    if image_alpha=0.9 {
-        other.shake=16;
-        other.stime=8;
-        image_alpha=1;
-    }
-}
-
-
-__view_set( e__VW.Object, 0, sys_cam );
-view_enabled=true;
-__view_set( e__VW.WPort, 0, 800 );
-__view_set( e__VW.HPort, 0, 608 );
-__view_set( e__VW.WView, 0, 800 );
-__view_set( e__VW.HView, 0, 608 );
-
-__view_set( e__VW.VBorder, 0, 800 );
-__view_set( e__VW.HBorder, 0, 608 );
-__view_set( e__VW.VSpeed, 0, -1 );
-__view_set( e__VW.HSpeed, 0, -1 );
-
+sprite_index = noone;
+time_idx = 0;

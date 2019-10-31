@@ -13,17 +13,7 @@
         "c38322d6-9101-40dc-b9f1-2ab33dc4b4e8",
         "5596bf9f-db8c-41bc-a71e-5dc4d3c1a0ec",
         "eaf592a1-0349-4c71-a270-5f454694ebdb",
-        "e6c687ff-8d78-4fa2-a149-78b9609c259d",
-        "8cdfdaee-59bd-4348-b552-ce69c1e84b90",
-        "1a346145-d643-42dd-b1fe-35063bd7a2ac",
-        "7beb7e55-7362-4180-ae85-0df42d579a92",
-        "98c802dc-9922-4fc0-a1dc-002a539199c1",
-        "84b106cd-8070-418e-845c-b6b35f72f086",
-        "359f4ede-d621-4414-afe0-e694232e758b",
-        "f09b633f-a449-49b6-81b4-d3055ad6a266",
-        "4d481844-49a9-4a34-90ae-4aac793ee8a0",
-        "3fc718ab-f8b1-438c-8711-4bdcf7f64ccb",
-        "91b66050-ed6b-4f21-b52e-193ac1c5e300"
+        "4d481844-49a9-4a34-90ae-4aac793ee8a0"
     ],
     "filterType": "GMObject",
     "folderName": "Function",

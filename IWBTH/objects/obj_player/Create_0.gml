@@ -1,67 +1,50 @@
-/// @description Set
 frozen = false;
 jump = 8.5;
 jump2 = 7;
-jumpw = 8; 
+grav = 0.4;
+hspd = 0;
+vspd = 0;
+
 djump = 1;
-hp_alp=1;
+max_hspd = 3;
+max_vspd = 9;
+onPlatform = false;
 
-deffect = 0; //1 : hjump(x), 2 : vjump (y)
-cSpeed = 1; //hmore effect
+onlook = false;
+look = 1;
 
-hjump_spd=1;
-hjump_break=0;
-hjump_dir=0;
+left = false;
+right = false;
+inputp = 0;
 
+maxhp = 1;
+hp = 1;
 
-inwater=place_meeting(x,y,obj_water);
-G=0;
+onground = false;
+jumpbuffer = 0;
+shootdelay = 0;
+shootdelay_max = 7;
 
-hmore_reb=0;
-hmore_time=0;
+candash = false;
+dashdelay = 0;
+dashdelay_max = 15;
 
-white=0;
-gravity = 0.4; 
-adgrav=0;
-adhspd=0;
-setgrav=-1;
+dashdir = 0;
+dashlen = 6;
+dashtime = 0;
 
-maxSpeed = 3; 
-maxVspeed = 9;
-maxVspeed2 = 9;
-image_speed = 0.4;
-onPlatform = 0; 
-onBlock = 0; 
-xScale = 1; 
-del=0; onVine=0;
+idxspr_idle = spr_player_idle;
+idxspr_run = spr_player_run;
+idxspr_jump = spr_player_jump;
+idxspr_fall = spr_player_fall;
+idxspr_slide = spr_player_sliding;
+idxspr_dash = spr_player_dash;
 
-firstinput=0;
+tile_collision = layer_tilemap_get_id(layer_get_id(L_BLOCK));
 
-tpon=0;
-tpidx=0;
-tpalpha=0;
+offset_top = abs(bbox_top - y);
+offset_bottom = abs(y - bbox_bottom);
+offset_left = abs(bbox_left - x);
+offset_right = abs(x - bbox_right);
 
-FLIP=0;
-
-if room==rmteleport 
-|| room==rmteleport2
-    VVV=true;
-else VVV=false;
-
-reb_h=0;
-reb_v=0;
-
-toc=false;
-tox=0; toy=0;
-
-scp_publicsave();
-
-///set2
-DANMAKU=false;
-
-INDEX=noone;
-INDEX_SPEED=0.2;
-
-///Debug
-debug_reb=0;
-
+image_speed = 0.2;

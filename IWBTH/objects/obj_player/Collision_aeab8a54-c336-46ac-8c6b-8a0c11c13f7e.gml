@@ -12,7 +12,3 @@ if other.On {
         }
     }
 }
-
-cSpeed=1;
-deffect=0;
-

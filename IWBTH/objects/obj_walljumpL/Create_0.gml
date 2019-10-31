@@ -10,5 +10,3 @@ switch(room) {
 image_speed=0.5;
 
 x++;
-scp_towersh_create();
-

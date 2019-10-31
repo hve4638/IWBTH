@@ -1,1 +1,0 @@
-//with(obj_player) {xScale=-1;}
