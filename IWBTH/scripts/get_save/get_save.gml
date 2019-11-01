@@ -1,4 +1,7 @@
-if !ds_exists(savedata[save_idx], ds_type_map)
-	savedata[save_idx] = ds_map_create();
+///@param num
+var idx = argument_count > 0 ? argument[0] : save_idx;
 
-return savedata[save_idx];
+if !ds_exists(savedata[idx], ds_type_map)
+	savedata[idx] = ds_map_create();
+
+return savedata[idx];

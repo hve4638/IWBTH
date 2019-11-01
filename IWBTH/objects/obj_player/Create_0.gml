@@ -27,7 +27,7 @@ shootdelay_max = 7;
 
 candash = false;
 dashdelay = 0;
-dashdelay_max = 15;
+dashdelay_max = 30;
 
 dashdir = 0;
 dashlen = 6;

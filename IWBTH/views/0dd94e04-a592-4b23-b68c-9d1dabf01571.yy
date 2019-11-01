@@ -13,7 +13,8 @@
         "c38322d6-9101-40dc-b9f1-2ab33dc4b4e8",
         "5596bf9f-db8c-41bc-a71e-5dc4d3c1a0ec",
         "eaf592a1-0349-4c71-a270-5f454694ebdb",
-        "4d481844-49a9-4a34-90ae-4aac793ee8a0"
+        "4d481844-49a9-4a34-90ae-4aac793ee8a0",
+        "340c975b-a1f1-4c90-bbaf-05e02d48cb01"
     ],
     "filterType": "GMObject",
     "folderName": "Function",

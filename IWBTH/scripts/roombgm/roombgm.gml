@@ -5,7 +5,7 @@ rm = argument_count > 1 ? argument[0] : room;
 nbgm = get_room_bgm(rm);
 loop = get_room_loop(rm);
 
-if 0 < config_bgm
+if 0 < volum_music
 {
     if bgm_p != nbgm || nbgm == noone
 	{
@@ -18,7 +18,7 @@ if 0 < config_bgm
 		if !audio_is_playing(nbgm)
 		{
 			audio_play_sound(nbgm,0,loop);
-			audio_sound_gain(nbgm, config_bgm, 0);
+			audio_sound_gain(nbgm, volum_music, 0);
 		}
 	}
 }

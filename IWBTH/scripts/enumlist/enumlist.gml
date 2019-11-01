@@ -16,7 +16,10 @@ enum Input {
 	down,
 	attack,
 	jump,
-	dash
+	dash,
+	restart,
+	escape,
+	swap
 }
 
 enum Camtype {
@@ -26,9 +29,13 @@ enum Camtype {
 }
 
 enum Select {
+	nothing,
+	game,
+	list,
 	goto,
 	script,
-	nothing
+	toggle,
+	scroll
 }
 
 enum Title {
@@ -40,4 +47,14 @@ enum Title {
 	option_video,
 	option_key,
 	nothing
+}
+
+enum TitleArray {
+	nothing = 0,
+	resolution,
+	fullscreen,
+	mastervolum,
+	musicvolum,
+	soundvolum,
+	ui
 }

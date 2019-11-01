@@ -5,7 +5,7 @@ with(sys_global)
 
     var f;
 	var cf_string, tmp;
-    f=file_text_open_write(CONFIG_DIRECTORY);
+    f=  file_text_open_read(CONFIG_DIRECTORY);
 		cf_string = file_text_read_string(f);
     file_text_close(f);
 
@@ -19,8 +19,13 @@ with(sys_global)
 	key[Input.jump] = tmp[? "jump"];
 	key[Input.attack] = tmp[? "attack"];
 	key[Input.dash] = tmp[? "dash"];
-	config_bgm = tmp[? "bgm"];
-	config_sfx = tmp[? "sfx"];
+	fullscreen = tmp[? "fullscreen"];
+	resolution_index = tmp[? "resolution_index"];
+	resolution_width = tmp[? "resolution_width"];
+	resolution_height = tmp[? "resolution_height"];
+	config_mastervolum = tmp[? "volum_master"];
+	config_music = tmp[? "volum_bgm"];
+	config_sound = tmp[? "volum_sfx"];
 	config_ui = tmp[? "ui"];
 
 	ds_map_destroy(tmp);

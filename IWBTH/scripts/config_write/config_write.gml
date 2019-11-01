@@ -13,8 +13,13 @@ with(sys_global)
 	tmp[? "jump"] = key[Input.jump];
 	tmp[? "attack"] = key[Input.attack];
 	tmp[? "dash"] = key[Input.dash];
-	tmp[? "bgm"] = config_bgm;
-	tmp[? "sfx"] = config_sfx;
+	tmp[? "fullscreen"] = fullscreen;
+	tmp[? "resolution_index"] = resolution_index;
+	tmp[? "resolution_width"] = resolution_width;
+	tmp[? "resolution_height"] = resolution_height;
+	tmp[? "volum_master"] = config_mastervolum;
+	tmp[? "volum_bgm"] = config_music;
+	tmp[? "volum_sfx"] = config_sound;
 	tmp[? "ui"] = config_ui;
 	
 	cf_string = ds_map_write(tmp);

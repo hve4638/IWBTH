@@ -10,7 +10,8 @@
         "e665d536-8e47-494c-882a-364f2214a163",
         "41b16a91-9dcd-48de-8ee1-f78d8d147c00",
         "dfeb4f41-46ea-42e7-b6c0-b58a28b35470",
-        "a5784e05-d9a9-45ec-85d0-a99539a1fefa"
+        "a5784e05-d9a9-45ec-85d0-a99539a1fefa",
+        "149eb294-b99f-47fd-8242-6d9b54bed530"
     ],
     "filterType": "GMObject",
     "folderName": "block",

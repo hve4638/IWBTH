@@ -1,24 +1,33 @@
 globalvar time, death, save_idx;
 globalvar key; //keyconfig
-globalvar config_bgm, config_sfx, config_ui;
+globalvar config_mastervolum, config_music, config_sound, config_ui, fullscreen;
+globalvar resolution_index, resolution_width, resolution_height;
+globalvar volum_music, volum_sound;
+globalvar win_h, win_w;
+globalvar savedata;
+
 time = 0;
 death = 0;
 save_idx = 0;
-config_bgm = 1.0;
-config_sfx = 1.0;
-config_ui = true;
 
+time_idx = 0;
 ontimer = false;
 
+volum_sound = 1.0;
+volum_music = 1.0;
+
 savedata[0] = -1;
+savedata[1] = -1;
+savedata[2] = -1;
+savedata[3] = -1;
 
 canrestart = false;
 vesion_p = 0;
 bgm_p = noone;
 
-time_idx = 0;
 
-/*
-	Tip Font: Bookman Old Style
-	폰트 맑은고딕 18
-*/
+fade_alpha = 0.0;
+fade_color = c_black;
+fade_add = 0;
+
+

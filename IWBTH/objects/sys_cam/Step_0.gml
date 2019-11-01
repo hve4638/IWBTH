@@ -29,9 +29,14 @@ switch(follow_type)
 xTo += addx;
 yTo += addy;
 
+if xmod_enable
+	xTo -= xTo mod xmod - xmod div 2;
+if ymod_enable
+	yTo -= yTo mod ymod - ymod div 2;
+
 xTo = clamp(xTo, xview_min, xview_max);
 yTo = clamp(yTo, yview_min, yview_max);
-
+	
 x = clamp(x, xview_min, xview_max);
 y = clamp(y, yview_min, yview_max);
 
@@ -39,7 +44,6 @@ var f;
 f = follow_div;
 x += (xTo - x) / f;
 y += (yTo - y) / f;
-
 
 shake = max(shake-1,0);
 while (!ds_priority_empty(shake_queue))
