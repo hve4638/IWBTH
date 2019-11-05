@@ -1,5 +1,5 @@
 if 4000<Me.x with(inst_EC34D4E7) On=true;
-if 3400<Me.x with(sys_cam) ymax=0;
+if 3400<Me.x with(sys_camera) ymax=0;
 
 with(obj_spikeM) {
     if (y==16)

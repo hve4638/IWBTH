@@ -1,4 +1,4 @@
-with(sys_cam){
+with(sys_camera){
  stime=2; shake=64;
 }
 

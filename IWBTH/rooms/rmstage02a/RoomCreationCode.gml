@@ -1,5 +1,5 @@
 with(Me) {
-    if 2208<x && x<4000 {sys_cam.type=4; sys_cam.rx=Me.x-400;  sys_cam.xmax=4000-800;}
+    if 2208<x && x<4000 {sys_camera.type=4; sys_camera.rx=Me.x-400;  sys_camera.xmax=4000-800;}
 }
 
 

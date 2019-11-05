@@ -1,6 +1,13 @@
 var L, R;
 L = button(Input.left);
 R = button(Input.right);
+escapetry = button(Input.escape);
+
+if 0 < move_ignore
+{
+	L = false;
+	R = false;
+}
 
 if inputp != 0
 {
@@ -25,3 +32,6 @@ if inputp == 0
 
 left = L;
 right = R;
+
+if L || R
+	escapetry = false;

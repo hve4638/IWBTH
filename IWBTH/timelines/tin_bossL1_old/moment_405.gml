@@ -4,7 +4,7 @@ else if 790<ttx {ttx=790;}
 var i=instance_create(ttx,-400,obj_laser);
 i.image_angle=point_direction(ttx,-400,lx,ly);
 
-with(sys_cam){
+with(sys_camera){
  stime=4;
  shake=6;
 }

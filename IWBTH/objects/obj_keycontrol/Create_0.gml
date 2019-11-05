@@ -1,7 +1,7 @@
 On=0;
 lim=50;
 
-with(sys_cam) {fade_get=0.01; fade_col=c_black;}
+with(sys_camera) {fade_get=0.01; fade_col=c_black;}
 
 image_xscale=3;
 image_yscale=3;

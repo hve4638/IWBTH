@@ -5,6 +5,9 @@ rm = argument_count > 1 ? argument[0] : room;
 nbgm = get_room_bgm(rm);
 loop = get_room_loop(rm);
 
+if is_undefined(nbgm)
+	nbgm = noone;
+
 if 0 < volum_music
 {
     if bgm_p != nbgm || nbgm == noone

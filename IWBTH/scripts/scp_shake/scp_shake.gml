@@ -3,7 +3,7 @@
 /// @param time
 /// @param preference
 var a=argument0, b=argument1, c=argument2;
-with(sys_cam){
+with(sys_camera){
     if c || shake<a || (shake==a && stime<b) {
         shake=a;
         stime=b;

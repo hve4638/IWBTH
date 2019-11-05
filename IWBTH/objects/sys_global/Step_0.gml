@@ -5,9 +5,13 @@ if ontimer
 	if time_idx > 1000000
 	{
 		time++;
-		time_idx = time_idx mod 1000000;
+
+		time_idx -= 1000000;
 	}
 }
+
+if canrestart && button_press(Input.restart)
+	load();
 
 fade_alpha = clamp(fade_alpha + fade_add, 0.0, 1.0);
 

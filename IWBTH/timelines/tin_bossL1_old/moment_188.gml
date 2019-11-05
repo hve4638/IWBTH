@@ -13,7 +13,7 @@ with(i) {
  image_angle=k;
 }
 
-with(sys_cam){
+with(sys_camera){
  stime=4;
  shake=16;
 }

@@ -11,14 +11,12 @@ with(sys_global)
     if !file_exists(n)
 		exit;
 
-    f = file_text_open_write(n);
+    f = file_text_open_read(n);
 		sv_string = file_text_read_string(f);
     file_text_close(f);
 
+	var sv = get_save_index(num);
 
-	if !ds_exists(savedata[num], ds_type_map)
-		savedata[num] = ds_map_create();
-
-	ds_map_clear(savedata[num]);
-	ds_map_read(savedata[num], sv_string);
+	ds_map_clear(sv);
+	ds_map_read(sv, sv_string);
 }

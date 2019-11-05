@@ -12,16 +12,15 @@ if !frozen
         h = -1;
 }
 
-var onVineR = place_meeting(x+1, y, obj_walljumpR) && onground;
-var onVineL = place_meeting(x-1, y, obj_walljumpL) && onground;
+var onblockR = !onground && tile_cling(1, 0);
+var onblockL = !onground && tile_cling(-1, 0);
 
+#region
 if h != 0
 {
-	if !onVineR && !onVineL
+	if !(onblockL || onblockR)
 		look = h;
-	
-	if (h == -1 && !onVineR) || (h == 1 && !onVineL)
-		hspd = max_hspd * h;
+	hspd = max_hspd * h;
 	
     sprite_index = idxspr_run;
 }
@@ -51,29 +50,23 @@ else
 	vspd += grav;
 }
 
+hspd += round(hspd_slide);
+vspd += round(vspd_slide);
+
 vspd = clamp(vspd, -max_vspd, max_vspd);
+#endregion
 
-if !onPlatform
+if !frozen && !(0 < dashtime)
 {
-    if vspd < -0.05
-		sprite_index = idxspr_jump;
-    else if vspd > 0.05
-		sprite_index = idxspr_fall;
-}
-else
-{
-    if !place_meeting(x, y + 4, objPlatform)
-		onPlatform = false;
-}
+	if onwalljump == 0
+	{
+		if button_press(Input.jump)
+			player_jump();
 
-if !frozen
-{
-	if button_press(Input.jump)
-		player_jump();
+		if button_release(Input.jump)
+			player_vjump();
+	}
 
-	if button_release(Input.jump)
-		player_vjump();
-	
 	if button(Input.attack) && shootdelay <= 0 
 	{
 		shootdelay = shootdelay_max;
@@ -92,36 +85,65 @@ if !frozen
 if 0 < dashtime
 {
 	hspd = dashdir * dashlen;
-	vspd = 0;
+	if 3 < dashtime
+		vspd = 0;
 	
 	dashtime--;
 	
 	sprite_index = idxspr_dash;
 }
 
-if onVineL || onVineR
+if !onPlatform
 {
-	look = onVineL - onVineR;
-    
-    vspeed = 2;
-    sprite_index = idxspr_slide;
+    if vspd < -0.05
+		sprite_index = idxspr_jump;
+    else if vspd > 0.05
+		sprite_index = idxspr_fall;
+}
+else
+{
+    if !place_meeting(x, y + 4, objPlatform)
+		onPlatform = false;
+}
 
-	if (onVineL && L) || (onVineR && R)
+if onwalljump != 0
+{
+	if button(Input.down)
+		onwalljump = 0;
+
+	if !(onblockL || onblockR)
+		onwalljump = 0;
+}
+else if vspd > -1 && !button(Input.down)
+{
+	if slideready
+		onwalljump = (onblockL - onblockR);
+	else
+		onwalljump = (onblockL && left) - (onblockR && right);
+}
+
+if onwalljump != 0
+{
+	look = onwalljump;
+	
+	if vspd < 0
+		vspd *= 0.5;
+	vspd = min(2, vspd);
+
+	sprite_index = idxspr_slide;
+
+	if button_press(Input.jump)
 	{
-        if button(Input.jump)
-		{
-			hspeed = onVineR ? -15 : 15;
-            
-            vspeed = -9;
-            //audio_play_sound(sndWallJump,0,false);
-            sprite_index = sprPlayerJump;
-        }
-		else
-		{
-			hspeed = onVineR ? -3 : 3;
-            
-            sprite_index = idxspr_fall;
-        }
+		hspd_slide = (onblockL - onblockR) * 9;
+        vspd = - 6;
+		
+		move_ignore = 9;
+		onwalljump = 0;
+		slideready = true;
+		
+        sprite_index = idxspr_jump;
+		
+		sfx(snd_Jump);
     }
 }
 

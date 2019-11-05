@@ -12,7 +12,7 @@ else if t<lim {
     image_yscale-=0.03;
 }
 else if t==lim {
-    with(sys_cam) {fade_set=0; fade_get=0;}
+    with(sys_camera) {fade_set=0; fade_get=0;}
     room_speed=50;
     image_xscale-=0.15;
     image_yscale-=0.15;

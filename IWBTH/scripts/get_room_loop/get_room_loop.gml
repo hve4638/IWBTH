@@ -9,7 +9,7 @@ if ds_grid_value_exists(global.roomsound, 0, 1, 0, h-1, rm)
 {
 	var l = ds_grid_value_y(global.roomsound, 0, 1, 0, h-1, rm);
 	
-	return global.roomsound[# 2, l];
+	return real(global.roomsound[# 2, l]);
 }
 
-return -1;
+return 0;

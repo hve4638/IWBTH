@@ -1,5 +1,7 @@
 dashdir = look;
-dashtime = 12;
-dashlen = 8;
+dashtime = 10;
+dashlen = 9;
+
+move_ignore = 10;
 
 candash = false;

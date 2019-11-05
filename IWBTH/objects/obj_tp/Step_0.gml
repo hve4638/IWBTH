@@ -16,7 +16,7 @@ if I==0 {
         hspeed=0;
         vspeed=0;
     }
-    with(sys_cam) {
+    with(sys_camera) {
         fade_get=0.03;
         fade_col=c_black;
     }
@@ -44,7 +44,7 @@ else if 1<=I && I<30 {
     instance_create(gotox,gotoy,obj_create_tpevent);
     room_goto(ROOM);
 } else if I==31 {
-    with(sys_cam) {
+    with(sys_camera) {
         fade_set=1;
         fade_get=-0.02;
         fade_col=c_black;

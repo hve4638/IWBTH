@@ -62,8 +62,8 @@ if onmouse || onact
 
 		if !save_new
 		{
-			draw_text(700,300, "TIME: " + string(time_));
-			draw_text(700,300, "\nDEATH: " + string(death_));
+			draw_text(700,300, "TIME: " + string(save_time));
+			draw_text(700,300, "\nDEATH: " + string(save_death));
 		}
 	}
 }

@@ -24,7 +24,7 @@ arr[TitleArray.resolution] = resolution_index;
 arr[TitleArray.ui] = config_ui;
 
 
-global_fade_set(1.0, c_black);
-global_fade_add(-0.02);
+//global_fade_set(1.0, c_black);
+//global_fade_add(-0.02);
 
 event_user(0);

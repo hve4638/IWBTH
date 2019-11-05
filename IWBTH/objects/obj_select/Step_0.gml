@@ -41,7 +41,7 @@ if onmouse && mouse_check_button_pressed(mb_left)
 	else if type == Select.game
 	{
 		global_fade_add(0.05, c_black);
-		save_idx = save_num;
+		set_save_variable(save_num);
 		
 		with(instance_create_layer(0, 0, L_SYS, obj_gamestart))
 			alarm[0] = 50;

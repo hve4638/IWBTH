@@ -2,7 +2,7 @@
 var num, sv, len;
 num = argument_count > 0 ? argument[0] : save_idx;
 
-sv = get_save(num);
+sv = get_save_index(num);
 len = array_length_1d(global.savemeta);
 
 for(var i = 0; i < len; i++)

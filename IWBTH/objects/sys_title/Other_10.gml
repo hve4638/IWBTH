@@ -188,7 +188,7 @@ for(var i = 0; i < size; i++)
 
 			if save_integrity(save_num)
 			{
-				var t = get_save(save_num);
+				var t = get_save_index(save_num);
 				save_new = false;
 
 				save_time = t[? "time"];

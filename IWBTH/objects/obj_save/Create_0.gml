@@ -1,2 +1,6 @@
-image_single=0;
-on=0;
+onact = false;
+savedelay = 0;
+savedelay_max = 50;
+
+image_index = 0;
+image_speed = 0;

@@ -1,7 +1,7 @@
 var i=instance_create(x,0,obj_laser);
 i.image_angle=270;
 
-with(sys_cam){
+with(sys_camera){
  stime=2;
  shake=4;
 }

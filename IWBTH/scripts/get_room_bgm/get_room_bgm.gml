@@ -9,7 +9,7 @@ if ds_grid_value_exists(global.roomsound, 0, 1, 0, h-1, rm)
 {
 	var l = ds_grid_value_y(global.roomsound, 0, 1, 0, h-1, rm);
 	
-	return global.roomsound[# 1, l];
+	return asset_get_index(global.roomsound[# 1, l]);
 }
 
-return -1;
+return noone;

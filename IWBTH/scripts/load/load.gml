@@ -1,23 +1,23 @@
-if save_integrity()
+if !isno(sv_room)
 {
-	var _x, _y, _r, _l;
-	var sv = get_save();
-
 	with(Player)
 		instance_destroy();
 
-	_x = sv[? "x"];
-	_y = sv[? "y"];
-	_r = sv[? "room"];
-	_l = sv[? "look"];
-		
-	if !sv[? "auto"]
+	if !sv_auto
 	{
-		with(instance_create_depth(_x, _y, 0, obj_create_nextroom))
-		{
-			look = _l;
-		}
+		with(instance_create_depth(sv_x, sv_y, 0, obj_create_nextroom))
+			look = sv_look;
 	}
 
-	room_goto(_r);
+	if room == sv_room
+	{
+		with(sys_camera)
+			persistent = true;
+	}
+	
+	room_goto(sv_room);
+
+	return 0;
 }
+
+return -1;
