@@ -13,7 +13,9 @@
         "ab09e037-27ae-4502-82de-572290bdaa1c",
         "21dc086c-ad9a-45ff-9b23-a77eb71224f8",
         "d3d11215-9cea-4e4b-8339-22bd37ea5d0c",
-        "10858d15-54ff-448c-9f95-30d0b346b282"
+        "10858d15-54ff-448c-9f95-30d0b346b282",
+        "ba435d58-5686-4d65-ba2f-1fa78ae7384e",
+        "6bef422a-1919-4724-ae87-074184efdc53"
     ],
     "filterType": "GMScript",
     "folderName": "data",

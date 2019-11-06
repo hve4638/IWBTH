@@ -1,8 +1,3 @@
-enum Particle {
-	escape_ready,
-	eoa
-}
-
 len = Particle.eoa;
 
 isdeclare = array_create(len, false);

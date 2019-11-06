@@ -29,7 +29,11 @@ bgm_p = noone;
 
 
 fade_alpha = 0.0;
+fade_alpha_p = 0.0;
+fade_alpha_to = 0.0;
+fade_idx = 0;
+fade_time = 0;
+
 fade_color = c_black;
 fade_add = 0;
-
 

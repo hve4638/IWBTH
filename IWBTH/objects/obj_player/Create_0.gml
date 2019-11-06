@@ -41,9 +41,10 @@ dashdir = 0;
 dashlen = 6;
 dashtime = 0;
 
+canescape = true;
 escapetry = false;
 escape_idx = 0;
-escape_time = 75;
+escape_time = 175;
 escape_alpha = 0;
 
 tile_collision = layer_tilemap_get_id(layer_get_id(L_BLOCK));
@@ -62,3 +63,5 @@ offset_right = abs(x - bbox_right);
 
 image_speed = 0.2;
 mask_index = spr_player_mask;
+
+life_idx = 0;

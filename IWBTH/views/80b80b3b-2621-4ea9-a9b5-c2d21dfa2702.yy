@@ -21,7 +21,7 @@
         "1172722f-6458-42ba-b376-307cdfc16044"
     ],
     "filterType": "GMScript",
-    "folderName": "Save",
+    "folderName": "old save",
     "isDefaultView": false,
     "localisedFolderName": ""
 }

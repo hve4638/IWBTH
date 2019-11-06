@@ -2,7 +2,7 @@
 /// @param max*
 var snd, mx;
 snd = argument[0];
-mx = argument_count > 1 ? argument[1] : 10;
+mx = argument_count > 1 ? argument[1] : 2;
 
 with(sys_sound)
 {

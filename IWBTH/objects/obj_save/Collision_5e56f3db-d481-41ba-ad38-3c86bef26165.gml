@@ -1,6 +1,6 @@
 if !onact
 {
-	if button_press(Input.up)
+	if button(Input.up)
 	{
 		onact = true;
 		savedelay = savedelay_max;

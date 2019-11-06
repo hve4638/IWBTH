@@ -1,8 +1,9 @@
 //gml_pragma( "global", "init();");
 randomize();
 
-instance_create_depth(0,0,0,sys_global);
-instance_create_depth(0,0,0,sys_sound);
+instance_create_depth(0,0,-10000,sys_global);
+instance_create_depth(0,0,-10000,sys_sound);
+instance_create_depth(0,0,-10000,sys_particle);
 
 global.roomsound = load_csv("sounddata");
 

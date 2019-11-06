@@ -40,7 +40,7 @@ if onmouse && mouse_check_button_pressed(mb_left)
 		arr[@ idx] = !arr[@ idx];
 	else if type == Select.game
 	{
-		global_fade_add(0.05, c_black);
+		global_fade_set(1.0, 50, c_black);
 		set_save_variable(save_num);
 		
 		with(instance_create_layer(0, 0, L_SYS, obj_gamestart))
@@ -64,7 +64,7 @@ if onact
 	}
 	else if type == Select.list
 	{
-		n += (mouse_wheel_up() - mouse_wheel_down());
+		n += (mouse_wheel_down() - mouse_wheel_up());
 		n += keyboard_check_pressed(vk_right) - keyboard_check_pressed(vk_left)
 
 		list_idx = clamp(list_idx + n, 0, ds_list_size(list) - 1);

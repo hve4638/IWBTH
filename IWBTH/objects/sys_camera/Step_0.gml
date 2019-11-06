@@ -1,26 +1,20 @@
 camera_follow();
 
+x += (xTo - x) / follow_div;
+y += (yTo - y) / follow_div;
 
-	
-x = clamp(x, xview_min, xview_max);
-y = clamp(y, yview_min, yview_max);
-
-var f;
-f = follow_div;
-x += (xTo - x) / f;
-y += (yTo - y) / f;
-
-shake = max(shake-1,0);
+shake = max(shake-1, 0);
 while (!ds_priority_empty(shake_queue))
 {
     var s=ds_priority_find_max(shake_queue);
 	
     if time_idx <= shake_map[? s]
 	{
-        if shake < s shake = s;
+		shake = max(shake, s);
         break;
     }
-	else ds_priority_delete_max(shake_queue);
+	else
+		ds_priority_delete_max(shake_queue);
 }
 
 var _dir;
@@ -36,6 +30,11 @@ else
 	sx = 0;
 	sy = 0;
 }
+
+
+
+x = clamp(x, xview_min, xview_max);
+y = clamp(y, yview_min, yview_max);
 
 var rx, ry;
 rx = floor(x + sx - view_w * originw);

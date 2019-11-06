@@ -14,7 +14,7 @@ else
 	image_xscale *= look;
 	
 	for(var i = 0; i < abs(hspd); i++)
-		echo_self_pos(x - i*sign(hspd), y, 12, 1, c_white, 0.25);
+		echo_self_pos(x - i*sign(hspd), y, 12 + dashtime div 2, 1, c_white, 0.25);
 
 	image_xscale = xs;
 }
@@ -41,7 +41,38 @@ else
 }
 
 if escape_time < escape_idx
-	room_goto(rm_hub);
+{
+	particle_emit(Particle.escape_try2,x-20,x+20,bbox_bottom-6,bbox_bottom+3, 75);
+	
+	with(instance_create_depth(0, 0, 0, obj_goto))
+	{
+		alarm[0] = 150;
+		goto = rm_hub;
+	}
+	
+	screenshake(4, 2);
+	global_fade_set(1.0, 50, c_white);
+	instance_destroy();
+}
+
+if 0<escape_idx && escapetry
+{
+	if escape_idx < 50
+	{
+		if life_idx mod 5 == 0
+			particle_emit(Particle.escape_ready,x-18,x+18,bbox_bottom-1,bbox_bottom+1,1);
+	}
+	else if escape_idx == 50
+		screenshake(6, 3);
+	else if escape_idx > 50
+	{
+		particle_emit(Particle.escape_try,x-20,x+20,bbox_bottom-3,bbox_bottom+3,5);
+
+		var t = round(value_merge(1,8,(escape_idx-75)/175));
+		if life_idx mod 2 == 0
+			particle_emit(Particle.escape_try2,x-20,x+20,bbox_bottom-6,bbox_bottom+3, t);
+	}
+}
 
 if onground
 	slideready = false;
@@ -57,3 +88,5 @@ if room_height + 32 < bbox_top
 
 move_ignore = max(move_ignore - 1, 0);
 shootdelay = max(shootdelay - 1, 0);
+
+life_idx++;

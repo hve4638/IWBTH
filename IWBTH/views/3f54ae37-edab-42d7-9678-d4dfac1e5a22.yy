@@ -6,10 +6,10 @@
     "children": [
         "fc9afd11-cfdc-470c-bcf2-cf7bf5d153da",
         "8bcb2964-66ce-403b-a149-57be758ffb95",
-        "be508969-ca47-4511-95dc-abac9c1f7e31"
+        "38e765d8-82c8-4da0-910c-d6f4c3b645f4"
     ],
     "filterType": "GMScript",
-    "folderName": "sub",
+    "folderName": "get value",
     "isDefaultView": false,
     "localisedFolderName": ""
 }

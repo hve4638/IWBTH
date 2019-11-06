@@ -12,7 +12,7 @@ var xs, ys;
 xs = image_xscale;
 ys = image_yscale;
 
-if image_index == obj_player
+if object_index == obj_player
 	xs *= look
 
 return echo(l, depth+1, f, sprite_index, image_index, x, y, xs, ys, image_angle, c, image_alpha * m);

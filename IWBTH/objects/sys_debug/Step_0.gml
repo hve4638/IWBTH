@@ -11,3 +11,6 @@ if keyboard_check_pressed(vk_f2)
 
 	cout("read save" + string(save_idx) + ".");
 }
+
+if keyboard_check_pressed(vk_f3)
+	screenshake(10, 5);

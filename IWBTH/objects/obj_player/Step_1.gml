@@ -1,7 +1,7 @@
-var L, R;
+var L, R, E;
 L = button(Input.left);
 R = button(Input.right);
-escapetry = button(Input.escape);
+E = button(Input.escape);
 
 if 0 < move_ignore
 {
@@ -30,8 +30,13 @@ if inputp == 0
 		inputp = -1;
 }
 
+if L || R || !canescape
+	E = false;
+
+if !escapetry && 0<escape_idx
+	E = false;
+
 left = L;
 right = R;
+escapetry = E;
 
-if L || R
-	escapetry = false;
