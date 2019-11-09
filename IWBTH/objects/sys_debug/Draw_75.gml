@@ -1,21 +1,15 @@
-if mouse_check_button(mb_right)
-{
-	var s, o, r;
-	s = max(win_w, win_h)
-	o = s div 2;
-	r = s * 0.6;
-	
-	var surf = surface_create(s, s);
-	surface_set_target(surf);
-		draw_clear(c_white);
-		//gpu_set_blendmode(bm_subtract);
-		draw_circle_color(o, o, r, c_black, c_white, 0);
-		gpu_set_blendmode(bm_normal);
-	surface_reset_target();
+var str = "";
 
-	shader_set(shd_blackalpha);
-		draw_surface_ext(surf,0,0, win_w/s, win_h/s, 0, c_white, 1.0);
-	shader_reset();
-	
-	surface_free(surf);
+
+str += strmerge("debug enable");
+
+if show_info
+{
+	str += strmerge("mouse(gui):", display_mouse_get_x(), display_mouse_get_y());
+	str += strmerge("mouse(window):", window_mouse_get_x(), window_mouse_get_y());
 }
+
+
+draw_set_reset();
+
+draw_text(0, 0, str);

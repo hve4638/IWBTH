@@ -31,6 +31,8 @@ fade_alpha = 0;
 fade_get = 0;
 fade_col = c_white;
 
+blur_alpha = 0;
+
 //screen shake
 shake_queue = ds_priority_create();
 shake_map = ds_map_create();

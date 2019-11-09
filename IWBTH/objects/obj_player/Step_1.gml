@@ -36,6 +36,7 @@ if L || R || !canescape
 if !escapetry && 0<escape_idx
 	E = false;
 
+
 left = L;
 right = R;
 escapetry = E;

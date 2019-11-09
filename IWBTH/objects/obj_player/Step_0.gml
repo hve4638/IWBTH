@@ -85,8 +85,8 @@ if !frozen && !(0 < dashtime)
 if 0 < dashtime
 {
 	hspd = dashdir * dashlen;
-	if 3 < dashtime
-		vspd = 0;
+	//if 3 < dashtime
+	vspd = 0;
 	
 	dashtime--;
 	

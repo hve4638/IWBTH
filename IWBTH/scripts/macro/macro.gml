@@ -1,6 +1,8 @@
 #macro VERSION 20191029 
 #macro CONFIG_DIRECTORY "config"
 #macro SAVE_DIRECTORY "data"
+#macro SCRIPT_DIRECTORY "script"
+#macro SOUND_DIRECTORY "sounddata"
 
 #macro L_SYS "InsSystem"
 #macro L_BLOCK "TileBlock"

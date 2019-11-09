@@ -46,6 +46,8 @@ escapetry = false;
 escape_idx = 0;
 escape_time = 175;
 escape_alpha = 0;
+escape_blureffect = false;
+escape_blureffect_alpha = 0;
 
 tile_collision = layer_tilemap_get_id(layer_get_id(L_BLOCK));
 

@@ -5,6 +5,7 @@ enum Particle {
 	escape_ready,
 	escape_try,
 	escape_try2,
+	escape_effect,
 	test,
 	eoa
 }
@@ -87,6 +88,30 @@ with(sys_particle)
 			Shape[idx] = 1;
 			Dis[idx] = 1;
 			//35~-35, 2~-2
+			#endregion
+		} break;
+		
+		case Particle.escape_effect:
+		{
+			#region
+				Sys[idx] = part_system_create();
+				Part[idx] = part_type_create();
+				part_system_depth(Sys[idx], -150);
+				part_type_shape(Part[idx],pt_shape_sphere);
+				part_type_size(Part[idx],0.05,0.24,0,0);
+				part_type_scale(Part[idx],6,0.40);
+				part_type_color1(Part[idx],16777215);
+				part_type_alpha3(Part[idx],0.30,0.80,0.20);
+				part_type_speed(Part[idx],0,0,0,0);
+				part_type_direction(Part[idx],90,90,0,0);
+				part_type_gravity(Part[idx],0.01,90);
+				part_type_orientation(Part[idx],0,0,0,0,1);
+				part_type_blend(Part[idx],1);
+				part_type_life(Part[idx],20,50);
+				Emit[idx] = part_emitter_create(Sys[idx]);
+				Shape[idx] = 1;
+				Dis[idx] = 0;
+				//89~-89, 52~-52
 			#endregion
 		} break;
 		

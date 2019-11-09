@@ -11,3 +11,8 @@ str += "onground: " + string(onground) + "\n";
 str += "dashdelay: " + string(max(dashdelay,0)) + "\n";
 
 draw_text(0,0,str);
+*/
+
+
+if 0 < escape_blureffect_alpha 
+	draw_edgeblur(escape_blureffect_alpha);

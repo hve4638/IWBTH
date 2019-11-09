@@ -1,13 +1,15 @@
-On=false;
+enable = true;
+on = false;
+on_p = false;
 
-ontip=true;
-onreplay=false;
+tscript_enable = false;
+tscript_id = noone;
 
-replayid=noone;
-replaycode="";
+replay_enable = false;
+replay_id = noone;
+replay_code = "";
 
-onbg=noone;
-bx=0; by=0;
+text_script_create();
 
-image_speed=0.3;
 
+image_alpha = 0;
