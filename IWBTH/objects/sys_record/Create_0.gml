@@ -1,4 +1,8 @@
 enum Record {
+	type,
+	target,
+	index,
+	state,
 	x,
 	y,
 	rm,
@@ -6,11 +10,9 @@ enum Record {
 	subimg,
 	xscale,
 	yscale,
-	state,
 	rot,
 	col,
-	alpha,
-	target
+	alpha
 }
 
 enum RecordState {
@@ -18,10 +20,25 @@ enum RecordState {
 	die
 }
 
+enum RecordType {
+	queue,
+	list
+}
+
 onRec = false;
+onPlay = false;
 record = record_create();
+//record = record_create_light();
+
 record_set_target(record, obj_player);
-record_shot(record);
+//record_clear(record);
+//record_destroy(record);
+//record_set_index();
+//record_get_index();
+//draw_record(record, index);
+//record_shot(record);
+//record_encode(record);
+//record_decode();
 
 // *status*
 // -1: die

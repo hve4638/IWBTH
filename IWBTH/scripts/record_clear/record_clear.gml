@@ -1,6 +1,16 @@
 ///@param record
-var arr = argument[0];
-var len = array_length_1d(arr);
+var record = argument[0];
 
-for(var i = 0; i < len; i++)
-	ds_list_clear(arr[@ i]);
+record[? Record.target] = noone;
+record[? Record.index] = 0;
+ds_list_clear(record[? Record.state]);
+ds_list_clear(record[? Record.x]);
+ds_list_clear(record[? Record.y]);
+ds_list_clear(record[? Record.rm]);
+ds_list_clear(record[? Record.sprite]);
+ds_list_clear(record[? Record.subimg]);
+ds_list_clear(record[? Record.xscale]);
+ds_list_clear(record[? Record.yscale]);
+ds_list_clear(record[? Record.rot]);
+ds_list_clear(record[? Record.col]);
+ds_list_clear(record[? Record.alpha]);

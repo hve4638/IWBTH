@@ -10,6 +10,9 @@ if keyboard_check_pressed(vk_f2)
 if keyboard_check_pressed(vk_f3)
 	on_convkey = !on_convkey;
 
+if keyboard_check_pressed(vk_f9)
+	if !instance_exists(sys_record)
+		instance_create_layer(0,0,L_SYS, sys_record);
 
 if on_convkey
 {
