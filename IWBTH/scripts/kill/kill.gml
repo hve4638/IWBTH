@@ -11,4 +11,4 @@ with(obj_player)
 
 sfx(snd_death);
 instance_destroy(Player);
-instance_create(_x, _y, obj_player_fake);
+instance_create_layer(_x, _y, L_PLAYER, obj_player_fake);

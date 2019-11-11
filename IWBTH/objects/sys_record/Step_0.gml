@@ -52,10 +52,10 @@ if keyboard_check_pressed(51) {
 
 if keyboard_check_pressed(52) with(obj_replay) instance_destroy();
 
-
-
-if REC {
-    if instance_exists(obj_player) {
+if REC
+{
+    if instance_exists(obj_player)
+	{
         ds_list_add(ds_x,obj_player.x);
         ds_list_add(ds_y,obj_player.y);
         ds_list_add(ds_rm,room);

@@ -17,7 +17,7 @@ if on_convkey
 		with(obj_player)
 		{
 			save();
-			instance_create(x, bbox_top - 8, obj_savetext);
+			instance_create_depth(x, bbox_top - 8, 0, obj_savetext);
 			echo_self(50, 1, c_white);
 		}
 }

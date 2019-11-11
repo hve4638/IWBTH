@@ -1,5 +1,5 @@
 if collision_point(x,y,obj_killer,1,0)
-	scp_kill();
+	kill();
 
 if dashtime <= 0
 {

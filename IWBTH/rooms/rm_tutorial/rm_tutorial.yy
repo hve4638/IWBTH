@@ -110,7 +110,7 @@
             "__type": "GMRTileLayer_Model:#YoYoStudio.MVCFormat",
             "name": "TileBlock",
             "id": "dfbf23d0-7db5-42d2-92bb-7522dafc4521",
-            "depth": -900,
+            "depth": -750,
             "grid_x": 32,
             "grid_y": 32,
             "hierarchyFrozen": false,
@@ -155,7 +155,7 @@
                 ]
             },
             "tilesetId": "105621db-b377-4b76-adb5-f7f4cdc97c11",
-            "userdefined_depth": false,
+            "userdefined_depth": true,
             "visible": false,
             "x": 0,
             "y": 0
@@ -218,7 +218,7 @@
             "__type": "GMRTileLayer_Model:#YoYoStudio.MVCFormat",
             "name": "TileShow",
             "id": "c3b40b94-faff-4228-a69c-96a3d0e82df3",
-            "depth": 100,
+            "depth": 250,
             "grid_x": 32,
             "grid_y": 32,
             "hierarchyFrozen": false,
@@ -263,7 +263,7 @@
                 ]
             },
             "tilesetId": "2b51a8fb-30dc-4426-99b6-b28f4323589a",
-            "userdefined_depth": false,
+            "userdefined_depth": true,
             "visible": true,
             "x": 0,
             "y": 0

@@ -2,6 +2,8 @@
 /// @param x
 /// @param y
 /// @param bright
+
+/*
 var bx, by, size;
 bx=argument[0];
 by=argument[1];

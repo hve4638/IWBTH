@@ -7,6 +7,9 @@ instance_create_depth(0,0,-10000,sys_particle);
 
 variable_declare();
 
+//arr = layer_get_all();
+
+
 config_def();
 config_read();
 

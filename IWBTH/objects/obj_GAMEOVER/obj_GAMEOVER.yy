@@ -2,7 +2,7 @@
     "id": "594f6ee2-7994-4205-a67e-77a9a2c0ce71",
     "modelName": "GMObject",
     "mvc": "1.0",
-    "name": "obj_GAMEOVER",
+    "name": "obj_gameover",
     "eventList": [
         {
             "id": "2ef000aa-0ced-45d4-9225-69147c28bcdc",

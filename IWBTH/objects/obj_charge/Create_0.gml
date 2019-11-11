@@ -5,3 +5,5 @@ ktime=0;
 
 KILL=false;
 
+life_idx = 0;
+life = 0;

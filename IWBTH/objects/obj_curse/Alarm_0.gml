@@ -1,4 +1,4 @@
-var tx, ty;
+/*var tx, ty;
 tx=ds_queue_head(d_x);
 ty=ds_queue_head(d_y);
 

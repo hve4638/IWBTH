@@ -1,4 +1,4 @@
-if instance_exists(obj_player) {
+/*if instance_exists(obj_player) {
     ds_queue_enqueue(d_x,Me.x);
     ds_queue_enqueue(d_y,Me.y);
     ds_queue_enqueue(d_s,Me.sprite_index);

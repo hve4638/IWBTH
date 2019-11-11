@@ -1,4 +1,4 @@
-if !ds_queue_empty(d_x) && enable {
+/*if !ds_queue_empty(d_x) && enable {
     var tx, ty, ts, ti, txs, tys;
     tx=ds_queue_dequeue(d_x);
     ty=ds_queue_dequeue(d_y);

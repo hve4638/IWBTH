@@ -1,4 +1,4 @@
-var i=instance_create(x+lx div 2,y+ly div 2,obj_laser);
+/*var i=instance_create(x+lx div 2,y+ly div 2,obj_laser);
 with(i) {image_angle=other.dir; ar=3; ad=2; depth=-10;}
 
 i=instance_create(x+lx,y+ly,obj_charge);

@@ -1,5 +1,4 @@
-
-var k=instance_create(lastx,lasty,obj_charge);
+/*var k=instance_create(lastx,lasty,obj_charge);
 k.image_blend=c_purple; k.image_alpha=0.8;
 k.get_xscale=0.1; k.get_yscale=0.1;
 k.ktime=3;

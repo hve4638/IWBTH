@@ -1,4 +1,4 @@
-if t<10 {
+/*if t<10 {
     image_xscale-=0.05;
     image_yscale-=0.05;
     image_alpha+=0.05
