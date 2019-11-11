@@ -1,6 +1,5 @@
-if place_meeting(x,y,obj_player) {
-    if type==1 {
-        event_user(0);
-    }
+if place_meeting(x,y,obj_player)
+{
+    if type == Teleport.instant
+        teleport_act();
 }
-

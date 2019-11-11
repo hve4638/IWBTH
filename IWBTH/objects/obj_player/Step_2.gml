@@ -87,7 +87,7 @@ if 0<escape_idx && escapetry
 
 if onground
 	slideready = false;
-	
+
 if 0 > bbox_left
 	x = abs(bbox_left - x);
 
@@ -95,9 +95,11 @@ if room_width < bbox_right
 	x = room_width - abs(bbox_right - x);
 
 if room_height + 32 < bbox_top
+{
 	kill();
+}
 
 move_ignore = max(move_ignore - 1, 0);
-shootdelay = max(shootdelay - 1, 0);
+attackdelay = max(attackdelay - 1, 0);
 
 life_idx++;

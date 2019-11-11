@@ -29,6 +29,5 @@ if tilemap_get_at_pixel(tile_collision,bbox_side + hspd,bbox_top)
 	hspd = 0;
 }
 
-
 x += hspd;
 y += vspd;

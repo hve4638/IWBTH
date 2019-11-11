@@ -1,6 +1,6 @@
 ///@desc tile_meeting
-///@param w
 ///@param h
+///@param v
 var w, h, iscol;
 var bbox_side;
 w = argument_count > 0 ? round(argument[0]) : 0;

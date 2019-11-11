@@ -3,6 +3,9 @@ var str = "";
 
 str += strmerge("debug enable");
 
+if on_convkey
+	str += strmerge("ConvKey enable");
+
 if show_info
 {
 	str += strmerge("mouse(gui):", display_mouse_get_x(), display_mouse_get_y());

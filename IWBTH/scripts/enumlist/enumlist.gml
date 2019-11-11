@@ -64,3 +64,8 @@ enum Difficulty {
 	normal = 1,
 	hard = 2
 }
+
+enum Attacktype {
+	gun,
+	sword
+}

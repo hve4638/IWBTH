@@ -8,4 +8,16 @@ if keyboard_check_pressed(vk_f2)
 }
 
 if keyboard_check_pressed(vk_f3)
-	screenshake(10, 5);
+	on_convkey = !on_convkey;
+
+
+if on_convkey
+{
+	if keyboard_check_pressed(ord("S"))
+		with(obj_player)
+		{
+			save();
+			instance_create(x, bbox_top - 8, obj_savetext);
+			echo_self(50, 1, c_white);
+		}
+}

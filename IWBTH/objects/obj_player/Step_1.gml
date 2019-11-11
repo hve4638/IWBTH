@@ -1,7 +1,17 @@
-var L, R, E;
+var L, R, E, S;
 L = button(Input.left);
 R = button(Input.right);
 E = button(Input.escape);
+S = button_press(Input.swap);
+
+if S
+{
+	if attacktype == Attacktype.gun
+		attacktype = Attacktype.sword;
+	else
+		attacktype = Attacktype.gun;
+}
+
 
 if 0 < move_ignore
 {

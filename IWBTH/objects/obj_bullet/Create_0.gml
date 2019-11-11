@@ -1,2 +1,2 @@
-hspd = obj_player.look*16;
+hspd = obj_player.look*18;
 alarm[0] = 120;

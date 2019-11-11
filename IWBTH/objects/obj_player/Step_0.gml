@@ -15,7 +15,7 @@ if !frozen
 var onblockR = !onground && tile_cling(1, 0);
 var onblockL = !onground && tile_cling(-1, 0);
 
-#region
+#region movement
 if h != 0
 {
 	if !(onblockL || onblockR)
@@ -67,11 +67,21 @@ if !frozen && !(0 < dashtime)
 			player_vjump();
 	}
 
-	if button(Input.attack) && shootdelay <= 0 
+	if attackdelay <= 0 
 	{
-		shootdelay = shootdelay_max;
-
-		player_shoot();
+		if attacktype == Attacktype.gun && button(Input.attack)
+		{
+			attackdelay = attackdelay_gun;
+			player_shoot();
+		}
+		else if attacktype == Attacktype.sword && button_press(Input.attack)
+		{
+			attackdelay = attackdelay_sword;
+			hspd = 0;
+			
+			player_slash();
+			
+		}
 	}
 	
 	if button_press(Input.dash) && dashdelay <= 0 && candash
