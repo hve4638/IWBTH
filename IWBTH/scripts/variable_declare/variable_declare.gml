@@ -1,5 +1,6 @@
 global.roomsound = load_csv(SOUND_DIRECTORY);
 global.textscript = load_csv(SCRIPT_DIRECTORY);
+global.record = load_json(RECORD_DIRECTORY);
 
 global.savemeta[0] = "x";
 global.savemeta[1] = "y";

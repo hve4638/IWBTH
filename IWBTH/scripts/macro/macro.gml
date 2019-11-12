@@ -2,6 +2,7 @@
 #macro CONFIG_DIRECTORY "config"
 #macro SAVE_DIRECTORY "data"
 #macro SCRIPT_DIRECTORY "script"
+#macro RECORD_DIRECTORY "record"
 #macro SOUND_DIRECTORY "sounddata"
 
 #macro L_SYS "InsSystem"

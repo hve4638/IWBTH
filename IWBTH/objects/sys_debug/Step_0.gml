@@ -10,9 +10,16 @@ if keyboard_check_pressed(vk_f2)
 if keyboard_check_pressed(vk_f3)
 	on_convkey = !on_convkey;
 
+if keyboard_check_pressed(vk_f7)
+	on_teleport = !on_teleport;
+
 if keyboard_check_pressed(vk_f9)
+{
 	if !instance_exists(sys_record)
 		instance_create_layer(0,0,L_SYS, sys_record);
+	else
+		instance_destroy(sys_record);
+}
 
 if on_convkey
 {
@@ -22,5 +29,15 @@ if on_convkey
 			save();
 			instance_create_depth(x, bbox_top - 8, 0, obj_savetext);
 			echo_self(50, 1, c_white);
+		}
+}
+
+if on_teleport
+{
+	if mouse_check_button_pressed(mb_left)
+		with(Player)
+		{
+			x = mouse_x;
+			y = mouse_y;
 		}
 }

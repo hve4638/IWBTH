@@ -36,7 +36,6 @@ record_set_target(record, obj_player);
 //record_set_index();
 //record_get_index();
 //draw_record(record, index);
-//record_shot(record);
 //record_encode(record);
 //record_decode();
 

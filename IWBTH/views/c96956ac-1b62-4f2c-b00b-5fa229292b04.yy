@@ -4,6 +4,7 @@
     "mvc": "1.1",
     "name": "c96956ac-1b62-4f2c-b00b-5fa229292b04",
     "children": [
+        "660aa82b-8bde-4839-b905-e0009914c463",
         "a9b148e4-4f93-4e44-9098-cef214cb454f",
         "758d9191-e502-4197-aac5-d14582c3b48d",
         "e9c857bd-e37b-41b1-9f80-2f2fec807270",
@@ -22,8 +23,7 @@
         "1de7b692-120a-4be5-bd26-936815ee179b",
         "0102ffee-3394-4cef-99a1-46cb575d825f",
         "183c095e-e98c-46f7-b0c3-d838be18d163",
-        "c1430913-b666-47c0-b58b-a255e9bf83c7",
-        "705076e5-ea8f-457e-9a9f-105e8cb625f8"
+        "c1430913-b666-47c0-b58b-a255e9bf83c7"
     ],
     "filterType": "GMSprite",
     "folderName": "tilesets",
