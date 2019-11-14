@@ -21,6 +21,16 @@ if keyboard_check_pressed(vk_f9)
 		instance_destroy(sys_record);
 }
 
+if keyboard_check_pressed(vk_f4)
+	on_viewratio = !on_viewratio;
+
+if on_viewratio
+{
+	view_ratio += (mouse_wheel_down() - mouse_wheel_up()) * 0.1;
+	view_ratio = max(view_ratio, 1.0);
+	
+	camera_set_view_size(view_camera[0], 1088 * view_ratio, 608 * view_ratio);
+}
 if on_convkey
 {
 	if keyboard_check_pressed(ord("S"))

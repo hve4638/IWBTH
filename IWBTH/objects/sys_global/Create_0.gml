@@ -6,6 +6,7 @@ globalvar volum_music, volum_sound;
 globalvar win_h, win_w;
 globalvar savedata;
 globalvar sv_auto, sv_x, sv_y, sv_room, sv_look, sv_time, sv_death;
+globalvar enablekeyinput;
 
 time = 0;
 death = 0;
@@ -27,6 +28,7 @@ canrestart = true;
 vesion_p = 0;
 bgm_p = noone;
 
+enablekeyinput = true;
 
 fade_alpha = 0.0;
 fade_alpha_p = 0.0;
