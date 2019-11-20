@@ -4,8 +4,6 @@
     "mvc": "1.1",
     "name": "836dea5d-153b-4c95-93e7-0c01fc44e09a",
     "children": [
-        "d7e7999a-4201-4a54-bc93-4c25dbfbe3e0",
-        "601e78fa-520e-484f-89da-79efab3530fe",
         "86c20a50-4661-4c7b-809b-0c151566736d",
         "42585ffb-5de2-47b2-921a-de573afffdae",
         "38aaa302-8a36-4cdb-86d4-5b09fe491988",
@@ -22,7 +20,7 @@
         "75449502-71c4-4f06-8589-237119eca740"
     ],
     "filterType": "GMSprite",
-    "folderName": "character",
+    "folderName": "OldBosses",
     "isDefaultView": false,
     "localisedFolderName": ""
 }

@@ -1,5 +1,6 @@
 ///@desc New Event
 reflect_list = ds_list_create();
+reflect_queue = ds_priority_create();
 ds_list_add(reflect_list, obj_player, obj_bullet, obj_slash, obj_echo, obj_hubcolumn);
 
 u_sec = shader_get_uniform(shader2, "time");

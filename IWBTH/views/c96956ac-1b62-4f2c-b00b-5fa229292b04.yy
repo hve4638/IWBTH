@@ -5,27 +5,13 @@
     "name": "c96956ac-1b62-4f2c-b00b-5fa229292b04",
     "children": [
         "a9b148e4-4f93-4e44-9098-cef214cb454f",
-        "758d9191-e502-4197-aac5-d14582c3b48d",
-        "e9c857bd-e37b-41b1-9f80-2f2fec807270",
-        "fc353416-f8ee-4efd-b6ba-f0708c4c3059",
-        "8e5e10ab-6c09-41bc-9862-2b011e1b75f7",
-        "58187275-04f8-48a9-b63d-75c1ed3881be",
-        "cf2e4ab2-60ad-42b6-8cd8-b5329bd5726b",
-        "ed187964-d18b-4db7-be2a-47ddb60b512a",
-        "e6ed3f6a-aeeb-4266-9ba4-141b0906a003",
-        "08972c46-100e-4153-a4b7-94a0bdbefd32",
-        "4217eac1-8430-4516-8228-2cbf58533bb7",
-        "c5ffd0e3-be66-4444-b2d3-cf580980bf9f",
-        "9ff0a2c6-2c40-44f9-9779-bc2c8aa2b4f7",
-        "1f10c19f-dbab-489b-9a56-d0d26ab6b3ba",
-        "63c81860-2b6b-4ede-8676-dfd309b185d4",
-        "1de7b692-120a-4be5-bd26-936815ee179b",
-        "0102ffee-3394-4cef-99a1-46cb575d825f",
-        "183c095e-e98c-46f7-b0c3-d838be18d163",
-        "c1430913-b666-47c0-b58b-a255e9bf83c7"
+        "3dd30c31-ce25-4ffc-9592-12f83368c679",
+        "9924baef-f3bd-4489-9eda-ba73b61fe64b",
+        "f791eba8-1f5f-4ac7-8c32-f8937321496b",
+        "dcf1e805-7151-4348-8fd2-091dc564e360"
     ],
     "filterType": "GMSprite",
-    "folderName": "tilesets",
+    "folderName": "tileset & background",
     "isDefaultView": false,
     "localisedFolderName": ""
 }

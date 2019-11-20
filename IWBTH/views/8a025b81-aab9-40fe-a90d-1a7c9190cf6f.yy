@@ -12,7 +12,7 @@
         "f2b8e119-f670-4522-8f94-0da33c3bec3a"
     ],
     "filterType": "GMSprite",
-    "folderName": "Spike",
+    "folderName": "spike",
     "isDefaultView": false,
     "localisedFolderName": ""
 }
