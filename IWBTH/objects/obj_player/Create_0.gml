@@ -6,7 +6,6 @@ grav = 0.4;
 maxhp = 1;
 hp = 1;
 
-
 slideready = false
 onwalljump = false;
 onground = false;
@@ -37,6 +36,9 @@ attackdelay_gun = 7;
 attackdelay_sword = 15;
 attacktype = Attacktype.gun;
 
+slash_delay = 0;
+slash_delay_max = 3;
+
 candash = false;
 dashdelay = 0;
 dashdelay_max = 30;
@@ -45,7 +47,6 @@ dashdir = 0;
 dashlen = 6;
 dashtime = 0;
 #endregion
-
 
 #region escape
 canescape = true;

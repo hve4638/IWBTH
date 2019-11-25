@@ -1,8 +1,11 @@
-with(instance_create_layer(x,y - 6, L_ABOVE, obj_slash))
+with(precreate(x, y - 5, L_ABOVE))
 {
 	image_speed = 0.5;
 	image_xscale = 1.3 * other.look;
 	image_yscale = 1.3;
+	look = other.look;
+	
+	changed(obj_slash);
 }
 
-vspd *= 0;
+slash_delay = slash_delay_max;

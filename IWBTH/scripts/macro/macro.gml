@@ -15,4 +15,4 @@
 #macro view_w 1088
 #macro view_h 608
 
-#macro INSTANTPLAY true
+#macro INSTANTPLAY false

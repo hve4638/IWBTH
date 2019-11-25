@@ -16,11 +16,11 @@ void main()
 {
 	vec2 tv = vec2(fragCoord.x,fragCoord.y);
 	vec2 uv;
-	//float addx = cos((v_vTexcoord.y) * 15.0 + time);
+	float addx = cos((v_vTexcoord.y) * 15.0 + time);
 	float addy = water_surface - (water_surface - v_vTexcoord.y);
 	
 	uv = tv.xy;
-	//uv.x += addx;
+	uv.x += addx;
 	uv.y += addy;
 	
 	uv /= resolution.xy;

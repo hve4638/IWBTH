@@ -1,4 +1,4 @@
-if collision_point(x,y,obj_killer,1,0)
+if place_meeting(x,y,obj_killer)
 	kill();
 
 if dashtime <= 0
@@ -14,9 +14,18 @@ else
 	image_xscale *= look;
 	
 	for(var i = 0; i < abs(hspd); i++)
-		echo_self_pos(x - i*sign(hspd), y, 12 + dashtime div 2, 1, c_white, 0.25);
+		echo_self_pos(x - i*sign(hspd), y, 10 + dashtime div 2, 1, c_white, 0.25);
 
 	image_xscale = xs;
+}
+
+if slash_delay <= 0
+	max_hspd = min(max_hspd + 1, 3);
+else
+{
+	slash_delay--;
+	max_hspd = 1;
+	vspd *= 0.25;
 }
 
 if hspd_slide != 0
@@ -29,6 +38,8 @@ if hspd_slide != 0
 		hspd_slide += hspd_dec;
 }
 
+
+#region escape
 if escapetry
 {
 	escape_alpha = min(escape_alpha+0.05, 1.0);
@@ -83,6 +94,7 @@ if 0<escape_idx && escapetry
 			particle_emit(Particle.escape_try2,x-20,x+20,bbox_bottom-6,bbox_bottom+3, t);
 	}
 }
+#endregion
 
 
 if onground
