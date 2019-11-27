@@ -1,2 +1,1 @@
-damage = 1;
-look = 1;
+image_speed = 0;

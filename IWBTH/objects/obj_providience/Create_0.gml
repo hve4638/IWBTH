@@ -16,3 +16,11 @@ ds_list_add(tmp, spr_providience_phase3);
 
 
 spr_idx = 0;
+damage_ins = noone;
+
+damage_spr = ds_map_create();
+damage_spr[? spr_providience_attack] = spr_mask_providience_attack1;
+damage_spr[? spr_providience_attack3] = spr_mask_providience_attack3;
+damage_spr[? spr_providience_attack4] = spr_mask_providience_attack4
+
+rand_create(1, 2, 3, 4, 5);

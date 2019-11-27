@@ -12,7 +12,7 @@
         "97e22d32-9b85-439c-8b38-578020c49b49"
     ],
     "filterType": "GMScript",
-    "folderName": "echo",
+    "folderName": "Echo",
     "isDefaultView": false,
     "localisedFolderName": ""
 }

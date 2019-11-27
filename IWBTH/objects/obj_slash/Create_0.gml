@@ -1,4 +1,4 @@
-damage_ins = instance_create(x, y, obj_damagebox);
+damage_ins = instance_create(x, y, obj_dealbox);
 damage = 5;
 
 var bx, by, w, h;

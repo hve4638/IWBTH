@@ -12,8 +12,6 @@ y2 = min(bbox_bottom - cam_y, win_h);
 rw = abs(x2 - x1);
 rh = abs(y2 - y1);
 
-
-//cout("x:", x1, "~", x2, "y:", y1, "~", y2, " (", rw, ",", rh, ")");
 if rw == 0 || rh == 0
 	exit;
 
@@ -33,24 +31,3 @@ draw_set_color(reflect_color);
 draw_set_alpha(0.4);
 draw_rectangle(x1, y1, x2, y2, false);
 draw_set_reset();
-
-/*
-shader_set(shader2);
-	shader_set_uniform_f(u_sec, sec);
-	shader_set_uniform_f(u_resolution, 1088, 608);
-	shader_set_uniform_f(u_boundary, y1);
-	texture_set_stage(u_texture, surface_get_texture(application_surface));
-	draw_rectangle(x1, y1, x2, y2 ,false);
-shader_reset();
-*/
-
-
-//draw_surface(application_surface, 0, 0);
-
-/*
-draw_set_color(c_aqua);
-draw_set_alpha(0.1);
-draw_rectangle(x1,y1,x2,y2,false);
-draw_set_reset();
-
-//draw_text(320, 54,lengthdir_y(32,sec));

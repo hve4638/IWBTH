@@ -10,7 +10,7 @@
         "e1819adc-87ed-4601-b9b0-c1deecd67a55"
     ],
     "filterType": "GMScript",
-    "folderName": "Pattern",
+    "folderName": "Rand",
     "isDefaultView": false,
     "localisedFolderName": ""
 }

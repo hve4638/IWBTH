@@ -19,10 +19,12 @@
         "60f7938b-2ca7-4e0c-98cb-26c2caff5997",
         "a2e0f3d8-621f-4d09-b02b-2ee3469c7bec",
         "57422b39-5364-48f3-8177-ffe48b38890b",
-        "6c60db1c-4281-4884-ad5a-82f22abfff9b"
+        "6c60db1c-4281-4884-ad5a-82f22abfff9b",
+        "5b7a9a5a-1232-44c0-a3fa-262c2538e64b",
+        "a32de399-6c01-46d3-a1d6-c2be8483e6c0"
     ],
     "filterType": "GMScript",
-    "folderName": "record",
+    "folderName": "Record",
     "isDefaultView": false,
     "localisedFolderName": ""
 }

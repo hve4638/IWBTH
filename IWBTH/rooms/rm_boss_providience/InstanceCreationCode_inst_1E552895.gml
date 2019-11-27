@@ -1,0 +1,1 @@
+reflect_color = 0xF2F2F2;

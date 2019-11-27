@@ -1,5 +1,5 @@
 if isno(toroom)
-	exit;
+	return false;
 
 if pos_remain
 {
@@ -22,3 +22,4 @@ if pos_remain
 }
 
 room_goto(toroom);
+return true;
