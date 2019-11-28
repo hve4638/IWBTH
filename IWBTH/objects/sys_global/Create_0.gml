@@ -39,3 +39,12 @@ fade_time = 0;
 fade_color = c_black;
 fade_add = 0;
 
+intro_x = 0;
+intro_y = 0;
+intro_spr = 0;
+intro_time = 0;
+intro_alpha = 0;
+
+show_bosshp = false;
+bosshp = 0;
+bosshp_ins = noone;

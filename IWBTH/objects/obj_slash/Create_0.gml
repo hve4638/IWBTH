@@ -1,5 +1,5 @@
 damage_ins = instance_create(x, y, obj_dealbox);
-damage = 5;
+damage = 3;
 
 var bx, by, w, h;
 bx = bbox_left;
@@ -15,4 +15,5 @@ with(damage_ins)
 	image_yscale = h;
 
 	look = other.look;
+	damage = other.damage;
 }

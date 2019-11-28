@@ -1,26 +1,39 @@
-tmp = ds_list_create();
-ds_list_add(tmp, spr_providience_idle);
-ds_list_add(tmp, spr_providience_idle2);
-ds_list_add(tmp, spr_providience_attack);
-ds_list_add(tmp, spr_providience_attack2);
-ds_list_add(tmp, spr_providience_attack3);
-ds_list_add(tmp, spr_providience_attack4);
-ds_list_add(tmp, spr_providience_move);
-ds_list_add(tmp, spr_providience_dash);
-ds_list_add(tmp, spr_providience_seat);
-ds_list_add(tmp, spr_providience_up);
-ds_list_add(tmp, spr_providience_down);
-ds_list_add(tmp, spr_providience_phase1);
-ds_list_add(tmp, spr_providience_phase2);
-ds_list_add(tmp, spr_providience_phase3);
+maxhp = 320;
+hp = maxhp;
+drawhp = 0;
+onhealth = false;
 
+hspd_add = 0;
+hspd_dec = 0.5;
+hspd = 0;
+vspd = 0;
 
-spr_idx = 0;
 damage_ins = noone;
 
-damage_spr = ds_map_create();
-damage_spr[? spr_providience_attack] = spr_mask_providience_attack1;
-damage_spr[? spr_providience_attack3] = spr_mask_providience_attack3;
-damage_spr[? spr_providience_attack4] = spr_mask_providience_attack4
+nextspr = ds_map_create();
+nextspr[? spr_providience_attack10] = spr_providience_ready11;
+nextspr[? spr_providience_attack11] = spr_providience_ready10;
+nextspr[? spr_providience_attack30] = spr_providience_ready31;
+nextspr[? spr_providience_seat0] = spr_providience_seat1;
 
-rand_create(1, 2, 3, 4, 5);
+dealspr = ds_map_create();
+dealspr[? spr_providience_attack00] = spr_mask_providience_attack00;
+dealspr[? spr_providience_attack10] = spr_mask_providience_attack10;
+dealspr[? spr_providience_attack11] = spr_mask_providience_attack11;
+dealspr[? spr_providience_attack20] = spr_mask_providience_attack20;
+dealspr[? spr_providience_attack30] = spr_mask_providience_attack30;
+
+idxspr_attack0_0 = spr_providience_ready10;
+idxspr_attack0_1 = spr_providience_attack10;
+idxspr_attack0_2 = spr_providience_attack11;
+idxspr_attack1_0 = spr_providience_ready30;
+idxspr_attack1_1 = spr_providience_attack30;
+
+rand_create(tl_providience01, tl_providience02);
+
+state = State.normal;
+
+enum State {
+	normal,
+	attack
+}

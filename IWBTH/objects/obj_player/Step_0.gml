@@ -67,7 +67,7 @@ if !frozen && !(0 < dashtime)
 			player_vjump();
 	}
 
-	if attackdelay <= 0 
+	if attackdelay <= 0
 	{
 		if attacktype == Attacktype.gun && button(Input.attack)
 		{

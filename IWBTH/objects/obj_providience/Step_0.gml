@@ -1,27 +1,17 @@
-var a = keyboard_check_pressed(ord("P")) - keyboard_check_pressed(ord("O"));
-var t = keyboard_check_pressed(ord("I"));
-
-if keyboard_check(vk_space)
-	cout(rand_next());
-
-for(var i = 0; i < max(ds_list_size(tmp), 9); i++)
-	if keyboard_check_pressed(ord(string(i+1)))
-	{
-		spr_idx = i;
-		t = true;
-	}
-
-if a != 0
+if keyboard_check_pressed(vk_space)
 {
-	spr_idx += a;
-	spr_idx = clamp(spr_idx, 0, ds_list_size(tmp) - 1);
-	t = true;
+	onhealth = true;
+	show_intro(32, win_h - 48, spr_intro_providience, 100);
 }
 
-if t
+if onhealth
 {
-	sprite_index = tmp[| spr_idx];
-	image_index = 0;
-	image_speed = 1;
+	var add = (hp - drawhp);
+	
+	drawhp += add / 10;
+
+	bossbar(drawhp/maxhp);
 }
 
+if keyboard_check_pressed(ord("N"))
+	timeline(rand_next());
