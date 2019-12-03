@@ -37,3 +37,19 @@ enum State {
 	normal,
 	attack
 }
+
+enum Todo {
+	spr,
+	img,
+	imgspd,
+	sleep
+}
+
+
+motion[0] = todo_create();
+todo_destroy(motion[0]);
+todo_add(motion[0], Todo.imgspd, 1);
+todo_add(motion[0], Todo.spr, 0);
+todo_add(motion[0], Todo.img, 0);
+todo_add(motion[0], Todo.sleep, 5);
+//todo_act(a);

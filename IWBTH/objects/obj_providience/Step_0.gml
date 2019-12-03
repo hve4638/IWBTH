@@ -1,7 +1,7 @@
 if keyboard_check_pressed(vk_space)
 {
 	onhealth = true;
-	show_intro(32, win_h - 48, spr_intro_providience, 100);
+	show_intro(64, win_h - 64, spr_intro_providience);
 }
 
 if onhealth

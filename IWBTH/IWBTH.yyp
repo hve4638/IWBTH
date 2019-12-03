@@ -495,6 +495,14 @@
             }
         },
         {
+            "Key": "19bfdff2-8cd9-43f5-ae8e-a771fe928898",
+            "Value": {
+                "id": "f25d0368-5f0c-4494-a03f-6443a6f35aa5",
+                "resourcePath": "scripts\\todo_create\\todo_create.yy",
+                "resourceType": "GMScript"
+            }
+        },
+        {
             "Key": "19f40832-47f3-4699-b36d-1151ff09347c",
             "Value": {
                 "id": "15b92a53-6c88-411c-856e-f73750ac173a",
@@ -564,14 +572,6 @@
                 "id": "d1f45934-3d2d-40a0-945f-8f245aefe9b4",
                 "resourcePath": "views\\1e093ea7-891f-426a-8040-7d25b7c7d616.yy",
                 "resourceType": "GMFolder"
-            }
-        },
-        {
-            "Key": "1e80ff17-51e9-404c-8b00-daca43b486f6",
-            "Value": {
-                "id": "3975e90d-1548-4f2c-9e35-cbfcd63a08a5",
-                "resourcePath": "sprites\\spr_intro_providience\\spr_intro_providience.yy",
-                "resourceType": "GMSprite"
             }
         },
         {
@@ -667,14 +667,6 @@
             "Value": {
                 "id": "8e699095-e832-4429-bbdc-611cafbdc2bb",
                 "resourcePath": "sprites\\spr_dragun_intro\\spr_dragun_intro.yy",
-                "resourceType": "GMSprite"
-            }
-        },
-        {
-            "Key": "233abf2d-c4e8-4142-8d2d-5d3f7a94ba02",
-            "Value": {
-                "id": "2788bf2c-b992-4420-9b21-2159690b5ee8",
-                "resourcePath": "sprites\\spr_witch_after\\spr_witch_after.yy",
                 "resourceType": "GMSprite"
             }
         },
@@ -948,14 +940,6 @@
                 "id": "dad3738c-c83d-4e91-890e-57a43fec75ab",
                 "resourcePath": "scripts\\echo_self_pos\\echo_self_pos.yy",
                 "resourceType": "GMScript"
-            }
-        },
-        {
-            "Key": "303cc82e-fd6c-451c-8bf1-2aa3ba86ad2f",
-            "Value": {
-                "id": "d12758c6-3027-4b17-8ffe-78fd0fa9b276",
-                "resourcePath": "sprites\\spr_mage\\spr_mage.yy",
-                "resourceType": "GMSprite"
             }
         },
         {
@@ -1607,14 +1591,6 @@
             }
         },
         {
-            "Key": "5382a471-6eda-403f-94e8-581376a74687",
-            "Value": {
-                "id": "5eafefbc-6261-4028-befb-fef238375a87",
-                "resourcePath": "sprites\\spr_witch\\spr_witch.yy",
-                "resourceType": "GMSprite"
-            }
-        },
-        {
             "Key": "53dd1161-ebd6-405d-8020-58be6bfd4586",
             "Value": {
                 "id": "5a9fcc4b-64bc-4228-9ee8-ae8fd8b97a4a",
@@ -1667,6 +1643,14 @@
             "Value": {
                 "id": "273ea29d-03f3-4669-a76d-c991527ac806",
                 "resourcePath": "sprites\\spr_water_hub\\spr_water_hub.yy",
+                "resourceType": "GMSprite"
+            }
+        },
+        {
+            "Key": "5606164e-4473-4e53-8f3d-e1f0274943f9",
+            "Value": {
+                "id": "2afcaf8b-62bd-4ecf-aa4c-cc9d2e02d4da",
+                "resourcePath": "sprites\\spr_intro_providience\\spr_intro_providience.yy",
                 "resourceType": "GMSprite"
             }
         },
@@ -2268,6 +2252,14 @@
                 "id": "90b70da4-87cf-4ab5-9e69-6ab894728a97",
                 "resourcePath": "sprites\\spr_providience_attackB\\spr_providience_attackB.yy",
                 "resourceType": "GMSprite"
+            }
+        },
+        {
+            "Key": "772408d8-9262-430d-a6cb-875147d13b8f",
+            "Value": {
+                "id": "2e86eebf-3c9f-4b1c-b390-10ae1ffa61cb",
+                "resourcePath": "scripts\\todo_act\\todo_act.yy",
+                "resourceType": "GMScript"
             }
         },
         {
@@ -3399,6 +3391,14 @@
             }
         },
         {
+            "Key": "ab2e74ff-e79c-4e4a-bd3d-6c47eee495c0",
+            "Value": {
+                "id": "47017196-1829-4060-899d-e13cce4b5192",
+                "resourcePath": "scripts\\todo_destroy\\todo_destroy.yy",
+                "resourceType": "GMScript"
+            }
+        },
+        {
             "Key": "ab7aa137-b294-439b-aad7-0104a9a01896",
             "Value": {
                 "id": "c28a5a46-23b0-4c30-a4c8-c2bf7cc90955",
@@ -3420,6 +3420,14 @@
                 "id": "d5edc6fd-9b60-400f-b5d9-849bf8ad9e5b",
                 "resourcePath": "objects\\obj_spike2\\obj_spike2.yy",
                 "resourceType": "GMObject"
+            }
+        },
+        {
+            "Key": "abcafe29-f805-464d-a27f-35911c96d0f0",
+            "Value": {
+                "id": "b3499d8f-061f-4728-a3b8-fd76b7142c60",
+                "resourcePath": "sprites\\spr_mage\\spr_mage.yy",
+                "resourceType": "GMSprite"
             }
         },
         {
@@ -4148,6 +4156,14 @@
                 "id": "0213fd99-feb0-4963-8110-576aa69915bb",
                 "resourcePath": "sprites\\spr_sword\\spr_sword.yy",
                 "resourceType": "GMSprite"
+            }
+        },
+        {
+            "Key": "d8281a90-f836-429b-b564-b3ae2fbe5c6f",
+            "Value": {
+                "id": "0247dadb-54b2-4f70-a543-ed9b7c493bde",
+                "resourcePath": "scripts\\todo_add\\todo_add.yy",
+                "resourceType": "GMScript"
             }
         },
         {
