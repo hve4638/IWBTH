@@ -15,3 +15,14 @@ else
 	if instance_exists(damage_ins)
 		instance_destroy(damage_ins);
 }
+
+if onhealth
+{
+	var add = (hp - drawhp);
+	drawhp += add / 10;
+	
+	bossbar(drawhp/maxhp);
+}
+
+if onlook
+	image_xscale = (x != Player.x) ? sign(Player.x - x) : image_xscale;

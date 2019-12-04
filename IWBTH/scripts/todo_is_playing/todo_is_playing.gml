@@ -1,0 +1,1 @@
+return ds_map_exists(global.todolist, id);

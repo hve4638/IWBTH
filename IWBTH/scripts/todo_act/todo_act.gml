@@ -1,17 +1,20 @@
 ///@argu id
-var arr, list, pos, delay, loop;
+var arr, list, pos, delay, loop, val, signal;
 var ex;
 arr = argument[0];
 list = arr[@ 0];
 pos = arr[@ 1];
 delay = arr[@ 2];
 loop = arr[@ 3];
+val = arr[@ 5];
+signal = false;
 
 while(true)
 {
 	if 0 < delay
 	{
 		delay--;
+
 		break;
 	}
 
@@ -47,10 +50,20 @@ while(true)
 		case Todo.sleep:
 			delay = list[| pos++];
 		break;
+		
+		case Todo.signal:
+			signal = true;
+		break;
+		
+		case Todo.send:
+			val = list[| pos++];
+		break;
 	}
 }
 
 arr[@ 1] = pos;
 arr[@ 2] = delay;
+arr[@ 4] = signal;
+arr[@ 5] = val;
 
 return 0;

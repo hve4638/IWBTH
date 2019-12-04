@@ -8,10 +8,8 @@ loop = true;
 idx = 0;
 nx = ds_map_find_first(m);
 
-cout("####");
 while(loop)
 {
-	cout("cout:" ,idx, nx);
 	idx = nx;
 	if ds_map_find_last(m) != nx
 		nx = ds_map_find_next(m, nx);

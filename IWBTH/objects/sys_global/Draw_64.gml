@@ -4,7 +4,6 @@
 //draw_text(win_w, 0, fps);
 //draw_set_reset();
 
-
 if 0 < intro_alpha
 	draw_sprite_ext(intro_spr, 0, intro_x, intro_y, 1, 1, 0, c_white, intro_alpha);
 

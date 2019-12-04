@@ -1,17 +1,29 @@
-if keyboard_check_pressed(vk_space)
+if 0 < actex && todo_is_playing()
 {
-	onhealth = true;
-	show_intro(64, win_h - 64, spr_intro_providience);
+	if todo_signal(todo_current())
+		cout("Signal!");
+
+	switch(actex)
+	{
+		case 1:
+			if todo_signal(todo_current())
+				hspd_add = todo_get_value(todo_current()) * image_xscale;
+		break;
+	}
 }
 
-if onhealth
+if hspd_add != 0
 {
-	var add = (hp - drawhp);
-	
-	drawhp += add / 10;
+	hspd = hspd_add;
 
-	bossbar(drawhp/maxhp);
+	if abs(hspd_add) < hspd_dec
+		hspd_add = 0;
+	else if 0 < hspd_add
+		hspd_add -= hspd_dec;
+	else if 0 > hspd_add
+		hspd_add += hspd_dec;
 }
+else
+	hspd = 0;
 
-if keyboard_check_pressed(ord("N"))
-	todo_play(motion[0]);
+x += hspd;

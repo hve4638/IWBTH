@@ -38,7 +38,6 @@ if hspd_slide != 0
 		hspd_slide += hspd_dec;
 }
 
-
 #region escape
 if escapetry
 {
