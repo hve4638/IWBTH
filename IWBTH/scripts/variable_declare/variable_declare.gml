@@ -17,3 +17,7 @@ ds_list_add(global.resolution_w, 1024, 1088, 1270, 1366, 1600, 1920, 2560);
 ds_list_add(global.resolution_h, 576, 608, 720, 768, 900, 1080, 1440);
 
 global.edgeblur_surf = -1;
+
+global.todolist = ds_map_create();
+
+global_ds_init();

@@ -2,7 +2,7 @@ if ds_map_exists(dealspr, sprite_index)
 {
 	if !instance_exists(damage_ins)
 		damage_ins = instance_create(0, 0, obj_damagebox);
-	damage_ins.visible = true;
+	//damage_ins.visible = true;
 	damage_ins.x = x;
 	damage_ins.y = y;
 	damage_ins.sprite_index = dealspr[? sprite_index];

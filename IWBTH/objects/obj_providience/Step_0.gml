@@ -14,4 +14,4 @@ if onhealth
 }
 
 if keyboard_check_pressed(ord("N"))
-	timeline(rand_next());
+	todo_play(motion[0]);

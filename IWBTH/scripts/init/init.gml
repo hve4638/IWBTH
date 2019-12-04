@@ -9,7 +9,6 @@ variable_declare();
 
 //arr = layer_get_all();
 
-
 config_def();
 config_read();
 

@@ -1,6 +1,6 @@
 ///@argu id
 var arr, list, pos, delay, loop;
-var idx, ex;
+var ex;
 arr = argument[0];
 list = arr[@ 0];
 pos = arr[@ 1];
@@ -15,7 +15,7 @@ while(true)
 		break;
 	}
 
-	if pos+1 >= ds_list_size(list)
+	if pos >= ds_list_size(list)
 	{
 		if loop
 			pos = 0;
@@ -23,24 +23,29 @@ while(true)
 			break;
 	}
 	ex = list[| pos++];
-	idx = list[| pos++];
 
 	switch(ex)
 	{
 		case Todo.spr:
-			sprite_index = idx;
+			sprite_index = list[| pos++];
+			image_index = list[| pos++];
+			image_speed = list[| pos++];
 		break;
 
-		case Todo.img:
-			image_index = idx;
+		case Todo.mainimg:
+			sprite_index = list[| pos++];
+		break;
+
+		case Todo.subimg:
+			image_index = list[| pos++];
 		break;
 	
 		case Todo.imgspd:
-			image_speed = idx;
+			image_speed = list[| pos++];
 		break;
 
 		case Todo.sleep:
-			delay = idx;
+			delay = list[| pos++];
 		break;
 	}
 }
