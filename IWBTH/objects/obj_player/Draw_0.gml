@@ -1,6 +1,6 @@
 var alpha, drawx, drawy, xscale;
-drawx = floor(x);
-drawy = floor(y);
+drawx = round(x);
+drawy = round(y);
 alpha = image_alpha;
 xscale = image_xscale * look;
 

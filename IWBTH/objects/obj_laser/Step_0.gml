@@ -6,6 +6,9 @@ else
 if life <= life_idx
 	instance_destroy();
 
+if image_yscale <= 0
+	instance_destroy();
+
 num += num_add;
 den += den_add;
 life_idx++;

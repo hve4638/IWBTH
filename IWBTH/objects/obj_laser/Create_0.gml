@@ -1,10 +1,10 @@
 num = 1;
 den = 1;
-life = 0;
+life = 20;
 
 num_add = 0;
 den_add = 0;
-life_idx = 9;
+life_idx = 0;
 
 damagethick = 0.3;
 

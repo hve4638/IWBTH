@@ -1,4 +1,4 @@
 ///@argu id
-var arr = argument[0];
+var map = argument[0];
 
-return arr[@ 4];
+return map[? TodoMap.signal];

@@ -1,13 +1,13 @@
 ///@argu id
-var arr, list, pos, delay, loop, val, signal;
+var map, list, pos, delay, loop, val, signal;
 var ex;
-arr = argument[0];
-list = arr[@ 0];
-pos = arr[@ 1];
-delay = arr[@ 2];
-loop = arr[@ 3];
-val = arr[@ 5];
-signal = false;
+map = argument[0];
+list = map[? TodoMap.list];
+pos = map[? TodoMap.pos];
+delay = map[? TodoMap.delay];
+loop = map[? TodoMap.loop];
+val = map[? TodoMap.value];
+signal = 0;
 
 while(true)
 {
@@ -25,8 +25,8 @@ while(true)
 		else
 			break;
 	}
+	
 	ex = list[| pos++];
-
 	switch(ex)
 	{
 		case Todo.spr:
@@ -52,18 +52,25 @@ while(true)
 		break;
 		
 		case Todo.signal:
-			signal = true;
+			signal = list[| pos++];
 		break;
 		
 		case Todo.send:
 			val = list[| pos++];
 		break;
+		
+		case Todo.sound:
+			sfx(list[| pos++]);
+		break;
+		
+		default:
+		break;
 	}
 }
 
-arr[@ 1] = pos;
-arr[@ 2] = delay;
-arr[@ 4] = signal;
-arr[@ 5] = val;
+map[? TodoMap.pos] = pos;
+map[? TodoMap.delay] = delay;
+map[? TodoMap.signal] = signal;
+map[? TodoMap.value] = val;
 
 return 0;

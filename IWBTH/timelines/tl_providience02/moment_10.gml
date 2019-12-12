@@ -1,1 +1,0 @@
-sprite_change(idxspr_attack1_1);

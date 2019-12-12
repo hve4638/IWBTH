@@ -4,14 +4,7 @@
     "mvc": "1.1",
     "name": "773b885e-1898-476d-811d-4283b8923d62",
     "children": [
-        "a31389b3-443e-4361-b988-ad40d99467ff",
-        "807f20da-ff3f-4353-85e1-75feeb155169",
-        "2b82d103-e5dc-4c96-93cb-374b560d4b9a",
-        "77fea1d5-ed70-43b5-b705-069add04a976",
-        "bfdb36d4-bee1-49fe-bc82-cf3acfc09106",
-        "b250c885-59be-4e7d-a71e-91db44db36a4",
-        "01d8bb80-c7c4-4bbf-8cc6-5df69842aa8c",
-        "28347ebc-a60d-4adb-b623-e8ab6ff24c3b",
+        "d55c705d-94cf-408a-a43e-6915c0d3c651",
         "681418a0-314c-4406-8f11-df9755179af7",
         "7c5b2a11-f9fc-4fbc-9007-ef909105827d",
         "9a5d5821-d7e9-4f3e-8fe0-47545756516d",
@@ -30,7 +23,8 @@
         "6a07ae35-e364-49ea-a5b7-0cdfa6011d6c",
         "8f658aa9-4eeb-4b87-a40a-990be0b9a095",
         "5dc13751-8606-4eea-ad58-df4a3a3c48a8",
-        "8e0e6b84-de0e-4243-b4b2-19be613aed41"
+        "8e0e6b84-de0e-4243-b4b2-19be613aed41",
+        "45556260-6af2-4607-8235-346f5d4b97ef"
     ],
     "filterType": "GMSound",
     "folderName": "SFX",

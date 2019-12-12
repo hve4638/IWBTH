@@ -1,4 +1,5 @@
 ///@argu id
 ///@argu bool
-var arr = argument[0];
-arr[@ 3] = argument[1];
+var map = argument[0];
+
+map[? TodoMap.loop] = argument[1];

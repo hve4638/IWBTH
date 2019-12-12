@@ -1,29 +1,19 @@
-/*var DELAY, FIREMIN, FIREMAX;
-DELAY = firedelay;
-FIREMIN = firedelay + 10;
-FIREMAX = FIREMIN + firecool;
+var FIREMIN, FIREMAX;
+FIREMIN = firedelay;
+FIREMAX = FIREMIN + firetime;
 
-if I<=DELAY
+if FIREMIN <= life_idx && life_idx <= FIREMAX && (life_idx mod firecool == 0)
 {
-    with(sys_part) {
-        if ++prt[16]==0 event_user(0);
-        part_type_color1(particle[16],other.col);
-        part_system_depth(Sys[16],-5);
-        part_emitter_region(Sys[16],emitter[16],other.x-9,other.x+9,other.y,other.y-16,1,1);
-        part_emitter_burst(Sys[16],emitter[16],particle[16],other.dustcnt);
-    }
-}
-else if FIREMIN<= I&& I<=FIREMAX && I mod 2 == 0
-{
-    var i=instance_create(x,y,obj_laser);
-    with(i) {
-        image_angle=90;
-        ar=3; ad=2;
-        image_index = other.ind;
+    with(instance_create(x,y,obj_laser))
+	{
+        image_angle = 90;
+		num = 3;
+        den_add = 1;
     }
     
-    scp_shake(shakepower,3,0);
-    
+	screenshake(shakepow, shaketime);
+	sfx(firesnd);
+    /*
     i=instance_create(x,y,obj_charge);
     with(i) {
         image_blend=c_black
@@ -34,13 +24,9 @@ else if FIREMIN<= I&& I<=FIREMAX && I mod 2 == 0
         get_yscale=0.1;
         get_alpha=-0.05;
         ktime=20; depth=-9;
-    }
-    scp_sfx(snd_blast,2);
+    }*/
 }
-else if FIREMAX+1<I
-    instance_destroy();
+else if FIREMAX < life_idx
+	instance_destroy();
 
-
-
-I++;
-
+life_idx++;

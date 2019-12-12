@@ -1,5 +1,5 @@
 ///@argu id
 ///@argu pos
-var arr = argument[0];
+var map = argument[0];
 
-arr[@ 1] = argument[1];
+map[? TodoMap.pos] = argument[1];

@@ -18,10 +18,10 @@ while(loop)
 
 	with(idx)
 	{
-		todo_act(m[? idx]);
-
 		if todo_end(m[? idx])
 			ds_map_delete(m, idx);
+		else
+			todo_act(m[? idx]);
 	}
 }
 

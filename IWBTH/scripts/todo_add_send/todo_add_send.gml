@@ -1,6 +1,6 @@
 ///@argu id
 ///@argu val
-var arr, val;
-arr = argument[0];
-val = argument[1];
-todo_add(arr, Todo.send, val);
+var val;
+val = argument[0];
+
+todo_add(global.todoedit, Todo.send, val);

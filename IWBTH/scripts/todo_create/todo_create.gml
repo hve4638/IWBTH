@@ -1,9 +1,31 @@
-var arr;
-arr[0] = ds_list_create();
-arr[1] = 0; //position
-arr[2] = 0; //delay
-arr[3] = 0; //loop
-arr[4] = false; //signal
-arr[5] = 0; //value
+var map;
+map = ds_map_create();
+ds_map_add_list(map, TodoMap.list, ds_list_create());
+map[? TodoMap.pos] = 0;
+map[? TodoMap.delay] = 0;
+map[? TodoMap.loop] = 0;
+map[? TodoMap.signal] = 0;
+map[? TodoMap.value] = 0;
 
-return arr;
+return map;
+
+enum Todo {
+	spr,
+	mainimg,
+	subimg,
+	imgspd,
+	sleep,
+	signal,
+	send,
+	sound,
+	nope
+}
+
+enum TodoMap {
+	list,
+	pos,
+	delay,
+	loop,
+	signal,
+	value
+}

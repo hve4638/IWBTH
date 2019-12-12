@@ -1,7 +1,5 @@
-///@argu id
 ///@argu time
-var arr, t;
-arr = argument[0];
-t = argument[1];
+var t;
+t = max(argument[0], 0);
 
-todo_add(arr, Todo.sleep, t);
+todo_add(global.todoedit, Todo.sleep, t);

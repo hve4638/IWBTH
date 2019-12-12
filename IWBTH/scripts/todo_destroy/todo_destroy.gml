@@ -1,5 +1,3 @@
 ///@argu id
-var arr = argument[0];
 
-ds_list_destroy(arr[@ 0]);
-return 0;
+ds_map_destroy(argument[0]);

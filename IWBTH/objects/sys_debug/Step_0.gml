@@ -42,6 +42,12 @@ if on_convkey
 		}
 }
 
+if mouse_check_button_pressed(mb_right)
+{
+	cout("gener");
+	instance_create_layer(mouse_x, mouse_y, L_ABOVE, obj_lasergener);
+}
+
 if on_teleport
 {
 	if mouse_check_button_pressed(mb_left)

@@ -1,9 +1,10 @@
-/*I = 0;
+shakepow = 3;
+shaketime = 2;
+firesnd = snd_blast;
 
-col = 723723;
-firedelay = 10;
-firecool = 3;
-dustcnt = 20;
-shakepower = 16;
-ind = 0;
+firedelay = 30; //10;
+firetime = 1;
+firecool = 2;
 
+life_idx = 0;
+life = 50;
