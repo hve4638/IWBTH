@@ -1,11 +1,14 @@
 ///@param string*
-var str = "";
-for(var i = 0; i < argument_count; i++)
+var str = argument[0], ptype = typeof(argument[0]);
+
+for(var i = 1; i < argument_count; i++)
 {
-	if is_real(argument[i])
+	if ptype == typeof(argument[i])
 		str += string(argument[i]);
 	else
-		str += string(argument[i]) + " ";
+		str += " " + string(argument[i]);
+
+	ptype = typeof(argument[0])
 }
 
 if DEFAULT_COUTSHOW

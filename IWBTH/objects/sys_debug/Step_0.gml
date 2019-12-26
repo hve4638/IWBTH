@@ -6,6 +6,13 @@ if keyboard_check_pressed(vk_f2)
 	save_read();
 	cout("read save" + string(save_idx) + ".");
 }
+if keyboard_check_pressed(vk_anykey)
+{
+	switch(keyboard_key)
+	{
+		default:
+	}
+}
 
 if keyboard_check_pressed(vk_f3)
 	on_convkey = !on_convkey;
@@ -21,6 +28,11 @@ if keyboard_check_pressed(vk_f9)
 		instance_destroy(sys_record);
 }
 
+if keyboard_check_pressed(vk_f8)
+{
+	ongod = !ongod;	
+}
+
 if keyboard_check_pressed(vk_f4)
 	on_viewratio = !on_viewratio;
 
@@ -32,7 +44,7 @@ if on_viewratio
 	camera_set_view_size(view_camera[0], 1088 * view_ratio, 608 * view_ratio);
 }
 
-if keyboard_check(ord(vk_control))
+if keyboard_check(vk_control)
 {
 	if keyboard_check_pressed(ord("S"))
 		with(obj_player)

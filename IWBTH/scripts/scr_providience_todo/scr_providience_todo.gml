@@ -19,13 +19,17 @@ while(todo_signal_exists(td))
 				state = todo_receive(td);
 			break;
 			case -4:
-				state = StateP.normal;
+				state = StateP.idle;
 				ex_todo = 0;
 				onlook = true;
 				onabsorb = false;
+				onattack = true;
 			break;
 			case -5:
 				onabsorb = todo_receive(td);
+			break;
+			case -6:
+				onattack = todo_receive(td);
 			break;
 				
 			case -10:
@@ -38,6 +42,11 @@ while(todo_signal_exists(td))
 						screenshake(pw, t);
 					break;
 				}
+			break;
+
+			case -11:
+				on_teleport = true;
+				tp_x = clamp(Player.x + 128 * choose(1,-1), 96, room_width-96);
 			break;
 		}
 		#endregion
@@ -61,8 +70,8 @@ while(todo_signal_exists(td))
 				{
 					var a, b;
 					var w = i * 48;
-					a = instance_create_layer(bbox_right + w, 450, L_ABOVE, obj_lasergener);
-					b = instance_create_layer(bbox_left - w, 450, L_ABOVE, obj_lasergener);
+					a = instance_create_layer(x + 64 + w, 450, L_ABOVE, obj_lasergener);
+					b = instance_create_layer(x - 64 - w, 450, L_ABOVE, obj_lasergener);
 					a.sprite_index = spr_temp2;
 					b.sprite_index = spr_temp2;
 					a.shakepow = 16;
@@ -99,7 +108,7 @@ while(todo_signal_exists(td))
 		break;
 		
 		case 4:
-			if signal
+			if signal == 1
 			{
 				var i = 0, s = 0;
 				var w = abs(Player.x - x);
@@ -107,6 +116,24 @@ while(todo_signal_exists(td))
 					s += ++i;
 
 				hspd_add = i * image_xscale;
+			}
+			else if signal == 2
+			{
+				var i, s, w;
+				
+				with(obj_player)
+				{
+					i = 0; s = 0;
+					w = abs(other.x - x);	
+
+					while(s < w - 64)
+					{
+						i += hspd_dec;
+						s += i;
+					}
+
+					hspd_slide = i * sign(other.x - x);
+				}
 			}
 		break;
 		

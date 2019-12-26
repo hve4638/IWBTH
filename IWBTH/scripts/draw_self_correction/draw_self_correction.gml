@@ -1,10 +1,13 @@
-///@desc draw_self_correction
+///@argu x*
+///@argu y*
 var px, py;
-px = x;
-py = y;
-x = round(x);
-y = round(y);
+px = argument_count > 0 ? argument[0] : x;
+py = argument_count > 1 ? argument[1] : y;
+var tx, ty;
+tx = x; ty = y;
+x = round(px);
+y = round(py);
 draw_self();
 
-x = px;
-y = py;
+x = tx;
+y = ty;

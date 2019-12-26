@@ -8,6 +8,9 @@ globalvar savedata;
 globalvar sv_auto, sv_x, sv_y, sv_room, sv_look, sv_time, sv_death;
 globalvar enablekeyinput;
 
+globalvar ongod;
+ongod = false;
+
 time = 0;
 death = 0;
 save_idx = 0;

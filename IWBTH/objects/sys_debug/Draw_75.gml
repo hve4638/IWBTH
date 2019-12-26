@@ -1,5 +1,7 @@
 var str = strmerge("debug enable");
 
+if ongod
+	str += strmerge("god mode");
 if on_convkey
 	str += strmerge("convKey enable");
 

@@ -1,6 +1,6 @@
-draw_set_reset();
+/*draw_set_reset();
 draw_set_color(c_black);
-//draw_text(0, 0, );
+//draw_text(0, 32, strmerge(away_time, NL, pdis(Player.x - x, 0)));
 
 if todo_is_playing()
 {
@@ -18,7 +18,7 @@ if todo_is_playing()
 	var str = strmerge(signal, NL, pos, delay);
 	draw_text(0, 96, str);
 	*/
-}
+//}
 /*
 draw_set_reset();
 draw_set_color(c_black);

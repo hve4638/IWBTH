@@ -1,3 +1,10 @@
+if ongod
+{
+	with(obj_player)
+		echo_self_pos(x , y, 100, 1, c_red, 0.5);
+	exit;
+}
+
 var _x, _y;
 _x = obj_player.x;
 _y = obj_player.y;

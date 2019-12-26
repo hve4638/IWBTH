@@ -1,4 +1,6 @@
-var i, j, r;
+///@argu ontrue
+var affectrand = argument_count > 0 ? argument[0] : true;
+var i, r;
 r = irandom(rand_sum);
 
 for(i = 0; i < rand_size; i++)
@@ -11,9 +13,9 @@ for(i = 0; i < rand_size; i++)
 		break;
 }
 
-for(j = 0; j < rand_size; j++)
-	rand_cnt[| j] += 1;
-
-rand_cnt[| i] -= rand_size;
 rand_p = rand_idx[| i];
+
+if affectrand
+	rand_adjust(i);
+
 return rand_p;

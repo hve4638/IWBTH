@@ -1,10 +1,12 @@
 if todo_is_playing()
-{
+{	
+	scr_providience_todo();
+
 	if todo_end(todo_current())
 		scr_providience_next()
-	
-	scr_providience_todo();
 }
+
+scr_providience_teleport();
 
 if onabsorb
 	repeat(3) with(instance_create_layer(x + irandom_range(-184, 184), y + irandom_range(-256 - 32, 64), L_BACKGROUND, obj_effect_abs))

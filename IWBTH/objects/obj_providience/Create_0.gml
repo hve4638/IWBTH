@@ -1,4 +1,4 @@
-maxhp = 320;
+maxhp = 230;
 hp = maxhp;
 drawhp = 0;
 onhealth = false;
@@ -10,15 +10,31 @@ vspd = 0;
 walkspd = 5;
 dashspd = 8;
 
-onlook = true;
+onlook = true; //teleport코드 작동중에 항상 false;
 ex_todo = no;
+onattack = true;
 
 damage_ins = noone;
 state = StateP.normal;
 
-nextdelay = 0;
 onabsorb = false;
 hspd_move = 0;
+
+away_time = 0; 
+
+//Alarm0 Event
+next_action = ActionP.walk;
+next_attack = 0;
+next_fix = ActionP.nothing;
+next_cnt = 0;
+
+//teleport
+on_teleport = false;
+tp_x = 0;
+tp_progress = 0;
+tp_idx = 0;
+tp_pretime = 3;
+tp_posttime = 4;
 
 data = data_create(obj_data_providience)
 motion = data.motion;
@@ -27,22 +43,25 @@ dealspr = data.dealspr;
 
 floory = 448;
 
-rand_create(motion[0], motion[1], motion[2], motion[4]);
+rand_create(motion[0], motion[1], motion[2], motion[3], motion[4], motion[5]);
+rand_adjust(rand_get_index(motion[3]));
+rand_adjust(rand_get_index(motion[5]));
 
-/*
-0 휘두르기
-1
-2
-3
-4
-5 장판
-*/
+
 enum StateP {
 	normal,
 	idle,
 	walk,
 	dash,
 	attack
+}
+
+enum ActionP {
+	walk,
+	dash,
+	attack,
+	teleport,
+	nothing
 }
 //scr_providience_motion()
 /*

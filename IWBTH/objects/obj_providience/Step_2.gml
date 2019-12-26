@@ -1,4 +1,4 @@
-if state == StateP.attack && ds_map_exists(dealspr, sprite_index)
+if state == StateP.attack && onattack && ds_map_exists(dealspr, sprite_index)
 {
 	if !instance_exists(damage_ins)
 		damage_ins = instance_create(0, 0, obj_damagebox);
@@ -26,7 +26,24 @@ else if hspd != 0 && 1 < s
 	if state == StateP.dash
 		sprite_index = spr_providience_dash;
 }
-	
+
+if hspd == 0 && s == 2
+{
+	state = StateP.idle;
+
+	scr_providience_next();
+}
+
+if pdis(Player.x - x, 0) < 200
+{
+	if 0 <away_time
+		away_time--;
+}
+else if pdis(Player.x - x, 0) > 400
+	away_time ++;
+else
+	away_time += 2;
+
 /*
 if state == StateP.idle && sprite_index != spr_providience_idle
 	sprite_change(spr_providience_idle);
