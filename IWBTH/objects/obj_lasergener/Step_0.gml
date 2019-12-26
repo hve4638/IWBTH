@@ -7,8 +7,9 @@ if FIREMIN <= life_idx && life_idx <= FIREMAX && (life_idx mod firecool == 0)
     with(instance_create(x,y,obj_laser))
 	{
         image_angle = 90;
-		num = 3;
+		num = 4;
         den_add = 1;
+		life = 20;
     }
     
 	screenshake(shakepow, shaketime);

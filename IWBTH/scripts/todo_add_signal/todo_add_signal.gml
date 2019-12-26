@@ -1,4 +1,5 @@
-///@argu signal
-var signal = argument_count > 0 ? argument[0] : 1;
+///@argu signal...
+todo_add(global.todoedit, Todo.signal, argument_count);
 
-todo_add(global.todoedit, Todo.signal, signal);
+for(var i = 0; i < argument_count; i++)
+	todo_add(global.todoedit, argument[i]);

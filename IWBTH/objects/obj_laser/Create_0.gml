@@ -6,7 +6,7 @@ num_add = 0;
 den_add = 0;
 life_idx = 0;
 
-damagethick = 0.3;
+damagethick = 0.5;
 
 image_xscale = 100;
 image_speed = 0;

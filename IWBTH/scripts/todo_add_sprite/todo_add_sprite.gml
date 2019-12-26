@@ -1,4 +1,3 @@
-///@argu id
 ///@argu spr*
 ///@argu subimg*
 ///@argu imgspd*

@@ -16,7 +16,7 @@ while(pos < ds_list_size(list))
 		case Todo.mainimg:
 		case Todo.imgspd:
 		case Todo.subimg:
-		case Todo.send:
+		case Todo.push:
 			pos++;
 		break;
 

@@ -33,6 +33,11 @@ fade_col = c_white;
 
 blur_alpha = 0;
 
+camera_x1 = 0;
+camera_y1 = 0;
+camera_x2 = 0;
+camera_y2 = 0;
+
 //screen shake
 shake_queue = ds_priority_create();
 shake_map = ds_map_create();

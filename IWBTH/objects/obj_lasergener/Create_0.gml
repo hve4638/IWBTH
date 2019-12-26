@@ -1,6 +1,6 @@
 shakepow = 3;
 shaketime = 2;
-firesnd = snd_blast;
+firesnd = snd_magic_blast2;
 
 firedelay = 30; //10;
 firetime = 1;

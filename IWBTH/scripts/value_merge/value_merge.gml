@@ -6,6 +6,10 @@ var t;
 a = argument[0];
 b = argument[1];
 p = clamp(argument[2],0,1);
+
+if a == b
+	return a;
+
 if b < a
 {
 	t = a;

@@ -5,14 +5,13 @@ test();
 instance_create_depth(0, 0, 0, sys_debug);
 
 
-if INSTANTPLAY
+if DEFAULT_INSTANTPLAY
 {
-	cout("instantplay mode");
+	cout("###instantplay mode###");
 
-	save_idx = 1;
+	save_idx = INSTANTPLAY_SAVESLOT;
 	if !save_integrity()
 		save_def();
-	
 	set_save_variable();
 
 	load();

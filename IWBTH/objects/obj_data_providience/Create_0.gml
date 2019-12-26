@@ -5,6 +5,7 @@ nextspr[? spr_providience_attack10] = spr_providience_ready11;
 nextspr[? spr_providience_attack11] = spr_providience_ready10;
 nextspr[? spr_providience_attack20] = no;
 nextspr[? spr_providience_down] = no;
+nextspr[? spr_providience_up] = no;
 nextspr[? spr_providience_attack30] = spr_providience_ready31;
 nextspr[? spr_providience_seat0] = spr_providience_seat1;
 

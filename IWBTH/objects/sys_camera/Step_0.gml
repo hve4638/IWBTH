@@ -1,7 +1,7 @@
 camera_follow();
 
-x += (xTo - x) / follow_div;
-y += (yTo - y) / follow_div;
+x += round((xTo - x) / follow_div);
+y += round((yTo - y) / follow_div);
 
 shake = max(shake-1, 0);
 while (!ds_priority_empty(shake_queue))

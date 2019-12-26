@@ -29,6 +29,10 @@ vspd_dec = 0.5;
 onlook = false;
 look = 1;
 
+//Involved in blood movement
+force_spd = 0;
+force_dir = 0;
+
 #region attack&jump&dash
 jumpbuffer = 0;
 attackdelay = 0;

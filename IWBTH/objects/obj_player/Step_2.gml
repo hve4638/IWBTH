@@ -1,5 +1,5 @@
-if place_meeting(x,y,obj_killer)
-	kill();
+//if place_meeting(x,y,obj_killer)
+//	kill();
 
 if dashtime <= 0
 {

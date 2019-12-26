@@ -1,4 +1,5 @@
 /// @description scp_bgm();
+/*
 var nbgm;
 switch (room) {
 case rmstage01a:

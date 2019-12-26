@@ -1,4 +1,4 @@
 ///@argu id
 var map = argument[0];
 
-return map[? TodoMap.signal];
+return ds_queue_dequeue(map[? TodoMap.signal]);

@@ -1,6 +1,6 @@
 dashdir = look;
-dashtime = 10;
-dashlen = 9;
+dashtime = 9;
+dashlen = 10;
 
 move_ignore = 10;
 

@@ -12,7 +12,7 @@
         "1c74f9f4-5fa1-42da-8493-2db0ecd4cd61"
     ],
     "filterType": "GMScript",
-    "folderName": "DataStructure_nogarbage",
+    "folderName": "NoGarbageDS",
     "isDefaultView": false,
     "localisedFolderName": ""
 }

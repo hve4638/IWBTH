@@ -12,7 +12,7 @@
         "886baeb8-5a71-457c-a217-4ac9dc697f30"
     ],
     "filterType": "GMScript",
-    "folderName": "text_script",
+    "folderName": "TextScript",
     "isDefaultView": false,
     "localisedFolderName": ""
 }

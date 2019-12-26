@@ -31,7 +31,8 @@ if on_viewratio
 	
 	camera_set_view_size(view_camera[0], 1088 * view_ratio, 608 * view_ratio);
 }
-if on_convkey
+
+if keyboard_check(ord(vk_control))
 {
 	if keyboard_check_pressed(ord("S"))
 		with(obj_player)
@@ -40,12 +41,31 @@ if on_convkey
 			instance_create_depth(x, bbox_top - 8, 0, obj_savetext);
 			echo_self(50, 1, c_white);
 		}
+	if keyboard_check_pressed(ord("K"))
+		kill();
+}
+
+if keyboard_check_pressed(vk_f11)
+{
+	if instance_exists(obj_providience)
+	{
+		var todolog = todo_debug(obj_providience.motion[0]);
+		var todolog_str = "";
+		for(var i = 0; i < ds_list_size(todolog); i++)
+			todolog_str += strmerge(i, ":", todolog[| i]);
+		clipboard_set_text(todolog_str);
+	}
 }
 
 if mouse_check_button_pressed(mb_right)
 {
-	cout("gener");
-	instance_create_layer(mouse_x, mouse_y, L_ABOVE, obj_lasergener);
+	with(instance_create_layer(mouse_x, mouse_y, L_ABOVE, obj_rectemitter))
+	{
+		x_distribution = 240;
+		y_distribution = 32;
+		emit_cnt = 40;
+		life = 7;
+	}
 }
 
 if on_teleport

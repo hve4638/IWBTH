@@ -153,11 +153,14 @@ if onwalljump != 0
 		
         sprite_index = idxspr_jump;
 		
-		sfx(snd_Jump);
+		sfx(snd_jump);
     }
 }
 
 if place_meeting(x, y, obj_water)
 	vspd = min(2, vspd);
+
+force_spd = 2*pdis(hspd,vspd);
+force_dir = pdir(hspd,vspd);
 
 player_movement();

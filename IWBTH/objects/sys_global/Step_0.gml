@@ -20,10 +20,8 @@ intro_alpha = clamp(intro_alpha, 0, 1.0);
 if intro_alpha == 1.0
 	intro_time = max(0, intro_time-1);
 
-todo_step();
-
-if canrestart && button_press(Input.restart)
-	load();
+//if keyboard_check_pressed(ord("V"))
+	todo_step();
 
 if 0 < fade_idx
 {

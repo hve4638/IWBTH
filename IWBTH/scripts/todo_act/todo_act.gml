@@ -1,31 +1,23 @@
 ///@argu id
 var map, list, pos, delay, loop, val, signal;
-var ex;
 map = argument[0];
 list = map[? TodoMap.list];
 pos = map[? TodoMap.pos];
 delay = map[? TodoMap.delay];
 loop = map[? TodoMap.loop];
 val = map[? TodoMap.value];
-signal = 0;
+signal = map[? TodoMap.signal];
 
-while(true)
+var ex;
+var on = true;
+
+if 0 < delay
+	delay--;
+else while(on)
 {
-	if 0 < delay
-	{
-		delay--;
-
-		break;
-	}
-
 	if pos >= ds_list_size(list)
-	{
-		if loop
-			pos = 0;
-		else
-			break;
-	}
-	
+		break;
+
 	ex = list[| pos++];
 	switch(ex)
 	{
@@ -49,28 +41,30 @@ while(true)
 
 		case Todo.sleep:
 			delay = list[| pos++];
+			on = false;
+		break;
+		
+		case Todo.push:
+			repeat(list[| pos++])
+				ds_queue_enqueue(val, list[| pos++]);
 		break;
 		
 		case Todo.signal:
-			signal = list[| pos++];
-		break;
-		
-		case Todo.send:
-			val = list[| pos++];
+			repeat(list[| pos++])
+				ds_queue_enqueue(signal, list[| pos++]);
 		break;
 		
 		case Todo.sound:
 			sfx(list[| pos++]);
 		break;
 		
-		default:
+		case Todo.nope:
+			on = false;
 		break;
 	}
 }
 
 map[? TodoMap.pos] = pos;
 map[? TodoMap.delay] = delay;
-map[? TodoMap.signal] = signal;
-map[? TodoMap.value] = val;
 
 return 0;

@@ -1,43 +1,21 @@
-if 0 < ex_todo && todo_is_playing()
+if todo_is_playing()
 {
-	var td = todo_current();
+	if todo_end(todo_current())
+		scr_providience_next()
 	
-	if todo_signal(todo_current())
-		cout("sign!", ex_todo);
-	switch(ex_todo)
-	{
-		case 1:
-			if todo_signal(td)
-				hspd_add = todo_get_value(todo_current()) * image_xscale;
-		break;
-		
-		case 2:
-			if todo_signal(td)
-			{
-				if todo_get_value(td) == 0
-				{
-					var t = 0;
-					for(var i = 1 ; i < 32; i+=2)
-					{
-						var a, b;
-						var w = i * 48;
-						a = instance_create_layer(bbox_right + w, 450, L_ABOVE, obj_lasergener);
-						b = instance_create_layer(bbox_left - w, 450, L_ABOVE, obj_lasergener);
-						a.sprite_index = spr_temp2;
-						b.sprite_index = spr_temp2;
-						a.shakepow = 16;
-						a.shaketime = 1;
-						a.firedelay = 25;
-						b.firedelay = 25;
-						
-						t += 1;
-					}
-					screenshake(1.5, 30);
-				}
-			}	
-		break;
-	}
+	scr_providience_todo();
 }
+
+if onabsorb
+	repeat(3) with(instance_create_layer(x + irandom_range(-184, 184), y + irandom_range(-256 - 32, 64), L_BACKGROUND, obj_effect_abs))
+	{
+		to_x = other.x;
+		to_y = other.y - 96;
+		image_xscale = 0.75;
+		image_yscale = 0.75;
+	
+		life = 25;
+	}
 
 if hspd_add != 0
 {
@@ -51,6 +29,21 @@ if hspd_add != 0
 		hspd_add += hspd_dec;
 }
 else
-	hspd = 0;
+{
+	if hspd_move != 0
+	{
+		if state == StateP.walk
+			hspd = sign(hspd_move) * walkspd;
+		else if state == StateP.dash
+			hspd = sign(hspd_move) * dashspd;
+		else
+			hspd_move = 0;
+		
+		if abs(hspd_move) < abs(hspd)
+			hspd_move = 0;
+		else
+			hspd_move -= hspd;
+	}
+}
 
 x += hspd;

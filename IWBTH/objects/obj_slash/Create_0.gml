@@ -1,4 +1,4 @@
-damage_ins = instance_create(x, y, obj_dealbox);
+damage_ins = instance_create(x, y, obj_playerdeal);
 damage = 3;
 
 var bx, by, w, h;

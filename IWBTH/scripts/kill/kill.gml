@@ -1,14 +1,16 @@
-var _x, _y;
-_x = 0;
-_y = 0;
-
-with(obj_player)
+///@argu spd
+///@argu dir
+if (!instance_exists(obj_player) || is_invincible())
 {
-	_x = x;
-	_y = y;
-	//instance_create(x, y, obj_blood_gener)
+	cout("!감나빗");
+	return false;
 }
 
-sfx(snd_death);
-instance_destroy(Player);
-instance_create_layer(_x, _y, L_PLAYER, obj_player_fake);
+if argument_count > 0
+	obj_player.force_spd = argument[0];
+
+if argument_count > 1
+	obj_player.force_dir = argument[1];
+
+scr_player_kill();	
+return true;
