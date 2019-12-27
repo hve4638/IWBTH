@@ -2,6 +2,8 @@
 //gpu_set_tex_filter(false);
 randomize();
 
+global_ds_init();
+
 instance_create_depth(0,0,-10000,sys_global);
 instance_create_depth(0,0,-10000,sys_sound);
 instance_create_depth(0,0,-10000,sys_particle);

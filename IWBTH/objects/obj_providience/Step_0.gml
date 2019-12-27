@@ -9,15 +9,19 @@ if todo_is_playing()
 scr_providience_teleport();
 
 if onabsorb
-	repeat(3) with(instance_create_layer(x + irandom_range(-184, 184), y + irandom_range(-256 - 32, 64), L_BACKGROUND, obj_effect_abs))
-	{
-		to_x = other.x;
-		to_y = other.y - 96;
-		image_xscale = 0.75;
-		image_yscale = 0.75;
+{
+	repeat(3)
+		with(instance_create_layer(x + irandom_range(-184, 184), y + irandom_range(-256 - 32, 64), L_BELOW, obj_effect_abs))
+		{
+			to_x = other.x;
+			to_y = other.y - 96;
+			image_xscale = 0.75;
+			image_yscale = 0.75;
 	
-		life = 25;
-	}
+			life = 25;
+		}
+	cout("111111111111");
+}
 
 if hspd_add != 0
 {

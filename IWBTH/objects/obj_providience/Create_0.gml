@@ -19,8 +19,9 @@ state = StateP.normal;
 
 onabsorb = false;
 hspd_move = 0;
-
 away_time = 0; 
+
+//onabsorb = true;
 
 //Alarm0 Event
 next_action = ActionP.walk;

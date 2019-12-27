@@ -135,12 +135,12 @@ todo_edit(motion[5]); //전체장판
 	todo_add_sprite(spr_providience_down);
 	todo_add_sleep(dt * 6 -1);
 
-	todo_add_send(-5, false);
 	todo_add_sprspd(0);
 	todo_add_sleep(6);
 	
 	todo_add_sprspd(1);
 	todo_add_sleep(dt);
+	todo_add_send(-5, false);
 	
 	todo_add_sprspd(1);
 	todo_add_sound(snd_effect3);	

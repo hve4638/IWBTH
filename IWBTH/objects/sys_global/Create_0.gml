@@ -7,6 +7,7 @@ globalvar win_h, win_w;
 globalvar savedata;
 globalvar sv_auto, sv_x, sv_y, sv_room, sv_look, sv_time, sv_death;
 globalvar enablekeyinput;
+globalvar each_volum;
 
 globalvar ongod;
 ongod = false;
