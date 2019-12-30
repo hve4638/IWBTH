@@ -22,3 +22,5 @@ with(precreate(_x, _y, L_ABOVE))
 sfx(snd_death);
 instance_destroy(Player);
 instance_create_layer(_x, _y, L_PLAYER, obj_player_fake);
+
+scr_gameover();

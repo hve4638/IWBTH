@@ -20,7 +20,6 @@ if onabsorb
 	
 			life = 25;
 		}
-	cout("111111111111");
 }
 
 if hspd_add != 0

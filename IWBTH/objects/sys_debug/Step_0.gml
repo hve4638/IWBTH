@@ -10,8 +10,11 @@ if keyboard_check_pressed(vk_anykey)
 {
 	switch(keyboard_key)
 	{
+		case ord("C"):
+			sfx(snd_stageclear)
 		default:
 	}
+	
 }
 
 if keyboard_check_pressed(vk_f3)

@@ -1,29 +1,18 @@
 switch(trigger_end)
 {
-	case e_trigger_end.disable:
-	{
+	case TriggerEnd.disable:
 		trig = false;
 		delay = delay_max;
-	} break;
+	break;
 
 
-	case e_trigger_end.destroy:
-	{
+	case TriggerEnd.destroy:
 		instance_destroy();
-	} break;
+	break;
 
-	case e_trigger_end.loop:
+	case TriggerEnd.loop:
 	default:
 	break;
 }
 
-if 0 < delay
-{
-	delay--;
-
-	if delay == 0
-	{
-		enable = true;
-		delay = -1;
-	}
-}
+delay = max(delay-1, 0);

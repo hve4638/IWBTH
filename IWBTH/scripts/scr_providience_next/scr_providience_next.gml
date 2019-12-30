@@ -11,7 +11,7 @@ if next_cnt == 1
 {
 	np = rand_p;
 	
-	if abs(dis) > 162 && irandom(2400) < away_time
+	if abs(dis) > 192 && irandom(2400) < away_time
 	{
 		next_attack = motion[6];
 		next_fix = ActionP.attack;
@@ -34,7 +34,7 @@ if next_cnt == 1
 			if np == motion[3] && n == motion[5]
 				continue;
 
-			if n == motion[1] && abs(dis) < 96
+			if n == motion[1] && abs(dis) < 128
 				continue;
 		
 			if n == motion[3] && abs(dis) < 128 + 48
@@ -42,7 +42,8 @@ if next_cnt == 1
 	
 			break;
 		}
-
+		
+		rand_adjust(rand_get_index(n));
 		next_attack = n;				
 	}
 }
@@ -52,7 +53,7 @@ else
 }
 
 if n == motion[0]
-	range = 256;
+	range = 256 + 64;
 else if n == motion[1]
 	range = 512;
 else if n == motion[2]

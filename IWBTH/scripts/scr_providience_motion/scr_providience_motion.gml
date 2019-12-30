@@ -6,6 +6,7 @@ motion[3] = todo_create(); //검꽂고 레이져
 motion[4] = todo_create(); //검기
 motion[5] = todo_create(); //검꽂고 넓은장판
 motion[6] = todo_create(); //끌어오기
+motion[7] = todo_create(); //2번배고 내려찍기
 
 ///Signal
 //-1 ex_todo
@@ -15,7 +16,7 @@ motion[6] = todo_create(); //끌어오기
 todo_edit(motion[0]);
 	todo_add_send(-1, 1);
 	todo_add_sprite(spr_providience_idle2);
-	todo_add_sleep(20);
+	todo_add_sleep(15);
 
 	todo_add_sprite(spr_providience_ready10);
 	todo_add_sleep(10);
@@ -65,7 +66,7 @@ todo_edit(motion[1]); //휘두르며 장판
 	todo_add_sound(snd_slash);
 	todo_add_send(1, 1);
 	
-	todo_add_sleep(30);
+	todo_add_sleep(25);
 	todo_add_signal(-4);
 	todo_add_nope();
 
@@ -84,7 +85,7 @@ todo_edit(motion[2]); //내려찍기
 	todo_add_sleep(dt*4);
 	
 	todo_add_sound(snd_effect3);
-	todo_add_sleep(20);
+	todo_add_sleep(40);
 	
 	todo_add_signal(-4);
 
@@ -174,6 +175,54 @@ todo_edit(motion[6]); //찍기
 	todo_add_sleep(dt*4);
 	
 	todo_add_sound(snd_effect3);
-	todo_add_sleep(20);
+	todo_add_sleep(30);
 	
 	todo_add_signal(-4);
+
+
+todo_edit(motion[7]);
+	todo_add_send(-1, 1);
+	todo_add_sprite(spr_providience_idle2);
+	todo_add_sleep(15);
+
+	todo_add_sprite(spr_providience_ready10);
+	todo_add_sleep(10);
+
+	todo_add_send(-2, 0);
+	todo_add_nope();
+	dt = sprite_frame(spr_providience_attack10);
+	todo_add_sprite(spr_providience_attack10);
+	todo_add_sleep(dt);
+
+	todo_add_sound(snd_slash);
+	
+	todo_add_send(1, 15);
+	todo_add_sleep(30 - dt);
+
+	dt = sprite_frame(spr_providience_attack11);
+	todo_add_sprite(spr_providience_attack11);
+	todo_add_sleep(dt);
+
+	todo_add_send(1, 14);
+	todo_add_sound(snd_slash2);
+	todo_add_sleep(15 - dt);
+
+	todo_add_send(-1, 4);
+	todo_add_signal(1);
+	
+	todo_add_sprite(spr_providience_ready30);
+	todo_add_sleep(3);
+
+	dt = sprite_frame(spr_providience_attack30);
+	todo_add_sprite(spr_providience_attack30);
+	todo_add_send(-2, false);
+	
+	todo_add_sleep(dt*4);
+	
+	todo_add_sound(snd_effect3);
+	todo_add_sleep(30);
+	
+
+
+	todo_add_send(-4);
+	todo_add_nope();

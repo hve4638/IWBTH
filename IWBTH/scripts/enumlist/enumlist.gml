@@ -1,13 +1,3 @@
-enum e_trigger_condition {
-	target,
-	nothing
-}
-
-enum e_trigger_end {
-	disable,
-	loop,
-	destroy
-}
 
 enum Input {
 	left,

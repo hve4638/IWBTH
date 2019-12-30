@@ -19,11 +19,14 @@ while(todo_signal_exists(td))
 				state = todo_receive(td);
 			break;
 			case -4:
-				state = StateP.idle;
-				ex_todo = 0;
-				onlook = true;
-				onabsorb = false;
-				onattack = true;
+				if instance_exists(obj_player)
+				{
+					state = StateP.idle;
+					ex_todo = 0;
+					onlook = true;
+					onabsorb = false;
+					onattack = true;
+				}
 			break;
 			case -5:
 				onabsorb = todo_receive(td);

@@ -4,12 +4,12 @@ switch(next_action)
 {
 	case ActionP.walk:
 		state = StateP.walk;
-		hspd_move = max(abs(dis) - 64, 196) * sign(dis);
+		hspd_move = max(abs(dis) - 96, 196) * sign(dis);
 		sprite_change(spr_providience_walk, 0, 1);
 	break;
 	case ActionP.dash:
 		state = StateP.dash;
-		hspd_move = abs(abs(dis) - 64) * sign(dis);
+		hspd_move = abs(abs(dis) - 96) * sign(dis);
 		sprite_change(spr_providience_dash, 0, 1);
 	break;
 	
