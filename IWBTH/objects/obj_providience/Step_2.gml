@@ -17,6 +17,7 @@ else
 }
 
 var s = (state == StateP.idle) + (state == StateP.walk || state == StateP.dash) * 2;
+
 if s == 1 || (0 < s && hspd == 0)
 	sprite_index = spr_providience_idle;
 else if hspd != 0 && 1 < s

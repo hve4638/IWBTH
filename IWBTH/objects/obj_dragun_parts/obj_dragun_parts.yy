@@ -1,10 +1,19 @@
 {
-    "id": "0a043166-cd74-446c-a61a-ee172a4a03f2",
+    "id": "289cba7e-e2e9-4689-8dbf-6e505bbe3523",
     "modelName": "GMObject",
     "mvc": "1.0",
-    "name": "obj_attackbox",
+    "name": "obj_dragun_parts",
     "eventList": [
-        
+        {
+            "id": "2563b774-5fa5-499c-b281-9dbfa4da4899",
+            "modelName": "GMEvent",
+            "mvc": "1.0",
+            "IsDnD": false,
+            "collisionObjectId": "00000000-0000-0000-0000-000000000000",
+            "enumb": 0,
+            "eventtype": 0,
+            "m_owner": "289cba7e-e2e9-4689-8dbf-6e505bbe3523"
+        }
     ],
     "maskSpriteId": "00000000-0000-0000-0000-000000000000",
     "overriddenProperties": null,

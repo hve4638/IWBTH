@@ -1,7 +1,7 @@
 ///@param sound
 ///@param loop
 var nbgm, loop;
-nbgm = argument[0];
+nbgm = argument_count > 0 ? argument[0] : noone;
 loop = argument_count > 1 ? argument[1] : false;
 
 with(sys_global)
@@ -17,10 +17,8 @@ with(sys_global)
 		if 0 <= nbgm
 		{
 			if !audio_is_playing(nbgm)
-			{
 				audio_play_sound(nbgm,0,loop);
-				audio_sound_gain(nbgm, volum_music, 0);
-			}
+			audio_sound_gain(nbgm, volum_music, 0);
 		}
 	}
 }

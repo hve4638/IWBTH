@@ -11,7 +11,8 @@
         "490df07c-a141-4fbe-bc65-f6b2aeae98f0",
         "56976145-7ac6-4e57-9972-e69279f476fb",
         "48097ace-70e2-46e2-a3a6-6f42d1e3b0c0",
-        "0871e25b-da73-44d2-bd80-e2c9f62d9bb1"
+        "0871e25b-da73-44d2-bd80-e2c9f62d9bb1",
+        "289cba7e-e2e9-4689-8dbf-6e505bbe3523"
     ],
     "filterType": "GMObject",
     "folderName": "dragun",

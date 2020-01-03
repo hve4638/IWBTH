@@ -6,3 +6,6 @@ reflect_queue = ds_priority_create();
 ds_list_add(reflect_list, obj_player, obj_bullet, obj_slash, obj_echo, obj_hubcolumn, obj_dragun_intro);
 
 reflect_color = 0x99D6FF;
+
+surf_width = min(view_w, abs(bbox_right - bbox_left));
+surf_height = min(view_h, abs(bbox_bottom - bbox_top));

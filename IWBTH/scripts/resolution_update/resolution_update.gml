@@ -20,6 +20,7 @@ else
 window_set_fullscreen(fullscreen);
 window_set_size(win_w,win_h);
 surface_resize(application_surface,win_w,win_h);
-display_set_gui_size(win_w,win_h);
+display_set_gui_size(view_w, view_h);
 
+view_ratio = win_w / view_w;
 //gpu_set_texfilter(0);

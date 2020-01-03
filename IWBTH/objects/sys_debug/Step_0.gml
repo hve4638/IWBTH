@@ -12,16 +12,27 @@ if keyboard_check_pressed(vk_anykey)
 	{
 		case ord("C"):
 			sfx(snd_stageclear)
-		default:
+		
+		case vk_f3: on_convkey = !on_convkey;
+		break;
+		
+		case vk_f5: on_deal = !on_deal;
+		break;
+		
+		case vk_f7: on_teleport = !on_teleport;
+		break;
+		
+		case vk_f8: ongod = !ongod;	
+		break;
+
+		case vk_f10: room_goto(rm_soundtest);
+		break;
+		
+		case vk_f4: on_customview = !on_customview;
+		break;
 	}
 	
 }
-
-if keyboard_check_pressed(vk_f3)
-	on_convkey = !on_convkey;
-
-if keyboard_check_pressed(vk_f7)
-	on_teleport = !on_teleport;
 
 if keyboard_check_pressed(vk_f9)
 {
@@ -29,22 +40,6 @@ if keyboard_check_pressed(vk_f9)
 		instance_create_layer(0,0,L_SYS, sys_record);
 	else
 		instance_destroy(sys_record);
-}
-
-if keyboard_check_pressed(vk_f8)
-{
-	ongod = !ongod;	
-}
-
-if keyboard_check_pressed(vk_f4)
-	on_viewratio = !on_viewratio;
-
-if on_viewratio
-{
-	view_ratio += (mouse_wheel_down() - mouse_wheel_up()) * 0.1;
-	view_ratio = max(view_ratio, 1.0);
-	
-	camera_set_view_size(view_camera[0], 1088 * view_ratio, 608 * view_ratio);
 }
 
 if keyboard_check(vk_control)
@@ -56,39 +51,71 @@ if keyboard_check(vk_control)
 			instance_create_depth(x, bbox_top - 8, 0, obj_savetext);
 			echo_self(50, 1, c_white);
 		}
+
 	if keyboard_check_pressed(ord("K"))
 		kill();
-}
-
-if keyboard_check_pressed(vk_f11)
-{
-	if instance_exists(obj_providience)
+	
+	if on_customview
 	{
-		var todolog = todo_debug(obj_providience.motion[0]);
-		var todolog_str = "";
-		for(var i = 0; i < ds_list_size(todolog); i++)
-			todolog_str += strmerge(i, ":", todolog[| i]);
-		clipboard_set_text(todolog_str);
-	}
-}
-
-if mouse_check_button_pressed(mb_right)
-{
-	with(instance_create_layer(mouse_x, mouse_y, L_ABOVE, obj_rectemitter))
-	{
-		x_distribution = 240;
-		y_distribution = 32;
-		emit_cnt = 40;
-		life = 7;
-	}
-}
-
-if on_teleport
-{
-	if mouse_check_button_pressed(mb_left)
-		with(Player)
+		if keyboard_check_pressed(ord("V"))
 		{
-			x = mouse_x;
-			y = mouse_y;
+			if cv_ins != noone
+				instance_activate_object(cv_ins)
+			cv_ins = noone;
+			
+			var cam = view_camera[0];
+			camera_set_view_pos(cam, cv_px, cv_py);
+			camera_set_view_size(cam, cv_pw, cv_ph);
 		}
+		
+		if mouse_check_button(mb_left)
+		{
+			if mouse_check_button_pressed(mb_left)
+			{
+				cv_x1 = mouse_x;
+				cv_y1 = mouse_y;
+			}
+			cv_x2 = mouse_x;
+			cv_y2 = mouse_y;
+		}
+		else if mouse_check_button_released(mb_left)
+		{
+			var tx, ty;
+			tx = cv_x1;
+			ty = cv_y1;
+			if cv_x1 == mouse_x || cv_y1 == mouse_y
+				exit;
+			
+			cv_x1 = tx < mouse_x ? tx : mouse_x;
+			cv_y1 = ty < mouse_y ? ty : mouse_y;
+			cv_x2 = tx > mouse_x ? tx : mouse_x;
+			cv_y2 = ty > mouse_y ? ty : mouse_y;
+			
+			cv_y2 = cv_y1 + (cv_x2 - cv_x1) * view_h / view_w;
+			cv_enable = true;
+			
+			if instance_exists(sys_camera)
+			{
+				cv_ins = sys_camera.id;
+				instance_deactivate_object(cv_ins);
+			}
+			
+			var cam = view_camera[0];
+			cv_px = camera_get_view_x(cam);
+			cv_py = camera_get_view_y(cam);
+			cv_pw = camera_get_view_width(cam);
+			cv_ph = camera_get_view_height(cam);
+			camera_set_view_pos(cam, cv_x1, cv_y1);
+			camera_set_view_size(cam, cv_x2 - cv_x1, cv_y2 - cv_y1);
+		}
+	}
+}
+
+if on_teleport && mouse_check_button(mb_left)
+{
+	with(obj_player)
+	{
+		x = mouse_x;
+		y = mouse_y;
+	}
 }

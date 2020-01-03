@@ -8,6 +8,8 @@ loop = get_room_loop(rm);
 if is_undefined(nbgm)
 	nbgm = noone;
 
+bgm(nbgm, loop);
+/*
 if 0 < volum_music
 {
     if bgm_p != nbgm || nbgm == noone
@@ -25,3 +27,4 @@ if 0 < volum_music
 		}
 	}
 }
+*/

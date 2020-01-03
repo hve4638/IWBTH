@@ -12,6 +12,10 @@ globalvar each_volum;
 globalvar ongod;
 ongod = false;
 
+globalvar view_ratio;
+view_ratio = 1.0;
+
+
 time = 0;
 death = 0;
 save_idx = 0;

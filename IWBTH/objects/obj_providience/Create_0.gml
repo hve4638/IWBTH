@@ -54,7 +54,8 @@ enum StateP {
 	idle,
 	walk,
 	dash,
-	attack
+	attack,
+	die
 }
 
 enum ActionP {
