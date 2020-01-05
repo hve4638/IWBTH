@@ -8,7 +8,7 @@ hspd_dec = 1;
 hspd = 0;
 vspd = 0;
 walkspd = 5;
-dashspd = 8;
+dashspd = 10;
 
 onlook = true; //teleport코드 작동중에 항상 false;
 ex_todo = no;
@@ -20,6 +20,8 @@ state = StateP.normal;
 onabsorb = false;
 hspd_move = 0;
 away_time = 0; 
+
+bossphase = -1;
 
 //onabsorb = true;
 

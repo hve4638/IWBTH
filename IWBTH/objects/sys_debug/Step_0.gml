@@ -9,11 +9,11 @@ if keyboard_check_pressed(vk_f2)
 if keyboard_check_pressed(vk_anykey)
 {
 	switch(keyboard_key)
-	{
-		case ord("C"):
-			sfx(snd_stageclear)
-		
+	{		
 		case vk_f3: on_convkey = !on_convkey;
+		break;
+		
+		case vk_f4: on_customview = !on_customview;
 		break;
 		
 		case vk_f5: on_deal = !on_deal;
@@ -28,8 +28,9 @@ if keyboard_check_pressed(vk_anykey)
 		case vk_f10: room_goto(rm_soundtest);
 		break;
 		
-		case vk_f4: on_customview = !on_customview;
+		case vk_f11: room_goto(rm_editroom_dragun);
 		break;
+		
 	}
 	
 }
@@ -42,6 +43,40 @@ if keyboard_check_pressed(vk_f9)
 		instance_destroy(sys_record);
 }
 
+if on_customview
+{
+	if keyboard_check_pressed(ord("V"))	
+	{
+		cv_enable = !cv_enable;
+
+		if cv_enable
+		{		
+			if instance_exists(sys_camera)
+			{
+				cv_ins = sys_camera.id;
+				instance_deactivate_object(cv_ins);
+			}
+			
+			var cam = view_camera[0];
+			cv_px = camera_get_view_x(cam);
+			cv_py = camera_get_view_y(cam);
+			cv_pw = camera_get_view_width(cam);
+			cv_ph = camera_get_view_height(cam);
+			camera_set_view_pos(cam, cv_x1, cv_y1);
+			camera_set_view_size(cam, cv_x2 - cv_x1, cv_y2 - cv_y1);
+		}
+		else
+		{
+			if cv_ins != noone
+				instance_activate_object(cv_ins)
+			cv_ins = noone;
+			
+			var cam = view_camera[0];
+			camera_set_view_pos(cam, cv_px, cv_py);
+			camera_set_view_size(cam, cv_pw, cv_ph);
+		}
+	}
+}
 if keyboard_check(vk_control)
 {
 	if keyboard_check_pressed(ord("S"))
@@ -57,17 +92,6 @@ if keyboard_check(vk_control)
 	
 	if on_customview
 	{
-		if keyboard_check_pressed(ord("V"))
-		{
-			if cv_ins != noone
-				instance_activate_object(cv_ins)
-			cv_ins = noone;
-			
-			var cam = view_camera[0];
-			camera_set_view_pos(cam, cv_px, cv_py);
-			camera_set_view_size(cam, cv_pw, cv_ph);
-		}
-		
 		if mouse_check_button(mb_left)
 		{
 			if mouse_check_button_pressed(mb_left)
@@ -90,23 +114,7 @@ if keyboard_check(vk_control)
 			cv_y1 = ty < mouse_y ? ty : mouse_y;
 			cv_x2 = tx > mouse_x ? tx : mouse_x;
 			cv_y2 = ty > mouse_y ? ty : mouse_y;
-			
 			cv_y2 = cv_y1 + (cv_x2 - cv_x1) * view_h / view_w;
-			cv_enable = true;
-			
-			if instance_exists(sys_camera)
-			{
-				cv_ins = sys_camera.id;
-				instance_deactivate_object(cv_ins);
-			}
-			
-			var cam = view_camera[0];
-			cv_px = camera_get_view_x(cam);
-			cv_py = camera_get_view_y(cam);
-			cv_pw = camera_get_view_width(cam);
-			cv_ph = camera_get_view_height(cam);
-			camera_set_view_pos(cam, cv_x1, cv_y1);
-			camera_set_view_size(cam, cv_x2 - cv_x1, cv_y2 - cv_y1);
 		}
 	}
 }

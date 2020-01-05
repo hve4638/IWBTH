@@ -12,7 +12,7 @@
         "5bcb64fb-62b7-490c-9c34-aa4c5f418fbd"
     ],
     "filterType": "GMSprite",
-    "folderName": "providience",
+    "folderName": "Providience",
     "isDefaultView": false,
     "localisedFolderName": ""
 }

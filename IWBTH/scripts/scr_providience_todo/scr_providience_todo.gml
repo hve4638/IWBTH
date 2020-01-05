@@ -51,6 +51,20 @@ while(todo_signal_exists(td))
 				on_teleport = true;
 				tp_x = clamp(Player.x + 128 * choose(1,-1), 96, room_width-96);
 			break;
+			
+			case -20:
+				with(instance_create_layer(x, y - 12, L_ABOVE, obj_rectemitter))
+				{
+					x_distribution = 48;
+					y_distribution = 56;
+					emit_cnt = 12;
+					life = 9;
+				}
+			break;
+
+			case -100:
+				instance_destroy();
+			break;
 		}
 		#endregion
 	}
@@ -69,10 +83,18 @@ while(todo_signal_exists(td))
 			{
 				var t = 0;
 				var value = todo_receive(td);
-				for(var i = 1 ; i < 32; i+=2)
+				var n = 48;
+				
+				if bossphase == 2
+				{
+					value = value * 3 div 4;
+					n = 32 + 4;
+				}
+
+				for(var i = 1 ; i < 28; i+=2)
 				{
 					var a, b;
-					var w = i * 48;
+					var w = i * n;
 					a = instance_create_layer(x + 64 + w, 450, L_ABOVE, obj_lasergener);
 					b = instance_create_layer(x - 64 - w, 450, L_ABOVE, obj_lasergener);
 					a.sprite_index = spr_temp2;
@@ -81,8 +103,14 @@ while(todo_signal_exists(td))
 					a.shaketime = 1;
 					a.firedelay = value;
 					b.firedelay = value;
-						
+
 					t += 1;
+					
+					if bossphase == 2
+					{
+						a.shakepow = 4;
+						value += 3;
+					}
 				}
 				screenshake(8, 2);
 			}

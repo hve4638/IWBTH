@@ -32,7 +32,7 @@ savedata[1] = -1;
 savedata[2] = -1;
 savedata[3] = -1;
 
-canrestart = true;
+canrestart = false;
 vesion_p = 0;
 bgm_p = noone;
 

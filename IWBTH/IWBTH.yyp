@@ -119,6 +119,14 @@
             }
         },
         {
+            "Key": "02ffcd33-9e6f-4607-8481-155f70debb0a",
+            "Value": {
+                "id": "b987d345-c820-490d-92ca-47c103d13af3",
+                "resourcePath": "scripts\\scr_gamestart\\scr_gamestart.yy",
+                "resourceType": "GMScript"
+            }
+        },
+        {
             "Key": "031d778a-dbe0-4630-93d4-3807661cf420",
             "Value": {
                 "id": "f327bcde-3b00-4217-9533-3ac97f28fd99",
@@ -903,6 +911,14 @@
             }
         },
         {
+            "Key": "28365ed9-b0ec-4b2f-ad44-79a0b3391fb1",
+            "Value": {
+                "id": "b8468f78-00d6-4bb8-beb3-b3a7f2630c3d",
+                "resourcePath": "objects\\obj_editorbutton\\obj_editorbutton.yy",
+                "resourceType": "GMObject"
+            }
+        },
+        {
             "Key": "289cba7e-e2e9-4689-8dbf-6e505bbe3523",
             "Value": {
                 "id": "7a0d50c1-8dae-4e50-9d20-53fee15681af",
@@ -951,6 +967,14 @@
             }
         },
         {
+            "Key": "29d354d9-5706-44f0-9461-8979103a04f8",
+            "Value": {
+                "id": "70d56dec-7517-4470-a8ca-0b4da4977345",
+                "resourcePath": "scripts\\_setdepth\\_setdepth.yy",
+                "resourceType": "GMScript"
+            }
+        },
+        {
             "Key": "29ec214e-0c32-4499-b06a-dd362c1c9ac6",
             "Value": {
                 "id": "63a9b682-d577-4a60-b7ed-3d473a21e68c",
@@ -964,6 +988,14 @@
                 "id": "d3f12ed9-965a-4b5f-91ea-a27b68ff3f99",
                 "resourcePath": "objects\\obj_effect\\obj_effect.yy",
                 "resourceType": "GMObject"
+            }
+        },
+        {
+            "Key": "2af66f54-7613-4fdf-9896-d7b8bf1852ee",
+            "Value": {
+                "id": "7c3b2af3-287c-4748-af44-1069c30c9119",
+                "resourcePath": "rooms\\rm_editroom_dragun\\rm_editroom_dragun.yy",
+                "resourceType": "GMRoom"
             }
         },
         {
@@ -3007,6 +3039,14 @@
             }
         },
         {
+            "Key": "87be7910-a0dd-49db-a723-41c87e12e099",
+            "Value": {
+                "id": "454f1d8b-563c-4f6e-88fe-1b19b7be5193",
+                "resourcePath": "scripts\\get_map_keylist\\get_map_keylist.yy",
+                "resourceType": "GMScript"
+            }
+        },
+        {
             "Key": "87beb5ff-cfec-46d9-951a-8369dba6aa34",
             "Value": {
                 "id": "504d054a-f511-40cb-83d9-7585ed7b3e53",
@@ -4119,6 +4159,14 @@
             }
         },
         {
+            "Key": "b3b54c7b-11ab-4c2b-9ac6-a83077539386",
+            "Value": {
+                "id": "300fad0e-5474-4183-b673-10ee13d318ad",
+                "resourcePath": "sprites\\spr_tempbutton\\spr_tempbutton.yy",
+                "resourceType": "GMSprite"
+            }
+        },
+        {
             "Key": "b42584c9-05a9-48ee-8456-d55ef07c7e62",
             "Value": {
                 "id": "946ff1ec-88c5-40e0-9cb6-e866fc4efd60",
@@ -5087,14 +5135,6 @@
             }
         },
         {
-            "Key": "e590125b-020c-48c4-a318-c7dc42c8b258",
-            "Value": {
-                "id": "312a63b0-0f2c-4d49-8179-2772d91602f6",
-                "resourcePath": "sprites\\spr_providience_ready201\\spr_providience_ready201.yy",
-                "resourceType": "GMSprite"
-            }
-        },
-        {
             "Key": "e6091825-0d15-4edb-b359-9fe489bdf052",
             "Value": {
                 "id": "f232b110-705d-4141-83e6-2782a5825de5",
@@ -5899,7 +5939,10 @@
         "72dc38cb-52b0-4990-8321-51dbdb36fadf",
         "db9698c9-179d-4a6f-9329-839743b0e47c",
         "7d0b50a7-fa8e-4920-9db4-3f7ce8a1c629",
-        "0916f50e-da57-4264-a098-dea45409be18"
+        "0916f50e-da57-4264-a098-dea45409be18",
+        "29d354d9-5706-44f0-9461-8979103a04f8",
+        "87be7910-a0dd-49db-a723-41c87e12e099",
+        "02ffcd33-9e6f-4607-8481-155f70debb0a"
     ],
     "tutorial": ""
 }

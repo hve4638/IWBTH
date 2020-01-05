@@ -1,4 +1,7 @@
 ///패턴후 행동
+if bossphase < 0
+	exit;
+
 if !instance_exists(obj_player)
 	exit;
 
@@ -18,6 +21,7 @@ if next_cnt == 1
 		away_time = 0;
 		
 		n = next_attack;
+		rand_p = motion[6];
 	}
 	else
 	{
@@ -27,11 +31,13 @@ if next_cnt == 1
 
 			if np == n
 				continue;
-		
-			if n == motion[3] && np == motion[5]
-				continue;
-		
-			if np == motion[3] && n == motion[5]
+			
+			if (n == motion[0] && np == motion[7])
+			|| (n == motion[1] && np == motion[8])
+			|| (n == motion[2] && np == motion[6])
+			|| (n == motion[3] && np == motion[5])
+			|| (n == motion[4] && np == motion[8])
+			|| (n == motion[5] && np == motion[3])
 				continue;
 
 			if n == motion[1] && abs(dis) < 128
@@ -39,12 +45,21 @@ if next_cnt == 1
 		
 			if n == motion[3] && abs(dis) < 128 + 48
 				continue;
-	
+
 			break;
 		}
-		
 		rand_adjust(rand_get_index(n));
-		next_attack = n;				
+		next_attack = n;
+		
+		if bossphase == 2
+		{
+			if next_attack == motion[0] && choose(0,1,1)
+				next_attack = motion[7];
+			else if (next_attack == motion[1] || next_attack == motion[4]) && choose(0,1)
+				next_attack = motion[8];
+		}
+		
+		rand_p = n;
 	}
 }
 else
@@ -64,6 +79,8 @@ else if n == motion[4]
 	range = 2048;
 else if n == motion[5]
 	range = 512;
+else if n == motion[7]
+	range = 256 + 64;
 else
 	range = 256;
 
@@ -82,14 +99,15 @@ else
 	{
 		alarm[0] = 5;
 		next_action = ActionP.teleport;
-		cout("teleport!")
 	}
 	else
 	{
 		alarm[0] = 2;
-		next_action = ActionP.walk;
-		cout("walk")
+		next_action = bossphase >= 2 ? ActionP.dash : ActionP.walk;
 	}
 }
+
+if bossphase >= 2 && 1 < alarm[0]
+	alarm[0] = max(1, alarm[0] * 5 div 5);
 
 next_fix = ActionP.nothing;

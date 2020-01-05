@@ -2,7 +2,7 @@ if todo_is_playing()
 {	
 	scr_providience_todo();
 
-	if todo_end(todo_current())
+	if 0 < bossphase && todo_end(todo_current())
 		scr_providience_next()
 }
 

@@ -2,8 +2,6 @@
 var idx = argument_count > 0 ? argument[0] : save_idx;
 save_idx = idx;
 
-
-
 var sv = get_save_index(idx);
 sv_auto = sv[? "auto"];
 sv_x = sv[? "x"];

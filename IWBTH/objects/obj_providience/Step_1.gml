@@ -5,12 +5,10 @@ if keyboard_check_pressed(vk_space)
 
 if keyboard_check_pressed(ord("1"))
 {
-	todo_play(motion[7]);
+	todo_play(motion[9]);
 }
 
-
-if keyboard_check_pressed(ord("2"))
+if keyboard_check_pressed(ord("M"))
 {
-	state = StateP.attack;
-	todo_play(motion[6]);
+	hp = 10;
 }

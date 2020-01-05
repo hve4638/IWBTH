@@ -5,6 +5,8 @@ hp -= other.damage;
 
 instance_destroy(other);
 
+if bossphase == 1 && hp / maxhp <= 0.5
+	bossphase = 2;
 
 if hp <= 0
 {
@@ -16,6 +18,11 @@ if hp <= 0
 
 	if todo_is_playing()
 		todo_stop();
+		
+	screenshake(20, 1);
+	
+	bossphase = -1;
+	todo_play(motion[9]);
 	
 	alarm[0] = -1;
 	alarm[1] = -1;

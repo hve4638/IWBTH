@@ -11,6 +11,9 @@ if on_teleport
 if on_customview
 	str += strmerge("customview enable");
 
+if on_deal
+	str += strmerge("OnDeal enable");
+
 if show_info
 {
 	str += strmerge("time : ", time);

@@ -1,6 +1,7 @@
 onhealth = true;
 hp = maxhp;
 away_time = 0; 
+bossphase = 1;
 
 hspd_move = max(abs(Player.x - x) - 512) * sign(Player.x - x);
 state = StateP.walk;
