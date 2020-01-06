@@ -39,6 +39,9 @@ if next_cnt == 1
 			|| (n == motion[4] && np == motion[8])
 			|| (n == motion[5] && np == motion[3])
 				continue;
+				
+			if n == motion[3] && bossphase == 1 && hp/maxhp < 0.7
+				continue;
 
 			if n == motion[1] && abs(dis) < 128
 				continue;
@@ -70,7 +73,7 @@ else
 if n == motion[0]
 	range = 256 + 64;
 else if n == motion[1]
-	range = 512;
+	range = 512 + 128;
 else if n == motion[2]
 	range = 512;
 else if n == motion[3]
@@ -81,6 +84,8 @@ else if n == motion[5]
 	range = 512;
 else if n == motion[7]
 	range = 256 + 64;
+else if n == motion[8]
+	range = 512 + 128;
 else
 	range = 256;
 

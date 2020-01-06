@@ -2,6 +2,7 @@ var str = strmerge("debug enable");
 
 if ongod
 	str += strmerge("god mode");
+
 if on_convkey
 	str += strmerge("convKey enable");
 
@@ -19,6 +20,9 @@ if show_info
 	str += strmerge("time : ", time);
 	str += strmerge("death : ", death);
 	str += strmerge("lastkey : ", keyboard_lastkey);
+	str += strmerge("currentstage : ", current_stage);
+	str += strmerge("stagetime : ", stage_time[current_stage]);
+	str += strmerge("stagedeath : ", stage_death[current_stage]);
 	str += strmerge("mouse(window):", window_mouse_get_x(), window_mouse_get_y());
 }
 

@@ -6,7 +6,10 @@ if onplayer
 	{
 		room_goto_alarm(goto, 100);
 		
-		global_fade_set(1.0, 75, c_white)
+		global_fade_set(1.0, 75, c_white);
+		
+		sv_hubx = obj_player.x;
+		sv_huby = obj_player.y;
 	}
 	show_alpha += 0.05;
 }

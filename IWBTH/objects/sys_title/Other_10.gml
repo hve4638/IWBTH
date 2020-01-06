@@ -12,7 +12,6 @@ config_sound = arr[TitleArray.soundvolum] / 100;
 resolution_index = arr[TitleArray.resolution];
 config_ui = arr[TitleArray.ui];
 
-//cout("resolution:", resolution_index, "-", global.resolution_name[| resolution_index]);
 volum_update();
 resolution_update();
 

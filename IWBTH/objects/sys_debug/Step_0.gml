@@ -10,6 +10,17 @@ if keyboard_check_pressed(vk_anykey)
 {
 	switch(keyboard_key)
 	{		
+		case ord("U"):
+			with(instance_create_layer(0, 0, L_SYS, obj_trigger))
+			{
+				trigger_condition = TriggerCondition.always;
+				trigger_end = TriggerEnd.loop;
+
+				trigger_script = scr_gotostageresult;
+				goto_idx = 0;
+				goto_delay = 100;
+			}
+		break;
 		case vk_f3: on_convkey = !on_convkey;
 		break;
 		
@@ -23,6 +34,9 @@ if keyboard_check_pressed(vk_anykey)
 		break;
 		
 		case vk_f8: ongod = !ongod;	
+		break;
+		
+		case vk_f6: room_goto(rm_stageresult);
 		break;
 
 		case vk_f10: room_goto(rm_soundtest);

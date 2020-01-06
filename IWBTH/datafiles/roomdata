@@ -1,0 +1,4 @@
+#ROOM,#SOUND,#SOUNDLOOP,#STAGE
+rm_hub,snd_hub,1,0
+rm_boss_providience,,0,4
+rm_boss_dragun,,0,2

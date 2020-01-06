@@ -264,7 +264,7 @@ todo_edit(motion[8]) //검기
 
 todo_edit(motion[9]); //사망모션
 	todo_add_send(-2, false);
-	todo_add_sleep(50);
+	todo_add_sleep(100);
 	dt = sprite_frame(spr_providience_down);
 	todo_add_sprite(spr_providience_down);
 	todo_add_sleep(70);

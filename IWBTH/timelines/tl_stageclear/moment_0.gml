@@ -1,0 +1,1 @@
+sfx(snd_stageclear);

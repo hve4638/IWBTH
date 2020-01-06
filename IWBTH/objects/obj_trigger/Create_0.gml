@@ -1,21 +1,20 @@
-enable = false;
+enable = true;
 trig = false;
 trigger_condition = TriggerCondition.nothing;
-trigger_end =  TriggerEnd.disable;
+trigger_end = TriggerEnd.destroy;
 
 trigger_script_on = no;
 trigger_script_off = no;
 trigger_script = no;
 
-delay = -1;
+delay = 0;
 delay_max = -1;
 
 trig_p = false;
 target = noone;
-chain = false;
-chain_list = -1;
 
 enum TriggerCondition {
+	always,
 	target,
 	nothing
 }

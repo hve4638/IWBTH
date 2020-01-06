@@ -5,6 +5,8 @@ if ontimer
 	if time_idx > 1000000
 	{
 		time++;
+		if current_stage
+			stage_time[current_stage]++;
 
 		time_idx -= 1000000;
 	}
@@ -20,8 +22,7 @@ intro_alpha = clamp(intro_alpha, 0, 1.0);
 if intro_alpha == 1.0
 	intro_time = max(0, intro_time-1);
 
-//if keyboard_check_pressed(ord("V"))
-	todo_step();
+todo_step();
 
 if 0 < fade_idx
 {

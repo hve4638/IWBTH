@@ -1,15 +1,19 @@
-var i, str;
+var i, str, size, ptype;
+size = argument_count;
 str = "";
-var size = argument_count;
+ptype = undefined;
 
 if argument[size - 1] == ""
 	size--;
 
 for(i = 0; i < size; i++)
 {
-	str += string(argument[i]);
-	if i < size-1 && argument[i] != NL
+	if (typeof(argument[i]) == ptype) && (string(argument[i]) != NL)
 		str += " ";
+
+	str += string(argument[i]);
+	
+	ptype = typeof(argument[i]);
 }
 
 if argument_count == size

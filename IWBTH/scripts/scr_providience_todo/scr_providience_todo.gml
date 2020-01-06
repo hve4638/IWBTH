@@ -45,6 +45,7 @@ while(todo_signal_exists(td))
 						screenshake(pw, t);
 					break;
 				}
+
 			break;
 
 			case -11:
@@ -60,9 +61,23 @@ while(todo_signal_exists(td))
 					emit_cnt = 12;
 					life = 9;
 				}
+				screenshake(3, 7);
 			break;
 
 			case -100:
+				bossphase = -1;
+				
+				with(instance_create_layer(0, 0, L_SYS, obj_trigger))
+				{
+					trigger_condition = TriggerCondition.always;
+					trigger_end = TriggerEnd.loop;
+
+					trigger_script = scr_gotostageresult;
+					goto_idx = 0;
+					goto_delay = 150;
+				}
+				
+				instance_destroy(obj_data_providience);
 				instance_destroy();
 			break;
 		}

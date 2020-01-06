@@ -10,9 +10,6 @@ instance_create_depth(0,0,-10000,sys_particle);
 
 variable_declare();
 
-//arr = layer_get_all();
-room_speed = 50;
-
 config_def();
 config_read();
 
@@ -22,3 +19,5 @@ save_read(3);
 
 volum_update();
 resolution_update();
+
+room_speed = DEFAULT_FPS;

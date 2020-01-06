@@ -1,4 +1,6 @@
-death += 1;
+death++;
+if current_stage
+	stage_death[current_stage]++;
 
 instance_create_layer(0, 0, L_SYS, obj_gameover);
 

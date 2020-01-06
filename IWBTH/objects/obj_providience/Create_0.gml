@@ -1,4 +1,4 @@
-maxhp = 250;
+maxhp = 270;
 hp = maxhp;
 drawhp = 0;
 onhealth = false;
@@ -48,6 +48,7 @@ floory = 448;
 
 rand_create(motion[0], motion[1], motion[2], motion[3], motion[4], motion[5]);
 rand_adjust(rand_get_index(motion[3]));
+rand_adjust(rand_get_index(motion[5]));
 rand_adjust(rand_get_index(motion[5]));
 
 

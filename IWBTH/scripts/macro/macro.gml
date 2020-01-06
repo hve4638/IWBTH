@@ -4,6 +4,7 @@
 #macro SCRIPT_DIRECTORY "script"
 #macro RECORD_DIRECTORY "record"
 #macro SOUND_DIRECTORY "sounddata"
+#macro ROOMDATA_DIRECTORY "roomdata"
 
 #macro L_SYS "InsSystem"
 #macro L_BLOCK "TileBlock"
@@ -23,3 +24,8 @@
 #macro INSTANTPLAY_SAVESLOT 1
 #macro DEFAULT_COUTSHOW false
 #macro DEFAULT_FPS 50
+
+#macro RMDATA_STAGE 0
+#macro RMDATA_SOUND 1
+#macro RMDATA_SOUNDLOOP 2
+#macro RMDATA_WIDTH 3

@@ -9,11 +9,11 @@ if !isno(sv_room)
 			look = sv_look;
 	}
 
-	if room == sv_room
+	/*if room == sv_room
 	{
 		with(sys_camera)
 			persistent = true;
-	}
+	}*/
 	
 	room_goto(sv_room);
 

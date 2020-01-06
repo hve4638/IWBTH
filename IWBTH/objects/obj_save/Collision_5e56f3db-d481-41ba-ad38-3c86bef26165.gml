@@ -9,6 +9,5 @@ if !onact
 		with(other)
 			echo_self(50, 1, c_white);
 		save();
-		//game_save_write();
 	}
 }

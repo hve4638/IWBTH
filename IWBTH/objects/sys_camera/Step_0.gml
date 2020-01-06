@@ -1,3 +1,28 @@
+if firstmeet
+{
+	var n = false;
+	for(var i = 0; i < ds_list_size(follow); i++)
+	{
+		var ins = follow[| i];
+		
+		if instance_exists(ins)
+		{
+			n = true;
+			break;
+		}
+	}
+	
+	if n
+	{
+		camera_follow();
+		x = xTo;
+		y = yTo;
+		
+		firstmeet = false;
+	}
+}
+
+
 camera_follow();
 
 x += round((xTo - x) / follow_div);

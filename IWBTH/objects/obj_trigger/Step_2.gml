@@ -1,18 +1,23 @@
-switch(trigger_end)
+if trig
 {
-	case TriggerEnd.disable:
-		trig = false;
-		delay = delay_max;
-	break;
+	switch(trigger_end)
+	{
+		case TriggerEnd.disable:
+			trig = false;
+			delay = delay_max;
+		break;
 
+		case TriggerEnd.destroy:
+			instance_destroy();
+		break;
 
-	case TriggerEnd.destroy:
-		instance_destroy();
-	break;
-
-	case TriggerEnd.loop:
-	default:
-	break;
+		case TriggerEnd.loop:
+		default:
+		break;
+	}
 }
 
-delay = max(delay-1, 0);
+if 0 < delay
+	delay = max(delay-1, 0);
+
+trig_p = trig;

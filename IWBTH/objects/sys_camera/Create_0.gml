@@ -22,10 +22,6 @@ ymod = 608;
 addx = 0;
 addy = 0;
 
-camera_follow();
-x = xTo;
-y = yTo;
-
 //fade
 fade_alpha = 0;
 fade_get = 0;
@@ -37,6 +33,8 @@ camera_x1 = 0;
 camera_y1 = 0;
 camera_x2 = 0;
 camera_y2 = 0;
+
+firstmeet = true;
 
 //screen shake
 shake_queue = ds_priority_create();
