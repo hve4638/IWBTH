@@ -1,13 +1,17 @@
-draw_text(x, y, strmerge("gridint: ", gridint));
-
+var str = strmerge("gridint: ", gridint);
+str += strmerge("main: ",mainx,",",mainy);
 
 if 0 <= num
-	with(arr[num])
+{
+	var ins = arr[num];
+
+	with(ins)
 	{
 		draw_set_color(c_green);
 		draw_rectangle(bbox_left, bbox_top, bbox_right, bbox_bottom, true);
 	}
+	
+	str += strmerge("pos: ",ins.setx,",",ins.sety);
+}
 
-draw_button(0, 0, 32, 32, 1);
-draw_button(0, 64, 32, 64 + 32, 0);
-draw_set_reset();
+draw_text(x, y, str);

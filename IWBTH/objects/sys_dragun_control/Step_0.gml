@@ -1,24 +1,9 @@
-num += keyboard_check_pressed(190) - keyboard_check_pressed(188);
-
-if keyboard_check_pressed(ord("G"))
-	gridint = get_integer("input gridint", "");
-
-if keyboard_check_pressed(ord("C"))
-{
-	oncancel = !oncancel;
-	if oncancel	
-	{
-		num_p = num;
-		num = -1;
-	}
-	else
-		num = num_p;
-}
-
 if num < 0
 	exit;
+
 num = clamp(num, 0, array_length_1d(arr) - 1);
 var ins = arr[num];
+
 
 switch(receiveidx)
 {
@@ -37,9 +22,17 @@ switch(receiveidx)
 				
 	if ondrag
 	{
-		ins.setx += mouse_x - mx;
-		ins.sety += mouse_y - my;
-
+		if num == DragunParts.body
+		{
+			mainx += mouse_x - mx;
+			mainy += mouse_y - my;
+		}
+		else
+		{
+			ins.setx += mouse_x - mx;
+			ins.sety += mouse_y - my;
+		}
+		
 		mx = mouse_x;
 		my = mouse_y;
 	}
@@ -55,16 +48,17 @@ switch(receiveidx)
 		sw = - keyboard_check(vk_left) + keyboard_check(vk_right);
 		sh = keyboard_check(vk_down) - keyboard_check(vk_up);
 	}
-	if !keyboard_check(vk_alt)
-	{
-		sw *= gridint;
-		sh *= gridint;
-	}
 
-	ins.setx += sw;
-	ins.sety += sh;
-	ins.x = round(ins.setx) div gridint * gridint;
-	ins.y = round(ins.sety) div gridint * gridint;
+	if num == DragunParts.body
+	{
+		mainx += sw;
+		mainy += sh;
+	}
+	else
+	{
+		ins.setx += sw;
+		ins.sety += sh;
+	}
 #endregion
 
 	break;
@@ -81,15 +75,17 @@ switch(receiveidx)
 		{
 			var ins = arr[i];
 			var m = ds_map_create();
-			m[? "x"] = floor(ins.x);
-			m[? "y"] = floor(ins.y);
+			m[? "x"] = ins.setx;
+			m[? "y"] = ins.sety;
 			m[? "img"] = floor(ins.sprite_index);
 			m[? "subimg"] = floor(ins.image_index);
 			m[? "depth"] = floor(ins.depth);
 			
 			ds_map_add_map(map, i, m);
 		}
-		
+		map[? "mainx"] = mainx;
+		map[? "mainy"] = mainy;
+
 		clipboard_set_text(json_encode(map));
 		cout_show("success copy to clipboard.");
 		ds_map_destroy(map);
@@ -107,14 +103,19 @@ switch(receiveidx)
 			//cout_show(get_map_keylist(map[? string(i)]));
 			var ins = arr[i];
 			var m = map[? string(i)];
-			ins.x = m[? "x"];
-			ins.y = m[? "y"];
-			ins.setx = ins.x;
-			ins.sety = ins.y;
+			ins.setx = m[? "x"];
+			ins.sety = m[? "y"];
 			ins.sprite_index = m[? "img"];
 			ins.image_index = m[? "subimg"];
 		}
+		mainx = map[? "mainx"];
+		mainy = map[? "mainy"];
+		
 		ds_map_destroy(map);
+
+		var ins = arr[DragunParts.body];
+		ins.setx = 0;
+		ins.sety = 0;
 		
 		event_user(0);
 	break;
@@ -126,6 +127,32 @@ switch(receiveidx)
 		ins.sprite_index = idx;
 		event_user(0);
 	break;
+	
+	case 5:
+		num = receiveby.num;
+		event_user(0);
+	break;
+}
+
+if keyboard_check_pressed(ord("B"))
+{
+		var str = clipboard_get_text();
+		var map = json_decode(str);
+		//var map = map1[? "default"];
+
+		for(var i = 0; i < DragunParts.last; i++)
+		{
+			//cout_show(get_map_keylist(map[? string(i)]));
+			var ins = arr[i];
+			var m = map[? string(i)];
+			ins.x = m[? "x"];
+			ins.y = m[? "y"];
+			ins.setx = ins.x - mainx;
+			ins.sety = ins.y - mainy;
+			ins.sprite_index = m[? "img"];
+			ins.image_index = m[? "subimg"];
+		}
+		ds_map_destroy(map);
 }
 
 if mouse_check_button(mb_right)

@@ -1,5 +1,5 @@
 ///@desc New Event
 image_speed = 0;
 
-setx = x;
-sety = y;
+setx = 0;
+sety = 0;
