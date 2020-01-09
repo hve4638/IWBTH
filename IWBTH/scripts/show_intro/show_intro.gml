@@ -1,7 +1,7 @@
 ///@param x
 ///@param y
 ///@param spr
-///@param time
+///@param time*
 var _x, _y, spr, t;
 _x = argument_count > 0 ? argument[0] : sys_global.intro_x;
 _y = argument_count > 1 ? argument[1] : sys_global.intro_y;

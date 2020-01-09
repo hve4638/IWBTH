@@ -415,6 +415,14 @@
             }
         },
         {
+            "Key": "12c683c1-f4bc-4e11-b64b-55ab81764481",
+            "Value": {
+                "id": "b6b63a26-8505-4e92-bcbd-7e1fd420a600",
+                "resourcePath": "scripts\\dragun_set\\dragun_set.yy",
+                "resourceType": "GMScript"
+            }
+        },
+        {
             "Key": "134780ba-7c61-4683-a42a-8b758d8154fa",
             "Value": {
                 "id": "f54e3e5b-0ba5-433f-9488-0f6af074f7a5",
@@ -635,6 +643,14 @@
             "Value": {
                 "id": "fc1db427-6500-460a-a886-70ea9c35335e",
                 "resourcePath": "objects\\obj_spike3\\obj_spike3.yy",
+                "resourceType": "GMObject"
+            }
+        },
+        {
+            "Key": "1cdb5956-65b4-45bf-aaa1-9d55a4018d6e",
+            "Value": {
+                "id": "63e59e94-c06e-47a1-b77c-5511f2adf7a9",
+                "resourcePath": "objects\\obj_dragun\\obj_dragun.yy",
                 "resourceType": "GMObject"
             }
         },
@@ -1867,6 +1883,14 @@
             "Value": {
                 "id": "fa02460f-0b32-412c-b637-49b3f275c0f1",
                 "resourcePath": "scripts\\addprofile\\addprofile.yy",
+                "resourceType": "GMScript"
+            }
+        },
+        {
+            "Key": "53641927-d726-417a-8932-cc7c30b1c46d",
+            "Value": {
+                "id": "bb814de4-1c3a-497c-93cb-6a363b9a59cf",
+                "resourcePath": "scripts\\dragun_create\\dragun_create.yy",
                 "resourceType": "GMScript"
             }
         },
@@ -3219,6 +3243,14 @@
             "Value": {
                 "id": "1445eac5-11e3-42fb-88ed-24def0ffc29a",
                 "resourcePath": "sprites\\spr_customkey\\spr_customkey.yy",
+                "resourceType": "GMSprite"
+            }
+        },
+        {
+            "Key": "8b9b4405-4450-406d-97da-c7891902ac9b",
+            "Value": {
+                "id": "e82c6e47-1289-4e1d-ba17-e1a96cf923a7",
+                "resourcePath": "sprites\\spr_intro_dragun\\spr_intro_dragun.yy",
                 "resourceType": "GMSprite"
             }
         },
@@ -6012,7 +6044,9 @@
         "0ed9ccd1-9cb0-4e2b-aa67-d3f7262f6b4c",
         "bfb61e8c-4904-4ebb-9fb9-dffe48c0afc3",
         "8491c7b6-6144-46b9-ab81-e838f09a3dbf",
-        "b69fe2b0-e6f1-4e8e-9e36-61ad2c9d6c58"
+        "b69fe2b0-e6f1-4e8e-9e36-61ad2c9d6c58",
+        "53641927-d726-417a-8932-cc7c30b1c46d",
+        "12c683c1-f4bc-4e11-b64b-55ab81764481"
     ],
     "tutorial": ""
 }

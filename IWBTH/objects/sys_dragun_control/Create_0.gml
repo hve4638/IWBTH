@@ -1,29 +1,3 @@
-enum DragunParts {
-	head,
-	body,
-	wings,
-	neck1,
-	neck2,
-	neck3,
-	neck4,
-	neck5,
-	hand_l,
-	hand_r,
-	shoulder_l,
-	shoulder_r,
-	arm_l1,
-	arm_l2,
-	arm_l3,
-	arm_l4,
-	arm_l5,
-	arm_r1,
-	arm_r2,
-	arm_r3,
-	arm_r4,
-	arm_r5,
-	last
-}
-
 ondrag = false;
 oncancel = false;
 num_p = 0;
