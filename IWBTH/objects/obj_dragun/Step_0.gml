@@ -30,3 +30,21 @@ dragun[? DragunParts.neck2].x = value_merge(a, b, 3/9);
 dragun[? DragunParts.neck3].x = value_merge(a, b, 5/9);
 dragun[? DragunParts.neck4].x = value_merge(a, b, 7/9);
 dragun[? DragunParts.neck5].x = value_merge(a, b, 8/9);
+
+var px = x;
+for(var i = DragunParts.neck5; i >= DragunParts.neck1; i--)
+{
+	var ins = dragun[? i];
+	if 4 < abs(ins.x - px)
+	{
+		ins.image_index = 1;
+		ins.image_xscale = sign(ins.x - px) * abs(ins.image_xscale);
+	}
+	else
+	{
+		ins.image_index = 0;
+		ins.image_xscale = abs(ins.image_xscale);
+	}
+	
+	px = ins.x;
+}

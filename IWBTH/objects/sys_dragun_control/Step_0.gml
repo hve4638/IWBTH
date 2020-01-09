@@ -107,7 +107,7 @@ switch(receiveidx)
 			var m = map[? string(i)];
 			ins.setx = m[? "x"];
 			ins.sety = m[? "y"];
-			ins.sprite_index = m[? "img"];
+			//ins.sprite_index = m[? "img"];
 			ins.image_index = m[? "subimg"];
 			ins.image_xscale = m[? "xscale"];
 			ins.image_yscale = m[? "yscale"];

@@ -111,6 +111,14 @@
             }
         },
         {
+            "Key": "0213c9be-2bcc-4587-a813-0e336e5505ba",
+            "Value": {
+                "id": "28835320-ac10-4e10-b897-4f689107a951",
+                "resourcePath": "sprites\\spr_dragun_neck_bottom\\spr_dragun_neck_bottom.yy",
+                "resourceType": "GMSprite"
+            }
+        },
+        {
             "Key": "02dba299-25c3-4d37-9adc-330686b6c375",
             "Value": {
                 "id": "3f3fc9e9-8991-44ae-a02f-c9f6ed648d19",
@@ -223,14 +231,6 @@
             }
         },
         {
-            "Key": "0871e25b-da73-44d2-bd80-e2c9f62d9bb1",
-            "Value": {
-                "id": "ad22b3b1-bb84-4303-8655-d48c33641f95",
-                "resourcePath": "objects\\obj_dragun_intro\\obj_dragun_intro.yy",
-                "resourceType": "GMObject"
-            }
-        },
-        {
             "Key": "08fa42fe-d28d-4dc5-b14a-43950b40e429",
             "Value": {
                 "id": "1545ca55-a364-42e1-bc01-5bc37a2bd187",
@@ -295,6 +295,14 @@
             }
         },
         {
+            "Key": "0c528471-a47d-4518-9b58-e8135163e8ee",
+            "Value": {
+                "id": "6d77195d-2e3c-4278-b04d-b504924a2b7f",
+                "resourcePath": "sprites\\dragun_knife_impact_001\\dragun_knife_impact_001.yy",
+                "resourceType": "GMSprite"
+            }
+        },
+        {
             "Key": "0d4ce3aa-4ef1-4291-85d0-7b90a5656637",
             "Value": {
                 "id": "f1cb42aa-1522-4618-bb92-d34ab7e34bc2",
@@ -316,6 +324,14 @@
                 "id": "a5573961-d140-4592-8024-ffe228686089",
                 "resourcePath": "scripts\\todo_add_sleep\\todo_add_sleep.yy",
                 "resourceType": "GMScript"
+            }
+        },
+        {
+            "Key": "0dd1ddde-1cc6-440a-b574-d81010e337c8",
+            "Value": {
+                "id": "aec48741-d468-491f-b411-04cc058aaaf1",
+                "resourcePath": "sprites\\spr_dragun_rpg_out\\spr_dragun_rpg_out.yy",
+                "resourceType": "GMSprite"
             }
         },
         {
@@ -439,6 +455,14 @@
             }
         },
         {
+            "Key": "138a8bdf-848c-46ec-9875-d45ae1370221",
+            "Value": {
+                "id": "e11fb8ba-e444-4790-a86c-3f05350d892a",
+                "resourcePath": "sprites\\spr_dragun_rpg_muzzleflash\\spr_dragun_rpg_muzzleflash.yy",
+                "resourceType": "GMSprite"
+            }
+        },
+        {
             "Key": "1403eae5-a15b-4ad5-ae16-6b028e12e7d0",
             "Value": {
                 "id": "1e895c8f-142a-4556-8475-057e9fba9f24",
@@ -516,6 +540,14 @@
                 "id": "eefc284e-619a-4ae5-a0d2-69dfd07109d0",
                 "resourcePath": "objects\\sys_init\\sys_init.yy",
                 "resourceType": "GMObject"
+            }
+        },
+        {
+            "Key": "168b7167-eb09-4b86-93b4-dcd366a8bf39",
+            "Value": {
+                "id": "38c69214-3255-4ffb-afc1-2561d1158180",
+                "resourcePath": "sprites\\spr_dragun_claw_weak\\spr_dragun_claw_weak.yy",
+                "resourceType": "GMSprite"
             }
         },
         {
@@ -607,6 +639,14 @@
             }
         },
         {
+            "Key": "1b31c4f6-b6db-466d-8463-ed3755b3528e",
+            "Value": {
+                "id": "f45055f7-16b4-42a4-bfde-dcd952d1189f",
+                "resourcePath": "sprites\\spr_dragun_rpg_intro2\\spr_dragun_rpg_intro2.yy",
+                "resourceType": "GMSprite"
+            }
+        },
+        {
             "Key": "1b42f272-00e4-4985-b25f-46b7e8ea00c9",
             "Value": {
                 "id": "8699f616-17ae-4254-9b67-2f2791672f7c",
@@ -668,6 +708,14 @@
                 "id": "17e9fbeb-7e30-44ea-a2e9-8ec0c9419523",
                 "resourcePath": "scripts\\todo_receive\\todo_receive.yy",
                 "resourceType": "GMScript"
+            }
+        },
+        {
+            "Key": "1dc0ee59-a4d9-4d68-b50b-cdc41fcf970a",
+            "Value": {
+                "id": "c548f2ed-3c22-4ece-9997-f35ca6832b95",
+                "resourcePath": "views\\1dc0ee59-a4d9-4d68-b50b-cdc41fcf970a.yy",
+                "resourceType": "GMFolder"
             }
         },
         {
@@ -823,6 +871,14 @@
             }
         },
         {
+            "Key": "23cd004c-0a3a-43bf-a4ba-8464f67c184b",
+            "Value": {
+                "id": "f9c9462b-9c91-49b8-aeee-b4578c514d4e",
+                "resourcePath": "sprites\\spr_dragun_mac_idle\\spr_dragun_mac_idle.yy",
+                "resourceType": "GMSprite"
+            }
+        },
+        {
             "Key": "2450884f-df4a-47d0-a929-54c7912ed6f8",
             "Value": {
                 "id": "19ac79d9-7274-400a-973d-3b076800b1bf",
@@ -900,14 +956,6 @@
                 "id": "8e527b67-9137-4692-82f4-7d82a1db4eda",
                 "resourcePath": "fonts\\font_perpetua\\font_perpetua.yy",
                 "resourceType": "GMFont"
-            }
-        },
-        {
-            "Key": "276345f2-cfae-494e-98ed-38dc7696ef3f",
-            "Value": {
-                "id": "7fe5d3ca-8171-4180-862e-e400c4f4dfd0",
-                "resourcePath": "sprites\\spr_dragun_jafoulder\\spr_dragun_jafoulder.yy",
-                "resourceType": "GMSprite"
             }
         },
         {
@@ -1067,6 +1115,14 @@
             "Value": {
                 "id": "49f49f36-2381-4d7d-a5fc-307ef6b514bc",
                 "resourcePath": "sprites\\spr_scythe_red\\spr_scythe_red.yy",
+                "resourceType": "GMSprite"
+            }
+        },
+        {
+            "Key": "2cdb7325-514d-43f2-80eb-cd00f80ea121",
+            "Value": {
+                "id": "72d9cb8b-a469-484c-8b20-5dc0e6e8c6a5",
+                "resourcePath": "sprites\\spr_dragun_gun_front_effect\\spr_dragun_gun_front_effect.yy",
                 "resourceType": "GMSprite"
             }
         },
@@ -1255,6 +1311,14 @@
             }
         },
         {
+            "Key": "34d8ce9f-edfa-4e4c-bde8-11700b944c4a",
+            "Value": {
+                "id": "7ebbfbdf-3f23-499d-b964-ff7ebac8051c",
+                "resourcePath": "sprites\\spr_dragun_rpg_intro3\\spr_dragun_rpg_intro3.yy",
+                "resourceType": "GMSprite"
+            }
+        },
+        {
             "Key": "34f3e587-d7a1-4fe7-b6ed-1d1d8ab07377",
             "Value": {
                 "id": "c7c9e517-d2bb-4b90-9547-cdd3fc023b70",
@@ -1276,6 +1340,14 @@
                 "id": "6586b64c-f268-49f3-96fe-cc263ec5461c",
                 "resourcePath": "scripts\\rand_get_index\\rand_get_index.yy",
                 "resourceType": "GMScript"
+            }
+        },
+        {
+            "Key": "3550377d-6676-4688-a117-d099fd8b63d7",
+            "Value": {
+                "id": "0aeab506-9315-478a-b593-2065f2385386",
+                "resourcePath": "sprites\\spr_dragun_wings_idle\\spr_dragun_wings_idle.yy",
+                "resourceType": "GMSprite"
             }
         },
         {
@@ -1335,14 +1407,6 @@
             }
         },
         {
-            "Key": "38d722b9-4719-4ceb-ab81-bdcd90e56b1c",
-            "Value": {
-                "id": "878d21d0-8ebd-4eaf-8b03-318ad8b683e5",
-                "resourcePath": "sprites\\spr_dragun_claw_left\\spr_dragun_claw_left.yy",
-                "resourceType": "GMSprite"
-            }
-        },
-        {
             "Key": "38e765d8-82c8-4da0-910c-d6f4c3b645f4",
             "Value": {
                 "id": "da41a997-fe96-4e5f-9dfb-dacb4d6b5720",
@@ -1396,6 +1460,14 @@
                 "id": "45916d6f-9f57-4945-80a1-edcf5ab094c4",
                 "resourcePath": "views\\3dd30c31-ce25-4ffc-9592-12f83368c679.yy",
                 "resourceType": "GMFolder"
+            }
+        },
+        {
+            "Key": "3e2bb9b9-b6cd-4063-9b71-fc328f9f9db2",
+            "Value": {
+                "id": "40e5ec12-f35d-4345-87fd-2333365fc1d2",
+                "resourcePath": "sprites\\spr_dragun_head_swing\\spr_dragun_head_swing.yy",
+                "resourceType": "GMSprite"
             }
         },
         {
@@ -1495,6 +1567,14 @@
             }
         },
         {
+            "Key": "42c9037e-9825-45c1-9340-599462381e21",
+            "Value": {
+                "id": "92860c98-5f6d-4ac7-b20d-8ca6bf45ffa6",
+                "resourcePath": "sprites\\spr_dragun_claw_gunget\\spr_dragun_claw_gunget.yy",
+                "resourceType": "GMSprite"
+            }
+        },
+        {
             "Key": "436b248d-1c82-48eb-be54-0b1d58ae77d1",
             "Value": {
                 "id": "90a67cdc-b07a-40dd-af74-97030193c681",
@@ -1531,14 +1611,6 @@
             "Value": {
                 "id": "72a4364f-56da-4895-b96f-d655dfbd232c",
                 "resourcePath": "sprites\\spr_providience_seat0\\spr_providience_seat0.yy",
-                "resourceType": "GMSprite"
-            }
-        },
-        {
-            "Key": "45ae69be-80c2-4057-9626-ed33d44c4d3f",
-            "Value": {
-                "id": "69bfa51f-da30-4b8b-8b61-d7143a10913e",
-                "resourcePath": "sprites\\spr_dragun_neck_top\\spr_dragun_neck_top.yy",
                 "resourceType": "GMSprite"
             }
         },
@@ -1759,6 +1831,14 @@
             }
         },
         {
+            "Key": "4ea00fa1-ff9b-4b2d-a8dc-ea2b5db1ffe0",
+            "Value": {
+                "id": "517ae5c8-cdb8-46fd-8b2b-066ab4a40e53",
+                "resourcePath": "views\\4ea00fa1-ff9b-4b2d-a8dc-ea2b5db1ffe0.yy",
+                "resourceType": "GMFolder"
+            }
+        },
+        {
             "Key": "4ea15f12-ae67-428b-8147-8f2d150c8d30",
             "Value": {
                 "id": "373d0e66-7de3-4c1b-b936-df29bf3f1e18",
@@ -1775,19 +1855,19 @@
             }
         },
         {
-            "Key": "4f0d3d5c-5844-4628-b596-85b30be1f8e5",
-            "Value": {
-                "id": "bfd35a98-024e-4000-8ff4-539c88965547",
-                "resourcePath": "sprites\\spr_dragun_claw_right\\spr_dragun_claw_right.yy",
-                "resourceType": "GMSprite"
-            }
-        },
-        {
             "Key": "4f615550-27ff-4485-b989-3104ce2ffb43",
             "Value": {
                 "id": "1ff35f01-7faf-4a23-a896-29132540472a",
                 "resourcePath": "scripts\\rand_create\\rand_create.yy",
                 "resourceType": "GMScript"
+            }
+        },
+        {
+            "Key": "4f942c37-6cfa-4165-b397-26644371f262",
+            "Value": {
+                "id": "ad5614f3-8ee3-4351-be6b-6541ce74ec5e",
+                "resourcePath": "sprites\\spr_dragun_mac_attack\\spr_dragun_mac_attack.yy",
+                "resourceType": "GMSprite"
             }
         },
         {
@@ -1959,14 +2039,6 @@
             }
         },
         {
-            "Key": "567682e4-4991-4f11-82e5-55b8ee6361cd",
-            "Value": {
-                "id": "c7232803-5e8b-4970-b44b-cc5b6d3c9fb8",
-                "resourcePath": "sprites\\spr_dragun_neck_bottom\\spr_dragun_neck_bottom.yy",
-                "resourceType": "GMSprite"
-            }
-        },
-        {
             "Key": "56976145-7ac6-4e57-9972-e69279f476fb",
             "Value": {
                 "id": "57ed752e-71fc-4210-bacc-8263fb0a031c",
@@ -2036,6 +2108,22 @@
                 "id": "91b78aad-6ce0-46ad-b082-3ecd37539ffc",
                 "resourcePath": "objects\\obj_damagebox_life\\obj_damagebox_life.yy",
                 "resourceType": "GMObject"
+            }
+        },
+        {
+            "Key": "58457d19-3ebd-4b8d-8209-443fe4bdc659",
+            "Value": {
+                "id": "cba2f66d-9efe-4cab-9bb6-e60d19cd2b97",
+                "resourcePath": "sprites\\spr_dragun_head_idle\\spr_dragun_head_idle.yy",
+                "resourceType": "GMSprite"
+            }
+        },
+        {
+            "Key": "58c7aafd-4567-4b8e-8d5f-8a101333d0c8",
+            "Value": {
+                "id": "059df7d0-369d-4a36-95ec-5f9e023897a5",
+                "resourcePath": "sprites\\spr_dragun_gun_side_twirl\\spr_dragun_gun_side_twirl.yy",
+                "resourceType": "GMSprite"
             }
         },
         {
@@ -2204,6 +2292,14 @@
                 "id": "8e50b53f-0022-43e3-af4d-59b6b16d3845",
                 "resourcePath": "views\\6059023b-dd1e-4487-ae0f-6690e7db4bcc.yy",
                 "resourceType": "GMFolder"
+            }
+        },
+        {
+            "Key": "60ca4613-9d0f-4ca1-bb2d-5a08e788fa1d",
+            "Value": {
+                "id": "d6e13d25-0965-4c0b-a5d4-edeba3c6d77f",
+                "resourcePath": "sprites\\spr_dragun_neck_top\\spr_dragun_neck_top.yy",
+                "resourceType": "GMSprite"
             }
         },
         {
@@ -2388,6 +2484,14 @@
                 "id": "76d35efe-fc98-4b20-9b7e-92ac19ad99df",
                 "resourcePath": "scripts\\isno\\isno.yy",
                 "resourceType": "GMScript"
+            }
+        },
+        {
+            "Key": "682bba3e-ecc3-417a-a2c6-d1e656abc8bd",
+            "Value": {
+                "id": "4de6da3f-a96f-4cd4-8cb8-bea9c5ff9f2f",
+                "resourcePath": "sprites\\spr_dragun_rpg_projectile\\spr_dragun_rpg_projectile.yy",
+                "resourceType": "GMSprite"
             }
         },
         {
@@ -2783,6 +2887,14 @@
             }
         },
         {
+            "Key": "7bc2c547-a4e1-42e0-8e59-7792ff710cb6",
+            "Value": {
+                "id": "2a7cda35-32d8-44b3-b7da-bc031a255dbd",
+                "resourcePath": "sprites\\spr_dragun_body\\spr_dragun_body.yy",
+                "resourceType": "GMSprite"
+            }
+        },
+        {
             "Key": "7bdcc3b9-2155-4b6b-9b20-2d692199fc08",
             "Value": {
                 "id": "804de685-b7c5-47ff-bdbe-49006e65bcf2",
@@ -2836,6 +2948,14 @@
                 "id": "02ad2831-fa8d-44e1-8626-f1990e987a2e",
                 "resourcePath": "views\\7d6e601f-afd4-4828-a584-e58d05ca8b00.yy",
                 "resourceType": "GMFolder"
+            }
+        },
+        {
+            "Key": "7d8ebfb5-2162-44d4-b342-bb6a37d48583",
+            "Value": {
+                "id": "c8188ed1-6305-49b4-9d84-71aa5b26a9e9",
+                "resourcePath": "sprites\\spr_dragun_gun_front_twirl\\spr_dragun_gun_front_twirl.yy",
+                "resourceType": "GMSprite"
             }
         },
         {
@@ -2924,6 +3044,14 @@
                 "id": "d4eaa00f-7063-465e-a783-710833a0d761",
                 "resourcePath": "sprites\\spr_providience_ready10\\spr_providience_ready10.yy",
                 "resourceType": "GMSprite"
+            }
+        },
+        {
+            "Key": "814ca558-5872-4a80-a14e-50054500af5d",
+            "Value": {
+                "id": "e9e4611e-2247-496e-b3a1-849152684bbd",
+                "resourcePath": "objects\\obj_tmpp\\obj_tmpp.yy",
+                "resourceType": "GMObject"
             }
         },
         {
@@ -3183,6 +3311,14 @@
             }
         },
         {
+            "Key": "89daf901-62de-47a1-af55-d51607c2ca1d",
+            "Value": {
+                "id": "e7ae7dc9-7f6e-443c-93bb-9fc352753a3e",
+                "resourcePath": "sprites\\spr_dragun_rpg_fire\\spr_dragun_rpg_fire.yy",
+                "resourceType": "GMSprite"
+            }
+        },
+        {
             "Key": "89dedc67-d78b-4ced-b17d-85723d4669a9",
             "Value": {
                 "id": "ae94cd62-a7c5-4229-b6ba-43fb9c07ac2b",
@@ -3252,6 +3388,22 @@
                 "id": "352c16c5-721d-47d4-b81d-7f1aab16597d",
                 "resourcePath": "scripts\\get_room_loop\\get_room_loop.yy",
                 "resourceType": "GMScript"
+            }
+        },
+        {
+            "Key": "8c13d762-09be-4469-8323-2ba7bd18ac13",
+            "Value": {
+                "id": "4bced9d4-58d6-4784-b8f5-1ae67b5427b7",
+                "resourcePath": "views\\8c13d762-09be-4469-8323-2ba7bd18ac13.yy",
+                "resourceType": "GMFolder"
+            }
+        },
+        {
+            "Key": "8cab63f8-bba8-485d-8bb3-08f7d54e46db",
+            "Value": {
+                "id": "7e7acf3d-ec0a-4385-8e8c-14b140508012",
+                "resourcePath": "sprites\\spr_dragun_rpg_outro\\spr_dragun_rpg_outro.yy",
+                "resourceType": "GMSprite"
             }
         },
         {
@@ -3463,14 +3615,6 @@
             }
         },
         {
-            "Key": "96825d83-afb8-4e70-b745-7ed789cd2b63",
-            "Value": {
-                "id": "62c5eca5-72b8-487b-841c-2cb93871c715",
-                "resourcePath": "sprites\\spr_dragun_wings\\spr_dragun_wings.yy",
-                "resourceType": "GMSprite"
-            }
-        },
-        {
             "Key": "96aed3e3-ebb2-4e90-8a81-a81ce3994573",
             "Value": {
                 "id": "3510e26b-d32d-4ae8-b679-66b1dab2821f",
@@ -3548,6 +3692,14 @@
                 "id": "c3c31bc0-d9f1-420e-bb8e-b70a1b008623",
                 "resourcePath": "timelines\\tl_stageclear\\tl_stageclear.yy",
                 "resourceType": "GMTimeline"
+            }
+        },
+        {
+            "Key": "98eed48b-1da9-44c2-8c6b-0e0e75e0595f",
+            "Value": {
+                "id": "8ec9222e-5bed-4366-80f8-44b59f821991",
+                "resourcePath": "sprites\\spr_dragun_gun_front_idle\\spr_dragun_gun_front_idle.yy",
+                "resourceType": "GMSprite"
             }
         },
         {
@@ -3699,6 +3851,14 @@
             "Value": {
                 "id": "dfcfc880-72e8-4d3f-a39a-ba337faa67e0",
                 "resourcePath": "sprites\\spr_sorcerer_echo\\spr_sorcerer_echo.yy",
+                "resourceType": "GMSprite"
+            }
+        },
+        {
+            "Key": "9f61fc93-b99c-4ccf-80b2-4c08aca512ae",
+            "Value": {
+                "id": "ab45e0e2-0719-4ef7-8851-4b388181823b",
+                "resourcePath": "sprites\\dragun_intro_030\\dragun_intro_030.yy",
                 "resourceType": "GMSprite"
             }
         },
@@ -3887,6 +4047,14 @@
             }
         },
         {
+            "Key": "a6357a83-df89-492b-8176-866e415bf528",
+            "Value": {
+                "id": "18c787cd-e390-4fe7-8c0f-1a4a77236c0c",
+                "resourcePath": "sprites\\spr_dragun_gun_side_attack\\spr_dragun_gun_side_attack.yy",
+                "resourceType": "GMSprite"
+            }
+        },
+        {
             "Key": "a6584cd2-09aa-4279-a90f-fb47f5618ff2",
             "Value": {
                 "id": "2efe0793-b6eb-42f3-a6eb-b4cddf336258",
@@ -3967,6 +4135,14 @@
             }
         },
         {
+            "Key": "a9862811-e5ac-49e1-9924-eba9ffce77de",
+            "Value": {
+                "id": "57870dda-3faf-4974-a749-c776930d8a31",
+                "resourcePath": "sprites\\spr_knifeguy\\spr_knifeguy.yy",
+                "resourceType": "GMSprite"
+            }
+        },
+        {
             "Key": "a9b148e4-4f93-4e44-9098-cef214cb454f",
             "Value": {
                 "id": "370262a8-4823-47c0-9c2c-ea29d0a2b25e",
@@ -4003,6 +4179,14 @@
             "Value": {
                 "id": "cb90a3d6-012f-4db5-80b9-72b2f9d9d539",
                 "resourcePath": "sprites\\spr_textscript\\spr_textscript.yy",
+                "resourceType": "GMSprite"
+            }
+        },
+        {
+            "Key": "aa5d958c-a9c7-4aa3-a02f-e99d7963817e",
+            "Value": {
+                "id": "fa8b72e7-17ab-4de1-86df-fea1050b4139",
+                "resourcePath": "sprites\\spr_dragun_gun_out\\spr_dragun_gun_out.yy",
                 "resourceType": "GMSprite"
             }
         },
@@ -4188,6 +4372,14 @@
                 "id": "4a0dd3ba-542d-43b0-92a8-d675c72e288f",
                 "resourcePath": "views\\b0f1f28c-e7bf-4092-82b6-67c662b5bfe3.yy",
                 "resourceType": "GMFolder"
+            }
+        },
+        {
+            "Key": "b15803cc-68f0-41ae-9e69-c8571ec48261",
+            "Value": {
+                "id": "ebb35b78-2606-48f0-8eb1-5acc6afb4288",
+                "resourcePath": "sprites\\spr_dragun_gun_side_effect\\spr_dragun_gun_side_effect.yy",
+                "resourceType": "GMSprite"
             }
         },
         {
@@ -4399,6 +4591,14 @@
             }
         },
         {
+            "Key": "bd030bb1-c6c1-4fbf-bde9-d160a2013ef0",
+            "Value": {
+                "id": "44b26d71-a3d9-4943-bb38-110e2801b321",
+                "resourcePath": "sprites\\spr_dragun_wings_flap\\spr_dragun_wings_flap.yy",
+                "resourceType": "GMSprite"
+            }
+        },
+        {
             "Key": "bd616dab-cde5-4ab1-a8ec-6be2e905a8ef",
             "Value": {
                 "id": "e84efaeb-1942-4bf9-ba59-504f26e0556e",
@@ -4487,6 +4687,14 @@
             }
         },
         {
+            "Key": "c07ee69e-7130-44d2-bfee-b0651c15f0ba",
+            "Value": {
+                "id": "fef5c6f3-4a3e-492b-8c10-334782b62a68",
+                "resourcePath": "sprites\\spr_dragun_claw_idle\\spr_dragun_claw_idle.yy",
+                "resourceType": "GMSprite"
+            }
+        },
+        {
             "Key": "c0987ecc-1eeb-427f-a061-f984b7844ffb",
             "Value": {
                 "id": "e04abfc8-e867-454d-b339-da3db4cf3682",
@@ -4527,14 +4735,6 @@
             }
         },
         {
-            "Key": "c210fb62-9ff8-4c5e-a4d2-b83a22f8ca98",
-            "Value": {
-                "id": "0462185e-44e2-430e-94d1-faa2d51e7399",
-                "resourcePath": "sprites\\spr_dragun_head_shoot\\spr_dragun_head_shoot.yy",
-                "resourceType": "GMSprite"
-            }
-        },
-        {
             "Key": "c27b236c-2799-4eee-b8e7-44ff49da093f",
             "Value": {
                 "id": "a94842a3-d23c-4b57-ad21-43792fb18b5a",
@@ -4556,6 +4756,14 @@
                 "id": "bda51247-8f9f-4eda-8430-32df56117972",
                 "resourcePath": "sprites\\spr_player_mask\\spr_player_mask.yy",
                 "resourceType": "GMSprite"
+            }
+        },
+        {
+            "Key": "c3775582-e58d-42b9-98f3-46fb8e7e1baa",
+            "Value": {
+                "id": "58b83755-e616-4475-910a-c70a30135c82",
+                "resourcePath": "views\\c3775582-e58d-42b9-98f3-46fb8e7e1baa.yy",
+                "resourceType": "GMFolder"
             }
         },
         {
@@ -4719,14 +4927,6 @@
             }
         },
         {
-            "Key": "c8952447-b7e5-4ef3-8ae6-5df44d98f517",
-            "Value": {
-                "id": "476925cb-e14c-48b1-8e62-bd99db9b8a13",
-                "resourcePath": "sprites\\spr_dragun_body\\spr_dragun_body.yy",
-                "resourceType": "GMSprite"
-            }
-        },
-        {
             "Key": "c89dfbfb-d1b9-493a-8336-937d8a65db70",
             "Value": {
                 "id": "c9370ff8-b70b-4439-b3ec-44104f1b9797",
@@ -4740,6 +4940,14 @@
                 "id": "877ba4e7-ac91-498c-bd8b-7770d9d0f28d",
                 "resourcePath": "scripts\\teleport_act\\teleport_act.yy",
                 "resourceType": "GMScript"
+            }
+        },
+        {
+            "Key": "c9572396-43d1-4ae8-a070-958a9e6b6cfd",
+            "Value": {
+                "id": "56035c7c-ad72-46ee-9066-4e73b399e841",
+                "resourcePath": "sprites\\spr_dragun_gun_side_idle\\spr_dragun_gun_side_idle.yy",
+                "resourceType": "GMSprite"
             }
         },
         {
@@ -4951,6 +5159,22 @@
             }
         },
         {
+            "Key": "d58dfdc4-5b2f-42fe-abcf-212853ecf3a5",
+            "Value": {
+                "id": "d28c9eee-9552-459c-a47d-887c8dc57790",
+                "resourcePath": "sprites\\spr_dragun_shoulder\\spr_dragun_shoulder.yy",
+                "resourceType": "GMSprite"
+            }
+        },
+        {
+            "Key": "d5e3e32d-7336-402e-9d75-7ca7b758f688",
+            "Value": {
+                "id": "5e034db4-fa1e-4897-a6ac-54aa3419e412",
+                "resourcePath": "sprites\\spr_dragun_head_shoot\\spr_dragun_head_shoot.yy",
+                "resourceType": "GMSprite"
+            }
+        },
+        {
             "Key": "d631c57e-3e56-4bf7-9172-566af36b51d6",
             "Value": {
                 "id": "e5f5f614-06c7-4882-b0d3-9f5355fc7725",
@@ -5023,11 +5247,27 @@
             }
         },
         {
+            "Key": "d8984c06-9ea9-4003-9762-cc4e50719a7b",
+            "Value": {
+                "id": "16d867d6-28cf-489f-8134-ad749d01b2b2",
+                "resourcePath": "sprites\\spr_dragun_rpg_intro4\\spr_dragun_rpg_intro4.yy",
+                "resourceType": "GMSprite"
+            }
+        },
+        {
             "Key": "d8be0e69-21db-484c-bf48-61989c75ea33",
             "Value": {
                 "id": "558d89e3-11bd-4edd-9c5a-afb07aac644b",
                 "resourcePath": "scripts\\time_format\\time_format.yy",
                 "resourceType": "GMScript"
+            }
+        },
+        {
+            "Key": "d8eab6e8-9dc1-403e-9fd8-997cc1a9db0e",
+            "Value": {
+                "id": "09b2db2c-3b53-4f8a-8621-c26c84f64e88",
+                "resourcePath": "sprites\\spr_dragun_rpg_muzzleflash_back\\spr_dragun_rpg_muzzleflash_back.yy",
+                "resourceType": "GMSprite"
             }
         },
         {
@@ -5079,6 +5319,14 @@
             }
         },
         {
+            "Key": "dc55017d-7621-4d02-b53e-dad23e1cfac0",
+            "Value": {
+                "id": "b1372b68-44af-411e-9e21-c1606b7f498b",
+                "resourcePath": "sprites\\spr_dragun_gun_front_attack\\spr_dragun_gun_front_attack.yy",
+                "resourceType": "GMSprite"
+            }
+        },
+        {
             "Key": "dc57d33d-af07-4562-b21b-819b9ebb28c0",
             "Value": {
                 "id": "78513636-6930-49a0-8887-839555394a8a",
@@ -5099,6 +5347,14 @@
             "Value": {
                 "id": "5137e986-27db-43f9-819f-a19b5c26a438",
                 "resourcePath": "sprites\\spr_providience_phase3\\spr_providience_phase3.yy",
+                "resourceType": "GMSprite"
+            }
+        },
+        {
+            "Key": "dd1c14f2-1ccd-4a9c-b5bb-e521bbce0102",
+            "Value": {
+                "id": "40c79414-3ba7-4cfb-8cb1-56868f91b986",
+                "resourcePath": "sprites\\spr_dragun_arm\\spr_dragun_arm.yy",
                 "resourceType": "GMSprite"
             }
         },
@@ -5239,6 +5495,14 @@
             }
         },
         {
+            "Key": "e6048e84-0342-493d-a708-e8a87af12269",
+            "Value": {
+                "id": "ebbeec4b-37a1-4d2b-aa45-012893df7434",
+                "resourcePath": "sprites\\spr_dragun_rpg_intro1\\spr_dragun_rpg_intro1.yy",
+                "resourceType": "GMSprite"
+            }
+        },
+        {
             "Key": "e6091825-0d15-4edb-b359-9fe489bdf052",
             "Value": {
                 "id": "f232b110-705d-4141-83e6-2782a5825de5",
@@ -5295,6 +5559,14 @@
             }
         },
         {
+            "Key": "e87d8ef0-e441-4046-a4cf-299fae5a07c2",
+            "Value": {
+                "id": "03e21253-a2d6-4d70-a592-1112d37ad62f",
+                "resourcePath": "sprites\\spr_dragun_mac_out\\spr_dragun_mac_out.yy",
+                "resourceType": "GMSprite"
+            }
+        },
+        {
             "Key": "e8c43563-d54c-4e3f-bbce-bf0b96e2de31",
             "Value": {
                 "id": "c80733dc-94b8-45ea-9cae-fff114b39887",
@@ -5343,14 +5615,6 @@
             }
         },
         {
-            "Key": "e979a2a2-6a31-48f6-acd4-8ef7369117bc",
-            "Value": {
-                "id": "24127b3b-2ed7-43ad-b755-726950394767",
-                "resourcePath": "sprites\\spr_dragun_jafarm\\spr_dragun_jafarm.yy",
-                "resourceType": "GMSprite"
-            }
-        },
-        {
             "Key": "e9ae62b9-f05b-4211-8c07-ea1b269dc2bf",
             "Value": {
                 "id": "8ee7fa40-2a0a-4ca4-90c5-04f80bbc5ce5",
@@ -5391,6 +5655,14 @@
             }
         },
         {
+            "Key": "eb26b848-5fbe-4f52-a1d1-d63e842d332c",
+            "Value": {
+                "id": "5d1950f5-bbe9-49e4-b1d5-27df116ab8eb",
+                "resourcePath": "sprites\\spr_dragun_knife_out\\spr_dragun_knife_out.yy",
+                "resourceType": "GMSprite"
+            }
+        },
+        {
             "Key": "eb518057-729b-4e86-9bbe-78da38684a64",
             "Value": {
                 "id": "fb7ef744-694f-4726-b435-f164df2512fa",
@@ -5404,6 +5676,14 @@
                 "id": "944eaf77-d35d-417c-b821-cac62fcd0ac2",
                 "resourcePath": "sounds\\snd_dive\\snd_dive.yy",
                 "resourceType": "GMSound"
+            }
+        },
+        {
+            "Key": "ebe0159a-776d-4945-8997-2b04e7dde77b",
+            "Value": {
+                "id": "3e892b92-22b3-4403-89ce-56afcbaa1642",
+                "resourcePath": "sprites\\spr_dragun_knife\\spr_dragun_knife.yy",
+                "resourceType": "GMSprite"
             }
         },
         {
@@ -5460,6 +5740,14 @@
                 "id": "9a80e963-90bf-4c04-b7f8-e4b7496b7742",
                 "resourcePath": "sounds\\snd_dash\\snd_dash.yy",
                 "resourceType": "GMSound"
+            }
+        },
+        {
+            "Key": "eec35d16-2d84-4c50-8b4b-e7ce503b8ee4",
+            "Value": {
+                "id": "f95326f7-eccf-463e-bbd7-dfe255a992f8",
+                "resourcePath": "sprites\\spr_dragun_knife_throw\\spr_dragun_knife_throw.yy",
+                "resourceType": "GMSprite"
             }
         },
         {
@@ -5579,14 +5867,6 @@
             "Value": {
                 "id": "a354c41a-7500-45e3-9099-0fac5d805471",
                 "resourcePath": "sprites\\spr_spike3\\spr_spike3.yy",
-                "resourceType": "GMSprite"
-            }
-        },
-        {
-            "Key": "f34cd05f-fb8f-4629-99be-20f97d39fe58",
-            "Value": {
-                "id": "71d2b943-88c0-4cf5-be34-34b5a28b57a5",
-                "resourcePath": "sprites\\spr_dragun_head_idle\\spr_dragun_head_idle.yy",
                 "resourceType": "GMSprite"
             }
         },
