@@ -20,7 +20,7 @@
 #macro view_w 1088
 #macro view_h 608
 
-#macro DEFAULT_INSTANTPLAY false
+#macro DEFAULT_INSTANTPLAY true
 #macro INSTANTPLAY_SAVESLOT 1
 #macro DEFAULT_COUTSHOW false
 #macro DEFAULT_FPS 50

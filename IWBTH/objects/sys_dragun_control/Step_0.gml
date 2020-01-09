@@ -80,6 +80,8 @@ switch(receiveidx)
 			m[? "img"] = floor(ins.sprite_index);
 			m[? "subimg"] = floor(ins.image_index);
 			m[? "depth"] = floor(ins.depth);
+			m[? "xscale"] = ins.image_xscale;
+			m[? "yscale"] = ins.image_yscale;
 			
 			ds_map_add_map(map, i, m);
 		}
@@ -107,6 +109,8 @@ switch(receiveidx)
 			ins.sety = m[? "y"];
 			ins.sprite_index = m[? "img"];
 			ins.image_index = m[? "subimg"];
+			ins.image_xscale = m[? "xscale"];
+			ins.image_yscale = m[? "yscale"];
 		}
 		mainx = map[? "mainx"];
 		mainy = map[? "mainy"];
@@ -130,6 +134,11 @@ switch(receiveidx)
 	
 	case 5:
 		num = receiveby.num;
+		event_user(0);
+	break;
+	
+	case 6:
+		ins.image_xscale = -ins.image_xscale;
 		event_user(0);
 	break;
 }

@@ -72,15 +72,14 @@ if !frozen && !(0 < dashtime)
 		if attacktype == Attacktype.gun && button(Input.attack)
 		{
 			attackdelay = attackdelay_gun;
-			player_shoot();
+			scr_player_shoot();
 		}
 		else if attacktype == Attacktype.sword && button_press(Input.attack)
 		{
 			attackdelay = attackdelay_sword;
 			hspd = 0;
 			
-			player_slash();
-			
+			scr_player_slash();
 		}
 	}
 	
@@ -88,7 +87,7 @@ if !frozen && !(0 < dashtime)
 	{
 		dashdelay = dashdelay_max;
 		
-		player_dash();
+		scr_player_dash();
 	}
 }
 

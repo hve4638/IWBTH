@@ -24,8 +24,9 @@ if head_follow
 var a, b;
 a = dragun[? DragunParts.head].x;
 b = dragun[? DragunParts.body].x;
-for(var i = DragunParts.neck1; i <= DragunParts.neck5; i++)
-{
-	var ins = dragun[? i];
-	ins.x = value_merge(a, b, (i - DragunParts.neck1 + 1)/7);
-}
+
+dragun[? DragunParts.neck1].x = value_merge(a, b, 1/9);
+dragun[? DragunParts.neck2].x = value_merge(a, b, 3/9);
+dragun[? DragunParts.neck3].x = value_merge(a, b, 5/9);
+dragun[? DragunParts.neck4].x = value_merge(a, b, 7/9);
+dragun[? DragunParts.neck5].x = value_merge(a, b, 8/9);
