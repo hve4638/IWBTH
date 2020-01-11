@@ -5,6 +5,9 @@ num = 0;
 gridint = 1;
 receiveidx = 0;
 receiveby = noone;
+receiveidx_r = 0;
+receiveby_r = noone;
+
 arr[DragunParts.head] = instance_create_layer(x, y, L_BELOW, obj_dragun_head);
 arr[DragunParts.body] = instance_create_layer(x, y, L_BELOW, obj_dragun_body);
 arr[DragunParts.wings] = instance_create_layer(x, y, L_BELOW, obj_dragun_wing);
@@ -98,6 +101,7 @@ for(var i = 0; i < DragunParts.last; i++)
 		
 		lore = other.arr_lore[i];
 		lore2 = lore;
+		on_right = true;
 	}
 }
 

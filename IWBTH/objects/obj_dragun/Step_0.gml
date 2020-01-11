@@ -1,3 +1,20 @@
+if struct_run
+{
+	var size = ds_list_size(struct_list);
+	
+	if struct_idx < size
+	{
+		var list = struct_list[| floor(struct_idx)];
+		dragun_set(dragun, list);
+		struct_idx += struct_speed;
+	}
+	else
+	{
+		struct_idx = 0;
+		struct_run = false;
+	}
+}
+
 if head_follow
 {
 	var ins = dragun[? DragunParts.head];

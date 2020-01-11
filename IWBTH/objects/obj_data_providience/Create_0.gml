@@ -1,3 +1,4 @@
+onlyexist
 ds_init();
 
 nextspr = map_create();

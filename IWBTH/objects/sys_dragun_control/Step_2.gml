@@ -1,10 +1,30 @@
 for(var i = 0; i < DragunParts.last; i++)
+{
+	var a = arr[i];
 	with(arr_ins[i])
-		enable = false;
+	{
+		if a.lock
+			enable = -1;
+		else
+			enable = 0;
+	}
+	
+	with(arr[i])
+	{
+		image_alpha = lock ? 0.1 : 1;
+	}
+}
 
 if num >= 0
 	with(arr_ins[num])
-		enable = true;
+	{
+		
+		if (other.arr[num]).lock
+			enable = -2;
+		else
+			enable = true;
+	}
+
 
 for(var i = 0; i < DragunParts.last; i++)
 {
@@ -23,6 +43,7 @@ for(var i = 0; i < s; i++)
 			cout_show("something wrong! ", object_get_name(object_index), i);
 			break;	
 		}
+		
 		enable = other.current_num == sendidx;
 	}
 }

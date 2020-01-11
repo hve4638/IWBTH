@@ -4,6 +4,9 @@ var map = map_arr[n];
 
 for(var i = 0; i < DragunParts.last; i++)
 {
+	if !ds_map_exists(map, string(i))
+		continue;
+
 	var ins = arr[i];
 	var m = map[? string(i)];
 	ins.setx = m[? "x"];

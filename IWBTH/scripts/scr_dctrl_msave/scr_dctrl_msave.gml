@@ -6,6 +6,8 @@ ds_map_clear(map);
 for(var i = 0; i < DragunParts.last; i++)
 {
 	var ins = arr[i];
+	if ins.lock
+		continue;
 	var m = ds_map_create();
 	m[? "x"] = ins.setx;
 	m[? "y"] = ins.sety;

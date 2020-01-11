@@ -1,1 +1,1 @@
-image_alpha = 0.15;
+image_alpha = 0;

@@ -29,3 +29,9 @@
 #macro RMDATA_SOUND 1
 #macro RMDATA_SOUNDLOOP 2
 #macro RMDATA_WIDTH 3
+
+#macro onlyexist if 1 < instance_number(object_index)\
+{\
+	instance_destroy();\
+	exit;\
+}\

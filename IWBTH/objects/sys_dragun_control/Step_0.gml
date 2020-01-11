@@ -74,6 +74,8 @@ switch(receiveidx)
 		for(var i = 0; i < DragunParts.last; i++)
 		{
 			var ins = arr[i];
+			if ins.lock
+				continue;
 			var m = ds_map_create();
 			m[? "x"] = ins.setx;
 			m[? "y"] = ins.sety;
@@ -102,6 +104,9 @@ switch(receiveidx)
 
 		for(var i = 0; i < DragunParts.last; i++)
 		{
+			if !ds_map_exists(map, string(i))
+				continue;
+
 			//cout_show(get_map_keylist(map[? string(i)]));
 			var ins = arr[i];
 			var m = map[? string(i)];
@@ -142,6 +147,11 @@ switch(receiveidx)
 		event_user(0);
 	break;
 	
+	case 7:
+		ins.lock = !ins.lock;
+		event_user(0);
+	break;
+	
 	case 11:
 		scr_dctrl_madd();
 		event_user(0);
@@ -166,14 +176,15 @@ switch(receiveidx)
 		{
 			ds_list_add(list, map_arr[i]);
 			ds_list_mark_as_map(list, i);
-			cout(map_show(map_arr[i]));
-			cout("maparr",i, ": ", map_arr[i]);
+			//cout_show(map_show(map_arr[i]));
+			cout_show("maparr",i, ": ", map_arr[i]);
+			cout_show("maparr",i, ": ", list[| i]);
 		}
 		var map = ds_map_create();
-		ds_map_add_map(map, "default", list);
+		ds_map_add_list(map, "default", list);
 		clipboard_set_text(json_encode(map));
 		
-		ds_list_clear(list);
+		ds_list_demark(list);
 		ds_map_destroy(map);
 		cout_show("copy clipboard");
 		event_user(0);
@@ -194,37 +205,29 @@ switch(receiveidx)
 			map_arr[i] = list[| i];
 		}
 		
+		//map_show
 		
-		ds_list_clear(list);
+		ds_list_demark(list);
 		ds_map_destroy(map);
 		cout("load complete");
 		
 		current_num = 0;
 		scr_dctrl_mload(0);
+		scr_dctrl_mupdate();
 		event_user(0);
 	break;
 }
 
-if keyboard_check_pressed(ord("B"))
+switch(receiveidx_r)
 {
-		var str = clipboard_get_text();
-		var map = json_decode(str);
-		//var map = map1[? "default"];
-
-		for(var i = 0; i < DragunParts.last; i++)
-		{
-			//cout_show(get_map_keylist(map[? string(i)]));
-			var ins = arr[i];
-			var m = map[? string(i)];
-			ins.x = m[? "x"];
-			ins.y = m[? "y"];
-			ins.setx = ins.x - mainx;
-			ins.sety = ins.y - mainy;
-			ins.sprite_index = m[? "img"];
-			ins.image_index = m[? "subimg"];
-		}
-		ds_map_destroy(map);
+	case 5:
+		var n = receiveby_r.num;
+		arr[n].setx = -arr[num].setx;
+		arr[n].sety = arr[num].sety;
+	break;
 }
+
+receiveidx_r = -1;
 
 if mouse_check_button(mb_right)
 {

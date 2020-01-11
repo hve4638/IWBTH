@@ -1,5 +1,8 @@
 var s = lorescale;
-image_index = enable ? 1 : 0;
+if enable < 0
+	image_index = enable == -1 ? 2 : 3;
+else
+image_index = enable;
 var str = enable ? lore2 : lore;
 draw_self();
 
