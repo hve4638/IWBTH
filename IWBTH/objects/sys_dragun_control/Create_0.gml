@@ -100,3 +100,9 @@ for(var i = 0; i < DragunParts.last; i++)
 		lore2 = lore;
 	}
 }
+
+receivemap = 0;
+map_cnt = 0;
+map_arr = 0;
+current_num = 0;
+scr_dctrl_madd();

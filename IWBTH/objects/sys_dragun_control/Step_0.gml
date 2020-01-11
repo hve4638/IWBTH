@@ -141,6 +141,68 @@ switch(receiveidx)
 		ins.image_xscale = -ins.image_xscale;
 		event_user(0);
 	break;
+	
+	case 11:
+		scr_dctrl_madd();
+		event_user(0);
+	break;
+
+	case 12:
+		scr_dctrl_msave(current_num);
+		event_user(0);
+	break;
+	
+	case 10:
+		var n = receivemap;
+		current_num = n;
+		scr_dctrl_mload(n);
+		event_user(0);
+	break;
+	
+	case 20:
+		var list = ds_list_create();
+		var cnt = arr_size(map_arr);
+		for(var i = 0; i < cnt; i++)
+		{
+			ds_list_add(list, map_arr[i]);
+			ds_list_mark_as_map(list, i);
+			cout(map_show(map_arr[i]));
+			cout("maparr",i, ": ", map_arr[i]);
+		}
+		var map = ds_map_create();
+		ds_map_add_map(map, "default", list);
+		clipboard_set_text(json_encode(map));
+		
+		ds_list_clear(list);
+		ds_map_destroy(map);
+		cout_show("copy clipboard");
+		event_user(0);
+	break;
+	
+	case 21:
+		var map = json_decode(clipboard_get_text());
+		if map == -1
+			break;
+		
+		var list = map[? "default"];
+		var s = arr_size(map_arr);
+		for(var i = 0; i < s; i++)
+			ds_map_destroy(map_arr[i]);
+
+		for(var i = 0; i < ds_list_size(list); i++)
+		{
+			map_arr[i] = list[| i];
+		}
+		
+		
+		ds_list_clear(list);
+		ds_map_destroy(map);
+		cout("load complete");
+		
+		current_num = 0;
+		scr_dctrl_mload(0);
+		event_user(0);
+	break;
 }
 
 if keyboard_check_pressed(ord("B"))

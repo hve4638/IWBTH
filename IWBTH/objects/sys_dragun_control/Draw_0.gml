@@ -1,5 +1,6 @@
 var str = strmerge("gridint: ", gridint);
 str += strmerge("main: ",mainx,",",mainy);
+str += strmerge("current: ", current_num);
 
 if 0 <= num
 {
