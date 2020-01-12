@@ -5,6 +5,7 @@
 #macro RECORD_DIRECTORY "record"
 #macro SOUND_DIRECTORY "sounddata"
 #macro ROOMDATA_DIRECTORY "roomdata"
+#macro DRAGUNCSV_DIRECTORY "dragundata"
 
 #macro L_SYS "InsSystem"
 #macro L_BLOCK "TileBlock"

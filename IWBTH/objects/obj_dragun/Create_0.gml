@@ -20,6 +20,7 @@ head_follow = true;
 head_follow_range = 180;
 head_hspd = 0;
 
+dragun[? DragunParts.body].image_speed = 1;
 dragun[? DragunParts.head].image_speed = 1;
 dragun[? DragunParts.wings].image_speed = 1;
 dragun[? DragunParts.wings].dealto = noone;

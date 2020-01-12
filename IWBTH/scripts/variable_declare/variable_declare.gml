@@ -2,6 +2,7 @@ global.roomsound = load_csv(SOUND_DIRECTORY);
 global.csv_room = load_csv(ROOMDATA_DIRECTORY);
 global.textscript = load_csv(SCRIPT_DIRECTORY);
 global.record = load_json(RECORD_DIRECTORY);
+global.csv_dragun = load_csv(DRAGUNCSV_DIRECTORY);
 
 globalvar roomdata;
 roomdata = ds_grid_create(RMDATA_WIDTH, room_count);
@@ -30,6 +31,8 @@ for(var i = 0; i < h; i++)
 	roomdata[# RMDATA_SOUNDLOOP, idx] = global.csv_room[# sndloop, i];
 	roomdata[# RMDATA_STAGE, idx] = global.csv_room[# stage, i];
 }
+
+
 
 global.savemeta[0] = "x";
 global.savemeta[1] = "y";

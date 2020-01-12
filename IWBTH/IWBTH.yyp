@@ -159,6 +159,14 @@
             }
         },
         {
+            "Key": "047603ab-d3a1-4da1-8be1-5c0ce17185fd",
+            "Value": {
+                "id": "c08142a6-8c2e-4704-b5d4-4a59889cb6cb",
+                "resourcePath": "scripts\\struct_play\\struct_play.yy",
+                "resourceType": "GMScript"
+            }
+        },
+        {
             "Key": "04c58a2f-f616-432b-ba0f-0d69a6e8019f",
             "Value": {
                 "id": "36fb983f-3428-40f2-95f2-b202b961c983",
@@ -306,7 +314,7 @@
             "Key": "0c528471-a47d-4518-9b58-e8135163e8ee",
             "Value": {
                 "id": "6d77195d-2e3c-4278-b04d-b504924a2b7f",
-                "resourcePath": "sprites\\dragun_knife_impact_001\\dragun_knife_impact_001.yy",
+                "resourcePath": "sprites\\spr_dragun_knife_impact\\spr_dragun_knife_impact.yy",
                 "resourceType": "GMSprite"
             }
         },
@@ -1612,6 +1620,14 @@
                 "id": "ae68894a-4f50-4415-b3bd-511800a8cb76",
                 "resourcePath": "views\\43fc365c-833c-4faa-abfe-905ceada3caf.yy",
                 "resourceType": "GMFolder"
+            }
+        },
+        {
+            "Key": "44440190-9b33-4769-8109-6c687b54b0a6",
+            "Value": {
+                "id": "e489f11d-b847-43d0-a908-ced7a4d64f7f",
+                "resourcePath": "objects\\obj_tmp\\obj_tmp.yy",
+                "resourceType": "GMObject"
             }
         },
         {
@@ -3547,6 +3563,14 @@
             "Value": {
                 "id": "55eb493a-f3d1-4a95-83d0-3cc3f41ad9c1",
                 "resourcePath": "scripts\\kill_force\\kill_force.yy",
+                "resourceType": "GMScript"
+            }
+        },
+        {
+            "Key": "91a9785f-c84d-4bb8-8467-caf93ae2b116",
+            "Value": {
+                "id": "6b98698b-c9e1-4a64-ada2-841a8bfff1dc",
+                "resourcePath": "scripts\\csv_get\\csv_get.yy",
                 "resourceType": "GMScript"
             }
         },
@@ -5703,6 +5727,14 @@
             }
         },
         {
+            "Key": "e9a80557-86c5-422f-9bc7-72a8c090c98a",
+            "Value": {
+                "id": "1fbffb2e-7f6e-4db4-91cb-f9ace02e2dbb",
+                "resourcePath": "datafiles_yy\\dragundata.yy",
+                "resourceType": "GMIncludedFile"
+            }
+        },
+        {
             "Key": "e9ae62b9-f05b-4211-8c07-ea1b269dc2bf",
             "Value": {
                 "id": "8ee7fa40-2a0a-4ca4-90c5-04f80bbc5ce5",
@@ -6210,7 +6242,7 @@
             "Key": "ff33ba03-c99b-474e-8e2c-49aed5e68c56",
             "Value": {
                 "id": "2cef7171-749c-4e54-94b8-5c54f3962405",
-                "resourcePath": "scripts\\json_list_decode\\json_list_decode.yy",
+                "resourcePath": "scripts\\json_decode_list\\json_decode_list.yy",
                 "resourceType": "GMScript"
             }
         },
@@ -6428,7 +6460,11 @@
         "6006d941-aa34-4acb-aebd-8e32be12b095",
         "559d0475-b84c-4a32-8130-205c0b60ed1d",
         "a5af473b-f919-47ce-bf1a-eaaa76d11e72",
-        "0ab667ef-8c9f-4c85-8f10-5b3de80f86c8"
+        "0ab667ef-8c9f-4c85-8f10-5b3de80f86c8",
+        "a2f0e21d-ffba-44c2-a38b-e22438910de7",
+        "c4d78284-67e5-408c-82ef-58c4e05a9d6c",
+        "ff33ba03-c99b-474e-8e2c-49aed5e68c56",
+        "902b608a-d7df-4c73-a80b-829606a45974"
     ],
     "tutorial": ""
 }

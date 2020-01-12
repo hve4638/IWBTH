@@ -4,6 +4,20 @@ if num < 0
 num = clamp(num, 0, array_length_1d(arr) - 1);
 var ins = arr[num];
 
+if keyboard_check_pressed(ord("X"))
+{
+	ins.lock = !ins.lock;	
+}
+
+
+var k = -keyboard_check_pressed(ord("O")) + keyboard_check_pressed(ord("P"));
+if k != 0
+{
+	current_num += k;
+	current_num = clamp(current_num, 0, arr_size(map_arr) - 1);
+	scr_dctrl_mload(current_num);
+}
+
 
 switch(receiveidx)
 {
@@ -112,7 +126,7 @@ switch(receiveidx)
 			var m = map[? string(i)];
 			ins.setx = m[? "x"];
 			ins.sety = m[? "y"];
-			//ins.sprite_index = m[? "img"];
+			ins.sprite_index = m[? "img"];
 			ins.image_index = m[? "subimg"];
 			ins.image_xscale = m[? "xscale"];
 			ins.image_yscale = m[? "yscale"];
@@ -162,6 +176,24 @@ switch(receiveidx)
 		event_user(0);
 	break;
 	
+	case 13:
+		arr[DragunParts.hand_l].setx = -arr[DragunParts.hand_r].setx;
+		arr[DragunParts.hand_l].sety = arr[DragunParts.hand_r].sety;
+		arr[DragunParts.hand_l].sprite_index = arr[DragunParts.hand_r].sprite_index;
+		arr[DragunParts.hand_l].image_index = arr[DragunParts.hand_r].image_index;
+		arr[DragunParts.arm_l1].setx = -arr[DragunParts.arm_r1].setx;
+		arr[DragunParts.arm_l2].setx = -arr[DragunParts.arm_r2].setx;
+		arr[DragunParts.arm_l3].setx = -arr[DragunParts.arm_r3].setx;
+		arr[DragunParts.arm_l4].setx = -arr[DragunParts.arm_r4].setx;
+		arr[DragunParts.arm_l5].setx = -arr[DragunParts.arm_r5].setx;
+		arr[DragunParts.arm_l1].sety = arr[DragunParts.arm_r1].sety;
+		arr[DragunParts.arm_l2].sety = arr[DragunParts.arm_r2].sety;
+		arr[DragunParts.arm_l3].sety = arr[DragunParts.arm_r3].sety;
+		arr[DragunParts.arm_l4].sety = arr[DragunParts.arm_r4].sety;
+		arr[DragunParts.arm_l5].sety = arr[DragunParts.arm_r5].sety;
+		event_user(0);
+	break;
+
 	case 10:
 		var n = receivemap;
 		current_num = n;

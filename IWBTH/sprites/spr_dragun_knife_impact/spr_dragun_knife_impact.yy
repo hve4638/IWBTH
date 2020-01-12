@@ -2,7 +2,7 @@
     "id": "0c528471-a47d-4518-9b58-e8135163e8ee",
     "modelName": "GMSprite",
     "mvc": "1.12",
-    "name": "dragun_knife_impact_001",
+    "name": "spr_dragun_knife_impact",
     "For3D": false,
     "HTile": false,
     "VTile": false,
@@ -120,7 +120,7 @@
             "visible": true
         }
     ],
-    "origin": 0,
+    "origin": 7,
     "originLocked": false,
     "playbackSpeed": 10,
     "playbackSpeedType": 0,
@@ -131,6 +131,6 @@
     "textureGroupId": "1225f6b0-ac20-43bd-a82e-be73fa0b6f4f",
     "type": 0,
     "width": 113,
-    "xorig": 0,
-    "yorig": 0
+    "xorig": 56,
+    "yorig": 51
 }
