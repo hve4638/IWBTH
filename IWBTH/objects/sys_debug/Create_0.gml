@@ -1,4 +1,4 @@
-cout("\n\n####DEBUG MODE#####\n");
+cout("####DEBUG MODE#####");
 
 
 show_info = false;
@@ -18,5 +18,5 @@ cv_y2 = mouse_y;
 
 cv_px = 0;
 cv_py = 0;
-cv_pw = 0
-cv_ph = 0
+cv_pw = 0;
+cv_ph = 0;

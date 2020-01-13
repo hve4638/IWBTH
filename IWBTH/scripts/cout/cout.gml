@@ -1,5 +1,5 @@
 ///@param string*
-var str = argument[0], ptype = typeof(argument[0]);
+var str = string(argument[0]), ptype = typeof(argument[0]);
 
 for(var i = 1; i < argument_count; i++)
 {

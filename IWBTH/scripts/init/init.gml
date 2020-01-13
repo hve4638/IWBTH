@@ -1,4 +1,3 @@
-//gml_pragma( "global", "init();");
 //gpu_set_tex_filter(false);
 randomize();
 

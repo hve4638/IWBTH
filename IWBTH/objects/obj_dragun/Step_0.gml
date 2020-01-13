@@ -5,7 +5,7 @@ if struct_run
 	if struct_idx < size
 	{
 		var list = struct_list[| floor(struct_idx)];
-		dragun_set(dragun, list);
+		dragun_set(dragun, list, struct_lock);
 		struct_idx += struct_speed;
 	}
 	else

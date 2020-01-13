@@ -10,7 +10,7 @@ if keyboard_check_pressed(ord("X"))
 }
 
 
-var k = -keyboard_check_pressed(ord("O")) + keyboard_check_pressed(ord("P"));
+var k = - keyboard_check_pressed(ord("O")) + keyboard_check_pressed(ord("P"));
 if k != 0
 {
 	current_num += k;
@@ -193,6 +193,29 @@ switch(receiveidx)
 		arr[DragunParts.arm_l5].sety = arr[DragunParts.arm_r5].sety;
 		event_user(0);
 	break;
+	
+	case 14:
+		if show_question("Are you sure?")
+		{
+			var tmp = map_arr;
+			var ind = 0;
+			tmp[0] = tmp[0];
+			ds_map_destroy(map_arr[current_num]);
+			map_arr = 0;
+	
+			for(var i = 0; i < arr_size(tmp); i++)
+			{
+				if i == current_num
+					continue;
+					
+				map_arr[ind++] = tmp[i];
+			}
+			current_num = max(0, current_num - 1);
+			scr_dctrl_mload(current_num);
+			scr_dctrl_mupdate();
+		}
+		event_user(0);
+	break;
 
 	case 10:
 		var n = receivemap;
@@ -248,6 +271,31 @@ switch(receiveidx)
 		scr_dctrl_mupdate();
 		event_user(0);
 	break;
+	
+	case 30:
+		var map = ds_map_create();
+		for(var i = 0; i < DragunParts.last; i++)
+		{
+			var ins = arr[i];
+
+			map[? string(i)] = bool(ins.lock);
+		}
+		clipboard_set_text(json_encode(map));
+		ds_map_destroy(map);
+		cout_show("lockdata copy!");
+		event_user(0);
+	break;
+	
+	case 31:
+		var map = json_decode(clipboard_get_text());
+		for(var i = 0; i < DragunParts.last; i++)
+		{
+			var ins = arr[i];
+
+			ins.lock = map[? string(i)];
+		}
+		ds_map_destroy(map);
+		event_user(0);
 }
 
 switch(receiveidx_r)

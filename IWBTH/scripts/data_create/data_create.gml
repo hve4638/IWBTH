@@ -6,6 +6,7 @@ if instance_exists(data)
 	ins = data.id;
 else
 	ins = instance_create(0, 0, data);
+	
 
 with(ins)
 {

@@ -26,13 +26,15 @@ stage = ds_grid_value_x(global.csv_room, 0, 0, w - 1, 0, "#STAGE");
 for(var i = 0; i < h; i++)
 {
 	var idx = asset_get_index(global.csv_room[# rm, i]);
+	if idx == -1
+		continue;
 
 	roomdata[# RMDATA_SOUND, idx] = asset_get_index(global.csv_room[# snd, i]);
 	roomdata[# RMDATA_SOUNDLOOP, idx] = global.csv_room[# sndloop, i];
 	roomdata[# RMDATA_STAGE, idx] = global.csv_room[# stage, i];
 }
 
-
+global.strpreview_cnt = 15;
 
 global.savemeta[0] = "x";
 global.savemeta[1] = "y";

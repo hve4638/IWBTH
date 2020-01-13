@@ -10,6 +10,7 @@ struct_list = -1;
 struct_idx = 0;
 struct_speed = 1;
 struct_run = false;
+struct_lock = no;
 
 dragun_set(dragun, st_default);
 

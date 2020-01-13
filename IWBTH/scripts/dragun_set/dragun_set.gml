@@ -1,14 +1,21 @@
 ///@argu dragun_map
 ///@argu struct_map
+///@argu lock*
 var dmap = argument[0];
 var smap = argument[1];
+var lmap = argument_count > 2 ? argument[2] : no;
 
 for(var i = 0; i < DragunParts.last; i++)
 {
 	if !ds_map_exists(smap, string(i))
 		continue;
+	if !isno(lmap) && lmap[? string(i)]
+		continue;
+
 	var ins = dmap[? i];
 	var m = smap[? string(i)];
+	ins.setx = x + m[? "x"] * image_xscale;
+	ins.sety = y + m[? "y"] * image_yscale;
 	ins.x = x + m[? "x"] * image_xscale;
 	ins.y = y + m[? "y"] * image_yscale;
 	ins.sprite_index = m[? "img"];
