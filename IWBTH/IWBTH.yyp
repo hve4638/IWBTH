@@ -239,6 +239,14 @@
             }
         },
         {
+            "Key": "08b5e352-0251-4b32-912a-4b721d415b4e",
+            "Value": {
+                "id": "66bab3ec-fe16-4e73-bb96-0f4e4a06e2d8",
+                "resourcePath": "sprites\\spr_empty\\spr_empty.yy",
+                "resourceType": "GMSprite"
+            }
+        },
+        {
             "Key": "08fa42fe-d28d-4dc5-b14a-43950b40e429",
             "Value": {
                 "id": "1545ca55-a364-42e1-bc01-5bc37a2bd187",
@@ -2563,6 +2571,14 @@
             "Value": {
                 "id": "21f18e4f-04ab-49bc-be62-62cc98fef520",
                 "resourcePath": "scripts\\echo_self\\echo_self.yy",
+                "resourceType": "GMScript"
+            }
+        },
+        {
+            "Key": "6a1a754e-b544-439e-9ed3-f601601f44f3",
+            "Value": {
+                "id": "94803577-be48-4e81-802d-41c99582b1e7",
+                "resourcePath": "scripts\\scr_dragun_todo\\scr_dragun_todo.yy",
                 "resourceType": "GMScript"
             }
         },
@@ -5135,6 +5151,14 @@
             }
         },
         {
+            "Key": "cd0994fd-b4bb-4500-b310-2ddf4dce7229",
+            "Value": {
+                "id": "0ab7ae57-66c8-4c16-8604-4cdf03263128",
+                "resourcePath": "scripts\\scr_dragun_motion\\scr_dragun_motion.yy",
+                "resourceType": "GMScript"
+            }
+        },
+        {
             "Key": "ced94cbd-45bc-4bb6-9885-3219bc938276",
             "Value": {
                 "id": "007d3812-baad-4872-9423-db27e360d3e0",
@@ -6492,7 +6516,8 @@
         "91a9785f-c84d-4bb8-8467-caf93ae2b116",
         "047603ab-d3a1-4da1-8be1-5c0ce17185fd",
         "f11ca926-39ed-475a-9209-59f3dc3e419d",
-        "49b94ed5-c88f-40ee-af91-d847bcf05d80"
+        "49b94ed5-c88f-40ee-af91-d847bcf05d80",
+        "387a9610-0280-4866-9206-4e1a51ae578a"
     ],
     "tutorial": ""
 }

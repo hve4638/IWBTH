@@ -8,8 +8,21 @@ with(toid)
 	st_gunshoot_side = other.st_gunshoot_side;
 	st_guntwirl_stof = other.st_guntwirl_stof;
 	st_guntwirl_ftos = other.st_guntwirl_ftos;
+	st_gunoutro = other.st_gunoutro;
+	st_handout = other.st_handout;
+	
+	
+	st_macget = other.st_macget;
+	st_macshoot = other.st_macshoot;
+	st_rpgget = other.st_rpgget;
+	st_rpgout = other.st_rpgout;
+	st_rpgshoot = other.st_rpgshoot;
+	st_rpgoutro = other.st_rpgoutro;
+	
 	lock_arms = other.lock_arms;
 	lock_leftarm = other.lock_leftarm;
 	lock_rightarm = other.lock_rightarm;
+	
+	motion = other.motion;
 }
 //obj_dragun

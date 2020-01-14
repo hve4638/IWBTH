@@ -1,5 +1,6 @@
 ///@argu ind
 ///@argu speed
+///@argu lock*
 var ind = argument[0];
 
 struct_list = ind;

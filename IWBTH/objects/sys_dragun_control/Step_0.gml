@@ -232,8 +232,6 @@ switch(receiveidx)
 			ds_list_add(list, map_arr[i]);
 			ds_list_mark_as_map(list, i);
 			//cout_show(map_show(map_arr[i]));
-			cout_show("maparr",i, ": ", map_arr[i]);
-			cout_show("maparr",i, ": ", list[| i]);
 		}
 		var map = ds_map_create();
 		ds_map_add_list(map, "default", list);
@@ -269,6 +267,32 @@ switch(receiveidx)
 		current_num = 0;
 		scr_dctrl_mload(0);
 		scr_dctrl_mupdate();
+		event_user(0);
+	break;
+	
+	case 22:
+		var map = json_decode(clipboard_get_text());
+		if map == -1
+			break;
+		
+		var list = map[? "default"];
+			cout_show("list:", list_show(list));
+
+		for(var i = 0; i < ds_list_size(list); i++)
+		{
+			var m = list[| string(i)];
+			var ar = map_show(m);
+			for(var j = 0; j < arr_size(ar); j++)
+			{
+				var k = m[? ar[j]];
+				cout_show(j, k[? "img"]);
+				k[? "img"] = sprite_get_name(k[? "img"]);
+			}
+		}
+		
+		ds_map_destroy(map);
+			
+		cout_show("convert!");
 		event_user(0);
 	break;
 	

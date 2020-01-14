@@ -1,3 +1,8 @@
+if todo_is_playing()
+{	
+	scr_dragun_todo();
+}
+
 if struct_run
 {
 	var size = ds_list_size(struct_list);

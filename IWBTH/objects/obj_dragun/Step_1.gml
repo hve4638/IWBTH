@@ -15,10 +15,7 @@ if keyboard_check_pressed(vk_anykey)
 switch(keyboard_lastkey)
 {
 	case ord("1"):
-		struct_play(st_gunget);
-	break;
-	case ord("7"):
-		struct_play(st_gunout_front);
+		todo_play(motion[0]);
 	break;
 	case ord("2"):
 		struct_play(st_gunout_side);
@@ -34,5 +31,14 @@ switch(keyboard_lastkey)
 	break;
 	case ord("6"):
 		struct_play(st_guntwirl_ftos, 1/4, lock_rightarm);
+	break;
+	case ord("7"):
+		struct_play(st_gunout_front);
+	break;
+	case ord("8"):
+		struct_play(st_gunoutro);
+	break;
+	case ord("9"):
+		struct_play(st_handout);
 	break;
 }
