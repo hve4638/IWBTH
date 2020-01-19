@@ -1,3 +1,4 @@
+///@desc clear map but not child ds
 ///@argu ds_map
 var map = argument[0];
 var arr = map_show(map);

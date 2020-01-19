@@ -3,24 +3,7 @@ if todo_is_playing()
 	scr_dragun_todo();
 }
 
-if struct_run
-{
-	var size = ds_list_size(struct_list);
-	
-	if struct_idx < size
-	{
-		var list = struct_list[| floor(struct_idx)];
-		dragun_set(dragun, list, struct_lock);
-		struct_idx += struct_speed;
-	}
-	else
-	{
-		struct_idx = 0;
-		struct_run = false;
-	}
-}
-
-if head_follow
+if head_follow 
 {
 	var ins = dragun[? DragunParts.head];
 	var dis = abs(Player.x - ins.x);
@@ -28,7 +11,7 @@ if head_follow
 	var i = false;
 
 	if ((0 < s && ins.x + head_hspd < x + head_follow_range) || (0 > s && ins.x + head_hspd > x - head_follow_range)) && dis > 16
-		head_hspd += s * 0.2;
+		head_hspd += s * 0.1;
 	else
 		i = true;
 		
@@ -36,8 +19,8 @@ if head_follow
 	var s = sign(head_hspd);
 	var a = abs(head_hspd);
 	if i
-		a = a < 0.2 ? 0 : a - 0.2;
-	a = a > 2 ? 2 : a;
+		a = a < 0.1 ? 0 : a - 0.1;
+	a = a > 1 ? 1 : a;
 	head_hspd = a * s;
 
 	ins.x += head_hspd;

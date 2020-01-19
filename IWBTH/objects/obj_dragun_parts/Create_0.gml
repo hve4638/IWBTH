@@ -5,3 +5,5 @@ sety = 0;
 lock = false;
 
 dealto = noone;
+
+showalpha = 1.0;

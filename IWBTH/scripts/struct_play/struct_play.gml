@@ -1,15 +1,22 @@
 ///@argu ind
-///@argu speed
+///@argu speed*
 ///@argu lock*
 var ind = argument[0];
 
-struct_list = ind;
-struct_idx = 0;
-struct_run = true;
-struct_lock = no;
+var idx = 0;
+var size = arr_size(struct_run)
+for(; idx < size; idx++)
+	if !struct_run[idx]
+		break;
 
-if argument_count > 1
-	struct_speed = argument[1];
+if idx == size
+	return -1;
 
-if argument_count > 2
-	struct_lock = argument[2];
+
+var lk = argument_count > 2 ? argument[2] : no;
+
+struct_list[idx] = ind;
+struct_idx[idx] = 0;
+struct_run[idx] = true;
+struct_lock[idx] = lk;
+struct_speed[idx] = argument_count > 1 ? argument[1] : 1;

@@ -11,6 +11,7 @@ with(toid)
 	st_gunoutro = other.st_gunoutro;
 	st_handout = other.st_handout;
 	
+	st_headshoot = other.st_headshoot;
 	
 	st_macget = other.st_macget;
 	st_macshoot = other.st_macshoot;
@@ -22,7 +23,8 @@ with(toid)
 	lock_arms = other.lock_arms;
 	lock_leftarm = other.lock_leftarm;
 	lock_rightarm = other.lock_rightarm;
-	
+	lock_neck = other.lock_neck;
+
 	motion = other.motion;
 }
 //obj_dragun

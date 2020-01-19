@@ -3,8 +3,8 @@
 ///@argu amount
 var a, b, p;
 var t;
-a = argument[0];
-b = argument[1];
+a = real(argument[0]);
+b = real(argument[1]);
 p = clamp(argument[2],0,1);
 
 if a == b

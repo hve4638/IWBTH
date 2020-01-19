@@ -49,23 +49,29 @@ map[? DragunParts.arm_r4] = instance_create_layer(x, y, L_BELOW, obj_dragun_arm)
 map[? DragunParts.arm_r5] = instance_create_layer(x, y, L_BELOW, obj_dragun_arm);
 
 var d = layer_get_depth(L_PLAYER) + 10;
-_setdepth(map[? DragunParts.head], d++);
-_setdepth(map[? DragunParts.hand_l], d++);
-_setdepth(map[? DragunParts.hand_r], d++);
+_setdepth(map[? DragunParts.head], d);
+_setdepth(map[? DragunParts.hand_l], d + 1);
+_setdepth(map[? DragunParts.hand_r], d + 1);
 
 var d = layer_get_depth(L_BELOW);
-_setdepth(map[? DragunParts.arm_l1], d++);
-_setdepth(map[? DragunParts.arm_l2], d++);
-_setdepth(map[? DragunParts.arm_l3], d++);
-_setdepth(map[? DragunParts.arm_l4], d++);
-_setdepth(map[? DragunParts.arm_l5], d++);
+_setdepth(map[? DragunParts.arm_l1], d);
 _setdepth(map[? DragunParts.arm_r1], d++);
+
+_setdepth(map[? DragunParts.arm_l2], d);
 _setdepth(map[? DragunParts.arm_r2], d++);
+
+_setdepth(map[? DragunParts.arm_l3], d);
 _setdepth(map[? DragunParts.arm_r3], d++);
+
+_setdepth(map[? DragunParts.arm_l4], d);
 _setdepth(map[? DragunParts.arm_r4], d++);
+
+_setdepth(map[? DragunParts.arm_l5], d);
 _setdepth(map[? DragunParts.arm_r5], d++);
-_setdepth(map[? DragunParts.shoulder_r], d++);
-_setdepth(map[? DragunParts.shoulder_l], d++); 
+
+_setdepth(map[? DragunParts.shoulder_r], d);
+_setdepth(map[? DragunParts.shoulder_l], d++);
+
 _setdepth(map[? DragunParts.neck1], d++);
 _setdepth(map[? DragunParts.neck2], d++);
 _setdepth(map[? DragunParts.neck3], d++);
@@ -73,6 +79,36 @@ _setdepth(map[? DragunParts.neck4], d++);
 _setdepth(map[? DragunParts.neck5], d++);
 _setdepth(map[? DragunParts.body], d++);
 _setdepth(map[? DragunParts.wings], d++);
+
+map[? DragunParts.head].showalpha = 1.0;
+map[? DragunParts.hand_l].showalpha = 1.0;
+map[? DragunParts.hand_r].showalpha = 1.0;
+
+map[? DragunParts.arm_l1].showalpha = 0.9;
+map[? DragunParts.arm_r1].showalpha = 0.9;
+
+map[? DragunParts.arm_l2].showalpha = 0.8;
+map[? DragunParts.arm_r2].showalpha = 0.8;
+
+map[? DragunParts.arm_l3].showalpha = 0.7;
+map[? DragunParts.arm_r3].showalpha = 0.7;
+
+map[? DragunParts.arm_l4].showalpha = 0.6;
+map[? DragunParts.arm_r4].showalpha = 0.6;
+
+map[? DragunParts.arm_l5].showalpha = 0.5;
+map[? DragunParts.arm_r5].showalpha = 0.5;
+
+map[? DragunParts.shoulder_r].showalpha = 0.5;
+map[? DragunParts.shoulder_l].showalpha = 0.5;
+
+map[? DragunParts.neck1].showalpha = 0.9;
+map[? DragunParts.neck2].showalpha = 0.8;
+map[? DragunParts.neck3].showalpha = 0.7;
+map[? DragunParts.neck4].showalpha = 0.6;
+map[? DragunParts.neck5].showalpha = 0.5;
+map[? DragunParts.body].showalpha = 0.4;
+map[? DragunParts.wings].showalpha = 0.3;
 
 for(var i = 0; i < DragunParts.last; i++)
 {
