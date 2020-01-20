@@ -1,2 +1,2 @@
-if todo_is_playing()
-	todo_stop();
+rand_free();
+todo_stop();

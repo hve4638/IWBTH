@@ -1,10 +1,16 @@
 if keyboard_check_pressed(vk_space)
 {
-	onhealth = true;
-	hp = maxhp;
-	show_intro(64, view_h - 64, spr_intro_dragun);
-	bgm(snd_dragun, true);
+	if !onhealth
+	{
+		onhealth = true;
+		hp = maxhp;
+		show_intro(64, view_h - 64, spr_intro_dragun);
+		bgm(snd_dragun, true);
+		
+		scr_dragun_next();
+	}
 }
+
 
 if keyboard_check_pressed(vk_anykey)
 switch(keyboard_lastkey)
@@ -23,6 +29,9 @@ switch(keyboard_lastkey)
 	break;
 	case ord("5"):
 		todo_play(motion[4]);
+	break;
+	case ord("6"):
+		todo_play(motion[5]);
 	break;
 	
 	case ord("9"):

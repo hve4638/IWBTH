@@ -29,22 +29,37 @@ if state == stateD.attack
 			switch(n[2])
 			{
 				case 0:
-					var bs = 5.5, bd = 15, ba = 20;
-					with(instance_create_layer(xx, yy, L_ABOVE, obj_bulletspread))
+					if shoottype == 0
 					{
-						idx_start = point_direction(x, y, Player.x, Player.y);
-						idx_add = ba;
-						bullet_spd = bs;
-						bullet_spread = 1;
+						var bs = 5.5, bd = 15, ba = 20;
+						with(instance_create_layer(xx, yy, L_ABOVE, obj_bulletspread))
+						{
+							idx_start = point_direction(x, y, Player.x, Player.y);
+							idx_add = ba;
+							bullet_spd = bs;
+							bullet_spread = 1;
+						}
+						with(instance_create_layer(xx, yy, L_ABOVE, obj_bulletspread))
+						{
+							idx_start = point_direction(x, y, Player.x, Player.y);
+							idx_add = ba;
+							idx_start += idx_add / 2;
+							bullet_spd = bs;
+							bullet_spread = 1;
+							delay = bd;
+						}
 					}
-					with(instance_create_layer(xx, yy, L_ABOVE, obj_bulletspread))
+					else if shoottype == 1
 					{
-						idx_start = point_direction(x, y, Player.x, Player.y);
-						idx_add = ba;
-						idx_start += idx_add / 2;
-						bullet_spd = bs;
-						bullet_spread = 1;
-						delay = bd;
+						var sdir = pdir(xx - ins.x, yy - ins.y);
+						for(var i = -60; i < 60; i += 120/7)
+						{
+							with(instance_create_layer(xx, yy, L_ABOVE, obj_bouncebullet))
+							{
+								direction = sdir + i + irandom_range(-4, 4);
+								speed = 8;
+							}
+						}
 					}
 				break;
 				

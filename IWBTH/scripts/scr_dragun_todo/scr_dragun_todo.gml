@@ -35,8 +35,26 @@ while(todo_signal_exists(td))
 			case -7:
 				head_free = todo_receive(td);
 			break;
+			case -8:
+				shoottype = todo_receive(td);
+			break;
+			case -9:
+				var a = todo_receive(td);
+				var spr = todo_receive(td);
+				
+				with(dragun[? a])
+					sprite_change(spr, 0, image_speed);
+			break;
 			case -10:
 				cout("TEST");
+			break;
+			
+			case -11:
+				var a = todo_receive(td);
+				var spd = todo_receive(td);
+				
+				with(dragun[? a])
+					image_speed = spd;
 			break;
 		}
 		#endregion

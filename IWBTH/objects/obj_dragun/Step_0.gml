@@ -1,6 +1,11 @@
 if todo_is_playing()
 {	
 	scr_dragun_todo();
+	
+	if todo_end(todo_current())
+	{
+		scr_dragun_next();
+	}
 }
 
 if head_follow 

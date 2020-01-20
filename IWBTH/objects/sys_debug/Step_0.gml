@@ -133,6 +133,15 @@ if keyboard_check(vk_control)
 	}
 }
 
+if mouse_check_button_pressed(mb_left)
+{
+	with(instance_create_layer(mouse_x, mouse_y, L_ABOVE, obj_bouncebullet))
+	{
+		direction = irandom(359);
+		speed = 10;
+	}
+}
+
 if on_teleport && mouse_check_button(mb_left)
 {
 	with(obj_player)

@@ -1,4 +1,4 @@
-maxhp = 400;
+maxhp = 380;
 hp = maxhp;
 drawhp = 0;
 onhealth = false;
@@ -21,6 +21,7 @@ struct_run = array_create(n, false);
 struct_lock = array_create(n, no);
 smoothstruct = true;
 
+shoottype = 0;
 
 smoothbulletgener_l = noone;
 smoothbulletgener_r = noone;
@@ -31,13 +32,16 @@ for(var i = 0; i < DragunParts.last; i++)
 
 head_free = false;
 head_follow = true;
-head_follow_range = 180;
+head_follow_range = 120;
 head_hspd = 0;
 
 dragun_set(dragun, st_default);
 
+rand_create(motion[0], motion[1], motion[2], motion[3], motion[4], motion[5]);
+next_attack = noone;
+
 dragun[? DragunParts.body].image_speed = 1;
-//dragun[? DragunParts.head].image_speed = 1;
+dragun[? DragunParts.head].image_speed = 1;
 dragun[? DragunParts.wings].image_speed = 1;
 dragun[? DragunParts.wings].dealto = noone;
 sprite_index = -1;

@@ -1,1 +1,1 @@
-life_create(15);
+life_create(30);

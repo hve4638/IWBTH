@@ -1,4 +1,5 @@
 var s = arr_size(struct_run);
+var ll = true;
 for(var i = 0; i < s; i++)
 {
 	if struct_run[i]
@@ -25,7 +26,11 @@ for(var i = 0; i < s; i++)
 
 				dragun_set_merge(dragun, list1, list2, v, struct_lock[i]);
 			}
-			scr_dragun_attack(struct_idxp[i] != floor(struct_idx[i]));
+			if ll
+			{
+				scr_dragun_attack(struct_idxp[i] != floor(struct_idx[i]));
+				ll = false;
+			}
 			
 			struct_idxp[i] = floor(struct_idx[i]);
 			struct_idx[i] += struct_speed[i];

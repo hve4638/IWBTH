@@ -1,5 +1,4 @@
-///@desc New Event
-var size = 0;
+/*var size = 0;
 if struct_run[0]
 {
 	var list = struct_list[0]

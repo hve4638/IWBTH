@@ -3,6 +3,8 @@ if onground
 
 hspd += sign(other.look) * 3;
 
+hit += other.damage;
+
 image_index = 0;
 image_speed = 0.65;
 
