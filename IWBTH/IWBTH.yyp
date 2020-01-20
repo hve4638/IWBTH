@@ -143,6 +143,14 @@
             }
         },
         {
+            "Key": "03360535-a38f-47e0-87b1-c5b588f0a0ea",
+            "Value": {
+                "id": "bcce5570-6a56-43f0-aed8-2b5b8ccae7c4",
+                "resourcePath": "scripts\\damaku_create\\damaku_create.yy",
+                "resourceType": "GMScript"
+            }
+        },
+        {
             "Key": "03639589-8a39-478e-a8ff-ae76c662fa73",
             "Value": {
                 "id": "ea8a9165-da21-42cd-ae86-7102b002179a",
@@ -604,6 +612,14 @@
                 "id": "b4753fec-2a52-4e64-854d-1a2a04f15fc0",
                 "resourcePath": "sprites\\spr_bloodboom\\spr_bloodboom.yy",
                 "resourceType": "GMSprite"
+            }
+        },
+        {
+            "Key": "170c922c-a907-482e-8fe1-9781816049e3",
+            "Value": {
+                "id": "800b0a69-98bd-46e7-a777-3fa995e098ae",
+                "resourcePath": "sounds\\snd_dragun\\snd_dragun.yy",
+                "resourceType": "GMSound"
             }
         },
         {
@@ -1191,6 +1207,14 @@
             }
         },
         {
+            "Key": "2d2972e0-2189-4ee9-9ab2-74ce581946d7",
+            "Value": {
+                "id": "2166841b-f9a3-4808-a7b8-e493d6eacd61",
+                "resourcePath": "objects\\obj_bulletgenerate\\obj_bulletgenerate.yy",
+                "resourceType": "GMObject"
+            }
+        },
+        {
             "Key": "2da40590-c09e-4faf-a0ad-d8aa94884e59",
             "Value": {
                 "id": "fd132e02-e226-4a48-b14b-bb974766d247",
@@ -1260,6 +1284,14 @@
                 "id": "19934ccc-3992-4d15-9fb2-a4f0e0e063c9",
                 "resourcePath": "rooms\\rmstage06a\\rmstage06a.yy",
                 "resourceType": "GMRoom"
+            }
+        },
+        {
+            "Key": "30c603f7-adcc-4428-9cd1-10c8d3d95b68",
+            "Value": {
+                "id": "e697419b-2cf4-4ae4-9274-213959dd4975",
+                "resourcePath": "objects\\sys_danmakucontrol\\sys_danmakucontrol.yy",
+                "resourceType": "GMObject"
             }
         },
         {
@@ -2887,6 +2919,14 @@
             }
         },
         {
+            "Key": "76b07412-2093-479c-b09f-dc958dbee2fb",
+            "Value": {
+                "id": "5262f3ca-2940-4ef7-99c8-de6800dc47a1",
+                "resourcePath": "objects\\obj_rpgbullet\\obj_rpgbullet.yy",
+                "resourceType": "GMObject"
+            }
+        },
+        {
             "Key": "76e9a8a7-b7ad-4d60-aa18-d931e4cebb33",
             "Value": {
                 "id": "619176a0-46cf-4bac-ad80-ac975e780aea",
@@ -2924,6 +2964,14 @@
                 "id": "3de5a645-79fc-4868-ac84-5730d9df29d0",
                 "resourcePath": "objects\\obj_data_dragun\\obj_data_dragun.yy",
                 "resourceType": "GMObject"
+            }
+        },
+        {
+            "Key": "777950ba-ff46-4b20-b8ad-a377c6dfe323",
+            "Value": {
+                "id": "db1829f6-0ab0-4e6f-a8f0-3fcf3c9bed79",
+                "resourcePath": "datafiles_yy\\dragunattack.yy",
+                "resourceType": "GMIncludedFile"
             }
         },
         {
@@ -4855,6 +4903,14 @@
             }
         },
         {
+            "Key": "bff91dc9-e32e-4608-8f94-b9f766f5d9f3",
+            "Value": {
+                "id": "a95b392e-b8a3-48cc-8e92-d6ceac1ed18d",
+                "resourcePath": "scripts\\script222\\script222.yy",
+                "resourceType": "GMScript"
+            }
+        },
+        {
             "Key": "c018816a-040f-439d-ad4f-69295d9e48bb",
             "Value": {
                 "id": "097436f1-35dc-4f76-a90f-363d3f482d87",
@@ -6295,14 +6351,6 @@
             }
         },
         {
-            "Key": "fb445f12-ef7b-408f-abc3-bc63e20012de",
-            "Value": {
-                "id": "ac7d025d-6f49-4007-b51f-a295468aa14f",
-                "resourcePath": "sprites\\sprite249\\sprite249.yy",
-                "resourceType": "GMSprite"
-            }
-        },
-        {
             "Key": "fc06c2ef-30f6-4d76-a74c-919cf1dc3316",
             "Value": {
                 "id": "cf7e2529-9af3-4d81-a6e8-adb86c5f00bc",
@@ -6613,7 +6661,8 @@
         "a8622f72-cf29-4500-8db1-fdf86fc35903",
         "0d2f5b68-0593-421b-8d9a-ec5ed0fca14b",
         "90720a1b-4abb-4b91-805c-14386d43a6f0",
-        "2a2c6dc5-3611-40a5-bb1e-d974bff6ffcf"
+        "2a2c6dc5-3611-40a5-bb1e-d974bff6ffcf",
+        "bff91dc9-e32e-4608-8f94-b9f766f5d9f3"
     ],
     "tutorial": ""
 }

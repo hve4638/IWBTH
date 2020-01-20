@@ -15,10 +15,8 @@ for(var i = 0; i < s; i++)
 					var list1 = list[| floor(struct_idx[i])];
 					dragun_set(dragun, list1, struct_lock[i]);
 				}
-				
-				scr_dragun_attack();
 			}
-			
+
 			if smoothstruct
 			{
 				var v = struct_idx[i] - floor(struct_idx[i]);
@@ -27,6 +25,7 @@ for(var i = 0; i < s; i++)
 
 				dragun_set_merge(dragun, list1, list2, v, struct_lock[i]);
 			}
+			scr_dragun_attack(struct_idxp[i] != floor(struct_idx[i]));
 			
 			struct_idxp[i] = floor(struct_idx[i]);
 			struct_idx[i] += struct_speed[i];
@@ -35,6 +34,7 @@ for(var i = 0; i < s; i++)
 		{
 			struct_idxp[i] = -1;
 			struct_idx[i] = 0;
+			struct_idxp[i] = 0;
 			struct_run[i] = false;
 		}
 	}

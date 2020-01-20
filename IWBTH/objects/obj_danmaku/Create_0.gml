@@ -1,2 +1,7 @@
+life_create(50 * 15);
 
-life_create(50 * 30);
+hspd_add = 0;
+vspd_add = 0;
+
+type = no;
+time_idx = 0;

@@ -3,6 +3,7 @@ global.csv_room = load_csv(ROOMDATA_DIRECTORY);
 global.textscript = load_csv(SCRIPT_DIRECTORY);
 global.record = load_json(RECORD_DIRECTORY);
 global.csv_dragun = load_csv(DRAGUNCSV_DIRECTORY);
+global.csv_dragunattack = load_csv(DRAGUNATTACKCSV_DIRECTORY);
 
 globalvar roomdata;
 roomdata = ds_grid_create(RMDATA_WIDTH, room_count);

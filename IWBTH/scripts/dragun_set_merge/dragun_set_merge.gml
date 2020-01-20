@@ -40,4 +40,7 @@ for(var i = 0; i < DragunParts.last; i++)
 		ins.image_xscale = sign(m[? "xscale"]) * abs(ins.image_xscale);
 		ins.image_yscale = sign(m[? "yscale"]) * abs(ins.image_yscale);
 	}
+
+	if i == DragunParts.head
+		ins.image_index = m[? "subimg"];
 }

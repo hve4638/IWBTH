@@ -26,5 +26,6 @@ with(toid)
 	lock_neck = other.lock_neck;
 
 	motion = other.motion;
+	map_attackpos = other.map_attackpos;
 }
 //obj_dragun

@@ -30,7 +30,31 @@ lock_neck = json_decode(csv_get(global.csv_dragun, "lock_neck"));
 #endregion
 
 #region
+var map = map_create();
+var h, g;
+g = global.csv_dragunattack;
+h = ds_grid_height(g);
+for(var i = 1; i < h; i++)
+{
+	var idx = asset_get_index(g[# 0, i]);
+	var sub = g[# 1, i];
+	
+	if isno(idx)
+		continue;
+		
+	if string(sub) == "x"
+		continue;
 
+	if is_undefined(map[? idx])
+		map[? idx] = map_create();
+
+	var m = map[? idx];
+	m[? real(sub)] = [real(g[# 2, i]), real(g[# 3, i]), real(g[# 4, i]), real(g[# 5, i])];
+	cout(g[# 0, i], ": ", sub, " (", m[? real(sub)], ")");
+}
+
+map_attackpos = map;
+//global.csv_dragunattack
 #endregion
 
 

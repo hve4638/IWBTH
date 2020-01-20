@@ -24,16 +24,16 @@ while(todo_signal_exists(td))
 			case -4:
 				state = stateD.normal;
 				head_free = false;
-				smoothstruct = true;				cout("smoothstruct: ", smoothstruct);
-				cout("-4: ", smoothstruct);
-
+				smoothstruct = true;
 			break;
 			case -5:
 				head_free = todo_receive(td);
 			break;
 			case -6:
 				smoothstruct = todo_receive(td);
-				cout("smoothstruct: ", smoothstruct);
+			break;
+			case -7:
+				head_free = todo_receive(td);
 			break;
 			case -10:
 				cout("TEST");
