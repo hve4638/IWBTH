@@ -20,6 +20,9 @@ with(toid)
 	st_rpgshoot = other.st_rpgshoot;
 	st_rpgoutro = other.st_rpgoutro;
 	
+	st_knife = other.st_knife;
+	st_death = other.st_death;
+
 	lock_arms = other.lock_arms;
 	lock_leftarm = other.lock_leftarm;
 	lock_rightarm = other.lock_rightarm;

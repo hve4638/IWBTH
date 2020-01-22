@@ -44,9 +44,7 @@ if keyboard_check_pressed(vk_anykey)
 		
 		case vk_f11: room_goto(rm_editroom_dragun);
 		break;
-		
 	}
-	
 }
 
 if keyboard_check_pressed(vk_f9)
@@ -130,15 +128,6 @@ if keyboard_check(vk_control)
 			cv_y2 = ty > mouse_y ? ty : mouse_y;
 			cv_y2 = cv_y1 + (cv_x2 - cv_x1) * view_h / view_w;
 		}
-	}
-}
-
-if mouse_check_button_pressed(mb_left)
-{
-	with(instance_create_layer(mouse_x, mouse_y, L_ABOVE, obj_bouncebullet))
-	{
-		direction = irandom(359);
-		speed = 10;
 	}
 }
 

@@ -16,7 +16,7 @@ if keyboard_check_pressed(vk_anykey)
 switch(keyboard_lastkey)
 {
 	case ord("1"):
-		todo_play(motion[0]);
+		todo_play(motion[8]);
 	break;
 	case ord("2"):
 		todo_play(motion[1]);

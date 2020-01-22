@@ -23,6 +23,9 @@ st_rpgout = json_decode_list(csv_get(global.csv_dragun, "rpgout"));
 st_rpgshoot = json_decode_list(csv_get(global.csv_dragun, "rpgshoot"));
 st_rpgoutro = json_decode_list(csv_get(global.csv_dragun, "rpgoutro"));
 
+st_knife = json_decode_list(csv_get(global.csv_dragun, "knife"));
+st_death = json_decode(csv_get(global.csv_dragun, "death"));
+
 lock_leftarm = json_decode(csv_get(global.csv_dragun, "lock_leftarm"));
 lock_rightarm = json_decode(csv_get(global.csv_dragun, "lock_rightarm"));
 lock_arms = json_decode(csv_get(global.csv_dragun, "lock_arms"));

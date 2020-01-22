@@ -17,8 +17,10 @@ if on_deal
 
 if show_info
 {
+	str += strmerge("fps : ", fps);
 	str += strmerge("time : ", time);
 	str += strmerge("death : ", death);
+	str += strmerge("instance : ", instance_number(all));
 	str += strmerge("lastkey : ", keyboard_lastkey);
 	str += strmerge("currentstage : ", current_stage);
 	str += strmerge("stagetime : ", stage_time[current_stage]);

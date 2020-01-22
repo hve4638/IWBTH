@@ -146,7 +146,7 @@
             "Key": "03360535-a38f-47e0-87b1-c5b588f0a0ea",
             "Value": {
                 "id": "bcce5570-6a56-43f0-aed8-2b5b8ccae7c4",
-                "resourcePath": "scripts\\damaku_create\\damaku_create.yy",
+                "resourcePath": "scripts\\danmaku_create\\danmaku_create.yy",
                 "resourceType": "GMScript"
             }
         },
@@ -612,14 +612,6 @@
                 "id": "b4753fec-2a52-4e64-854d-1a2a04f15fc0",
                 "resourcePath": "sprites\\spr_bloodboom\\spr_bloodboom.yy",
                 "resourceType": "GMSprite"
-            }
-        },
-        {
-            "Key": "170c922c-a907-482e-8fe1-9781816049e3",
-            "Value": {
-                "id": "800b0a69-98bd-46e7-a777-3fa995e098ae",
-                "resourcePath": "sounds\\snd_dragun\\snd_dragun.yy",
-                "resourceType": "GMSound"
             }
         },
         {
@@ -1455,6 +1447,14 @@
             }
         },
         {
+            "Key": "365136c8-4921-42aa-8e13-3e27d4f0879e",
+            "Value": {
+                "id": "9749e397-a98c-44e3-9d2f-94c953b1144d",
+                "resourcePath": "sprites\\spr_dragun_rageeye\\spr_dragun_rageeye.yy",
+                "resourceType": "GMSprite"
+            }
+        },
+        {
             "Key": "378c0650-d282-491c-bc71-ba84ddc9de65",
             "Value": {
                 "id": "e4918978-3f5e-4d56-a2b5-63ee2582be00",
@@ -1612,6 +1612,14 @@
                 "id": "5943cf28-a0e8-4a9d-b3b4-0811c874bdb2",
                 "resourcePath": "views\\3f54ae37-edab-42d7-9678-d4dfac1e5a22.yy",
                 "resourceType": "GMFolder"
+            }
+        },
+        {
+            "Key": "3fcdbbd3-62d2-4527-8162-4abdfc644ec2",
+            "Value": {
+                "id": "ac77b203-fd2c-4cfa-b6f2-ac7041939a52",
+                "resourcePath": "objects\\obj_knifeguy\\obj_knifeguy.yy",
+                "resourceType": "GMObject"
             }
         },
         {
@@ -2695,6 +2703,14 @@
             }
         },
         {
+            "Key": "6b45d1d0-ba15-4382-878e-2ff1f70514d0",
+            "Value": {
+                "id": "80762774-b0a1-4059-8ef1-bdb55c1bb275",
+                "resourcePath": "sprites\\spr_dragun_head_death\\spr_dragun_head_death.yy",
+                "resourceType": "GMSprite"
+            }
+        },
+        {
             "Key": "6bef422a-1919-4724-ae87-074184efdc53",
             "Value": {
                 "id": "970be384-ebd5-416b-bf73-eb37022cce2e",
@@ -2788,6 +2804,14 @@
                 "id": "ecaf49ae-77fb-4a99-a18a-dca8709ca87c",
                 "resourcePath": "views\\6f0de163-e463-4666-8e0a-fcc56eceea6b.yy",
                 "resourceType": "GMFolder"
+            }
+        },
+        {
+            "Key": "6fb87672-4c5b-4ea8-b70c-6cc5f9ffa7e2",
+            "Value": {
+                "id": "dbc34f5a-9166-46d6-a338-cb3540b14d9d",
+                "resourcePath": "objects\\obj_dragunknife\\obj_dragunknife.yy",
+                "resourceType": "GMObject"
             }
         },
         {
@@ -3212,6 +3236,14 @@
                 "id": "1024b394-8407-4af4-bfed-1382232654f3",
                 "resourcePath": "sounds\\snd_hit\\snd_hit.yy",
                 "resourceType": "GMSound"
+            }
+        },
+        {
+            "Key": "809d3362-a8cc-442e-bdb7-3a47f3df44bc",
+            "Value": {
+                "id": "413757f3-7928-4454-a0d2-858778e6d9bc",
+                "resourcePath": "scripts\\data_destroy\\data_destroy.yy",
+                "resourceType": "GMScript"
             }
         },
         {
@@ -6247,6 +6279,14 @@
             }
         },
         {
+            "Key": "f5ab2609-3d52-4147-8817-6361c76ac33b",
+            "Value": {
+                "id": "498c0366-9dc9-4195-839d-52f4b847423f",
+                "resourcePath": "sprites\\spr_dragun_head_weak\\spr_dragun_head_weak.yy",
+                "resourceType": "GMSprite"
+            }
+        },
+        {
             "Key": "f5bd9f47-b28a-4490-a3aa-42d404ff93e5",
             "Value": {
                 "id": "8f190230-d5ee-4098-9124-32c956b8d925",
@@ -6420,6 +6460,14 @@
                 "id": "8f8855e5-5be5-4e10-bd45-0d1cd305d82d",
                 "resourcePath": "scripts\\todo_end\\todo_end.yy",
                 "resourceType": "GMScript"
+            }
+        },
+        {
+            "Key": "fd26a317-96ce-4f4f-a5bd-609eaae94979",
+            "Value": {
+                "id": "c38e10f9-9e3b-43ac-8c07-cf22b193362e",
+                "resourcePath": "sounds\\snd_dragun\\snd_dragun.yy",
+                "resourceType": "GMSound"
             }
         },
         {
@@ -6679,7 +6727,8 @@
         "90720a1b-4abb-4b91-805c-14386d43a6f0",
         "2a2c6dc5-3611-40a5-bb1e-d974bff6ffcf",
         "bff91dc9-e32e-4608-8f94-b9f766f5d9f3",
-        "03360535-a38f-47e0-87b1-c5b588f0a0ea"
+        "03360535-a38f-47e0-87b1-c5b588f0a0ea",
+        "56fe2ea5-d4c3-4fd0-9f02-c623d4c8fc47"
     ],
     "tutorial": ""
 }

@@ -29,3 +29,5 @@ if show_sub
 	sub_alpha = min(1.0, sub_alpha + 0.007);
 else
 	sub_alpha = max(0, sub_alpha - 0.015);
+
+fade_a = min(fade_a + 0.02, 0.85);

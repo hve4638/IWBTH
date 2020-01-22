@@ -22,10 +22,10 @@ with(obj_danmaku)
 		break;
 		
 		case 2:
-			if time_idx > 45
+			if time_idx > 45/2
 			{
 				for(var i = 270; i - 270 < 360; i+= 360 / 5)
-					damaku_create(x, y, i, 4, 10000);
+					danmaku_create(x, y, i, 4, 10000);
 
 				instance_destroy();
 			}
@@ -33,10 +33,10 @@ with(obj_danmaku)
 		
 
 		case 10000:
-			if time_idx > 40
+			if time_idx > 20
 			{
 				for(var i = 0; i < 360; i+= 360 / 16)
-					damaku_create(x, y, i, 6);
+					danmaku_create(x, y, i, 6);
 
 				instance_destroy();
 			}

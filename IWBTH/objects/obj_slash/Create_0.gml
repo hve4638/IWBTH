@@ -1,5 +1,5 @@
 damage_ins = instance_create(x, y, obj_playerdeal);
-damage = 4;
+damage = 3;
 
 var bx, by, w, h;
 bx = bbox_left;

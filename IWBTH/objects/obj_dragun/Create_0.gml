@@ -1,5 +1,6 @@
-maxhp = 380;
+maxhp = 340;
 hp = maxhp;
+armor = 1;
 drawhp = 0;
 onhealth = false;
 
@@ -22,6 +23,15 @@ struct_lock = array_create(n, no);
 smoothstruct = true;
 
 shoottype = 0;
+onlastpattern = false;
+lp_delay = 0;
+lp_pos = room_width div 2 + irandom_range(-130, 130);
+lp_time = 0;
+lp_force = 32;
+lp_spd = 1;
+lp_sign = 1;
+
+isdie = false;
 
 smoothbulletgener_l = noone;
 smoothbulletgener_r = noone;

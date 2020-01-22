@@ -58,3 +58,64 @@ for(var i = DragunParts.neck5; i >= DragunParts.neck1; i--)
 	
 	px = ins.x;
 }
+
+if onlastpattern
+{
+	if lp_delay-- <= 0
+	{
+		for(var i = irandom_range(-6, 16); i < room_width;)
+		{
+			danmaku_create(i, -96, 270, 3, 5) ;
+			i += 40 + irandom_range(-8, 8);
+		}
+		lp_delay = 36 / 3;
+	}
+	
+	if 0 < --lp_time
+	{
+		lp_pos += lp_sign * lp_spd;
+
+		while(1)
+		{
+			var ins = instance_nearest(lp_pos, -96, obj_danmaku);
+			if ins == noone
+				break;
+
+			if point_distance(ins.x, ins.y, lp_pos, -96) <= lp_force
+				instance_destroy(ins);
+			else
+				break;
+		}
+		
+		while(1)
+		{
+			var ins = instance_nearest(lp_pos, -64, obj_danmaku);
+			if ins == noone
+				break;
+
+			if point_distance(ins.x, ins.y, lp_pos, -64) <= lp_force
+				instance_destroy(ins);
+			else
+				break;
+		}
+	}
+	else
+	{
+		lp_sign = choose(1, -1, -lp_sign);
+		lp_spd = random_range(1, 2.5);
+		lp_time = irandom_range(35, 60);
+		
+		if choose(1,0,0)
+		{
+			var l = choose(1, -1);
+			if lp_pos > room_width * 2 div 3
+				l = -1;
+			else if lp_pos < room_width div 3
+				l = 1;
+
+			lp_pos += l * (lp_force * 3 + 20);
+		}
+	}
+	
+
+}

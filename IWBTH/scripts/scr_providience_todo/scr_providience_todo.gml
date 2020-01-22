@@ -1,5 +1,7 @@
 var td = todo_current();
 
+cout("todo:", string(td));
+
 while(todo_signal_exists(td))
 {
 	var signal = todo_signal(td);
@@ -76,9 +78,9 @@ while(todo_signal_exists(td))
 					goto_idx = 0;
 					goto_delay = 150;
 				}
-				
-				instance_destroy(obj_data_providience);
+				//todo_stop();
 				instance_destroy();
+				data_destroy();
 			break;
 		}
 		#endregion

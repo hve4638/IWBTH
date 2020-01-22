@@ -74,7 +74,7 @@ if !frozen && !(0 < dashtime)
 			attackdelay = attackdelay_gun;
 			scr_player_shoot();
 		}
-		else if attacktype == Attacktype.sword && button_press(Input.attack)
+		else if attacktype == Attacktype.sword && button(Input.attack)
 		{
 			attackdelay = attackdelay_sword;
 			hspd = 0;

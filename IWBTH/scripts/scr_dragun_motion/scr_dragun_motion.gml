@@ -6,6 +6,8 @@ motion[3] = todo_create();
 motion[4] = todo_create();
 motion[5] = todo_create();
 motion[6] = todo_create();
+motion[7] = todo_create();
+motion[8] = todo_create();
 
 ///Signal
 //-1: state
@@ -212,6 +214,51 @@ todo_edit(motion[5]);
 	
 	todo_add_signal(-4);
 	todo_add_nope();
+
+todo_edit(motion[6]);
+	todo_add_send(-1, stateD.attack);
+	
+	var dt = ds_list_size(st_gunget);
+	var dt2 = 7;
+	var dt3 = dt - dt2;
+	todo_add_send(-2, st_gunget, 1/4, lock_arms);
+	todo_add_sleep(dt * 4 + 5);
+	
+	var dt = ds_list_size(st_knife);
+	todo_add_send(-2, st_knife, 1/4, lock_leftarm);
+	todo_add_sleep(dt2 * 4);
+	
+	todo_add_send(1, DragunParts.hand_l, 77 - 24, 45 - 25);
+	todo_add_send(-2, st_knife, 1/4, lock_rightarm);
+	todo_add_sleep(dt2 * 4);
+	
+	todo_add_send(1, DragunParts.hand_r, 77 - 24, 45 - 25);
+	todo_add_sleep(dt3 * 4);
+	
+	todo_add_signal(-4);
+	todo_add_nope();
+
+todo_edit(motion[7]);
+	todo_add_send(-1, stateD.attack);
+
+	todo_add_send(-9, DragunParts.wings, spr_dragun_wings_flap);
+	todo_add_send(-11, DragunParts.wings, 0.75);
+	todo_add_send(2, 1);
+	todo_add_sleep(50 * 7);
+
+todo_edit(motion[8]);
+	todo_add_signal(-20);
+	todo_add_send(-2, st_death, 1/9, no);
+	todo_add_sleep(11 * 9);
+	
+	todo_add_signal(10);
+/*
+	todo_add_send(-9, DragunParts.wings, spr_dragun_wings_idle);
+	todo_add_send(-11, DragunParts.wings, 1);
+	todo_add_send(2, 0);
+	todo_add_sleep(50 * 7);
+	todo_add_nope();
+*/
 
 /*
 	var dt = ds_list_size(st_guntwirl_stof);

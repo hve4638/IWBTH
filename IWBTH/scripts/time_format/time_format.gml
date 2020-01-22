@@ -12,8 +12,8 @@ if string_length(s) == 1
 	s = "0" + s;
 
 if h == "0"
-	str = strmerge(m, ":", s, "");
+	str = strmerge(m + ":"+ string(s), "");
 else
-	str = strmerge(h, ":", m, ":", s, "");
+	str = strmerge(string(h) + ":" + string(m) + ":" + string(s), "");
 
 return str;

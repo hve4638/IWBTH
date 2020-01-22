@@ -37,7 +37,7 @@ force_dir = 0;
 jumpbuffer = 0;
 attackdelay = 0;
 attackdelay_gun = 7;
-attackdelay_sword = 14;
+attackdelay_sword = 13;
 attacktype = Attacktype.gun;
 
 slash_delay = 0;

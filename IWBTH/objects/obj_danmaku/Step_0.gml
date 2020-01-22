@@ -1,1 +1,1 @@
-time_idx++;
+life_step();
