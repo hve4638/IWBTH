@@ -21,6 +21,7 @@ todo_edit(motion[0]);
 	
 	var dt = ds_list_size(st_gunout_side);
 	todo_add_send(-2, st_gunout_side, 1/4, no);
+	todo_add_sound(snd_dragungunout);
 	todo_add_sleep(dt * 4 + 10);
 
 	var dt = ds_list_size(st_gunshoot_side);
@@ -29,6 +30,7 @@ todo_edit(motion[0]);
 
 	var dt = ds_list_size(st_guntwirl_stof);
 	todo_add_send(-2, st_guntwirl_stof, 1/4, no);
+	todo_add_sound(snd_dragunguntrwil);
 	todo_add_sleep(dt * 4);
 	
 	var dt = ds_list_size(st_gunshoot_front);
@@ -37,6 +39,7 @@ todo_edit(motion[0]);
 	
 	var dt = ds_list_size(st_guntwirl_ftos);
 	todo_add_send(-2, st_guntwirl_ftos, 1/4, no);
+	todo_add_sound(snd_dragunguntrwil);
 	todo_add_sleep(dt * 4);
 	
 	var dt = ds_list_size(st_gunshoot_side);
@@ -62,10 +65,12 @@ todo_edit(motion[1]);
 	
 	var dt = ds_list_size(st_gunout_side);
 	todo_add_send(-2, st_gunout_side, 1/4, no);
+	todo_add_sound(snd_dragungunout);
 	todo_add_sleep(dt * 4);
 
 	var dt = ds_list_size(st_guntwirl_stof);
 	todo_add_send(-2, st_guntwirl_stof, 1/3, no);
+	todo_add_sound(snd_dragunguntrwil);
 	todo_add_sleep(dt * 3 + 3);
 	
 	var dt = ds_list_size(st_gunshoot_front);
@@ -85,6 +90,7 @@ todo_edit(motion[1]);
 	
 	var dt = ds_list_size(st_guntwirl_ftos);
 	todo_add_send(-2, st_guntwirl_ftos, 1/3, no);
+	todo_add_sound(snd_dragunguntrwil);
 	todo_add_sleep(dt * 3);
 	
 	var dt = ds_list_size(st_gunoutro);
@@ -97,17 +103,20 @@ todo_edit(motion[1]);
 	todo_add_nope();
 
 	
-todo_edit(motion[2]);
+todo_edit(motion[2]); //MAC
 	todo_add_send(-1, stateD.attack);
 	var dt = ds_list_size(st_gunget);
 	todo_add_send(-6, false);
 	todo_add_send(-2, st_macget, 1/5, no);
+	todo_add_sound(snd_dragungunout);
 	todo_add_sleep(dt * 5 + 15);
 	
 	todo_add_send(-6, true);
 	var dt = ds_list_size(st_macshoot);
 	todo_add_send(-2, st_macshoot, 1/9, no);
-	todo_add_sleep(9 * 13);
+	todo_add_sleep(9 * 2 + 5);
+	todo_add_sound(snd_dragunmacshoot);
+	todo_add_sleep(9 * 10 + 4);
 	todo_add_send(-6, false);
 	todo_add_sleep((dt - 13) * 9 + 1);
 	
@@ -142,6 +151,7 @@ todo_edit(motion[4]);
 
 	var dt = ds_list_size(st_rpgout);
 	todo_add_send(-2, st_rpgout, 1/4, lock_rightarm);
+	todo_add_sound(snd_dragunrpgready);
 	todo_add_sleep(dt * 4 + 20);
 
 	todo_add_send(-6, false);
@@ -172,6 +182,7 @@ todo_edit(motion[5]);
 	
 	var dt = ds_list_size(st_gunout_side);
 	todo_add_send(-2, st_gunout_side, 1/4, lock_arms);
+	todo_add_sound(snd_dragungunout);
 	todo_add_sleep(dt * 4 + 10);
 
 	var dt = ds_list_size(st_gunshoot_side);
@@ -179,8 +190,9 @@ todo_edit(motion[5]);
 	var dt3 = ds_list_size(st_gunshoot_front);
 	var dt4 = ds_list_size(st_guntwirl_ftos);
 	//s s
-	todo_add_send(-2, st_gunshoot_side, 1/4, lock_leftarm); 
+	todo_add_send(-2, st_gunshoot_side, 1/4, lock_leftarm);
 	todo_add_send(-2, st_guntwirl_stof, 1/4, lock_rightarm);
+	todo_add_sound(snd_dragunguntrwil);
 	todo_add_sleep(dt * 4);
 	
 	//s f
@@ -192,6 +204,7 @@ todo_edit(motion[5]);
 	todo_add_sleep(dt3 * 4);
 
 	todo_add_send(-2, st_guntwirl_ftos, 1/4, lock_rightarm);
+	todo_add_sound(snd_dragunguntrwil);
 	todo_add_sleep(dt4 * 4 + 20);
 	
 	todo_add_send(-2, st_gunshoot_side, 1/4, lock_rightarm);
@@ -201,6 +214,7 @@ todo_edit(motion[5]);
 	todo_add_sleep(dt3 * 4);
 
 	todo_add_send(-2, st_guntwirl_ftos, 1/4, lock_leftarm);
+	todo_add_sound(snd_dragunguntrwil);
 	todo_add_sleep(dt4 * 4);
 
 	var dt = ds_list_size(st_gunoutro);

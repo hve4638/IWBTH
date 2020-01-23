@@ -20,7 +20,7 @@ if state == stateD.attack
 		if !is_array(n)
 			continue;
 
-		cout("~~~~~~~~~~~~~~", n[2], n[3], real(accurate));
+		//cout("~~~~~~~~~~~~~~", n[2], n[3], real(accurate));
 		if accurate || n[3]
 		{
 			var xx, yy;
@@ -61,6 +61,7 @@ if state == stateD.attack
 							}
 						}
 					}
+					sfx(snd_dragungunshoot);
 				break;
 				
 				case 1:
@@ -105,6 +106,7 @@ if state == stateD.attack
 						image_xscale = ins.image_xscale;
 						image_yscale = ins.image_yscale;
 					}
+					sfx(snd_dragunrpgshoot);
 				break;
 			}
 		}

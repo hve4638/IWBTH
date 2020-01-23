@@ -21,6 +21,8 @@ else
 
 if enable_back && keyboard_check_pressed(vk_anykey)
 {
+	fmax = 1.0;
+	fadd = 0.005;
 	enable_back = false;
 	timeline(tl_backhub);
 }
@@ -30,4 +32,4 @@ if show_sub
 else
 	sub_alpha = max(0, sub_alpha - 0.015);
 
-fade_a = min(fade_a + 0.02, 0.85);
+fade_a = min(fade_a + fadd, fmax);

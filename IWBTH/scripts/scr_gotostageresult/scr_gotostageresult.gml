@@ -6,11 +6,13 @@ if goto_idx >= goto_delay
 	
 	with(instance_create_layer(0, 0, L_SYS, obj_stageresult))
 	{
+		fadd = 0.02;
 		depth -= 100;
-		alarm[0] = 50;
+		alarm[0] = 10;
 	}
 	
 	//global_fade_set(0.75, 75, c_black);
+	instance_destroy(obj_effect_providience);
 	instance_destroy();
 }
 

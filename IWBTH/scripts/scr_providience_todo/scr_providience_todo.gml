@@ -1,6 +1,5 @@
 var td = todo_current();
 
-cout("todo:", string(td));
 
 while(todo_signal_exists(td))
 {

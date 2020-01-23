@@ -8,6 +8,8 @@ if !instance_exists(obj_player)
 	{
 		look = sign(image_xscale);
 	}
+
+	cout("player create by " + object_get_name(object_index));
 }
 
 instance_destroy();

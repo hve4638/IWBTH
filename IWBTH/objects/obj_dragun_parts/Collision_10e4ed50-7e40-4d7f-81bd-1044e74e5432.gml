@@ -36,7 +36,17 @@ with(dealto)
 		isdie = true;
 		head_free = false;
 		head_follow = false;
-	
+		
+		with(instance_create_layer(0, 0, L_SYS, obj_trigger))
+		{
+			trigger_condition = TriggerCondition.always;
+			trigger_end = TriggerEnd.loop;
+
+			trigger_script = scr_gotostageresult;
+			goto_idx = 0;
+			goto_delay = 250;
+		}
+		
 		alarm[0] = -1;
 	}
 }

@@ -815,6 +815,14 @@
             }
         },
         {
+            "Key": "1f4d25ba-e960-4331-908d-8d9b6bbabaf4",
+            "Value": {
+                "id": "29422fd6-39d9-472a-b2a9-8524cbe7d430",
+                "resourcePath": "sounds\\snd_dragungunout\\snd_dragungunout.yy",
+                "resourceType": "GMSound"
+            }
+        },
+        {
             "Key": "1f9a5897-1a67-4531-92f9-279deb7c41e5",
             "Value": {
                 "id": "d9f02194-5c9b-4b16-a134-471ea39aba62",
@@ -1959,6 +1967,14 @@
             }
         },
         {
+            "Key": "4e2d8478-ee40-4158-851a-ee951fb22757",
+            "Value": {
+                "id": "b3648091-6f99-4e3d-b1ca-ea4c6a7ab86f",
+                "resourcePath": "sounds\\snd_dragunrpgexplosion\\snd_dragunrpgexplosion.yy",
+                "resourceType": "GMSound"
+            }
+        },
+        {
             "Key": "4e454ce4-71ed-4617-813e-84762fb18a2f",
             "Value": {
                 "id": "d6aac073-24dd-4565-9c47-6091f5bbfdfd",
@@ -2908,6 +2924,14 @@
                 "id": "79a7e8eb-0b6a-41db-81b3-498a7ecb565c",
                 "resourcePath": "scripts\\cout_show\\cout_show.yy",
                 "resourceType": "GMScript"
+            }
+        },
+        {
+            "Key": "7453bb16-92c8-4fb5-84e9-50c86447e482",
+            "Value": {
+                "id": "13172685-bcb1-4542-b894-de7ee6d934b9",
+                "resourcePath": "sounds\\snd_dragunguntrwil\\snd_dragunguntrwil.yy",
+                "resourceType": "GMSound"
             }
         },
         {
@@ -3988,6 +4012,14 @@
                 "id": "7cfead5b-6baf-4191-acee-a9dd12c34966",
                 "resourcePath": "views\\992fc229-3aad-4295-bbcb-c69bcc65d40f.yy",
                 "resourceType": "GMFolder"
+            }
+        },
+        {
+            "Key": "994a2611-cedb-4888-8621-2a8d2a6a401c",
+            "Value": {
+                "id": "d3388680-027b-47e6-8efa-962c6544f03d",
+                "resourcePath": "sounds\\snd_dragunrpgshoot\\snd_dragunrpgshoot.yy",
+                "resourceType": "GMSound"
             }
         },
         {
@@ -5175,11 +5207,27 @@
             }
         },
         {
+            "Key": "c646df61-53ad-4f1b-bba9-b3ea5f7c0b43",
+            "Value": {
+                "id": "9bda5636-a861-4c28-b640-3ba3103a3c14",
+                "resourcePath": "sounds\\snd_dragungunshoot\\snd_dragungunshoot.yy",
+                "resourceType": "GMSound"
+            }
+        },
+        {
             "Key": "c65c4825-df44-44be-9140-f325dccee583",
             "Value": {
                 "id": "d942d2f7-1e8c-43a5-bed0-bcb7daaaea97",
                 "resourcePath": "scripts\\text_script_clear\\text_script_clear.yy",
                 "resourceType": "GMScript"
+            }
+        },
+        {
+            "Key": "c67d2ce6-303d-4920-ac16-02dfa120ad86",
+            "Value": {
+                "id": "0d29a170-68db-4fd2-b2ee-6bb789ed1496",
+                "resourcePath": "sounds\\snd_dragunwing\\snd_dragunwing.yy",
+                "resourceType": "GMSound"
             }
         },
         {
@@ -5895,6 +5943,14 @@
             }
         },
         {
+            "Key": "e87ef0cb-6314-40b3-bd34-d030535db9ec",
+            "Value": {
+                "id": "55d15fe6-c7c7-4a34-904a-1c4caaf33417",
+                "resourcePath": "sounds\\snd_dragunmacshoot\\snd_dragunmacshoot.yy",
+                "resourceType": "GMSound"
+            }
+        },
+        {
             "Key": "e8c43563-d54c-4e3f-bbce-bf0b96e2de31",
             "Value": {
                 "id": "c80733dc-94b8-45ea-9cae-fff114b39887",
@@ -5964,6 +6020,14 @@
                 "id": "bb3b9419-ec3f-4e39-9882-d7d106d957cb",
                 "resourcePath": "sprites\\tile01\\tile01.yy",
                 "resourceType": "GMSprite"
+            }
+        },
+        {
+            "Key": "ea2a170a-e0af-4a3d-8404-91c5e093adf9",
+            "Value": {
+                "id": "2dbe0a8c-eac9-4224-8d79-f36b36aef191",
+                "resourcePath": "sounds\\snd_dragunrpgready\\snd_dragunrpgready.yy",
+                "resourceType": "GMSound"
             }
         },
         {
@@ -6728,7 +6792,8 @@
         "2a2c6dc5-3611-40a5-bb1e-d974bff6ffcf",
         "bff91dc9-e32e-4608-8f94-b9f766f5d9f3",
         "03360535-a38f-47e0-87b1-c5b588f0a0ea",
-        "56fe2ea5-d4c3-4fd0-9f02-c623d4c8fc47"
+        "56fe2ea5-d4c3-4fd0-9f02-c623d4c8fc47",
+        "809d3362-a8cc-442e-bdb7-3a47f3df44bc"
     ],
     "tutorial": ""
 }

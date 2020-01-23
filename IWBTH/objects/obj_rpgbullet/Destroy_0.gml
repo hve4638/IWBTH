@@ -8,3 +8,5 @@ with(instance_create_layer(x, y, L_ABOVE, obj_bulletspread))
 	bullet_spread = 0;
 	delay = i * 5;
 }
+
+sfx(snd_dragunrpgexplosion);

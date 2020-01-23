@@ -12,7 +12,7 @@ addy = argument_count > 3 ? argument[3] : 0;
 modx = argument_count > 4 ? argument[4] : 0;
 mody = argument_count > 5 ? argument[5] : 0;
 
-var ins = instance_create_layer(setx, sety, layer, obj_create_nextroom);
+var ins = instance_create_layer(setx, sety, L_PLAYER, obj_create_nextroom);
 with(ins)
 {
 	x += addx;

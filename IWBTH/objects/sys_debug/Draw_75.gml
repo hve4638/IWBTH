@@ -28,5 +28,17 @@ if show_info
 	str += strmerge("mouse(window):", window_mouse_get_x(), window_mouse_get_y());
 }
 
+if show_save
+{
+	str += strmerge("[SAVE]");
+	str += strmerge("pos: ", sv_x, ",", sv_y, "  ", sv_auto);
+	str += strmerge("time: ", sv_time, "  death: ", death);
+	str += strmerge("hub: ", sv_hubx, ",", sv_huby);
+	str += strmerge("room: ", sv_room);
+	str += strmerge("look: ", sv_look);
+}
+
 draw_set_reset();
+draw_set_color(c_green);
 draw_text(0, 0, str);
+draw_set_reset();

@@ -1,15 +1,14 @@
 if keyboard_check_pressed(vk_f1)
 	show_info = !show_info;
 
-if keyboard_check_pressed(vk_f2)
-{
-	save_read();
-	cout("read save" + string(save_idx) + ".");
-}
 if keyboard_check_pressed(vk_anykey)
 {
 	switch(keyboard_key)
-	{		
+	{
+		case vk_f2:
+			show_save = !show_save;
+		break;
+
 		case ord("U"):
 			with(instance_create_layer(0, 0, L_SYS, obj_trigger))
 			{
@@ -47,13 +46,13 @@ if keyboard_check_pressed(vk_anykey)
 	}
 }
 
-if keyboard_check_pressed(vk_f9)
+/*if keyboard_check_pressed(vk_f9)
 {
 	if !instance_exists(sys_record)
 		instance_create_layer(0,0,L_SYS, sys_record);
 	else
 		instance_destroy(sys_record);
-}
+}*/
 
 if on_customview
 {

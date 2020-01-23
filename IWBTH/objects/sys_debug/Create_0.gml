@@ -8,6 +8,7 @@ on_customview = false;
 
 on_deal = false;
 
+show_save = false;
 
 cv_enable = false;
 cv_ins = noone;
