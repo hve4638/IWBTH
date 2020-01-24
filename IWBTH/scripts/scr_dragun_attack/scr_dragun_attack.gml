@@ -7,6 +7,7 @@ if state == stateD.attack
 	arr[0] = dragun[? DragunParts.hand_l];
 	arr[1] = dragun[? DragunParts.hand_r];
 	arr[2] = dragun[? DragunParts.head];
+	arr[3] = dragun[? DragunParts.wings];
 	
 	for(var i = 0; i < arr_size(arr); i++)
 	{

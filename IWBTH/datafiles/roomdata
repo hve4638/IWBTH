@@ -1,4 +1,6 @@
-#ROOM,#SOUND,#SOUNDLOOP,#STAGE
-rm_hub,snd_hub,1,0
-rm_boss_providience,,0,4
-rm_boss_dragun,,0,2
+#ROOM,#INGAME,#STAGE,#SOUND,#SOUNDLOOP
+rm_hub,1,0,snd_hub,1
+rm_boss_providience,1,4,,0
+rm_boss_dragun,1,2,,0
+rm_tutorial,1,0,,1
+rm_title,0,0,,1

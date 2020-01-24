@@ -8,9 +8,10 @@ if onlastpattern
 if isdie
 	exit;
 
-if hp/maxhp <= 0.31
+if hp/maxhp <= lp_enterp
 {
-	armor = 0.66;
+	lp_pos = clamp(obj_player.x, room_width div 5, room_width * 4 div 5);
+	armor = 0.33;
 	next_attack = motion[7];
 	alarm[0] = 60;
 	exit;	

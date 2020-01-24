@@ -61,14 +61,39 @@ for(var i = DragunParts.neck5; i >= DragunParts.neck1; i--)
 
 if onlastpattern
 {
+	var p = hp/maxhp;
+	
+	if p < 0.05
+		lp_force = 28;
+	else if p < 0.1
+		lp_force = 32;
+	else if p < 0.15
+		lp_force = 38;
+	else
+		lp_force = 46;
+	
+	var ins = dragun[? DragunParts.wings];
+	if ins.sprite_index = spr_dragun_wings_flap
+	{
+		if floor(lp_pimg) != floor(ins.image_index)
+		{
+			if floor(ins.image_index) == 3
+				sfx(snd_dragunwing);
+		}
+
+		lp_pimg = ins.image_index;
+	}
+	
 	if lp_delay-- <= 0
 	{
 		for(var i = irandom_range(-6, 16); i < room_width;)
 		{
-			danmaku_create(i, -96, 270, 3, 5) ;
+			var ins = danmaku_create(i, -96, 270, 3.5, 5);
 			i += 40 + irandom_range(-8, 8);
+			
+			//ins.image_index = 1;
 		}
-		lp_delay = 36 / 3;
+		lp_delay = 36 / 3.5;
 	}
 	
 	if 0 < --lp_time
@@ -80,7 +105,7 @@ if onlastpattern
 			var ins = instance_nearest(lp_pos, -96, obj_danmaku);
 			if ins == noone
 				break;
-
+			
 			if point_distance(ins.x, ins.y, lp_pos, -96) <= lp_force
 				instance_destroy(ins);
 			else
@@ -103,9 +128,14 @@ if onlastpattern
 	{
 		lp_sign = choose(1, -1, -lp_sign);
 		lp_spd = random_range(1, 2.5);
-		lp_time = irandom_range(35, 60);
+		lp_time = irandom_range(45, 65);
 		
-		if choose(1,0,0)
+		if lp_pos > room_width * 4 div 5
+			lp_sign = -1;
+		else if lp_pos < room_width div 5
+			lp_sign = 1;
+		
+		if percentage(40)
 		{
 			var l = choose(1, -1);
 			if lp_pos > room_width * 2 div 3
@@ -113,9 +143,20 @@ if onlastpattern
 			else if lp_pos < room_width div 3
 				l = 1;
 
-			lp_pos += l * (lp_force * 3 + 20);
+			lp_pos += l * (96 + 48);
+			lp_time += irandom_range(10, 20);
+			
+			while(1)
+			{
+				var ins = instance_nearest(lp_pos, -64, obj_danmaku);
+				if ins == noone
+					break;
+
+				if point_distance(ins.x, ins.y, lp_pos, -64) <= 64
+					instance_destroy(ins);
+				else
+					break;
+			}
 		}
 	}
-	
-
 }

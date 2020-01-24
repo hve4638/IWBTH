@@ -1,13 +1,12 @@
-cout("####DEBUG MODE#####");
+cout(NL + "####DEBUG MODE#####" + NL);
 
-
+global.debuglevel = 1;
 show_info = false;
 on_convkey = false;
 on_teleport = false;
 on_customview = false;
 
 on_deal = false;
-
 show_save = false;
 
 cv_enable = false;

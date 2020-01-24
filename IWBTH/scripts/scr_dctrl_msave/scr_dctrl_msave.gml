@@ -8,10 +8,11 @@ for(var i = 0; i < DragunParts.last; i++)
 	var ins = arr[i];
 	if ins.lock
 		continue;
+
 	var m = ds_map_create();
 	m[? "x"] = ins.setx;
 	m[? "y"] = ins.sety;
-	m[? "img"] = floor(ins.sprite_index);
+	m[? "img"] = object_get_name(ins.sprite_index);
 	m[? "subimg"] = floor(ins.image_index);
 	m[? "depth"] = floor(ins.depth);
 	m[? "xscale"] = ins.image_xscale;

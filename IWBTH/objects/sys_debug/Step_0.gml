@@ -1,12 +1,11 @@
-if keyboard_check_pressed(vk_f1)
-	show_info = !show_info;
-
 if keyboard_check_pressed(vk_anykey)
 {
 	switch(keyboard_key)
 	{
-		case vk_f2:
-			show_save = !show_save;
+		case vk_f1: show_info = !show_info;
+		break;
+		
+		case vk_f2: show_save = !show_save;
 		break;
 
 		case ord("U"):
@@ -35,24 +34,28 @@ if keyboard_check_pressed(vk_anykey)
 		case vk_f8: ongod = !ongod;	
 		break;
 		
-		case vk_f6: room_goto(rm_stageresult);
+		case vk_f9: on_v =! on_v;
 		break;
+		
+		/*
+		case vk_f9:
+		if !instance_exists(sys_record)
+			instance_create_layer(0,0,L_SYS, sys_record);
+		else
+			instance_destroy(sys_record);
+		break;
+		*/
+		
+		//case vk_f6: room_goto(rm_stageresult);
+		//break;
 
-		case vk_f10: room_goto(rm_soundtest);
-		break;
+		//case vk_f10: room_goto(rm_soundtest);
+		//break;
 		
 		case vk_f11: room_goto(rm_editroom_dragun);
 		break;
 	}
 }
-
-/*if keyboard_check_pressed(vk_f9)
-{
-	if !instance_exists(sys_record)
-		instance_create_layer(0,0,L_SYS, sys_record);
-	else
-		instance_destroy(sys_record);
-}*/
 
 if on_customview
 {

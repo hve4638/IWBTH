@@ -1,4 +1,6 @@
-#macro VERSION 20191029 
+//Project creation date : 2019/10/29
+
+#macro VERSION 20191029
 #macro CONFIG_DIRECTORY "config"
 #macro SAVE_DIRECTORY "data"
 #macro SCRIPT_DIRECTORY "script"
@@ -9,6 +11,7 @@
 #macro DRAGUNATTACKCSV_DIRECTORY "dragunattack"
 
 #macro L_SYS "InsSystem"
+#macro L_TRIG "InsTrigger"
 #macro L_BLOCK "TileBlock"
 #macro L_PLAYER "Ins"
 #macro L_ABOVE "InsAbove"
@@ -22,7 +25,7 @@
 #macro view_w 1088
 #macro view_h 608
 
-#macro DEFAULT_INSTANTPLAY true
+#macro DEFAULT_INSTANTPLAY false
 #macro INSTANTPLAY_SAVESLOT 1
 #macro DEFAULT_COUTSHOW false
 #macro DEFAULT_FPS 50
@@ -30,7 +33,8 @@
 #macro RMDATA_STAGE 0
 #macro RMDATA_SOUND 1
 #macro RMDATA_SOUNDLOOP 2
-#macro RMDATA_WIDTH 3
+#macro RMDATA_INGAME 3
+#macro RMDATA_WIDTH 4
 
 #macro onlyexist if 1 < instance_number(object_index)\
 {\

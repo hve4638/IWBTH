@@ -224,6 +224,16 @@ switch(receiveidx)
 		event_user(0);
 	break;
 	
+	case 40:
+		for(var i = 0; i < arr_size(map_arr); i++)
+		{
+			scr_dctrl_mload(i);
+			scr_dctrl_msave(i);
+		}
+		
+		event_user(0);
+	break;
+	
 	case 20:
 		var list = ds_list_create();
 		var cnt = arr_size(map_arr);
@@ -265,7 +275,8 @@ switch(receiveidx)
 		cout("load complete");
 		
 		current_num = 0;
-		scr_dctrl_mload(0);
+		
+		//scr_dctrl_mload_old(0);
 		scr_dctrl_mupdate();
 		event_user(0);
 	break;

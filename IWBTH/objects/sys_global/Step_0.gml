@@ -22,8 +22,6 @@ intro_alpha = clamp(intro_alpha, 0, 1.0);
 if intro_alpha == 1.0
 	intro_time = max(0, intro_time-1);
 
-todo_step();
-
 if 0 < fade_idx
 {
 	fade_alpha = value_merge(fade_alpha_p, fade_alpha_to, 1 - fade_idx/fade_time);
@@ -35,6 +33,8 @@ else if fade_idx == 0
 	fade_alpha = fade_alpha_to;
 	fade_idx = -1;
 }
+
+todo_step();
 
 if keyboard_check_pressed(vk_escape)
 	game_restart();

@@ -4,7 +4,11 @@ if onplayer
 {
 	if button_press(Input.up)
 	{
+		enable_keyinput(false);
+		alarm_trigger(100, enable_keyinput, true, true);
+
 		room_goto_alarm(goto, 100);
+		save_room(goto);
 		
 		global_fade_set(1.0, 75, c_white);
 		

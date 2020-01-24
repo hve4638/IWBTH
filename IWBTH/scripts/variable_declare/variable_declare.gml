@@ -5,6 +5,8 @@ global.record = load_json(RECORD_DIRECTORY);
 global.csv_dragun = load_csv(DRAGUNCSV_DIRECTORY);
 global.csv_dragunattack = load_csv(DRAGUNATTACKCSV_DIRECTORY);
 
+global.debuglevel = 0;
+
 globalvar roomdata;
 roomdata = ds_grid_create(RMDATA_WIDTH, room_count);
 
@@ -13,9 +15,11 @@ for(var i = 0; i < room_count; i++)
 	roomdata[# RMDATA_SOUND, i] = no;
 	roomdata[# RMDATA_SOUNDLOOP, i] = false;
 	roomdata[# RMDATA_STAGE, i] = 0;
+	roomdata[# RMDATA_INGAME, i] = 0;
 }
 
-var snd, rm, sndloop, stage,
+
+var snd, rm, sndloop, stage, timer,
 var w, h;
 w = ds_grid_width(global.csv_room);
 h = ds_grid_height(global.csv_room);
@@ -23,6 +27,7 @@ rm = ds_grid_value_x(global.csv_room, 0, 0, w - 1, 0, "#ROOM");
 snd = ds_grid_value_x(global.csv_room, 0, 0, w - 1, 0, "#SOUND");
 sndloop = ds_grid_value_x(global.csv_room, 0, 0, w - 1, 0, "#SOUNDLOOP");
 stage = ds_grid_value_x(global.csv_room, 0, 0, w - 1, 0, "#STAGE");
+timer = ds_grid_value_x(global.csv_room, 0, 0, w - 1, 0, "#INGAME");
 
 for(var i = 0; i < h; i++)
 {
@@ -33,6 +38,7 @@ for(var i = 0; i < h; i++)
 	roomdata[# RMDATA_SOUND, idx] = asset_get_index(global.csv_room[# snd, i]);
 	roomdata[# RMDATA_SOUNDLOOP, idx] = global.csv_room[# sndloop, i];
 	roomdata[# RMDATA_STAGE, idx] = global.csv_room[# stage, i];
+	roomdata[# RMDATA_INGAME, idx] = global.csv_room[# timer, i];
 }
 
 global.strpreview_cnt = 15;
@@ -69,3 +75,4 @@ each_volum[? snd_dash] = 0.75;
 each_volum[? snd_jump] = 0.75;
 each_volum[? snd_jump2] = 0.75;
 each_volum[? snd_magic_blast2] = 0.75;
+each_volum[? snd_dragungunshoot] = 0.8;

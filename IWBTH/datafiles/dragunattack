@@ -19,3 +19,4 @@ spr_dragun_gun_front_attack,1,13,47,0,0
 spr_dragun_rpg_fire,x,27,58,,
 spr_dragun_rpg_fire,2,27,133,3,0
 spr_dragun_head_shoot,16,50,180,2,0
+spr_dragun_wings_flap,3,0,0,10,0

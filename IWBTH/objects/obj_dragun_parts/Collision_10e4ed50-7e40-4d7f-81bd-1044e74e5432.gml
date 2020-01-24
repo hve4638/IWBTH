@@ -1,14 +1,14 @@
-if dealto == noone
+if dealto == noone || !dealto.onhealth
 	exit;
 
 var d = other.damage;
 with(dealto)
 {
-	if !onlastpattern && hp/maxhp <= 0.3
+	if !onlastpattern && hp/maxhp <= lp_enterp
 		break;
 
 	if !onlastpattern
-		hp = max(hp - d * armor, maxhp * 0.3);
+		hp = max(hp - d * armor, maxhp * lp_enterp);
 	else
 		hp = hp - d * armor;
 
@@ -22,8 +22,8 @@ with(dealto)
 		isdie = true;
 
 		todo_stop();
-		sys_global.fade_alpha = 1.0;
-		global_fade_set(0, 150, c_white);
+		global_fade_set(1.0, 0, c_white);
+		alarm_trigger(40, global_fade_set, [0, 150, c_white]);
 		
 		with(obj_danmaku)
 			instance_destroy();

@@ -1,4 +1,4 @@
-maxhp = 340;
+maxhp = 300;
 hp = maxhp;
 armor = 1;
 drawhp = 0;
@@ -24,10 +24,12 @@ smoothstruct = true;
 
 shoottype = 0;
 onlastpattern = false;
+lp_enterp = 0.25;
+lp_pimg = -1;
 lp_delay = 0;
-lp_pos = room_width div 2 + irandom_range(-130, 130);
+lp_pos = room_width div 2 + irandom_range(-400, 400);
 lp_time = 0;
-lp_force = 32;
+lp_force = 48;
 lp_spd = 1;
 lp_sign = 1;
 
