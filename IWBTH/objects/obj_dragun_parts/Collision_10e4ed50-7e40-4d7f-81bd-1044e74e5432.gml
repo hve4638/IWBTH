@@ -23,7 +23,7 @@ with(dealto)
 
 		todo_stop();
 		global_fade_set(1.0, 0, c_white);
-		alarm_trigger(40, global_fade_set, [0, 150, c_white]);
+		alarm_trigger(35, global_fade_set, [0, 70, c_white]);
 		
 		with(obj_danmaku)
 			instance_destroy();

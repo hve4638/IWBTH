@@ -31,7 +31,7 @@ for(var i = 0; i < DragunParts.last; i++)
 	ins.setx = x + value_merge(m[? "x"], m2[? "x"], v) * image_xscale;
 	ins.sety = y + value_merge(m[? "y"], m2[? "y"], v) * image_yscale;
 	ins.y = ins.sety;
-	ins.sprite_index = m[? "img"];
+	ins.sprite_index = asset_get_index(global.previous_sprite[? m[? "img"]]);
 	
 	if !(head_free && i <= DragunParts.neck5)
 	{
