@@ -25,11 +25,14 @@ if escape_time < escape_idx
 
 	if audio_is_playing(snd_escape_charge)
 		audio_stop_sound(snd_escape_charge);
-		
+
 	particle_emit(Particle.escape_try2,x-20,x+20,bbox_bottom-6,bbox_bottom+3, 75);
 	global_fade_set(1.0, 75, c_white);
 	sfx(snd_escape_act);
-	
+
+	sys_global.canrestart = false
+	save_room(rm_hub);
+
 	instance_destroy();
 	exit;
 }

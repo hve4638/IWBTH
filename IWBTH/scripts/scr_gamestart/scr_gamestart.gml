@@ -1,8 +1,8 @@
-sys_global.canrestart = true;
-sys_global.ontimer = true;
+sys_global.alarm[0] = 50 * 60 * 5;
 
 if !save_integrity()
 	scr_save_def();
+
 
 scr_save_import();
 load();

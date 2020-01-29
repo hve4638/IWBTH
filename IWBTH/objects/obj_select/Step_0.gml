@@ -40,11 +40,13 @@ if onmouse && mouse_check_button_pressed(mb_left)
 		arr[@ idx] = !arr[@ idx];
 	else if type == Select.game
 	{
-		global_fade_set(1.0, 50, c_black);
+		global_fade_set(1.0, 75, c_black);
 		save_idx = save_num;
+		with(sys_global)
+			audio_sound_gain(bgm_p, 0, 1750);
 		
 		with(instance_create_layer(0, 0, L_SYS, obj_gamestart))
-			alarm[0] = 50;
+			alarm[0] = 110;
 
 		with(parent_title)
 			enable = false;

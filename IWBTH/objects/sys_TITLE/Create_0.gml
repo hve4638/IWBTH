@@ -23,8 +23,10 @@ arr[TitleArray.soundvolum] = config_sound  * 100;
 arr[TitleArray.resolution] = resolution_index;
 arr[TitleArray.ui] = config_ui;
 
-
-//global_fade_set(1.0, c_black);
+blur_alpha = 0.5;
+toblur = 0.5;
+global_fade_set(1.0, 0, c_black);
+global_fade_set(0.0, 75, c_black);
 //global_fade_add(-0.02);
 
 event_user(0);

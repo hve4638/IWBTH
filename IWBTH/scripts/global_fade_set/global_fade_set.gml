@@ -9,10 +9,19 @@ with(sys_global)
 	time_ = argument[1];
 	col = argument_count > 2 ? argument[2] : fade_color;
 
-
-	fade_alpha_to = set;
-	fade_alpha_p = fade_alpha;
-	fade_idx = time_;
-	fade_time = time_;
-	fade_color = col;
+	if time_ == 0
+	{
+		fade_alpha = set;
+		fade_color = col;
+		fade_idx = 0;
+		fade_time = 0;
+	}
+	else
+	{
+		fade_alpha_to = set;
+		fade_alpha_p = fade_alpha;
+		fade_idx = time_;
+		fade_time = time_;
+		fade_color = col;
+	}
 }

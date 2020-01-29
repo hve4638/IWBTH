@@ -25,7 +25,7 @@
 #macro view_w 1088
 #macro view_h 608
 
-#macro DEFAULT_INSTANTPLAY false
+#macro DEFAULT_INSTANTPLAY true
 #macro INSTANTPLAY_SAVESLOT 1
 #macro DEFAULT_COUTSHOW false
 #macro DEFAULT_FPS 50
@@ -35,6 +35,8 @@
 #macro RMDATA_SOUNDLOOP 2
 #macro RMDATA_INGAME 3
 #macro RMDATA_WIDTH 4
+
+#macro c_jsab make_color_rgb(251,30,110);
 
 #macro onlyexist if 1 < instance_number(object_index)\
 {\

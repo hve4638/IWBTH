@@ -2,7 +2,7 @@
 ///@argu dir
 if (!instance_exists(obj_player) || is_invincible())
 {
-	cout("!감나빗");
+	//cout("!감나빗");
 	return false;
 }
 

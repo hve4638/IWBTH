@@ -36,6 +36,7 @@ if keyboard_check_pressed(vk_anykey)
 		
 		case vk_f9: on_v =! on_v;
 		break;
+
 		
 		/*
 		case vk_f9:
@@ -53,6 +54,11 @@ if keyboard_check_pressed(vk_anykey)
 		//break;
 		
 		case vk_f11: room_goto(rm_editroom_dragun);
+		break;
+		
+		case vk_f12:
+			global.debuglevel = 0;
+			instance_destroy();
 		break;
 	}
 }

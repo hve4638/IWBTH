@@ -1,1 +1,1 @@
-goto = rm_boss_dragun;
+goto = rm_boss_jsab;

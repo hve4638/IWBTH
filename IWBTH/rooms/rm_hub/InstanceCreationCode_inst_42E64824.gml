@@ -1,2 +1,2 @@
 goto = rm_tutorial;
-enteridx = EnterText.enter;
+//enteridx = EnterText.enter;

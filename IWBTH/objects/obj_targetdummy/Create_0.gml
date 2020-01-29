@@ -7,7 +7,7 @@ image_index = 0;
 image_speed = 0;
 
 
-show_dps = true;
+show_dps = false;
 takenlist = list_create();
 hit = 0;
 dps = 0;
