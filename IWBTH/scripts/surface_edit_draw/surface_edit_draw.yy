@@ -1,8 +1,8 @@
 {
-    "id": "56162d8d-fe6b-40d7-b7ca-9ee44f24c6b7",
+    "id": "fbd7ab3f-7c82-4003-a16e-7b65fe18e680",
     "modelName": "GMScript",
     "mvc": "1.0",
-    "name": "script233",
+    "name": "surface_edit_draw",
     "IsCompatibility": false,
     "IsDnD": false
 }

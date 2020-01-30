@@ -455,6 +455,14 @@
             }
         },
         {
+            "Key": "1126c777-1d2b-425d-866f-477f7e1d32b0",
+            "Value": {
+                "id": "bf6612e0-3eca-43c9-aab0-dbcc4286aca1",
+                "resourcePath": "scripts\\surface_edit_draw_self\\surface_edit_draw_self.yy",
+                "resourceType": "GMScript"
+            }
+        },
+        {
             "Key": "11a9cc77-1911-49c1-be9f-e1f9ebc6beff",
             "Value": {
                 "id": "7e9b22e2-aed2-4046-93af-5d12caab4920",
@@ -2252,14 +2260,6 @@
                 "id": "2afcaf8b-62bd-4ecf-aa4c-cc9d2e02d4da",
                 "resourcePath": "sprites\\spr_intro_providience\\spr_intro_providience.yy",
                 "resourceType": "GMSprite"
-            }
-        },
-        {
-            "Key": "56162d8d-fe6b-40d7-b7ca-9ee44f24c6b7",
-            "Value": {
-                "id": "9549284e-786a-4dde-9a62-4722d571e059",
-                "resourcePath": "scripts\\script233\\script233.yy",
-                "resourceType": "GMScript"
             }
         },
         {
@@ -5047,6 +5047,14 @@
             }
         },
         {
+            "Key": "bbb53e08-0122-4622-ad4d-32a1d80fb7cc",
+            "Value": {
+                "id": "4a5b8389-d5dc-420c-be98-283605cd271c",
+                "resourcePath": "views\\bbb53e08-0122-4622-ad4d-32a1d80fb7cc.yy",
+                "resourceType": "GMFolder"
+            }
+        },
+        {
             "Key": "bc84b9fe-a07d-4fe6-826f-ee720dea71fb",
             "Value": {
                 "id": "78d2948d-0206-4b8d-b3c4-74f69f42ffd3",
@@ -5460,6 +5468,14 @@
                 "id": "e224cabc-b02d-4cb7-877a-a6c346e12f0e",
                 "resourcePath": "views\\c96956ac-1b62-4f2c-b00b-5fa229292b04.yy",
                 "resourceType": "GMFolder"
+            }
+        },
+        {
+            "Key": "c9e2abb3-0f26-4f24-8571-3cde7f517471",
+            "Value": {
+                "id": "5c7b2193-02c1-4e25-8924-d3aa332b4778",
+                "resourcePath": "scripts\\surface_edit_color\\surface_edit_color.yy",
+                "resourceType": "GMScript"
             }
         },
         {
@@ -6639,6 +6655,14 @@
             }
         },
         {
+            "Key": "fbd7ab3f-7c82-4003-a16e-7b65fe18e680",
+            "Value": {
+                "id": "441abdd2-2cd8-4b5b-a758-8ac7dcc0fc4c",
+                "resourcePath": "scripts\\surface_edit_draw\\surface_edit_draw.yy",
+                "resourceType": "GMScript"
+            }
+        },
+        {
             "Key": "fc06c2ef-30f6-4d76-a74c-919cf1dc3316",
             "Value": {
                 "id": "cf7e2529-9af3-4d81-a6e8-adb86c5f00bc",
@@ -6969,9 +6993,11 @@
         "9a8c31ec-74f5-4421-88d2-89d9379ae6ad",
         "2cd2cd82-37f8-42c3-9e53-fb13d7dc1205",
         "996607eb-92ac-4471-b6a7-f67796837879",
-        "56162d8d-fe6b-40d7-b7ca-9ee44f24c6b7",
         "bb7625b0-cd5e-4c9e-8813-ed6105c4e75f",
-        "b82eab48-e4f0-49da-9b3e-df194825741b"
+        "b82eab48-e4f0-49da-9b3e-df194825741b",
+        "fbd7ab3f-7c82-4003-a16e-7b65fe18e680",
+        "1126c777-1d2b-425d-866f-477f7e1d32b0",
+        "c9e2abb3-0f26-4f24-8571-3cde7f517471"
     ],
     "tutorial": ""
 }

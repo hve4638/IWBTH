@@ -13,8 +13,6 @@ with(sys_global)
 	{
 		fade_alpha = set;
 		fade_color = col;
-		fade_idx = 0;
-		fade_time = 0;
 	}
 	else
 	{

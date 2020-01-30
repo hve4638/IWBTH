@@ -139,6 +139,20 @@ if keyboard_check(vk_control)
 	}
 }
 
+if mouse_check_button_pressed(mb_right)
+{
+	with(instance_create_layer(mouse_x, 0, L_ABOVE, obj_jsablaser))
+	{
+		create_type = JsabCreate.piston;
+		destroy_type = JsabDestroy.piston;
+		length = 32 * 24;
+		thick = 2;
+		create_time = 5;
+		white_time = 3;
+		white_start = 5;
+	}
+}
+
 if on_teleport && mouse_check_button(mb_left)
 {
 	with(obj_player)

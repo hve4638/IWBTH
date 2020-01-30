@@ -1,3 +1,4 @@
+life_create(50);
 isfade = true;
 alpha_variety = 0;
 scale_variety = 0;
@@ -10,8 +11,8 @@ color_a = 1;
 alpha = 1;
 scale = 1;
 
-life_idx = 0;
-life = 50;
+echo_surf = no;
+echo_o = [0, 0];
 
 u_color = shader_get_uniform(shd_color, "u_color");
 /*
