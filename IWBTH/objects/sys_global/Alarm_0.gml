@@ -5,5 +5,5 @@ if 0 < save_idx
 	cout("save complete!");
 }
 
-alarm[0] = 50 * 60 * 5;
+alarm[0] = DEFAULT_FPS * 60;
 

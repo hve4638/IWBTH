@@ -9,3 +9,4 @@ if 0 < white_time
 draw_self_correction();
 
 gpu_set_fog(0, 0, 0, 0);
+
