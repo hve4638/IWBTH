@@ -5,6 +5,7 @@ enum JsabCreate {
 	piston,
 	laser,
 	bigger,
+	smaller,
 }
 
 enum JsabDestroy {
@@ -19,7 +20,7 @@ thick = image_xscale;
 
 image_xscale = 1;
 image_yscale = 1;
-
+image_alpha = 1;
 white_time = 2;
 white_start = 5;
 

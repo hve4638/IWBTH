@@ -20,6 +20,11 @@ if time_idx <= create_time
 			image_yscale = length * p;
 		break;
 		
+		case JsabCreate.smaller:
+			image_xscale = thick * (2 - p);
+			image_yscale = length * (2 - p);
+		break;
+		
 		default:
 			image_xscale = thick;
 			image_yscale = length;

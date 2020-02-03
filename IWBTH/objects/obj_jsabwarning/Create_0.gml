@@ -3,7 +3,7 @@ life_create(30);
 alphap = 0;
 alphato = 0.3;
 
-destroy_ins = obj_jsabobstacle;
+destroy_ins = noone;//obj_jsabobstacle;
 ins_createtype = JsabCreate.laser;
 ins_destroytype = JsabDestroy.laser;
 ins_createtime = 3;

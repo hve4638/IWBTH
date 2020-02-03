@@ -37,6 +37,7 @@ if keyboard_check_pressed(vk_anykey)
 		case vk_f9: on_v =! on_v;
 		break;
 
+
 		
 		/*
 		case vk_f9:
@@ -53,8 +54,8 @@ if keyboard_check_pressed(vk_anykey)
 		//case vk_f10: room_goto(rm_soundtest);
 		//break;
 		
-		case vk_f11: room_goto(rm_editroom_dragun);
-		break;
+		//case vk_f11: room_goto(rm_editroom_dragun);
+		//break;
 		
 		case vk_f12:
 			global.debuglevel = 0;
@@ -148,7 +149,12 @@ if mouse_check_button_pressed(mb_right)
 		create_time = 3;
 		destroy_time = 3;
 	}
-	screenshake(4, 1);
+	//screenshake(4, 1);
+}
+
+if mouse_check_button_pressed(mb_left)
+{
+	instance_create_layer(mouse_x, mouse_y, L_ABOVE, obj_jsabboom);
 }
 
 if on_teleport && mouse_check_button(mb_left)
