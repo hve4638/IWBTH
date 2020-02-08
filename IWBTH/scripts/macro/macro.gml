@@ -1,6 +1,6 @@
 //Project creation date : 2019/10/29
-
 #macro VERSION 20191029
+#macro VERSION_SHOW "0.1"
 #macro CONFIG_DIRECTORY "config"
 #macro SAVE_DIRECTORY "data"
 #macro SCRIPT_DIRECTORY "script"

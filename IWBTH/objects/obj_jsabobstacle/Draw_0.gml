@@ -12,4 +12,4 @@ draw_self_correction();
 
 gpu_set_fog(0, 0, 0, 0);
 
-cout("!: ", image_xscale, image_yscale);
+//cout("!: ", image_xscale, image_yscale);

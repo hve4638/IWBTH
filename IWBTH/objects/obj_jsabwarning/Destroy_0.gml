@@ -1,6 +1,6 @@
 if destroy_ins == noone
 	exit;
-
+//cout(":??:", id, thick, length);
 with(instance_create_layer(x, y, L_ABOVE, destroy_ins))
 {
 	life_create(other.ins_life);
@@ -11,4 +11,7 @@ with(instance_create_layer(x, y, L_ABOVE, destroy_ins))
 	destroy_time = other.ins_destroytime;
 	thick = other.thick;
 	length = other.length;
+	//cout("::::", id, thick, length);
+	
+	image_angle = other.image_angle;
 }

@@ -5,12 +5,19 @@ for(var i = 0; i < size; i++)
 	if tg_on[i]
 	{
 		var idx = tg_idx[i]++;
-		var scr = asset_get_index("scr_jsabtg" + string(i));
-		
+		var scr = asset_get_index("scr_jsabtl_" + string(i));
+
 		if script_exists(scr)
-			script_execute(scr, idx);
+		{
+			var f = script_execute(scr, idx);
+
+			if f == no
+				tg_on[i] = false;
+		}
 	}
 }
 
-if keyboard_check_pressed(ord("Y"))
-	tg_on[0] = true;
+if keyboard_check_pressed(vk_space)
+{
+	timeline(tl_jsab_core);
+}

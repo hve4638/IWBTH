@@ -9,6 +9,7 @@ if keyboard_check_pressed(vk_anykey)
 		break;
 
 		case ord("U"):
+		break;
 			with(instance_create_layer(0, 0, L_SYS, obj_trigger))
 			{
 				trigger_condition = TriggerCondition.always;
@@ -140,7 +141,7 @@ if keyboard_check(vk_control)
 	}
 }
 
-if mouse_check_button_pressed(mb_right)
+if mouse_check_button_pressed(mb_right) && 0
 {
 	with(instance_create_layer(mouse_x, mouse_y, L_ABOVE, obj_jsabblock))
 	{
@@ -152,7 +153,7 @@ if mouse_check_button_pressed(mb_right)
 	//screenshake(4, 1);
 }
 
-if mouse_check_button_pressed(mb_left)
+if mouse_check_button_pressed(mb_left) && 0
 {
 	instance_create_layer(mouse_x, mouse_y, L_ABOVE, obj_jsabboom);
 }

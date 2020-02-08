@@ -11,8 +11,7 @@ h = ds_grid_height(grid);
 if ds_grid_value_exists(grid, 0, 0, 0, h - 1, lore)
 {
 	var i = ds_grid_value_y(grid, 0, 0, 0, h - 1, lore);
-	
-	///cout("csv_get return ", str_preview(grid[# ind, i]), "  (", lore, ")");
+
 	return grid[# ind, i];
 }
 

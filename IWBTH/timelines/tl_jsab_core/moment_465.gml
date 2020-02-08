@@ -1,0 +1,2 @@
+scr_jsabtl_c0(Player.x, Player.y, 90, 45, 40);
+scr_jsabtl_c0(Player.x, Player.y, 0, 60, 25);

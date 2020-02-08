@@ -35,7 +35,7 @@ if time_idx <= create_time
 if time_idx >= life - destroy_time
 {
 	var p = 1 - clamp((time_idx - (life - destroy_time)) / destroy_time, 0, 1);
-	cout("d: ", p);
+	//cout("d: ", p);
 	switch(destroy_type)
 	{
 		case JsabDestroy.piston:
