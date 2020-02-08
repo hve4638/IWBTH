@@ -1,5 +1,14 @@
 life_step();
 
+if on_to
+{
+	x += round((tox - x) / tospd);
+	y += round((toy - y) / tospd);
+
+	if point_distance(x, y, tox, toy) < 1
+		on_to = false;
+}
+
 if sparkle_time > 0
 {
 	var n = floor(sparkle_time);

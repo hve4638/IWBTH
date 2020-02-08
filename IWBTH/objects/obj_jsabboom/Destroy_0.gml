@@ -1,6 +1,6 @@
 var dir = point_direction(x, y, Player.x, Player.y);
 
-for(var i = 0; i < 360; i += 20)
+for(var i = 0; i < 360; i += 360/30)
 {
 	var ins = danmaku_create(x, y, dir + i, 6);
 	with(ins)

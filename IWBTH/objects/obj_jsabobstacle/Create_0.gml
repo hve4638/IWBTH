@@ -15,6 +15,8 @@ enum JsabDestroy {
 	smaller,
 }
 
+add_angle = 0;
+
 length = image_yscale;
 thick = image_xscale;
 

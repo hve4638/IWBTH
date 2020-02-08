@@ -8,3 +8,4 @@ ins_destroytime = 3;
 ins_life = 50;
 
 image_alpha = 0;
+

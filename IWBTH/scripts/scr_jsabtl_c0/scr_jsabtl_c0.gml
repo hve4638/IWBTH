@@ -11,7 +11,9 @@ t = argument[3];
 it = argument_count > 4 ? argument[4] : 25;
 
 for(var i = 0; i < 2; i++)
-	with(instance_create_layer(xx, yy, L_BELOW, obj_jsabwarning_laser))
+{
+	insarr[i] = instance_create_layer(xx, yy, L_BELOW, obj_jsabwarning_laser);
+	with(insarr[i])
 	{
 		life_create(t);
 		alphap = 0;
@@ -26,3 +28,5 @@ for(var i = 0; i < 2; i++)
 		length = image_yscale;
 		image_angle = dir + i * 180;
 	}
+}
+return insarr;
