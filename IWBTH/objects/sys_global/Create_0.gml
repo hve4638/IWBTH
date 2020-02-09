@@ -45,6 +45,7 @@ savedata[3] = -1;
 canrestart = false;
 vesion_p = 0;
 bgm_p = noone;
+bgm_ind = no;
 
 enablekeyinput = true;
 

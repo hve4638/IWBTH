@@ -17,8 +17,13 @@ with(sys_global)
 		if audio_exists(nbgm)
 		{
 			if !audio_is_playing(nbgm)
-				audio_play_sound(nbgm,0,loop);
+				bgm_ind = audio_play_sound(nbgm,0,loop);
+
 			audio_sound_gain(nbgm, volum_music, 0);
 		}
+		
+		return bgm_ind;
 	}
 }
+
+return no;

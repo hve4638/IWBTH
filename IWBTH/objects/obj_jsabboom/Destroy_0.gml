@@ -1,3 +1,6 @@
+if !onboom
+	exit;
+
 var dir = point_direction(x, y, Player.x, Player.y);
 
 for(var i = 0; i < 360; i += 360/30)
