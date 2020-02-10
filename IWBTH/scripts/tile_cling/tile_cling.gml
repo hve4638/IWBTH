@@ -1,4 +1,4 @@
-///@desc tile_meeting
+///@desc tile_cling
 ///@param w
 ///@param h
 var w, h, iscol;

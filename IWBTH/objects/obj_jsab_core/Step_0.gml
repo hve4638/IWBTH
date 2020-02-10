@@ -24,8 +24,16 @@ if timeline_running && !instance_exists(obj_player)
 
 if keyboard_check_pressed(vk_space)
 {
+	if 0 //|| 1
+	{
 	var n = bgm(snd_core, 0);
 	audio_sound_set_track_position(n, 750 / 50);
-	
 	timeline(tl_jsab_core, 750);
+	}
+	else
+	timeline(tl_jsab_core);
 }
+
+
+if keyboard_check_pressed(ord("F"))
+	scr_jsabtl_c3(6, 40);

@@ -1,5 +1,30 @@
 var bbox_side;
 
+if place_meeting(x + hspd, y + vspd, obj_block)
+{
+	if hspd != 0 && place_meeting(x + hspd, y, obj_block)
+	{
+		x = round(x);
+		while(place_meeting(x, y, obj_block))
+			x += sign(hspd);
+		x -= sign(hspd);
+		
+		hspd = 0;
+	}
+
+	if vspd != 0 && place_meeting(x, y + vspd, obj_block)
+	{
+		y = round(y);
+		while(place_meeting(x, y, obj_block))
+			y += sign(vspd);
+		y -= sign(vspd);
+		
+		if vspd > 0
+			onground = true;
+		vspd = 0;
+	}
+}
+
 bbox_side = vspd > 0 ? bbox_bottom : bbox_top;
 if tilemap_get_at_pixel(tile_collision, bbox_left, bbox_side + vspd)
 || tilemap_get_at_pixel(tile_collision, bbox_right, bbox_side + vspd)

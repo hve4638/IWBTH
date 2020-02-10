@@ -7,6 +7,9 @@ w = argument_count > 0 ? round(argument[0]) : 0;
 h = argument_count > 1 ? round(argument[1]) : 0;
 iscol = false;
 
+if place_meeting(x + w, y + h, obj_block)
+	iscol = true;
+
 if w != 0
 {
 	bbox_side = w > 0 ? bbox_right : bbox_left;
