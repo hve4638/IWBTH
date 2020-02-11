@@ -695,6 +695,14 @@
             }
         },
         {
+            "Key": "186a47d3-5f8a-468c-b0fc-459d5c187499",
+            "Value": {
+                "id": "f4e400df-a5c1-419b-bd98-8c765dbb92de",
+                "resourcePath": "scripts\\scr_jsabtl_c5\\scr_jsabtl_c5.yy",
+                "resourceType": "GMScript"
+            }
+        },
+        {
             "Key": "19bfdff2-8cd9-43f5-ae8e-a771fe928898",
             "Value": {
                 "id": "f25d0368-5f0c-4494-a03f-6443a6f35aa5",
@@ -3567,14 +3575,6 @@
             }
         },
         {
-            "Key": "84e054d5-36a0-425b-b92c-9c3864996692",
-            "Value": {
-                "id": "7f17bafe-ca86-4690-a61b-7605ef216102",
-                "resourcePath": "objects\\object133\\object133.yy",
-                "resourceType": "GMObject"
-            }
-        },
-        {
             "Key": "84f6ad12-bffa-43d7-b319-15e9dcf54262",
             "Value": {
                 "id": "30470715-ba8e-4d63-a865-2eec76d8ad00",
@@ -4940,14 +4940,6 @@
                 "id": "4a0dd3ba-542d-43b0-92a8-d675c72e288f",
                 "resourcePath": "views\\b0f1f28c-e7bf-4092-82b6-67c662b5bfe3.yy",
                 "resourceType": "GMFolder"
-            }
-        },
-        {
-            "Key": "b143013b-de1b-4fda-8500-061d1c4c90f0",
-            "Value": {
-                "id": "2af412d7-3810-47e1-bbfc-53a874c81d88",
-                "resourcePath": "objects\\object132\\object132.yy",
-                "resourceType": "GMObject"
             }
         },
         {
@@ -6639,6 +6631,14 @@
             }
         },
         {
+            "Key": "f0a816b9-052a-4421-ab6e-fbd8a488fbb4",
+            "Value": {
+                "id": "ae5e1eee-bd69-4471-8391-d8e712a72d94",
+                "resourcePath": "scripts\\scr_jsabtl_c4\\scr_jsabtl_c4.yy",
+                "resourceType": "GMScript"
+            }
+        },
+        {
             "Key": "f0f90da0-25b1-454f-a97d-fc6643c0532e",
             "Value": {
                 "id": "54136eac-b142-404f-88b8-526df31f3ecd",
@@ -7257,6 +7257,8 @@
         "da0446e1-e186-43b2-af1c-770e7949e611",
         "535b842f-3b53-48c0-9111-1f6d90ffd7ba",
         "457a9ab2-188c-4cff-8586-7171fcb142a0",
+        "f0a816b9-052a-4421-ab6e-fbd8a488fbb4",
+        "186a47d3-5f8a-468c-b0fc-459d5c187499",
         "ba11895d-f7dd-45dc-bfa0-68eec487d575",
         "14c3feb3-f6b9-4f5a-8697-527841732b0f",
         "d0e55338-6d6a-4394-a370-a5c124d64e57",

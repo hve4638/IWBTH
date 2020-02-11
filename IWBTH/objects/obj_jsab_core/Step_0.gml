@@ -24,11 +24,12 @@ if timeline_running && !instance_exists(obj_player)
 
 if keyboard_check_pressed(vk_space)
 {
-	if 0 //|| 1
+	if 0 || 1
 	{
 	var n = bgm(snd_core, 0);
-	audio_sound_set_track_position(n, 750 / 50);
-	timeline(tl_jsab_core, 750);
+	var sec = 1035;
+	audio_sound_set_track_position(n, sec / 50);
+	timeline(tl_jsab_core, sec);
 	}
 	else
 	timeline(tl_jsab_core);

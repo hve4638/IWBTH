@@ -1,6 +1,6 @@
 var xx, yy;
-var d1 = dsin(time_idx * 1.5);
-var d2 = dsin(180 + time_idx * 1.5);
+var d1 = dsin(time_idx * 1.75);
+var d2 = dsin(180 + time_idx * 1.75);
 
 var ty = y;
 y += dsin(time_idx * 2) * 3;
