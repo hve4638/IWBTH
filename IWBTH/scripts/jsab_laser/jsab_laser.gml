@@ -6,7 +6,7 @@
 var xx, yy, dir, t, l;
 xx = argument[0];
 yy = argument[1];
-dir = argument[2];
+dir = argument[2] + 90;
 t = argument[3];
 l = argument[4];
 

@@ -27,7 +27,7 @@ if keyboard_check_pressed(vk_space)
 	if 0 || 1
 	{
 	var n = bgm(snd_core, 0);
-	var sec = 1035;
+	var sec = 1450;
 	audio_sound_set_track_position(n, sec / 50);
 	timeline(tl_jsab_core, sec);
 	}

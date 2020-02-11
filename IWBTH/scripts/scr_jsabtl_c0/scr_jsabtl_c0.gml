@@ -6,7 +6,7 @@
 var xx, yy, dir, t, it;
 xx = argument[0];
 yy = argument[1];
-dir = argument[2] - 90;
+dir = argument[2];
 t = argument[3];
 it = argument_count > 4 ? argument[4] : 25;
 

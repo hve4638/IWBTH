@@ -20,3 +20,5 @@ cv_px = 0;
 cv_py = 0;
 cv_pw = 0;
 cv_ph = 0;
+
+time_idx = 0;

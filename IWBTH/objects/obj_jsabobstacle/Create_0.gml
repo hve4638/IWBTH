@@ -6,6 +6,7 @@ enum JsabCreate {
 	laser,
 	bigger,
 	smaller,
+	bounce,
 }
 
 enum JsabDestroy {
@@ -20,8 +21,13 @@ add_angle = 0;
 length = image_yscale;
 thick = image_xscale;
 
-image_xscale = 1;
-image_yscale = 1;
+bounce_min = 0;
+bounce_max = 0;
+bounce_index = 0;
+bounce_spd = 0;
+
+image_xscale = 0;
+image_yscale = 0;
 image_alpha = 1;
 white_time = 2;
 white_start = 5;

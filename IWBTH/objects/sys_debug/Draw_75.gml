@@ -41,4 +41,6 @@ if show_save
 draw_set_reset();
 draw_set_color(c_green);
 draw_text(0, 0, str);
+
+draw_text(50, 50, strmerge(floating(time_idx, 50), " ", time_idx)); time_idx++;
 draw_set_reset();

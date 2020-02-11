@@ -1463,6 +1463,14 @@
             }
         },
         {
+            "Key": "34021e2c-5851-4464-8227-472c0020d169",
+            "Value": {
+                "id": "44eedc3b-c8f9-4061-b580-63a9310f789e",
+                "resourcePath": "scripts\\floating\\floating.yy",
+                "resourceType": "GMScript"
+            }
+        },
+        {
             "Key": "340c975b-a1f1-4c90-bbaf-05e02d48cb01",
             "Value": {
                 "id": "3ba42e2a-d964-4230-b61c-0e5ce70bad13",
