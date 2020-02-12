@@ -21,6 +21,8 @@ for(var i = 0; i < room_count; i++)
 	roomdata[# RMDATA_INGAME, i] = 0;
 }
 
+pause = false;
+pause_surf = -1;
 
 var snd, rm, sndloop, stage, timer,
 var w, h;

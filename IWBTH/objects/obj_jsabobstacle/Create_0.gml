@@ -21,10 +21,11 @@ add_angle = 0;
 length = image_yscale;
 thick = image_xscale;
 
-bounce_min = 0;
-bounce_max = 0;
+onbounce = false;
+bounce_cycle = 50;
+bounce_range = 0.7;
 bounce_index = 0;
-bounce_spd = 0;
+bounce_speed = 1;
 
 image_xscale = 0;
 image_yscale = 0;

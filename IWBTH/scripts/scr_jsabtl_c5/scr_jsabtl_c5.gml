@@ -15,3 +15,5 @@ for(var i = 0; i < 360; i += 360/18)
 		image_yscale = 0.75;
 	}
 }
+
+screenshake(6, 1);

@@ -1,4 +1,4 @@
-if keyboard_check_pressed(ord("P"))
+if keyboard_check_pressed(ord("I"))
 	onRec = !onRec;
 
 if keyboard_check_pressed(ord("O"))

@@ -13,3 +13,6 @@ for(var i = 0; i < 360; i += 360/30)
 		image_yscale = 0.24;
 	}
 }
+screenshake(5, 1);
+//global_fade_set(0.4, 0, c_white);
+//global_fade_set(0, 2, c_white);

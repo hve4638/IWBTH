@@ -38,7 +38,22 @@ if keyboard_check_pressed(vk_anykey)
 		case vk_f9: on_v =! on_v;
 		break;
 
-
+		case ord("P"):
+			pause = !pause;
+			
+			if pause
+			{				
+				//application_surface_enable(false);
+				instance_deactivate_all(true);
+			}
+			else
+			{
+				if surface_exists(pause_surf)
+					surface_free(pause_surf);
+				//application_surface_enable(true);
+				instance_activate_all();
+			}
+		break;
 		
 		/*
 		case vk_f9:
