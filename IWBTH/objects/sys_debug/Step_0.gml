@@ -35,9 +35,6 @@ if keyboard_check_pressed(vk_anykey)
 		case vk_f8: ongod = !ongod;	
 		break;
 		
-		case vk_f9: on_v =! on_v;
-		break;
-
 		case ord("P"):
 			pause = !pause;
 			

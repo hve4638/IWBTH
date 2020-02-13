@@ -2,11 +2,11 @@
 ///@argu y
 var xx = argument[0];
 var yy = argument[1];
-var dir = point_direction(x, y, Player.x, Player.y);
+var dir = point_direction(xx, yy, Player.x, Player.y);
 
-for(var i = 0; i < 360; i += 360/18)
+for(var i = 0; i < 360; i += 360/13)
 {
-	var ins = danmaku_create(xx, yy, dir + i, 6.4);
+	var ins = danmaku_create(xx, yy, dir + i, 6.2);
 	with(ins)
 	{
 		sprite_index = spr_jsabblock;

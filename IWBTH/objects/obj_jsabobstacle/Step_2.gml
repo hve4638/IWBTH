@@ -1,3 +1,3 @@
 time_idx++;
 
-image_angle += add_angle;
+image_angle += angle_add;
