@@ -8,7 +8,7 @@ xx = room_width div 2;
 yy = room_height div 2;
 dir = point_direction(xx, yy, Player.x, Player.y);
 
-for(var i = 0; i < 360; i += 360/28)
+for(var i = 0; i < 360; i += 360/20)
 {
 	var ins = danmaku_create(xx, yy, dir + i, 10);
 	with(ins)

@@ -19,7 +19,8 @@ with(sys_global)
 			if !audio_is_playing(nbgm)
 				bgm_ind = audio_play_sound(nbgm,0,loop);
 
-			audio_sound_gain(nbgm, volum_music, 0);
+			audio_sound_gain(bgm_p, volum_music, 0);
+			audio_sound_pitch(bgm_p, 1.0);
 		}
 		
 		return bgm_ind;

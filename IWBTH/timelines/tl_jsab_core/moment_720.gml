@@ -1,7 +1,11 @@
+with(obj_jsabblock)
+{
+	thick *= 1.2;
+	angle_add = 0.6;
+}
 with(obj_jsablaser)
 {
 	thick *= 1.2;
-	image_xscale = thick;
 	angle_add = 0.6;
 }
 screenshake(3, 1);

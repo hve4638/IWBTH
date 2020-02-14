@@ -11,7 +11,7 @@ with(instance_create_layer(x, y, L_ABOVE, destroy_ins))
 	destroy_time = other.ins_destroytime;
 	thick = other.thick;
 	length = other.length;
-	//cout("::::", id, thick, length);
-	
+	angle_add = other.angle_add;
+
 	image_angle = other.image_angle;
 }

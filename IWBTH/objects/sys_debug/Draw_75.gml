@@ -38,6 +38,14 @@ if show_info
 	str += strmerge("stagetime : ", stage_time[current_stage]);
 	str += strmerge("stagedeath : ", stage_death[current_stage]);
 	str += strmerge("mouse(window):", window_mouse_get_x(), window_mouse_get_y());
+	with(sys_global)
+	{
+		str += strmerge("current music: ", audio_get_name(bgm_p), "(",bgm_ind,")", "");
+		if bgm_ind != noone
+			str += strmerge(" - ", audio_sound_get_pitch(bgm_ind), audio_sound_get_gain(bgm_ind));
+		else
+			str += NL;
+	}
 }
 
 if show_save

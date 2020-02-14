@@ -6535,6 +6535,14 @@
             }
         },
         {
+            "Key": "ec262d10-dbab-40c5-93ad-0c944b411d80",
+            "Value": {
+                "id": "c691a143-8aee-4cb2-84c3-7315987edbfa",
+                "resourcePath": "scripts\\scr_jsabtl_c6\\scr_jsabtl_c6.yy",
+                "resourceType": "GMScript"
+            }
+        },
+        {
             "Key": "ec36604b-5d13-4480-aee4-68c3bd8431c8",
             "Value": {
                 "id": "96d18501-6b79-4104-bf27-0ba87ad95ff3",
@@ -7307,6 +7315,7 @@
         "457a9ab2-188c-4cff-8586-7171fcb142a0",
         "f0a816b9-052a-4421-ab6e-fbd8a488fbb4",
         "186a47d3-5f8a-468c-b0fc-459d5c187499",
+        "ec262d10-dbab-40c5-93ad-0c944b411d80",
         "ba11895d-f7dd-45dc-bfa0-68eec487d575",
         "14c3feb3-f6b9-4f5a-8697-527841732b0f",
         "d0e55338-6d6a-4394-a370-a5c124d64e57",
