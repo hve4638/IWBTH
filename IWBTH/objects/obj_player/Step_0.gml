@@ -31,7 +31,7 @@ else
     sprite_index = idxspr_idle;
 }
 
-if onground
+if onground || on_platform
 {
 	djump = true;
 
@@ -94,7 +94,6 @@ if !frozen && !(0 < dashtime)
 if 0 < dashtime
 {
 	hspd = dashdir * dashlen;
-	//if 3 < dashtime
 	vspd = 0;
 	
 	dashtime--;
@@ -102,7 +101,7 @@ if 0 < dashtime
 	sprite_index = idxspr_dash;
 }
 
-if !onPlatform
+if !on_platform
 {
     if vspd < -0.05
 		sprite_index = idxspr_jump;
@@ -111,8 +110,8 @@ if !onPlatform
 }
 else
 {
-    if !place_meeting(x, y + 4, objPlatform)
-		onPlatform = false;
+    if !place_meeting(x, y + 1, obj_platform)
+		on_platform = false;
 }
 
 if onwalljump != 0
@@ -155,6 +154,7 @@ if onwalljump != 0
 		sfx(snd_jump);
     }
 }
+
 
 if place_meeting(x, y, obj_water)
 	vspd = min(2, vspd);

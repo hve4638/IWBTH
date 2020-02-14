@@ -15,12 +15,17 @@
         "60ca4613-9d0f-4ca1-bb2d-5a08e788fa1d",
         "d58dfdc4-5b2f-42fe-abcf-212853ecf3a5",
         "dd1c14f2-1ccd-4a9c-b5bb-e521bbce0102",
+        "6b45d1d0-ba15-4382-878e-2ff1f70514d0",
+        "365136c8-4921-42aa-8e13-3e27d4f0879e",
+        "f5ab2609-3d52-4147-8817-6361c76ac33b",
         "bd030bb1-c6c1-4fbf-bde9-d160a2013ef0",
         "3550377d-6676-4688-a117-d099fd8b63d7",
         "4ea00fa1-ff9b-4b2d-a8dc-ea2b5db1ffe0",
         "1dc0ee59-a4d9-4d68-b50b-cdc41fcf970a",
         "8c13d762-09be-4469-8323-2ba7bd18ac13",
-        "c3775582-e58d-42b9-98f3-46fb8e7e1baa"
+        "c3775582-e58d-42b9-98f3-46fb8e7e1baa",
+        "1a887942-a833-4bc4-9095-fc8a0bb06061",
+        "81d8bf34-554d-4bbd-8677-232701487c69"
     ],
     "filterType": "GMSprite",
     "folderName": "Dragun",

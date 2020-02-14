@@ -23,6 +23,6 @@ switch(n)
 	break;
 }
 
-scr_jsabtl_c2(xx, yy, 60);
+scr_jsabtl_c2(xx, yy, 40);
 	
 return 0;

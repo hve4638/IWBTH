@@ -9,7 +9,7 @@ hp = 1;
 slideready = false
 onwalljump = false;
 onground = false;
-onPlatform = false;
+on_platform = false;
 move_ignore = 0;
 djump = 1;
 

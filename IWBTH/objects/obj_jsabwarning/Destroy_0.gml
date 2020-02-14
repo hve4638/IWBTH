@@ -9,6 +9,8 @@ with(instance_create_layer(x, y, L_ABOVE, destroy_ins))
 	destroy_type = other.ins_destroytype;
 	create_time = other.ins_createtime;
 	destroy_time = other.ins_destroytime;
+	white_start = other.ins_whitestart;
+	white_time = other.ins_whitetime;
 	thick = other.thick;
 	length = other.length;
 	angle_add = other.angle_add;

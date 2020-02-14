@@ -14,6 +14,7 @@ var ins = instance_create_layer(Player.x, Player.y, L_BELOW, obj_jsabwarning_blo
 with(ins)
 {
 	life_create(t);
+	ins_createtype = JsabCreate.instant;
 	alphap = 0;
 	alphato = 0.3;
 	alphawave = 0.01;

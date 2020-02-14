@@ -36,16 +36,14 @@ if !instance_exists(obj_player) && audio_is_playing(snd_core)
 
 if keyboard_check_pressed(vk_space)
 {
-	if !keyboard_check(vk_control)
+	if keyboard_check(vk_control)
 	{
 		var n = bgm(snd_core, 0);
-		var sec = 2170;
+		var sec = 2955;
 		audio_sound_set_track_position(n, sec / 50);
 		timeline(tl_jsab_core, sec);
 		
-		var lid = layer_get_id(L_BLOCK);
-		var tid = layer_tilemap_get_id(lid);
-		tilemap_clear(tid, 0);
+		instance_destroy(obj_platform);
 	}
 	else
 		timeline(tl_jsab_core);

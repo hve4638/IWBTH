@@ -3,7 +3,7 @@ if !onboom
 
 //var dir = point_direction(x, y, Player.x, Player.y);
 
-for(var i = 0; i < 360; i += 360/12)
+for(var i = 0; i < 360; i += 360/boomcnt)
 {
 	var ins = danmaku_create(x, y, i, 6);
 	with(ins)

@@ -1,4 +1,4 @@
-if (onground || onPlatform) {
+if (onground || on_platform) {
     vspd = -jump;
 	
 	onground = false;

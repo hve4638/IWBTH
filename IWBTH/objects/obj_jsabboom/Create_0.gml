@@ -11,3 +11,4 @@ toy = y;
 tospd = 1;
 
 onboom = true;
+boomcnt = 12;

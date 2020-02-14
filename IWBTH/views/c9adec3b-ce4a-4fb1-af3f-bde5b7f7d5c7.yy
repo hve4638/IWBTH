@@ -12,7 +12,11 @@
         "6ee309fd-4a46-4e9f-8fba-74b92833dc3c",
         "8a4de5bd-70de-4efe-b408-b693c404458c",
         "737090ac-0239-4c13-8769-4614674c489f",
-        "c000c7c5-38d7-478b-8a06-997ecad1d525"
+        "c000c7c5-38d7-478b-8a06-997ecad1d525",
+        "30190eb5-e885-43f9-9a3e-463316d04c46",
+        "a9d54eb6-fd69-4210-92cf-c29f5ad02898",
+        "59375fb9-fd6a-4954-8638-2f22a86dfc13",
+        "11835c80-3b92-4c46-97a3-a3057b16b954"
     ],
     "filterType": "GMScript",
     "folderName": "jsab_core",

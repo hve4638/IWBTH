@@ -4,7 +4,7 @@
 if dashtime <= 0
 {
 	if !candash
-		candash = onground;
+		candash = onground || on_platform;
 
 	dashdelay--;
 }
@@ -43,7 +43,7 @@ scr_player_escape();
 
 
 
-if onground
+if onground || on_platform
 	slideready = false;
 
 if 0 > bbox_left

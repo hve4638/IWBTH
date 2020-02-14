@@ -11,6 +11,7 @@ xx = t ? room_width div 4 * 3 : room_width div 4;
 yy = room_height div 2;
 
 ins = jsab_block(xx, yy, 40, 25);
+//ins.alphap = 0.1;
 ins.thick = 3;
 ins.length = 3;
 
