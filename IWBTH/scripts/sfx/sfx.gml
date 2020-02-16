@@ -6,6 +6,7 @@ mx = argument_count > 1 ? argument[1] : 2;
 
 with(sys_sound)
 {
-    ds_list_add(sndlist,snd);
+    ds_list_add(sndlist, snd);
+
     sndcnt[? snd] = mx;
 }

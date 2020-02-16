@@ -24,27 +24,19 @@ if timeline_running && !instance_exists(obj_player)
 
 if !instance_exists(obj_player) && audio_is_playing(snd_core)
 {
-	var p = audio_sound_get_pitch(sys_global.bgm_p);
+	var p = audio_sound_get_pitch(bgm_p);
 
 	if 0 < p
-		audio_sound_pitch(sys_global.bgm_p, p - 0.02);
+		audio_sound_pitch(bgm_p, p - 0.02);
 	else
-	{
-		audio_stop_sound(sys_global.bgm_p);
-	}
+		audio_stop_sound(bgm_p);
 }
 
 if keyboard_check_pressed(vk_space)
 {
-	if keyboard_check(vk_control)
-	{
-		var n = bgm(snd_core, 0);
-		var sec = 2955;
-		audio_sound_set_track_position(n, sec / 50);
-		timeline(tl_jsab_core, sec);
-		
-		instance_destroy(obj_platform);
-	}
-	else
-		timeline(tl_jsab_core);
+	var t = 1545
+	var s = bgm(snd_core);
+	audio_sound_set_track_position(s, t / 50);
+	instance_destroy(obj_platform);
+	timeline(tl_core, t);
 }

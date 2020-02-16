@@ -1,3 +1,4 @@
-sndlist = ds_list_create();
-sndcnt = ds_map_create();
+ds_init();
 
+sndlist = list_create();
+sndcnt = map_create();

@@ -52,6 +52,16 @@ if keyboard_check_pressed(vk_anykey)
 			}
 		break;
 		
+		case ord("G"):
+			camera_fade_set(0.5, 0, c_white);
+			camera_fade_set(0, 10);
+		break;
+		
+		case ord("H"):
+			camera_fade_set(0.5, 0, c_white);
+		//alarm_trigger(10, camera_fade_set, [0, 0], 1);
+		break;
+		
 		/*
 		case vk_f9:
 		if !instance_exists(sys_record)

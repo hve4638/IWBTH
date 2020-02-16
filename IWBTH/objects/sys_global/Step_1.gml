@@ -4,5 +4,5 @@ if keyboard_check(vk_alt) && keyboard_check(vk_f4)
 if button_press(Input.restart) && canrestart
 	load();
 
-if keyboard_check_pressed(vk_escape) && room == rm_title
+if keyboard_check_pressed(vk_escape) && room != rm_title
 	game_restart();

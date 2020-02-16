@@ -5874,7 +5874,7 @@
             "Key": "da040082-403f-4657-b5e3-ce1466d7c1e0",
             "Value": {
                 "id": "d23f3758-b91a-4148-95df-706784641310",
-                "resourcePath": "timelines\\tl_jsab_core\\tl_jsab_core.yy",
+                "resourcePath": "timelines\\tl_core\\tl_core.yy",
                 "resourceType": "GMTimeline"
             }
         },

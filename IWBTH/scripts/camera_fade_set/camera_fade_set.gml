@@ -11,6 +11,8 @@ with(sys_camera)
 
 	if time_ == 0
 	{
+		fade_alpha_to = set;
+		fade_alpha_p = set;
 		fade_alpha = set;
 		fade_color = col;
 	}

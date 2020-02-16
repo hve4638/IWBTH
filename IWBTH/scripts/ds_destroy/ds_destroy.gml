@@ -16,21 +16,21 @@ while(!ds_queue_empty(local_queue))
 {
 	var idx = ds_queue_dequeue(local_queue);
 	if ds_exists(idx, ds_type_queue)
-		ds_list_destroy(idx);
+		ds_queue_destroy(idx);
 }
 
 while(!ds_queue_empty(local_grid))
 {
 	var idx = ds_queue_dequeue(local_grid);
 	if ds_exists(idx, ds_type_grid)
-		ds_list_destroy(idx);
+		ds_grid_destroy(idx);
 }
 
 while(!ds_queue_empty(local_priority))
 {
 	var idx = ds_queue_dequeue(local_priority);
 	if ds_exists(idx, ds_type_priority)
-		ds_list_destroy(idx);
+		ds_priority_destroy(idx);
 }
 
 ds_queue_destroy(local_list);

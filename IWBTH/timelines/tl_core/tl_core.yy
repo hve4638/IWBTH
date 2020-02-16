@@ -2,7 +2,7 @@
     "id": "da040082-403f-4657-b5e3-ce1466d7c1e0",
     "modelName": "GMTimeline",
     "mvc": "1.0",
-    "name": "tl_jsab_core",
+    "name": "tl_core",
     "momentList": [
         {
             "id": "17ea96b1-4ba6-4ef2-a0d3-5ee24bba190c",

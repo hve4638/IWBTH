@@ -46,6 +46,10 @@ if show_info
 		else
 			str += NL;
 	}
+	with(sys_camera)
+	{
+		str += strmerge("camera!");		
+	}
 }
 
 if show_save
