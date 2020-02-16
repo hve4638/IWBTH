@@ -9,7 +9,7 @@ if state == stateD.attack
 	arr[2] = dragun[? DragunParts.head];
 	arr[3] = dragun[? DragunParts.wings];
 	
-	for(var i = 0; i < arr_size(arr); i++)
+	for(var i = 0; i < array_size(arr); i++)
 	{
 		var ins = arr[i];
 		var m = map_attackpos[? ins.sprite_index];

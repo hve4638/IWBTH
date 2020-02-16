@@ -8,7 +8,7 @@ else
 	image_alpha = 1;
 
 x += hspd * hspd_sign
-echo_self(4, true);
+echo_self(4, c_white);
 
 screenshake(2, 1);
 

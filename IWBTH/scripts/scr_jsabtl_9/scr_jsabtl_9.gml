@@ -2,9 +2,14 @@ var idx = argument[0];
 
 if idx == 0
 {
-	with(instance_create_layer(0, room_height, L_BELOW, obj_platform))
+	with(instance_create_layer(-16, room_height, L_ABOVE, obj_jsabplatform))
 	{
-		image_xscale = room_width div 32 + 1;	
+		depth -= 1;
+		image_xscale = room_width div 32 + 3;
+		image_yscale = 64;
+		
+		w_9p = image_xscale * 2;
+		h_9p = image_yscale;
 	}
 }
 

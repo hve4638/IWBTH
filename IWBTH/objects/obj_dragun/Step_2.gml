@@ -1,4 +1,4 @@
-var s = arr_size(struct_run);
+var s = array_size(struct_run);
 var ll = true;
 for(var i = 0; i < s; i++)
 {

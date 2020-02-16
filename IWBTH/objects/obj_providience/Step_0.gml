@@ -23,7 +23,7 @@ if onabsorb
 }
 
 if bossphase == 2
-	echo_self(15, 1, c_white, 0.15);
+	echo_self(15, c_white, 1.0, [0.15, 0]);
 
 if hspd_add != 0
 {

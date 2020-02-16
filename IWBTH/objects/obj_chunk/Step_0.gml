@@ -2,7 +2,7 @@ hspd = clamp(hspd + hspd_add, hspd_min, hspd_max);
 image_angle += angle_add;
 
 x += hspd * hspd_sign
-echo_self(10, true);
+echo_self(10, c_white);
 
 
 if onreflect && 0 < reflect_cnt

@@ -11,6 +11,7 @@ var n = (idx div 20) mod 2;
 if n == 1
 	xx = room_width - xx;
 
-scr_jsabtl_c2(xx, yy, 20);
+var ins = scr_jsabtl_c2(xx, yy, 20);
+ins.boomcnt = 24;
 	
 return 0;

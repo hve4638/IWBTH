@@ -14,7 +14,7 @@ else
 	image_xscale *= look;
 	
 	for(var i = 0; i < abs(hspd); i++)
-		echo_self_pos(x - i*sign(hspd), y, 10 + dashtime div 2, 1, c_white, 0.25);
+		echo_self_pos(x - i*sign(hspd), y, 10 + dashtime div 2, c_white, 1.0, [0.25, 0]);
 
 	image_xscale = xs;
 }

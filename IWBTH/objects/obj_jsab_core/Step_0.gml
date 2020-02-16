@@ -1,4 +1,4 @@
-var size = arr_size(tg_on);
+var size = array_size(tg_on);
 
 for(var i = 0; i < size; i++)
 {

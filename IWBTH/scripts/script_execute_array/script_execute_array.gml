@@ -17,7 +17,7 @@ else
 	if is_array(arg)
 	{
 		
-		switch(arr_size(arg))
+		switch(array_size(arg))
 		{
 			case 15: script_execute(ind, arg[0], arg[1], arg[2], arg[3], arg[4], arg[5], arg[6], arg[7], arg[8], arg[9], arg[10], arg[11], arg[12], arg[13], arg[14]); break;
 			case 14: script_execute(ind, arg[0], arg[1], arg[2], arg[3], arg[4], arg[5], arg[6], arg[7], arg[8], arg[9], arg[10], arg[11], arg[12], arg[13]); break;

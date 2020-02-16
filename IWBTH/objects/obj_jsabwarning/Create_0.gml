@@ -10,8 +10,8 @@ ins_createtype = JsabCreate.laser;
 ins_destroytype = JsabDestroy.laser;
 ins_createtime = 3;
 ins_destroytime = 3;
-ins_whitestart = 5;
-ins_whitetime = 2;
+ins_whitestart = 2;
+ins_whitetime = 5;
 ins_life = 50;
 
 length = image_yscale;

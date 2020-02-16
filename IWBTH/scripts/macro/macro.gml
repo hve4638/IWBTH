@@ -1,7 +1,7 @@
 //Project creation date : 2019/10/29
 globalvar pause, pause_surf;
 #macro VERSION 20191029
-#macro VERSION_SHOW "0.1"
+#macro VERSION_SHOW "test1"
 #macro CONFIG_DIRECTORY "config"
 #macro SAVE_DIRECTORY "data"
 #macro SCRIPT_DIRECTORY "script"
@@ -26,7 +26,9 @@ globalvar pause, pause_surf;
 #macro view_w 1088
 #macro view_h 608
 
-#macro DEFAULT_INSTANTPLAY 1
+
+///DEBUG
+#macro DEFAULT_INSTANTPLAY 0
 #macro INSTANTPLAY_SAVESLOT 1
 #macro DEFAULT_COUTSHOW false
 #macro DEFAULT_FPS 50

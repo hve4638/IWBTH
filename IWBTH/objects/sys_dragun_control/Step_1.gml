@@ -20,9 +20,9 @@ if keyboard_check_pressed(ord("B"))
 	var tmp = map_arr;
 	tmp[0] = tmp[0];
 	
-	for(var i = 0; i < arr_size(tmp); i++)
+	for(var i = 0; i < array_size(tmp); i++)
 	{
-		map_arr[arr_size(tmp) - 1 - i] = tmp[i];
+		map_arr[array_size(tmp) - 1 - i] = tmp[i];
 	}
 }
 

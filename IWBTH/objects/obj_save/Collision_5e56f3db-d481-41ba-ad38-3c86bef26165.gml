@@ -7,7 +7,7 @@ if !onact
 		
 		instance_create(other.x, other.bbox_top - 8, obj_savetext);
 		with(other)
-			echo_self(50, 1, c_white);
+			echo_self(50, c_white);
 		save();
 	}
 }

@@ -14,7 +14,7 @@ var k = - keyboard_check_pressed(ord("O")) + keyboard_check_pressed(ord("P"));
 if k != 0
 {
 	current_num += k;
-	current_num = clamp(current_num, 0, arr_size(map_arr) - 1);
+	current_num = clamp(current_num, 0, array_size(map_arr) - 1);
 	scr_dctrl_mload(current_num);
 }
 
@@ -203,7 +203,7 @@ switch(receiveidx)
 			ds_map_destroy(map_arr[current_num]);
 			map_arr = 0;
 	
-			for(var i = 0; i < arr_size(tmp); i++)
+			for(var i = 0; i < array_size(tmp); i++)
 			{
 				if i == current_num
 					continue;
@@ -225,7 +225,7 @@ switch(receiveidx)
 	break;
 	
 	case 40:
-		for(var i = 0; i < arr_size(map_arr); i++)
+		for(var i = 0; i < array_size(map_arr); i++)
 		{
 			scr_dctrl_mload_old(i);
 			scr_dctrl_msave(i);
@@ -236,7 +236,7 @@ switch(receiveidx)
 	
 	case 20:
 		var list = ds_list_create();
-		var cnt = arr_size(map_arr);
+		var cnt = array_size(map_arr);
 		for(var i = 0; i < cnt; i++)
 		{
 			ds_list_add(list, map_arr[i]);
@@ -259,7 +259,7 @@ switch(receiveidx)
 			break;
 		
 		var list = map[? "default"];
-		var s = arr_size(map_arr);
+		var s = array_size(map_arr);
 		for(var i = 0; i < s; i++)
 			ds_map_destroy(map_arr[i]);
 
@@ -293,7 +293,7 @@ switch(receiveidx)
 		{
 			var m = list[| string(i)];
 			var ar = map_show(m);
-			for(var j = 0; j < arr_size(ar); j++)
+			for(var j = 0; j < array_size(ar); j++)
 			{
 				var k = m[? ar[j]];
 				cout_show(j, k[? "img"]);

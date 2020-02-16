@@ -4,7 +4,7 @@
 var ind = argument[0];
 
 var idx = 0;
-var size = arr_size(struct_run)
+var size = array_size(struct_run)
 for(; idx < size; idx++)
 	if !struct_run[idx]
 		break;
