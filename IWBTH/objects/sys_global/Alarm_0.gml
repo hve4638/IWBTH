@@ -6,4 +6,3 @@ if 0 < save_idx
 }
 
 alarm[0] = DEFAULT_FPS * 60;
-

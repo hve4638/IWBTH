@@ -9,7 +9,9 @@
         "0ae85037-d9f7-4a01-8beb-d6135dcf164a",
         "39142348-853c-4e93-bbaf-19fea0495253",
         "aa564dbb-8a6d-41f5-8311-e52d435437c3",
-        "c0d9c0a2-1c1f-4ae0-9423-c8516de7aa8e"
+        "c0d9c0a2-1c1f-4ae0-9423-c8516de7aa8e",
+        "b3b54c7b-11ab-4c2b-9ac6-a83077539386",
+        "eb0fc048-a465-43e4-a7f6-709c5f2e1c79"
     ],
     "filterType": "GMSprite",
     "folderName": "nouse_ingame",

@@ -1,1 +1,0 @@
-with(obj_light) {bright=192;}

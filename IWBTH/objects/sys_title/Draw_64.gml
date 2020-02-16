@@ -1,4 +1,3 @@
-///@desc New Event
 if 0 < blur_alpha
 {
 	draw_edgeblur(blur_alpha, c_black);

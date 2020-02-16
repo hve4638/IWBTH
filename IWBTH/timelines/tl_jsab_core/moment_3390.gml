@@ -1,3 +1,3 @@
 ///@desc infjump off
 
-instance_destroy(obj_autojumper);
+instance_destroy(obj_infjumper);

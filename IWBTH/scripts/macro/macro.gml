@@ -1,5 +1,26 @@
 //Project creation date : 2019/10/29
-globalvar pause, pause_surf;
+globalvar pause, pause_surf; //pause
+globalvar time, death, save_idx, difficulty; //save data
+globalvar key; //keyconfig
+globalvar config_mastervolum, config_music, config_sound, config_ui, fullscreen;
+globalvar resolution_index, resolution_width, resolution_height;
+globalvar volum_music, volum_sound;
+globalvar win_h, win_w;
+globalvar enablekeyinput;
+globalvar each_volum; //각 볼륨크기
+globalvar ongod;
+globalvar bgm_p, bgm_ind;
+
+globalvar sv_auto, sv_x, sv_y, sv_room, sv_look, sv_time, sv_death; //temp save
+globalvar sv_hubx, sv_huby;
+globalvar current_stage;
+globalvar stage_time, stage_death;
+globalvar result_time, result_death;
+globalvar savedata;
+globalvar view_ratio;
+globalvar roomdata;
+
+
 #macro VERSION 20191029
 #macro VERSION_SHOW "test1"
 #macro CONFIG_DIRECTORY "config"

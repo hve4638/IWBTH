@@ -1,7 +1,7 @@
-//camera_set_view_angle(cam,CAM_ANGLE);
+ds_init();
 cam = view_camera[0];
 
-follow = ds_list_create();
+follow = list_create();
 follow_type = Camtype.follow_obj;
 follow_div = 10;
 
@@ -23,9 +23,12 @@ addx = 0;
 addy = 0;
 
 //fade
-fade_alpha = 0;
-fade_get = 0;
-fade_col = c_white;
+fade_alpha = 0.0;
+fade_alpha_p = 0.0;
+fade_alpha_to = 0.0;
+fade_idx = 0;
+fade_time = 0;
+fade_color = c_black;
 
 blur_alpha = 0;
 
@@ -37,8 +40,8 @@ camera_y2 = 0;
 firstmeet = true;
 
 //screen shake
-shake_queue = ds_priority_create();
-shake_map = ds_map_create();
+shake_queue = priority_create();
+shake_map = map_create();
 shake = 0;
 
 sprite_index = noone;

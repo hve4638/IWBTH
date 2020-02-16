@@ -27,7 +27,11 @@
         "724ca0e5-f8e4-4afd-85c6-400267d7bb24",
         "a5188f0f-8d47-40bf-84d8-031431c7cfc7",
         "f11ca926-39ed-475a-9209-59f3dc3e419d",
-        "4e5cddf9-39dd-4776-a10d-d90cfd46e536"
+        "4e5cddf9-39dd-4776-a10d-d90cfd46e536",
+        "a1f813d7-5194-4b6d-9303-14b46fe3e912",
+        "34021e2c-5851-4464-8227-472c0020d169",
+        "a0426dd3-5dde-4f78-950c-68a162463913",
+        "9a8c31ec-74f5-4421-88d2-89d9379ae6ad"
     ],
     "filterType": "GMScript",
     "folderName": "conv",

@@ -5,6 +5,7 @@ if ontimer
 	if time_idx > 1000000
 	{
 		time++;
+
 		if current_stage
 			stage_time[current_stage]++;
 
@@ -20,21 +21,19 @@ else
 intro_alpha = clamp(intro_alpha, 0, 1.0);
 
 if intro_alpha == 1.0
-	intro_time = max(0, intro_time-1);
+	intro_time = max(0, intro_time - 1);
 
-if 0 < fade_idx
+if fade_idx > 0
 {
 	fade_alpha = value_merge(fade_alpha_p, fade_alpha_to, 1 - fade_idx/fade_time);
 	
 	fade_idx = max(fade_idx - 1, 0);
 }
-else if fade_idx == 0
+else
 {
 	fade_alpha = fade_alpha_to;
-	fade_idx = -1;
+
+	fade_idx = no;
 }
 
 todo_step();
-
-if keyboard_check_pressed(vk_escape)
-	game_restart();

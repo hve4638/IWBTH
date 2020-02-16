@@ -11,8 +11,8 @@ else
 	ontimer = false;
 	canrestart = false;
 }
-if debuglv(1)
-	cout("stage: ", current_stage, " ingame: ", ontimer);
+
+if debuglv(1) cout("stage: ", current_stage, " ingame: ", ontimer);
 
 room_speed = DEFAULT_FPS;
 show_bosshp = false;
