@@ -3,6 +3,7 @@ if intro_alpha > 0
 
 if show_bosshp
 {
+	draw_set_reset();
 	var _x, _y;
 	var w, h;
 	w = sprite_get_width(spr_healthbar);

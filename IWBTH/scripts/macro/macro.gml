@@ -49,7 +49,7 @@ globalvar roomdata;
 
 
 ///DEBUG
-#macro DEFAULT_INSTANTPLAY 0
+#macro DEFAULT_INSTANTPLAY 1
 #macro INSTANTPLAY_SAVESLOT 1
 #macro DEFAULT_COUTSHOW false
 #macro DEFAULT_FPS 50

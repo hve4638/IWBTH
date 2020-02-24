@@ -14,6 +14,7 @@ with(instance_create_layer(x, y, L_ABOVE, destroy_ins))
 	thick = other.thick;
 	length = other.length;
 	angle_add = other.angle_add;
+	type = other.type;
 
 	image_angle = other.image_angle;
 }

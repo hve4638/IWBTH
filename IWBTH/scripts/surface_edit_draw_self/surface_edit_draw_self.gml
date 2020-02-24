@@ -5,3 +5,5 @@ ty = 0 < image_yscale ? sprite_yoffset * image_yscale : abs(sprite_height) - spr
 
 gpu_set_blendmode(bm_normal);
 draw_self_correction(tx, ty);
+
+return [tx, ty];

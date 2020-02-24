@@ -45,10 +45,6 @@ else if pdis(Player.x - x, 0) > 400
 else
 	away_time += 2;
 
-/*
-if state == StateP.idle && sprite_index != spr_providience_idle
-	sprite_change(spr_providience_idle);
-*/
 if onhealth
 {
 	var add = (hp - drawhp);

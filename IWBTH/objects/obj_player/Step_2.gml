@@ -41,7 +41,8 @@ if hspd_slide != 0
 scr_player_escape();
 
 
-
+force_spd = 2*pdis(hspd,vspd);
+force_dir = pdir(hspd,vspd);
 
 if onground || on_platform
 	slideready = false;

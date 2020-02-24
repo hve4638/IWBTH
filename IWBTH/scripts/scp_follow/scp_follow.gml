@@ -2,6 +2,7 @@
 /// @param sx
 /// @param sy
 /// @param div
+/*
 var sx, sy, dv;
 sx=argument[0];
 sy=argument[1];
@@ -9,7 +10,7 @@ dv=argument[2];
 
 /*x+=ceil((sx-x)/dv);
 y+=ceil((sy-y)/dv);*/
-
+/*
 var kx, ky;
 kx=0; ky=0;
 if x+1<sx {kx=point_distance(x,0,sx,0)/dv;} else if x<sx {sx=x;}

@@ -18,7 +18,7 @@
         "97c7a0a8-15b2-4be8-b481-454dc4cc0244"
     ],
     "filterType": "GMScript",
-    "folderName": "title",
+    "folderName": "Title",
     "isDefaultView": false,
     "localisedFolderName": ""
 }

@@ -11,7 +11,6 @@ spd = argument[3];
 type = argument_count > 4 ? argument[4] : no;
 
 var ins = instance_create_layer(xx, yy, L_ABOVE, obj_danmaku)
-
 with(ins)
 {
 	direction = dir;

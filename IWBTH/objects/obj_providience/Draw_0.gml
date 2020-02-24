@@ -2,7 +2,7 @@ if on_teleport
 {
 	if abs(sprite_height) <= 0 || abs(sprite_width) <= 0
 		exit;
-	
+
 	var surf = surface_create(abs(sprite_width), abs(sprite_height));
 	surface_set_target(surf);
 		gpu_set_blendmode(bm_normal);

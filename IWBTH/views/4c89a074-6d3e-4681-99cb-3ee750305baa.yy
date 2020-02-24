@@ -11,7 +11,7 @@
         "c939008c-fb8d-45dc-85ea-b3e5d340b89f"
     ],
     "filterType": "GMScript",
-    "folderName": "teleport",
+    "folderName": "Teleport",
     "isDefaultView": false,
     "localisedFolderName": ""
 }

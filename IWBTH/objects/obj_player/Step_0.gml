@@ -159,7 +159,4 @@ if onwalljump != 0
 if place_meeting(x, y, obj_water)
 	vspd = min(2, vspd);
 
-force_spd = 2*pdis(hspd,vspd);
-force_dir = pdir(hspd,vspd);
-
 player_movement();

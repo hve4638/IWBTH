@@ -14,6 +14,7 @@ ins_whitestart = 2;
 ins_whitetime = 5;
 ins_life = 50;
 
+type = 0;
 length = image_yscale;
 thick = image_xscale;
 

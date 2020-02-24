@@ -1,4 +1,4 @@
-psize=ds_list_size(aftx);
+psize = ds_list_size(aftx);
 
 for(var i=psize-1;0<=i;i--) {
     var px, py;

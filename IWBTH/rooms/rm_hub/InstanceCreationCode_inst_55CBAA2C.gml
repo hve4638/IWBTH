@@ -1,1 +1,1 @@
-goto = rm_boss_providience;
+goto = rm_stage4_1;

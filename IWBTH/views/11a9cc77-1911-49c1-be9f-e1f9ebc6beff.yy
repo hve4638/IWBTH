@@ -4,7 +4,6 @@
     "mvc": "1.1",
     "name": "11a9cc77-1911-49c1-be9f-e1f9ebc6beff",
     "children": [
-        "7bc2c547-a4e1-42e0-8e59-7792ff710cb6",
         "42c9037e-9825-45c1-9340-599462381e21",
         "c07ee69e-7130-44d2-bfee-b0651c15f0ba",
         "168b7167-eb09-4b86-93b4-dcd366a8bf39",
@@ -25,7 +24,8 @@
         "8c13d762-09be-4469-8323-2ba7bd18ac13",
         "c3775582-e58d-42b9-98f3-46fb8e7e1baa",
         "1a887942-a833-4bc4-9095-fc8a0bb06061",
-        "81d8bf34-554d-4bbd-8677-232701487c69"
+        "81d8bf34-554d-4bbd-8677-232701487c69",
+        "7bc2c547-a4e1-42e0-8e59-7792ff710cb6"
     ],
     "filterType": "GMSprite",
     "folderName": "Dragun",

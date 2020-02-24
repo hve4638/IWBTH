@@ -18,3 +18,16 @@ with(obj_jsablaser)
 		white_time = 10;
 	}
 }
+
+with(obj_jsabobstacle)
+{
+	if type == 1
+	{
+		life_create(10);
+		time_idx = 0;
+		onbounce = true;
+	
+		white_start = 0;
+		white_time = 10;
+	}
+}

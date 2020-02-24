@@ -16,6 +16,7 @@ enum JsabDestroy {
 	smaller,
 }
 
+type = 0;
 angle_add = 0;
 angle_add = 0;
 

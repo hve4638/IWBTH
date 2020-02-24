@@ -1,6 +1,7 @@
 ///@desc return 0~1
 ///@argu ind
 ///@argu cycle
+
 var ind, cycle, r;
 var i;
 ind = argument[0];

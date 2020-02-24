@@ -1,4 +1,4 @@
-if 0<escape_idx
+if 0 < escape_idx
 {
 	var spr, w, h, p;
 	spr = spr_escapegauge;
@@ -21,6 +21,5 @@ if 0<escape_idx
 	surface_reset_target();
 	
 	draw_surface_ext(surf, (bbox_left + bbox_right)/2 - w/2, bbox_bottom + h div 2, 1, 1, 0, c_white, escape_alpha);
-	
 	surface_free(surf);
 }
