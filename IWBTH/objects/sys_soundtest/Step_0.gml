@@ -4,6 +4,12 @@ if keyboard_check_pressed(vk_enter)
 	audio_sound_gain(idx, each_volum[? sound_idx], 0);
 }
 
+if keyboard_check_pressed(ord("V"))
+{
+	var idx = audio_play_sound(sound_idx, 1, 1);
+	audio_sound_gain(idx, each_volum[? sound_idx], 0);	
+}
+
 if keyboard_check_pressed(vk_backspace)
 	audio_stop_all();
 

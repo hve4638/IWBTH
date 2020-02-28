@@ -52,16 +52,12 @@ if keyboard_check_pressed(vk_anykey)
 			}
 		break;
 		
-		case ord("G"):
-			camera_fade_set(0.5, 0, c_white);
-			camera_fade_set(0, 10);
+		case ord("I"):
+			if room != rm_title
+				break;
+			save_idx = INSTANTPLAY_SAVESLOT;
+			scr_gamestart();
 		break;
-		
-		case ord("H"):
-			camera_fade_set(0.5, 0, c_white);
-		//alarm_trigger(10, camera_fade_set, [0, 0], 1);
-		break;
-		
 		/*
 		case vk_f9:
 		if !instance_exists(sys_record)
@@ -73,9 +69,9 @@ if keyboard_check_pressed(vk_anykey)
 		
 		//case vk_f6: room_goto(rm_stageresult);
 		//break;
-
-		//case vk_f10: room_goto(rm_soundtest);
-		//break;
+	
+		case vk_f10: room_goto(rm_soundtest);
+		break;
 		
 		//case vk_f11: room_goto(rm_editroom_dragun);
 		//break;
