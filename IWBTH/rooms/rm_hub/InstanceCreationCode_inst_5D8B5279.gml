@@ -1,1 +1,1 @@
-goto = rm_boss_dragun;
+scr_hubportal_set(2);

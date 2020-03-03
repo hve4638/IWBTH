@@ -1,1 +1,1 @@
-goto = rm_boss_jsab;
+scr_hubportal_set(1);

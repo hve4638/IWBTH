@@ -1,6 +1,6 @@
 ///@argu spr
-///@argu img
-///@argu spd
+///@argu img*
+///@argu spd*
 var spr, img, spd;
 spr = argument_count > 0 ? argument[0] : sprite_index;
 img = argument_count > 1 ? argument[1] : 0;

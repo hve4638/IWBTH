@@ -15,5 +15,4 @@ ys = image_yscale;
 if object_index == obj_player
 	xs *= look
 
-
 return echo(l, depth+1, sprite_index, image_index, x, y, xs, ys, image_angle, c, f, a);

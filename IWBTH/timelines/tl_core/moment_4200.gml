@@ -1,0 +1,1 @@
+alarm_trigger(75, scr_gotostageresult);

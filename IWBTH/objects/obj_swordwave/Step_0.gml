@@ -2,13 +2,8 @@ life_step();
 
 hspd = clamp(hspd + hspd_add, hspd_min, hspd_max);
 
-if is_invincible()
-	image_alpha = 0.3;
-else
-	image_alpha = 1;
-
 x += hspd * hspd_sign
-echo_self(4, c_white);
+echo_self(5, no, 0.0, [0.75, 0.0]);
 
 screenshake(2, 1);
 

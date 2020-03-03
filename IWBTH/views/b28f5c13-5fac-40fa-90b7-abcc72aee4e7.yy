@@ -6,10 +6,8 @@
     "children": [
         "fcdb08f8-be14-438e-a98d-90eb1b500fdc",
         "4cd59d76-be39-43b8-ab33-c1a44b590896",
-        "be508969-ca47-4511-95dc-abac9c1f7e31",
         "9af0524b-05a6-405e-8a95-f4c67b915633",
-        "5911f1b3-d58a-400d-8125-29ea5f80522d",
-        "c27b236c-2799-4eee-b8e7-44ff49da093f"
+        "5911f1b3-d58a-400d-8125-29ea5f80522d"
     ],
     "filterType": "GMScript",
     "folderName": "draw",

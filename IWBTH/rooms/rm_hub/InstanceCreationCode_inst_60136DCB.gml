@@ -1,1 +1,1 @@
-goto = rm_boss_providience;
+scr_hubportal_set(3);

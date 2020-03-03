@@ -19,7 +19,9 @@
         "4ff14387-95c4-4667-a514-c39ca5dd1133",
         "b82eab48-e4f0-49da-9b3e-df194825741b",
         "809d3362-a8cc-442e-bdb7-3a47f3df44bc",
-        "29d354d9-5706-44f0-9461-8979103a04f8"
+        "29d354d9-5706-44f0-9461-8979103a04f8",
+        "be508969-ca47-4511-95dc-abac9c1f7e31",
+        "c27b236c-2799-4eee-b8e7-44ff49da093f"
     ],
     "filterType": "GMScript",
     "folderName": "conv",

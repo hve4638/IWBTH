@@ -1,2 +1,1 @@
-goto = rm_tutorial;
-//enteridx = EnterText.enter;
+scr_hubportal_set(0);

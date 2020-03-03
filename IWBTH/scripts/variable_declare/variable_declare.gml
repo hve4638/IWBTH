@@ -78,16 +78,63 @@ global.debuglevel = 0;
 #endregion
 
 #region save integrity
-	global.savemeta[0] = "x";
-	global.savemeta[1] = "y";
-	global.savemeta[2] = "room";
-	global.savemeta[3] = "look";
-	global.savemeta[4] = "time";
-	global.savemeta[5] = "death";
-	global.savemeta[6] = "stagetime";
-	global.savemeta[7] = "stagedeath";
-	global.savemeta[8] = "hubx";
-	global.savemeta[9] = "huby";
+	var csv_savemeta = load_csv(SAVEMETA_DIRECTORY);
+	var meta, meta_n, meta_d, meta_dtype;
+	w = ds_grid_width(csv_savemeta);
+	h = ds_grid_height(csv_savemeta);
+	meta = ds_grid_value_x(csv_savemeta, 0, 0, w - 1, 0, "#metadata");
+	meta_n = ds_grid_value_x(csv_savemeta, 0, 0, w - 1, 0, "#necessary");
+	meta_d = ds_grid_value_x(csv_savemeta, 0, 0, w - 1, 0, "#default");
+	meta_dtype = ds_grid_value_x(csv_savemeta, 0, 0, w - 1, 0, "#ROOM");
+	
+	global.savemeta = array_create(h);
+	global.savemeta_necessary = array_create(h);
+	global.savemeta_default = array_create(h);
+	
+	for(var i = 1; i < h; i++)
+	{
+		global.savemeta[i] = csv_savemeta[# meta, i];
+		
+		if csv_savemeta[# meta_n, i]
+		{
+			global.savemeta_necessary[i] = true;
+			
+			var d = csv_savemeta[# meta_d, i];
+			var type = csv_savemeta[# meta_dtype, i];
+			
+			if type == "real"
+			{
+				global.savemeta_default[i] = real(d);
+			}
+			else if type == "string"
+			{
+				global.savemeta_default[i] = string(d);
+			}
+			else if type == "array"
+			{
+				
+				global.savemeta_default[i] = 0;
+			}
+		}
+		else
+		{
+			global.savemeta_necessary[i] = false;
+			global.savemeta_default[i] = 0;
+		}
+	}
+	/*
+	global.savemeta[1] = "x";
+	global.savemeta[2] = "y";
+	global.savemeta[3] = "room";
+	global.savemeta[4] = "look";
+	global.savemeta[5] = "time";
+	global.savemeta[6] = "death";
+	global.savemeta[7] = "stagetime";
+	global.savemeta[8] = "stagedeath";
+	global.savemeta[9] = "hubx";
+	global.savemeta[10] = "huby";
+	global.savemeta[11] = "clearstage";
+	*/
 #endregion
 
 #region resolution

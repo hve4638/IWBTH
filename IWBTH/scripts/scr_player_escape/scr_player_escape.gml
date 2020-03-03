@@ -32,6 +32,9 @@ if escape_time < escape_idx
 
 	sys_global.canrestart = false
 	save_room(rm_hub);
+	
+	if room != rm_hub
+		player_create_nextroom(sv_hubx, sv_huby);
 
 	instance_destroy();
 	exit;
@@ -61,10 +64,11 @@ if 0 < escape_idx && escapetry
 		particle_emit(Particle.escape_try,x-20,x+20,bbox_bottom-3,bbox_bottom+3,5);
 		
 		var p = (escape_idx-50) / 100;
-		var t = round(value_merge(1,6,p));
+		var t = round(value_merge(7,4,p));
+		var k = value_merge(96, 32, p);
 		
 		escape_blureffect_alpha = min(0.9, escape_blureffect_alpha + 0.007);
 		if life_idx mod 2 == 0
-			particle_emit(Particle.escape_try2,x-20,x+20,bbox_bottom-6,bbox_bottom+3, t);
+			particle_emit(Particle.escape_try2,x-k,x+k,bbox_bottom-6,bbox_bottom+3, t);
 	}
 }

@@ -1,8 +1,8 @@
 {
-    "id": "9a2885e4-f4b7-44db-8776-7e6d63ce6713",
+    "id": "0944c544-5793-4415-8006-a71167336ef5",
     "modelName": "GMScript",
     "mvc": "1.0",
-    "name": "loadgame",
+    "name": "scr_hubportal_set",
     "IsCompatibility": false,
     "IsDnD": false
 }

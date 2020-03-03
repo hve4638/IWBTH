@@ -1,1 +1,1 @@
-goto = rm_stage4_1;
+scr_hubportal_set(4);

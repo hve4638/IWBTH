@@ -59,8 +59,8 @@ if onact
 
 	if type == Select.scroll
 	{
-		n += (mouse_wheel_up() - mouse_wheel_down()) * 5;
-		n += keyboard_check_pressed(vk_right) - keyboard_check_pressed(vk_left);
+		n += (mouse_wheel_up() - mouse_wheel_down()) * 10;
+		n += (keyboard_check_pressed(vk_right) - keyboard_check_pressed(vk_left)) * 10;
 
 		percent = clamp(percent + n, 0, 100);
 	}

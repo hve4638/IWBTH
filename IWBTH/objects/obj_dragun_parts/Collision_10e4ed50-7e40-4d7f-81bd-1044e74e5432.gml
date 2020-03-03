@@ -22,8 +22,9 @@ with(dealto)
 		isdie = true;
 
 		todo_stop();
-		global_fade_set(1.0, 0, c_white);
-		alarm_trigger(35, global_fade_set, [0.0, 75, c_white]);
+		camera_fade_set(1.0, 0, c_white);
+		alarm_trigger(35, camera_fade_set, [0.0, 75, c_white]);
+		alarm_trigger(250, scr_gotostageresult);
 		
 		with(obj_danmaku)
 			instance_destroy();
@@ -36,7 +37,7 @@ with(dealto)
 		isdie = true;
 		head_free = false;
 		head_follow = false;
-		
+		/*
 		with(instance_create_layer(0, 0, L_SYS, obj_trigger))
 		{
 			trigger_condition = TriggerCondition.always;
@@ -46,7 +47,7 @@ with(dealto)
 			goto_idx = 0;
 			goto_delay = 250;
 		}
-		
+		*/
 		alarm[0] = -1;
 	}
 }

@@ -34,14 +34,7 @@ if !instance_exists(obj_player) && audio_is_playing(snd_core)
 
 if keyboard_check_pressed(vk_space)
 {
-	if 0
-	{
-	var t = 1545
-	var s = bgm(snd_core);
-	audio_sound_set_track_position(s, t / 50);
-	instance_destroy(obj_platform);
-	timeline(tl_core, t);
-	}
-	else
-		timeline(tl_core);
+	
+	show_intro(64, view_h - 64, spr_intro_core);
+	timeline(tl_core);
 }

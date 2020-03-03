@@ -23,6 +23,7 @@ globalvar roomdata;
 
 #macro VERSION 20191029
 #macro VERSION_SHOW "test1"
+
 #macro CONFIG_DIRECTORY "config"
 #macro SAVE_DIRECTORY "data"
 #macro SCRIPT_DIRECTORY "script"
@@ -31,6 +32,7 @@ globalvar roomdata;
 #macro ROOMDATA_DIRECTORY "roomdata"
 #macro DRAGUNCSV_DIRECTORY "dragundata"
 #macro DRAGUNATTACKCSV_DIRECTORY "dragunattack"
+#macro SAVEMETA_DIRECTORY "save_metadata"
 
 #macro L_SYS "InsSystem"
 #macro L_TRIG "InsTrigger"
@@ -50,6 +52,7 @@ globalvar roomdata;
 
 ///DEBUG
 #macro DEFAULT_INSTANTPLAY 0
+#macro INSTANTPLAY_KEY ord("P")
 #macro INSTANTPLAY_SAVESLOT 1
 #macro DEFAULT_COUTSHOW false
 #macro DEFAULT_FPS 50
