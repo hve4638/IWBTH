@@ -2,6 +2,7 @@ name = "-";
 enter_instant = true;
 
 enable = true;
+isclear = false;
 
 text_idx = EnterText.challenge;
 goto = no;

@@ -14,7 +14,7 @@ globalvar bgm_p, bgm_ind;
 globalvar sv_auto, sv_x, sv_y, sv_room, sv_look, sv_time, sv_death; //temp save
 globalvar sv_hubx, sv_huby;
 globalvar current_stage;
-globalvar stage_time, stage_death;
+globalvar stage_time, stage_death, stage_clear;
 globalvar result_time, result_death;
 globalvar savedata;
 globalvar view_ratio;

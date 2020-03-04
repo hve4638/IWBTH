@@ -1,7 +1,7 @@
 init();
+
 test();
 instance_create_depth(0, 0, 0, sys_debug);
-
 
 if DEFAULT_INSTANTPLAY
 {

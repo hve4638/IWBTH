@@ -1,8 +1,8 @@
 {
-    "id": "0da294bb-b83c-4822-b26f-aee0f6022ef3",
+    "id": "f35f122f-1498-49ab-b572-99f063ca55f5",
     "modelName": "GMScript",
     "mvc": "1.0",
-    "name": "convert_array",
+    "name": "bintodec",
     "IsCompatibility": false,
     "IsDnD": false
 }

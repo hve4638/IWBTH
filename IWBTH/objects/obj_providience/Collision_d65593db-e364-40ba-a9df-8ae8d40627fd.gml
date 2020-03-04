@@ -33,6 +33,9 @@ if hp <= 0
 	bossphase = -1;
 	todo_play(motion[9]);
 	
+	sys_global.canrestart = false;
+	stageclear(4, 0);
+	
 	alarm[0] = -1;
 	alarm[1] = -1;
 	

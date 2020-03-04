@@ -1,6 +1,6 @@
-onplayer = place_meeting(x, y, obj_player) && enable && !instance_exists(obj_enterstage);
+onplayer = place_meeting(x, y, obj_player);
 
-if onplayer
+if onplayer && enable && !instance_exists(obj_enterstage)
 {
 	if button_press(Input.up)
 	{
@@ -23,11 +23,15 @@ if onplayer
 			{
 				name = other.name;
 				goto = other.goto;
+				isclear = other.isclear;
 			}
 	}
 
-	show_alpha += 0.05;
+	
 }
+
+if onplayer
+	show_alpha += 0.05;
 else
 	show_alpha -= 0.05;
 

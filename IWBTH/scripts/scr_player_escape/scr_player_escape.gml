@@ -34,7 +34,8 @@ if escape_time < escape_idx
 	save_room(rm_hub);
 	
 	if room != rm_hub
-		player_create_nextroom(sv_hubx, sv_huby);
+		if !isno(sv_hubx) && !isno(sv_huby)
+			player_create_nextroom(sv_hubx, sv_huby);
 
 	instance_destroy();
 	exit;

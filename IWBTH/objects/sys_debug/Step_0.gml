@@ -20,7 +20,9 @@ if keyboard_check_pressed(vk_anykey)
 				goto_delay = 100;
 			}
 		break;
-		case vk_f3: on_convkey = !on_convkey;
+		case vk_f3:
+			for(var i = 1; i <= 5; i++)
+				stage_clear[i] = true;
 		break;
 		
 		case vk_f4: on_customview = !on_customview;
@@ -56,6 +58,7 @@ if keyboard_check_pressed(vk_anykey)
 			save_idx = INSTANTPLAY_SAVESLOT;
 			scr_gamestart();
 		break;
+		
 		/*
 		case vk_f9:
 		if !instance_exists(sys_record)

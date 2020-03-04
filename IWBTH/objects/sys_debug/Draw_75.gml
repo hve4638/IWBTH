@@ -65,3 +65,8 @@ if show_save
 draw_set_reset();
 draw_set_color(c_green);
 draw_text(0, 0, str);
+
+/*
+draw_rectangle_color(64, 64, 64 + 64, 64 + 64, c_white, c_white, c_white, c_blue, false);
+draw_rectangle_color(196, 64, 196 + 64, 64 + 64, c_white, c_white, c_blue, c_white, false);
+*/

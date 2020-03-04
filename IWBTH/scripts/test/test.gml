@@ -1,10 +1,6 @@
 return 0;
-cout_show("TEST");
-cout_show(-1 < 5 < 3);
-//alarm_trigger(50, cout_show, ["12", 34, NL, "hi!"], true);
-//ABCCC = 1;
-
-//for(var i = 0; i < 1000; i += 25)
-//	cout_show("i: ", i, "-> ", floating(i, 50));
+var a = dectobin(8 + 1 + 2);
+cout_show(a, a[0], a[1]);
+cout_show(bintodec(a));
 
 return 1;

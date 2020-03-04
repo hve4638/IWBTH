@@ -37,6 +37,9 @@ with(dealto)
 		isdie = true;
 		head_free = false;
 		head_follow = false;
+
+		sys_global.canrestart = false;
+		stageclear(2, 0);
 		/*
 		with(instance_create_layer(0, 0, L_SYS, obj_trigger))
 		{

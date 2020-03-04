@@ -9,6 +9,7 @@ savedata = array_create(4, no);
 
 stage_time = array_create(10, 0);
 stage_death = array_create(10, 0);
+stage_clear = array_create(10, false);
 result_time = 0;
 result_death = 0;
 
@@ -85,43 +86,37 @@ global.debuglevel = 0;
 	meta = ds_grid_value_x(csv_savemeta, 0, 0, w - 1, 0, "#metadata");
 	meta_n = ds_grid_value_x(csv_savemeta, 0, 0, w - 1, 0, "#necessary");
 	meta_d = ds_grid_value_x(csv_savemeta, 0, 0, w - 1, 0, "#default");
-	meta_dtype = ds_grid_value_x(csv_savemeta, 0, 0, w - 1, 0, "#ROOM");
+	meta_dtype = ds_grid_value_x(csv_savemeta, 0, 0, w - 1, 0, "#default_type");
 	
-	global.savemeta = array_create(h);
-	global.savemeta_necessary = array_create(h);
-	global.savemeta_default = array_create(h);
-	
+	global.savemeta = array_create(h - 1);
+	global.savemeta_necessary = array_create(h - 1);
+	global.savemeta_default = array_create(h - 1, -4);
+
 	for(var i = 1; i < h; i++)
 	{
-		global.savemeta[i] = csv_savemeta[# meta, i];
+		global.savemeta[i - 1] = csv_savemeta[# meta, i];
 		
-		if csv_savemeta[# meta_n, i]
+		if !csv_savemeta[# meta_n, i]
 		{
-			global.savemeta_necessary[i] = true;
+			global.savemeta_necessary[i - 1] = false;
 			
 			var d = csv_savemeta[# meta_d, i];
 			var type = csv_savemeta[# meta_dtype, i];
-			
+
 			if type == "real"
-			{
-				global.savemeta_default[i] = real(d);
-			}
+				global.savemeta_default[i - 1] = real(d);
 			else if type == "string"
-			{
-				global.savemeta_default[i] = string(d);
-			}
+				global.savemeta_default[i - 1] = string(d);
 			else if type == "array"
-			{
-				
-				global.savemeta_default[i] = 0;
-			}
+				global.savemeta_default[i - 1] = array_read(string(d));
 		}
 		else
 		{
-			global.savemeta_necessary[i] = false;
-			global.savemeta_default[i] = 0;
+			global.savemeta_necessary[i - 1] = true;
+			//global.savemeta_default[i - 1] = 0;
 		}
 	}
+	
 	/*
 	global.savemeta[1] = "x";
 	global.savemeta[2] = "y";

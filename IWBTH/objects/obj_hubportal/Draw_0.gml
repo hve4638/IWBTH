@@ -29,12 +29,25 @@ if show_holo
 			shader_set(sh_alpha);
 				draw_surface(s, 0, 0);
 			shader_reset();
+
+			if isclear
+			{
+				gpu_set_colorwriteenable(1, 1, 1, 0);
+				draw_sprite(holo_spr, 0, w div 2, sprite_get_yoffset(holo_spr));
+				gpu_set_colorwriteenable(1, 1, 1, 1);
+			}
 		surface_reset_target();
 		
 		surface_free(s);
 	}
 	
-	draw_surface_ext(holo_surf, bbox_left, bbox_bottom - 16 - h, 1, 1, 0, c_white, random_range(0.08, 0.1) * (show_alpha * 1.5 + 1));
+	var a;
+	
+	if isclear
+		a = random_range(0.15, 0.20) * (show_alpha * 2 + 1);
+	else
+		a = random_range(0.08, 0.1) * (show_alpha * 1.5 + 1)
+	draw_surface_ext(holo_surf, bbox_left, bbox_bottom - 16 - h, 1, 1, 0, c_white, a);
 }
 
 if instance_exists(obj_player)
