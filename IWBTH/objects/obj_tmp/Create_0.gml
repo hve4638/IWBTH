@@ -1,4 +1,4 @@
 ///@desc New Event
-start = spr_dragun_rpg_out;
-endd = spr_dragun_rpg_outro
+start = spr_headhunter_idle;
+endd = spr_headhunter_laser_down;
 sprite_index = start;
