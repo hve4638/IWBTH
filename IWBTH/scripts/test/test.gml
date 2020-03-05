@@ -1,6 +1,5 @@
 return 0;
-var a = dectobin(8 + 1 + 2);
-cout_show(a, a[0], a[1]);
-cout_show(bintodec(a));
+
+cout_show(sprite_get_number(spr_headhunter_laser_focus));
 
 return 1;

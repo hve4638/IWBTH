@@ -39,7 +39,7 @@ tp_idx = 0;
 tp_pretime = 3;
 tp_posttime = 4;
 
-data = data_create(obj_data_providience)
+data = data_create(obj_data_providience);
 motion = data.motion;
 nextspr = data.nextspr;
 dealspr = data.dealspr;
