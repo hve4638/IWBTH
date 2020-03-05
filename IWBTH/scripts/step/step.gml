@@ -1,0 +1,1 @@
+return ceil(room_speed * argument[0]);

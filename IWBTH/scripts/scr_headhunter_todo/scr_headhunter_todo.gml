@@ -11,6 +11,12 @@ while(todo_signal_exists(td))
 			case -1:
 				state = todo_receive(td);
 			break;
+			
+			
+			case -4:
+				sprite_change(spr_headhunter_idle);
+				onlook = true;
+			break;
 		}
 	}
 	else
@@ -24,6 +30,8 @@ while(todo_signal_exists(td))
 			
 			case 2:
 				onfocus = todo_receive(td);
+				if onfocus
+					focus_dir = point_direction(x, y-7, Player.x, Player.y);
 			break;
 			
 			case 11:
@@ -32,8 +40,8 @@ while(todo_signal_exists(td))
 			
 			case 12:
 				var lx, ly;
-				lx = x + lengthdir_x(64, focus_dir);
-				ly = y - 7 + lengthdir_y(64, focus_dir);
+				lx = x + lengthdir_x(64 - 10, focus_dir);
+				ly = y - 7 + lengthdir_y(64 - 10, focus_dir);
 				
 				
 				with(instance_create_layer(lx, ly, L_ABOVE, obj_laser))
@@ -55,6 +63,11 @@ while(todo_signal_exists(td))
 					image_yscale = 1.5;
 					life_create(30);
 				}*/
+			break;
+			
+			case 13:
+				ondash = true;
+				dashtime_max = todo_receive(td);
 			break;
 		}
 	}

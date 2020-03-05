@@ -18,7 +18,9 @@ with(sys_particle)
 	num = argument[5];
 	shape = argument_count > 6 ? argument[6] : Shape[idx];
 	dis = argument_count > 7 ? argument[7] : Dis[idx];
-
+	
+	if isno(shape) shape = Shape[idx];
+	if isno(dis) dis = Dis[idx];
 	if !isdeclare[idx]
 		particle_declare(idx);
 	

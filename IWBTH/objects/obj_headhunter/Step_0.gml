@@ -19,3 +19,8 @@ if onfocus
 			focus_dir -= 8;
 	}
 }
+
+if ondash
+{
+	tile_meeting()
+}

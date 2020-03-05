@@ -10,6 +10,10 @@ focus_dir = 0;
 
 onlaserline = false;
 
+ondash = false;
+dashtime_max = 0;
+dashtime = 0;
+
 image_xscale = 2;
 image_yscale = 2;
 
