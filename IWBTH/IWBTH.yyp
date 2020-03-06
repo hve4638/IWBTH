@@ -487,6 +487,14 @@
             }
         },
         {
+            "Key": "0f441661-0931-4dad-9f15-88b4a9198afc",
+            "Value": {
+                "id": "9d4164d7-3d6e-4265-8317-c0c2fc1a838e",
+                "resourcePath": "sprites\\spr_headhunter_rolling\\spr_headhunter_rolling.yy",
+                "resourceType": "GMSprite"
+            }
+        },
+        {
             "Key": "0f8eb8f1-4e2b-4294-b107-decf51d1472c",
             "Value": {
                 "id": "e140a3c1-d085-4d61-aba8-b42b25d316b6",
@@ -1519,6 +1527,14 @@
             }
         },
         {
+            "Key": "315ecd41-3443-426c-b279-f77f92a4abf4",
+            "Value": {
+                "id": "9d90c322-9099-431c-83a4-bd91d673b049",
+                "resourcePath": "sprites\\spr_headhunter_sword_attack\\spr_headhunter_sword_attack.yy",
+                "resourceType": "GMSprite"
+            }
+        },
+        {
             "Key": "31a76248-fe24-4e42-a9d8-e57399494281",
             "Value": {
                 "id": "75f8e194-5699-4118-85bd-6a1275747635",
@@ -2106,7 +2122,7 @@
             "Key": "497b8b35-b05c-40c0-b905-3dc6b62d8ba2",
             "Value": {
                 "id": "b806feea-193e-41ea-be92-406a44178a48",
-                "resourcePath": "sprites\\spr_headhunter_sword_attack\\spr_headhunter_sword_attack.yy",
+                "resourcePath": "sprites\\spr_headhunter_sword_dash\\spr_headhunter_sword_dash.yy",
                 "resourceType": "GMSprite"
             }
         },
@@ -2399,6 +2415,14 @@
             }
         },
         {
+            "Key": "53529df9-631b-4879-8df3-2b3afd1bfc55",
+            "Value": {
+                "id": "7ad2a0f1-fcd8-4519-baec-fe35ca6db044",
+                "resourcePath": "scripts\\scr_headhunter_next\\scr_headhunter_next.yy",
+                "resourceType": "GMScript"
+            }
+        },
+        {
             "Key": "535b842f-3b53-48c0-9111-1f6d90ffd7ba",
             "Value": {
                 "id": "00b29b46-65ab-43d8-8d94-d3d990ddd48c",
@@ -2426,7 +2450,7 @@
             "Key": "542ec54e-b8ea-4b23-81e6-213f23777f07",
             "Value": {
                 "id": "7348417c-0edf-463a-95f5-debcaa7bda87",
-                "resourcePath": "sprites\\spr_headhunter_jump_ready2\\spr_headhunter_jump_ready2.yy",
+                "resourcePath": "sprites\\spr_headhunter_jump\\spr_headhunter_jump.yy",
                 "resourceType": "GMSprite"
             }
         },
@@ -3043,6 +3067,14 @@
             "Value": {
                 "id": "70118753-cf60-41e0-abdb-a99db41c114b",
                 "resourcePath": "sprites\\spr_jsabbullet\\spr_jsabbullet.yy",
+                "resourceType": "GMSprite"
+            }
+        },
+        {
+            "Key": "69ad2e92-eb41-4b69-9274-0cab24184af8",
+            "Value": {
+                "id": "76ccd3e4-1c4c-4e3a-b18b-dd59ac406381",
+                "resourcePath": "sprites\\spr_headhunter_jump_after\\spr_headhunter_jump_after.yy",
                 "resourceType": "GMSprite"
             }
         },
@@ -5434,7 +5466,7 @@
             "Key": "bb1c7dab-c80b-470d-9d1c-22d777b2679c",
             "Value": {
                 "id": "7c7ae7c4-6dc6-470f-a168-e5406dc3b5a4",
-                "resourcePath": "sprites\\spr_headhunter_jump_ready1\\spr_headhunter_jump_ready1.yy",
+                "resourcePath": "sprites\\spr_headhunter_jump_ready\\spr_headhunter_jump_ready.yy",
                 "resourceType": "GMSprite"
             }
         },
@@ -5628,6 +5660,14 @@
                 "id": "a522af21-5868-450e-b454-bfc347b2551c",
                 "resourcePath": "sprites\\spr_text\\spr_text.yy",
                 "resourceType": "GMSprite"
+            }
+        },
+        {
+            "Key": "c12ae07b-30eb-4b2f-8498-c9277464c5e9",
+            "Value": {
+                "id": "853e3b27-0685-429a-81c1-2de62097fd9a",
+                "resourcePath": "scripts\\sprite_get_size\\sprite_get_size.yy",
+                "resourceType": "GMScript"
             }
         },
         {
@@ -7747,7 +7787,8 @@
         "f35f122f-1498-49ab-b572-99f063ca55f5",
         "d87429bc-da1d-425b-81ee-e309d529deab",
         "76ebf255-0abe-4439-81d1-8f6d684e2c99",
-        "704add4e-3b02-453d-81dc-7ed0398f4e28"
+        "704add4e-3b02-453d-81dc-7ed0398f4e28",
+        "a5137bfb-ebcf-49db-92f8-ad3c9ace2407"
     ],
     "tutorial": ""
 }

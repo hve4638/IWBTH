@@ -1,4 +1,4 @@
-if !onhealth
+if !onhealth || onrolling
 	exit;
 
 hp -= other.damage;

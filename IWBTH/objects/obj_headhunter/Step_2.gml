@@ -6,20 +6,12 @@ if onhealth
 }
 
 if onlook
-{
-	image_xscale = (x < Player.x ? 1 : -1) * abs(image_xscale);
-}
+	look = (x < Player.x ? 1 : -1);
+
+image_xscale = look * abs(image_xscale);
 
 if sprite_index == spr_headhunter_laser_focus
 {
-	/*var lx, ly, d;
-	lx = lengthdir_x(32, focus_dir);
-	ly = lengthdir_y(32, focus_dir);
-	d = pdir(abs(lx), ly);
-	
-	if d >= 270
-		d -= 360;
-	d += 90;*/
 	var d, m;
 	m = image_number - 1;
 	
@@ -36,3 +28,7 @@ if sprite_index == spr_headhunter_laser_focus
 		image_index = d/180 * m;
 	}
 }
+
+//hspd = 0;
+if ongrav
+	vspd += grav;

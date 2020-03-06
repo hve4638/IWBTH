@@ -2,7 +2,7 @@
     "id": "bb1c7dab-c80b-470d-9d1c-22d777b2679c",
     "modelName": "GMSprite",
     "mvc": "1.12",
-    "name": "spr_headhunter_jump_ready1",
+    "name": "spr_headhunter_jump_ready",
     "For3D": false,
     "HTile": false,
     "VTile": false,
