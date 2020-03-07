@@ -80,20 +80,26 @@ todo_edit(motion[3]);
 	//todo_add_signal(-4);
 
 todo_edit(motion[4]);
-	todo_add_sprite(spr_headhunter_boom_ready);
-	dt = sprite_frame(spr_headhunter_boom_ready) * sprite_get_number(spr_headhunter_boom_ready);
+	todo_add_sprite(spr_headhunter_boom_ready, 0, 1.5);
+	dt = sprite_frame(spr_headhunter_boom_ready) * (sprite_get_number(spr_headhunter_boom_ready) / 1.5);
 	todo_add_sleep(dt);
 	
 	todo_add_sprite(spr_headhunter_boom_shoot);
 	dt = sprite_frame(spr_headhunter_boom_shoot) * 6;
+	todo_add_signal(15);
+	//todo_add_send(15, 16, -8);
 	todo_add_sleep(dt);
 	
 	todo_add_sprite(spr_headhunter_boom_shoot);
 	dt = sprite_frame(spr_headhunter_boom_shoot) * 6;
+	todo_add_signal(15);
+	//todo_add_send(15, 8, -18);
 	todo_add_sleep(dt);
 	
 	todo_add_sprite(spr_headhunter_boom_shoot);
 	dt = sprite_frame(spr_headhunter_boom_shoot) * 6;
+	todo_add_signal(15);
+	//todo_add_send(15, 13, -9);
 	todo_add_sleep(dt);
 	
 	todo_add_nope();

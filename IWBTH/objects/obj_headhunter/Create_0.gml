@@ -48,6 +48,6 @@ image_xscale = 2;
 image_yscale = 2;
 
 data = data_create(obj_data_headhunter);
-rand_create(motion[0], motion[1], motion[2]);
+rand_create(motion[0], motion[1], motion[2], motion[4]);
 
 tile_collision = tilemap_id(L_BLOCK)

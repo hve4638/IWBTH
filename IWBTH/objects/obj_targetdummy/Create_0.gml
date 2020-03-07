@@ -1,5 +1,5 @@
 ds_init();
-pysical_create();
+physical_create();
 
 tile_collision = tilemap_id(L_BLOCK);
 
