@@ -1,0 +1,1 @@
+tile_collision = tilemap_id(L_BLOCK);

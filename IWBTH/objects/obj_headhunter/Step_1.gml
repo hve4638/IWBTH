@@ -15,5 +15,5 @@ if keyboard_check_pressed(ord("1"))
 
 if keyboard_check_pressed(ord("2"))
 {
-	todo_play(motion[3]);
+	todo_play(motion[4]);
 }

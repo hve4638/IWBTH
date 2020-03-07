@@ -26,4 +26,10 @@ if h != 0
 		iscol = true;
 }
 
+if tilemap_get_at_pixel(tile_collision, x, y)
+{
+	iscol = true;	
+}
+
+
 return iscol;

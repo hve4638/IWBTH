@@ -6,7 +6,8 @@
     "children": [
         "30c603f7-adcc-4428-9cd1-10c8d3d95b68",
         "3e05d2d1-2ca0-40d9-9f7d-025881b1b835",
-        "05609cf8-a6f0-465a-a8a6-d4c1e515955f"
+        "05609cf8-a6f0-465a-a8a6-d4c1e515955f",
+        "978db1d5-2df3-41b5-85c7-df9c209fa9df"
     ],
     "filterType": "GMObject",
     "folderName": "danmakucontrol",

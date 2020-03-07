@@ -9,4 +9,6 @@ type = no;
 time_idx = 0;
 image_speed = 0;
 
+block_collision = false;
+tile_collision = tilemap_id(L_BLOCK);
 cs = 0;

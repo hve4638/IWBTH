@@ -36,17 +36,18 @@ while(todo_signal_exists(td))
 			break;
 			
 			case 3:
+				var spd = 13;
 				if !rolltowall
 				{
 					if x < room_width div 2
 					{
 						look = 1;
-						hspd = 8;
+						hspd = spd;
 					}
 					else
 					{
 						look = -1;
-						hspd = -8;
+						hspd = -spd;
 					}
 				}
 				else
@@ -54,21 +55,22 @@ while(todo_signal_exists(td))
 					if x < room_width div 2
 					{
 						look = -1;
-						hspd = -8;
+						hspd = -spd;
 					}
 					else
 					{
 						look = 1;
-						hspd = 8;
+						hspd = spd;
 					}
 				}
 				
-				sprite_change(spr_headhunter_rolling);
+				sprite_change(spr_headhunter_rolling, 0, 1.4);
 				onrolling = true;
 				ongrav = false;
 				onlook = false;
 				rolltowall = false;
 			break;
+	
 			case 11:
 				onlaserline = todo_receive(td);
 			break;

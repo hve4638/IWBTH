@@ -59,7 +59,11 @@ if ondash
 	y = dash_yp + ly;
 
 	if dashtime_max < dashtime
+	{
+		if place_meeting(x, y, obj_player)
+			kill_force(dash_len div 64, dash_dir);
 		ondash = false;
+	}
 }
 
 if onrolling
@@ -70,8 +74,55 @@ if onrolling
 		onrolling = false;
 		hspd = 0;
 		vspd = 0;
-		
+
 		scr_headhunter_next();
+	}
+}
+
+if onjump2
+{
+	if sprite_index == spr_headhunter_jump
+	{
+		if jump_idx++ > 5
+		{
+			sprite_change(spr_headhunter_gunrotate)
+			shoot_rotate = 0;
+		}
+	}
+	
+	if sprite_index == spr_headhunter_gunrotate
+	{
+		var lx, ly, dir, dis;
+		dir = pdir(hspd, vspd);
+		dis = pdis(hspd, vspd);
+		for(var i = 0; i < 2; i++)
+		{
+			if shoot_rotate <= 180
+			{
+				lx = lengthdir_x(dis * (1-i)/2, dir + 180)
+				ly = lengthdir_y(dis * (1-i)/2, dir + 180)
+				shoot_rotate += 5;
+				image_index = shoot_rotate / 180 * 6;
+				
+				if look
+					d = -shoot_rotate;
+				else
+					d = 180 + shoot_rotate;
+
+				with(danmaku_create(x + lx, y + ly, d, 28, 1))
+				{
+					layer = layer_get_id(L_BELOW);
+					sprite_index = spr_bullet_headhunter;
+					image_angle = direction + 180;
+					//image_blend = c_yellow;
+					sprite_set_size(2, 2);
+				
+					//block_collision = true;
+				}
+			}
+			else
+				break;
+		}
 	}
 }
 

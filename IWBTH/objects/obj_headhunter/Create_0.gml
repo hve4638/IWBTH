@@ -27,6 +27,8 @@ onrolling = false;
 rolltowall = false;
 onjump1 = false;
 onjump2 = false;
+jump_idx = 0;
+shoot_rotate = 0;
 
 w_right = 959;
 w_left = 128;
