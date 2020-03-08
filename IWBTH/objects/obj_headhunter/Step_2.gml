@@ -29,6 +29,15 @@ if sprite_index == spr_headhunter_laser_focus
 	}
 }
 
+if instance_exists(laser_obj)
+{
+	with(laser_obj)
+	{
+		var i = dsin(life_idx * 25);
+		image_blend = make_color_hsv(45, value_merge(0, 255, i), 255);
+	}
+}
+
 //hspd = 0;
 if ongrav
 	vspd += grav;

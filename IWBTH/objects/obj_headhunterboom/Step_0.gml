@@ -27,7 +27,31 @@ if install_idx++ == install_time
 if onboom
 {
 	if boom_idx++ == boom_time
+	{
+		var r = circle_radius div 4;
+		
+		with(instance_create_layer(x, y, L_PLAYER, obj_particle_emitter))
+		{
+			life_create(3);
+			ind = Particle.hd_boom;
+			x1 = other.x - r;
+			x2 = other.x + r;
+			y1 = other.y - r;
+			y2 = other.y + r;
+			num = 15;
+			shape = 1;
+			dis = 1;
+		}
+		
+		with(instance_create_layer(x, y, L_BELOW, obj_damagebox_life))
+		{
+			sprite_change(spr_headhunterboom);
+			sprite_set_size(other.circle_radius, other.circle_radius);
+		}
+		
+		screenshake(12, 2);
 		instance_destroy();
+	}
 }
 
 if oncircle

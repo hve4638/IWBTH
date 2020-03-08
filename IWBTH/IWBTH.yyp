@@ -1951,6 +1951,14 @@
             }
         },
         {
+            "Key": "423391f9-5c8f-4ecd-8d94-467ed0213dc7",
+            "Value": {
+                "id": "40eb906c-09f4-48d0-8dcb-e2aa75b32851",
+                "resourcePath": "objects\\obj_particle_emitter\\obj_particle_emitter.yy",
+                "resourceType": "GMObject"
+            }
+        },
+        {
             "Key": "42585ffb-5de2-47b2-921a-de573afffdae",
             "Value": {
                 "id": "67d00e40-f057-47ae-8f24-4d07ee9fcffe",

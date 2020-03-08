@@ -16,6 +16,7 @@ onlaserline = false;
 ox = 0;
 oy = -10;
 
+laser_obj = noone;
 bossphase = 0;
 
 hspd = 0;

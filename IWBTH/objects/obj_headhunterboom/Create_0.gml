@@ -9,11 +9,11 @@ install_time = 50;
 install_idx = 0;
 
 onboom = false;
-boom_time = 75;
+boom_time = 50;
 boom_idx = 0;
 
 oncircle = false;
-circle_time = 40;
+circle_time = 25;
 circle_radius = 96;
 circle_idx = 0;
 

@@ -4,6 +4,7 @@ motion[1] = todo_create(); //돌진
 motion[2] = todo_create(); //점프
 motion[3] = todo_create(); //구르기
 motion[4] = todo_create(); //폭탄
+motion[5] = todo_create(); //넘어짐
 
 todo_edit(motion[0]);
 	todo_add_send(1, true);
@@ -100,11 +101,16 @@ todo_edit(motion[4]);
 	dt = sprite_frame(spr_headhunter_boom_shoot) * 6;
 	todo_add_signal(15);
 	//todo_add_send(15, 13, -9);
-	todo_add_sleep(dt);
+	todo_add_sleep(dt + 30);
 	
 	todo_add_nope();
+
+todo_edit(motion[5]);
+	todo_add_sprite(spr_headhunter_falldown);
+	dt = sprite_frame(spr_headhunter_falldown);
+	todo_add_sleep(dt * 4);
 	
-
-
-
-
+	todo_add_signal(-1);
+	todo_add_sleep(dt * 4 + 20);
+	todo_add_nope();
+	

@@ -10,7 +10,7 @@ if keyboard_check_pressed(vk_space)
 
 if keyboard_check_pressed(ord("1"))
 {
-	todo_play(motion[2]);
+	todo_play(motion[5]);
 }
 
 if keyboard_check_pressed(ord("2"))

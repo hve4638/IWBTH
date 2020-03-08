@@ -9,10 +9,9 @@ while(todo_signal_exists(td))
 		switch(signal)
 		{
 			case -1:
-				state = todo_receive(td);
+				hspd = 0;
 			break;
-			
-			
+
 			case -4:
 				sprite_change(spr_headhunter_idle);
 				onlook = true;
@@ -80,13 +79,13 @@ while(todo_signal_exists(td))
 				lx = x + ox + lengthdir_x(64 - 10, focus_dir);
 				ly = y + oy + lengthdir_y(64 - 10, focus_dir);
 				
-				
-				with(instance_create_layer(lx, ly, L_ABOVE, obj_laser))
+				laser_obj = instance_create_layer(lx, ly, L_ABOVE, obj_laser);
+				with(laser_obj)
 				{
 					life_create(10);
 					image_index = 1;
-					image_blend = make_color_rgb(255, 240, 0);
-					image_alpha = 0.6;
+					image_blend = make_color_hsv(45, 0, 255);
+					image_alpha = 0.7;
 					image_angle = other.focus_dir;
 					num = 2;	
 					den_add = 0.5;
@@ -165,8 +164,8 @@ while(todo_signal_exists(td))
 				var a, b, d, s;
 				//a = todo_receive(td);
 				//b = todo_receive(td);
-				s = irandom_range(16, 23);
-				d = irandom_range(-5, 75);
+				s = irandom_range(16, 24);
+				d = irandom_range(0, 65);
 				a = abs(lengthdir_x(s, d));
 				b = lengthdir_y(s, d);
 				with(ins)
@@ -175,7 +174,7 @@ while(todo_signal_exists(td))
 					vspd = b;
 					grav = 0.5;
 
-					install_time = 60;
+					install_time = 40;
 				}
 			break;
 		}

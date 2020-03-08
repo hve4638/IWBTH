@@ -7,6 +7,7 @@ enum Particle {
 	escape_try2,
 	escape_effect,
 	blood,
+	hd_boom,
 	test,
 	eoa
 }
@@ -139,6 +140,29 @@ with(sys_particle)
 			//7~-7, 10~-10
 			#endregion
 		} break;
+		
+		case Particle.hd_boom:
+			#region
+			Sys[idx] = part_system_create();
+			Part[idx] = part_type_create();
+		    part_system_depth(Sys[idx],-30);
+		    part_type_shape(Part[idx],pt_shape_sphere);
+		    part_type_size(Part[idx],1,1,-0.01,0);
+		    part_type_scale(Part[idx],1.20,1.20);
+		    part_type_color3(Part[idx],8454143,255,255);
+		    part_type_alpha3(Part[idx],0.70,0.20,0);
+		    part_type_speed(Part[idx],5.80,6,-0.20,0);
+		    part_type_direction(Part[idx],0,359,0,0);
+		    part_type_orientation(Part[idx],0,0,0,0,1);
+		    part_type_blend(Part[idx],1);
+		    part_type_life(Part[idx],40,40);
+		    Emit[idx] = part_emitter_create(Sys[idx]);
+			Shape[idx] = 1;
+			Dis[idx] = 0;
+			/*part_emitter_region(Sys[32],emitter[32],-16,16,14,-14,1,0);
+			part_emitter_stream(Sys[32],emitter[32],particle[32],5);*/
+			#endregion
+		break;
 		default:
 			isdeclare[idx] = false;
 	}

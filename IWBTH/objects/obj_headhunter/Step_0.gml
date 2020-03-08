@@ -181,7 +181,15 @@ if onjump1
 		alarm[1] = 10;
 	}
 }
-
+else
+{
+	if tile_meeting(hspd, 0)
+	{
+		while(tile_meeting(sign(hspd), 0))
+			x += sign(hspd);
+		hspd = 0;
+	}
+}
 x += hspd;
 
 
