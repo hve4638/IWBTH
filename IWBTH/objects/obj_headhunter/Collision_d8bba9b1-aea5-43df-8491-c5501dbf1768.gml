@@ -19,10 +19,6 @@ if (bossphase == 0 && hp/maxhp <= 2/3)
 		rand_create(motion[Hmotion.laser2], motion[Hmotion.dash2], motion[Hmotion.boom2], motion[Hmotion.jump]);
 	else if bossphase == 2
 		rand_create(motion[Hmotion.laser2], motion[Hmotion.dash3], motion[Hmotion.boom2], motion[Hmotion.jump]);
-
-	
-	//sprite_change(spr_headhunter_falldown);
-	//x = clamp(x, w_left + 64, w_right - 96);
 }
 
 instance_destroy(other);

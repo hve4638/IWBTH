@@ -6103,6 +6103,14 @@
             }
         },
         {
+            "Key": "cd017e15-724d-43d2-b8fe-937bb5d5e89b",
+            "Value": {
+                "id": "334cecfe-1b13-4a29-99e4-c79a356e3615",
+                "resourcePath": "sprites\\spr_headhunter_phase_laser\\spr_headhunter_phase_laser.yy",
+                "resourceType": "GMSprite"
+            }
+        },
+        {
             "Key": "cd0994fd-b4bb-4500-b310-2ddf4dce7229",
             "Value": {
                 "id": "0ab7ae57-66c8-4c16-8604-4cdf03263128",
@@ -7500,6 +7508,14 @@
                 "id": "58c79839-9789-4d5c-a9da-c818357affc9",
                 "resourcePath": "scripts\\draw_cd\\draw_cd.yy",
                 "resourceType": "GMScript"
+            }
+        },
+        {
+            "Key": "fcdbd2a5-340f-4ad5-a25e-4c4ae6c4ae49",
+            "Value": {
+                "id": "06bf41b9-a380-4205-bf64-180b03fcd2d2",
+                "resourcePath": "sprites\\spr_headhunter_phase_laserdown\\spr_headhunter_phase_laserdown.yy",
+                "resourceType": "GMSprite"
             }
         },
         {

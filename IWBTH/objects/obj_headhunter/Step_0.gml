@@ -52,7 +52,8 @@ if ondash
 			lx = dash_xp + lengthdir_x(i, dash_dir);
 			ly = dash_yp + lengthdir_y(i, dash_dir);
 			
-			if place_meeting(dash_xp + lengthdir_x(max(i - 64, 0), dash_dir), ly + lengthdir_y(max(i - 64, 0), dash_dir), obj_player)
+			
+			if dash_onkiller && place_meeting(dash_xp + lengthdir_x(max(i - 64, 0), dash_dir), ly + lengthdir_y(max(i - 64, 0), dash_dir), obj_player)
 			{
 				kill_force(dash_len div 64, dash_dir);
 				

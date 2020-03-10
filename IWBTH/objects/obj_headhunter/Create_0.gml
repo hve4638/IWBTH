@@ -44,6 +44,7 @@ dashtime_max = 0;
 dashtime = 0;
 dash_dir = 0;
 dash_len = 0;
+dash_onkiller = false;
 
 dash_tox = 0;
 dash_toy = 0;

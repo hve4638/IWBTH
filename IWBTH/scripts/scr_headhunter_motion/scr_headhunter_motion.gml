@@ -10,6 +10,7 @@ enum Hmotion
 	jump,
 	roll,
 	fall,
+	fall2,
 	boom1,
 	boom2,
 	boom3,
@@ -280,17 +281,53 @@ todo_edit(motion[Hmotion.fall]);
 	
 	todo_add_sleep(60);
 	todo_add_send(-10, room_width div 2);
-	todo_add_send(-11, 166);
+	todo_add_send(-11, 166 - 64);
 	todo_add_send(17, 3);
 	todo_add_sprite(spr_headhunter_sword_dash);
 	todo_add_sleep(3);
 
 	todo_add_sprite(spr_headhunter_sword_after);
 	dt = sprite_frame(spr_headhunter_sword_after) * sprite_get_number(spr_headhunter_sword_after);
-	todo_add_sleep(dt + 25);
+	todo_add_sleep(dt + 5);
 	todo_add_send(-3, false);
 
 	todo_add_signal(-4);
 	todo_add_nope();
 	#endregion
 
+
+todo_edit(motion[Hmotion.fall2]);
+	#region
+	todo_add_send(-3, true);
+	todo_add_send(-5, 18, 1);
+	todo_add_sprite(spr_headhunter_falldown);
+
+	dt = sprite_frame(spr_headhunter_falldown);
+	todo_add_sleep(dt * 4);
+
+	todo_add_signal(-1);
+	todo_add_sleep(dt * 4 + 20);
+
+	todo_add_send(-6, 0.6, 0, c_white);
+	todo_add_send(-6, 0.0, 10, c_white);
+	todo_add_signal(4);
+	todo_add_sprite(spr_empty);
+	
+	todo_add_sleep(25);
+	todo_add_signal(16);
+	
+	todo_add_sleep(60);
+	todo_add_send(-10, room_width div 2);
+	todo_add_send(-11, 166 - 64);
+	todo_add_send(17, 3);
+	todo_add_sprite(spr_headhunter_sword_dash);
+	todo_add_sleep(3);
+
+	todo_add_sprite(spr_headhunter_sword_after);
+	dt = sprite_frame(spr_headhunter_sword_after) * sprite_get_number(spr_headhunter_sword_after);
+	todo_add_sleep(dt + 5);
+	todo_add_send(-3, false);
+
+	todo_add_signal(-4);
+	todo_add_nope();
+	#endregion

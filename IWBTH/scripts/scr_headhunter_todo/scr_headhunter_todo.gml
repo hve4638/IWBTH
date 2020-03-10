@@ -181,6 +181,7 @@ while(todo_signal_exists(td))
 				dash_yp = y;
 				dash_tox = x + lengthdir_x(len, dir);
 				dash_toy = y + lengthdir_y(len, dir);
+				dash_onkiller = true;
 				#endregion
 			break;
 			
@@ -244,6 +245,7 @@ while(todo_signal_exists(td))
 				dash_yp = y;
 				dash_tox = x + lengthdir_x(len, dir);
 				dash_toy = y + lengthdir_y(len, dir);
+				dash_onkiller = false;
 				#endregion
 			break;
 		}
