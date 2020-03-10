@@ -4191,6 +4191,14 @@
             }
         },
         {
+            "Key": "8fd298f6-6152-4568-932e-cfb3642c5cff",
+            "Value": {
+                "id": "d980ff00-4e19-4d8e-93a0-ee7099f7da00",
+                "resourcePath": "sprites\\spr_headhunter_falldown\\spr_headhunter_falldown.yy",
+                "resourceType": "GMSprite"
+            }
+        },
+        {
             "Key": "8ff5c18e-37a4-4755-a39b-1f4ce831f17f",
             "Value": {
                 "id": "cfc682a1-76b8-48bb-a503-982bca5ce37a",
@@ -4844,6 +4852,14 @@
                 "id": "266e1b4b-5f4b-49b7-87f8-5bccd8652b85",
                 "resourcePath": "scripts\\global_ds_init\\global_ds_init.yy",
                 "resourceType": "GMScript"
+            }
+        },
+        {
+            "Key": "a36e24d1-0f48-4d42-992c-c4da826aae79",
+            "Value": {
+                "id": "3efec38a-e2ee-442a-a2c4-c044d25bcdb8",
+                "resourcePath": "sprites\\spr_headhunter_boom_after\\spr_headhunter_boom_after.yy",
+                "resourceType": "GMSprite"
             }
         },
         {
@@ -6551,14 +6567,6 @@
             }
         },
         {
-            "Key": "dde514c3-68de-4db6-8ceb-313d390a1410",
-            "Value": {
-                "id": "2ec80fc4-dc3c-4a86-8ba3-d3c94c9d3b52",
-                "resourcePath": "objects\\obj_ignis\\obj_ignis.yy",
-                "resourceType": "GMObject"
-            }
-        },
-        {
             "Key": "de5e42e2-ac21-4238-a8cd-62ddaa7e7776",
             "Value": {
                 "id": "b8bce3af-a92d-4b57-b058-3b0372883d89",
@@ -7239,14 +7247,6 @@
             }
         },
         {
-            "Key": "f40fde4b-0c38-4ff7-9563-85891d8494bb",
-            "Value": {
-                "id": "468509d1-15f6-4ee9-93fe-4b025e611252",
-                "resourcePath": "sprites\\spr_ignisfire\\spr_ignisfire.yy",
-                "resourceType": "GMSprite"
-            }
-        },
-        {
             "Key": "f418569b-3bdd-4706-a0e4-364317f54032",
             "Value": {
                 "id": "bf9bf341-62d7-4f68-966b-1fff3189a263",
@@ -7522,7 +7522,7 @@
             "Key": "fd6f8656-698d-4641-b5bb-5093dce7105b",
             "Value": {
                 "id": "7ae22ced-5766-4415-928d-7a4895cbe3e9",
-                "resourcePath": "sprites\\spr_headhunter_falldown\\spr_headhunter_falldown.yy",
+                "resourcePath": "sprites\\spr_headhunter_falldown333\\spr_headhunter_falldown333.yy",
                 "resourceType": "GMSprite"
             }
         },

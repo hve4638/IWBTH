@@ -36,21 +36,6 @@ if keyboard_check_pressed(vk_anykey)
 		
 		case vk_f8: ongod = !ongod;	
 		break;
-
-		case ord("P"):
-			pause = !pause;
-			
-			if pause
-			{				
-				instance_deactivate_all(true);
-			}
-			else
-			{
-				if surface_exists(pause_surf)
-					surface_free(pause_surf);
-				instance_activate_all();
-			}
-		break;
 		
 		case ord("I"):
 			if room != rm_title

@@ -7,7 +7,8 @@ enum Particle {
 	escape_try2,
 	escape_effect,
 	blood,
-	hd_boom,
+	explosion,
+	spark,
 	test,
 	eoa
 }
@@ -141,7 +142,7 @@ with(sys_particle)
 			#endregion
 		} break;
 		
-		case Particle.hd_boom:
+		case Particle.explosion:
 			#region
 			Sys[idx] = part_system_create();
 			Part[idx] = part_type_create();
@@ -161,6 +162,29 @@ with(sys_particle)
 			Dis[idx] = 0;
 			/*part_emitter_region(Sys[32],emitter[32],-16,16,14,-14,1,0);
 			part_emitter_stream(Sys[32],emitter[32],particle[32],5);*/
+			#endregion
+		break;
+		
+		case Particle.spark:
+			#region
+			Sys[idx] = part_system_create();
+			Part[idx] = part_type_create();
+			part_system_depth(Sys[idx], 0);
+			part_type_shape(Part[idx],pt_shape_disk);
+			part_type_size(Part[idx],0.10,0.10,0,0);
+			part_type_scale(Part[idx],0.70,0.35);
+			part_type_color1(Part[idx],65535);
+			part_type_alpha2(Part[idx],1,0);
+			part_type_speed(Part[idx],10,18,0,0);
+			part_type_direction(Part[idx],0,359,0,0);
+			part_type_gravity(Part[idx],0.70,270);
+			part_type_orientation(Part[idx],0,0,0,0,1);
+			part_type_blend(Part[idx],1);
+			part_type_life(Part[idx],60,60);
+			Emit[idx] = part_emitter_create(Sys[idx]);
+			Shape[idx] = 1;
+			Dis[idx] = 1;
+			//13~-13, 22~-22
 			#endregion
 		break;
 		default:

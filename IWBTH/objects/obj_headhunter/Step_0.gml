@@ -8,6 +8,21 @@ if todo_is_playing()
 	}
 }
 
+if onboomfloor //&& time_idx mod 2 == 0
+{
+	with(instance_create_layer(boomfloor_idx, w_bottom - 3, L_BELOW, obj_headhunterboom))
+	{
+		install_idx = 10;
+		install_time = 0;
+		onboom = true;
+		boom_time = 25 + (other.boomfloor_idx - other.w_left - 32) div 48;
+	}
+	boomfloor_idx += 48;
+
+	if boomfloor_idx > w_right
+		onboomfloor = false;
+}
+
 if onfocus
 {
 	var d, a;
@@ -37,7 +52,7 @@ if ondash
 			lx = dash_xp + lengthdir_x(i, dash_dir);
 			ly = dash_yp + lengthdir_y(i, dash_dir);
 			
-			if place_meeting(dash_xp + lengthdir_x(max(i - 64, 0), dash_dir), ly, obj_player)
+			if place_meeting(dash_xp + lengthdir_x(max(i - 64, 0), dash_dir), ly + lengthdir_y(max(i - 64, 0), dash_dir), obj_player)
 			{
 				kill_force(dash_len div 64, dash_dir);
 				
@@ -74,7 +89,7 @@ if onrolling
 		onrolling = false;
 		hspd = 0;
 		vspd = 0;
-
+		oninv = false;
 		scr_headhunter_next();
 	}
 }
@@ -116,8 +131,6 @@ if onjump2
 					image_angle = direction + 180;
 					//image_blend = c_yellow;
 					sprite_set_size(2, 2);
-				
-					//block_collision = true;
 				}
 			}
 			else
@@ -167,11 +180,16 @@ if onjump1
 		sprite_change(spr_headhunter_wall);
 		
 		if 0 < hspd
+		{
 			x = 959;
+			look = -1;
+		}
 		else
+		{
 			x = 128;
+			look = 1;
+		}
 			
-
 		//x += sign(hspd) * 28;
 		onlook = false;
 		hspd = 0;
@@ -183,17 +201,28 @@ if onjump1
 }
 else
 {
-	if tile_meeting(hspd, 0)
+	if bbox_left < w_left
 	{
-		while(tile_meeting(sign(hspd), 0))
-			x += sign(hspd);
-		hspd = 0;
+		x = w_left + (x - bbox_left);
+		if hspd < 0
+			hspd = 0;
+	}
+	else if bbox_right > w_right
+	{
+		x = w_right - (bbox_right - x);
+		if hspd > 0
+			hspd = 0;
 	}
 }
 x += hspd;
 
 
+if bbox_left < w_left
+{
+	x = w_left + bbox_left - x;
+}
 
-
-
-
+if bbox_right > w_right
+{
+	x = w_right + x - bbox_right;
+}

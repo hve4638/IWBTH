@@ -1,7 +1,8 @@
-maxhp = 200;
+maxhp = 240;
 hp = maxhp;
 drawhp = 0;
 
+oninv = false;
 onhealth = false;
 onlook = true;
 
@@ -33,6 +34,10 @@ shoot_rotate = 0;
 
 w_right = 959;
 w_left = 128;
+w_bottom = 448;
+
+onboomfloor = false;
+boomfloor_idx = 0;
 
 ondash = false;
 dashtime_max = 0;
@@ -45,10 +50,11 @@ dash_toy = 0;
 dash_xp = 0;
 dash_yp = 0;
 
+time_idx = 0;
 image_xscale = 2;
 image_yscale = 2;
 
 data = data_create(obj_data_headhunter);
-rand_create(motion[0], motion[1], motion[2], motion[4]);
+rand_create(motion[Hmotion.laser1], motion[Hmotion.dash1], motion[Hmotion.boom1], motion[Hmotion.jump]);
 
 tile_collision = tilemap_id(L_BLOCK)

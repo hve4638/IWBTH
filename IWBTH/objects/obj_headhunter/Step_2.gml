@@ -41,3 +41,5 @@ if instance_exists(laser_obj)
 //hspd = 0;
 if ongrav
 	vspd += grav;
+
+time_idx++;

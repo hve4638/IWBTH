@@ -14,26 +14,27 @@ else if hspd > 0
 if !onground
 	vspd += grav;
 
-if install_idx++ == install_time
+if install_idx == install_time * 2 || (install_idx < install_time * 2 && install_idx > install_time && install_y <= y)
 {
-	hspd = 0;
-	vspd = 0;
+	hspd = 0; vspd = 0;
 	grav = 0;
 
+	install_idx = install_time + 1;
 	onboom = true;
 	oncircle = true;
 }
+install_idx++;
 
 if onboom
 {
 	if boom_idx++ == boom_time
 	{
-		var r = circle_radius div 4;
+		var r = part_radius;
 		
 		with(instance_create_layer(x, y, L_PLAYER, obj_particle_emitter))
 		{
 			life_create(3);
-			ind = Particle.hd_boom;
+			ind = Particle.explosion;
 			x1 = other.x - r;
 			x2 = other.x + r;
 			y1 = other.y - r;
@@ -46,7 +47,7 @@ if onboom
 		with(instance_create_layer(x, y, L_BELOW, obj_damagebox_life))
 		{
 			sprite_change(spr_headhunterboom);
-			sprite_set_size(other.circle_radius, other.circle_radius);
+			sprite_set_size(other.boom_radius, other.boom_radius);
 		}
 		
 		screenshake(12, 2);
@@ -61,7 +62,7 @@ if oncircle
 if !tile_meeting(0, 0) && !(hspd == 0 && vspd == 0)
 {
 	//var xx, yy;
-	echo_self(30, c_red, 0.8, [1.0, 0]);
+	echo_self(5, c_red, 0.0, [0.5, 0]);
 
 	if tile_meeting(hspd, 0) && hspd != 0
 	{

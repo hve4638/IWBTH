@@ -1,15 +1,3 @@
-if pause
-{
-	if !surface_exists(pause_surf)
-	{
-		var w = surface_get_width(application_surface);
-		var h = surface_get_height(application_surface);
-		pause_surf = surface_create(w, h);
-		surface_copy(pause_surf, w, h, application_surface);
-	}
-	draw_surface(pause_surf, 0, 0);
-}
-
 var str = strmerge("debug enable");
 
 if ongod

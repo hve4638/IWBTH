@@ -1,1 +1,1 @@
-draw_text(128,128, strmerge(hspd, vspd));
+draw_text(64, 195, strmerge(x, y));

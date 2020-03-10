@@ -11,11 +11,55 @@ while(todo_signal_exists(td))
 			case -1:
 				hspd = 0;
 			break;
+			
+			case -2:
+				vspd = 0;
+			break;
+			
+			case -3:
+				oninv = todo_receive(td);
+			break;
 
 			case -4:
 				sprite_change(spr_headhunter_idle);
 				onlook = true;
 				ongrav = false;
+				onlaserline = false;
+			break;
+			
+			case -5:
+				var a, b;
+				a = todo_receive(td);
+				b = todo_receive(td);
+				screenshake(a, b);
+			break;
+			
+			case -6:
+				var a, f, c;
+				a = todo_receive(td);
+				f = todo_receive(td);
+				c = todo_receive(td);
+				camera_fade_set(a, f, c);
+			break;
+			
+			case -7:
+				focus_dir = todo_receive(td);
+			break;
+			
+			case -10:
+				x = todo_receive(td);
+			break;
+
+			case -11:
+				y = todo_receive(td);
+			break;
+			
+			case -12:
+				x = Player.x;
+			break;
+			
+			case -13:
+				y = Player.y;
 			break;
 		}
 	}
@@ -35,7 +79,10 @@ while(todo_signal_exists(td))
 			break;
 			
 			case 3: //roll
+				#region
 				var spd = 13;
+				
+				oninv = true;
 				if !rolltowall
 				{
 					if x < room_width div 2
@@ -68,8 +115,13 @@ while(todo_signal_exists(td))
 				ongrav = false;
 				onlook = false;
 				rolltowall = false;
+				#endregion
 			break;
-	
+			
+			case 4:
+				particle_emit(Particle.spark, bbox_left, bbox_right, bbox_top, bbox_bottom, 20);
+			break;
+
 			case 11:
 				onlaserline = todo_receive(td);
 			break;
@@ -93,7 +145,8 @@ while(todo_signal_exists(td))
 				screenshake(6, 2);
 			break;
 			
-			case 13:
+			case 13: //dash
+				#region
 				ondash = true;
 				dashtime = 0;
 				dashtime_max = todo_receive(td);
@@ -102,15 +155,6 @@ while(todo_signal_exists(td))
 				var lx, ly;
 				dir = focus_dir;
 				len = 0;
-				
-				/*if dir > 180
-				{
-					cout("dir: ", angle_signx(dir));
-					if angle_signx(dir) == 1
-						dir = 0;
-					else
-						dir = 180;
-				}*/
 				dir = look ? 0 : 180;
 
 				do
@@ -137,9 +181,10 @@ while(todo_signal_exists(td))
 				dash_yp = y;
 				dash_tox = x + lengthdir_x(len, dir);
 				dash_toy = y + lengthdir_y(len, dir);
+				#endregion
 			break;
 			
-			case 14: //roll
+			case 14: //jump
 				var p;
 				onlook = false;
 				onjump1 = true;
@@ -162,8 +207,6 @@ while(todo_signal_exists(td))
 			case 15:
 				var ins = instance_create_layer(x + 64 * look, y - 14, L_ABOVE, obj_headhunterboom);
 				var a, b, d, s;
-				//a = todo_receive(td);
-				//b = todo_receive(td);
 				s = irandom_range(16, 24);
 				d = irandom_range(0, 65);
 				a = abs(lengthdir_x(s, d));
@@ -173,9 +216,35 @@ while(todo_signal_exists(td))
 					hspd = a * other.look;
 					vspd = b;
 					grav = 0.5;
-
 					install_time = 40;
 				}
+			break;
+			
+			case 16:
+				onboomfloor = true;
+				boomfloor_idx = w_left + 32;
+			break;
+			
+			case 17: //dash
+				#region
+				ondash = true;
+				dashtime = 0;
+				dashtime_max = todo_receive(td);
+
+				var dir, len;
+				var lx, ly;
+				//dir = 270;
+				len = 0;
+				dir = 270;
+				len = abs(y - 404);
+				
+				dash_dir = dir;
+				dash_len = len;
+				dash_xp = x;
+				dash_yp = y;
+				dash_tox = x + lengthdir_x(len, dir);
+				dash_toy = y + lengthdir_y(len, dir);
+				#endregion
 			break;
 		}
 	}
