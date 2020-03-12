@@ -1,8 +1,8 @@
 {
-    "id": "97e22d32-9b85-439c-8b38-578020c49b49",
+    "id": "3766c574-8630-453f-9bf7-62429650773e",
     "modelName": "GMScript",
     "mvc": "1.0",
-    "name": "echo_set_color",
+    "name": "echo_self_previous",
     "IsCompatibility": false,
     "IsDnD": false
 }

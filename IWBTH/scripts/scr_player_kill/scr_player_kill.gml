@@ -1,7 +1,7 @@
 if ongod
 {
 	with(obj_player)
-		echo_self_pos(x , y, 100, 1, c_red, 0.5);
+		echo_self_pos(x , y, 100, 0.5, 1, c_red);
 	exit;
 }
 

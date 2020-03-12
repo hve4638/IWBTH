@@ -58,11 +58,9 @@ if onboom
 if oncircle
 	circle_idx = min(circle_time, circle_idx+1);
 
-
 if !tile_meeting(0, 0) && !(hspd == 0 && vspd == 0)
 {
 	//var xx, yy;
-	echo_self(5, c_red, 0.0, [0.5, 0]);
 
 	if tile_meeting(hspd, 0) && hspd != 0
 	{

@@ -3,7 +3,7 @@ life_step();
 hspd = clamp(hspd + hspd_add, hspd_min, hspd_max);
 
 x += hspd * hspd_sign
-echo_self(5, no, 0.0, [0.75, 0.0]);
+echo_self(5, [0.75, 0.0], no, 0.0);
 
 screenshake(2, 1);
 

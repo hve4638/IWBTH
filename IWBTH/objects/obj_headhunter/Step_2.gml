@@ -29,6 +29,16 @@ if sprite_index == spr_headhunter_laser_focus
 	}
 }
 
+switch(sprite_index)
+{
+case spr_headhunter_rolling:
+case spr_headhunter_gunrotate:
+case spr_headhunter_jump:
+	echo_self_previous(2, 15, [0.05, 0], c_purple, 1.0);
+break;
+}
+
+
 if instance_exists(laser_obj)
 {
 	with(laser_obj)

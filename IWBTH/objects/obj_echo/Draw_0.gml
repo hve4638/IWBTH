@@ -9,18 +9,31 @@ var xs, ys;
 xs = image_xscale * s;
 ys = image_yscale * s;
 
-if !isno(c)
+
+switch(shadertype)
 {
+case EchoShader.color:
+	if isno(c)
+		break;
+	
 	var arr = coltodec(c);
 	arr[3] = f;
-	gpu_set_blendmode(bm_add);
-	shader_set(shd_fade);
+	shader_set(sh_color);
 	
-	var col = shader_get_uniform(shd_fade, "u_color");
+	var col = shader_get_uniform(sh_color, "u_color");
 	shader_set_uniform_f_array(col, arr);
+break;
+
+case EchoShader.glow:
+	shader_set(sh_glow);
+break;
 }
+
+if onblend
+	gpu_set_blendmode(blendtype);
 
 draw_sprite_ext(sprite_index, image_index, x, y, xs, ys, image_angle, image_blend, a);
 
+if onblend
+	gpu_set_blendmode(bm_normal);
 shader_reset();
-gpu_set_blendmode(bm_normal);

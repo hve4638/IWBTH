@@ -1,6 +1,3 @@
-//if place_meeting(x,y,obj_killer)
-//	kill();
-
 if dashtime <= 0
 {
 	if !candash
@@ -14,7 +11,10 @@ else
 	image_xscale *= look;
 	
 	for(var i = 0; i < abs(hspd); i++)
-		echo_self_pos(x - i*sign(hspd), y, 10 + dashtime div 2, c_white, 1.0, [0.25, 0]);
+	{
+		var ins = echo_self_pos(x - i * sign(hspd), y, 10 + dashtime div 2, [0.15, 0]); 
+		ins.shadertype = EchoShader.glow;
+	}
 
 	image_xscale = xs;
 }
@@ -39,7 +39,6 @@ if hspd_slide != 0
 }
 
 scr_player_escape();
-
 
 force_spd = 2*pdis(hspd,vspd);
 force_dir = pdir(hspd,vspd);
