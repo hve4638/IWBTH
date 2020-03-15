@@ -8,3 +8,23 @@ if onlaserline
 	draw_sprite_ext(spr_laserline, 0, lx, ly, 100, 2, focus_dir, c_yellow, 9.0);
 	gpu_set_tex_filter(true);
 }
+
+
+if onwhiteout
+{
+	draw_set_alpha(whiteout_alpha);
+
+	draw_set_color(c_white);
+	draw_rectangle(w_left + 1, 0, w_right - 1, w_bottom - 1, false);
+	
+	draw_set_color(c_black);
+	draw_rectangle(0, 0, w_left, room_height, false);
+	draw_rectangle(room_width, 0, w_right, room_height, false);
+	draw_rectangle(w_left + 1, w_bottom, w_right - 1, room_height, false);
+	
+	gpu_set_fog(true, c_black, 0, 0);
+	draw_self();
+	with(obj_player)
+		draw_self();
+	gpu_set_fog(false, 0, 0, 0);
+}

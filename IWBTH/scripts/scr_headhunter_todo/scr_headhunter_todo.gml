@@ -61,6 +61,23 @@ while(todo_signal_exists(td))
 			case -13:
 				y = Player.y;
 			break;
+			
+			case -15:
+				var n = todo_receive(td);
+				array_timeline_act(n);
+			break;
+			
+			case -19:
+				drawhp = 0;
+			break;
+			
+			case -20:
+				var t = todo_receive(td);
+				
+				onhealth = t;
+				if !onhealth
+					bossbar();
+			break;
 		}
 	}
 	else
@@ -121,12 +138,17 @@ while(todo_signal_exists(td))
 			case 4:
 				particle_emit(Particle.spark, bbox_left, bbox_right, bbox_top, bbox_bottom, 20);
 			break;
+			
+			case 5:
+				look = todo_receive(td);
+			break;
 
 			case 11:
 				onlaserline = todo_receive(td);
 			break;
 			
 			case 12: //laser shoot
+				#region
 				var lx, ly;
 				lx = x + ox + lengthdir_x(64 - 10, focus_dir);
 				ly = y + oy + lengthdir_y(64 - 10, focus_dir);
@@ -143,6 +165,7 @@ while(todo_signal_exists(td))
 					den_add = 0.5;
 				}
 				screenshake(6, 2);
+				#endregion
 			break;
 			
 			case 13: //dash
@@ -186,6 +209,7 @@ while(todo_signal_exists(td))
 			break;
 			
 			case 14: //jump
+				#region
 				var p;
 				onlook = false;
 				onjump1 = true;
@@ -202,10 +226,11 @@ while(todo_signal_exists(td))
 				}
 				hspd = lengthdir_x(20, p);
 				vspd = lengthdir_y(20, p);
-				
+				#endregion
 			break;
 			
-			case 15:
+			case 15: //boom
+				#region
 				var ins = instance_create_layer(x + 64 * look, y - 14, L_ABOVE, obj_headhunterboom);
 				var a, b, d, s;
 				s = irandom_range(16, 24);
@@ -219,6 +244,7 @@ while(todo_signal_exists(td))
 					grav = 0.5;
 					install_time = 40;
 				}
+				#endregion
 			break;
 			
 			case 16:
@@ -248,6 +274,46 @@ while(todo_signal_exists(td))
 				dash_onkiller = false;
 				#endregion
 			break;
+			
+			case 18: //laserdown
+				#region
+				var n = todo_receive(td);
+				sprite_change(spr_empty);
+				y = 96;
+				switch(n)
+				{
+					case 1: x = 190; break;	
+					case 2: x = 280; break;	
+					case 3: x = room_width - 280; break;	
+					case 4: x = room_width - 190; break;	
+				}
+
+				array_timeline_act(0);
+				#endregion
+			break;
+			
+			case 19: //laser90
+				#region
+				var n = todo_receive(td);
+				sprite_change(spr_empty);
+				if n
+				{
+					x = 160;
+					look = -1;
+				}
+				else
+				{
+					x = room_width - 160;
+					look = 1;
+				}
+				y = 96;
+
+				array_timeline_act(1);
+				#endregion
+			break;
 		}
 	}
 }
+
+
+

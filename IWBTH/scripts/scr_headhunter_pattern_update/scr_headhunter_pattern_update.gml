@@ -9,6 +9,6 @@ switch(bossphase)
 	break;
 	
 	case 3:
-		rand_reset(motion[Hmotion.laser2], motion[Hmotion.dash3], motion[Hmotion.boom2], motion[Hmotion.jump]);
+		rand_reset(motion[Hmotion.laser3], motion[Hmotion.dash3], motion[Hmotion.boom3], motion[Hmotion.jump]);
 	break;
 }

@@ -8,13 +8,16 @@ if todo_is_playing()
 	}
 }
 
-if onboomfloor //&& time_idx mod 2 == 0
+array_timeline_step();
+
+if onboomfloor
 {
 	with(instance_create_layer(boomfloor_idx, w_bottom - 3, L_BELOW, obj_headhunterboom))
 	{
 		install_idx = 10;
 		install_time = 0;
 		onboom = true;
+		boom_radius = 64;
 		boom_time = 25 + (other.boomfloor_idx - other.w_left - 32) div 48;
 	}
 	boomfloor_idx += 48;
@@ -39,6 +42,7 @@ if onfocus
 			focus_dir -= 8;
 	}
 }
+
 
 if ondash
 {
@@ -136,6 +140,8 @@ if onjump2
 			}
 			else
 				break;
+				
+			screenshake(2, 2);
 		}
 	}
 }

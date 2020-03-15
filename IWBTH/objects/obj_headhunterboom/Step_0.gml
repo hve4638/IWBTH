@@ -44,12 +44,16 @@ if onboom
 			dis = 1;
 		}
 		
-		with(instance_create_layer(x, y, L_BELOW, obj_damagebox_life))
+		if distance_to_object(obj_player) <= boom_radius
 		{
-			sprite_change(spr_headhunterboom);
-			sprite_set_size(other.boom_radius, other.boom_radius);
+			var dir, dis, len;
+			dis = distance_to_object(obj_player);
+			dir = point_direction(x, y, obj_player.x, obj_player.y);
+			len = value_merge(18, 3, dis/boom_radius);
+
+			kill(len, dir);
 		}
-		
+
 		screenshake(12, 2);
 		instance_destroy();
 	}
@@ -58,44 +62,35 @@ if onboom
 if oncircle
 	circle_idx = min(circle_time, circle_idx+1);
 
-if !tile_meeting(0, 0) && !(hspd == 0 && vspd == 0)
+px = x;
+py = y;
+
+if hspd > 0 && x + hspd > w_right
 {
-	//var xx, yy;
-
-	if tile_meeting(hspd, 0) && hspd != 0
-	{
-		var i = sign(hspd);
-		while(tile_meeting(sign(hspd), 0))
-		{
-			x += sign(hspd);
-		
-			if i != sign(--hspd)
-			{
-				hspd = 0;
-				break;
-			}
-		}
-		hspd = -hspd * 2 div 3;
-	}
-
-	if tile_meeting(0, vspd) && vspd > 0
-	{
-		var i = sign(vspd);
-		while(tile_meeting(sign(vspd), 0))
-		{
-			x += sign(vspd);
-		
-			if i != sign(--vspd)
-			{
-				vspd = 0;
-				break;
-			}
-		}
-		vspd = - vspd * 2 div 3;
-	}
-
-	px = x;
-	py = y;
-	x += hspd;
-	y += vspd;
+	var l = abs(x - w_right);
+	x = w_right - l;
+	hspd = -hspd;
 }
+else if hspd < 0 && x + hspd < w_left
+{
+	var l = abs(x - w_left);
+	x = w_left + l;
+	hspd = -hspd;
+}
+else
+	x += hspd;
+
+if vspd < 0 && y + vspd < w_top
+{
+	var l = abs(y - w_top);
+	y = w_top + l;
+	vspd = -vspd;
+}
+else if vspd > 0 && y + vspd > w_bottom
+{
+	var l = abs(y - w_bottom);
+	y = w_bottom + l;
+	vspd = -vspd * 0.75;
+}
+else 
+	y += vspd;

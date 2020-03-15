@@ -4,8 +4,7 @@ drawhp = 0;
 
 onhealth = true;
 
-tl_on = array_create(15, false);
-tl_idx = array_create(15, 0);
+array_timeline_create(15);
 time_idx = 0;
 
 image_alpha = 0.75;

@@ -24,8 +24,6 @@ if slash_delay <= 0
 else
 {
 	slash_delay--;
-	max_hspd = 1;
-	vspd *= 0.25;
 }
 
 if hspd_slide != 0

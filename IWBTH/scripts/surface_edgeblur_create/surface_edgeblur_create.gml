@@ -12,11 +12,14 @@ surface_set_target(surf);
 	draw_circle_color(o, o, r, c_black, c_white, 0);
 	gpu_set_blendmode(bm_normal);
 surface_reset_target();
+
 	
-	
+var o = shader_get_uniform(sh_convertalpha, "outputcolor");
+shader_set_uniform_f_array(o, [0.0, 0.0, 0.0]);
+
 global.edgeblur_surf = surface_create(view_w, view_h);
 surface_set_target(global.edgeblur_surf);
-	shader_set(shd_blackalpha);
+	shader_set(sh_convertalpha);
 	draw_surface_ext(surf,0,0, view_w/s, view_h/s, 0, c_white, 1.0);
 	shader_reset();
 surface_reset_target();

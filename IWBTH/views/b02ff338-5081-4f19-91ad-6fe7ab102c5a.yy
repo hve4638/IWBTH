@@ -14,7 +14,6 @@
         "497b8b35-b05c-40c0-b905-3dc6b62d8ba2",
         "315ecd41-3443-426c-b279-f77f92a4abf4",
         "ad43b714-6ff5-4935-9bd0-9be770516eb3",
-        "fd6f8656-698d-4641-b5bb-5093dce7105b",
         "8fd298f6-6152-4568-932e-cfb3642c5cff",
         "bb1c7dab-c80b-470d-9d1c-22d777b2679c",
         "542ec54e-b8ea-4b23-81e6-213f23777f07",
@@ -22,6 +21,7 @@
         "69ad2e92-eb41-4b69-9274-0cab24184af8",
         "1a939a87-854c-4db4-8f61-0f1a2c9c91ca",
         "0035993a-529c-48e2-8cac-86d925aa16c3",
+        "01ac5e88-83d8-4f52-be95-12c55d2385b9",
         "595b3be1-f89d-45e0-9349-22552947a7d9",
         "0f441661-0931-4dad-9f15-88b4a9198afc",
         "18affb39-4f29-4b91-aacd-1d411420d7a4",
@@ -31,7 +31,10 @@
         "cda990e2-f705-4718-901f-d18b86b06e0e",
         "ef2ca8f9-55e7-4eae-bd38-7ab1fa8a2cfe",
         "cd017e15-724d-43d2-b8fe-937bb5d5e89b",
-        "fcdbd2a5-340f-4ad5-a25e-4c4ae6c4ae49"
+        "fcdbd2a5-340f-4ad5-a25e-4c4ae6c4ae49",
+        "dcacbb09-8802-4257-b879-9a91f79e965a",
+        "f836d1b8-a1ff-4dbf-8da7-96dfee5fe7c9",
+        "d439b148-17dd-4a18-870d-2a6476432400"
     ],
     "filterType": "GMSprite",
     "folderName": "Headhunter",

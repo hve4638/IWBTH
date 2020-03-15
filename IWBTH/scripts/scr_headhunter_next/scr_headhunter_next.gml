@@ -1,3 +1,6 @@
+if !nextenable
+	exit;
+
 if !instance_exists(obj_player)
 	exit;
 
@@ -5,7 +8,6 @@ var np, n;
 var t = next_alarm;
 np = next_attack;
 next_alarm = 12;
-
 
 if isno(next_fix)
 {

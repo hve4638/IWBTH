@@ -63,8 +63,15 @@ if keyboard_check_pressed(vk_anykey)
 		//break;
 		
 		case vk_f12:
-			global.debuglevel = 0;
-			instance_destroy();
+			if volum_music == 0
+				volum_update();
+			else
+			{
+				volum_music = 0.0;
+
+				if 0 <= bgm_p && audio_is_playing(bgm_p)
+					audio_sound_gain(bgm_p, volum_music, 0);
+			}
 		break;
 	}
 }

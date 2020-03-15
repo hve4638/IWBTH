@@ -20,13 +20,13 @@ if show_holo
 		surface_reset_target();
 		
 		
-		var o = shader_get_uniform(sh_alpha, "outputcolor");
+		var o = shader_get_uniform(sh_convertalpha, "outputcolor");
 		shader_set_uniform_f_array(o, [1.0, 1.0, 1.0]);
 
 		holo_surf = surface_create(w, h);
 
 		surface_set_target(holo_surf);
-			shader_set(sh_alpha);
+			shader_set(sh_convertalpha);
 				draw_surface(s, 0, 0);
 			shader_reset();
 
