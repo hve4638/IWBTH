@@ -1951,6 +1951,14 @@
             }
         },
         {
+            "Key": "4157368a-e49d-4c25-8d76-41951e13d448",
+            "Value": {
+                "id": "bbfc5068-e9aa-4097-b9fc-90d5727c1857",
+                "resourcePath": "timelines\\timeline3\\timeline3.yy",
+                "resourceType": "GMTimeline"
+            }
+        },
+        {
             "Key": "415c009c-2693-4e0e-b5c2-3040f0bbd1e0",
             "Value": {
                 "id": "48d01e47-e122-422a-8102-bacddb9d0fb3",
@@ -6455,6 +6463,14 @@
             }
         },
         {
+            "Key": "da512f9e-4152-4448-93d8-c82f085eaf85",
+            "Value": {
+                "id": "c4aff078-6b4d-4d98-929e-f14c85cbed4e",
+                "resourcePath": "scripts\\scr_headhunter_pattern_update\\scr_headhunter_pattern_update.yy",
+                "resourceType": "GMScript"
+            }
+        },
+        {
             "Key": "da615eb1-0af6-407c-a463-de77c34dc667",
             "Value": {
                 "id": "23034346-e8a1-4d62-9736-7cddf4041fb2",
@@ -7870,7 +7886,8 @@
         "704add4e-3b02-453d-81dc-7ed0398f4e28",
         "a5137bfb-ebcf-49db-92f8-ad3c9ace2407",
         "c12ae07b-30eb-4b2f-8498-c9277464c5e9",
-        "53529df9-631b-4879-8df3-2b3afd1bfc55"
+        "53529df9-631b-4879-8df3-2b3afd1bfc55",
+        "da512f9e-4152-4448-93d8-c82f085eaf85"
     ],
     "tutorial": ""
 }

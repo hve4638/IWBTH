@@ -1,1 +1,0 @@
-draw_text(64, 195, strmerge(x, y));

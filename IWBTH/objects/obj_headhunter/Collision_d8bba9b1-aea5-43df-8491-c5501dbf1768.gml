@@ -3,8 +3,8 @@ if !onhealth || oninv
 
 hp -= other.damage;
 
-if (bossphase == 0 && hp/maxhp <= 2/3)
-|| (bossphase == 1 && hp/maxhp <= 1/3)
+if (bossphase == 1 && hp/maxhp <= 2/3)
+|| (bossphase == 2 && hp/maxhp <= 1/3)
 {
 	alarm[0] = -1;
 	
@@ -15,10 +15,7 @@ if (bossphase == 0 && hp/maxhp <= 2/3)
 	look = -other.look;
 	todo_play(motion[Hmotion.fall]);
 	
-	if bossphase == 1
-		rand_create(motion[Hmotion.laser2], motion[Hmotion.dash2], motion[Hmotion.boom2], motion[Hmotion.jump]);
-	else if bossphase == 2
-		rand_create(motion[Hmotion.laser2], motion[Hmotion.dash3], motion[Hmotion.boom2], motion[Hmotion.jump]);
+	scr_headhunter_pattern_update();
 }
 
 instance_destroy(other);
