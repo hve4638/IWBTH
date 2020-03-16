@@ -62,7 +62,7 @@ if ondash
 				kill_force(dash_len div 64, dash_dir);
 				
 				sprite_change(spr_headhunter_sword_attack, 0, 0);
-				echo_self_pos(lx, ly, 15, [0.75, 0], c_red, [0.25, 1.0]);
+				echo_self_pos(lx, ly, 15, [1.0, 0]);
 				
 				screenshake(6, 2);
 			}

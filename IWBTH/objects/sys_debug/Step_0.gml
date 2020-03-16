@@ -63,15 +63,13 @@ if keyboard_check_pressed(vk_anykey)
 		//break;
 		
 		case vk_f12:
-			if volum_music == 0
-				volum_update();
+			if volum_music != 0
+				config_mastervolum = 0;
 			else
-			{
-				volum_music = 0.0;
+				config_mastervolum = 1.0;
 
-				if 0 <= bgm_p && audio_is_playing(bgm_p)
-					audio_sound_gain(bgm_p, volum_music, 0);
-			}
+				volum_update();
+				config_write();
 		break;
 	}
 }

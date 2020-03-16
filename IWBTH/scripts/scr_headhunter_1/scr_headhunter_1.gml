@@ -30,7 +30,7 @@ switch(idx)
 			killforce = false;
 			image_index = 1;
 			image_blend = make_color_hsv(45, 0, 255);
-			image_alpha = 0.7;
+			image_alpha = other.laseralpha;
 			image_angle = other.focus_dir;
 			num = 1;
 			//num = 2;

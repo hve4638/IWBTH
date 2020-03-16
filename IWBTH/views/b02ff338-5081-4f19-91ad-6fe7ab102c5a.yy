@@ -34,7 +34,8 @@
         "fcdbd2a5-340f-4ad5-a25e-4c4ae6c4ae49",
         "dcacbb09-8802-4257-b879-9a91f79e965a",
         "f836d1b8-a1ff-4dbf-8da7-96dfee5fe7c9",
-        "d439b148-17dd-4a18-870d-2a6476432400"
+        "d439b148-17dd-4a18-870d-2a6476432400",
+        "ba6733a6-12e9-4e0f-baea-be0db1d5a4c8"
     ],
     "filterType": "GMSprite",
     "folderName": "Headhunter",

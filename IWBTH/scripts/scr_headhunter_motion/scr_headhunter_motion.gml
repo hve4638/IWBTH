@@ -184,14 +184,14 @@ todo_edit(motion[Hmotion.dash3]);
 	todo_add_send(2, false); //focus
 	todo_add_sprite(spr_headhunter_sword_ready);
 	dt = sprite_frame(spr_headhunter_sword_ready);
-	todo_add_sleep(dt * 5);
+	todo_add_sleep(dt * 5 + 2);
 
 	todo_add_send(13, 3);
 	todo_add_sprite(spr_headhunter_sword_dash);
 	todo_add_sleep(3);
 	
-	todo_add_sprite(spr_headhunter_sword_after);
-	dt = sprite_frame(spr_headhunter_sword_after) * sprite_get_number(spr_headhunter_sword_after);
+	todo_add_sprite(spr_headhunter_sword_after, 0, 1.2);
+	dt = sprite_frame(spr_headhunter_sword_after) * sprite_get_number(spr_headhunter_sword_after) / 1.2;
 	todo_add_sleep(dt);
 
 	todo_add_signal(-4);
@@ -277,11 +277,10 @@ todo_edit(motion[Hmotion.boom3]);
 	}
 	todo_add_sprite(spr_headhunter_boom_after, 0, 1.5);
 	dt = sprite_frame(spr_headhunter_boom_after) * sprite_get_number(spr_headhunter_boom_after) / 1.5;
-	todo_add_sleep(dt + 20);
+	todo_add_sleep(dt + 2);
 	
 	todo_add_nope();
 	#endregion
-
 
 todo_edit(motion[Hmotion.fall]);
 	#region
@@ -303,11 +302,13 @@ todo_edit(motion[Hmotion.fall]);
 	todo_add_send(-20, false);
 	todo_add_sleep(25);
 
-
 	todo_add_signal(16);
 	todo_add_sleep(60);
 	todo_add_send(-10, room_width div 2); //x
 	todo_add_send(-11, 166 - 64); //y
+	todo_add_send(-15, 2); //act2
+
+	todo_add_sleep(25 + 40);
 	todo_add_send(17, 3); //knifedown
 	todo_add_sprite(spr_headhunter_sword_dash);
 	todo_add_sleep(3);

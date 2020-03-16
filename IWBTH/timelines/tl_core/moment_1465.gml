@@ -12,6 +12,8 @@ with(ins)
 	alphato = 0.3;
 	alphawave = 0.03;
 	
+	ins_whitestart = 2;
+	ins_whitetime = 5;
 	ins_life = 30;
 	ins_createtime = 5;
 	ins_destroytime = 5;

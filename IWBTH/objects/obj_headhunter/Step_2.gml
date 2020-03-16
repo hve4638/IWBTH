@@ -46,7 +46,7 @@ if instance_exists(laser_obj)
 	with(laser_obj)
 	{
 		var i = dsin(life_idx * 25);
-		image_blend = make_color_hsv(45, value_merge(0, 255, i), 255);
+		image_blend = merge_color(c_yellow, c_white, i); //make_color_hsv(45, value_merge(0, 255, i), 255);
 	}
 }
 

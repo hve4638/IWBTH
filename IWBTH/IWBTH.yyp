@@ -5559,6 +5559,14 @@
             }
         },
         {
+            "Key": "ba6733a6-12e9-4e0f-baea-be0db1d5a4c8",
+            "Value": {
+                "id": "18b9e92e-1c0e-4557-9fae-bdf731349a62",
+                "resourcePath": "sprites\\spr_headhunter_phase_laser180\\spr_headhunter_phase_laser180.yy",
+                "resourceType": "GMSprite"
+            }
+        },
+        {
             "Key": "ba887675-ee84-4927-9894-41fa9e7edf51",
             "Value": {
                 "id": "72b4106c-d9f0-4738-afe7-7ed553dd7971",
@@ -7941,6 +7949,7 @@
         "d87429bc-da1d-425b-81ee-e309d529deab",
         "a5137bfb-ebcf-49db-92f8-ad3c9ace2407",
         "c12ae07b-30eb-4b2f-8498-c9277464c5e9",
+        "83195ca6-eea4-471a-b22b-010ac35d7f6c",
         "3ee04a77-4457-4c6a-bff1-f426b7e8ef04",
         "da0446e1-e186-43b2-af1c-770e7949e611",
         "535b842f-3b53-48c0-9111-1f6d90ffd7ba",
@@ -7963,7 +7972,6 @@
         "11835c80-3b92-4c46-97a3-a3057b16b954",
         "b872989a-509b-403b-9777-86d23fba5b22",
         "f28613a5-dc0f-4979-a145-c8d7c45aa438",
-        "83195ca6-eea4-471a-b22b-010ac35d7f6c",
         "76ebf255-0abe-4439-81d1-8f6d684e2c99",
         "704add4e-3b02-453d-81dc-7ed0398f4e28",
         "53529df9-631b-4879-8df3-2b3afd1bfc55",

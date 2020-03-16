@@ -12,4 +12,5 @@ nextspr[? spr_headhunter_phase_laser] = spr_headhunter_laser;
 nextspr[? spr_headhunter_phase_laserdown] = spr_headhunter_laser_down;
 nextspr[? spr_headhunter_phase_laserdown2] = spr_empty;
 nextspr[? spr_headhunter_phase_laser90_end] = spr_empty;
+nextspr[? spr_headhunter_phase_laser180] = spr_headhunter_laser_180;
 //nextspr[? spr_headhunter_phase_laser90] = spr_headhunter_laser_90;

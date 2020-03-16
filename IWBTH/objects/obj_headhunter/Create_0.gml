@@ -1,10 +1,12 @@
 maxhp = 200;
 hp = maxhp;
 drawhp = 0;
+armor = 1.0;
 
 oninv = false;
 onhealth = false;
 onlook = true;
+
 
 onfocus = true;
 focus_dir = 0;
@@ -17,6 +19,7 @@ onlaserline = false;
 ox = 0;
 oy = -10;
 
+laseralpha = 1.0;
 laser_obj = noone;
 bossphase = 0;
 
@@ -48,6 +51,9 @@ dash_onkiller = false;
 
 onlaser90 = false;
 laser90_idx = 0;
+
+onlaser180 = false;
+laser180_idx = 0;
 
 dash_tox = 0;
 dash_toy = 0;

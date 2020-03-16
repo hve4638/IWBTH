@@ -23,7 +23,7 @@ switch(idx)
 			life_create(10);
 			image_index = 1;
 			image_blend = make_color_hsv(45, 0, 255);
-			image_alpha = 0.7;
+			image_alpha = other.laseralpha;
 			image_angle = other.focus_dir;
 			num = 2;	
 			den_add = 0.5;

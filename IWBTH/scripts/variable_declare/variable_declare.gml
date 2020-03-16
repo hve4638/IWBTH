@@ -153,4 +153,7 @@ global.debuglevel = 0;
 	each_volum[? snd_jump2] = 0.75;
 	each_volum[? snd_magic_blast2] = 0.75;
 	each_volum[? snd_dragungunshoot] = 0.8;
+	each_volum[? snd_slash] = 0.75;
+	each_volum[? snd_slash2] = 0.75;
+	each_volum[? snd_effect3] = 0.75;
 #endregion

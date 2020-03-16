@@ -1,7 +1,7 @@
 if !onhealth || oninv
 	exit;
 
-hp -= other.damage;
+hp -= other.damage * armor;
 
 if (bossphase == 1 && hp/maxhp <= 2/3)
 || (bossphase == 2 && hp/maxhp <= 1/3)
@@ -13,10 +13,20 @@ if (bossphase == 1 && hp/maxhp <= 2/3)
 	hspd = sign(other.look) * 7;
 	onlook = false;
 	look = -other.look;
+	next_attack = no;
+	next_fix = no;
+	
 	if bossphase == 2
+	{
+		armor = 0.9;
+		
 		todo_play(motion[Hmotion.fall]);
+	}
 	else if bossphase == 3
+	{
+		armor = 0.75;
 		todo_play(motion[Hmotion.fall2]);
+	}
 	
 	scr_headhunter_pattern_update();
 }
@@ -41,8 +51,7 @@ if hp < 0
 	alarm_trigger(270, scr_gotostageresult);
 	sys_global.canrestart = false;
 	stageclear(3, 0);
-	 
-	//array_timeline_act(2);
+
 	todo_play(motion[Hmotion.die]);
 }
 
