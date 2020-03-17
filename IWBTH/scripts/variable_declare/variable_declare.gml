@@ -156,4 +156,6 @@ global.debuglevel = 0;
 	each_volum[? snd_slash] = 0.75;
 	each_volum[? snd_slash2] = 0.75;
 	each_volum[? snd_effect3] = 0.75;
+	each_volum[? snd_shoot2] = 0.4;
+	each_volum[? snd_explode3] = 0.7;
 #endregion

@@ -5,6 +5,7 @@ switch(idx)
 {
 	case 0:
 		sprite_change(spr_headhunter_phase_laser90);
+		sfx(snd_laserready);
 		onlaserline = true;
 		onfocus = false;
 		focus_dir = 270;
@@ -15,6 +16,7 @@ switch(idx)
 	
 	case 10:
 		sprite_change(spr_headhunter_laser_90, 0, 0);
+		sfx(snd_laser);
 		var lx, ly;
 		lx = x + ox + lengthdir_x(64 - 10, focus_dir);
 		ly = y + oy + lengthdir_y(64 - 10, focus_dir);

@@ -115,6 +115,10 @@ if onjump2
 		var lx, ly, dir, dis;
 		dir = pdir(hspd, vspd);
 		dis = pdis(hspd, vspd);
+		
+		if shoot_rotate <= 180 && time_idx mod 2 == 0
+			sfx(snd_shoot2);
+
 		for(var i = 0; i < 2; i++)
 		{
 			if shoot_rotate <= 180
@@ -128,7 +132,7 @@ if onjump2
 					d = -shoot_rotate;
 				else
 					d = 180 + shoot_rotate;
-
+				
 				with(danmaku_create(x + lx, y + ly, d, 28, 1))
 				{
 					layer = layer_get_id(L_BELOW);

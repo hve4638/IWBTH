@@ -53,7 +53,8 @@ if onboom
 
 			kill(len, dir);
 		}
-
+		
+		sfx(snd_explode3);
 		screenshake(12, 2);
 		instance_destroy();
 	}

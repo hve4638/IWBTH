@@ -37,6 +37,7 @@ todo_edit(motion[Hmotion.laser1]);
 		todo_add_send(1, true); //look
 		todo_add_send(2, true); //focus
 		todo_add_send(11, true); //laserpoint
+		todo_add_sound(snd_laserready);
 		todo_add_sleep(25);
 
 		todo_add_send(1, false); //look
@@ -45,6 +46,7 @@ todo_edit(motion[Hmotion.laser1]);
 		todo_add_sleep(8);
 	
 		todo_add_send(12); //lasershoot
+		todo_add_sound(snd_laser);
 		todo_add_sleep(20);
 
 		todo_add_send(1, true); //look
@@ -72,6 +74,7 @@ todo_edit(motion[Hmotion.laser2]);
 		todo_add_send(1, true); //look
 		todo_add_send(2, true); //focus
 		todo_add_send(11, true); //laserpoint
+		todo_add_sound(snd_laserready);
 		todo_add_sleep(15);
 
 		todo_add_send(1, false); //look
@@ -80,6 +83,7 @@ todo_edit(motion[Hmotion.laser2]);
 		todo_add_sleep(7);
 	
 		todo_add_send(12); //lasershoot
+		todo_add_sound(snd_laser);
 		todo_add_sleep(20);
 
 		todo_add_send(1, true); //look
@@ -108,6 +112,7 @@ todo_edit(motion[Hmotion.laser3]);
 		todo_add_send(1, true); //look
 		todo_add_send(2, true); //focus
 		todo_add_send(11, true); //laserpoint
+		todo_add_sound(snd_laserready);
 		todo_add_sleep(10);
 
 		todo_add_send(1, false); //look
@@ -116,6 +121,7 @@ todo_edit(motion[Hmotion.laser3]);
 		todo_add_sleep(5);
 	
 		todo_add_send(12); //lasershoot
+		todo_add_sound(snd_laser);
 		todo_add_sleep(20);
 
 		todo_add_send(1, true); //look
@@ -142,6 +148,7 @@ todo_edit(motion[Hmotion.dash1]);
 
 	todo_add_send(13, 3);
 	todo_add_sprite(spr_headhunter_sword_dash);
+	todo_add_sound(snd_headhunterdash);
 	todo_add_sleep(3);
 	
 	todo_add_sprite(spr_headhunter_sword_after);
@@ -165,6 +172,7 @@ todo_edit(motion[Hmotion.dash2]);
 
 	todo_add_send(13, 3);
 	todo_add_sprite(spr_headhunter_sword_dash);
+	todo_add_sound(snd_headhunterdash);
 	todo_add_sleep(3);
 	
 	todo_add_sprite(spr_headhunter_sword_after);
@@ -188,6 +196,7 @@ todo_edit(motion[Hmotion.dash3]);
 
 	todo_add_send(13, 3);
 	todo_add_sprite(spr_headhunter_sword_dash);
+	todo_add_sound(snd_headhunterdash);
 	todo_add_sleep(3);
 	
 	todo_add_sprite(spr_headhunter_sword_after, 0, 1.2);
@@ -222,12 +231,15 @@ todo_edit(motion[Hmotion.roll]);
 
 todo_edit(motion[Hmotion.boom1]);
 	#region
+	todo_add_sound(snd_reload);
 	todo_add_sprite(spr_headhunter_boom_ready, 0, 1.5);
-	dt = sprite_frame(spr_headhunter_boom_ready) * (sprite_get_number(spr_headhunter_boom_ready) / 1.5);
-	todo_add_sleep(dt);
+	dt = sprite_frame(spr_headhunter_boom_ready) / 1.5;
+	todo_add_sleep(dt * 9);
+	todo_add_sleep(dt * 2);
 	
 	repeat(3)
 	{
+		todo_add_sound(snd_shootboom);
 		todo_add_sprite(spr_headhunter_boom_shoot);
 		dt = sprite_frame(spr_headhunter_boom_shoot) * 6;
 		todo_add_signal(15);
@@ -242,12 +254,15 @@ todo_edit(motion[Hmotion.boom1]);
 
 todo_edit(motion[Hmotion.boom2]);
 	#region
+	todo_add_sound(snd_reload);
 	todo_add_sprite(spr_headhunter_boom_ready, 0, 1.5);
-	dt = sprite_frame(spr_headhunter_boom_ready) * (sprite_get_number(spr_headhunter_boom_ready) / 1.5);
-	todo_add_sleep(dt);
+	dt = sprite_frame(spr_headhunter_boom_ready) / 1.5;
+	todo_add_sleep(dt * 9);
+	todo_add_sleep(dt * 2);
 	
 	repeat(3)
 	{
+		todo_add_sound(snd_shootboom);
 		todo_add_sprite(spr_headhunter_boom_shoot, 0, 1.4);
 		dt = sprite_frame(spr_headhunter_boom_shoot) * 6 / 1.4;
 		todo_add_signal(15);
@@ -262,14 +277,16 @@ todo_edit(motion[Hmotion.boom2]);
 
 todo_edit(motion[Hmotion.boom3]);
 	#region
+	todo_add_sound(snd_reload);
 	todo_add_sprite(spr_headhunter_boom_ready, 0, 1.5);
-	dt = sprite_frame(spr_headhunter_boom_ready) * (sprite_get_number(spr_headhunter_boom_ready) / 1.5);
-	todo_add_sleep(dt);
+	dt = sprite_frame(spr_headhunter_boom_ready) / 1.5;
+	todo_add_sleep(dt * 11);
 	
 	repeat(1)
 	{
 		todo_add_sprite(spr_headhunter_boom_shoot);
 		dt = sprite_frame(spr_headhunter_boom_shoot) * 6;
+		todo_add_sound(snd_shootboom);
 		todo_add_signal(15);
 		todo_add_signal(15);
 		todo_add_signal(15);
@@ -298,6 +315,7 @@ todo_edit(motion[Hmotion.fall]);
 	todo_add_send(-6, 0.6, 0, c_white);
 	todo_add_send(-6, 0.0, 10, c_white);
 	todo_add_signal(4);
+	todo_add_sound(snd_boomdisapear);
 	todo_add_sprite(spr_empty);
 	todo_add_send(-20, false);
 	todo_add_sleep(25);
@@ -310,6 +328,7 @@ todo_edit(motion[Hmotion.fall]);
 
 	todo_add_sleep(25 + 40);
 	todo_add_send(17, 3); //knifedown
+	todo_add_sound(snd_headhunterdash);
 	todo_add_sprite(spr_headhunter_sword_dash);
 	todo_add_sleep(3);
 
@@ -320,7 +339,6 @@ todo_edit(motion[Hmotion.fall]);
 	todo_add_signal(-19); //drawhp reset
 	todo_add_send(-20, true); //showhp
 	todo_add_sleep(dt + 5);
-
 
 	todo_add_signal(-4);
 	todo_add_nope();
@@ -340,6 +358,7 @@ todo_edit(motion[Hmotion.fall2]);
 	todo_add_send(-6, 0.6, 0, c_white);
 	todo_add_send(-6, 0.0, 10, c_white);
 	todo_add_signal(4);
+	todo_add_sound(snd_boomdisapear);
 	todo_add_sprite(spr_empty);
 	todo_add_send(-20, false);
 	todo_add_sleep(25);
@@ -372,10 +391,12 @@ todo_edit(motion[Hmotion.fall2]);
 
 	todo_add_send(2, false);  //focus
 	todo_add_send(11, true); //laserpoint
+	todo_add_sound(snd_laserready);
 	todo_add_sleep(12);
 	
 	todo_add_send(11, false); //laserpoint
 	todo_add_send(12); //lasershoot
+	todo_add_sound(snd_laser);
 	todo_add_send(-5, 10, 1); //shake
 	todo_add_sleep(12);
 	
@@ -413,6 +434,7 @@ todo_edit(motion[Hmotion.die]);
 	todo_add_send(-6, 0.0, 10, c_white);
 	todo_add_signal(4);
 	todo_add_sprite(spr_empty);
+	todo_add_sound(snd_boomdisapear);
 	todo_add_nope();
 	
 	#endregion

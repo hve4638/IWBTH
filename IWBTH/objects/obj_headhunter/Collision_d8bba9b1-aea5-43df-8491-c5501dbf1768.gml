@@ -6,6 +6,7 @@ hp -= other.damage * armor;
 if (bossphase == 1 && hp/maxhp <= 2/3)
 || (bossphase == 2 && hp/maxhp <= 1/3)
 {
+	sfx(snd_stun);
 	alarm[0] = -1;
 	
 	bossphase++;
