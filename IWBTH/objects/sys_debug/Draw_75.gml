@@ -44,7 +44,8 @@ if show_save
 {
 	str += strmerge("[SAVE]");
 	str += strmerge("pos: ", sv_x, ",", sv_y, "  ", sv_auto);
-	str += strmerge("time: ", sv_time, "  death: ", death);
+	str += strmerge("time: ", time, "  death: ", death);
+	str += strmerge("bossmeet: ", boss_firstmeet);
 	str += strmerge("hub: ", sv_hubx, ",", sv_huby);
 	str += strmerge("room: ", sv_room);
 	str += strmerge("look: ", sv_look);

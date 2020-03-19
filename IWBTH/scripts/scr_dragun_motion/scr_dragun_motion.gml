@@ -134,9 +134,11 @@ todo_edit(motion[3]); //head
 	todo_add_send(-11, DragunParts.head, 0);
 	todo_add_send(-1, stateD.attack);
 	var dt = ds_list_size(st_headshoot);
+	todo_add_sound(snd_dragunrpgready);
 	todo_add_send(-7, true);
 	todo_add_send(-2, st_headshoot, 0.2, no);
 	todo_add_sleep(dt * 5 + 1);	
+
 	todo_add_send(-7, false);
 	todo_add_send(-11, DragunParts.head, 1);
 	todo_add_signal(-4);

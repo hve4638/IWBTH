@@ -20,11 +20,13 @@ enablekeyinput = true;
 
 ongod = false;
 
-pause = false;
-pause_surf = no;
+//pause = false;
+//window_surf = no;
 
 bgm_p = noone;
 bgm_ind = no;
+
+boss_firstmeet = array_create(10, 0);
 
 global.todolist = ds_map_create();
 global.todoedit = no;
@@ -87,7 +89,7 @@ global.debuglevel = 0;
 	meta_n = ds_grid_value_x(csv_savemeta, 0, 0, w - 1, 0, "#necessary");
 	meta_d = ds_grid_value_x(csv_savemeta, 0, 0, w - 1, 0, "#default");
 	meta_dtype = ds_grid_value_x(csv_savemeta, 0, 0, w - 1, 0, "#default_type");
-	
+
 	global.savemeta = array_create(h - 1);
 	global.savemeta_necessary = array_create(h - 1);
 	global.savemeta_default = array_create(h - 1, -4);
@@ -158,4 +160,5 @@ global.debuglevel = 0;
 	each_volum[? snd_effect3] = 0.75;
 	each_volum[? snd_shoot2] = 0.4;
 	each_volum[? snd_explode3] = 0.7;
+	each_volum[? snd_magic_blast2_small] = 0.75;
 #endregion

@@ -28,3 +28,15 @@ if onwhiteout
 		draw_self();
 	gpu_set_fog(false, 0, 0, 0);
 }
+/*
+shader_set(sh_wave);
+	var ut, uw, uc;
+	ut = shader_get_uniform(sh_wave, "u_time");
+	uw = shader_get_uniform(sh_wave, "u_width");
+	uc = shader_get_uniform(sh_wave, "u_cycle");
+	shader_set_uniform_f(ut, time_idx);
+	shader_set_uniform_f(uw, 1);
+	shader_set_uniform_f(uc, 1);
+	draw_self_pos(x, y - 128);
+shader_reset();
+*/

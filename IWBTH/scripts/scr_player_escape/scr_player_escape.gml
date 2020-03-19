@@ -21,7 +21,10 @@ if escape_time < escape_idx
 	}
 
 	with(sys_camera)
+	{
+		follow_type = Camtype.nothing;
 		blur_alpha = other.escape_blureffect_alpha;
+	}
 
 	if audio_is_playing(snd_escape_charge)
 		audio_stop_sound(snd_escape_charge);

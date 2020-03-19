@@ -113,12 +113,14 @@ while(todo_signal_exists(td))
 					a.shaketime = 1;
 					a.firedelay = value;
 					b.firedelay = value;
+					b.firesnd = no;
 
 					t += 1;
 					
 					if bossphase == 2
 					{
 						a.shakepow = 4;
+						a.firesnd = snd_magic_blast2_small;
 						value += 3;
 					}
 				}

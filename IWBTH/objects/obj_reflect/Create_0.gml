@@ -1,6 +1,4 @@
-///@desc New Event
 reflect_surf = -1;
-reflect_surf2 = -1;
 
 reflect_color = 0x99D6FF;
 

@@ -7,3 +7,4 @@ lock = false;
 dealto = noone;
 
 showalpha = 1.0;
+showalpha2 = 0.0;

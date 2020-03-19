@@ -1,4 +1,4 @@
-maxhp = 300;
+maxhp = 320;
 hp = maxhp;
 armor = 1;
 drawhp = 0;
@@ -34,6 +34,9 @@ lp_spd = 1;
 lp_sign = 1;
 
 isdie = false;
+
+onrage = false;
+rage_alpha = 0;
 
 smoothbulletgener_l = noone;
 smoothbulletgener_r = noone;

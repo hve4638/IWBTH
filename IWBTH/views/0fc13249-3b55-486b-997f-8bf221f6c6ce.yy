@@ -7,7 +7,8 @@
         "a87912a6-a2cc-4241-865c-967e0235cba0",
         "8196ba18-4e5d-4072-a78f-0be4f6953c9b",
         "6053f615-8114-4149-9e46-e52ab7096ad5",
-        "50b88eb2-e787-407d-8da3-f20006ada6c5"
+        "50b88eb2-e787-407d-8da3-f20006ada6c5",
+        "0de21f7e-246e-4f0f-98e9-f85cca239b13"
     ],
     "filterType": "GMRoom",
     "folderName": "boss",

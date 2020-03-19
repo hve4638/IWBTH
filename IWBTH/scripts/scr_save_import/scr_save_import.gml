@@ -15,3 +15,4 @@ stage_death = sv[? "stagedeath"];
 sv_hubx = sv[? "hubx"];
 sv_huby = sv[? "huby"];
 stage_clear = sv[? "clearstage"];
+boss_firstmeet = sv[? "bossmeet"];

@@ -24,8 +24,14 @@ if enable
 		script_execute(trigger_script_on);
 
 	if t && script_exists(trigger_script)
+	{
+		cout("ya", time_idx);
 		script_execute(trigger_script);
+	}
 
 	if t_off && script_exists(trigger_script_off)
 		script_execute(trigger_script_off);
+	
+	if t
+		time_idx++;
 }

@@ -13,6 +13,8 @@ delay_max = -1;
 trig_p = false;
 target = noone;
 
+time_idx = 0;
+
 enum TriggerCondition {
 	always,
 	target,

@@ -11,3 +11,4 @@ stagedeath,0,"[0, 0, 0, 0, 0, 0, 0, 0, 0, 0]",array
 hubx,0,-1,real
 huby,0,-1,real
 clearstage,0,"[0, 0, 0, 0, 0, 0, 0, 0, 0, 0]",array
+bossmeet,0,"[0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0]",array

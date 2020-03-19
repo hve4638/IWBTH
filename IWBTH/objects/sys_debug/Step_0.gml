@@ -20,12 +20,14 @@ if keyboard_check_pressed(vk_anykey)
 				goto_delay = 100;
 			}
 		break;
+
 		case vk_f3:
 			for(var i = 1; i <= 5; i++)
 				stage_clear[i] = true;
 		break;
 		
-		case vk_f4: on_customview = !on_customview;
+		case vk_f4:
+			bossmeet_reset();
 		break;
 		
 		case vk_f5: on_deal = !on_deal;
@@ -44,6 +46,10 @@ if keyboard_check_pressed(vk_anykey)
 			scr_gamestart();
 		break;
 		
+		case ord("Y"):
+			//
+		break;
+		
 		/*
 		case vk_f9:
 		if !instance_exists(sys_record)
@@ -59,8 +65,19 @@ if keyboard_check_pressed(vk_anykey)
 		case vk_f10: room_goto(rm_soundtest);
 		break;
 		
-		//case vk_f11: room_goto(rm_editroom_dragun);
-		//break;
+		case vk_f11:
+			var arr, i = 0;
+			arr[0] = 0;
+			with(all)
+				arr[i++] = object_get_name(object_index);
+			
+			var n = array_size(arr);
+			var str = "";
+			for(i = 0; i < n; i++)
+				str += strmerge(arr[i]);
+			clipboard_set_text(str);
+			cout("copy instance list to clipboard.");
+		break;
 		
 		case vk_f12:
 			if volum_music != 0

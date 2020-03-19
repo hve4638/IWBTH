@@ -52,4 +52,15 @@ if onhealth
 	drawhp += add / 10;
 	
 	bossbar(drawhp/maxhp);
+	
+	with(obj_dragun_parts)
+	{
+		if showalpha2 < 1.0
+		{
+			showalpha2 = min(showalpha2 + 0.01, 1.0);
+		}
+	}
 }
+
+if onrage
+	rage_alpha = min(rage_alpha + 0.01, 0.55)

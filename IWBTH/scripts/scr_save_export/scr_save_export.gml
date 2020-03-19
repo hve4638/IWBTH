@@ -16,5 +16,6 @@ sv[? "stagedeath"] = stage_death;
 sv[? "hubx"] = sv_hubx;
 sv[? "huby"] = sv_huby;
 sv[? "clearstage"] = stage_clear;
+sv[? "bossmeet"] = boss_firstmeet;
 
 save_write();

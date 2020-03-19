@@ -43,7 +43,7 @@
 
 #macro c_jsab make_color_rgb(251,30,110)
 
-globalvar pause, pause_surf; //pause
+globalvar pause, window_surf; //pause
 globalvar time, death, save_idx, difficulty; //save data
 globalvar key; //keyconfig
 globalvar config_mastervolum, config_music, config_sound, config_ui, fullscreen;
@@ -54,6 +54,7 @@ globalvar enablekeyinput;
 globalvar each_volum; //각 볼륨크기
 globalvar ongod;
 globalvar bgm_p, bgm_ind;
+globalvar boss_firstmeet;
 
 globalvar sv_auto, sv_x, sv_y, sv_room, sv_look, sv_time, sv_death; //temp save
 globalvar sv_hubx, sv_huby;

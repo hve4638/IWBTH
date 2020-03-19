@@ -1,7 +1,6 @@
-///@desc New Event
 var cam, cam_x, cam_y;
 var cam_w, cam_h;
-var x1, y1, x2, y2, rw, rh;
+var x1, y1, x2, y2;
 var cx, cy, scale;
 cam = view_camera[0];
 cam_x = camera_get_view_x(cam);

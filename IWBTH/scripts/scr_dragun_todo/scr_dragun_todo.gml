@@ -94,6 +94,7 @@ while(todo_signal_exists(td))
 			
 			case 2:
 				onlastpattern = todo_receive(td);
+				onrage = true;
 			break;
 			
 			case 10:

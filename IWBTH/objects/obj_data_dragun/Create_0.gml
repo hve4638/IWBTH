@@ -60,7 +60,6 @@ map_attackpos = map;
 //global.csv_dragunattack
 #endregion
 
-
 scr_dragun_motion();
 
 //cout("tlqkf");
