@@ -9,8 +9,7 @@
     "instanceCreationOrderIDs": [
         "a1cb6f03-a5da-4c5c-af18-e26d06d25cb7",
         "c94b43a7-f283-48be-b88b-0e2a01e56443",
-        "61019980-9b13-41fc-83bc-94f924f941ff",
-        "0c31040e-e65b-4275-ad54-0c5d0b01c0c0"
+        "61019980-9b13-41fc-83bc-94f924f941ff"
     ],
     "IsDnD": false,
     "layers": [
@@ -28,8 +27,7 @@
             "inheritSubLayers": false,
             "inheritVisibility": false,
             "instances": [
-{"name": "inst_1DA58DCC","id": "c94b43a7-f283-48be-b88b-0e2a01e56443","colour": { "Value": 4294967295 },"creationCodeFile": "InstanceCreationCode_inst_1DA58DCC.gml","creationCodeType": ".gml","ignore": false,"imageIndex": 0,"imageSpeed": 1,"inheritCode": false,"inheritItemSettings": false,"IsDnD": false,"m_originalParentID": "00000000-0000-0000-0000-000000000000","m_serialiseFrozen": false,"modelName": "GMRInstance","name_with_no_file_rename": "inst_1DA58DCC","objId": "c7f7a8a5-f343-460d-8448-f36a523cc069","properties": null,"rotation": 0,"scaleX": 1,"scaleY": 1,"mvc": "1.1","x": 256,"y": 2560},
-{"name": "inst_55C12C8B","id": "0c31040e-e65b-4275-ad54-0c5d0b01c0c0","colour": { "Value": 4294967295 },"creationCodeFile": "","creationCodeType": "","ignore": false,"imageIndex": 0,"imageSpeed": 1,"inheritCode": false,"inheritItemSettings": false,"IsDnD": false,"m_originalParentID": "00000000-0000-0000-0000-000000000000","m_serialiseFrozen": false,"modelName": "GMRInstance","name_with_no_file_rename": "inst_55C12C8B","objId": "d639c251-fde7-4c24-b3b7-4ac1fc22cd1a","properties": null,"rotation": 0,"scaleX": 1,"scaleY": 1,"mvc": "1.1","x": 1120,"y": 2688}
+{"name": "inst_1DA58DCC","id": "c94b43a7-f283-48be-b88b-0e2a01e56443","colour": { "Value": 4294967295 },"creationCodeFile": "InstanceCreationCode_inst_1DA58DCC.gml","creationCodeType": ".gml","ignore": false,"imageIndex": 0,"imageSpeed": 1,"inheritCode": false,"inheritItemSettings": false,"IsDnD": false,"m_originalParentID": "00000000-0000-0000-0000-000000000000","m_serialiseFrozen": false,"modelName": "GMRInstance","name_with_no_file_rename": "inst_1DA58DCC","objId": "c7f7a8a5-f343-460d-8448-f36a523cc069","properties": null,"rotation": 0,"scaleX": 1,"scaleY": 1,"mvc": "1.1","x": 256,"y": 2560}
             ],
             "layers": [
 

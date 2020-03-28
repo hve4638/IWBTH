@@ -26,7 +26,7 @@
 
 #macro view_w 1088
 #macro view_h 608
-
+#macro BLOCKLAYER layer_tilemap_get_id(layer_get_id("TileBlock"))
 
 ///DEBUG
 #macro DEFAULT_INSTANTPLAY 0

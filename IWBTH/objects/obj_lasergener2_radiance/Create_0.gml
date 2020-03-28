@@ -1,6 +1,6 @@
-life_create(50);
+life_create(500);
 
-hspd = -6;
+hspd = -3;
 vspd = 0;
 
 time_idx = 0;

@@ -37,7 +37,7 @@ swordtop_list = list_create();
 
 next_attack = no;
 
-rand_create(Rmotion.laser, Rmotion.sword360, Rmotion.swordtop, Rmotion.swordside);
+rand_create(Rmotion.laser, Rmotion.sword360, Rmotion.swordtop, Rmotion.swordside, Rmotion.laserall, Rmotion.missile);
 
 sprite_change(spr_radiance_idle);
 

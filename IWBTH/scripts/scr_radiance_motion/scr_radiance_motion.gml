@@ -43,7 +43,15 @@ todo_edit(motion[Rmotion.laser]);
 		todo_add_sleep(30);
 		todo_add_signal(Rsignal.laser);
 		todo_add_sleep(50);
-		todo_add_signal(-4);
+		
+		todo_add_send(Rsignal.todoplay, Rmotion.tele);
+	#endregion
+
+todo_edit(motion[Rmotion.laserall]);
+	#region
+		todo_add_sleep(10);
+		todo_add_signal(Rsignal.laserall);
+		todo_add_sleep(90);
 		
 		todo_add_send(Rsignal.todoplay, Rmotion.tele);
 	#endregion
@@ -82,6 +90,19 @@ todo_edit(motion[Rmotion.sword360]);
 		
 		todo_add_send(Rsignal.todoplay, Rmotion.tele);
 	#endregion
-	
+
+todo_edit(motion[Rmotion.missile]);
+	#region
+		todo_add_sprite(spr_radiance_focus);
+		todo_add_sleep(20);
+		todo_add_signal(Rsignal.missile);
+		todo_add_sleep(40);
+		todo_add_signal(Rsignal.missile);
+		todo_add_sleep(40);
+		todo_add_signal(Rsignal.missile);
+		todo_add_sleep(60);
+		
+		todo_add_send(Rsignal.todoplay, Rmotion.tele);
+	#endregion
 	
 	

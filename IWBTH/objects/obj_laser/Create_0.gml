@@ -10,7 +10,9 @@ num_add = 0;
 den_add = 0;
 damagethick = 0.5;
 
-image_xscale = 100;
+alpha = no;
+
+image_xscale = 250;
 image_speed = 0;
 
 killforce = true;
