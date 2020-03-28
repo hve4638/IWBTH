@@ -5,7 +5,7 @@ hp -= other.damage;
 
 instance_destroy(other);
 
-if bossphase == 1 && hp / maxhp <= 0.6
+if bossphase == 1 && hp / maxhp <= 0.55
 {
 	rand_reset(motion[7], motion[8], motion[2], motion[3], motion[1]);
 	repeat(3) rand_adjust(rand_get_index(motion[3]));

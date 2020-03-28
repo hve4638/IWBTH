@@ -1,4 +1,4 @@
-maxhp = 270;
+maxhp = 300;
 hp = maxhp;
 drawhp = 0;
 onhealth = false;

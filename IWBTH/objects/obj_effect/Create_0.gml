@@ -1,2 +1,12 @@
-life_idx = 0;
-life = 50;
+life_create(50);
+
+alpha = no;
+xscale = no;
+yscale = no;
+
+imagelifematch = false;
+imageloop = false;
+
+onlinear = true;
+
+blend = bm_normal;

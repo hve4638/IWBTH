@@ -9,16 +9,12 @@ if keyboard_check_pressed(vk_anykey)
 		break;
 
 		case ord("U"):
+			with(sys_global)
+				onui = !onui;
 		break;
-			with(instance_create_layer(0, 0, L_SYS, obj_trigger))
-			{
-				trigger_condition = TriggerCondition.always;
-				trigger_end = TriggerEnd.loop;
 
-				trigger_script = scr_gotostageresult;
-				goto_idx = 0;
-				goto_delay = 100;
-			}
+		case ord("H"):
+			hidedebug = !hidedebug;
 		break;
 
 		case vk_f3:
@@ -61,9 +57,6 @@ if keyboard_check_pressed(vk_anykey)
 		
 		//case vk_f6: room_goto(rm_stageresult);
 		//break;
-	
-		case vk_f10: room_goto(rm_soundtest);
-		break;
 		
 		case vk_f11:
 			var arr, i = 0;

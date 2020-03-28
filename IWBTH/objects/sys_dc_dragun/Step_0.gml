@@ -25,7 +25,8 @@ with(obj_danmaku)
 			{
 				for(var i = 270; i - 270 < 360; i+= 360 / 5)
 					danmaku_create(x, y, i, 4, 10000);
-
+					
+				sfx(snd_dragunrpgexplosion);
 				instance_destroy();
 			}
 		break;
@@ -36,7 +37,8 @@ with(obj_danmaku)
 			{
 				for(var i = 0; i < 360; i+= 360 / 16)
 					danmaku_create(x, y, i, 6);
-
+				
+				sfx(snd_dragunrpgexplosion);
 				instance_destroy();
 			}
 			

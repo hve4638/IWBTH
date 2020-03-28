@@ -1,3 +1,6 @@
+if !onui
+	exit;
+
 if intro_alpha > 0
 	draw_sprite_ext(intro_spr, 0, intro_x, intro_y, 1, 1, 0, c_white, intro_alpha);
 

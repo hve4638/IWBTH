@@ -149,7 +149,7 @@ global.debuglevel = 0;
 	for(var i = 0; i < sound_count; i++)
 		each_volum[? index++] = 1.0;
 
-	each_volum[? snd_shoot] = 0.6;
+	each_volum[? snd_shoot] = 0.3;
 	each_volum[? snd_dash] = 0.75;
 	each_volum[? snd_jump] = 0.75;
 	each_volum[? snd_jump2] = 0.75;

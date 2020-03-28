@@ -25,7 +25,7 @@ case EchoShader.color:
 break;
 
 case EchoShader.glow:
-	shader_set(sh_glow);
+	//shader_set(sh_glow);
 break;
 }
 

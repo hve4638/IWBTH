@@ -1,3 +1,5 @@
+if hidedebug
+	exit;
 var str = strmerge("debug enable");
 
 if ongod

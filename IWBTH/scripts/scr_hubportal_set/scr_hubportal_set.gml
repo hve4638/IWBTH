@@ -52,6 +52,25 @@ switch(argument[0])
 		text_idx = EnterText.challenge;
 		isclear = stage_clear[4];
 	break;
+	
+	case 5:
+		var n = 1;
+		if n
+		{
+			name = "Radiance";
+			goto = rm_boss_radiance;
+			show_holo = false;
+			holo_spr = spr_holo_providience;
+		
+			enter_instant = true;
+			text_idx = EnterText.enter;
+			isclear = stage_clear[5];
+		}
+		else
+		{
+			instance_destroy();
+		}
+	break;
 }
 
 

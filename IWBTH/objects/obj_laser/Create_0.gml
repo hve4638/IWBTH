@@ -14,3 +14,4 @@ image_xscale = 100;
 image_speed = 0;
 
 killforce = true;
+blend = bm_normal;

@@ -2,6 +2,8 @@ cout(NL + "####DEBUG MODE#####" + NL);
 
 global.debuglevel = 1;
 
+hidedebug = false;
+
 show_info = false;
 on_convkey = false;
 on_teleport = false;

@@ -1,5 +1,7 @@
 canrestart = false;
 
+onui = true;
+
 time_idx = 0;
 ontimer = false;
 
