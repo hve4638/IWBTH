@@ -15,12 +15,10 @@ switch(idx)
 				life_create(25);
 				sprite_change(spr_laserball, 0, 0);
 				image_angle = other.laser_dir + i;
-				image_xscale = 75;
-				image_yscale = 1;
-				image_alpha = 0.6;
+				xscale = 75;
+				yscale = 1;
 				blend = bm_add;
 				alpha = [0.3, 1, 1, 1, 0];
-				image_alpha = array_value(alpha, 0);
 			}
 		}
 	break;

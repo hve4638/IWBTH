@@ -55,11 +55,11 @@ if onswordside
 {
 	if swordside_idx == 0
 	{
-		swordside_idx = 35;
+		swordside_idx = 40;
 		swordside_cnt--;
 
 		var i = 0, h = Player.y - 48*16;
-		var w = swordside_side ? room_width + 64 : -64;
+		var w = swordside_side ? room_width - 64 : 64;
 		var l = 48*32
 		while(i < l)
 		{
@@ -71,7 +71,8 @@ if onswordside
 				with(ins)
 				{
 					life_create(500);
-					speed = 13;
+					create_dash = 12;
+					create_speed = 11;
 					direction = other.swordside_side ? 180 : 0;
 					image_angle = direction;
 				}
@@ -86,4 +87,68 @@ if onswordside
 	else
 		swordside_idx = max(swordside_idx - 1, 0);
 }
+
+if ontrap
+{
+	var ton = 150;
+	switch(trap_type)
+	{
+		case 0:
+			for(var i = 0; i < 14; i ++)
+			{
+				var xx = floorx_min + i * 23;
+				with(instance_create_layer(xx, floory, L_PLAYER, obj_radiancetrap_ready))
+				{
+					life_create(260 + ton);
+					on_time = ton + i;
+					off_time = 250 + ton;
+				}
+			}
+		break;
+		
+		case 1:
+			for(var i = 0; i < 14; i ++)
+			{
+				var xx = floorx_max - i * 23;
+				with(instance_create_layer(xx, floory, L_PLAYER, obj_radiancetrap_ready))
+				{
+					life_create(260 + ton);
+					on_time = ton + i;
+					off_time = 250 + ton;
+				}
+			}
+		break;
+		
+		case 2:
+			for(var i = 0; i < 8; i ++)
+			{
+				var xx = floorx_max - i * 23;
+				with(instance_create_layer(xx, floory, L_PLAYER, obj_radiancetrap_ready))
+				{
+					//life_create(160 + ton);
+					on_time = ton + i;
+				}
+				
+				var xx = floorx_min + i * 23;
+				with(instance_create_layer(xx, floory, L_PLAYER, obj_radiancetrap_ready))
+				{
+					//life_create(160 + ton);
+					on_time = ton + i;
+				}
+			}
+		break;
+	}
+	
+	ontrap = false;
+	trap_idx = 0;
+}
+trap_idx++;
+
+
+
+
+
+
+
+
 

@@ -17,3 +17,5 @@ image_speed = 0;
 
 killforce = true;
 blend = bm_normal;
+
+type = 0;

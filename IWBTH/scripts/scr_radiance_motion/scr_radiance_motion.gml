@@ -28,7 +28,7 @@ todo_edit(motion[Rmotion.swordside]);
 	#region
 		todo_add_sleep(30);
 		todo_add_signal(Rsignal.swordside);
-		todo_add_sleep(80);
+		todo_add_sleep(70);
 		
 		todo_add_send(Rsignal.todoplay, Rmotion.tele);
 	#endregion
@@ -51,7 +51,7 @@ todo_edit(motion[Rmotion.laserall]);
 	#region
 		todo_add_sleep(10);
 		todo_add_signal(Rsignal.laserall);
-		todo_add_sleep(90);
+		todo_add_sleep(60);
 		
 		todo_add_send(Rsignal.todoplay, Rmotion.tele);
 	#endregion
@@ -62,6 +62,7 @@ todo_edit(motion[Rmotion.tele]);
 		dt = sprite_get_frame(spr_radiance_turn);
 		todo_add_sleep(dt);
 		
+		todo_add_signal(Rsignal.glow);
 		todo_add_signal(Rsignal.tele);
 		todo_add_sleep(5);
 		

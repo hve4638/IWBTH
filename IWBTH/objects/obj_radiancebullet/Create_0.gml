@@ -5,6 +5,3 @@ cancollision = false;
 ontarget = true;
 
 tile_collision = BLOCKLAYER;
-
-/*hspeed +;
-vspeed += (Player.y - y) / 50;

@@ -5,7 +5,7 @@ draw_sprite_array(sprext);
 
 gpu_set_blendmode(bm_add);
 	sprext[1] = 1;
-	sprext[8] = 0.7;
+	sprext[8] = 0.3;
 	draw_sprite_array(sprext);
 
 if time_idx <= create_time

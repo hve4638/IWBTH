@@ -1,0 +1,1 @@
+life_create(25);

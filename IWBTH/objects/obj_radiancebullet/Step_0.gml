@@ -1,11 +1,14 @@
 life_step();
 
-
-
-if time_idx > 150
+if !instance_exists(obj_player)
 	ontarget = false;
-	
-if time_idx > 50 && !cancollision
+
+if time_idx > 75
+	ontarget = false;
+
+echo_self(3, [0.15, 0]);
+
+if time_idx > 23 && !cancollision
 {
 	var px = x;
 	var py = y;

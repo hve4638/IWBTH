@@ -1,5 +1,5 @@
 ds_init();
-maxhp = 230;
+maxhp = 250;
 hp = maxhp;
 drawhp = 0;
 
@@ -16,6 +16,14 @@ tele_bottom = 2752 + 16;
 laser360_dir = 30;
 
 swordtop_y = 2335 + 64;
+
+floorx_min = 407 - 16;
+floorx_max = 1190 + 16;
+floory = 2912;
+
+ontrap = false;
+trap_idx = 0;
+trap_type = 0; //0:left 1:right 2:either
 
 onsword360 = false;
 sword360_add = 24;

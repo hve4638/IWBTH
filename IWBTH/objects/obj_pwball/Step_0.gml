@@ -12,8 +12,8 @@ if xmov!=0 {
 
 if collision_point(x,y,obj_block,1,0)!=noone {
     if 0<x && x<room_width {
-        var i=instance_create(x,y,obj_meteo);
-        i.ep=1;
+        //var i=instance_create(x,y,obj_meteo);
+        //i.ep=1;
     }
     instance_destroy();
 }

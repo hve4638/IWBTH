@@ -11,7 +11,7 @@ enum Rsignal
 	todoplay,
 	laserall,
 	missile,
-
+	glow,
 	setx,
 	sety
 }
@@ -50,17 +50,26 @@ while(todo_signal_exists(td))
 			}
 		break;
 		
+		case Rsignal.glow:
+			var ins = echo_self(3, [0.2, 0.0], c_white, 0.3);
+			with(ins)
+			{
+				sprite_change(spr_radiance_turn, 4, 0);
+				scale = [1, 1.2];
+			}
+		break;
+
 		case Rsignal.laserall:
 			var yy = sys_camera.camera_y1 - 500;
 			var x1 = 0;
 			var x2 = room_width;
 			with(instance_create_layer(x1, yy, L_ABOVE, obj_radiancelaser))
 			{
-				hspeed = 8;
+				hspeed = 7;
 			}
 			with(instance_create_layer(x2, yy, L_ABOVE, obj_radiancelaser))
 			{
-				hspeed = -8;
+				hspeed = -7;
 			}
 			
 			break;
@@ -84,7 +93,7 @@ while(todo_signal_exists(td))
 			xx = irandom_range(bbox_left, bbox_right);
 			yy = irandom_range(bbox_top, bbox_bottom);
 			
-			instance_create_layer(xx, yy, L_ABOVE, obj_radiancebullet);
+			instance_create_layer(xx, yy, L_ABOVE, obj_radiancebullet_gener);
 		break;
 		
 		case Rsignal.todoplay:

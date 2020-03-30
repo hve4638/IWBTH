@@ -11,12 +11,14 @@ scr_providience_teleport();
 if onabsorb
 {
 	repeat(3)
-		with(instance_create_layer(x + irandom_range(-184, 184), y + irandom_range(-256 - 32, 64), L_BELOW, obj_effect_abs))
+		with(instance_create_layer(x + irandom_range(-184, 184), y + irandom_range(-256 - 32, 64), L_BELOW, obj_effect_absorb))
 		{
-			to_x = other.x;
-			to_y = other.y - 96;
-			image_xscale = 0.75;
-			image_yscale = 0.75;
+			life_create();
+			xto = other.x;
+			yto = other.y - 96;
+			xscale = 0.75;
+			yscale = 0.75;
+			alpha = [0, 1.0];
 	
 			life = 25;
 		}

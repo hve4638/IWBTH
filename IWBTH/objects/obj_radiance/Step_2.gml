@@ -22,3 +22,13 @@ if !ds_list_empty(sword360_list)
 		}
 	}
 }
+
+if hp/maxhp < 0.5 && trap_idx > 390
+{
+	ontrap = true;
+
+	if trap_type == 0
+		trap_type = 1;
+	else if trap_type == 1
+		trap_type = 0;
+}
