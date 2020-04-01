@@ -32,23 +32,31 @@ if onsword360
 
 if onswordtop
 {
-	if swordtop_idx > 15
+	if swordtop_idx mod 40 == 0
 	{
-		var size = ds_list_size(swordtop_list);
-		for(var i = 0; i < size; i++)
+		var i = 0;
+		while(i < room_width)
 		{
-			var ins = swordtop_list[| i];
-		
-			with(ins)
+			var n = irandom_range(1,4);
+
+			repeat(n)
 			{
-				speed = 15;
+				var ins = instance_create_layer(i, swordtop_y, L_ABOVE, obj_radiancesword);
+				with(ins)
+				{
+					life_create(150);
+					direction = 270;
+					image_angle = direction;
+					speed = 0;
+					create_dash = 15;
+					create_speed  = 15;
+				}
+				i += 48;
 			}
+			i += 48;
 		}
-		
-		ds_list_clear(swordtop_list);
 	}
-	else
-		swordtop_idx++;
+swordtop_idx++;
 }
 
 if onswordside
@@ -90,6 +98,15 @@ if onswordside
 
 if ontrap
 {
+	ontrap = false;
+	trap_idx = 0;
+	
+	with(obj_radiancetrap_ready)
+	{
+		life_create(20);
+		off_time = time_idx + 1;
+	}
+	
 	var ton = 150;
 	switch(trap_type)
 	{
@@ -120,32 +137,33 @@ if ontrap
 		break;
 		
 		case 2:
-			for(var i = 0; i < 8; i ++)
+			for(var i = 0; i < 9; i ++)
 			{
 				var xx = floorx_max - i * 23;
 				with(instance_create_layer(xx, floory, L_PLAYER, obj_radiancetrap_ready))
 				{
-					//life_create(160 + ton);
+					life_create(50000);
 					on_time = ton + i;
 				}
 				
 				var xx = floorx_min + i * 23;
 				with(instance_create_layer(xx, floory, L_PLAYER, obj_radiancetrap_ready))
 				{
-					//life_create(160 + ton);
+					life_create(50000);
 					on_time = ton + i;
 				}
 			}
 		break;
 	}
-	
-	ontrap = false;
-	trap_idx = 0;
 }
+
+if oneyeshine
+	eyeshine_alpha += 0.1;
+else
+	eyeshine_alpha -= 0.15;
+eyeshine_alpha = clamp(eyeshine_alpha, 0, 1);
+
 trap_idx++;
-
-
-
 
 
 

@@ -18,4 +18,7 @@ with(trap_ins)
 	y = yy;
 }
 
-image_alpha = min(image_alpha + 0.05, 1.0);
+if life_idx < 20
+	image_alpha = life_idx / 20;
+else if life - life_idx < 20
+	image_alpha = 1 - (life - life_idx / 20)

@@ -8,6 +8,8 @@ enum Rmotion
 	swordside,
 	missile,
 	tele,
+	phase1end,
+	last1,
 	size
 }
 motion = array_create(Rmotion.size);
@@ -36,13 +38,20 @@ todo_edit(motion[Rmotion.swordside]);
 todo_edit(motion[Rmotion.laser]);
 	#region
 		todo_add_sprite(spr_radiance_focus);
-		todo_add_sleep(20);
+		todo_add_sleep(10);
+		
+		todo_add_send(Rsignal.eyeshine, true);
+		todo_add_sleep(10);
+		
 		todo_add_signal(Rsignal.laser);
 		todo_add_sleep(30);
 		todo_add_signal(Rsignal.laser);
 		todo_add_sleep(30);
 		todo_add_signal(Rsignal.laser);
 		todo_add_sleep(50);
+		
+		todo_add_send(Rsignal.eyeshine, false);
+		todo_add_sleep(10);
 		
 		todo_add_send(Rsignal.todoplay, Rmotion.tele);
 	#endregion
@@ -77,7 +86,10 @@ todo_edit(motion[Rmotion.tele]);
 todo_edit(motion[Rmotion.sword360]);
 	#region
 		todo_add_sprite(spr_radiance_focus);
-		todo_add_sleep(20);
+		todo_add_sleep(15);
+		
+		todo_add_send(Rsignal.eyeshine, true);
+		todo_add_sleep(5);
 
 		repeat(3)
 		{
@@ -87,7 +99,10 @@ todo_edit(motion[Rmotion.sword360]);
 			todo_add_signal(Rsignal.sword360fire);
 			todo_add_sleep(5);
 		}
-		todo_add_sleep(15);
+		todo_add_sleep(10);
+		
+		todo_add_send(Rsignal.eyeshine, false);
+		todo_add_sleep(10);
 		
 		todo_add_send(Rsignal.todoplay, Rmotion.tele);
 	#endregion
@@ -105,5 +120,24 @@ todo_edit(motion[Rmotion.missile]);
 		
 		todo_add_send(Rsignal.todoplay, Rmotion.tele);
 	#endregion
-	
-	
+
+todo_edit(motion[Rmotion.last1]);
+	#region
+		todo_add_sleep(20);
+
+		todo_add_sprite(spr_radiance_focus);
+		todo_add_sleep(30);
+		
+		todo_add_signal(Rsignal.swordtoploop);
+		todo_add_sleep(20);
+	#endregion
+
+todo_edit(motion[Rmotion.phase1end]);
+	#region
+		todo_add_sprite(spr_radiance_falldown1);
+		todo_add_sleep(5);
+		todo_add_sprite(spr_radiance_falldown);
+		
+		//todo_add_signal(Rsignal.swordtoploop);
+		todo_add_sleep(100);
+	#endregion
