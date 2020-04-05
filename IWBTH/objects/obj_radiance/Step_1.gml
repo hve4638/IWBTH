@@ -1,10 +1,21 @@
+if keyboard_check_pressed(ord("1"))
+{
+	todo_play(motion[Rmotion.missile]);
+}
+
+if keyboard_check_pressed(ord("3"))
+{
+	ontrap = true;
+	trap_type = 0;
+}
+
 if keyboard_check_pressed(vk_space) && !onhealth
 {
 	onhealth = true;
 	bgm(snd_final, 1);
-	bossphase = 1;
 	
 	scr_radiance_next();
+<<<<<<< HEAD
 }
 
 if keyboard_check_pressed(ord("1"))
@@ -34,4 +45,6 @@ if mouse_check_button_pressed(mb_left)
 				
 		particle_emit(Particle.dream, bbox_left, bbox_right, bbox_top, bbox_bottom, 20);
 	}
+=======
+>>>>>>> parent of 6cb4623... Radiance 1페이즈 패턴
 }

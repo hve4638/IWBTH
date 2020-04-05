@@ -1111,14 +1111,6 @@
             }
         },
         {
-            "Key": "20af856d-32f6-4be6-9bbc-50f455f27787",
-            "Value": {
-                "id": "9c3a7aa7-c232-4951-8d84-499982a59296",
-                "resourcePath": "sprites\\spr_radiance_falldown1\\spr_radiance_falldown1.yy",
-                "resourceType": "GMSprite"
-            }
-        },
-        {
             "Key": "214bf8a3-5648-400b-a79c-dccba033c490",
             "Value": {
                 "id": "6662c7a5-c0d8-4fde-b585-ceade213539d",
@@ -5887,14 +5879,6 @@
             }
         },
         {
-            "Key": "b96cda4a-0e96-49fa-a64d-9c9c41241c9f",
-            "Value": {
-                "id": "041132da-b827-4177-88cb-777df4f3547f",
-                "resourcePath": "views\\b96cda4a-0e96-49fa-a64d-9c9c41241c9f.yy",
-                "resourceType": "GMFolder"
-            }
-        },
-        {
             "Key": "ba11895d-f7dd-45dc-bfa0-68eec487d575",
             "Value": {
                 "id": "fcecc69f-a319-42ea-a760-b65faf888b7d",
@@ -7324,14 +7308,6 @@
                 "id": "22b31a91-b943-4b5c-a40f-0edddb358ec7",
                 "resourcePath": "scripts\\todo_step\\todo_step.yy",
                 "resourceType": "GMScript"
-            }
-        },
-        {
-            "Key": "e60029fa-a70c-4cc7-bee0-5b452d167db9",
-            "Value": {
-                "id": "a202c0b4-d959-4378-b7bf-52dfc3758f35",
-                "resourcePath": "sprites\\spr_radiance_eyeshine\\spr_radiance_eyeshine.yy",
-                "resourceType": "GMSprite"
             }
         },
         {

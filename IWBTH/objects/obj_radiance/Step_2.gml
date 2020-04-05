@@ -23,8 +23,7 @@ if !ds_list_empty(sword360_list)
 	}
 }
 
-
-if bossphase == 2 && trap_idx > 390
+if hp/maxhp < 0.5 && trap_idx > 390
 {
 	ontrap = true;
 

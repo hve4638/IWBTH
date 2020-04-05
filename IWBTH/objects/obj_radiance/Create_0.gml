@@ -1,5 +1,5 @@
 ds_init();
-maxhp = 300;
+maxhp = 250;
 hp = maxhp;
 drawhp = 0;
 
@@ -21,8 +21,6 @@ floorx_min = 407 - 16;
 floorx_max = 1190 + 16;
 floory = 2912;
 
-bossphase = 0;
-
 ontrap = false;
 trap_idx = 0;
 trap_type = 0; //0:left 1:right 2:either
@@ -42,11 +40,15 @@ swordside_side = 0;
 onswordtop = false;
 swordtop_idx = 0;
 
+<<<<<<< HEAD
 oneyeshine = false;
 eyeshine_type = 0;
 eyeshine_alpha = 0.0;
 
+=======
+>>>>>>> parent of 6cb4623... Radiance 1페이즈 패턴
 sword360_list = list_create();
+swordtop_list = list_create();
 
 next_attack = no;
 

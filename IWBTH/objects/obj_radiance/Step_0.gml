@@ -32,31 +32,23 @@ if onsword360
 
 if onswordtop
 {
-	if swordtop_idx mod 40 == 0
+	if swordtop_idx > 15
 	{
-		var i = 0;
-		while(i < room_width)
+		var size = ds_list_size(swordtop_list);
+		for(var i = 0; i < size; i++)
 		{
-			var n = irandom_range(1,4);
-
-			repeat(n)
+			var ins = swordtop_list[| i];
+		
+			with(ins)
 			{
-				var ins = instance_create_layer(i, swordtop_y, L_ABOVE, obj_radiancesword);
-				with(ins)
-				{
-					life_create(150);
-					direction = 270;
-					image_angle = direction;
-					speed = 0;
-					create_dash = 15;
-					create_speed  = 15;
-				}
-				i += 48;
+				speed = 15;
 			}
-			i += 48;
 		}
+		
+		ds_list_clear(swordtop_list);
 	}
-swordtop_idx++;
+	else
+		swordtop_idx++;
 }
 
 if onswordside
@@ -98,15 +90,6 @@ if onswordside
 
 if ontrap
 {
-	ontrap = false;
-	trap_idx = 0;
-	
-	with(obj_radiancetrap_ready)
-	{
-		life_create(20);
-		off_time = time_idx + 1;
-	}
-	
 	var ton = 150;
 	switch(trap_type)
 	{
@@ -137,26 +120,32 @@ if ontrap
 		break;
 		
 		case 2:
-			for(var i = 0; i < 9; i ++)
+			for(var i = 0; i < 8; i ++)
 			{
 				var xx = floorx_max - i * 23;
 				with(instance_create_layer(xx, floory, L_PLAYER, obj_radiancetrap_ready))
 				{
-					life_create(50000);
+					//life_create(160 + ton);
 					on_time = ton + i;
 				}
 				
 				var xx = floorx_min + i * 23;
 				with(instance_create_layer(xx, floory, L_PLAYER, obj_radiancetrap_ready))
 				{
-					life_create(50000);
+					//life_create(160 + ton);
 					on_time = ton + i;
 				}
 			}
 		break;
 	}
+	
+	ontrap = false;
+	trap_idx = 0;
 }
+trap_idx++;
 
+
+<<<<<<< HEAD
 if onroar
 {
 	if roar_idx mod 10 == 0
@@ -202,8 +191,9 @@ if oneyeshine
 else
 	eyeshine_alpha -= 0.15;
 eyeshine_alpha = clamp(eyeshine_alpha, 0, 1);
+=======
+>>>>>>> parent of 6cb4623... Radiance 1페이즈 패턴
 
-trap_idx++;
 
 
 

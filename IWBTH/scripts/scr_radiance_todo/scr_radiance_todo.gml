@@ -5,7 +5,6 @@ enum Rsignal
 	nextmotion,
 	tele,
 	swordtop,
-	swordtoploop,
 	swordside,
 	sword360,
 	sword360fire,
@@ -14,9 +13,12 @@ enum Rsignal
 	missile,
 	roar,
 	glow,
+<<<<<<< HEAD
 	eyeshine,
 	Screenshake,
 	go2phase,
+=======
+>>>>>>> parent of 6cb4623... Radiance 1페이즈 패턴
 	setx,
 	sety,
 	deathline,
@@ -32,6 +34,7 @@ while(todo_signal_exists(td))
 
 	switch(signal)
 	{
+<<<<<<< HEAD
 		case Rsignal.roar:
 			onroar = todo_receive(td);
 		break;
@@ -40,7 +43,12 @@ while(todo_signal_exists(td))
 			oneyeshine = todo_receive(td);
 		break;
 
+=======
+>>>>>>> parent of 6cb4623... Radiance 1페이즈 패턴
 		case Rsignal.swordtop:
+			onswordtop = true;
+			swordtop_idx = 0;
+
 			var i = 0;
 			while(i < room_width)
 			{
@@ -49,25 +57,18 @@ while(todo_signal_exists(td))
 				repeat(n)
 				{
 					var ins = instance_create_layer(i, swordtop_y, L_ABOVE, obj_radiancesword);
-
 					with(ins)
 					{
 						life_create(150);
 						direction = 270;
 						image_angle = direction;
-						speed = 0;
-						create_dash = 15;
-						create_speed  = 15;
 					}
+
+					ds_list_add(swordtop_list, ins);
 					i += 48;
 				}
 				i += 48;
 			}
-		break;
-		
-		case Rsignal.swordtoploop:
-			onswordtop = true;
-			swordtop_idx = 0;
 		break;
 		
 		case Rsignal.glow:
@@ -129,8 +130,8 @@ while(todo_signal_exists(td))
 
 		case Rsignal.missile:
 			var xx, yy;
-			xx = x + irandom_range(bbox_left - x, bbox_right - x) * 4 div 3;
-			yy = y + irandom_range(bbox_top - y, bbox_bottom - y) * 2 div 3;
+			xx = irandom_range(bbox_left, bbox_right);
+			yy = irandom_range(bbox_top, bbox_bottom);
 			
 			instance_create_layer(xx, yy, L_ABOVE, obj_radiancebullet_gener);
 		break;
@@ -142,19 +143,8 @@ while(todo_signal_exists(td))
 		break;
 		
 		case Rsignal.tele:
-			switch(bossphase)
-			{
-				case 1:
-				case 2:
-					x = irandom_range(tele_left, tele_right);
-					y = irandom_range(tele_top, tele_bottom);
-				break;
-
-				case 3:
-					x = 816;
-					y = 2752;
-				break;
-			}
+			x = irandom_range(tele_left, tele_right);
+			y = irandom_range(tele_top, tele_bottom);
 		break;
 			
 		case Rsignal.laser:
