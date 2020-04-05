@@ -43,11 +43,18 @@ onswordtop = false;
 swordtop_idx = 0;
 
 oneyeshine = false;
+eyeshine_type = 0;
 eyeshine_alpha = 0.0;
 
 sword360_list = list_create();
 
 next_attack = no;
+
+onroar = false;
+roar_idx = 0;
+
+platformpos_x = array_create(30);
+platformpos_y = array_create(30);
 
 rand_create(Rmotion.laser, Rmotion.sword360, Rmotion.swordtop, Rmotion.swordside, Rmotion.laserall, Rmotion.missile);
 

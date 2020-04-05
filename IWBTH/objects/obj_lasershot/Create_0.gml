@@ -1,4 +1,4 @@
-dir=point_direction(x,y,Me.x,Me.y);
+/*dir=point_direction(x,y,Me.x,Me.y);
 lx=lengthdir_x(16,dir);
 ly=lengthdir_y(16,dir);
 var i=instance_create(x,y,obj_charge);

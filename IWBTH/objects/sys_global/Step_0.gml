@@ -13,6 +13,23 @@ if ontimer
 	}
 }
 
+var gpcnt = gamepad_get_device_count();
+for(var i = 0; i < gpcnt; i++)
+{
+	var n = true;
+	if gamepad_is_connected(i)
+	{
+		gamepad[i] = true;
+		if n
+		{
+			current_gamepad = i;
+			n = false;
+		}
+	}
+	else
+		gamepad[i] = false;
+}
+
 if 0 < intro_time
 	intro_alpha += 0.03;
 else

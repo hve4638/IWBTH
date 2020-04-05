@@ -19,7 +19,6 @@ switch(bossphase)
 			
 			ontrap = true;
 			trap_type = 2;
-
 		}
 	break;
 	
@@ -29,7 +28,7 @@ switch(bossphase)
 			onhealth = false;
 			
 			camera_fade_set(1.0, 0, c_white);
-			camera_fade_set(0.0, 5, c_white);
+			camera_fade_set(0.0, 10, c_white);
 			
 			screenshake(10, 2);
 			

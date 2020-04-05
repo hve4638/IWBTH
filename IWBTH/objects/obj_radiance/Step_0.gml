@@ -157,6 +157,46 @@ if ontrap
 	}
 }
 
+if onroar
+{
+	if roar_idx mod 10 == 0
+	{
+		var xx, yy;
+		switch(sprite_index)
+		{
+			case spr_radiance_idle:
+			case spr_radiance_focus:
+			default:
+				xx = 0;
+				yy = -139;
+
+			break;
+			
+			case spr_radiance_falldown:
+			case spr_radiance_falldown1:
+				xx = 372 - 210;
+				yy = 412 - 291;
+			break;
+
+			case spr_radiance_falldown2:
+				xx = 372 - 210 -12;
+				yy = 412 - 291 - 12;
+			
+			break;
+		}
+		
+		with(instance_create_layer(x + xx, y + yy, L_ABOVE, obj_effect))
+		{
+			life_create(15);
+			scale = [0, 8];
+			alpha = [1.0, 0.25];
+			sprite_change(spr_roar);
+		}
+	}
+	
+	roar_idx++;
+}
+
 if oneyeshine
 	eyeshine_alpha += 0.1;
 else

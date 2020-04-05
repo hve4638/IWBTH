@@ -9,6 +9,8 @@ enum Rmotion
 	missile,
 	tele,
 	phase1end,
+	phase2start,
+	phase2start2,
 	last1,
 	size
 }
@@ -135,9 +137,56 @@ todo_edit(motion[Rmotion.last1]);
 todo_edit(motion[Rmotion.phase1end]);
 	#region
 		todo_add_sprite(spr_radiance_falldown1);
-		todo_add_sleep(5);
+		todo_add_sleep(10);
+
 		todo_add_sprite(spr_radiance_falldown);
+		dt = sprite_get_frame(spr_radiance_falldown);
+
+		todo_add_sleep(dt + 60);
 		
-		//todo_add_signal(Rsignal.swordtoploop);
-		todo_add_sleep(100);
+		todo_add_send(Rsignal.eyeshine, true);
+		todo_add_send(Rsignal.roar, true);
+		todo_add_send(Rsignal.Screenshake, 1, 65);
+		todo_add_sprite(spr_radiance_falldown2);
+		
+		todo_add_sleep(65);
+		
+		todo_add_signal(Rsignal.go2phase);
+		todo_add_send(Rsignal.eyeshine, false);
+		todo_add_send(Rsignal.roar, false);
+		
+		todo_add_sleep(40);
+		
+		todo_add_send(Rsignal.todoplay, Rmotion.phase2start);
+	#endregion
+
+todo_edit(motion[Rmotion.phase2start]);
+	#region
+		todo_add_send(Rsignal.addplatform, 0);
+		todo_add_sleep(30);
+		
+		todo_add_send(Rsignal.addplatform, 1);
+		todo_add_sleep(25);
+		
+		todo_add_send(Rsignal.addplatform, 2);
+		todo_add_sleep(20);
+		
+		todo_add_send(Rsignal.addplatform, 3);
+		todo_add_sleep(40);
+		
+	#endregion
+
+
+todo_edit(motion[Rmotion.phase2start2]);
+	#region
+		todo_add_send(Rsignal.removeplatform, 0);
+		todo_add_sleep(20);
+
+		todo_add_send(Rsignal.removeplatform, 1);
+		todo_add_sleep(20);
+
+		todo_add_send(Rsignal.removeplatform, 2);
+		todo_add_sleep(20);
+
+		
 	#endregion

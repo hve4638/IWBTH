@@ -12,10 +12,16 @@ enum Rsignal
 	todoplay,
 	laserall,
 	missile,
+	roar,
 	glow,
 	eyeshine,
+	Screenshake,
+	go2phase,
 	setx,
-	sety
+	sety,
+	deathline,
+	addplatform,
+	removeplatform,
 }
 
 var td = todo_current();
@@ -26,6 +32,10 @@ while(todo_signal_exists(td))
 
 	switch(signal)
 	{
+		case Rsignal.roar:
+			onroar = todo_receive(td);
+		break;
+		
 		case Rsignal.eyeshine:
 			oneyeshine = todo_receive(td);
 		break;
@@ -67,6 +77,25 @@ while(todo_signal_exists(td))
 				sprite_change(spr_radiance_turn, 4, 0);
 				scale = [1, 1.2];
 			}
+		break;
+		
+		case Rsignal.Screenshake:
+			var pow = todo_receive(td);
+			var t = todo_receive(td);
+
+			screenshake(pow, t);
+		break;
+		
+		case Rsignal.go2phase:
+			var xx, yy;
+			xx = (bbox_left + bbox_right) / 2;
+			yy = (bbox_bottom + bbox_top) / 2;
+
+			duration_trigger(15, particle_emit, [Particle.dream, xx - 64, xx + 64, yy - 128, yy + 128, 15]);
+			sprite_change(spr_empty);
+			
+			camera_fade_set(1.0, 0, c_white);
+			camera_fade_set(0.0, 40);
 		break;
 
 		case Rsignal.laserall:
@@ -165,6 +194,43 @@ while(todo_signal_exists(td))
 				}
 			}
 			ds_list_clear(sword360_list);
+		break;
+		
+		case Rsignal.addplatform:
+			var ind = todo_receive(td);
+			var xx = platformpos_x[ind];
+			var yy = platformpos_y[ind];
+			
+			if position_meeting(xx, yy, obj_platform_radiance)
+				break;
+
+			with(instance_create_layer(xx, yy, L_PLAYER, obj_platform_radiance))
+			{
+				create_time = 30;
+				depth -= 1;
+				
+				particle_emit(Particle.dream, bbox_left, bbox_right, bbox_top, bbox_bottom, 20);
+			}
+		break;
+		
+		case Rsignal.removeplatform:
+			var ind = todo_receive(td);
+			var xx = platformpos_x[ind];
+			var yy = platformpos_y[ind];
+
+			var ins = instance_position(xx, yy, obj_platform_radiance);
+			with(ins)
+			{
+				time_idx = 0;
+				destroy_time = 10;
+				destroy_int = 10;
+			}
+		break;
+		
+		case Rsignal.deathline:
+			var yy = todo_receive(td);
+ 
+			deathline = yy;
 		break;
 	}
 }

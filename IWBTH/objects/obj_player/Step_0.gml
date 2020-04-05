@@ -69,12 +69,13 @@ if !frozen && !(0 < dashtime)
 
 	if attackdelay <= 0
 	{
-		if attacktype == Attacktype.gun && button(Input.attack)
+		var fire = button(Input.attack) || onautofire 
+		if attacktype == Attacktype.gun && fire
 		{
 			attackdelay = attackdelay_gun;
 			scr_player_shoot();
 		}
-		else if attacktype == Attacktype.sword && button(Input.attack)
+		else if attacktype == Attacktype.sword && fire
 		{
 			attackdelay = attackdelay_sword;
 			//hspd ;

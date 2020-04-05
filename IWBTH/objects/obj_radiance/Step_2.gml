@@ -33,3 +33,20 @@ if bossphase == 2 && trap_idx > 390
 	else if trap_type == 1
 		trap_type = 0;
 }
+
+if oneyeshine
+{
+	switch(sprite_index)
+	{
+		case spr_radiance_focus:
+		default:
+			eyeshine_type = 0;
+		break;
+			
+		case spr_radiance_falldown:
+		case spr_radiance_falldown1:
+		case spr_radiance_falldown2:
+			eyeshine_type = 1;
+		break;
+	}	
+}

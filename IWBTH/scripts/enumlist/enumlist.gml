@@ -12,6 +12,11 @@ enum Input {
 	swap
 }
 
+enum Inputtype {
+	keyboard,
+	gamepad
+}
+
 enum Camtype {
 	follow_obj,
 	follow_pos,

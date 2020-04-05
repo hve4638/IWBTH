@@ -1,8 +1,8 @@
 {
-    "id": "dc3ed21b-b3ac-4369-a8fa-6f7f70037dae",
+    "id": "647e925e-239e-4908-a907-5ec477d6078c",
     "modelName": "GMScript",
     "mvc": "1.0",
-    "name": "script302",
+    "name": "scr_radiance_platform",
     "IsCompatibility": false,
     "IsDnD": false
 }

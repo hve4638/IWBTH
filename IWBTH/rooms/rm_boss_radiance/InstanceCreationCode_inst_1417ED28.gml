@@ -1,0 +1,1 @@
+scr_radiance_platform(6);

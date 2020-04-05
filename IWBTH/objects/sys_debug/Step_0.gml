@@ -18,8 +18,10 @@ if keyboard_check_pressed(vk_anykey)
 		break;
 
 		case vk_f3:
-			for(var i = 1; i <= 5; i++)
-				stage_clear[i] = true;
+			if currentinput != Inputtype.keyboard
+				currentinput = Inputtype.keyboard;
+			else
+				currentinput = Inputtype.gamepad;
 		break;
 		
 		case vk_f4:
@@ -41,22 +43,6 @@ if keyboard_check_pressed(vk_anykey)
 			save_idx = INSTANTPLAY_SAVESLOT;
 			scr_gamestart();
 		break;
-		
-		case ord("Y"):
-			//
-		break;
-		
-		/*
-		case vk_f9:
-		if !instance_exists(sys_record)
-			instance_create_layer(0,0,L_SYS, sys_record);
-		else
-			instance_destroy(sys_record);
-		break;
-		*/
-		
-		//case vk_f6: room_goto(rm_stageresult);
-		//break;
 		
 		case vk_f11:
 			var arr, i = 0;
