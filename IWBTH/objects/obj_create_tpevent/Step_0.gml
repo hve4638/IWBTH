@@ -1,5 +1,4 @@
 /// @description Particle
-/*
 if EFFECT
 with(sys_part){
     if ++prt[23]==0 event_user(0);

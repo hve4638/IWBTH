@@ -1,6 +1,6 @@
 //Project creation date : 2019/10/29
 #macro VERSION 20191029
-#macro VERSION_SHOW "test"
+#macro VERSION_SHOW "test1"
 
 #macro CONFIG_DIRECTORY "config"
 #macro SAVE_DIRECTORY "data"
@@ -47,7 +47,7 @@
 
 globalvar pause, window_surf; //pause
 globalvar time, death, save_idx, difficulty; //save data
-globalvar key, keygp; //keyconfig
+globalvar key; //keyconfig
 globalvar config_mastervolum, config_music, config_sound, config_ui, fullscreen;
 globalvar resolution_index, resolution_width, resolution_height;
 globalvar volum_music, volum_sound;
@@ -57,9 +57,6 @@ globalvar each_volum; //각 볼륨크기
 globalvar ongod;
 globalvar bgm_p, bgm_ind;
 globalvar boss_firstmeet;
-
-globalvar onautofire;
-globalvar currentinput;
 
 globalvar sv_auto, sv_x, sv_y, sv_room, sv_look, sv_time, sv_death; //temp save
 globalvar sv_hubx, sv_huby;
@@ -71,4 +68,8 @@ globalvar view_ratio;
 globalvar roomdata;
 
 
-#macro onlyexist if (1 < instance_number(object_index)) { instance_destroy(); exit; }
+#macro onlyexist if 1 < instance_number(object_index)\
+{\
+	instance_destroy();\
+	exit;\
+}\

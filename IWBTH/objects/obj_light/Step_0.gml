@@ -1,4 +1,4 @@
-/*/// @description Paritcle
+/// @description Paritcle
 if 0<l
 with(sys_part) {
     if ++prt[29]==0 event_user(0);

@@ -6,6 +6,3 @@ if button_press(Input.restart) && canrestart
 
 if keyboard_check_pressed(vk_escape) && room != rm_title
 	game_restart();
-
-if keyboard_check_pressed(ord("A"))
-	onautofire = !onautofire;

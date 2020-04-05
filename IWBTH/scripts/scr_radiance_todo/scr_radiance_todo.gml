@@ -5,25 +5,17 @@ enum Rsignal
 	nextmotion,
 	tele,
 	swordtop,
+	swordtoploop,
 	swordside,
 	sword360,
 	sword360fire,
 	todoplay,
 	laserall,
 	missile,
-	roar,
 	glow,
-<<<<<<< HEAD
 	eyeshine,
-	Screenshake,
-	go2phase,
-=======
->>>>>>> parent of 6cb4623... Radiance 1페이즈 패턴
 	setx,
-	sety,
-	deathline,
-	addplatform,
-	removeplatform,
+	sety
 }
 
 var td = todo_current();
@@ -34,21 +26,11 @@ while(todo_signal_exists(td))
 
 	switch(signal)
 	{
-<<<<<<< HEAD
-		case Rsignal.roar:
-			onroar = todo_receive(td);
-		break;
-		
 		case Rsignal.eyeshine:
 			oneyeshine = todo_receive(td);
 		break;
 
-=======
->>>>>>> parent of 6cb4623... Radiance 1페이즈 패턴
 		case Rsignal.swordtop:
-			onswordtop = true;
-			swordtop_idx = 0;
-
 			var i = 0;
 			while(i < room_width)
 			{
@@ -57,18 +39,25 @@ while(todo_signal_exists(td))
 				repeat(n)
 				{
 					var ins = instance_create_layer(i, swordtop_y, L_ABOVE, obj_radiancesword);
+
 					with(ins)
 					{
 						life_create(150);
 						direction = 270;
 						image_angle = direction;
+						speed = 0;
+						create_dash = 15;
+						create_speed  = 15;
 					}
-
-					ds_list_add(swordtop_list, ins);
 					i += 48;
 				}
 				i += 48;
 			}
+		break;
+		
+		case Rsignal.swordtoploop:
+			onswordtop = true;
+			swordtop_idx = 0;
 		break;
 		
 		case Rsignal.glow:
@@ -78,25 +67,6 @@ while(todo_signal_exists(td))
 				sprite_change(spr_radiance_turn, 4, 0);
 				scale = [1, 1.2];
 			}
-		break;
-		
-		case Rsignal.Screenshake:
-			var pow = todo_receive(td);
-			var t = todo_receive(td);
-
-			screenshake(pow, t);
-		break;
-		
-		case Rsignal.go2phase:
-			var xx, yy;
-			xx = (bbox_left + bbox_right) / 2;
-			yy = (bbox_bottom + bbox_top) / 2;
-
-			duration_trigger(15, particle_emit, [Particle.dream, xx - 64, xx + 64, yy - 128, yy + 128, 15]);
-			sprite_change(spr_empty);
-			
-			camera_fade_set(1.0, 0, c_white);
-			camera_fade_set(0.0, 40);
 		break;
 
 		case Rsignal.laserall:
@@ -130,8 +100,8 @@ while(todo_signal_exists(td))
 
 		case Rsignal.missile:
 			var xx, yy;
-			xx = irandom_range(bbox_left, bbox_right);
-			yy = irandom_range(bbox_top, bbox_bottom);
+			xx = x + irandom_range(bbox_left - x, bbox_right - x) * 4 div 3;
+			yy = y + irandom_range(bbox_top - y, bbox_bottom - y) * 2 div 3;
 			
 			instance_create_layer(xx, yy, L_ABOVE, obj_radiancebullet_gener);
 		break;
@@ -143,8 +113,19 @@ while(todo_signal_exists(td))
 		break;
 		
 		case Rsignal.tele:
-			x = irandom_range(tele_left, tele_right);
-			y = irandom_range(tele_top, tele_bottom);
+			switch(bossphase)
+			{
+				case 1:
+				case 2:
+					x = irandom_range(tele_left, tele_right);
+					y = irandom_range(tele_top, tele_bottom);
+				break;
+
+				case 3:
+					x = 816;
+					y = 2752;
+				break;
+			}
 		break;
 			
 		case Rsignal.laser:
@@ -184,43 +165,6 @@ while(todo_signal_exists(td))
 				}
 			}
 			ds_list_clear(sword360_list);
-		break;
-		
-		case Rsignal.addplatform:
-			var ind = todo_receive(td);
-			var xx = platformpos_x[ind];
-			var yy = platformpos_y[ind];
-			
-			if position_meeting(xx, yy, obj_platform_radiance)
-				break;
-
-			with(instance_create_layer(xx, yy, L_PLAYER, obj_platform_radiance))
-			{
-				create_time = 30;
-				depth -= 1;
-				
-				particle_emit(Particle.dream, bbox_left, bbox_right, bbox_top, bbox_bottom, 20);
-			}
-		break;
-		
-		case Rsignal.removeplatform:
-			var ind = todo_receive(td);
-			var xx = platformpos_x[ind];
-			var yy = platformpos_y[ind];
-
-			var ins = instance_position(xx, yy, obj_platform_radiance);
-			with(ins)
-			{
-				time_idx = 0;
-				destroy_time = 10;
-				destroy_int = 10;
-			}
-		break;
-		
-		case Rsignal.deathline:
-			var yy = todo_receive(td);
- 
-			deathline = yy;
 		break;
 	}
 }

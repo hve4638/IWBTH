@@ -1,5 +1,5 @@
-var w, w1, w2;
-var h1, h3;
+var w, w1, w2, w3;
+var h1, h2, h3;
 w = view_w div 2;
 w1 = view_w div 3;
 w2 = view_w div 4;

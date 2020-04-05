@@ -1,19 +1,30 @@
 if !instance_exists(obj_player)
 	exit;
 
-var np, n;
-np = next_attack;
+if bossphase == 0
+	exit;
 
-while(true)	
+if bossphase == 3
 {
-	n = rand_next(0);
-
-	if np == n
-		continue;
-
-	break;
+	next_attack = Rmotion.last1;
 }
-rand_adjust(rand_get_index(n));
+else
+{
+	var np, n;
+	np = next_attack;
 
-next_attack = n;
+	while(true)	
+	{
+		n = rand_next(0);
+
+		if np == n
+			continue;
+
+		break;
+	}
+	rand_adjust(rand_get_index(n));
+	
+	next_attack = n;
+}
+
 todo_play(motion[next_attack]);

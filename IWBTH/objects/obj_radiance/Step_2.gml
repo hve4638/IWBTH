@@ -23,7 +23,8 @@ if !ds_list_empty(sword360_list)
 	}
 }
 
-if hp/maxhp < 0.5 && trap_idx > 390
+
+if bossphase == 2 && trap_idx > 390
 {
 	ontrap = true;
 
@@ -31,21 +32,4 @@ if hp/maxhp < 0.5 && trap_idx > 390
 		trap_type = 1;
 	else if trap_type == 1
 		trap_type = 0;
-}
-
-if oneyeshine
-{
-	switch(sprite_index)
-	{
-		case spr_radiance_focus:
-		default:
-			eyeshine_type = 0;
-		break;
-			
-		case spr_radiance_falldown:
-		case spr_radiance_falldown1:
-		case spr_radiance_falldown2:
-			eyeshine_type = 1;
-		break;
-	}	
 }

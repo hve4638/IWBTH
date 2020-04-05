@@ -2,7 +2,6 @@ if !onhealth
 	exit;
 
 hp -= other.damage;
-<<<<<<< HEAD
 instance_destroy(other);
 
 var p = hp/maxhp;
@@ -20,6 +19,7 @@ switch(bossphase)
 			
 			ontrap = true;
 			trap_type = 2;
+
 		}
 	break;
 	
@@ -29,7 +29,7 @@ switch(bossphase)
 			onhealth = false;
 			
 			camera_fade_set(1.0, 0, c_white);
-			camera_fade_set(0.0, 10, c_white);
+			camera_fade_set(0.0, 5, c_white);
 			
 			screenshake(10, 2);
 			
@@ -45,6 +45,3 @@ switch(bossphase)
 		}
 	break;
 }
-=======
-instance_destroy(other);
->>>>>>> parent of 6cb4623... Radiance 1페이즈 패턴

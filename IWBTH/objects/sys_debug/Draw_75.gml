@@ -51,21 +51,6 @@ if show_save
 	str += strmerge("hub: ", sv_hubx, ",", sv_huby);
 	str += strmerge("room: ", sv_room);
 	str += strmerge("look: ", sv_look);
-	
-	var dv = sys_global.current_gamepad;
-	str += strmerge("[GAMEPAD]");
-	str += strmerge("currentinput :", currentinput);
-	str += strmerge("face :", gamepad_button_check(dv, gp_face1), gamepad_button_check(dv, gp_face2), gamepad_button_check(dv, gp_face3), gamepad_button_check(dv, gp_face4));
-	str += strmerge("shoulderl: ", gamepad_button_check(dv, gp_shoulderl), gamepad_button_check(dv, gp_shoulderlb));
-	str += strmerge("shoulderr: ", gamepad_button_check(dv, gp_shoulderr), gamepad_button_check(dv, gp_shoulderrb));
-	str += strmerge("axisv :", gamepad_axis_value(dv, gp_axislh));
-	str += strmerge("axish :", gamepad_axis_value(dv, gp_axislv));
-	
-	var a = keygp[Input.attack];
-	str += strmerge("attack: ", gamepad_button_check(dv, a[0]));
-	str += strmerge("attack: ", gamepad_button_check(dv, a[1]));
-	str += strmerge("attack: ", gamepad_button_check(dv, gp_shoulderr));
-	str += strmerge("attack: ", gamepad_button_check(dv, gp_shoulderrb));
 }
 
 draw_set_reset();

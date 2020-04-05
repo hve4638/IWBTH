@@ -20,11 +20,8 @@ enablekeyinput = true;
 
 ongod = false;
 
-onautofire = false;
 //pause = false;
 //window_surf = no;
-
-currentinput = Inputtype.keyboard;
 
 bgm_p = noone;
 bgm_ind = no;
@@ -164,18 +161,4 @@ global.debuglevel = 0;
 	each_volum[? snd_shoot2] = 0.4;
 	each_volum[? snd_explode3] = 0.7;
 	each_volum[? snd_magic_blast2_small] = 0.75;
-#endregion
-
-#region gamepad set
-keygp[Input.up] = 101; //gp_axislv
-keygp[Input.down] = -101; //gp_axislv
-keygp[Input.left] = -100; //gp_axislh
-keygp[Input.right] = 100; //gp_axislh
-keygp[Input.jump] = gp_face1;
-keygp[Input.dash] = [gp_shoulderr, gp_shoulderrb];
-keygp[Input.attack] = [gp_shoulderl, gp_shoulderlb];
-keygp[Input.swap] = gp_face3;
-keygp[Input.escape] = gp_face4;
-keygp[Input.restart] = gp_face2;
-
 #endregion

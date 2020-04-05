@@ -20,6 +20,3 @@ intro_alpha = 0;
 
 show_bosshp = false;
 bosshp = 0;
-
-gamepad = 0;
-current_gamepad = no;
