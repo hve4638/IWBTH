@@ -12,7 +12,6 @@
         "20af856d-32f6-4be6-9bbc-50f455f27787",
         "cf41f977-2860-41de-95c5-f5bc4de62818",
         "e60029fa-a70c-4cc7-bee0-5b452d167db9",
-        "a3c87a4d-4ee3-47df-b2ab-9b70217bcb08",
         "e3fd61d6-b8db-42b5-8831-b9cfb380d569",
         "d8dfcd71-da2d-4939-bd58-c0cd1beb19cc",
         "451beba7-684a-4417-a8d1-223b42ac2665",
@@ -22,7 +21,9 @@
         "925db551-a8f5-48c8-af27-e40ddb42b590",
         "59eea642-62a3-4485-a093-ea28247e8234",
         "debf72d6-109b-4132-9fd9-81991a861316",
-        "5bec38ba-0226-4d3d-9cff-f69915a0da04"
+        "5bec38ba-0226-4d3d-9cff-f69915a0da04",
+        "0b0a68a8-79be-44c7-a900-4a5c36411237",
+        "d394b4e1-a972-4e05-a4f2-a43e1ce1f89f"
     ],
     "filterType": "GMSprite",
     "folderName": "radiance",

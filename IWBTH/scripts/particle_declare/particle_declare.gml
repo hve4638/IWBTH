@@ -8,6 +8,7 @@ enum Particle {
 	escape_effect,
 	blood,
 	explosion,
+	dream1,
 	spark,
 	test,
 	eoa
@@ -187,9 +188,31 @@ with(sys_particle)
 			//13~-13, 22~-22
 			#endregion
 		break;
+		
+		case Particle.dream1:
+			#region
+			Sys[idx] = part_system_create();
+			Part[idx] = part_type_create();
+			part_system_depth(Sys[idx], 0);
+			part_type_sprite(Part[idx],spr_effect_dream,0,0,0);
+			part_type_size(Part[idx],1,1,0,0);
+			part_type_scale(Part[idx],0.20,0.20);
+			part_type_alpha2(Part[idx],0.50,0);
+			part_type_speed(Part[idx],1,8,0,0);
+			part_type_direction(Part[idx],80,100,0,0);
+			part_type_gravity(Part[idx],0,270);
+			part_type_orientation(Part[idx],0,0,0,0,1);
+			part_type_blend(Part[idx],1);
+			part_type_life(Part[idx],50,75);
+			Emit[idx] = part_emitter_create(Sys[idx]);
+			Shape[idx] = 1;
+			Dis[idx] = 1;
+			//53~-53, 118~-118
+			#endregion
+		break;
+
+		
 		default:
 			isdeclare[idx] = false;
 	}
-
-
 }

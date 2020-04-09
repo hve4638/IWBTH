@@ -48,6 +48,7 @@ eyeshine_alpha = 0.0;
 sword360_list = list_create();
 
 next_attack = no;
+platformlist = no;
 
 rand_create(Rmotion.laser, Rmotion.sword360, Rmotion.swordtop, Rmotion.swordside, Rmotion.laserall, Rmotion.missile);
 
@@ -58,3 +59,4 @@ depth += 1;
 array_timeline_create(3, "scr_radiance_");
 
 data_create(obj_data_radiance);
+instance_destroy(obj_radianceplatform);
