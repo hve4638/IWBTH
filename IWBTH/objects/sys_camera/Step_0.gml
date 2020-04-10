@@ -25,9 +25,13 @@ if firstmeet
 
 camera_follow();
 
+xTo = clamp(xTo, xview_min, xview_max);
+yTo = clamp(yTo, yview_min, yview_max);
+
 x += round((xTo - x) / follow_div);
 y += round((yTo - y) / follow_div);
 
+#region shake
 shake = max(shake-1, 0);
 while (!ds_priority_empty(shake_queue))
 {
@@ -55,11 +59,10 @@ else
 	sx = 0;
 	sy = 0;
 }
+#endregion
 
-
-
-x = clamp(x, xview_min, xview_max);
-y = clamp(y, yview_min, yview_max);
+//x = clamp(x, xview_min, xview_max);
+//y = clamp(y, yview_min, yview_max);
 
 var rx, ry;
 rx = floor(x + sx - view_w * originw);

@@ -59,6 +59,24 @@ if onswordtop
 swordtop_idx++;
 }
 
+if onlastlaser
+{
+	if lastlaser_idx mod 40 == 0
+	{
+		var xx, yy, c;
+		xx = irandom_range(597, 1240);
+		yy = Player.y;
+		c = point_direction(x + ox, y + oy, xx, yy);
+		with(instance_create_layer(x + ox, y + oy, L_ABOVE, obj_lasergener_radiance))
+		{
+			laser_dir = c;
+			laser_cnt = 1;
+		}
+	}
+	lastlaser_idx++;
+}
+
+
 if onswordside
 {
 	if swordside_idx == 0

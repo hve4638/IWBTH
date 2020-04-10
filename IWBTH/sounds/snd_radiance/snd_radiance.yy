@@ -1,8 +1,8 @@
 {
-    "id": "6bac49a6-381f-4a43-bdb3-a6b6968098bd",
+    "id": "fde7cb51-84d7-4352-9a17-88ac30f2af79",
     "modelName": "GMSound",
     "mvc": "1.0",
-    "name": "snd_final",
+    "name": "snd_radiance",
     "audioGroupGuid": "7b2c4976-1e09-44e5-8256-c527145e03bb",
     "bitDepth": 1,
     "bitRate": 128,

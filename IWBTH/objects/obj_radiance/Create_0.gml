@@ -1,9 +1,10 @@
 ds_init();
-maxhp = 300;
+maxhp = 220;
 hp = maxhp;
 drawhp = 0;
 
 onhealth = false;
+oninvincible = false;
 
 ox = 0;
 oy = -136;
@@ -48,7 +49,15 @@ eyeshine_alpha = 0.0;
 sword360_list = list_create();
 
 next_attack = no;
+next_fix = no;
 platformlist = no;
+platformlist = no;
+
+canenter2phase = false;
+canenter3phase = false;
+
+onlastlaser = false;
+lastlaser_idx = 0;
 
 rand_create(Rmotion.laser, Rmotion.sword360, Rmotion.swordtop, Rmotion.swordside, Rmotion.laserall, Rmotion.missile);
 

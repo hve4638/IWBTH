@@ -1,5 +1,7 @@
 if !onhealth
 	exit;
+if oninvincible
+	exit;
 
 hp -= other.damage;
 instance_destroy(other);
@@ -19,7 +21,6 @@ switch(bossphase)
 			
 			ontrap = true;
 			trap_type = 2;
-
 		}
 	break;
 	
@@ -41,7 +42,19 @@ switch(bossphase)
 			sfx(snd_lasthit);
 			bossbar();
 			
+			
+			camera_set_yrange(0, room_height);
+			canenter2phase = true;
+			
 			todo_play(motion[Rmotion.phase1end]);
+		}
+	break;
+	
+	case 4:
+		if p <= 0.35
+		{
+			bossphase = 5;
+			canenter3phase = true;
 		}
 	break;
 }

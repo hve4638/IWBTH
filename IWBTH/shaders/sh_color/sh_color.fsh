@@ -1,6 +1,4 @@
-//
-// Simple passthrough fragment shader
-//
+//u_color = [float, float, float, flaot]
 varying vec2 v_vTexcoord;
 varying vec4 v_vColour;
 uniform vec4 u_color;

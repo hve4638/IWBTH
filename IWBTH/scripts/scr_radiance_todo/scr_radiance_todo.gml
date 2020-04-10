@@ -15,7 +15,16 @@ enum Rsignal
 	glow,
 	eyeshine,
 	setx,
-	sety
+	sety,
+	camerafade,
+	camerashake,
+	addplatform,
+	removeplatform,
+	dreampart,
+	camerasetting,
+	showhp,
+	lastlaser,
+	invin
 }
 
 var td = todo_current();
@@ -26,6 +35,18 @@ while(todo_signal_exists(td))
 
 	switch(signal)
 	{
+		case Rsignal.invin:
+			oninvincible = todo_receive(td);
+		break;
+		
+		case Rsignal.lastlaser:
+			onlastlaser = todo_receive(td);
+		break;
+		
+		case Rsignal.showhp:
+			onhealth = todo_receive(td);
+		break;
+		
 		case Rsignal.eyeshine:
 			oneyeshine = todo_receive(td);
 		break;
@@ -117,6 +138,8 @@ while(todo_signal_exists(td))
 			{
 				case 1:
 				case 2:
+				case 4:
+				case 6:
 					x = irandom_range(tele_left, tele_right);
 					y = irandom_range(tele_top, tele_bottom);
 				break;
@@ -124,6 +147,11 @@ while(todo_signal_exists(td))
 				case 3:
 					x = 816;
 					y = 2752;
+				break;
+				
+				case 5:
+					x = 805;
+					y = 224;
 				break;
 			}
 		break;
@@ -134,7 +162,6 @@ while(todo_signal_exists(td))
 				laser_dir = other.laser360_dir;
 				laser_cnt = 12;
 			}
-			
 			laser360_dir += random_range(12, 20);
 		break;
 		
@@ -165,6 +192,87 @@ while(todo_signal_exists(td))
 				}
 			}
 			ds_list_clear(sword360_list);
+		break;
+		
+		case Rsignal.camerafade:
+			var a, t;
+			t = todo_receive(td);
+			a = todo_receive(td);
+			camera_fade_set(a, 0, c_white);
+			camera_fade_set(0.0, t, c_white);
+		break;
+		
+		case Rsignal.camerashake:
+			var pw, t;
+			pw = todo_receive(td);
+			t = todo_receive(td);
+			screenshake(pw, t);
+		break;
+		
+		
+		case Rsignal.addplatform:
+			var ind = todo_receive(td);
+			var xx, yy;
+			xx = platformx[| ind];
+			yy = platformy[| ind];
+
+			with(instance_create_layer(xx, yy, L_PLAYER, obj_radianceplatform))
+			{
+				duration_trigger(3, particle_emit, [Particle.dream, bbox_left,bbox_right,bbox_top, bbox_bottom, 10]);
+				depth -= 1;
+			}
+		break;
+
+		case Rsignal.removeplatform:
+			var ind = todo_receive(td);
+			var xx, yy;
+			var ins;
+			xx = platformx[| ind];
+			yy = platformy[| ind];
+			
+			if instance_exists(obj_radianceplatform)
+			{
+				ins = instance_nearest(xx, yy, obj_radianceplatform);
+				with(ins)
+				{
+					if point_distance(x, y, xx, yy) < 32
+					{
+						time_idx = 1;
+						destroy_time = 15;
+					}	
+				}
+			}
+		break;
+		
+		case Rsignal.dreampart:
+			var x1, x2;
+			x1 = (x - bbox_left) * 0.25 + x;
+			x2 = (bbox_left - x) * 0.25 + x;
+			duration_trigger(3, particle_emit, [Particle.dream, x1, x2, bbox_top, bbox_bottom, 60]);
+		break;
+		
+		case Rsignal.camerasetting:
+			var ind = todo_receive(td);
+			
+			switch(ind)
+			{
+				case 0:
+				default:
+					camera_set_yrange(-100, room_height);
+				break;
+
+				case 1:
+					camera_set_yrange(0, room_height - 16);
+				break;
+
+				case 2: //2phase
+					camera_set_yrange(1550, 2532);
+				break;
+
+				case 3: //last
+					camera_set_yrange(-150, 480);
+				break;
+			}
 		break;
 	}
 }

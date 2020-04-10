@@ -8,7 +8,7 @@ enum Particle {
 	escape_effect,
 	blood,
 	explosion,
-	dream1,
+	dream,
 	spark,
 	test,
 	eoa
@@ -189,7 +189,7 @@ with(sys_particle)
 			#endregion
 		break;
 		
-		case Particle.dream1:
+		case Particle.dream:
 			#region
 			Sys[idx] = part_system_create();
 			Part[idx] = part_type_create();
@@ -203,7 +203,7 @@ with(sys_particle)
 			part_type_gravity(Part[idx],0,270);
 			part_type_orientation(Part[idx],0,0,0,0,1);
 			part_type_blend(Part[idx],1);
-			part_type_life(Part[idx],50,75);
+			part_type_life(Part[idx],45,75);
 			Emit[idx] = part_emitter_create(Sys[idx]);
 			Shape[idx] = 1;
 			Dis[idx] = 1;

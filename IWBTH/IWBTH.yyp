@@ -2095,6 +2095,14 @@
             }
         },
         {
+            "Key": "42a16a54-bfb4-43ca-9293-6c29b36be6a0",
+            "Value": {
+                "id": "8e4159d6-ccf6-47f8-9157-cdb5b8cbe483",
+                "resourcePath": "scripts\\camera_set_yrange\\camera_set_yrange.yy",
+                "resourceType": "GMScript"
+            }
+        },
+        {
             "Key": "42b6f069-f5e0-4c12-bb3b-293db1f6f36f",
             "Value": {
                 "id": "e2fdd9cb-54a8-4b51-b271-17fec264604e",
@@ -2895,6 +2903,14 @@
             }
         },
         {
+            "Key": "59740fee-41d5-4f7a-b9f5-747118008576",
+            "Value": {
+                "id": "f812532c-1b14-44be-8fa4-cd25bc9692f3",
+                "resourcePath": "sprites\\spr_roar\\spr_roar.yy",
+                "resourceType": "GMSprite"
+            }
+        },
+        {
             "Key": "59eea642-62a3-4485-a093-ea28247e8234",
             "Value": {
                 "id": "05830e36-2e19-4d8e-9e18-6135c624cb82",
@@ -3388,6 +3404,14 @@
                 "id": "80762774-b0a1-4059-8ef1-bdb55c1bb275",
                 "resourcePath": "sprites\\spr_dragun_head_death\\spr_dragun_head_death.yy",
                 "resourceType": "GMSprite"
+            }
+        },
+        {
+            "Key": "6bac49a6-381f-4a43-bdb3-a6b6968098bd",
+            "Value": {
+                "id": "cb0c1cf8-e6a9-40c1-a3e5-4c39857cfa4b",
+                "resourcePath": "sounds\\snd_final\\snd_final.yy",
+                "resourceType": "GMSound"
             }
         },
         {
@@ -4475,6 +4499,14 @@
             "Value": {
                 "id": "e6230ba5-64e0-4415-9208-cd20a29b8139",
                 "resourcePath": "scripts\\merge_string\\merge_string.yy",
+                "resourceType": "GMScript"
+            }
+        },
+        {
+            "Key": "8f41bf58-4650-443b-b8df-d04415b205fe",
+            "Value": {
+                "id": "344af0cd-7b68-4248-96e4-beefa6ce92ce",
+                "resourcePath": "scripts\\scr_radiance_enter3phase\\scr_radiance_enter3phase.yy",
                 "resourceType": "GMScript"
             }
         },
@@ -5911,6 +5943,14 @@
             }
         },
         {
+            "Key": "bad7e28e-27ef-407d-9dc4-43a510ef8838",
+            "Value": {
+                "id": "d29b0cc8-2c94-4f0a-b6f9-c61323d581e8",
+                "resourcePath": "scripts\\scr_radiance_enter2phase\\scr_radiance_enter2phase.yy",
+                "resourceType": "GMScript"
+            }
+        },
+        {
             "Key": "bafb670d-e475-48cb-bb7b-57763a959b2d",
             "Value": {
                 "id": "44451866-c65e-4153-a98b-698bdf93596e",
@@ -6660,6 +6700,14 @@
                 "id": "0b96cabe-a599-4ef3-89c9-7b9ae4befc91",
                 "resourcePath": "sprites\\spr_headhunter_boom_shoot\\spr_headhunter_boom_shoot.yy",
                 "resourceType": "GMSprite"
+            }
+        },
+        {
+            "Key": "d37be8b1-bb6b-4611-bdf8-33a33559a1c0",
+            "Value": {
+                "id": "20bcaa12-9680-4e13-9017-6fb7f1de11af",
+                "resourcePath": "scripts\\camera_set_xrange\\camera_set_xrange.yy",
+                "resourceType": "GMScript"
             }
         },
         {
@@ -8162,7 +8210,7 @@
             "Key": "fde7cb51-84d7-4352-9a17-88ac30f2af79",
             "Value": {
                 "id": "06b45c73-d947-4538-8b51-ce0b6a378bac",
-                "resourcePath": "sounds\\snd_final\\snd_final.yy",
+                "resourcePath": "sounds\\snd_radiance\\snd_radiance.yy",
                 "resourceType": "GMSound"
             }
         },
@@ -8516,7 +8564,10 @@
         "e398c906-e533-4a0c-879a-0cfe333c3c1f",
         "d053f71a-4795-4497-a1ec-4470074b0d2b",
         "d5b8eebe-8491-4531-bef9-8caeefa98436",
-        "d0fb14a4-8009-46d9-9f38-b65c19536bb9"
+        "d0fb14a4-8009-46d9-9f38-b65c19536bb9",
+        "bad7e28e-27ef-407d-9dc4-43a510ef8838",
+        "d37be8b1-bb6b-4611-bdf8-33a33559a1c0",
+        "42a16a54-bfb4-43ca-9293-6c29b36be6a0"
     ],
     "tutorial": ""
 }

@@ -7,9 +7,13 @@ enum Rmotion
 	swordtop,
 	swordside,
 	missile,
+	missile2,
 	tele,
 	phase1end,
+	phase2enter,
 	last1,
+	last2,
+	lastmissile,
 	size
 }
 motion = array_create(Rmotion.size);
@@ -60,13 +64,14 @@ todo_edit(motion[Rmotion.laserall]);
 	#region
 		todo_add_sleep(10);
 		todo_add_signal(Rsignal.laserall);
-		todo_add_sleep(60);
+		todo_add_sleep(75);
 		
 		todo_add_send(Rsignal.todoplay, Rmotion.tele);
 	#endregion
 
 todo_edit(motion[Rmotion.tele]);
 	#region
+		todo_add_send(Rsignal.invin, true);
 		todo_add_sprite(spr_radiance_turn);
 		dt = sprite_get_frame(spr_radiance_turn);
 		todo_add_sleep(dt);
@@ -77,9 +82,11 @@ todo_edit(motion[Rmotion.tele]);
 		
 		todo_add_sprite(spr_radiance_turn2);
 		dt = sprite_get_frame(spr_radiance_turn2);
-		todo_add_sleep(dt + 10);
+		todo_add_sleep(dt);
 		
 		todo_add_signal(Rsignal.next);
+		todo_add_send(Rsignal.invin, false);
+		todo_add_sleep(10);
 		todo_add_nope();
 	#endregion
 
@@ -121,10 +128,35 @@ todo_edit(motion[Rmotion.missile]);
 		todo_add_send(Rsignal.todoplay, Rmotion.tele);
 	#endregion
 
+todo_edit(motion[Rmotion.missile2]);
+	#region
+		todo_add_sprite(spr_radiance_focus);
+		todo_add_sleep(20);
+		todo_add_signal(Rsignal.missile);
+		todo_add_sleep(46);
+		todo_add_signal(Rsignal.missile);
+		todo_add_sleep(46);
+		todo_add_signal(Rsignal.missile);
+		todo_add_sleep(60);
+		
+		todo_add_send(Rsignal.todoplay, Rmotion.tele);
+	#endregion
+
+todo_edit(motion[Rmotion.lastmissile]);
+	#region
+		todo_add_sprite(spr_radiance_focus);
+		todo_add_sleep(10);
+		todo_add_signal(Rsignal.missile);
+		todo_add_sleep(40);
+		
+		todo_add_send(Rsignal.todoplay, Rmotion.tele);
+	#endregion
+
 todo_edit(motion[Rmotion.last1]);
 	#region
 		todo_add_sleep(20);
 
+		todo_add_send(Rsignal.camerasetting, 1);
 		todo_add_sprite(spr_radiance_focus);
 		todo_add_sleep(30);
 		
@@ -132,12 +164,80 @@ todo_edit(motion[Rmotion.last1]);
 		todo_add_sleep(20);
 	#endregion
 
+todo_edit(motion[Rmotion.last2]);
+	#region
+		todo_add_sprite(spr_radiance_focus);
+		todo_add_sleep(10);
+		todo_add_send(Rsignal.camerasetting, 0);
+		
+		for(var i = 11; i < 16; i++)
+		{
+			todo_add_sleep(10);
+			todo_add_send(Rsignal.addplatform, i);
+		}
+		var sz = ds_list_size(platformx);
+		for(var i = 16; i < sz; i++)
+			todo_add_send(Rsignal.addplatform, i);
+
+		todo_add_send(Rsignal.lastlaser, 1);
+
+		for(var i = 3; i < 10; i++)
+		{
+			todo_add_send(Rsignal.removeplatform, i);
+			todo_add_sleep(20);
+		}
+	#endregion
+
 todo_edit(motion[Rmotion.phase1end]);
 	#region
 		todo_add_sprite(spr_radiance_falldown1);
 		todo_add_sleep(5);
 		todo_add_sprite(spr_radiance_falldown);
+
+		todo_add_sleep(130);
+		todo_add_send(Rsignal.camerashake, 2, 120);
 		
-		//todo_add_signal(Rsignal.swordtoploop);
-		todo_add_sleep(100);
+		todo_add_sleep(120);
+		todo_add_send(Rsignal.dreampart);
+		todo_add_send(Rsignal.camerafade, 40, 0.75);
+		todo_add_send(Rsignal.camerashake, 8, 0);
+		
+		todo_add_sleep(1);
+		todo_add_sprite(spr_empty);
+		todo_add_send(Rsignal.camerasetting, 0);
+
+		todo_add_sleep(40);
+		for(var i = 0; i < 11; i++)
+		{
+			todo_add_sleep(max(40 - i*8, 5));
+			todo_add_send(Rsignal.addplatform, i);
+		}
 	#endregion
+
+todo_edit(motion[Rmotion.phase2enter]);
+	#region		
+		todo_add_send(Rsignal.removeplatform, 0);
+		todo_add_sleep(30);
+		
+		todo_add_send(Rsignal.removeplatform, 1);
+		todo_add_send(Rsignal.camerasetting, 2);
+		todo_add_sleep(30);
+		
+		
+		todo_add_send(Rsignal.removeplatform, 2);
+		todo_add_send(Rsignal.camerashake, 2, 60);
+		todo_add_sleep(60);
+		
+		todo_add_send(Rsignal.camerashake, 8, 2);
+		todo_add_send(Rsignal.camerafade, 0.6, 25);
+		todo_add_signal(Rsignal.tele);
+		todo_add_send(Rsignal.showhp, 1);
+		todo_add_sprite(spr_radiance_idle);
+		todo_add_sleep(48);
+
+		todo_add_send(Rsignal.todoplay, Rmotion.tele);
+	#endregion
+	
+	
+	
+	
