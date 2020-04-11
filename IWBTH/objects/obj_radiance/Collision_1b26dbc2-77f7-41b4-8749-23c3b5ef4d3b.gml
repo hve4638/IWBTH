@@ -3,7 +3,7 @@ if !onhealth
 if oninvincible
 	exit;
 
-hp -= other.damage;
+hp -= other.damage * armor;
 instance_destroy(other);
 
 var p = hp/maxhp;
@@ -44,17 +44,18 @@ switch(bossphase)
 			
 			
 			camera_set_yrange(0, room_height);
-			canenter2phase = true;
+			//canenter2phase = true;
 			
 			todo_play(motion[Rmotion.phase1end]);
 		}
 	break;
 	
 	case 4:
-		if p <= 0.35
+		if p <= 0.3
 		{
 			bossphase = 5;
 			canenter3phase = true;
+			armor = 0.5;
 		}
 	break;
 }

@@ -1,5 +1,5 @@
 trigger_condition = TriggerCondition.target;
-trigger_end = TriggerEnd.destroy;
+trigger_end = TriggerEnd.loop;
 target = obj_player;
 
-trigger_script_on = scr_radiance_enter2phase;
+trigger_script = scr_radiance_enter2phase;

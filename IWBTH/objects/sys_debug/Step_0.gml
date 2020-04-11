@@ -12,6 +12,14 @@ if keyboard_check_pressed(vk_anykey)
 			with(sys_global)
 				onui = !onui;
 		break;
+		
+		case ord("V"):
+			with(all)
+			{
+				visible = true;
+				image_alpha =1.0;
+			}
+		break;
 
 		case ord("H"):
 			hidedebug = !hidedebug;

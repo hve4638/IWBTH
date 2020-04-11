@@ -14,6 +14,7 @@ with(obj_radiance)
 		bossphase = 6;
 		onlastlaser = false;
 		
+		camera_set_yrange(518 - view_h, 518);
 		with(sys_camera)
 			ds_list_add(follow, obj_radiance);
 		todo_play(motion[Rmotion.tele]);

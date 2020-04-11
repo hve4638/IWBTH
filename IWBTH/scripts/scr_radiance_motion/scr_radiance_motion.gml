@@ -147,7 +147,11 @@ todo_edit(motion[Rmotion.lastmissile]);
 		todo_add_sprite(spr_radiance_focus);
 		todo_add_sleep(10);
 		todo_add_signal(Rsignal.missile);
-		todo_add_sleep(40);
+		todo_add_sleep(20);
+		todo_add_signal(Rsignal.missile);
+		todo_add_sleep(20);
+		todo_add_signal(Rsignal.missile);
+		todo_add_sleep(60);
 		
 		todo_add_send(Rsignal.todoplay, Rmotion.tele);
 	#endregion
@@ -186,6 +190,7 @@ todo_edit(motion[Rmotion.last2]);
 			todo_add_send(Rsignal.removeplatform, i);
 			todo_add_sleep(20);
 		}
+		todo_add_send(Rsignal.openphase, 3);
 	#endregion
 
 todo_edit(motion[Rmotion.phase1end]);
@@ -212,6 +217,7 @@ todo_edit(motion[Rmotion.phase1end]);
 			todo_add_sleep(max(40 - i*8, 5));
 			todo_add_send(Rsignal.addplatform, i);
 		}
+		todo_add_send(Rsignal.openphase, 2);
 	#endregion
 
 todo_edit(motion[Rmotion.phase2enter]);

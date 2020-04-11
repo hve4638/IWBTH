@@ -1,7 +1,8 @@
 ds_init();
-maxhp = 220;
+maxhp = 210;
 hp = maxhp;
 drawhp = 0;
+armor = 1.0;
 
 onhealth = false;
 oninvincible = false;

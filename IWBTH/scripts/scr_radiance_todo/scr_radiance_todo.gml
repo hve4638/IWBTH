@@ -24,7 +24,8 @@ enum Rsignal
 	camerasetting,
 	showhp,
 	lastlaser,
-	invin
+	invin,
+	openphase
 }
 
 var td = todo_current();
@@ -35,6 +36,20 @@ while(todo_signal_exists(td))
 
 	switch(signal)
 	{
+		case Rsignal.openphase:
+			var ind = todo_receive(td);
+			switch(ind)
+			{
+				case 2:
+					canenter2phase = true;
+				break;
+
+				case 3:
+					canenter3phase = true;
+				break;
+			}
+		break;
+
 		case Rsignal.invin:
 			oninvincible = todo_receive(td);
 		break;

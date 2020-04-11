@@ -6,7 +6,7 @@ with(obj_radiance)
 		rand_reset(Rmotion.laser, Rmotion.sword360, Rmotion.swordside, Rmotion.laserall, Rmotion.missile2);
 		b = true;
 		bossphase = 4;
-		maxhp = 250;
+		maxhp = 240;
 		hp = maxhp;
 		drawhp = 0;
 		

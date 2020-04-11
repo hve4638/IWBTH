@@ -12,7 +12,6 @@ if bossphase == 3
 else if bossphase == 5
 {
 	next_attack = Rmotion.last2;
-	canenter3phase = true;
 }
 else if bossphase == 6
 {
