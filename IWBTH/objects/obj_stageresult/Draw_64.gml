@@ -1,7 +1,9 @@
 draw_set_color(c_black);
-draw_set_alpha(fade_a);
-draw_rectangle(0,0,view_w,view_h,false);
-
+if !isgameclear
+{
+	draw_set_alpha(fade_a);
+	draw_rectangle(0,0,view_w,view_h,false);
+}
 draw_set_reset();
 
 var w, h;

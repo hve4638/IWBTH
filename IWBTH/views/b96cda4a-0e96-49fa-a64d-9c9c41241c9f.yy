@@ -11,6 +11,7 @@
         "97fcb57e-a406-485b-9b90-6f2fc42f2861",
         "20af856d-32f6-4be6-9bbc-50f455f27787",
         "cf41f977-2860-41de-95c5-f5bc4de62818",
+        "3be189f2-0da7-4194-8f47-596cfffb1e4b",
         "e60029fa-a70c-4cc7-bee0-5b452d167db9",
         "e3fd61d6-b8db-42b5-8831-b9cfb380d569",
         "d8dfcd71-da2d-4939-bd58-c0cd1beb19cc",
@@ -26,7 +27,7 @@
         "d394b4e1-a972-4e05-a4f2-a43e1ce1f89f"
     ],
     "filterType": "GMSprite",
-    "folderName": "radiance",
+    "folderName": "Radiance",
     "isDefaultView": false,
     "localisedFolderName": ""
 }

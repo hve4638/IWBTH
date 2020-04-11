@@ -55,7 +55,7 @@ globalvar win_h, win_w;
 globalvar enablekeyinput;
 globalvar each_volum; //각 볼륨크기
 globalvar ongod;
-globalvar bgm_p, bgm_ind;
+globalvar bgm_p, bgm_ind, bgm_faded;
 globalvar boss_firstmeet;
 
 globalvar sv_auto, sv_x, sv_y, sv_room, sv_look, sv_time, sv_death; //temp save

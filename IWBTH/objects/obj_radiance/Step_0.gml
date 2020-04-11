@@ -175,6 +175,14 @@ if ontrap
 	}
 }
 
+if onspreaddream
+{
+	var xx, yy;
+	xx = x + ox;
+	yy = y + oy + 16;
+	particle_emit(Particle.dreamspread, xx - 96 * 0.4, xx + 96 * 0.4, yy - 40 * 0.4, yy + 190 * 0.4, 6);
+}
+
 if oneyeshine
 	eyeshine_alpha += 0.1;
 else

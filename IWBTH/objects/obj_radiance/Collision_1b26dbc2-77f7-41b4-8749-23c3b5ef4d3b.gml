@@ -58,4 +58,19 @@ switch(bossphase)
 			armor = 0.5;
 		}
 	break;
+	
+	case 6:
+		if p < 0
+		{
+			bossphase = -1;
+
+			todo_play(motion[Rmotion.die]);
+			stageclear(5, 0);
+		}
+	break;
 }
+
+
+
+
+

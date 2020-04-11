@@ -14,6 +14,7 @@ enum Rmotion
 	last1,
 	last2,
 	lastmissile,
+	die,
 	size
 }
 motion = array_create(Rmotion.size);
@@ -243,6 +244,35 @@ todo_edit(motion[Rmotion.phase2enter]);
 
 		todo_add_send(Rsignal.todoplay, Rmotion.tele);
 	#endregion
+
+
+todo_edit(motion[Rmotion.die]);
+	#region
+		todo_add_send(Rsignal.camerafade, 40, 0.8);
+		todo_add_send(Rsignal.camerashake, 12, 2);
+		todo_add_signal(Rsignal.die);
+		todo_add_sleep(70);
+
+		todo_add_send(Rsignal.dreamspread, 1);
+		todo_add_send(Rsignal.camerashake, 6, 500);
+		todo_add_sleep(30);
+		todo_add_send(Rsignal.camerashake, 8, 500);
+		todo_add_sleep(30);
+		todo_add_send(Rsignal.camerashake, 10, 500);
+		todo_add_sleep(30);
+		todo_add_send(Rsignal.camerashake, 12, 500);
+		todo_add_sleep(30);
+		todo_add_send(Rsignal.camerashake, 14, 500);
+
+		todo_add_signal(Rsignal.die2);
+	#endregion
+	
+	
+	
+	
+	
+	
+	
 	
 	
 	

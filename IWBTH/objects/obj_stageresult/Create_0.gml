@@ -11,6 +11,8 @@ clear_idx = 0;
 
 sub_alpha = 0;
 
+isgameclear = false;
+
 enable_back = false;
 stime = time_format(result_time);
 sdeath = string(result_death);

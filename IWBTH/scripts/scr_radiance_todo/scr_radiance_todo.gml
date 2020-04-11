@@ -25,7 +25,10 @@ enum Rsignal
 	showhp,
 	lastlaser,
 	invin,
-	openphase
+	openphase,
+	dreamspread,
+	die,
+	die2
 }
 
 var td = todo_current();
@@ -288,6 +291,37 @@ while(todo_signal_exists(td))
 					camera_set_yrange(-150, 480);
 				break;
 			}
+		break;
+		
+		case Rsignal.die:
+			sprite_change(spr_radiance_death, 0, 1);
+			sfx(snd_lasthit);
+
+			onhealth = false;
+			bossbar();
+			bgm();
+
+			screenshake(20, 1);
+			bossphase = -1;
+
+			sys_global.canrestart = false;
+			
+			with(sys_camera)
+			{
+				ds_list_clear(follow);
+				ds_list_add(follow, obj_radiance);
+			}
+		break;
+		
+		case Rsignal.die2:
+			camera_fade_set(1.0, 60, c_white);
+			
+			//alarm_trigger(150, scr_gotostageresult);
+			//isgameclear
+		break;
+
+		case Rsignal.dreamspread:
+			onspreaddream = todo_receive(td);
 		break;
 	}
 }

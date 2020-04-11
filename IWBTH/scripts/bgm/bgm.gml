@@ -12,6 +12,15 @@ with(sys_global)
 	    bgm_p = nbgm;
 	}
 	
+	if bgm_p == bgm_faded
+	{
+		if audio_is_playing(bgm_faded)
+		{
+			audio_stop_sound(bgm_faded);
+			bgm_faded = no;
+		}
+	}
+	
 	if audio_exists(nbgm)
 	{
 		if !audio_is_playing(nbgm)

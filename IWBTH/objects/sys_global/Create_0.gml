@@ -18,5 +18,7 @@ intro_spr = 0;
 intro_time = 0;
 intro_alpha = 0;
 
+bgmfade_delay = 0;
+
 show_bosshp = false;
 bosshp = 0;

@@ -25,6 +25,7 @@ ongod = false;
 
 bgm_p = noone;
 bgm_ind = no;
+bgm_faded = no;
 
 boss_firstmeet = array_create(10, 0);
 
