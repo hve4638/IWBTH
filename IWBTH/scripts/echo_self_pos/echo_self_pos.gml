@@ -27,7 +27,7 @@ with(ins)
 	blendtype = bm_add;
 	self.alpha = alpha;
 
-	if isno(col)
+	if !isno(col)
 	{
 		shadertype = EchoShader.color;
 		self.color = col;

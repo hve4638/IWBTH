@@ -16,7 +16,7 @@ else
 
 if dashdelay <= 0 && candash
 {
-	echo_self_previous(1, 3, [0.15, 0]);
+	echo_self_previous(2, 4, [0.12, 0]);
 }
 
 if slash_delay <= 0

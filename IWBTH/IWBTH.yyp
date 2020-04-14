@@ -1191,14 +1191,6 @@
             }
         },
         {
-            "Key": "22378e4f-1f97-484e-bb90-4be837b24bcc",
-            "Value": {
-                "id": "a784fa05-9203-4c96-80f5-4a2c92778237",
-                "resourcePath": "shaders\\shd_fade\\shd_fade.yy",
-                "resourceType": "GMShader"
-            }
-        },
-        {
             "Key": "2312276a-fe20-4344-b895-205ba53eeba6",
             "Value": {
                 "id": "cb12dc9e-19f2-4fd2-b318-64a400b4adad",
@@ -7556,14 +7548,6 @@
                 "id": "9098b095-e8d3-46d8-af0b-b3863564c958",
                 "resourcePath": "scripts\\todo_add_sound\\todo_add_sound.yy",
                 "resourceType": "GMScript"
-            }
-        },
-        {
-            "Key": "e9670034-5552-478b-a413-2f331b306705",
-            "Value": {
-                "id": "f7c0976b-479f-4c70-8f61-cb7862c5201b",
-                "resourcePath": "shaders\\shd_color\\shd_color.yy",
-                "resourceType": "GMShader"
             }
         },
         {

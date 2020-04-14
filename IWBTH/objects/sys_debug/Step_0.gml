@@ -171,14 +171,10 @@ if keyboard_check(vk_control)
 
 if mouse_check_button_pressed(mb_right) && 0
 {
-	with(instance_create_layer(mouse_x, mouse_y, L_ABOVE, obj_jsabblock))
+	with(obj_player)
 	{
-		//length = 32 * 24;
-		//thick = 0.4;
-		create_time = 3;
-		destroy_time = 3;
+		echo_self_pos(mouse_x, mouse_y, 50, [1, 0], c_red, 1.0);
 	}
-	//screenshake(4, 1);
 }
 
 if mouse_check_button_pressed(mb_left) && 0
