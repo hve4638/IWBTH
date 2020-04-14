@@ -9,4 +9,11 @@ if keyboard_check_pressed(vk_space) && bossphase == 0
 }
 
 if keyboard_check_pressed(ord("1"))
+<<<<<<< HEAD
 	todo_play(motion[Rmotion.die]);
+=======
+	todo_play(motion[Rmotion.die]);
+
+if keyboard_check_pressed(ord("2"))
+	onspreaddream = !onspreaddream;
+>>>>>>> parent of 2bd79c6... 세이브

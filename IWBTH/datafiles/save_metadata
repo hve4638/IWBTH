@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 #metadata,#necessary,#default_index
 version,1,0
 x,1,1
@@ -13,3 +14,19 @@ hubx,0,10
 huby,0,11
 stageclear,0,12
 bossmeet,0,13
+=======
+#metadata,#necessary,#default,#default_type
+version,1,,
+x,1,,
+y,1,,
+room,1,,
+look,0,1,real
+time,1,,
+death,1,,
+stagetime,0,"[0, 0, 0, 0, 0, 0, 0, 0, 0, 0]",array
+stagedeath,0,"[0, 0, 0, 0, 0, 0, 0, 0, 0, 0]",array
+hubx,0,-1,real
+huby,0,-1,real
+clearstage,0,"[0, 0, 0, 0, 0, 0, 0, 0, 0, 0]",array
+bossmeet,0,"[0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0]",array
+>>>>>>> parent of 2bd79c6... 세이브

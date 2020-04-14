@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 /*if instance_exists(obj_player)
 {
 	sv_x = obj_player.x;
@@ -13,9 +14,24 @@ else
 	sv_auto = true;
 }
 sv_room = room;
+=======
+sv_auto = false;
+sv_x = Player.x;
+sv_y = Player.y;
+sv_room = room
+sv_look = Player.look
+>>>>>>> parent of 2bd79c6... 세이브
 sv_time = time;
 sv_death = death;
-sv_stageclear = stage_clear;
-sv_stagetime = stage_time;
-sv_stagedeath = stage_death;
-sv_bossmeet = boss_firstmeet;
+
+//cout("save:",sv_x, sv_y);
+
+/*
+sv[? "auto"] = false;
+sv[? "x"] = Player.x;
+sv[? "y"] = Player.y;
+sv[? "room"] = room;
+sv[? "look"] = Player.look;
+sv[? "time"] = time;
+sv[? "death"] = death;
+*/

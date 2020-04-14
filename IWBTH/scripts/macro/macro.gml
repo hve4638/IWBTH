@@ -55,14 +55,11 @@ globalvar win_h, win_w;
 globalvar enablekeyinput;
 globalvar each_volum; //각 볼륨크기
 globalvar ongod;
-globalvar bgm_p, bgm_ind, bgm_faded, bgm_fadetime;
+globalvar bgm_p, bgm_ind, bgm_faded;
 globalvar boss_firstmeet;
 
-globalvar sv_version, sv_x, sv_y, sv_room, sv_auto, sv_look;
-globalvar sv_time, sv_death;
-globalvar sv_stagedeath, sv_stagetime, sv_stageclear, sv_bossmeet;
+globalvar sv_auto, sv_x, sv_y, sv_room, sv_look, sv_time, sv_death; //temp save
 globalvar sv_hubx, sv_huby;
-
 globalvar current_stage;
 globalvar stage_time, stage_death, stage_clear;
 globalvar result_time, result_death;

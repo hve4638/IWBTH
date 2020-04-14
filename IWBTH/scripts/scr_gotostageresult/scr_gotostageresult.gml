@@ -1,5 +1,5 @@
 ///@argu gameclear*
-var c = argument_count > 0 ? argument[0] : 0;
+//var c = argument > 0 ? argument[0] : 0;
 result_death = stage_death[current_stage];
 result_time = stage_time[current_stage];
 
@@ -9,5 +9,5 @@ with(instance_create_layer(0, 0, L_SYS, obj_stageresult))
 	depth -= 100;
 	alarm[0] = 10;
 	
-	isgameclear = c;
+	//isgameclear = c;
 }

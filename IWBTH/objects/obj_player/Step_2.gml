@@ -7,16 +7,16 @@ if dashtime <= 0
 }
 else
 {
+	var xs = image_xscale;
+	image_xscale *= look;
+	
 	for(var i = 0; i < abs(hspd); i++)
 	{
-		echo_self_pos(x - i * sign(hspd), y, 10 + dashtime div 2, [0.15, 0]); 
-		//ins.shadertype = EchoShader.glow;
+		var ins = echo_self_pos(x - i * sign(hspd), y, 10 + dashtime div 2, [0.15, 0]); 
+		ins.shadertype = EchoShader.glow;
 	}
-}
 
-if dashdelay <= 0 && candash
-{
-	echo_self_previous(1, 5, [0.1, 0]);
+	image_xscale = xs;
 }
 
 if slash_delay <= 0

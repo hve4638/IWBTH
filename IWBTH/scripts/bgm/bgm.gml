@@ -6,11 +6,6 @@ loop = argument_count > 1 ? argument[1] : false;
 
 with(sys_global)
 {
-	if isno(nbgm) && audio_exists(bgm_faded)
-	{
-		audio_stop_sound(bgm_faded);
-		bgm_faded = no;
-	}
 	if bgm_p != nbgm || !audio_exists(nbgm)
 	{
 	    audio_stop_sound(bgm_p);

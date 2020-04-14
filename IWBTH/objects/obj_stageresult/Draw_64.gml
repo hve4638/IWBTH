@@ -9,17 +9,9 @@ draw_set_reset();
 var w, h;
 w = view_w div 2;
 h = view_h * 2 div 5;//160 + 32;
+draw_sprite_ext(spr_stageclear, 0, w, h, 1.0, 1.0, 0, c_white, clear_alpha);
+draw_sprite_ext(spr_stageclear, 1, w, h, 1.0, 1.0, 0, c_white, clear_alpha2);
 
-if !isgameclear
-{
-	draw_sprite_ext(spr_stageclear, 0, w, h, 1.0, 1.0, 0, c_white, clear_alpha);
-	draw_sprite_ext(spr_stageclear, 1, w, h, 1.0, 1.0, 0, c_white, clear_alpha2);
-}
-else
-{
-	draw_sprite_ext(spr_gameclear, 0, w, h, 1.0, 1.0, 0, c_white, clear_alpha);
-	draw_sprite_ext(spr_gameclear, 1, w, h, 1.0, 1.0, 0, c_white, clear_alpha2);
-}
 draw_set_font(font_perpetua);
 draw_set_halign(fa_center);
 draw_set_valign(fa_top);
@@ -28,10 +20,6 @@ var str;
 w = view_w div 2;
 h = view_h * 3 div 5;
 str = strmerge("TIME ", stime, NL, "DEATH ", sdeath, "");
-
-if isgameclear
-	draw_text_color(w, h, str, c_black, c_black, c_black, c_black, sub_alpha);
-else
-	draw_text_color(w, h, str, c_white, c_white, c_white, c_white, sub_alpha);
+draw_text_color(w, h, str, c_white, c_white, c_white, c_white, sub_alpha);
 
 draw_set_reset();

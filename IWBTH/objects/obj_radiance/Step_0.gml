@@ -85,11 +85,7 @@ if onswordside
 		swordside_cnt--;
 
 		var i = 0, h = Player.y - 48*16;
-		var w;
-		if bossphase <= 2
-			w = swordside_side ? room_width - 64 : 64;
-		else
-			w = swordside_side ? room_width - 16 : 16;
+		var w = swordside_side ? room_width - 64 : 64;
 		var l = 48*32
 		while(i < l)
 		{
@@ -101,7 +97,7 @@ if onswordside
 				with(ins)
 				{
 					life_create(500);
-					create_dash = 15;
+					create_dash = 12;
 					create_speed = 11;
 					direction = other.swordside_side ? 180 : 0;
 					image_angle = direction;
