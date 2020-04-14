@@ -1,6 +1,6 @@
-if instance_number(obj_create) <= 1
-{
+look = 1;
+
+if onlyexist
 	event_user(0);
-}
 
 instance_destroy();

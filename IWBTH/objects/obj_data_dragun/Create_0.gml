@@ -1,4 +1,8 @@
-onlyexist
+if !onlyexist
+{
+	instance_destroy();
+	exit;
+}
 ds_init();
 
 #region

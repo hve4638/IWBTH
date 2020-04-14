@@ -1,4 +1,4 @@
-if xmov!=0 {
+/*if xmov!=0 {
     if abs(x-Me.x)<8 {
         xmov=0; ymov=8;
         var i=nm;

@@ -12,6 +12,7 @@ else
 	sv_look = 1;
 	sv_auto = true;
 }
+
 sv_room = room;
 sv_time = time;
 sv_death = death;

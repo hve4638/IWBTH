@@ -38,19 +38,23 @@ if show_info
 	}
 	with(sys_camera)
 	{
-		str += strmerge("camera!");		
+		str += strmerge("camera!");
 	}
 }
 
 if show_save
 {
 	str += strmerge("[SAVE]");
-	str += strmerge("pos: ", sv_x, ",", sv_y, "  ", sv_auto);
-	str += strmerge("time: ", time, "  death: ", death);
-	str += strmerge("bossmeet: ", boss_firstmeet);
+	str += strmerge("pos: ", sv_x, ",", sv_y);
 	str += strmerge("hub: ", sv_hubx, ",", sv_huby);
-	str += strmerge("room: ", sv_room);
+	str += strmerge("time: ", sv_time, "  death: ", sv_death);
+	str += strmerge("bossmeet: ", boss_firstmeet);
+	str += strmerge("room: ", sv_room, " (", sv_auto, ")");
 	str += strmerge("look: ", sv_look);
+	str += strmerge("stagetime: ", sv_stagetime);
+	str += strmerge("stagedeath: ", sv_stagedeath);
+	str += strmerge("stageclear: ", sv_stageclear);
+	str += strmerge("bossmeet: ", sv_bossmeet);
 }
 
 draw_set_reset();

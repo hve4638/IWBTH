@@ -166,3 +166,20 @@ for(var i = 1; i < h; i++)
 	global.savemeta_default[i - 1] = csv_savemeta[# meta_d, i];
 }
 #endregion
+
+#region sv_*
+	sv_version = undefined;
+	sv_auto = undefined;
+	sv_x = undefined;
+	sv_y = undefined;
+	sv_room = undefined;
+	sv_look = undefined;
+	sv_time = undefined;
+	sv_death = undefined;
+	sv_stagetime = undefined;
+	sv_stagedeath = undefined;
+	sv_hubx = undefined;
+	sv_huby = undefined;
+	sv_stageclear = undefined;
+	sv_bossmeet = undefined;
+#endregion

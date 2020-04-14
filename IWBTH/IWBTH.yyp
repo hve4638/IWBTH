@@ -1263,6 +1263,14 @@
             }
         },
         {
+            "Key": "24871368-c0f1-4e12-8929-ddaf520fac9c",
+            "Value": {
+                "id": "c7830c39-9054-4755-ac92-eba784061d1d",
+                "resourcePath": "scripts\\parent\\parent.yy",
+                "resourceType": "GMScript"
+            }
+        },
+        {
             "Key": "24998ccc-0df3-43d6-817f-424db5c74e71",
             "Value": {
                 "id": "8a09d131-ce1c-4bf2-add0-e6998382496a",
@@ -7135,6 +7143,14 @@
             }
         },
         {
+            "Key": "dc4ffb26-7125-4614-b37e-efb12d964d62",
+            "Value": {
+                "id": "9ef4340b-8551-4270-9d16-0dc7bb33ca3d",
+                "resourcePath": "scripts\\script316\\script316.yy",
+                "resourceType": "GMScript"
+            }
+        },
+        {
             "Key": "dc55017d-7621-4d02-b53e-dad23e1cfac0",
             "Value": {
                 "id": "b1372b68-44af-411e-9e21-c1606b7f498b",
@@ -8283,14 +8299,6 @@
             "Value": {
                 "id": "279b8898-8f5b-41b9-9311-da86278dabea",
                 "resourcePath": "objects\\obj_jsabplatform\\obj_jsabplatform.yy",
-                "resourceType": "GMObject"
-            }
-        },
-        {
-            "Key": "ff017c93-7df2-4466-b45e-6c984246bef2",
-            "Value": {
-                "id": "279a3b0a-3fbe-4327-8634-75b55f5e65c7",
-                "resourcePath": "objects\\obj_create_tpevent\\obj_create_tpevent.yy",
                 "resourceType": "GMObject"
             }
         },

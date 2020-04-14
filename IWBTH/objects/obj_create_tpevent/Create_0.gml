@@ -1,2 +1,0 @@
-EFFECT=false;
-

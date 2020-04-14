@@ -1,20 +1,14 @@
-if !isno(sv_room)
+if room_exists(sv_room)
 {
-	with(Player)
+	with(obj_player)
 		instance_destroy();
 
 	if !sv_auto
 	{
-		with(instance_create_depth(sv_x, sv_y, 0, obj_create_nextroom))
+		with(instance_create_layer(sv_x, sv_y, L_ABOVE, obj_create_nextroom))
 			look = sv_look;
+		cout("Restart?");
 	}
-
-	/*if room == sv_room
-	{
-		with(sys_camera)
-			persistent = true;
-	}*/
-	
 	room_goto(sv_room);
 
 	return 0;
