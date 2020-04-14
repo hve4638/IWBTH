@@ -24,6 +24,11 @@ if keyboard_check_pressed(vk_anykey)
 		case ord("H"):
 			hidedebug = !hidedebug;
 		break;
+	
+		case ord("J"):
+			with(sys_global)
+				alarm[0] = 5;
+		break;
 
 		case vk_f3:
 			for(var i = 1; i <= 5; i++)

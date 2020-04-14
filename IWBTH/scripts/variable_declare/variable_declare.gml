@@ -111,8 +111,6 @@ global.debuglevel = 0;
 #endregion
 
 #region save integrity
-
-
 var arr = array_create(10, 0);
 	arr[Save.Version] = VERSION;
 	arr[Save.X] = 0;

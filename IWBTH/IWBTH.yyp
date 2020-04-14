@@ -2399,6 +2399,14 @@
             }
         },
         {
+            "Key": "4bfa1288-799d-4a01-b073-050aa1f51a19",
+            "Value": {
+                "id": "0ac52bad-6782-430f-9228-086b57aa4008",
+                "resourcePath": "sprites\\spr_intro_radiance\\spr_intro_radiance.yy",
+                "resourceType": "GMSprite"
+            }
+        },
+        {
             "Key": "4c55cffc-2210-4d9e-8397-906d547f482f",
             "Value": {
                 "id": "54ae86a4-d48d-4e5c-9dc9-8cc02aaf7ee9",
