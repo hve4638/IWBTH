@@ -1,4 +1,4 @@
-if instance_exists(obj_player)
+/*if instance_exists(obj_player)
 {
 	sv_x = obj_player.x;
 	sv_y = obj_player.y;

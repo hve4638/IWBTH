@@ -71,4 +71,7 @@ globalvar view_ratio;
 globalvar roomdata;
 
 
-#macro onlyexist if 1 < instance_number(object_index) { instance_destroy(); exit; }
+#macro onlyexist true
+//(instance_number(object_index) == 1)
+
+//if  { instance_destroy(); exit; }

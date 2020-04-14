@@ -1,4 +1,4 @@
-///@param num*
+/*///@param num*
 var num, sv, len;
 num = argument_count > 0 ? argument[0] : save_idx;
 
@@ -7,19 +7,22 @@ len = array_size(global.savemeta);
 
 for(var i = 0; i < len; i++)
 {
-	if !ds_map_exists(sv, global.savemeta[i])
+	var meta = global.savemeta[i];
+	var ns = global.savemeta_necessary[i];
+	var df = global.savemeta_default[i];
+
+	if !ds_map_exists(sv, meta) || (typeof(sv[? meta]) != typeof(df))
 	{
-		if global.savemeta_necessary[i]
+		if ns
 		{
-			cout("savedata(", string(num), "): \"", global.savemeta[i], "\" not found... important data loss");
+			cout("savedata(", string(num), "): \"", meta, "\" not found... important data loss");
 			return false;
 		}
 		else
 		{
-			var ind = global.savemeta_default[i];
-			sv[? global.savemeta[i]] = global.savedata_default[ind];
+			sv[? meta] = df;
 			
-			cout("savedata(", string(num), "): \"", global.savemeta[i], "\" not found... Replace default data");
+			cout("savedata(", string(num), "): \"", meta, "\" not found... Replace default data");
 			continue;
 		}
 	}

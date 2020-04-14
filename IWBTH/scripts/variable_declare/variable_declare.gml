@@ -117,7 +117,7 @@ var arr = array_create(10, 0);
 	arr[Save.Version] = VERSION;
 	arr[Save.X] = 0;
 	arr[Save.Y] = 0;
-	arr[Save.Room] = rm_tutorial;
+	arr[Save.Room] = room_get_name(rm_tutorial);
 	arr[Save.Auto] = true;
 	arr[Save.Look] = 1;
 	arr[Save.Time] = 0;
@@ -149,7 +149,7 @@ global.savedata_key = arr;
 
 var csv_savemeta = load_csv(SAVEMETA_DIRECTORY);
 var meta, meta_n, meta_d;
-w = ds_grid_width(csv_savemeta);
+w = ds_grid_width(csv_savemeta);t
 h = ds_grid_height(csv_savemeta);
 meta = ds_grid_value_x(csv_savemeta, 0, 0, w - 1, 0, "#metadata");
 meta_n = ds_grid_value_x(csv_savemeta, 0, 0, w - 1, 0, "#necessary");

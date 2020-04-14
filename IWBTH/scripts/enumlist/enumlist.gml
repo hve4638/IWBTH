@@ -13,7 +13,8 @@ enum Save
 	Hubx = 10,
 	Huby = 11,
 	Stageclear = 12,
-	Bossmeet = 13
+	Bossmeet = 13,
+	End
 }
 
 enum Input {
