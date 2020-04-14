@@ -163,6 +163,7 @@ global.debuglevel = 0;
 	each_volum[? snd_explode3] = 0.7;
 	each_volum[? snd_magic_blast2_small] = 0.75;
 <<<<<<< HEAD
+<<<<<<< HEAD
 #endregion
 
 #region save integrity
@@ -220,6 +221,8 @@ for(var i = 1; i < h; i++)
 	global.savemeta_necessary[i - 1] = csv_savemeta[# meta_n, i];
 	global.savemeta_default[i - 1] = csv_savemeta[# meta_d, i];
 }
+=======
+>>>>>>> parent of 2bd79c6... 세이브
 =======
 >>>>>>> parent of 2bd79c6... 세이브
 #endregion

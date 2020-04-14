@@ -21,9 +21,14 @@ for(var i = 0; i < len; i++)
 		else
 		{
 <<<<<<< HEAD
+<<<<<<< HEAD
 			sv[? meta] = df;
 			
 			cout("savedata(", string(num), "): \"", meta, "\" not found... Replace default data");
+=======
+			cout("savedata(", string(num), "): \"", global.savemeta[i], "\" not found... Replace default data");
+			sv[? global.savemeta[i]] = global.savemeta_default[i];
+>>>>>>> parent of 2bd79c6... 세이브
 =======
 			cout("savedata(", string(num), "): \"", global.savemeta[i], "\" not found... Replace default data");
 			sv[? global.savemeta[i]] = global.savemeta_default[i];

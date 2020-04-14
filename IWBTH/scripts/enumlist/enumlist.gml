@@ -1,4 +1,5 @@
 <<<<<<< HEAD
+<<<<<<< HEAD
 enum Save
 {
 	Version = 0,
@@ -17,6 +18,8 @@ enum Save
 	Bossmeet = 13,
 	End
 }
+=======
+>>>>>>> parent of 2bd79c6... 세이브
 =======
 >>>>>>> parent of 2bd79c6... 세이브
 

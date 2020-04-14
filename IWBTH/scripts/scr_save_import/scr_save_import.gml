@@ -34,5 +34,9 @@ stage_death = sv[? "stagedeath"];
 sv_hubx = sv[? "hubx"];
 sv_huby = sv[? "huby"];
 stage_clear = sv[? "clearstage"];
+<<<<<<< HEAD
+boss_firstmeet = sv[? "bossmeet"];
+>>>>>>> parent of 2bd79c6... 세이브
+=======
 boss_firstmeet = sv[? "bossmeet"];
 >>>>>>> parent of 2bd79c6... 세이브

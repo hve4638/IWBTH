@@ -1,4 +1,5 @@
 <<<<<<< HEAD
+<<<<<<< HEAD
 #metadata,#necessary,#default_index
 version,1,0
 x,1,1
@@ -15,6 +16,8 @@ huby,0,11
 stageclear,0,12
 bossmeet,0,13
 =======
+=======
+>>>>>>> parent of 2bd79c6... 세이브
 #metadata,#necessary,#default,#default_type
 version,1,,
 x,1,,
@@ -28,5 +31,9 @@ stagedeath,0,"[0, 0, 0, 0, 0, 0, 0, 0, 0, 0]",array
 hubx,0,-1,real
 huby,0,-1,real
 clearstage,0,"[0, 0, 0, 0, 0, 0, 0, 0, 0, 0]",array
+<<<<<<< HEAD
+bossmeet,0,"[0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0]",array
+>>>>>>> parent of 2bd79c6... 세이브
+=======
 bossmeet,0,"[0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0]",array
 >>>>>>> parent of 2bd79c6... 세이브

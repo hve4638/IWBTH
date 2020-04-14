@@ -1,4 +1,5 @@
 <<<<<<< HEAD
+<<<<<<< HEAD
 /*if instance_exists(obj_player)
 {
 	sv_x = obj_player.x;
@@ -15,11 +16,16 @@ else
 }
 sv_room = room;
 =======
+=======
+>>>>>>> parent of 2bd79c6... 세이브
 sv_auto = false;
 sv_x = Player.x;
 sv_y = Player.y;
 sv_room = room
 sv_look = Player.look
+<<<<<<< HEAD
+>>>>>>> parent of 2bd79c6... 세이브
+=======
 >>>>>>> parent of 2bd79c6... 세이브
 sv_time = time;
 sv_death = death;
