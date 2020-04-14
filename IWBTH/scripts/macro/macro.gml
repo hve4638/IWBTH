@@ -45,6 +45,8 @@
 
 #macro blendmode gpu_set_blendmode
 
+#macro STRING_HSIZE string_height(" ")
+
 globalvar pause, window_surf; //pause
 globalvar time, death, save_idx, difficulty; //save data
 globalvar key; //keyconfig

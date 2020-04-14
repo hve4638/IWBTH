@@ -1,6 +1,6 @@
 config_audio_def();
 
-with(sys_title)
+with(obj_title)
 {
 	arr[TitleArray.mastervolum] = config_mastervolum  * 100;
 	arr[TitleArray.musicvolum] = config_music * 100;

@@ -6042,7 +6042,7 @@
             "Key": "bf72b18f-b37b-4a78-97b2-70fa4da6f33c",
             "Value": {
                 "id": "b4d7b06e-6b59-4e2c-9a30-520d716da005",
-                "resourcePath": "objects\\sys_title\\sys_title.yy",
+                "resourcePath": "objects\\obj_title\\obj_title.yy",
                 "resourceType": "GMObject"
             }
         },

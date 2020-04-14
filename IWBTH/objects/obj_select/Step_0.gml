@@ -19,7 +19,7 @@ if onmouse && mouse_check_button_pressed(mb_left)
 {
 	if type == Select.goto
 	{
-		with(sys_title)	
+		with(obj_title)	
 		{
 			status = other.goto;
 			

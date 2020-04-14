@@ -1,6 +1,6 @@
 config_video_def();
 
-with(sys_title)
+with(obj_title)
 {
 	arr[TitleArray.fullscreen] = fullscreen;
 	arr[TitleArray.resolution] = resolution_index;

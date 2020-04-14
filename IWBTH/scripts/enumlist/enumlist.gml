@@ -45,26 +45,7 @@ enum Select {
 	scroll
 }
 
-enum Title {
-	start,
-	main,
-	game,
-	option,
-	option_audio,
-	option_video,
-	option_key,
-	nothing
-}
 
-enum TitleArray {
-	nothing = 0,
-	resolution,
-	fullscreen,
-	mastervolum,
-	musicvolum,
-	soundvolum,
-	ui
-}
 
 enum Difficulty {
 	easy = 0,

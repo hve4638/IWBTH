@@ -1,4 +1,4 @@
 config_video_def();
 
-with(sys_title)
+with(obj_title)
 	event_user(0);

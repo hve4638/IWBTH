@@ -7,4 +7,3 @@ if 0 < blur_alpha
 	else
 		blur_alpha += sign(toblur - blur_alpha) * 0.01;
 }
-
