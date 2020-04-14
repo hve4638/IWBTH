@@ -1,8 +1,4 @@
-if !onlyexist
-{
-	instance_destroy();
-	exit;
-}
+onlyexist
 ds_init();
 
 nextspr = map_create();

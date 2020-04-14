@@ -458,7 +458,7 @@
             "Key": "0c363081-9fad-4a9c-acd7-83d3b793240a",
             "Value": {
                 "id": "4da493c8-5cea-4848-b399-4797ff9aa75c",
-                "resourcePath": "scripts\\bgm_fade\\bgm_fade.yy",
+                "resourcePath": "scripts\\bgm_fadeout\\bgm_fadeout.yy",
                 "resourceType": "GMScript"
             }
         },
@@ -626,7 +626,7 @@
             "Key": "11224a08-88bc-4771-9e9b-4f1e9488f392",
             "Value": {
                 "id": "4c677c8b-d304-4b40-8793-003e2d1083ad",
-                "resourcePath": "sprites\\spr_stageclear\\spr_stageclear.yy",
+                "resourcePath": "sprites\\spr_gameclear\\spr_gameclear.yy",
                 "resourceType": "GMSprite"
             }
         },
@@ -1295,14 +1295,6 @@
             }
         },
         {
-            "Key": "25a08bdc-1d7c-4388-bba9-e102f6dbdbac",
-            "Value": {
-                "id": "c1dc0c35-f51e-465a-a7a0-43a77503d345",
-                "resourcePath": "sprites\\spr_gameclear\\spr_gameclear.yy",
-                "resourceType": "GMSprite"
-            }
-        },
-        {
             "Key": "25afc54d-6d34-4e6a-bdf1-ec484604b4c5",
             "Value": {
                 "id": "4b8e6495-8a55-4fd2-8cfd-b47553142874",
@@ -1339,14 +1331,6 @@
             "Value": {
                 "id": "20332c23-5ee5-49f4-a536-9ffcbc09a5f8",
                 "resourcePath": "sprites\\spr_player_sliding\\spr_player_sliding.yy",
-                "resourceType": "GMSprite"
-            }
-        },
-        {
-            "Key": "270530ed-43b5-425e-8c55-31c709b212c4",
-            "Value": {
-                "id": "af0c70e6-8089-42ea-8cb2-7127fa34a422",
-                "resourcePath": "sprites\\spr_intro_radiance\\spr_intro_radiance.yy",
                 "resourceType": "GMSprite"
             }
         },
@@ -3626,7 +3610,7 @@
             "Key": "70762f17-f31a-4604-bf2e-8db47aeac5ac",
             "Value": {
                 "id": "61c090aa-0973-4927-8d10-ae96a89ea437",
-                "resourcePath": "sprites\\spr_stageclear2\\spr_stageclear2.yy",
+                "resourcePath": "sprites\\spr_stageclear\\spr_stageclear.yy",
                 "resourceType": "GMSprite"
             }
         },
@@ -6503,6 +6487,14 @@
             }
         },
         {
+            "Key": "c8ab34c7-3602-4caf-b5ec-8016c44a353f",
+            "Value": {
+                "id": "20a66c1e-3862-4abb-9165-aa1fdc4c7e86",
+                "resourcePath": "sprites\\spr_radiance_laser\\spr_radiance_laser.yy",
+                "resourceType": "GMSprite"
+            }
+        },
+        {
             "Key": "c91e96c9-74f7-4cf3-bb9a-1ff581ffdec8",
             "Value": {
                 "id": "5d03e255-891b-496d-a10c-620a5bc8f5f1",
@@ -8291,6 +8283,14 @@
             "Value": {
                 "id": "279b8898-8f5b-41b9-9311-da86278dabea",
                 "resourcePath": "objects\\obj_jsabplatform\\obj_jsabplatform.yy",
+                "resourceType": "GMObject"
+            }
+        },
+        {
+            "Key": "ff017c93-7df2-4466-b45e-6c984246bef2",
+            "Value": {
+                "id": "279a3b0a-3fbe-4327-8634-75b55f5e65c7",
+                "resourcePath": "objects\\obj_create_tpevent\\obj_create_tpevent.yy",
                 "resourceType": "GMObject"
             }
         },

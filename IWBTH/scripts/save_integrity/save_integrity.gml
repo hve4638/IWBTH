@@ -1,4 +1,4 @@
-/*///@param num*
+///@param num*
 var num, sv, len;
 num = argument_count > 0 ? argument[0] : save_idx;
 
@@ -7,32 +7,19 @@ len = array_size(global.savemeta);
 
 for(var i = 0; i < len; i++)
 {
-	var meta = global.savemeta[i];
-	var ns = global.savemeta_necessary[i];
-	var df = global.savemeta_default[i];
-
-	if !ds_map_exists(sv, meta) || (typeof(sv[? meta]) != typeof(df))
+	if !ds_map_exists(sv, global.savemeta[i])
 	{
-		if ns
+		if global.savemeta_necessary[i]
 		{
-			cout("savedata(", string(num), "): \"", meta, "\" not found... important data loss");
+			cout("savedata(", string(num), "): \"", global.savemeta[i], "\" not found... important data loss");
 			return false;
 		}
 		else
 		{
-<<<<<<< HEAD
-<<<<<<< HEAD
-			sv[? meta] = df;
+			var ind = global.savemeta_default[i];
+			sv[? global.savemeta[i]] = global.savedata_default[ind];
 			
-			cout("savedata(", string(num), "): \"", meta, "\" not found... Replace default data");
-=======
 			cout("savedata(", string(num), "): \"", global.savemeta[i], "\" not found... Replace default data");
-			sv[? global.savemeta[i]] = global.savemeta_default[i];
->>>>>>> parent of 2bd79c6... 세이브
-=======
-			cout("savedata(", string(num), "): \"", global.savemeta[i], "\" not found... Replace default data");
-			sv[? global.savemeta[i]] = global.savemeta_default[i];
->>>>>>> parent of 2bd79c6... 세이브
 			continue;
 		}
 	}

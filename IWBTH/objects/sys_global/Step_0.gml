@@ -36,17 +36,17 @@ else
 	fade_idx = no;
 }
 
-if 0 <= bgmfade_delay
+if !isno(bgm_faded) && bgm_fadetime >= 0
 {
 	if audio_sound_is_playable(bgm_faded)
 	{
-		if bgmfade_delay == 0
+		if bgm_fadetime == 0
 		{
 			audio_stop_sound(bgm_faded);
 			bgm_faded = no;
 		}
 		else
-			bgmfade_delay--;
+			bgm_fadetime--;
 	}
 	else
 	{

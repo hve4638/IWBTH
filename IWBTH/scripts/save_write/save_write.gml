@@ -1,4 +1,4 @@
-/*///@param num*
+///@param num*
 var num;
 num = argument_count > 0 ? argument[0] : save_idx;
 

@@ -1,5 +1,3 @@
-<<<<<<< HEAD
-<<<<<<< HEAD
 enum Save
 {
 	Version = 0,
@@ -15,13 +13,8 @@ enum Save
 	Hubx = 10,
 	Huby = 11,
 	Stageclear = 12,
-	Bossmeet = 13,
-	End
+	Bossmeet = 13
 }
-=======
->>>>>>> parent of 2bd79c6... 세이브
-=======
->>>>>>> parent of 2bd79c6... 세이브
 
 enum Input {
 	left,

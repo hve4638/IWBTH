@@ -1,9 +1,6 @@
-/*look = 1;
-
-if object_index == obj_create
+if instance_number(obj_create) <= 1
 {
-	if !onlyexist
-		event_user(0);
-
-	instance_destroy();
+	event_user(0);
 }
+
+instance_destroy();

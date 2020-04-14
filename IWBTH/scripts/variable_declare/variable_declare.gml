@@ -81,60 +81,6 @@ global.debuglevel = 0;
 	}
 #endregion
 
-#region save integrity
-	var csv_savemeta = load_csv(SAVEMETA_DIRECTORY);
-	var meta, meta_n, meta_d, meta_dtype;
-	w = ds_grid_width(csv_savemeta);
-	h = ds_grid_height(csv_savemeta);
-	meta = ds_grid_value_x(csv_savemeta, 0, 0, w - 1, 0, "#metadata");
-	meta_n = ds_grid_value_x(csv_savemeta, 0, 0, w - 1, 0, "#necessary");
-	meta_d = ds_grid_value_x(csv_savemeta, 0, 0, w - 1, 0, "#default");
-	meta_dtype = ds_grid_value_x(csv_savemeta, 0, 0, w - 1, 0, "#default_type");
-
-	global.savemeta = array_create(h - 1);
-	global.savemeta_necessary = array_create(h - 1);
-	global.savemeta_default = array_create(h - 1, -4);
-
-	for(var i = 1; i < h; i++)
-	{
-		global.savemeta[i - 1] = csv_savemeta[# meta, i];
-		
-		if !csv_savemeta[# meta_n, i]
-		{
-			global.savemeta_necessary[i - 1] = false;
-			
-			var d = csv_savemeta[# meta_d, i];
-			var type = csv_savemeta[# meta_dtype, i];
-
-			if type == "real"
-				global.savemeta_default[i - 1] = real(d);
-			else if type == "string"
-				global.savemeta_default[i - 1] = string(d);
-			else if type == "array"
-				global.savemeta_default[i - 1] = array_read(string(d));
-		}
-		else
-		{
-			global.savemeta_necessary[i - 1] = true;
-			//global.savemeta_default[i - 1] = 0;
-		}
-	}
-	
-	/*
-	global.savemeta[1] = "x";
-	global.savemeta[2] = "y";
-	global.savemeta[3] = "room";
-	global.savemeta[4] = "look";
-	global.savemeta[5] = "time";
-	global.savemeta[6] = "death";
-	global.savemeta[7] = "stagetime";
-	global.savemeta[8] = "stagedeath";
-	global.savemeta[9] = "hubx";
-	global.savemeta[10] = "huby";
-	global.savemeta[11] = "clearstage";
-	*/
-#endregion
-
 #region resolution
 	global.resolution_name = global_list_create();
 	global.resolution_w = global_list_create();
@@ -162,8 +108,6 @@ global.debuglevel = 0;
 	each_volum[? snd_shoot2] = 0.4;
 	each_volum[? snd_explode3] = 0.7;
 	each_volum[? snd_magic_blast2_small] = 0.75;
-<<<<<<< HEAD
-<<<<<<< HEAD
 #endregion
 
 #region save integrity
@@ -173,7 +117,7 @@ var arr = array_create(10, 0);
 	arr[Save.Version] = VERSION;
 	arr[Save.X] = 0;
 	arr[Save.Y] = 0;
-	arr[Save.Room] = room_get_name(rm_tutorial);
+	arr[Save.Room] = rm_tutorial;
 	arr[Save.Auto] = true;
 	arr[Save.Look] = 1;
 	arr[Save.Time] = 0;
@@ -205,7 +149,7 @@ global.savedata_key = arr;
 
 var csv_savemeta = load_csv(SAVEMETA_DIRECTORY);
 var meta, meta_n, meta_d;
-w = ds_grid_width(csv_savemeta);t
+w = ds_grid_width(csv_savemeta);
 h = ds_grid_height(csv_savemeta);
 meta = ds_grid_value_x(csv_savemeta, 0, 0, w - 1, 0, "#metadata");
 meta_n = ds_grid_value_x(csv_savemeta, 0, 0, w - 1, 0, "#necessary");
@@ -221,8 +165,4 @@ for(var i = 1; i < h; i++)
 	global.savemeta_necessary[i - 1] = csv_savemeta[# meta_n, i];
 	global.savemeta_default[i - 1] = csv_savemeta[# meta_d, i];
 }
-=======
->>>>>>> parent of 2bd79c6... 세이브
-=======
->>>>>>> parent of 2bd79c6... 세이브
 #endregion

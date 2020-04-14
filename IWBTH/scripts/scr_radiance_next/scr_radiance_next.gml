@@ -1,7 +1,7 @@
 if !instance_exists(obj_player)
 	exit;
 
-if bossphase == 0
+if bossphase <= 0
 	exit;
 oninvincible = false;
 
@@ -37,6 +37,6 @@ else
 }
 
 if bossphase == 4
-	alarm[1] = 40;
+	alarm[1] = 55;
 else
 	alarm[1] = 10;
