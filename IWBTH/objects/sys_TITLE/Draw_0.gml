@@ -8,3 +8,9 @@ draw_text(main_x+1,main_y,name);
 draw_text(main_x-1,main_y,name);
 
 draw_set_reset();
+draw_set_color(c_black);
+draw_set_valign(fa_bottom);
+
+draw_text(0, room_height, VERSION_SHOW);
+
+draw_set_reset();

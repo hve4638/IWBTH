@@ -24,7 +24,7 @@ max_vspd = 9;
 hspd_slide = 0;
 vspd_slide = 0;
 hspd_dec = 0.5;
-vspd_dec = 0.5;
+//vspd_dec = 0.5;
 
 onlook = false;
 look = 1;

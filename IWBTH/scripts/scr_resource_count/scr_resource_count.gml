@@ -1,6 +1,10 @@
 gml_pragma("global","scr_resource_count()");
 
 globalvar object_count, room_count, sprite_count, sound_count;
+sprite_count = 0;
+object_count = 0;
+room_count = 0;
+sound_count = 0;
 
 var i = 0;
 while(sprite_exists(i)) i++;

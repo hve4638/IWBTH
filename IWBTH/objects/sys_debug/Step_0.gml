@@ -48,15 +48,11 @@ if keyboard_check_pressed(vk_anykey)
 		case vk_f8: ongod = !ongod;	
 		break;
 		
-		case ord("I"):
+		case INSTANTPLAY_KEY:
 			if room != rm_title
 				break;
 			save_idx = INSTANTPLAY_SAVESLOT;
 			scr_gamestart();
-		break;
-		
-		case ord("Y"):
-			//
 		break;
 		
 		/*

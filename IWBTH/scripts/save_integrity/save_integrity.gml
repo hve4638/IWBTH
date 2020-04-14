@@ -20,7 +20,7 @@ for(var i = 0; i < len; i++)
 		}
 		else
 		{
-			sv[? meta] = global.savemeta[df];
+			sv[? meta] = global.savedata_default[df];
 			
 			cout("savedata(", string(num), "): \"", meta, "\" not found... Replace default data");
 			continue;

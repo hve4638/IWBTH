@@ -1,6 +1,6 @@
 ///@argu count
 ///@argu time
-var cnt = argument[0];
+var cnt = argument[0]; cnt = cnt;
 var t = argument[1];
 var xx, yy;
 

@@ -1,6 +1,6 @@
 //Project creation date : 2019/10/29
 #macro VERSION 20191029
-#macro VERSION_SHOW "test1"
+#macro VERSION_SHOW "test version"
 
 #macro CONFIG_DIRECTORY "config"
 #macro SAVE_DIRECTORY "data"
@@ -20,7 +20,7 @@
 #macro L_BELOW "InsBelow"
 #macro L_BACKGROUND "InsBackground"
 
-#macro NULL undefined
+//#macro NULL undefined
 #macro NL "\n"
 #macro no -1
 
@@ -30,7 +30,7 @@
 
 ///DEBUG
 #macro DEFAULT_INSTANTPLAY 0
-#macro INSTANTPLAY_KEY ord("P")
+#macro INSTANTPLAY_KEY ord("I")
 #macro INSTANTPLAY_SAVESLOT 1
 #macro DEFAULT_COUTSHOW false
 #macro DEFAULT_FPS 50
