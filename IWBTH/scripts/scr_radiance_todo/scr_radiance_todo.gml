@@ -316,7 +316,7 @@ while(todo_signal_exists(td))
 		case Rsignal.die2:
 			camera_fade_set(1.0, 60, c_white);
 			
-			//alarm_trigger(150, scr_gotostageresult);
+			alarm_trigger(150, scr_gotostageresult, 1, 1);
 			//isgameclear
 		break;
 

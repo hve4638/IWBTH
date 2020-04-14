@@ -1,14 +1,15 @@
-#metadata,#necessary,#default,#default_type
-version,1,,
-x,1,,
-y,1,,
-room,1,,
-look,0,1,real
-time,1,,
-death,1,,
-stagetime,0,"[0, 0, 0, 0, 0, 0, 0, 0, 0, 0]",array
-stagedeath,0,"[0, 0, 0, 0, 0, 0, 0, 0, 0, 0]",array
-hubx,0,-1,real
-huby,0,-1,real
-clearstage,0,"[0, 0, 0, 0, 0, 0, 0, 0, 0, 0]",array
-bossmeet,0,"[0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0]",array
+#metadata,#necessary,#default_index
+version,1,0
+x,1,1
+y,1,2
+room,1,3
+look,0,4
+auto,0,5
+time,1,6
+death,1,7
+stagetime,0,8
+stagedeath,0,9
+hubx,0,10
+huby,0,11
+clearstage,0,12
+bossmeet,0,13

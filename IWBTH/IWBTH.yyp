@@ -458,7 +458,7 @@
             "Key": "0c363081-9fad-4a9c-acd7-83d3b793240a",
             "Value": {
                 "id": "4da493c8-5cea-4848-b399-4797ff9aa75c",
-                "resourcePath": "scripts\\bgm_fade\\bgm_fade.yy",
+                "resourcePath": "scripts\\bgm_fadeout\\bgm_fadeout.yy",
                 "resourceType": "GMScript"
             }
         },
@@ -626,7 +626,7 @@
             "Key": "11224a08-88bc-4771-9e9b-4f1e9488f392",
             "Value": {
                 "id": "4c677c8b-d304-4b40-8793-003e2d1083ad",
-                "resourcePath": "sprites\\spr_stageclear\\spr_stageclear.yy",
+                "resourcePath": "sprites\\spr_gameclear\\spr_gameclear.yy",
                 "resourceType": "GMSprite"
             }
         },
@@ -1291,14 +1291,6 @@
             "Value": {
                 "id": "8258eea5-5863-4f8f-bb23-de85e28411c0",
                 "resourcePath": "sprites\\spr_holo_headhunter\\spr_holo_headhunter.yy",
-                "resourceType": "GMSprite"
-            }
-        },
-        {
-            "Key": "25a08bdc-1d7c-4388-bba9-e102f6dbdbac",
-            "Value": {
-                "id": "c1dc0c35-f51e-465a-a7a0-43a77503d345",
-                "resourcePath": "sprites\\spr_gameclear\\spr_gameclear.yy",
                 "resourceType": "GMSprite"
             }
         },
@@ -3618,7 +3610,7 @@
             "Key": "70762f17-f31a-4604-bf2e-8db47aeac5ac",
             "Value": {
                 "id": "61c090aa-0973-4927-8d10-ae96a89ea437",
-                "resourcePath": "sprites\\spr_stageclear2\\spr_stageclear2.yy",
+                "resourcePath": "sprites\\spr_stageclear\\spr_stageclear.yy",
                 "resourceType": "GMSprite"
             }
         },
@@ -6492,6 +6484,14 @@
                 "id": "c9370ff8-b70b-4439-b3ec-44104f1b9797",
                 "resourcePath": "objects\\obj_spikeM_l\\obj_spikeM_l.yy",
                 "resourceType": "GMObject"
+            }
+        },
+        {
+            "Key": "c8ab34c7-3602-4caf-b5ec-8016c44a353f",
+            "Value": {
+                "id": "20a66c1e-3862-4abb-9165-aa1fdc4c7e86",
+                "resourcePath": "sprites\\spr_radiance_laser\\spr_radiance_laser.yy",
+                "resourceType": "GMSprite"
             }
         },
         {

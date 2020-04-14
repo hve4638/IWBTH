@@ -17,7 +17,7 @@ var xs, ys;
 xs = image_xscale;
 ys = image_yscale;
 
-if image_index == obj_player
+if object_index == obj_player
 	xs *= look
 
 var ins = echo_create(life, depth+1, sprite_index, image_index, _x, _y, xs, ys, image_angle);
@@ -25,11 +25,18 @@ with(ins)
 {
 	onblend = true;
 	blendtype = bm_add;
-
-	shadertype = EchoShader.color;
-	self.color = col;
-	self.fade = fade;
 	self.alpha = alpha;
+
+	if isno(col)
+	{
+		shadertype = EchoShader.color;
+		self.color = col;
+		self.fade = fade;
+	}
+	else
+	{
+		shadertype = EchoShader.glow;
+	}
 }
 
 return ins;

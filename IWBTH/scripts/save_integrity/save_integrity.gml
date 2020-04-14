@@ -16,8 +16,10 @@ for(var i = 0; i < len; i++)
 		}
 		else
 		{
+			var ind = global.savemeta_default[i];
+			sv[? global.savemeta[i]] = global.savedata_default[ind];
+			
 			cout("savedata(", string(num), "): \"", global.savemeta[i], "\" not found... Replace default data");
-			sv[? global.savemeta[i]] = global.savemeta_default[i];
 			continue;
 		}
 	}
