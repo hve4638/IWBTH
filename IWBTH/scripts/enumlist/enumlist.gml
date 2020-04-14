@@ -35,16 +35,6 @@ enum Camtype {
 	nothing
 }
 
-enum Select {
-	nothing,
-	game,
-	list,
-	goto,
-	script,
-	toggle,
-	scroll
-}
-
 
 
 enum Difficulty {

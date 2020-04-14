@@ -1,4 +1,3 @@
-if save_idx != 0
-	scr_save_export();
+scr_gamesave();
 
 global_ds_destroy();

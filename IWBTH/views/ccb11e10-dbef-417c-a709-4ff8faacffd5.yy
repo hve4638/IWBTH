@@ -16,10 +16,9 @@
         "415c009c-2693-4e0e-b5c2-3040f0bbd1e0",
         "594f6ee2-7994-4205-a67e-77a9a2c0ce71",
         "2b01d183-3388-4791-9b20-c64cffaddf7c",
-        "7f294636-17d9-4526-8cff-7626c7439a29",
-        "767ed76f-ed3f-47c6-9a1c-909a9c45d1d4",
         "02a93117-e245-4cd7-bb35-78c7149df992",
-        "2ff4d2ef-d426-499a-912f-bbbe5ce94958"
+        "2ff4d2ef-d426-499a-912f-bbbe5ce94958",
+        "503cc821-b0ff-4cd6-aaf7-e49711d93a17"
     ],
     "filterType": "GMObject",
     "folderName": "support",

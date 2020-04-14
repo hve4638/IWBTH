@@ -1,5 +1,4 @@
 enable = true;
-
 dw_x = 0;
 dw_y = 0;
 
@@ -26,3 +25,13 @@ save_new = true;
 
 arr = 0;
 idx = 0;
+
+enum Select {
+	nothing,
+	game,
+	list,
+	goto,
+	script,
+	toggle,
+	scroll
+}
