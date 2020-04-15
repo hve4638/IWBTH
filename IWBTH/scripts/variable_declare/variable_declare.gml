@@ -5,6 +5,8 @@ difficulty = Difficulty.normal;
 volum_sound = 1.0;
 volum_music = 1.0;
 
+global.datainput = global_map_create()
+
 savedata = array_create(4, no);
 
 stage_time = array_create(10, 0);
@@ -29,7 +31,7 @@ bgm_faded = no;
 
 boss_firstmeet = array_create(10, 0);
 
-global.todolist = ds_map_create();
+global.todolist = global_map_create();
 global.todoedit = no;
 global.edgeblur_surf = no;
 

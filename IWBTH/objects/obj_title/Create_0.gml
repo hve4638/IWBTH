@@ -2,7 +2,6 @@ ds_init();
 name = "I Wanna Be The Hollow";
 main_x = room_width div 2;
 main_y = room_height div 4;
-
 status = Title.main;
 
 select_x = 0;
@@ -23,6 +22,7 @@ arr[TitleArray.musicvolum] = config_music * 100;
 arr[TitleArray.soundvolum] = config_sound  * 100;
 arr[TitleArray.resolution] = resolution_index;
 arr[TitleArray.ui] = config_ui;
+
 
 blur_alpha = 0.5;
 toblur = 0.5;
