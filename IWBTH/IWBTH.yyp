@@ -4463,6 +4463,14 @@
             }
         },
         {
+            "Key": "8eac72c4-4a5c-444b-8321-877c3d7294fd",
+            "Value": {
+                "id": "56785c5c-2ef7-439e-b10c-dd0363e942cb",
+                "resourcePath": "scripts\\draw_set_text\\draw_set_text.yy",
+                "resourceType": "GMScript"
+            }
+        },
+        {
             "Key": "8eca6f99-c9ca-465b-8002-0f3dbe568a33",
             "Value": {
                 "id": "244f259d-9398-44eb-97b9-4df13e822d5f",
@@ -6559,6 +6567,14 @@
             }
         },
         {
+            "Key": "ce5774b4-9274-4c8e-9116-190c18725b0c",
+            "Value": {
+                "id": "9cfaa9cb-dfcf-46fc-b71f-0855bd0a4751",
+                "resourcePath": "scripts\\settitle\\settitle.yy",
+                "resourceType": "GMScript"
+            }
+        },
+        {
             "Key": "ced94cbd-45bc-4bb6-9885-3219bc938276",
             "Value": {
                 "id": "007d3812-baad-4872-9423-db27e360d3e0",
@@ -7052,14 +7068,6 @@
                 "id": "e2e132ac-7912-4d69-9506-186b7f890fee",
                 "resourcePath": "objects\\obj_spikeM\\obj_spikeM.yy",
                 "resourceType": "GMObject"
-            }
-        },
-        {
-            "Key": "dc4ffb26-7125-4614-b37e-efb12d964d62",
-            "Value": {
-                "id": "9ef4340b-8551-4270-9d16-0dc7bb33ca3d",
-                "resourcePath": "scripts\\script316\\script316.yy",
-                "resourceType": "GMScript"
             }
         },
         {
@@ -8515,11 +8523,11 @@
         "0c363081-9fad-4a9c-acd7-83d3b793240a",
         "5f53845c-eba4-4ff4-9617-91c6649c141c",
         "11ff1c04-612c-4f46-bf08-bf96e3798fb9",
-        "dc4ffb26-7125-4614-b37e-efb12d964d62",
         "24871368-c0f1-4e12-8929-ddaf520fac9c",
         "d8bf90c7-6ad8-4890-b8ba-b64020a18339",
         "83b725aa-44a4-435f-b28a-c8478bc004db",
-        "a3286d81-ae15-43f2-af02-04cd14559bde"
+        "a3286d81-ae15-43f2-af02-04cd14559bde",
+        "ce5774b4-9274-4c8e-9116-190c18725b0c"
     ],
     "tutorial": ""
 }

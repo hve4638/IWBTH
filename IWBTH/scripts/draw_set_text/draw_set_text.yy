@@ -1,8 +1,8 @@
 {
-    "id": "dc4ffb26-7125-4614-b37e-efb12d964d62",
+    "id": "8eac72c4-4a5c-444b-8321-877c3d7294fd",
     "modelName": "GMScript",
     "mvc": "1.0",
-    "name": "script316",
+    "name": "draw_set_text",
     "IsCompatibility": false,
     "IsDnD": false
 }

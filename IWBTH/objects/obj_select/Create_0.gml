@@ -1,37 +1,37 @@
 enable = true;
+
 dw_x = 0;
 dw_y = 0;
-
 check_w = 0;
 check_h = 0;
+
 name = "";
+type = Select.nothing;
+datakey = noone;
 
 onmouse = false;
 onact = false;
 
-type = Select.nothing;
-goto = Title.nothing;
-script = -1;
-toggle = false;
-percent = 0;
+click = false;
+
+list = no;
 list_idx = 0;
 
-list = -1;
+script = no;
 
-save_num = 0;
-save_time = 0;
-save_death = 0;
-save_new = true;
+toggle = 0;
+//next = 0;
+//previous = 0;
 
-arr = 0;
-idx = 0;
+//goto = Title.nothing;
+//script = no;
+//toggle = false;
+//percent = 0;
 
-enum Select {
-	nothing,
-	game,
-	list,
-	goto,
-	script,
-	toggle,
-	scroll
-}
+//list_idx = 0;
+//list = no;
+
+//save_num = 0;
+//save_time = 0;
+//save_death = 0;
+//save_new = true;

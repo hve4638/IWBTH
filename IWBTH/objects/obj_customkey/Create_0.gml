@@ -1,10 +1,9 @@
 enable = true;
 onact = false;
 
-arr = 0; idx = 0;
-
-currentkey = "NULL";
-name = "JUMP";
+name = "KEYNAME";
+currentkey = "";
+key_index = 0;
 
 dw_x = room_width div 7;
 

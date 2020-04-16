@@ -21,13 +21,11 @@ with(sys_global)
 	tmp[? "volum_bgm"] = config_music;
 	tmp[? "volum_sfx"] = config_sound;
 	tmp[? "ui"] = config_ui;
-	
 	cf_string = ds_map_write(tmp);
 	
 	ds_map_destroy(tmp);
 	
-    var f;
-    f=file_text_open_write(CONFIG_DIRECTORY);
+    var f = file_text_open_write(CONFIG_DIRECTORY);
         file_text_write_string(f, cf_string);
     file_text_close(f);
 }

@@ -1,5 +1,5 @@
 ds_init();
-maxhp = 210;
+maxhp = 190;
 hp = maxhp;
 drawhp = 0;
 armor = 1.0;

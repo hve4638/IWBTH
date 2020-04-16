@@ -2,18 +2,17 @@
 ///@param idx
 ///@param x
 ///@param y
-var name, idx;
+var str, idx;
 var _x, _y;
-name = argument[0];
+str = argument[0];
 idx = argument[1];
 _x = argument[2];
 _y = argument[3];
 
 with(instance_create_layer(_x, _y, L_SYS, obj_customkey))
 {
-	self.name = name;
-	self.arr = key;
-	self.idx = idx;
+	name = str;
+	key_index = idx;
 
-	self.currentkey = key_get_name(self.arr[idx]);
+	currentkey = key_get_name(key[key_index]);
 }
