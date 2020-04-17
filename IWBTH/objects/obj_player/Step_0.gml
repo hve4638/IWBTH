@@ -1,3 +1,4 @@
+#region keyinput
 var L, R, h;
 var h;
 L = left;
@@ -11,11 +12,12 @@ if !frozen
     else if L
         h = -1;
 }
+#endregion
 
+#region movement
 var onblockR = !onground && tile_cling(1, 0);
 var onblockL = !onground && tile_cling(-1, 0);
 
-#region movement
 if h != 0
 {
 	if !(onblockL || onblockR)
@@ -56,6 +58,7 @@ vspd += round(vspd_slide);
 vspd = clamp(vspd, -max_vspd, max_vspd);
 #endregion
 
+#region action
 if !frozen && !(0 < dashtime)
 {
 	if onwalljump == 0
@@ -72,25 +75,27 @@ if !frozen && !(0 < dashtime)
 		if attacktype == Attacktype.gun && button(Input.attack)
 		{
 			attackdelay = attackdelay_gun;
+
 			scr_player_shoot();
 		}
 		else if attacktype == Attacktype.sword && button(Input.attack)
 		{
 			attackdelay = attackdelay_sword;
-			//hspd ;
 			
 			scr_player_slash();
 		}
 	}
 	
-	if button_press(Input.dash) && dashdelay <= 0 && candash
+	if button_press(Input.dash) && candash
 	{
 		dashdelay = dashdelay_max;
 		
 		scr_player_dash();
 	}
 }
+#endregion
 
+#region dash & platform
 if 0 < dashtime
 {
 	hspd = dashdir * dashlen;
@@ -113,7 +118,9 @@ else
     if !place_meeting(x, y + 1, obj_platform)
 		on_platform = false;
 }
+#endregion
 
+#region walljump
 if onwalljump != 0
 {
 	if button(Input.down)
@@ -154,9 +161,6 @@ if onwalljump != 0
 		sfx(snd_jump);
     }
 }
-
-
-if place_meeting(x, y, obj_water)
-	vspd = min(2, vspd);
+#endregion
 
 player_movement();

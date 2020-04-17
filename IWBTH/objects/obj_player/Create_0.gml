@@ -33,7 +33,7 @@ look = 1;
 force_spd = 0;
 force_dir = 0;
 
-#region attack&jump&dash
+#region attack & jump & dash
 jumpbuffer = 0;
 attackdelay = 0;
 attackdelay_gun = 7;
@@ -45,7 +45,7 @@ slash_delay_max = 3;
 
 candash = false;
 dashdelay = 0;
-dashdelay_max = 30;
+dashdelay_max = 40;
 
 dashdir = 0;
 dashlen = 6;
@@ -74,4 +74,4 @@ idxspr_dash = spr_player_dash;
 image_speed = 0.2;
 mask_index = spr_player_mask;
 
-life_idx = 0;
+//life_idx = 0;

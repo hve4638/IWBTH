@@ -5,13 +5,7 @@ E = button(Input.escape);
 S = button_press(Input.swap);
 
 if S
-{
-	if attacktype == Attacktype.gun
-		attacktype = Attacktype.sword;
-	else
-		attacktype = Attacktype.gun;
-}
-
+	attacktype = attacktype == Attacktype.gun ? Attacktype.sword : Attacktype.gun;
 
 if 0 < move_ignore
 {
@@ -19,6 +13,7 @@ if 0 < move_ignore
 	R = false;
 }
 
+#region keyinput
 if inputp != 0
 {
     if L && R
@@ -39,15 +34,14 @@ if inputp == 0
     if L
 		inputp = -1;
 }
+#endregion
 
 if L || R || !canescape
 	E = false;
 
-if !escapetry && 0<escape_idx
+if !escapetry && 0 < escape_idx
 	E = false;
-
 
 left = L;
 right = R;
 escapetry = E;
-

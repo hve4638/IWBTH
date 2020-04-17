@@ -1,5 +1,5 @@
 ///@desc return 0~1
-///@argu ind
+///@argu index
 ///@argu cycle
 
 var ind, cycle, r;

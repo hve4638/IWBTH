@@ -22,9 +22,6 @@ enablekeyinput = true;
 
 ongod = false;
 
-//pause = false;
-//window_surf = no;
-
 bgm_p = noone;
 bgm_ind = no;
 bgm_faded = no;
@@ -124,8 +121,8 @@ var arr = array_create(10, 0);
 	arr[Save.Death] = 0;
 	arr[Save.Stagetime] = array_create(10, 0);
 	arr[Save.Stagedeath] = array_create(10, 0);
-	arr[Save.Hubx] = 0;
-	arr[Save.Huby] = 0;
+	arr[Save.Hubx] = -1;
+	arr[Save.Huby] = -1;
 	arr[Save.Stageclear] = array_create(10, 0);
 	arr[Save.Bossmeet] = array_create(10, 0);
 global.savedata_default = arr;
