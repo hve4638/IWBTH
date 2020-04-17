@@ -9,6 +9,9 @@ name = "";
 type = Select.nothing;
 datakey = noone;
 
+next_id = noone;
+previous_id = noone;
+
 onmouse = false;
 onact = false;
 

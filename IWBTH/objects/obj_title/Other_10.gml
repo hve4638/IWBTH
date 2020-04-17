@@ -1,13 +1,20 @@
 ds_list_clear(select_ins);
+ds_list_clear(select_temp);
 instance_destroy(parent_title);
 
-//volum_update();
-//resolution_update();
-//config_write();
+//onselect_id = no;
 
 #region
 switch(status)
 {
+	case Title.start:
+		addselect("Press Any Key", Select.pressanykey, 0, Title.game);
+		settitle(room_width div 2, room_height div 4, "I WANNA BE THE HOLLOW");
+
+		select_x = room_width div 2;
+		select_y = room_height div 4 * 3;
+	break;
+
 	case Title.main:
 		addselect("START GAME", Select.goto, 0, Title.game);
 		addselect("OPTION", Select.goto, 0, Title.option);
@@ -46,7 +53,7 @@ switch(status)
 
 	case Title.option_video:
 		addselect("RESOLUTION", Select.list, "resolution", [global.resolution_name, global.resolution_index]);
-		addselect("FULLSCREEN", Select.toggle, "fullscreen");
+		addselect("FULLSCREEN", Select.toggle, "fullscreen", fullscreen);
 		addselect();
 		addselect("RESET DEFAULTS", Select.script, 0, scr_video_reset);
 		addselect("BACK", Select.goto, "configwrite", Title.option);
@@ -109,16 +116,16 @@ switch(status)
 }
 #endregion
 
-
-
 #region set position
 	draw_set_font(font_perpetua);
 
-	var xx, yy;
+	var str_h = STRING_HSIZE;
 	var size = ds_list_size(select_ins);
+	var xx, yy;
 	xx = select_x;
-	yy = select_y - ((STRING_HSIZE div 2) * size);
-
+	yy = select_y - ((str_h div 2) * size);
+	draw_set_reset();
+	
 	for(var i = 0; i < size; i++)
 	{
 		var ins = select_ins[| i];
@@ -126,10 +133,21 @@ switch(status)
 		{
 			dw_x = xx;
 			dw_y = yy;
+			
+			if type != Select.nothing
+				ds_list_add(obj_title.select_temp, id);
 		}
 
-		yy += STRING_HSIZE;
+		yy += str_h;
 	}
 
-	draw_set_reset();
+	var size = ds_list_size(select_temp);
+	for(var i = 0; i < size; i++)
+	{
+		var ins = select_temp[| i];
+		var	pv_ins = select_temp[| modulo(i - 1, size)];
+		var nx_ins = select_temp[| modulo(i + 1, size)];
+		ins.previous_id = pv_ins;
+		ins.next_id = nx_ins;
+	}
 #endregion

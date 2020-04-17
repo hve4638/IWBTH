@@ -9,9 +9,40 @@ var w, h;
 w = check_w div 2;
 h = check_h div 2;
 
-onmouse = point_in_rectangle(mouse_x, mouse_y, dw_x - w, dw_y - h, dw_x + w, dw_y + h);
-if onmouse && mouse_check_button_pressed(mb_left)
-	click = true;
+var m = onmouse;
+if !onact
+{
+	if obj_title.check_keyboard
+	{
+		onmouse = (obj_title.onselect_id == id);
+	
+		if onmouse && (keyboard_check_pressed(vk_space) || keyboard_check_pressed(vk_enter))
+			click = true;
+	}
+	else
+	{
+		onmouse = point_in_rectangle(mouse_x, mouse_y, dw_x - w, dw_y - h, dw_x + w, dw_y + h);
+
+		if onmouse && mouse_check_button_pressed(mb_left)
+			click = true;
+	}
+}
+
+if onmouse && onmouse xor m
+	sfx(snd_ui_click);
+
+if type == Select.game && onmouse
+{
+	if mouse_check_button_pressed(mb_right) || keyboard_check_pressed(vk_delete)
+	{
+		if show_question("Are you sure you want to delete?")
+		{
+			obj_title.savecheck[save_num] = false;
+
+			save_new = true;
+		}
+	}
+}
 
 if onact
 {
@@ -36,7 +67,8 @@ if onact
 			break;
 		}
 
-	if mouse_check_button_pressed(mb_right) || keyboard_check_pressed(vk_escape)
+	if mouse_check_button_pressed(mb_left) || mouse_check_button_pressed(mb_right)
+	|| keyboard_check_pressed(vk_enter) || keyboard_check_pressed(vk_space)
 	{
 		ds_queue_enqueue(obj_title.datarenew, datakey);
 
@@ -44,5 +76,7 @@ if onact
 			enable = true;
 
 		onact = false;
+		
+		cout("onact break");
 	}
 }

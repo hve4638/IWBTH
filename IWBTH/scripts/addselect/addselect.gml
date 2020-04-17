@@ -10,7 +10,7 @@ add = argument_count > 3 ? argument[3] : [undefined];
 
 if !is_array(add)
 	add = [add];
-	
+
 var ins = instance_create_layer(0, 0, L_SYS, obj_select);
 with(ins)
 {
@@ -45,7 +45,7 @@ with(ins)
 			
 		case Select.game:
 			save_num = add[0];
-			if save_integrity(save_num)
+			if obj_title.savecheck[save_num]
 			{
 				var t = get_save_index(save_num);
 				save_new = false;

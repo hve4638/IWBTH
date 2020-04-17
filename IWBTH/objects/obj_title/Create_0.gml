@@ -9,20 +9,23 @@ datarenew = queue_create();
 select_x = 0;
 select_y = 0;
 select_ins = list_create();
-select_type = list_create();
-select_name = list_create();
-select_key = list_create();
-select_add = list_create();
+select_temp = list_create();
 
-
+check_keyboard = false;
+onselect_id = noone;
+mouse_px = 0;
+mouse_py = 0;
 
 blur_alpha = 0.5;
 toblur = 0.5;
 global_fade_set(1.0, 0, c_black);
 global_fade_set(0.0, 75, c_black);
 
-event_user(0);
+savecheck = array_create(5, false);
+for(var i = 1; i <= 3; i++)
+	savecheck[i] = save_integrity(i);
 
+event_user(0);
 
 enum Title {
 	start,
@@ -47,6 +50,7 @@ enum TitleArray {
 
 enum Select {
 	nothing,
+	pressanykey,
 	game,
 	list,
 	goto,

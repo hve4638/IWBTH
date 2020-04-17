@@ -1,1 +1,1 @@
-playery = 0;
+playery = instance_exists(obj_player) ? obj_player.y : 0;
