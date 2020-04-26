@@ -8,7 +8,7 @@ draw_text(main_x + 1, main_y, name);
 draw_text(main_x - 1, main_y, name);
 draw_set_reset();
 
-
+draw_set_font(font_perpetua_small);
 if status = Title.main
 {
 	draw_set_color(c_black);
@@ -18,6 +18,7 @@ if status = Title.main
 	draw_set_reset();
 }
 
+draw_set_font(font_perpetua_small);
 var lore = "";
 switch(status)
 {

@@ -33,6 +33,7 @@ if escape_time < escape_idx
 	global_fade_set(1.0, 75, c_white);
 	sfx(snd_escape_act);
 
+
 	sys_global.canrestart = false
 	save_room(rm_hub);
 	
@@ -54,7 +55,7 @@ if 0 < escape_idx && escapetry
 
 	if escape_idx < 50
 	{
-		if life_idx mod 5 == 0
+		if time_idx mod 5 == 0
 			particle_emit(Particle.escape_ready,x-18,x+18,bbox_bottom-1,bbox_bottom+1,1);
 	}
 	else if escape_idx == 50
@@ -72,7 +73,7 @@ if 0 < escape_idx && escapetry
 		var k = value_merge(96, 32, p);
 		
 		escape_blureffect_alpha = min(0.9, escape_blureffect_alpha + 0.007);
-		if life_idx mod 2 == 0
+		if time_idx mod 2 == 0
 			particle_emit(Particle.escape_try2,x-k,x+k,bbox_bottom-6,bbox_bottom+3, t);
 	}
 }

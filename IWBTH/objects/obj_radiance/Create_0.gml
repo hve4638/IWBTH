@@ -62,9 +62,12 @@ lastlaser_idx = 0;
 
 onspreaddream = false;
 
+deadline_y = room_height;
+
 rand_create(Rmotion.laser, Rmotion.sword360, Rmotion.swordtop, Rmotion.swordside, Rmotion.laserall, Rmotion.missile);
 
 sprite_change(spr_radiance_idle);
+sprite_change(spr_empty);
 
 depth += 1;
 

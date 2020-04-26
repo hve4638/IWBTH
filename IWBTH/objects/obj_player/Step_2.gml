@@ -11,27 +11,44 @@ if ins != noone
 		{
 			dashdelay = 0;
 			candash = true;
+			dash_refresed = true;
 		}
 
 		with(ins)
 		{
 			enable = false;
-			alarm[0] = 50;
+			alarm[0] = 150;
 		}
 	}
 }
 #endregion
 
 if dashtime
-	echo_self_previous(2, 10 + dashtime div 2, [0.2, 0]);
+{
+	if dashecho
+		echo_self_previous(1, 10 + dashtime div 2, [0.2, 0], c_red);
+	else
+		echo_self_previous(1, 10 + dashtime div 2, [0.1, 0]);
+}
+else
+	dashecho = false;
+
+if dash_refresed
+	echo_self_previous(2, 4, [0.15, 0], c_red);
 
 if candash
 	echo_self_previous(2, 4, [0.1, 0]);
 
 if onground || on_platform
+{
 	slideready = false;
+	dash_refresed = false;
+}
 
-if dashdelay == 0 && (onground || on_platform)
+if (onground || on_platform)
+	dashready = true;
+
+if dashdelay == 0 && dashready
 	candash = true;
 
 if hspd_slide != 0
@@ -62,3 +79,5 @@ dashdelay = max(dashdelay - 1, 0);
 
 force_spd = 2*pdis(hspd,vspd);
 force_dir = pdir(hspd,vspd);
+
+time_idx++;

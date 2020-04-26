@@ -10,6 +10,7 @@ enum Rmotion
 	missile2,
 	tele,
 	phase1end,
+	phase1enter,
 	phase2enter,
 	last1,
 	last2,
@@ -70,6 +71,24 @@ todo_edit(motion[Rmotion.laserall]);
 		todo_add_send(Rsignal.todoplay, Rmotion.tele);
 	#endregion
 
+todo_edit(motion[Rmotion.phase1enter]);
+	#region		
+		todo_add_send(Rsignal.camerashake, 2, 40);
+		todo_add_sleep(40);
+		todo_add_sound(snd_radiance_teleport);
+		todo_add_send(Rsignal.camerashake, 8, 2);
+		todo_add_send(Rsignal.camerafade, 15, 0.9);
+		todo_add_signal(Rsignal.intro);
+		
+		todo_add_sound(snd_radiance_laser_burst);
+		todo_add_send(Rsignal.showhp, 1);
+		todo_add_sprite(spr_radiance_idle);
+		todo_add_sleep(30);
+
+		todo_add_send(Rsignal.todoplay, Rmotion.tele);
+	#endregion
+
+
 todo_edit(motion[Rmotion.tele]);
 	#region
 		todo_add_send(Rsignal.invin, true);
@@ -79,6 +98,7 @@ todo_edit(motion[Rmotion.tele]);
 		
 		todo_add_signal(Rsignal.glow);
 		todo_add_signal(Rsignal.tele);
+		todo_add_sound(snd_radiance_teleport);
 		todo_add_sleep(5);
 		
 		todo_add_sprite(spr_radiance_turn2);
@@ -101,9 +121,11 @@ todo_edit(motion[Rmotion.sword360]);
 
 		repeat(3)
 		{
+			todo_add_sound(snd_radiance_sword_create_circular);
 			todo_add_signal(Rsignal.sword360);
 			todo_add_sleep(20);
 		
+			todo_add_sound(snd_radiance_sword_shoot);
 			todo_add_signal(Rsignal.sword360fire);
 			todo_add_sleep(5);
 		}
@@ -160,7 +182,8 @@ todo_edit(motion[Rmotion.lastmissile]);
 todo_edit(motion[Rmotion.last1]);
 	#region
 		todo_add_sleep(20);
-
+		todo_add_sound(snd_radiance_scream);
+		
 		todo_add_send(Rsignal.camerasetting, 1);
 		todo_add_sprite(spr_radiance_focus);
 		todo_add_sleep(30);
@@ -209,6 +232,7 @@ todo_edit(motion[Rmotion.phase1end]);
 		todo_add_send(Rsignal.camerashake, 8, 0);
 		
 		todo_add_sleep(1);
+		todo_add_sound(snd_radiance_teleport_up);
 		todo_add_sprite(spr_empty);
 		todo_add_send(Rsignal.camerasetting, 0);
 
@@ -236,10 +260,13 @@ todo_edit(motion[Rmotion.phase2enter]);
 		todo_add_sleep(60);
 		
 		todo_add_send(Rsignal.camerashake, 8, 2);
-		todo_add_send(Rsignal.camerafade, 0.6, 25);
+		todo_add_send(Rsignal.camerafade, 5, 0.6);
 		todo_add_signal(Rsignal.tele);
+		todo_add_sound(snd_radiance_laser_burst);
 		todo_add_send(Rsignal.showhp, 1);
 		todo_add_sprite(spr_radiance_idle);
+		
+		todo_add_send(Rsignal.setdeadline, 2592);
 		todo_add_sleep(48);
 
 		todo_add_send(Rsignal.todoplay, Rmotion.tele);

@@ -33,3 +33,9 @@ if bossphase == 2 && trap_idx > 390
 	else if trap_type == 1
 		trap_type = 0;
 }
+
+with(obj_player)
+{
+	if bbox_top > other.deadline_y + 8
+		kill_force();
+}

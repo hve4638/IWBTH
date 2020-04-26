@@ -8,7 +8,7 @@ if time_idx > 75
 
 echo_self(3, [0.15, 0]);
 
-if time_idx > 23 && !cancollision
+if time_idx > 23 && !cancollision && !place_meeting(x, y, obj_radianceplatform)
 {
 	var px = x;
 	var py = y;

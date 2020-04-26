@@ -10,21 +10,24 @@ else
 
 speed = min(speed, 16);
 
-if cancollision && tile_meeting(0, 0)
+if cancollision
 {
-	with(instance_create_layer(x, y, L_ABOVE, obj_effect))
+	if tile_meeting(0, 0) || place_meeting(x, y, obj_radianceplatform)
 	{
-		life_create(10);
-		sprite_change(spr_radiancebullet_explosion);
-		imageloop = false;
-		xscale = 1;
-		yscale = 1;
-		scale = [1, 1.5];
-		alpha = [0.75, 0];
-		blend = bm_add;
-	}
+		with(instance_create_layer(x, y, L_ABOVE, obj_effect))
+		{
+			life_create(10);
+			sprite_change(spr_radiancebullet_explosion);
+			imageloop = false;
+			xscale = 1;
+			yscale = 1;
+			scale = [1, 1.5];
+			alpha = [0.75, 0];
+			blend = bm_add;
+		}
 
-	instance_destroy();
+		instance_destroy();
+	}
 }
 
 time_idx++;

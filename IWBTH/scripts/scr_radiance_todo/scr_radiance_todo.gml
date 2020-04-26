@@ -28,7 +28,9 @@ enum Rsignal
 	openphase,
 	dreamspread,
 	die,
-	die2
+	die2,
+	intro,
+	setdeadline
 }
 
 var td = todo_current();
@@ -39,6 +41,10 @@ while(todo_signal_exists(td))
 
 	switch(signal)
 	{
+		case Rsignal.setdeadline:
+			deadline_y = todo_receive(td);
+		break;
+		
 		case Rsignal.openphase:
 			var ind = todo_receive(td);
 			switch(ind)
@@ -142,6 +148,7 @@ while(todo_signal_exists(td))
 			xx = x + irandom_range(bbox_left - x, bbox_right - x) * 4 div 3;
 			yy = y + irandom_range(bbox_top - y, bbox_bottom - y) * 2 div 3;
 			
+			sfx(snd_radiance_laser_prepare);
 			instance_create_layer(xx, yy, L_ABOVE, obj_radiancebullet_gener);
 		break;
 		
@@ -152,6 +159,10 @@ while(todo_signal_exists(td))
 		break;
 		
 		case Rsignal.tele:
+			var xx, yy;
+			xx = x; yy = (bbox_bottom + bbox_top) div 2;
+	
+			particle_emit(Particle.dreamspread2, xx - 96 * 0.4, xx + 96 * 0.4, yy - 128, yy + 128, 25);
 			switch(bossphase)
 			{
 				case 1:
@@ -195,6 +206,10 @@ while(todo_signal_exists(td))
 			onsword360 = true;
 			sword360_idx = 0;
 			sword360_dir = irandom_range(-30, 30);
+		break;
+		
+		case Rsignal.intro:
+			show_intro(64, view_h - 64, spr_intro_radiance);
 		break;
 		
 		case Rsignal.sword360fire:

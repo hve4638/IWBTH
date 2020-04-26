@@ -11,3 +11,7 @@ image_yscale = 5;
 image_angle = -90;
 
 time_idx = irandom(50);
+
+
+if !audio_is_playing(snd_radiance_laserloop)
+	audio_play_sound(snd_radiance_laserloop, 0, 1);

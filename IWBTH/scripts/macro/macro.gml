@@ -1,6 +1,6 @@
 //Project creation date : 2019/10/29
 #macro VERSION 20191029
-#macro VERSION_SHOW "test version"
+#macro VERSION_SHOW "v1.0"
 
 #macro CONFIG_DIRECTORY "config"
 #macro SAVE_DIRECTORY "data"

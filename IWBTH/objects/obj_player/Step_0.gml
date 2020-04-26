@@ -103,6 +103,11 @@ if 0 < dashtime
 	
 	dashtime--;
 	
+	/*if dashtime == 0
+	{
+		hspd_slide = dashdir * dashlen;
+	}*/
+	
 	sprite_index = idxspr_dash;
 }
 

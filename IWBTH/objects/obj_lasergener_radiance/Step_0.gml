@@ -8,6 +8,7 @@ yy = y;
 switch(idx)
 {
 	case 0:
+		sfx(snd_radiance_laser_prepare, 1);
 		for(var i = 0; i < 360; i += 360/laser_cnt)
 		{
 			with(instance_create_layer(xx, yy, L_ABOVE, obj_effect))
@@ -25,6 +26,7 @@ switch(idx)
 	break;
 	
 	case 25:
+		sfx(snd_radiance_laser_burst, 1);
 		for(var i = 0; i < 360; i += 360/laser_cnt)
 		{
 			with(instance_create_layer(xx, yy, L_ABOVE, obj_laser))

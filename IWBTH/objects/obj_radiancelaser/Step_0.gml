@@ -26,6 +26,7 @@ if time_idx mod 3 == 0
 		depth += d;
 	}
 }
+
 /*
 with(obj_laser)
 {

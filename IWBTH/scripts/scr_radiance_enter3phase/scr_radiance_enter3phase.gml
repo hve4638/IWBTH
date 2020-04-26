@@ -22,6 +22,8 @@ with(obj_radiance)
 		with(sys_camera)
 			ds_list_add(follow, obj_radiance);
 		todo_play(motion[Rmotion.tele]);
+		
+		deadline_y = 550;
 	}
 }
 

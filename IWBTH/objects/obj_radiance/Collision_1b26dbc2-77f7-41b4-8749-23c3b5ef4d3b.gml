@@ -28,6 +28,7 @@ switch(bossphase)
 		if p <= 0
 		{
 			onhealth = false;
+			sfx(snd_radiance_knockdown);
 			
 			camera_fade_set(1.0, 0, c_white);
 			camera_fade_set(0.0, 5, c_white);

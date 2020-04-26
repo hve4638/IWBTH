@@ -50,6 +50,10 @@ dashdelay_max = 40;
 dashdir = 0;
 dashlen = 6;
 dashtime = 0;
+dashecho = false;
+dashready = true;
+
+dash_refresed = false;
 #endregion
 
 #region escape
@@ -58,9 +62,10 @@ escapetry = false;
 escape_idx = 0;
 escape_time = 175;
 escape_alpha = 0;
-escape_blureffect = false;
 escape_blureffect_alpha = 0;
 #endregion
+
+
 
 tile_collision = tilemap_id(L_BLOCK);
 
@@ -74,4 +79,4 @@ idxspr_dash = spr_player_dash;
 image_speed = 0.2;
 mask_index = spr_player_mask;
 
-//life_idx = 0;
+time_idx = 0;

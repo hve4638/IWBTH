@@ -10,6 +10,7 @@ enum Particle {
 	explosion,
 	dream,
 	dreamspread,
+	dreamspread2,
 	spark,
 	test,
 	eoa
@@ -228,6 +229,28 @@ with(sys_particle)
 			part_type_orientation(Part[idx],0,0,0,0,1);
 			part_type_blend(Part[idx],1);
 			part_type_life(Part[idx],45,75);
+			Emit[idx] = part_emitter_create(Sys[idx]);
+			Shape[idx] = 1;
+			Dis[idx] = 1;
+			//53~-53, 118~-118
+			#endregion
+		break;
+
+		case Particle.dreamspread2:
+			#region
+			Sys[idx] = part_system_create();
+			Part[idx] = part_type_create();
+			part_system_depth(Sys[idx], 0);
+			part_type_sprite(Part[idx],spr_effect_dream,0,0,0);
+			part_type_size(Part[idx],1,1,0,0);
+			part_type_scale(Part[idx],0.20,0.20);
+			part_type_alpha2(Part[idx],0.50,0);
+			part_type_speed(Part[idx],2,4,0,0);
+			part_type_direction(Part[idx],0,365,0,0);
+			part_type_gravity(Part[idx],0.06,90);
+			part_type_orientation(Part[idx],0,0,0,0,1);
+			part_type_blend(Part[idx],1);
+			part_type_life(Part[idx],30,55);
 			Emit[idx] = part_emitter_create(Sys[idx]);
 			Shape[idx] = 1;
 			Dis[idx] = 1;
