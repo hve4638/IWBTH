@@ -20,7 +20,10 @@ with(obj_radiance)
 		camera_set_yrange(550 - view_h, 550);
 
 		with(sys_camera)
-			ds_list_add(follow, obj_radiance);
+		{
+			ds_list_clear(follow);
+			ds_list_add(follow, obj_radiance, Player);
+		}
 		todo_play(motion[Rmotion.tele]);
 		
 		deadline_y = 550;

@@ -479,6 +479,14 @@
             }
         },
         {
+            "Key": "0cc36fff-a254-49f0-966e-b83d6951d53c",
+            "Value": {
+                "id": "9cdad7e6-272c-4ad8-983e-9a8f01f55c2a",
+                "resourcePath": "scripts\\soundfadeout\\soundfadeout.yy",
+                "resourceType": "GMScript"
+            }
+        },
+        {
             "Key": "0d2f5b68-0593-421b-8d9a-ec5ed0fca14b",
             "Value": {
                 "id": "7fd6cb3c-cabe-4c47-9cb5-f289336b4b94",
@@ -2111,6 +2119,14 @@
             }
         },
         {
+            "Key": "3f51c4cf-6e4c-4aec-a62e-6cc75012a9ab",
+            "Value": {
+                "id": "78b4e5d7-ab25-4310-b3da-859a5b0246a0",
+                "resourcePath": "objects\\obj_radiancestart\\obj_radiancestart.yy",
+                "resourceType": "GMObject"
+            }
+        },
+        {
             "Key": "3f54ae37-edab-42d7-9678-d4dfac1e5a22",
             "Value": {
                 "id": "5943cf28-a0e8-4a9d-b3b4-0811c874bdb2",
@@ -2387,6 +2403,14 @@
             "Value": {
                 "id": "fc2c478f-1f7f-406c-a949-706a8727f1f9",
                 "resourcePath": "objects\\obj_select\\obj_select.yy",
+                "resourceType": "GMObject"
+            }
+        },
+        {
+            "Key": "48732901-00ca-4390-b0cd-f954e3a32cb9",
+            "Value": {
+                "id": "1b6f7912-fa83-45c5-b958-8e9128ed0cc5",
+                "resourcePath": "objects\\obj_soundfader\\obj_soundfader.yy",
                 "resourceType": "GMObject"
             }
         },
@@ -7900,6 +7924,14 @@
                 "id": "98c9f5e4-b94d-4cbb-bfcb-ca96ab2c2171",
                 "resourcePath": "views\\f057124c-0088-4b75-9f19-439e5350b1ec.yy",
                 "resourceType": "GMFolder"
+            }
+        },
+        {
+            "Key": "f078a5a4-0e2f-4deb-a468-50ffc3af53b7",
+            "Value": {
+                "id": "3416d9d8-f1ac-4305-be83-452d5a57d0b1",
+                "resourcePath": "scripts\\scr_radiance_start\\scr_radiance_start.yy",
+                "resourceType": "GMScript"
             }
         },
         {

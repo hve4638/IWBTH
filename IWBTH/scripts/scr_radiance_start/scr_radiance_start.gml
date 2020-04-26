@@ -1,4 +1,4 @@
-if keyboard_check_pressed(vk_space) && bossphase == 0
+with(obj_radiance)
 {
 	bgm(snd_radiance, 1);
 	bossphase = 1;

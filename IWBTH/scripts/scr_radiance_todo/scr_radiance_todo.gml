@@ -76,7 +76,7 @@ while(todo_signal_exists(td))
 		break;
 
 		case Rsignal.swordtop:
-			var i = 0;
+			var i = Player.x mod 48;
 			while(i < room_width)
 			{
 				var n = irandom_range(1,4);

@@ -2,7 +2,7 @@ if check_keyboard
 {
 	if !(mouse_x == mouse_px && mouse_y == mouse_py) || mouse_check_button_pressed(mb_left)
 		check_keyboard = false;
-	
+
 	if !instance_exists(onselect_id)
 	{
 		onselect_id = select_temp[| 0];

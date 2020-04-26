@@ -26,8 +26,6 @@ if onplayer && enable && !instance_exists(obj_enterstage)
 				isclear = other.isclear;
 			}
 	}
-
-	
 }
 
 if onplayer

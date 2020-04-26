@@ -34,7 +34,7 @@ if onswordtop
 {
 	if swordtop_idx mod 40 == 0
 	{
-		var i = 0;
+		var i = Player.x mod 48;
 		while(i < room_width)
 		{
 			var n = irandom_range(1,4);
@@ -64,7 +64,7 @@ if onlastlaser
 	if lastlaser_idx mod 40 == 0
 	{
 		var xx, yy, c;
-		xx = irandom_range(597, 1240);
+		xx = Player.x + irandom_range(-256, 256) * 0.6;
 		yy = Player.y;
 		c = point_direction(x + ox, y + oy, xx, yy);
 		with(instance_create_layer(x + ox, y + oy, L_ABOVE, obj_lasergener_radiance))

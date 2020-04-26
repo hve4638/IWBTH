@@ -73,16 +73,17 @@ todo_edit(motion[Rmotion.laserall]);
 
 todo_edit(motion[Rmotion.phase1enter]);
 	#region		
-		todo_add_send(Rsignal.camerashake, 2, 40);
-		todo_add_sleep(40);
-		todo_add_sound(snd_radiance_teleport);
+		todo_add_send(Rsignal.camerashake, 2, 30);
+		todo_add_sleep(30);
+		todo_add_send(Rsignal.camerashake, 6, 10);
+		todo_add_sleep(10);
+		
+		todo_add_sprite(spr_radiance_idle);
+		todo_add_sound(snd_radiance_laser_burst);
 		todo_add_send(Rsignal.camerashake, 8, 2);
 		todo_add_send(Rsignal.camerafade, 15, 0.9);
-		todo_add_signal(Rsignal.intro);
-		
-		todo_add_sound(snd_radiance_laser_burst);
 		todo_add_send(Rsignal.showhp, 1);
-		todo_add_sprite(spr_radiance_idle);
+		todo_add_signal(Rsignal.intro);
 		todo_add_sleep(30);
 
 		todo_add_send(Rsignal.todoplay, Rmotion.tele);
