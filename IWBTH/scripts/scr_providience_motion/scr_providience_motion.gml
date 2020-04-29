@@ -9,6 +9,7 @@ motion[6] = todo_create(); //텔포후찍기
 motion[7] = todo_create(); //2번배고 내려찍기
 motion[8] = todo_create(); //검기후 장판
 motion[9] = todo_create(); //사망모션
+motion[10] = todo_create(); //시작
 
 ///Signal
 //-1 ex_todo
@@ -109,6 +110,7 @@ todo_edit(motion[3]); //레이저
 	todo_add_sleep(6*dt);
 
 	todo_add_sound(snd_impact);
+	todo_add_send(-7, 3, 2);
 	todo_add_sleep(50);
 	todo_add_signal(-4);
 
@@ -147,7 +149,7 @@ todo_edit(motion[5]); //전체장판
 	todo_add_send(-5, false);
 	
 	todo_add_sprspd(1);
-	todo_add_sound(snd_effect3);	
+	todo_add_sound(snd_effect3);
 	todo_add_send(-10, 1, 2, 30); //sreenshake
 	todo_add_sleep(30);
 	
@@ -160,6 +162,7 @@ todo_edit(motion[5]); //전체장판
 	todo_add_sleep(6*dt);
 
 	todo_add_sound(snd_impact);
+	todo_add_send(-7, 3, 2);
 	todo_add_sleep(50);
 	todo_add_signal(-4);
 
@@ -270,7 +273,45 @@ todo_edit(motion[9]); //사망모션
 	todo_add_sleep(70);
 	
 	todo_add_signal(-20);
-
 	todo_add_sleep(10);
+
 	todo_add_signal(-100);
 	todo_add_signal(-4);
+
+todo_edit(motion[10]); //대면
+	todo_add_sprite(spr_empty);
+	todo_add_send(-12, 1632);
+	
+	repeat(4)
+	{
+		todo_add_signal(-21);
+		todo_add_sleep(1);
+	}
+	todo_add_sleep(25);
+
+	dt = sprite_frame(spr_providience_seat0);
+	todo_add_sprite(spr_providience_seat0);
+	todo_add_sleep(45);
+
+	dt = sprite_frame(spr_providience_up);
+	todo_add_sprite(spr_providience_up);
+	todo_add_sleep(6*dt);
+
+	todo_add_sound(snd_impact);
+	todo_add_send(-7, 3, 2);
+	todo_add_sleep(6*dt + 2);
+	todo_add_sprite(spr_providience_idle);
+	todo_add_sleep(15);
+	todo_add_signal(-8);
+	todo_add_sleep(70);
+	todo_add_nope();
+
+
+
+
+
+
+
+
+
+

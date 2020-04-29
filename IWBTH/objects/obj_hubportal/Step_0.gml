@@ -8,7 +8,8 @@ if onplayer && enable && !instance_exists(obj_enterstage)
 		{
 			enable_keyinput(false);
 			alarm_trigger(100, enable_keyinput, true, true);
-
+			bossmeet(stageindex, false);
+			
 			room_goto_alarm(goto, 100);
 			save_room(goto);
 		
@@ -24,6 +25,7 @@ if onplayer && enable && !instance_exists(obj_enterstage)
 				name = other.name;
 				goto = other.goto;
 				isclear = other.isclear;
+				stageindex = other.stageindex;
 			}
 	}
 }

@@ -1,4 +1,4 @@
 ///@argu stage
 var ind = argument_count > 0 ? argument[0] : room_get_stage(room);
 
-boss_firstmeet[ind] = true;
+boss_firstmeet[ind] = argument_count > 1 ? argument[1] : true;

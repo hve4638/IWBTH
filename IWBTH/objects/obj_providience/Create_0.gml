@@ -51,7 +51,6 @@ rand_adjust(rand_get_index(motion[3]));
 rand_adjust(rand_get_index(motion[5]));
 rand_adjust(rand_get_index(motion[5]));
 
-
 enum StateP {
 	normal,
 	idle,

@@ -24,25 +24,25 @@ else
 
 if enable_ascension
 {
-	draw_sprite(spr_stagename_back, 0, w2, h3);
+	draw_sprite(spr_stagename_select, 0, w2, h3);
 	draw_set_color(select == 0 ? c_white : c_gray);
 	draw_text(w2, h3, "Challenge");
 
-	draw_sprite(spr_stagename_back, 0, w2 * 2, h3);
+	draw_sprite(spr_stagename_select, 0, w2 * 2, h3);
 	draw_set_color(select == 1 ? c_white : c_gray);
 	draw_text(w2 * 2, h3, "Attuned"); //Ascended
 
-	draw_sprite(spr_stagename_back, 0, w2 * 3, h3);
+	draw_sprite(spr_stagename_select, 0, w2 * 3, h3);
 	draw_set_color(select == 2 ? c_white : c_gray);
 	draw_text(w2 * 3, h3, "Back");
 }
 else
 {
-	draw_sprite(spr_stagename_back, 0, w1, h3);
+	draw_sprite(spr_stagename_select, 0, w1, h3);
 	draw_set_color(select == 0 ? c_white : c_gray);
 	draw_text(w1, h3, "Challenge");
 
-	draw_sprite(spr_stagename_back, 0, w1 * 2, h3);
+	draw_sprite(spr_stagename_select, 0, w1 * 2, h3);
 	draw_set_color(select == 1 ? c_white : c_gray);
 	draw_text(w1 * 2, h3, "Back");	
 }

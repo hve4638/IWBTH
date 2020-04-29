@@ -64,7 +64,7 @@ swordtop_idx++;
 
 if onlastlaser
 {
-	if lastlaser_idx mod 45 == 0
+	if lastlaser_idx mod 55 == 0
 	{
 		var xx, yy, c;
 		xx = Player.x + irandom_range(-256, 256) * 0.4;

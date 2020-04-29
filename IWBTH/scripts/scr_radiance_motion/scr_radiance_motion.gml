@@ -34,7 +34,7 @@ todo_edit(motion[Rmotion.swordtop]);
 
 todo_edit(motion[Rmotion.swordside]);
 	#region
-		todo_add_sleep(30);
+		todo_add_sleep(20);
 		todo_add_signal(Rsignal.swordside);
 		todo_add_sleep(70);
 		
@@ -268,7 +268,7 @@ todo_edit(motion[Rmotion.phase2enter]);
 		todo_add_sleep(60);
 		
 		todo_add_send(Rsignal.camerashake, 8, 2);
-		todo_add_send(Rsignal.camerafade, 5, 0.6);
+		todo_add_send(Rsignal.camerafade, 10, 0.6);
 		todo_add_signal(Rsignal.tele);
 		todo_add_sound(snd_radiance_laser_burst);
 		todo_add_send(Rsignal.showhp, 1);

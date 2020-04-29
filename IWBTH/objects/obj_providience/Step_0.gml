@@ -1,3 +1,7 @@
+if keyboard_check_pressed(vk_space)
+	todo_play(motion[10]);
+
+
 if todo_is_playing()
 {	
 	scr_providience_todo();

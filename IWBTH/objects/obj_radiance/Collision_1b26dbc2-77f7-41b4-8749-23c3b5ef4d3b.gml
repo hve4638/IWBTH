@@ -30,8 +30,8 @@ switch(bossphase)
 			onhealth = false;
 			sfx(snd_radiance_knockdown);
 			
-			camera_fade_set(1.0, 0, c_white);
-			camera_fade_set(0.0, 5, c_white);
+			camera_fade_set(0.7, 0, c_white);
+			camera_fade_set(0.0, 15, c_white);
 			
 			screenshake(10, 2);
 			

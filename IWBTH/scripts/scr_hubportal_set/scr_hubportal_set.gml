@@ -1,6 +1,7 @@
 ///@argu stage
+stageindex = argument[0];
 
-switch(argument[0])
+switch(stageindex)
 {
 	case 0:
 		name = "Tutorial";

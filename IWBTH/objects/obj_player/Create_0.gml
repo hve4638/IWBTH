@@ -62,7 +62,7 @@ dash_refresed = false;
 canescape = true;
 escapetry = false;
 escape_idx = 0;
-escape_time = 175;
+escape_time = 150;
 escape_alpha = 0;
 escape_blureffect_alpha = 0;
 #endregion

@@ -327,6 +327,14 @@
             }
         },
         {
+            "Key": "084ae8aa-e639-4a1e-bb72-b891ef2b6e85",
+            "Value": {
+                "id": "48bcd6d5-386b-4508-90b2-b716df5c3ef5",
+                "resourcePath": "sprites\\spr_masklime\\spr_masklime.yy",
+                "resourceType": "GMSprite"
+            }
+        },
+        {
             "Key": "08b5e352-0251-4b32-912a-4b721d415b4e",
             "Value": {
                 "id": "66bab3ec-fe16-4e73-bb96-0f4e4a06e2d8",
@@ -970,7 +978,7 @@
             "Key": "1ae3915c-c16c-47f5-bcbe-2449fc94e937",
             "Value": {
                 "id": "ddaaa6a2-b487-4fcc-a636-966910ea926d",
-                "resourcePath": "sprites\\spr_temp2\\spr_temp2.yy",
+                "resourcePath": "sprites\\spr_laserwarning\\spr_laserwarning.yy",
                 "resourceType": "GMSprite"
             }
         },
@@ -2015,6 +2023,14 @@
             }
         },
         {
+            "Key": "3afd50d7-672e-41fc-bea6-757fa9935d42",
+            "Value": {
+                "id": "ff534a33-6b0c-4bf2-8bc6-8dfeb5d25b4a",
+                "resourcePath": "sprites\\spr_stagename_select\\spr_stagename_select.yy",
+                "resourceType": "GMSprite"
+            }
+        },
+        {
             "Key": "3b0af2f6-5531-4f13-9a95-592a4854cf25",
             "Value": {
                 "id": "5b9c8285-8272-45f0-b7db-5e5bbce85210",
@@ -2875,6 +2891,14 @@
             "Value": {
                 "id": "57ed752e-71fc-4210-bacc-8263fb0a031c",
                 "resourcePath": "objects\\obj_dragun_arm\\obj_dragun_arm.yy",
+                "resourceType": "GMObject"
+            }
+        },
+        {
+            "Key": "56a0f6dd-c72d-4c6f-8dac-68253561627e",
+            "Value": {
+                "id": "719e29fb-81a7-413f-bbb0-57556b798d18",
+                "resourcePath": "objects\\obj_corestart\\obj_corestart.yy",
                 "resourceType": "GMObject"
             }
         },
@@ -6695,6 +6719,14 @@
             }
         },
         {
+            "Key": "ccc4ee92-dd02-46f2-9529-734b667d8db4",
+            "Value": {
+                "id": "aebbe9e4-42bd-4b5f-bb7f-fe71b0938c7e",
+                "resourcePath": "objects\\obj_firstmeet\\obj_firstmeet.yy",
+                "resourceType": "GMObject"
+            }
+        },
+        {
             "Key": "cd017e15-724d-43d2-b8fe-937bb5d5e89b",
             "Value": {
                 "id": "334cecfe-1b13-4a29-99e4-c79a356e3615",
@@ -7084,6 +7116,14 @@
                 "id": "16d867d6-28cf-489f-8134-ad749d01b2b2",
                 "resourcePath": "sprites\\spr_dragun_rpg_intro4\\spr_dragun_rpg_intro4.yy",
                 "resourceType": "GMSprite"
+            }
+        },
+        {
+            "Key": "d8b995e8-d31b-459f-9451-bf57d79a9fb9",
+            "Value": {
+                "id": "53cb3080-2ced-4f45-9916-49a60e6c9ce3",
+                "resourcePath": "scripts\\scr_providience_aura\\scr_providience_aura.yy",
+                "resourceType": "GMScript"
             }
         },
         {
@@ -8723,7 +8763,8 @@
         "8eac72c4-4a5c-444b-8321-877c3d7294fd",
         "0cc36fff-a254-49f0-966e-b83d6951d53c",
         "f078a5a4-0e2f-4deb-a468-50ffc3af53b7",
-        "7590ea47-ac4e-4534-8c81-259355647592"
+        "7590ea47-ac4e-4534-8c81-259355647592",
+        "d8b995e8-d31b-459f-9451-bf57d79a9fb9"
     ],
     "tutorial": ""
 }

@@ -1,9 +1,10 @@
-if is_bossmeet()
+if !is_bossmeet()
 {
+	//bossmeet();
+	save();
 	instance_destroy();
-	return 0;
 }
-	
+	/*
 switch(time_idx)
 {
 	case 0:
@@ -41,4 +42,4 @@ switch(time_idx)
 		bossmeet();
 		instance_destroy();
 	break;
-}
+}*/

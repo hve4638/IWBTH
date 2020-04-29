@@ -35,6 +35,27 @@ while(todo_signal_exists(td))
 			case -6:
 				onattack = todo_receive(td);
 			break;
+			
+			case -7:
+				var t, p;
+				p = todo_receive(td);
+				t = todo_receive(td);
+				screenshake(p, t);
+			break;
+			
+			case -8:
+				onhealth = true;
+				hp = maxhp;
+				away_time = 0; 
+				bossphase = 1;
+				
+				alarm[0] = 40;
+				show_intro(64, view_h - 64, spr_intro_providience);
+				bgm(snd_providience, false);
+				
+				with(obj_player)
+					frozen = false;
+			break;
 				
 			case -10:
 				switch(todo_receive(td))
@@ -54,6 +75,10 @@ while(todo_signal_exists(td))
 				tp_x = clamp(Player.x + 128 * choose(1,-1), 96, room_width-96);
 			break;
 			
+			case -12:
+				x = todo_receive(td);
+			break;
+			
 			case -20:
 				with(instance_create_layer(x, y - 12, L_ABOVE, obj_rectemitter))
 				{
@@ -63,6 +88,17 @@ while(todo_signal_exists(td))
 					life = 9;
 				}
 				screenshake(3, 7);
+			break;
+			
+			case -21:
+				with(instance_create_layer(x, y - 12, L_ABOVE, obj_rectemitter))
+				{
+					life_create(10);
+					x_distribution = 48;
+					y_distribution = 48;
+					emit_cnt = 2;
+					life = 8;
+				}
 			break;
 
 			case -100:
@@ -107,8 +143,10 @@ while(todo_signal_exists(td))
 					var w = i * n;
 					a = instance_create_layer(x + 64 + w, 450, L_ABOVE, obj_lasergener);
 					b = instance_create_layer(x - 64 - w, 450, L_ABOVE, obj_lasergener);
-					a.sprite_index = spr_temp2;
-					b.sprite_index = spr_temp2;
+					a.sprite_index = spr_laserwarning;
+					b.sprite_index = spr_laserwarning;
+					a.image_alpha = 0.9;
+					b.image_alpha = 0.9;
 					a.shakepow = 16;
 					a.shaketime = 1;
 					a.firedelay = value;

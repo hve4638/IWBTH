@@ -18,9 +18,7 @@ for(var i = 0; i < size; i++)
 }
 
 if timeline_running && !instance_exists(obj_player)
-{
 	timeline();
-}
 
 if !instance_exists(obj_player) && audio_is_playing(snd_core)
 {
@@ -30,11 +28,4 @@ if !instance_exists(obj_player) && audio_is_playing(snd_core)
 		audio_sound_pitch(bgm_p, p - 0.02);
 	else
 		audio_stop_sound(bgm_p);
-}
-
-if keyboard_check_pressed(vk_space)
-{
-	
-	show_intro(64, view_h - 64, spr_intro_core);
-	timeline(tl_core);
 }

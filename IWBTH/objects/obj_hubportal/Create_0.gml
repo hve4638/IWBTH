@@ -12,6 +12,7 @@ holo_surf = no;
 holo_spr = 0;
 
 show_alpha = 0;
+stageindex = 0;
 
 enum EnterText {
 	challenge = 0,

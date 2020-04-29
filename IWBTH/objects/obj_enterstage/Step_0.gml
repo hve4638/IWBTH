@@ -23,6 +23,7 @@ if button_press(Input.jump)
 		save_room(goto);
 		
 		global_fade_set(1.0, 75, c_white);
+		bossmeet(stageindex, false);
 		
 		sv_hubx = obj_player.x;
 		sv_huby = obj_player.y;
