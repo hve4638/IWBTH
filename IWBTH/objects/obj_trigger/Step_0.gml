@@ -25,7 +25,6 @@ if enable
 
 	if t && script_exists(trigger_script)
 	{
-		cout("ya", time_idx);
 		script_execute(trigger_script);
 	}
 

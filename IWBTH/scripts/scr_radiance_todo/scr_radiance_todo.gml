@@ -76,7 +76,7 @@ while(todo_signal_exists(td))
 		break;
 
 		case Rsignal.swordtop:
-			var i = Player.x mod 48;
+			var i = Player.x mod 48 + choose(24, 0);
 			while(i < room_width)
 			{
 				var n = irandom_range(1,4);
@@ -145,8 +145,12 @@ while(todo_signal_exists(td))
 
 		case Rsignal.missile:
 			var xx, yy;
-			xx = x + irandom_range(bbox_left - x, bbox_right - x) * 4 div 3;
-			yy = y + irandom_range(bbox_top - y, bbox_bottom - y) * 2 div 3;
+			do
+			{
+				xx = x + irandom_range(bbox_left - x, bbox_right - x) * 4 div 3;
+				yy = y + irandom_range(bbox_top - y, bbox_bottom - y) * 2 div 3;
+			}
+			until(point_distance(Player.x, Player.y, xx, yy) > 256);
 			
 			sfx(snd_radiance_laser_prepare);
 			instance_create_layer(xx, yy, L_ABOVE, obj_radiancebullet_gener);
@@ -270,8 +274,9 @@ while(todo_signal_exists(td))
 				{
 					if point_distance(x, y, xx, yy) < 32
 					{
-						time_idx = 1;
-						destroy_time = 15;
+						time_idx = 0;
+						destroy_time = 8;
+						create_time = no;
 					}	
 				}
 			}

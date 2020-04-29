@@ -60,6 +60,9 @@ canenter3phase = false;
 onlastlaser = false;
 lastlaser_idx = 0;
 
+onlasttrap = false;
+lasttrap_idx = 0;
+
 onspreaddream = false;
 
 deadline_y = room_height;

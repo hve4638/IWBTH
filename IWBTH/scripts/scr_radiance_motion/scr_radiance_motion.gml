@@ -209,11 +209,18 @@ todo_edit(motion[Rmotion.last2]);
 			todo_add_send(Rsignal.addplatform, i);
 
 		todo_add_send(Rsignal.lastlaser, 1);
+		todo_add_sleep(60);
 
-		for(var i = 3; i < 10; i++)
+		var i = 3;
+		for(; i < 10; i++)
 		{
 			todo_add_send(Rsignal.removeplatform, i);
-			todo_add_sleep(20);
+			todo_add_sleep(15);
+		}
+		for(; i < 22; i++)
+		{
+			todo_add_send(Rsignal.removeplatform, i);
+			todo_add_sleep(50);
 		}
 		todo_add_send(Rsignal.openphase, 3);
 	#endregion

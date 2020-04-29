@@ -57,16 +57,36 @@ switch(bossphase)
 			bossphase = 5;
 			canenter3phase = true;
 			armor = 0.5;
+			
+			hp = maxhp * 0.3;
 		}
 	break;
 	
 	case 6:
+		if p <= 0.15
+			onlasttrap = true;
+
 		if p < 0
 		{
 			bossphase = -1;
-
+			alarm[0] = -1;
+			alarm[1] = -2;
 			todo_play(motion[Rmotion.die]);
 			stageclear(5, 0);
+
+			with(obj_radianceplatform)
+			{
+				time_idx = 0;
+				destroy_time = 20;
+				create_time = no;
+			}
+			with(obj_radiancetrap_ready)
+				instance_destroy();
+			with(obj_player)
+			{
+				frozen = false;
+				invin = true;
+			}
 		}
 	break;
 }

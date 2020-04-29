@@ -2,10 +2,6 @@ if keyboard_check_pressed(vk_anykey)
 {
 	switch(keyboard_key)
 	{
-		case ord("T"):
-			room_goto(rm_stagetest);
-		break;
-		
 		case vk_f1: show_info = !show_info;
 		break;
 		
@@ -67,9 +63,6 @@ if keyboard_check_pressed(vk_anykey)
 			instance_destroy(sys_record);
 		break;
 		*/
-		
-		//case vk_f6: room_goto(rm_stageresult);
-		//break;
 		
 		case vk_f11:
 			var arr, i = 0;

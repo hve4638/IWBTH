@@ -18,7 +18,8 @@
         "2b01d183-3388-4791-9b20-c64cffaddf7c",
         "02a93117-e245-4cd7-bb35-78c7149df992",
         "2ff4d2ef-d426-499a-912f-bbbe5ce94958",
-        "503cc821-b0ff-4cd6-aaf7-e49711d93a17"
+        "503cc821-b0ff-4cd6-aaf7-e49711d93a17",
+        "4303f3d1-b2f7-4459-b0ae-cbb6b13ec04b"
     ],
     "filterType": "GMObject",
     "folderName": "support",

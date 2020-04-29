@@ -2,7 +2,7 @@
 {
     "name": "rm_boss_radiance",
     "id": "0de21f7e-246e-4f0f-98e9-f85cca239b13",
-    "creationCodeFile": "",
+    "creationCodeFile": "RoomCreationCode.gml",
     "inheritCode": false,
     "inheritCreationOrder": false,
     "inheritLayers": false,
@@ -50,7 +50,7 @@
             "id": "0a865d7c-c234-4e72-8437-a9b3d12f8084",
             "depth": -1100,
             "grid_x": 32,
-            "grid_y": 8,
+            "grid_y": 32,
             "hierarchyFrozen": false,
             "hierarchyVisible": true,
             "inheritLayerDepth": false,
@@ -234,8 +234,8 @@
             "name": "InsAbove",
             "id": "c1adbd35-1631-4931-9d8f-47fbe007b94d",
             "depth": -500,
-            "grid_x": 32,
-            "grid_y": 32,
+            "grid_x": 8,
+            "grid_y": 8,
             "hierarchyFrozen": false,
             "hierarchyVisible": true,
             "inheritLayerDepth": false,
@@ -481,6 +481,32 @@
 {"__type": "GMRSpriteGraphic_Model:#YoYoStudio.MVCFormat","name": "graphic_4DBD2023","id": "47006a87-8487-4b4e-96b0-614ff0931925","animationFPS": 15,"animationSpeedType": "0","colour": { "Value": 4294967295 },"frameIndex": 0,"ignore": false,"inheritItemSettings": false,"m_originalParentID": "00000000-0000-0000-0000-000000000000","m_serialiseFrozen": false,"modelName": "GMRSpriteGraphic","rotation": 0,"scaleX": 1,"scaleY": 1,"mvc": "1.0","spriteId": "dcf1e805-7151-4348-8fd2-091dc564e360","userdefined_animFPS": false,"x": 224,"y": 3136}
             ],
             "depth": 600,
+            "grid_x": 32,
+            "grid_y": 32,
+            "hierarchyFrozen": false,
+            "hierarchyVisible": true,
+            "inheritLayerDepth": false,
+            "inheritLayerSettings": false,
+            "inheritSubLayers": false,
+            "inheritVisibility": false,
+            "layers": [
+
+            ],
+            "m_parentID": "00000000-0000-0000-0000-000000000000",
+            "m_serialiseFrozen": false,
+            "modelName": "GMRAssetLayer",
+            "mvc": "1.0",
+            "userdefined_depth": false,
+            "visible": true
+        },
+        {
+            "__type": "GMRAssetLayer_Model:#YoYoStudio.MVCFormat",
+            "name": "AstBackground2",
+            "id": "2439b361-ca12-4676-8aab-10367c872181",
+            "assets": [
+
+            ],
+            "depth": 700,
             "grid_x": 32,
             "grid_y": 32,
             "hierarchyFrozen": false,

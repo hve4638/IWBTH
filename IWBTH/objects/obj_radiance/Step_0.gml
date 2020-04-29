@@ -3,6 +3,9 @@ if todo_is_playing()
 
 array_timeline_step();
 
+if keyboard_check_pressed(ord("T"))
+	onlasttrap = true;
+
 if onsword360
 {
 	if sword360_delay == 0
@@ -34,7 +37,7 @@ if onswordtop
 {
 	if swordtop_idx mod 40 == 0
 	{
-		var i = Player.x mod 48;
+		var i = Player.x mod 48 + choose(24, 0);
 		while(i < room_width)
 		{
 			var n = irandom_range(1,4);
@@ -61,10 +64,10 @@ swordtop_idx++;
 
 if onlastlaser
 {
-	if lastlaser_idx mod 40 == 0
+	if lastlaser_idx mod 45 == 0
 	{
 		var xx, yy, c;
-		xx = Player.x + irandom_range(-256, 256) * 0.6;
+		xx = Player.x + irandom_range(-256, 256) * 0.4;
 		yy = Player.y;
 		c = point_direction(x + ox, y + oy, xx, yy);
 		with(instance_create_layer(x + ox, y + oy, L_ABOVE, obj_lasergener_radiance))
@@ -178,6 +181,33 @@ if ontrap
 		break;
 	}
 }
+
+if onlasttrap
+{
+	if lasttrap_idx mod 350 == 0
+	{
+		if (lasttrap_idx div 350) mod 2 == 0
+		{
+			arr = [608, 990];
+			//arr = [414, 608, 800, 990, 1200];
+		}
+		else
+			arr = [414, 800, 1200];
+		
+		
+		var size = array_size(arr);
+		for(i = 0; i < size; i++)
+		{
+			var xx, yy;
+			xx = arr[i];
+			yy = 448;
+			
+			addtrap(instance_nearest(xx, yy, obj_radianceplatform));
+		}
+	}
+	lasttrap_idx++;
+}
+
 
 if onspreaddream
 {

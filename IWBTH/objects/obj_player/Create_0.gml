@@ -6,6 +6,8 @@ grav = 0.4;
 maxhp = 1;
 hp = 1;
 
+invin = false;
+
 slideready = false
 onwalljump = false;
 onground = false;

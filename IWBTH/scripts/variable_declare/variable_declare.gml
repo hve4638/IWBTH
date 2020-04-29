@@ -28,6 +28,8 @@ bgm_faded = no;
 
 boss_firstmeet = array_create(10, 0);
 
+global.bossfirstmeet = false;
+
 global.todolist = global_map_create();
 global.todoedit = no;
 global.edgeblur_surf = no;

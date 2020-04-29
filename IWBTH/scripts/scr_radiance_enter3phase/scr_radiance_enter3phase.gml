@@ -18,11 +18,13 @@ with(obj_radiance)
 		instance_destroy(obj_laser);
 		
 		camera_set_yrange(550 - view_h, 550);
-
+		sfx(snd_radiance_scream);
+		screenshake(2, 2);
+		
 		with(sys_camera)
 		{
 			ds_list_clear(follow);
-			ds_list_add(follow, obj_radiance, Player);
+			ds_list_add(follow, obj_radiance, Player, Player);
 		}
 		todo_play(motion[Rmotion.tele]);
 		
