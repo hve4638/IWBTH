@@ -96,7 +96,7 @@ switch(status)
 			
 			if i mod 2
 				yy += yh;
-		}		
+		}
 		
 		addselect("RESET DEFAULTS", Select.script, 0, config_key_def);
 		addselect("BACK", Select.goto, "configwrite", Title.option);

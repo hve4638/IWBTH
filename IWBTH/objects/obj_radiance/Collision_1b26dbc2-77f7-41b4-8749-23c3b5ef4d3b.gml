@@ -56,18 +56,20 @@ switch(bossphase)
 		{
 			bossphase = 5;
 			canenter3phase = true;
-			armor = 0.5;
+			armor = 0.0;
 			
 			hp = maxhp * 0.3;
 		}
 	break;
 	
 	case 6:
-		if p <= 0.15
+		armor = 0.55;
+		if p <= 0.2
 			onlasttrap = true;
 
 		if p < 0
 		{
+			onlasttrap = false;
 			bossphase = -1;
 			alarm[0] = -1;
 			alarm[1] = -2;
@@ -84,9 +86,11 @@ switch(bossphase)
 				instance_destroy();
 			with(obj_player)
 			{
-				frozen = false;
+				frozen = true;
 				invin = true;
 			}
+			with(obj_radiancebullet)
+				instance_destroy();
 		}
 	break;
 }

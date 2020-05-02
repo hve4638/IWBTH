@@ -55,6 +55,15 @@ if keyboard_check_pressed(vk_anykey)
 			scr_gamestart();
 		break;
 		
+		case vk_f9:
+			i = 1;
+			while(file_exists("screenshoot" + string(i) + ".png")) i++;
+			screen_save("screenshoot" + string(i) + ".png");
+			surface_save(application_surface, "screenshoot_surf" + string(i) + ".png");
+			cout("save screenshoot");
+		break;
+		
+		
 		/*
 		case vk_f9:
 		if !instance_exists(sys_record)
