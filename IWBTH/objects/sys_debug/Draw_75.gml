@@ -17,6 +17,9 @@ if on_customview
 if on_deal
 	str += strmerge("OnDeal enable");
 
+if global.mute
+	str += strmerge("Mute");
+
 if show_info
 {
 	str += strmerge("fps : ", fps);

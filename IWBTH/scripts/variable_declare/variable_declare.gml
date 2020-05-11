@@ -28,7 +28,8 @@ bgm_faded = no;
 
 boss_firstmeet = array_create(10, 0);
 
-
+global.debuglevel = 1;
+global.mute = false;
 
 global.todolist = global_map_create();
 global.todoedit = no;
@@ -116,7 +117,7 @@ var arr = array_create(10, 0);
 	arr[Save.Version] = VERSION;
 	arr[Save.X] = 0;
 	arr[Save.Y] = 0;
-	arr[Save.Room] = room_get_name(rm_tutorial);
+	arr[Save.Room] = room_get_name(rm_hub);
 	arr[Save.Auto] = true;
 	arr[Save.Look] = 1;
 	arr[Save.Time] = 0;

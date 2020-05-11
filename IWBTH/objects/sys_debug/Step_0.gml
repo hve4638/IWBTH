@@ -87,14 +87,11 @@ if keyboard_check_pressed(vk_anykey)
 			cout("copy instance list to clipboard.");
 		break;
 		
-		case vk_f12:
-			if volum_music != 0
-				config_mastervolum = 0;
-			else
-				config_mastervolum = 1.0;
+		case ord("M"):
+			global.mute = !global.mute;
 
-				volum_update();
-				config_write();
+			volum_update();
+			config_write();
 		break;
 	}
 }

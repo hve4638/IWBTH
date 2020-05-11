@@ -1,7 +1,5 @@
 cout(NL + "####DEBUG MODE#####" + NL);
 
-global.debuglevel = 1;
-
 hidedebug = false;
 
 show_info = false;
