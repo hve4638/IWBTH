@@ -3815,6 +3815,14 @@
             }
         },
         {
+            "Key": "742f5302-9241-4cd7-8802-9cde9943ca50",
+            "Value": {
+                "id": "fe48b4d7-c6e7-425b-9fc2-651a9b600a01",
+                "resourcePath": "sprites\\spr_hubcolumnblur\\spr_hubcolumnblur.yy",
+                "resourceType": "GMSprite"
+            }
+        },
+        {
             "Key": "7453bb16-92c8-4fb5-84e9-50c86447e482",
             "Value": {
                 "id": "13172685-bcb1-4542-b894-de7ee6d934b9",

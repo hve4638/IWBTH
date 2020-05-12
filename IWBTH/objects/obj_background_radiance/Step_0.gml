@@ -1,6 +1,6 @@
 var cy = value_merge(0, rmy - bgy, (sys_camera.camera_y1 / rmy));
 
-for(var i = 0; i < 3; i++)
+for(var i = 0; i < 4; i++)
 {
 	var ind, yy;
 	ind = bg_idx[| i];

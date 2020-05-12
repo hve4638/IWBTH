@@ -1,6 +1,6 @@
 ///@desc Set volum
 
-if !global.mute
+if global.mute
 {
 	volum_music = 0.0;
 	volum_sound = 0.0;
