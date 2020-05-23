@@ -10,16 +10,8 @@ var w, h;
 w = view_w div 2;
 h = view_h * 2 div 5;//160 + 32;
 
-if !isgameclear
-{
-	draw_sprite_ext(spr_stageclear, 0, w, h, 1.0, 1.0, 0, c_white, clear_alpha);
-	draw_sprite_ext(spr_stageclear, 1, w, h, 1.0, 1.0, 0, c_white, clear_alpha2);
-}
-else
-{
-	draw_sprite_ext(spr_gameclear, 0, w, h, 1.0, 1.0, 0, c_white, clear_alpha);
-	draw_sprite_ext(spr_gameclear, 1, w, h, 1.0, 1.0, 0, c_white, clear_alpha2);
-}
+draw_sprite_ext(idxspr_clear, 0, w, h, 1.0, 1.0, 0, c_white, clear_alpha);
+draw_sprite_ext(idxspr_clear, 1, w, h, 1.0, 1.0, 0, c_white, clear_alpha2);
 draw_set_font(font_perpetua);
 draw_set_halign(fa_center);
 draw_set_valign(fa_top);

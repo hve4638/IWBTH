@@ -59,3 +59,4 @@ if instance_exists(obj_player)
 	if 0 < show_alpha
 		draw_sprite_ext(spr_entertext, text_idx, xx, yy, 1, 1, 0, c_white, show_alpha);
 }
+		draw_set_reset();

@@ -11,6 +11,7 @@ enum Particle {
 	dream,
 	dreamspread,
 	dreamspread2,
+	radianceportal,
 	spark,
 	test,
 	eoa
@@ -190,6 +191,27 @@ with(sys_particle)
 			//13~-13, 22~-22
 			#endregion
 		break;
+		
+		case Particle.radianceportal:
+			#region
+			Sys[idx] = part_system_create();
+			Part[idx] = part_type_create();
+			part_system_depth(Sys[idx], 0);
+			part_type_sprite(Part[idx],spr_effect_dream,0,0,0);
+			part_type_size(Part[idx],0.10,0.10,0,0);
+			part_type_scale(Part[idx],1,1);
+			part_type_color1(Part[idx],16777215);
+			part_type_alpha2(Part[idx],1,0);
+			part_type_speed(Part[idx],0,0.03,0,0);
+			part_type_direction(Part[idx],0,359,0,0);
+			part_type_gravity(Part[idx],0.01,90);
+			part_type_orientation(Part[idx],0,0,0,0,1);
+			part_type_blend(Part[idx],1);
+			part_type_life(Part[idx],10,30);
+			Emit[idx] = part_emitter_create(Sys[idx]);
+			Shape[idx] = 1;
+			Dis[idx] = 1;
+			#endregion
 		
 		case Particle.dream:
 			#region

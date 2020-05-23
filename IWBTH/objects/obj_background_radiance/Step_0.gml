@@ -6,6 +6,6 @@ for(var i = 0; i < 4; i++)
 	ind = bg_idx[| i];
 	yy = bg_y[| i];
 	layer_sprite_y(ind, bg_y[| i] + cy);
-	if i == 2
-		cout(layer_sprite_get_y(ind));
+	/*if i == 2
+		cout(layer_sprite_get_y(ind));*/
 }

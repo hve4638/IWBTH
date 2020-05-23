@@ -11,6 +11,8 @@ clear_idx = 0;
 
 sub_alpha = 0;
 
+idxspr_clear = spr_stageclear;
+
 isgameclear = false;
 
 enable_back = false;

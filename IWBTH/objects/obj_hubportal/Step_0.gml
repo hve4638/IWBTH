@@ -13,8 +13,15 @@ if onplayer && enable && !instance_exists(obj_enterstage)
 			room_goto_alarm(goto, 100);
 			save_room(goto);
 		
+			global_fade_set(0, 0, c_white);
 			global_fade_set(1.0, 75, c_white);
-		
+			
+			if oncleardata
+			{
+				stage_time[stageindex] = 0;
+				stage_death[stageindex] = 0;
+			}
+			
 			sv_hubx = obj_player.x;
 			sv_huby = obj_player.y;
 			enable = false;
@@ -29,6 +36,11 @@ if onplayer && enable && !instance_exists(obj_enterstage)
 			}
 	}
 }
+
+if oneffect && time_idx mod 20 == 0
+	particle_emit(Particle.radianceportal, bbox_left - 64, bbox_right + 64, bbox_bottom - 2, bbox_bottom + 2, 1);
+
+time_idx++;
 
 if onplayer
 	show_alpha += 0.05;

@@ -8,6 +8,9 @@ with(instance_create_layer(0, 0, L_SYS, obj_stageresult))
 	fadd = 0.02;
 	depth -= 100;
 	alarm[0] = 10;
-	
-	isgameclear = c;
+	if c
+	{
+		idxspr_clear = spr_stageclearb;
+		isgameclear = true;
+	}
 }

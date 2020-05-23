@@ -15,10 +15,12 @@ switch(stageindex)
 		goto = rm_boss_jsab;
 		show_holo = true;
 		holo_spr = spr_holo_core;
-
-		enter_instant = false;
-		text_idx = EnterText.challenge;
+		
+		show_info = true;
+		enter_instant = true;
+		text_idx = EnterText.enter;
 		isclear = stage_clear[1];
+		oncleardata = true;
 	break;
 
 	case 2:
@@ -27,9 +29,11 @@ switch(stageindex)
 		show_holo = true;
 		holo_spr = spr_holo_dragun;
 
-		enter_instant = false;
-		text_idx = EnterText.challenge;
+		show_info = true;
+		enter_instant = true;
+		text_idx = EnterText.enter;
 		isclear = stage_clear[2];
+		oncleardata = true;
 	break;
 
 	case 3:
@@ -38,9 +42,11 @@ switch(stageindex)
 		show_holo = true;
 		holo_spr = spr_holo_headhunter;
 
-		enter_instant = false;
-		text_idx = EnterText.challenge;
+		show_info = true;
+		enter_instant = true;
+		text_idx = EnterText.enter;
 		isclear = stage_clear[3];
+		oncleardata = true;
 	break;
 
 	case 4:
@@ -49,13 +55,19 @@ switch(stageindex)
 		show_holo = true;
 		holo_spr = spr_holo_providience;
 		
-		enter_instant = false;
-		text_idx = EnterText.challenge;
+		show_info = true;
+		enter_instant = true;
+		text_idx = EnterText.enter;
 		isclear = stage_clear[4];
+		oncleardata = true;
 	break;
 	
 	case 5:
 		var n = 1;
+		for(var i = 1; i <= 4; i++)
+			if !stage_clear[i]
+				n = 0;
+
 		if n
 		{
 			name = "Radiance";
@@ -63,9 +75,12 @@ switch(stageindex)
 			show_holo = false;
 			holo_spr = spr_holo_providience;
 		
+			//show_info = true;
 			enter_instant = true;
 			text_idx = EnterText.enter;
 			isclear = stage_clear[5];
+			oncleardata = true;
+			oneffect = true;
 		}
 		else
 		{

@@ -9,6 +9,8 @@ with(sys_global)
 	time_ = argument[1];
 	col = argument_count > 2 ? argument[2] : fade_color;
 
+	cout("fade: ", set, time_, col);
+	
 	if time_ == 0
 	{
 		fade_alpha = set;

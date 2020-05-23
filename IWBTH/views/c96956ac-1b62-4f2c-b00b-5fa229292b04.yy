@@ -10,7 +10,11 @@
         "dcf1e805-7151-4348-8fd2-091dc564e360",
         "742f5302-9241-4cd7-8802-9cde9943ca50",
         "36c1c8c0-099a-457d-8974-54ff749fa1a4",
-        "2fe3a76f-f47c-4a09-9a31-c4736c5c3c23"
+        "2fe3a76f-f47c-4a09-9a31-c4736c5c3c23",
+        "ba1359e5-0ce7-4dc0-8de9-ba6e9ef6c958",
+        "dfc96eb8-2949-4ab0-941f-b9527bd0cc35",
+        "6698c3b3-cff9-4909-a3aa-628bfd231e9a",
+        "787cf6c1-b229-4d4a-a4af-126636b380bf"
     ],
     "filterType": "GMSprite",
     "folderName": "tileset & background",

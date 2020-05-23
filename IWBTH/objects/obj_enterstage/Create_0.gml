@@ -2,7 +2,6 @@
 name = "name";
 isclear = false;
 
-
 isclear_challenge = false;
 isclear_ascension = false;
 challenge_time = 0;
