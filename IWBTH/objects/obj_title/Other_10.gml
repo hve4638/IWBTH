@@ -83,11 +83,11 @@ switch(status)
 		var x1, x2;
 		x1 = room_width div 3 - 32;
 		x2 = room_width div 3 * 2 + 32;
-		yy = room_height div 8;
+		yy = room_height div 6;
 		yh = 80;
 
-		var arr = [Input.up, Input.down, Input.left, Input.right, Input.jump, Input.attack, Input.dash, Input.swap, Input.restart, Input.escape];
-		var arr2 = ["UP", "DOWN", "LEFT", "RIGHT", "JUMP", "ATTACK", "DASH", "SWAP", "RESTART", "ESCAPE"];
+		var arr = [Input.left, Input.right, Input.jump, Input.attack, Input.dash, Input.up, Input.restart, Input.escape];
+		var arr2 = ["LEFT", "RIGHT", "JUMP", "ATTACK", "DASH", "ACTION", "RESTART", "ESCAPE"];
 		var size = array_size(arr);
 		for(var i = 0; i < size; i++)
 		{

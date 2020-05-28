@@ -2495,14 +2495,6 @@
             }
         },
         {
-            "Key": "4b0d175e-7760-47db-b5ac-40bf8a07f6aa",
-            "Value": {
-                "id": "da06b5bd-c285-452b-92aa-36ac4f5849b0",
-                "resourcePath": "sounds\\snd_valencia\\snd_valencia.yy",
-                "resourceType": "GMSound"
-            }
-        },
-        {
             "Key": "4b6ed6e2-eb71-43a6-af85-c3dfddb3ab56",
             "Value": {
                 "id": "1d39b9f8-f9c1-452f-bd33-038b0c708ce1",
@@ -3154,7 +3146,7 @@
             "Key": "5d0e2705-1ee7-4dae-b27c-b329e71b38da",
             "Value": {
                 "id": "6d591119-c3d8-4dae-b439-69ab3245f85b",
-                "resourcePath": "datafiles_yy\\script.yy",
+                "resourcePath": "datafiles_yy\\data\\script.yy",
                 "resourceType": "GMIncludedFile"
             }
         },
@@ -3391,6 +3383,14 @@
             }
         },
         {
+            "Key": "65bbdf1a-014d-4a1d-8127-7e9ad8997160",
+            "Value": {
+                "id": "8b1a395e-51a2-4a65-95ea-4ab06b01917d",
+                "resourcePath": "views\\65bbdf1a-014d-4a1d-8127-7e9ad8997160.yy",
+                "resourceType": "GMFolder"
+            }
+        },
+        {
             "Key": "65bd7113-ea76-4a2e-9058-2c0a219c60e5",
             "Value": {
                 "id": "f4ca1bf1-9ad9-45ed-a968-b239f0d34989",
@@ -3410,7 +3410,7 @@
             "Key": "661b48c5-6489-402a-8352-f728d6b25cbb",
             "Value": {
                 "id": "9ba25ae2-46d7-477f-85d1-d72bf9c042eb",
-                "resourcePath": "datafiles_yy\\roomdata.yy",
+                "resourcePath": "datafiles_yy\\data\\roomdata.yy",
                 "resourceType": "GMIncludedFile"
             }
         },
@@ -3946,7 +3946,7 @@
             "Key": "777950ba-ff46-4b20-b8ad-a377c6dfe323",
             "Value": {
                 "id": "db1829f6-0ab0-4e6f-a8f0-3fcf3c9bed79",
-                "resourcePath": "datafiles_yy\\dragunattack.yy",
+                "resourcePath": "datafiles_yy\\data\\dragunattack.yy",
                 "resourceType": "GMIncludedFile"
             }
         },
@@ -4500,14 +4500,6 @@
                 "id": "e7ae7dc9-7f6e-443c-93bb-9fc352753a3e",
                 "resourcePath": "sprites\\spr_dragun_rpg_fire\\spr_dragun_rpg_fire.yy",
                 "resourceType": "GMSprite"
-            }
-        },
-        {
-            "Key": "89dedc67-d78b-4ced-b17d-85723d4669a9",
-            "Value": {
-                "id": "ae94cd62-a7c5-4229-b6ba-43fb9c07ac2b",
-                "resourcePath": "sounds\\snd_wind\\snd_wind.yy",
-                "resourceType": "GMSound"
             }
         },
         {
@@ -6346,7 +6338,7 @@
             "Key": "c14a49e3-2513-4838-aafd-372c6b03e97b",
             "Value": {
                 "id": "7d177802-a4cd-49df-9a3c-67a0e987917b",
-                "resourcePath": "datafiles_yy\\record.yy",
+                "resourcePath": "datafiles_yy\\data\\record.yy",
                 "resourceType": "GMIncludedFile"
             }
         },
@@ -7634,7 +7626,7 @@
             "Key": "e8c43563-d54c-4e3f-bbce-bf0b96e2de31",
             "Value": {
                 "id": "c80733dc-94b8-45ea-9cae-fff114b39887",
-                "resourcePath": "datafiles_yy\\sounddata.yy",
+                "resourcePath": "datafiles_yy\\data\\sounddata.yy",
                 "resourceType": "GMIncludedFile"
             }
         },
@@ -7690,7 +7682,7 @@
             "Key": "e9a80557-86c5-422f-9bc7-72a8c090c98a",
             "Value": {
                 "id": "1fbffb2e-7f6e-4db4-91cb-f9ace02e2dbb",
-                "resourcePath": "datafiles_yy\\dragundata.yy",
+                "resourcePath": "datafiles_yy\\data\\dragundata.yy",
                 "resourceType": "GMIncludedFile"
             }
         },
@@ -7930,7 +7922,7 @@
             "Key": "efb4fd9a-4260-473f-bfba-917f4e728b6b",
             "Value": {
                 "id": "6a90ed7b-884e-4cec-b070-b73a1727ce22",
-                "resourcePath": "datafiles_yy\\save_metadata.yy",
+                "resourcePath": "datafiles_yy\\data\\save_metadata.yy",
                 "resourceType": "GMIncludedFile"
             }
         },

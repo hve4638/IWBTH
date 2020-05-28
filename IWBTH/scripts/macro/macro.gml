@@ -1,16 +1,18 @@
 //Project creation date : 2019/10/29
-#macro VERSION 20191029
+//First Published date : 2020/05/29
+#macro VERSION 20200529
 #macro VERSION_SHOW "v1.0"
+
 
 #macro CONFIG_DIRECTORY "config"
 #macro SAVE_DIRECTORY "data"
-#macro SCRIPT_DIRECTORY "script"
-#macro RECORD_DIRECTORY "record"
-#macro SOUND_DIRECTORY "sounddata"
-#macro ROOMDATA_DIRECTORY "roomdata"
-#macro DRAGUNCSV_DIRECTORY "dragundata"
-#macro DRAGUNATTACKCSV_DIRECTORY "dragunattack"
-#macro SAVEMETA_DIRECTORY "save_metadata"
+#macro SCRIPT_DIRECTORY "data\\script"
+#macro RECORD_DIRECTORY "data\\record"
+#macro SOUND_DIRECTORY "data\\sounddata"
+#macro ROOMDATA_DIRECTORY "data\\roomdata"
+#macro DRAGUNCSV_DIRECTORY "data\\dragundata"
+#macro DRAGUNATTACKCSV_DIRECTORY "data\\dragunattack"
+#macro SAVEMETA_DIRECTORY "data\\save_metadata"
 
 #macro L_SYS "InsSystem"
 #macro L_TRIG "InsTrigger"
@@ -29,6 +31,7 @@
 #macro BLOCKLAYER layer_tilemap_get_id(layer_get_id("TileBlock"))
 
 ///DEBUG
+#macro DEBUG_ENABLE false
 #macro DEFAULT_INSTANTPLAY 0
 #macro INSTANTPLAY_KEY ord("I")
 #macro INSTANTPLAY_SAVESLOT 1

@@ -12,6 +12,11 @@ else
 	canrestart = false;
 }
 
+if room == rm_hub
+{
+	alarm[0] = DEFAULT_FPS;
+}
+
 if debuglv(1) cout("stage: ", current_stage, " ingame: ", ontimer);
 
 room_speed = DEFAULT_FPS;
