@@ -1559,6 +1559,14 @@
             }
         },
         {
+            "Key": "2b454078-3495-48ba-a872-8ca531d45772",
+            "Value": {
+                "id": "d2fa80ec-a99d-4b3d-b526-98b34610353d",
+                "resourcePath": "objects\\ob_checkcaninfjump\\ob_checkcaninfjump.yy",
+                "resourceType": "GMObject"
+            }
+        },
+        {
             "Key": "2b51a8fb-30dc-4426-99b6-b28f4323589a",
             "Value": {
                 "id": "4f5786af-ebef-4406-a19a-0330dc523d51",
@@ -3260,6 +3268,14 @@
                 "id": "6c0cd67a-3920-49e0-9a80-e683a81ff4ab",
                 "resourcePath": "views\\605dbf85-cc64-4d38-8d1d-22b9555bae02.yy",
                 "resourceType": "GMFolder"
+            }
+        },
+        {
+            "Key": "6095b1a6-8494-4238-8ad4-7cb2681a15ab",
+            "Value": {
+                "id": "56814601-dbbd-470e-9528-594bf642496b",
+                "resourcePath": "scripts\\scr_jsabtl_12\\scr_jsabtl_12.yy",
+                "resourceType": "GMScript"
             }
         },
         {
@@ -8721,6 +8737,7 @@
         "a9d54eb6-fd69-4210-92cf-c29f5ad02898",
         "59375fb9-fd6a-4954-8638-2f22a86dfc13",
         "11835c80-3b92-4c46-97a3-a3057b16b954",
+        "6095b1a6-8494-4238-8ad4-7cb2681a15ab",
         "b872989a-509b-403b-9777-86d23fba5b22",
         "f28613a5-dc0f-4979-a145-c8d7c45aa438",
         "76ebf255-0abe-4439-81d1-8f6d684e2c99",

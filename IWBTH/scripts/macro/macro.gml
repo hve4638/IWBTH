@@ -1,7 +1,7 @@
 //Project creation date : 2019/10/29
 //First Published date : 2020/05/29
-#macro VERSION 20200529
-#macro VERSION_SHOW "v1.0"
+#macro VERSION 20200530
+#macro VERSION_SHOW "v1.01"
 
 
 #macro CONFIG_DIRECTORY "config"

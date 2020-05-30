@@ -23,6 +23,9 @@ if ins != noone
 }
 #endregion
 
+if onground
+	jumpcnt = 0;
+
 if dashtime
 {
 	if dashecho
@@ -71,6 +74,7 @@ if room_height + 32 < bbox_top
 #endregion
 
 scr_player_escape();
+
 
 move_ignore = max(move_ignore - 1, 0);
 attackdelay = max(attackdelay - 1, 0);

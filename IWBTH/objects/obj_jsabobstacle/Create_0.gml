@@ -23,6 +23,8 @@ angle_add = 0;
 length = image_yscale;
 thick = image_xscale;
 
+lengthscale = 1.0;
+
 onbounce = false;
 bounce_cycle = 50;
 bounce_range = 0.7;

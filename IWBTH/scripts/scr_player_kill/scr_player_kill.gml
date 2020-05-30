@@ -1,3 +1,9 @@
+if !instance_exists(obj_player)
+	exit;
+	
+if obj_player.invin
+	exit;
+
 if ongod
 {
 	with(obj_player)
@@ -9,6 +15,9 @@ if ongod
 	}
 	exit;
 }
+
+
+
 
 var _x, _y;
 _x = obj_player.x;

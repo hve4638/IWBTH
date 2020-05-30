@@ -6,6 +6,8 @@ if onground || on_platform
 	
 	onground = false;
     sfx(snd_jump);
+	
+	jumpcnt = 1;
 }
 else if djump
 {
@@ -15,6 +17,7 @@ else if djump
     sfx(snd_jump2);
 	
 	e = true;
+	jumpcnt++;
 }
 
 if e

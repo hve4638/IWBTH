@@ -4,8 +4,8 @@ R = button(Input.right);
 E = button(Input.escape);
 S = button_press(Input.swap);
 
-if S
-	attacktype = attacktype == Attacktype.gun ? Attacktype.sword : Attacktype.gun;
+if 0
+	attacktype = (attacktype == Attacktype.gun ? Attacktype.sword : Attacktype.gun);
 
 if 0 < move_ignore
 {
